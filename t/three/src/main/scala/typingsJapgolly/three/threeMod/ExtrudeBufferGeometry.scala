@@ -1,0 +1,28 @@
+package typingsJapgolly.three.threeMod
+
+import typingsJapgolly.three.srcGeometriesExtrudeGeometryMod.ExtrudeGeometryOptions
+import typingsJapgolly.three.srcGeometriesExtrudeGeometryMod.UVGenerator
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("three", "ExtrudeBufferGeometry")
+@js.native
+class ExtrudeBufferGeometry protected ()
+  extends typingsJapgolly.three.srcGeometriesGeometriesMod.ExtrudeBufferGeometry {
+  def this(shapes: js.Array[typingsJapgolly.three.srcExtrasCoreShapeMod.Shape]) = this()
+  def this(shapes: typingsJapgolly.three.srcExtrasCoreShapeMod.Shape) = this()
+  def this(
+    shapes: js.Array[typingsJapgolly.three.srcExtrasCoreShapeMod.Shape],
+    options: ExtrudeGeometryOptions
+  ) = this()
+  def this(shapes: typingsJapgolly.three.srcExtrasCoreShapeMod.Shape, options: ExtrudeGeometryOptions) = this()
+}
+
+/* static members */
+@JSImport("three", "ExtrudeBufferGeometry")
+@js.native
+object ExtrudeBufferGeometry extends js.Object {
+  var WorldUVGenerator: UVGenerator = js.native
+}
+

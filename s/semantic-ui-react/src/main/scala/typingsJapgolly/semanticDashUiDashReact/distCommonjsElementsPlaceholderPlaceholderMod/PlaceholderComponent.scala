@@ -1,0 +1,19 @@
+package typingsJapgolly.semanticDashUiDashReact.distCommonjsElementsPlaceholderPlaceholderMod
+
+import typingsJapgolly.react.reactMod.FunctionComponent
+import typingsJapgolly.semanticDashUiDashReact.distCommonjsElementsPlaceholderPlaceholderHeaderMod.PlaceholderHeaderComponent
+import typingsJapgolly.semanticDashUiDashReact.distCommonjsElementsPlaceholderPlaceholderImageMod.PlaceholderImageComponent
+import typingsJapgolly.semanticDashUiDashReact.distCommonjsElementsPlaceholderPlaceholderLineMod.PlaceholderLineComponent
+import typingsJapgolly.semanticDashUiDashReact.distCommonjsElementsPlaceholderPlaceholderParagraphMod.PlaceholderParagraphComponent
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@js.native
+trait PlaceholderComponent extends FunctionComponent[PlaceholderProps] {
+  var Header: PlaceholderHeaderComponent = js.native
+  var Image: PlaceholderImageComponent = js.native
+  var Line: PlaceholderLineComponent = js.native
+  var Paragraph: PlaceholderParagraphComponent = js.native
+}
+

@@ -1,0 +1,25 @@
+package typingsJapgolly.antd.libMentionMod
+
+import japgolly.scalajs.react.ReactFocusEventFrom
+import japgolly.scalajs.react.raw.React.Element
+import org.scalajs.dom.raw.HTMLElement
+import typingsJapgolly.antd.libConfigDashProviderContextMod.ConfigConsumerProps
+import typingsJapgolly.react.reactMod.Component
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@js.native
+trait Mention
+  extends Component[MentionProps, MentionState, js.Any] {
+  var mentionEle: js.Any = js.native
+  def defaultSearchChange(value: String): Unit = js.native
+  def focus(): Unit = js.native
+  def mentionRef(ele: js.Any): Unit = js.native
+  def onBlur(ev: ReactFocusEventFrom[HTMLElement]): Unit = js.native
+  def onChange(editorState: js.Any): Unit = js.native
+  def onFocus(ev: ReactFocusEventFrom[HTMLElement]): Unit = js.native
+  def onSearchChange(value: String, prefix: String): js.Any = js.native
+  def renderMention(hasGetPrefixCls: ConfigConsumerProps): Element = js.native
+}
+

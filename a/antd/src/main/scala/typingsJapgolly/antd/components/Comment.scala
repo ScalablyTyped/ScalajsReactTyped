@@ -1,0 +1,51 @@
+package typingsJapgolly.antd.components
+
+import japgolly.scalajs.react.CtorType.ChildArg
+import japgolly.scalajs.react.Key
+import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
+import japgolly.scalajs.react.raw.React.Node
+import japgolly.scalajs.react.vdom.VdomNode
+import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.antd.esCommentMod.CommentProps
+import typingsJapgolly.antd.esCommentMod.default
+import typingsJapgolly.react.reactMod.CSSProperties
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+object Comment {
+  def apply(
+    content: VdomNode,
+    actions: js.Array[Node] = null,
+    author: VdomNode = null,
+    avatar: VdomNode = null,
+    className: String = null,
+    datetime: VdomNode = null,
+    prefixCls: String = null,
+    style: CSSProperties = null,
+    key: js.UndefOr[Key] = js.undefined,
+    overrides: StringDictionary[js.Any] = null
+  )(
+    children: ChildArg*
+  ): UnmountedWithRoot[CommentProps, default, Unit, CommentProps] = {
+    val __obj = js.Dynamic.literal()
+  
+      if (content != null) __obj.updateDynamic("content")(content.rawNode.asInstanceOf[js.Any])
+    if (actions != null) __obj.updateDynamic("actions")(actions.asInstanceOf[js.Any])
+    if (author != null) __obj.updateDynamic("author")(author.rawNode.asInstanceOf[js.Any])
+    if (avatar != null) __obj.updateDynamic("avatar")(avatar.rawNode.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (datetime != null) __obj.updateDynamic("datetime")(datetime.rawNode.asInstanceOf[js.Any])
+    if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
+    if (overrides != null) js.Dynamic.global.Object.assign(__obj, overrides)
+  
+    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
+  typingsJapgolly.antd.esCommentMod.CommentProps, 
+  japgolly.scalajs.react.Children.Varargs, 
+  typingsJapgolly.antd.esCommentMod.default](js.constructorOf[typingsJapgolly.antd.esCommentMod.default])
+    f(__obj.asInstanceOf[typingsJapgolly.antd.esCommentMod.CommentProps])(children: _*)
+  }
+}
+
