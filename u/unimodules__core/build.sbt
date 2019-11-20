@@ -1,6 +1,6 @@
 organization := "org.gulliblytyped.japgolly"
 name := "unimodules__core"
-version := "4.0.0-0203c1"
+version := "4.0.0-758b62"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,9 +9,9 @@ libraryDependencies ++= Seq(
   "org.gulliblytyped.japgolly" %%% "csstype" % "2.6.6-f3bc82",
   "org.gulliblytyped.japgolly" %%% "prop-types" % "15.7-dt-20190924Z-090a31",
   "org.gulliblytyped.japgolly" %%% "react" % "16.9-dt-20191025Z-992e25",
-  "org.gulliblytyped.japgolly" %%% "react-native" % "0.60-dt-20191028Z-6c265e",
+  "org.gulliblytyped.japgolly" %%% "react-native" % "0.60-dt-20191028Z-229ecc",
   "org.gulliblytyped.japgolly" %%% "std" % "3.7-c9d0d4",
-  "org.gulliblytyped.japgolly" %%% "unimodules__react-native-adapter" % "4.0.0-741937")
+  "org.gulliblytyped.japgolly" %%% "unimodules__react-native-adapter" % "4.0.0-844590")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

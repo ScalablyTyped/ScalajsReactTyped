@@ -1,6 +1,6 @@
 organization := "org.gulliblytyped.japgolly"
 name := "expo__vector-icons"
-version := "9.0-dt-20190213Z-d623c1"
+version := "9.0-dt-20190213Z-3da8ea"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,8 +9,8 @@ libraryDependencies ++= Seq(
   "org.gulliblytyped.japgolly" %%% "csstype" % "2.6.6-f3bc82",
   "org.gulliblytyped.japgolly" %%% "prop-types" % "15.7-dt-20190924Z-090a31",
   "org.gulliblytyped.japgolly" %%% "react" % "16.9-dt-20191025Z-992e25",
-  "org.gulliblytyped.japgolly" %%% "react-native" % "0.60-dt-20191028Z-6c265e",
-  "org.gulliblytyped.japgolly" %%% "react-native-vector-icons" % "6.4-dt-20190930Z-54305c",
+  "org.gulliblytyped.japgolly" %%% "react-native" % "0.60-dt-20191028Z-229ecc",
+  "org.gulliblytyped.japgolly" %%% "react-native-vector-icons" % "6.4-dt-20190930Z-3285d6",
   "org.gulliblytyped.japgolly" %%% "std" % "3.7-c9d0d4")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

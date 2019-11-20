@@ -1,12 +1,12 @@
 organization := "org.gulliblytyped.japgolly"
 name := "angular__platform-browser-dynamic"
-version := "8.2.14-67275b"
+version := "8.2.14-17c30c"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.github.japgolly.scalajs-react" %%% "core" % "1.4.2",
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.gulliblytyped.japgolly" %%% "angular__compiler" % "8.2.14-c3a73e",
+  "org.gulliblytyped.japgolly" %%% "angular__compiler" % "8.2.14-592fd0",
   "org.gulliblytyped.japgolly" %%% "angular__core" % "8.2.14-2a283c",
   "org.gulliblytyped.japgolly" %%% "rxjs" % "6.5.3-085add",
   "org.gulliblytyped.japgolly" %%% "std" % "3.7-c9d0d4")

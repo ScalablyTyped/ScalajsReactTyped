@@ -15,11 +15,11 @@ object ScalajsReactTypedPlugin extends AutoPlugin {
     object ScalajsReactTyped {
       object A {
         val angular__common = "org.gulliblytyped.japgolly" % "angular__common_sjs0.6_2.12" % "8.2.14-ece8db"
-        val angular__compiler = "org.gulliblytyped.japgolly" % "angular__compiler_sjs0.6_2.12" % "8.2.14-c3a73e"
+        val angular__compiler = "org.gulliblytyped.japgolly" % "angular__compiler_sjs0.6_2.12" % "8.2.14-592fd0"
         val angular__core = "org.gulliblytyped.japgolly" % "angular__core_sjs0.6_2.12" % "8.2.14-2a283c"
         val angular__forms = "org.gulliblytyped.japgolly" % "angular__forms_sjs0.6_2.12" % "8.2.14-eab73c"
         val `angular__platform-browser` = "org.gulliblytyped.japgolly" % "angular__platform-browser_sjs0.6_2.12" % "8.2.14-f83a60"
-        val `angular__platform-browser-dynamic` = "org.gulliblytyped.japgolly" % "angular__platform-browser-dynamic_sjs0.6_2.12" % "8.2.14-67275b"
+        val `angular__platform-browser-dynamic` = "org.gulliblytyped.japgolly" % "angular__platform-browser-dynamic_sjs0.6_2.12" % "8.2.14-17c30c"
         val angular__router = "org.gulliblytyped.japgolly" % "angular__router_sjs0.6_2.12" % "8.2.14-7b0af5"
         val `ant-design__create-react-context` = "org.gulliblytyped.japgolly" % "ant-design__create-react-context_sjs0.6_2.12" % "0.2.4-48d0e8"
         val antd = "org.gulliblytyped.japgolly" % "antd_sjs0.6_2.12" % "3.25.1-053e9d"
@@ -72,18 +72,18 @@ object ScalajsReactTypedPlugin extends AutoPlugin {
       object E {
         val electron = "org.gulliblytyped.japgolly" % "electron_sjs0.6_2.12" % "6.1.4-e06823"
         val exenv = "org.gulliblytyped.japgolly" % "exenv_sjs0.6_2.12" % "1.2-dt-20180321Z-c98675"
-        val expo = "org.gulliblytyped.japgolly" % "expo_sjs0.6_2.12" % "35.0.1-fcd10d"
+        val expo = "org.gulliblytyped.japgolly" % "expo_sjs0.6_2.12" % "35.0.1-9b8e31"
         val `expo-asset` = "org.gulliblytyped.japgolly" % "expo-asset_sjs0.6_2.12" % "7.0.0-710981"
         val `expo-constants` = "org.gulliblytyped.japgolly" % "expo-constants_sjs0.6_2.12" % "7.0.1-66f3b8"
-        val `expo-file-system` = "org.gulliblytyped.japgolly" % "expo-file-system_sjs0.6_2.12" % "7.0.0-8c61ff"
+        val `expo-file-system` = "org.gulliblytyped.japgolly" % "expo-file-system_sjs0.6_2.12" % "7.0.0-b7092e"
         val `expo-font` = "org.gulliblytyped.japgolly" % "expo-font_sjs0.6_2.12" % "7.0.0-2f6f79"
         val `expo-keep-awake` = "org.gulliblytyped.japgolly" % "expo-keep-awake_sjs0.6_2.12" % "7.0.0-4a1973"
-        val `expo-linear-gradient` = "org.gulliblytyped.japgolly" % "expo-linear-gradient_sjs0.6_2.12" % "7.0.1-664afa"
-        val `expo-location` = "org.gulliblytyped.japgolly" % "expo-location_sjs0.6_2.12" % "7.0.0-37910b"
+        val `expo-linear-gradient` = "org.gulliblytyped.japgolly" % "expo-linear-gradient_sjs0.6_2.12" % "7.0.1-ef52cf"
+        val `expo-location` = "org.gulliblytyped.japgolly" % "expo-location_sjs0.6_2.12" % "7.0.0-2bea05"
         val `expo-permissions` = "org.gulliblytyped.japgolly" % "expo-permissions_sjs0.6_2.12" % "7.0.0-89b3be"
         val `expo-sqlite` = "org.gulliblytyped.japgolly" % "expo-sqlite_sjs0.6_2.12" % "7.0.0-de4a4b"
         val `expo-web-browser` = "org.gulliblytyped.japgolly" % "expo-web-browser_sjs0.6_2.12" % "7.0.1-46e35f"
-        val `expo__vector-icons` = "org.gulliblytyped.japgolly" % "expo__vector-icons_sjs0.6_2.12" % "9.0-dt-20190213Z-d623c1"
+        val `expo__vector-icons` = "org.gulliblytyped.japgolly" % "expo__vector-icons_sjs0.6_2.12" % "9.0-dt-20190213Z-3da8ea"
         val express = "org.gulliblytyped.japgolly" % "express_sjs0.6_2.12" % "4.17-dt-20191101Z-989aa3"
         val `express-serve-static-core` = "org.gulliblytyped.japgolly" % "express-serve-static-core_sjs0.6_2.12" % "4.16-dt-20191101Z-843e4c"
         val `extract-zip` = "org.gulliblytyped.japgolly" % "extract-zip_sjs0.6_2.12" % "1.6-dt-20180214Z-1291da"
@@ -108,8 +108,8 @@ object ScalajsReactTypedPlugin extends AutoPlugin {
         val `is-buffer` = "org.gulliblytyped.japgolly" % "is-buffer_sjs0.6_2.12" % "2.0-dt-20181210Z-4728ab"
       }
       object J {
-        val jquery = "org.gulliblytyped.japgolly" % "jquery_sjs0.6_2.12" % "3.3-dt-20190815Z-21f6c9"
-        val jqueryui = "org.gulliblytyped.japgolly" % "jqueryui_sjs0.6_2.12" % "1.12-dt-20191104Z-d9a202"
+        val jquery = "org.gulliblytyped.japgolly" % "jquery_sjs0.6_2.12" % "3.3-dt-20190815Z-eec8e1"
+        val jqueryui = "org.gulliblytyped.japgolly" % "jqueryui_sjs0.6_2.12" % "1.12-dt-20191104Z-15d53f"
         val jss = "org.gulliblytyped.japgolly" % "jss_sjs0.6_2.12" % "10.0.0-2690a6"
       }
       object L {
@@ -121,7 +121,7 @@ object ScalajsReactTypedPlugin extends AutoPlugin {
         val `material-ui__core` = "org.gulliblytyped.japgolly" % "material-ui__core_sjs0.6_2.12" % "3.9.3-380527"
         val `material-ui__icons` = "org.gulliblytyped.japgolly" % "material-ui__icons_sjs0.6_2.12" % "4.5.1-f2d0d4"
         val mime = "org.gulliblytyped.japgolly" % "mime_sjs0.6_2.12" % "2.0-dt-20190205Z-59d0db"
-        val mobx = "org.gulliblytyped.japgolly" % "mobx_sjs0.6_2.12" % "5.14.2-586045"
+        val mobx = "org.gulliblytyped.japgolly" % "mobx_sjs0.6_2.12" % "5.14.2-da86f8"
         val `mobx-react` = "org.gulliblytyped.japgolly" % "mobx-react_sjs0.6_2.12" % "6.1.4-d8bf77"
         val `mobx-react-lite` = "org.gulliblytyped.japgolly" % "mobx-react-lite_sjs0.6_2.12" % "1.5.0-a50da8"
         val moment = "org.gulliblytyped.japgolly" % "moment_sjs0.6_2.12" % "2.24.0-dcfd2c"
@@ -147,10 +147,10 @@ object ScalajsReactTypedPlugin extends AutoPlugin {
         val `react-dom` = "org.gulliblytyped.japgolly" % "react-dom_sjs0.6_2.12" % "16.9-dt-20191106Z-fa724e"
         val `react-is` = "org.gulliblytyped.japgolly" % "react-is_sjs0.6_2.12" % "16.7-dt-20190212Z-b86d72"
         val `react-lifecycles-compat` = "org.gulliblytyped.japgolly" % "react-lifecycles-compat_sjs0.6_2.12" % "3.0-dt-20190116Z-c8c20e"
-        val `react-native` = "org.gulliblytyped.japgolly" % "react-native_sjs0.6_2.12" % "0.60-dt-20191028Z-6c265e"
-        val `react-native-gesture-handler` = "org.gulliblytyped.japgolly" % "react-native-gesture-handler_sjs0.6_2.12" % "1.5.0-d4df26"
-        val `react-native-vector-icons` = "org.gulliblytyped.japgolly" % "react-native-vector-icons_sjs0.6_2.12" % "6.4-dt-20190930Z-54305c"
-        val `react-navigation` = "org.gulliblytyped.japgolly" % "react-navigation_sjs0.6_2.12" % "4.0.10-df077c"
+        val `react-native` = "org.gulliblytyped.japgolly" % "react-native_sjs0.6_2.12" % "0.60-dt-20191028Z-229ecc"
+        val `react-native-gesture-handler` = "org.gulliblytyped.japgolly" % "react-native-gesture-handler_sjs0.6_2.12" % "1.5.0-42d461"
+        val `react-native-vector-icons` = "org.gulliblytyped.japgolly" % "react-native-vector-icons_sjs0.6_2.12" % "6.4-dt-20190930Z-3285d6"
+        val `react-navigation` = "org.gulliblytyped.japgolly" % "react-navigation_sjs0.6_2.12" % "4.0.10-2844f1"
         val `react-redux` = "org.gulliblytyped.japgolly" % "react-redux_sjs0.6_2.12" % "7.1-dt-20191018Z-5d91d7"
         val `react-router` = "org.gulliblytyped.japgolly" % "react-router_sjs0.6_2.12" % "5.1-dt-20191113Z-774179"
         val `react-router-dom` = "org.gulliblytyped.japgolly" % "react-router-dom_sjs0.6_2.12" % "5.1-dt-20191101Z-54919b"
@@ -170,7 +170,7 @@ object ScalajsReactTypedPlugin extends AutoPlugin {
         val `stardust-ui__react-component-ref` = "org.gulliblytyped.japgolly" % "stardust-ui__react-component-ref_sjs0.6_2.12" % "0.38.0-01b586"
         val std = "org.gulliblytyped.japgolly" % "std_sjs0.6_2.12" % "3.7-c9d0d4"
         val storybook__react = "org.gulliblytyped.japgolly" % "storybook__react_sjs0.6_2.12" % "4.0-dt-20190605Z-30c9fe"
-        val `styled-components` = "org.gulliblytyped.japgolly" % "styled-components_sjs0.6_2.12" % "4.4-dt-20191109Z-a235f4"
+        val `styled-components` = "org.gulliblytyped.japgolly" % "styled-components_sjs0.6_2.12" % "4.4-dt-20191109Z-82bd07"
         val `symbol-observable` = "org.gulliblytyped.japgolly" % "symbol-observable_sjs0.6_2.12" % "1.2.0-212c6e"
       }
       object T {
@@ -179,8 +179,8 @@ object ScalajsReactTypedPlugin extends AutoPlugin {
         val typescript = "org.gulliblytyped.japgolly" % "typescript_sjs0.6_2.12" % "3.7.2-a3a7eb"
       }
       object U {
-        val unimodules__core = "org.gulliblytyped.japgolly" % "unimodules__core_sjs0.6_2.12" % "4.0.0-0203c1"
-        val `unimodules__react-native-adapter` = "org.gulliblytyped.japgolly" % "unimodules__react-native-adapter_sjs0.6_2.12" % "4.0.0-741937"
+        val unimodules__core = "org.gulliblytyped.japgolly" % "unimodules__core_sjs0.6_2.12" % "4.0.0-758b62"
+        val `unimodules__react-native-adapter` = "org.gulliblytyped.japgolly" % "unimodules__react-native-adapter_sjs0.6_2.12" % "4.0.0-844590"
       }
       object V {
         val vue = "org.gulliblytyped.japgolly" % "vue_sjs0.6_2.12" % "2.6.10-aca977"
