@@ -1,8 +1,7 @@
 package typingsJapgolly.rcDashMenu
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.raw.React.Element
-import japgolly.scalajs.react.vdom.VdomElement
+import typingsJapgolly.react.reactMod._Global_.JSX.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -35,19 +34,18 @@ object Anon_BuiltinPlacements {
     onDeselect: Callback,
     onOpenChange: Callback,
     onSelect: Callback,
-    overflowedIndicator: VdomElement,
+    overflowedIndicator: Element,
     prefixCls: String,
     selectable: Boolean,
     subMenuCloseDelay: Double,
     subMenuOpenDelay: Double,
     triggerSubMenuAction: String
   ): Anon_BuiltinPlacements = {
-    val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any], defaultOpenKeys = defaultOpenKeys.asInstanceOf[js.Any], defaultSelectedKeys = defaultSelectedKeys.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], prefixCls = prefixCls.asInstanceOf[js.Any], selectable = selectable.asInstanceOf[js.Any], subMenuCloseDelay = subMenuCloseDelay.asInstanceOf[js.Any], subMenuOpenDelay = subMenuOpenDelay.asInstanceOf[js.Any], triggerSubMenuAction = triggerSubMenuAction.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any], defaultOpenKeys = defaultOpenKeys.asInstanceOf[js.Any], defaultSelectedKeys = defaultSelectedKeys.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], overflowedIndicator = overflowedIndicator.asInstanceOf[js.Any], prefixCls = prefixCls.asInstanceOf[js.Any], selectable = selectable.asInstanceOf[js.Any], subMenuCloseDelay = subMenuCloseDelay.asInstanceOf[js.Any], subMenuOpenDelay = subMenuOpenDelay.asInstanceOf[js.Any], triggerSubMenuAction = triggerSubMenuAction.asInstanceOf[js.Any])
     __obj.updateDynamic("onClick")(onClick.toJsFn)
     __obj.updateDynamic("onDeselect")(onDeselect.toJsFn)
     __obj.updateDynamic("onOpenChange")(onOpenChange.toJsFn)
     __obj.updateDynamic("onSelect")(onSelect.toJsFn)
-    if (overflowedIndicator != null) __obj.updateDynamic("overflowedIndicator")(overflowedIndicator.rawElement.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_BuiltinPlacements]
   }
 }

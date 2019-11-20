@@ -14,6 +14,6 @@ object libTableColumnMod extends js.Object {
   class default[T] ()
     extends Component[ColumnProps[T], ComponentState, js.Any]
   
-  type Column[T] = Component[ColumnProps[T], ComponentState, js.Any]
+  type Column[T] = japgolly.scalajs.react.raw.React.Component[ColumnProps[T] with js.Object, js.Object]
 }
 

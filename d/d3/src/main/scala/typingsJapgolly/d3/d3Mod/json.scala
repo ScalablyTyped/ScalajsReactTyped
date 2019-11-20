@@ -1,6 +1,6 @@
 package typingsJapgolly.d3.d3Mod
 
-import typingsJapgolly.std.RequestInit
+import org.scalajs.dom.experimental.RequestInit
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

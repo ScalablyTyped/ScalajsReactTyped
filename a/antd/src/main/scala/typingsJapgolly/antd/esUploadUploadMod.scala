@@ -1,7 +1,6 @@
 package typingsJapgolly.antd
 
 import japgolly.scalajs.react.ReactDragEventFrom
-import japgolly.scalajs.react.raw.React.Element
 import org.scalablytyped.runtime.Instantiable0
 import org.scalajs.dom.raw.HTMLDivElement
 import typingsJapgolly.antd.esConfigDashProviderContextMod.ConfigConsumerProps
@@ -13,6 +12,7 @@ import typingsJapgolly.antd.esUploadInterfaceMod.UploadProps
 import typingsJapgolly.antd.esUploadInterfaceMod.UploadState
 import typingsJapgolly.antd.esUploadUploadMod.Upload
 import typingsJapgolly.react.reactMod.Component
+import typingsJapgolly.react.reactMod._Global_.JSX.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -13,7 +13,7 @@ trait LabeledValue extends js.Object {
 
 object LabeledValue {
   @scala.inline
-  def apply(key: String, label: VdomNode): LabeledValue = {
+  def apply(key: String, label: VdomNode = null): LabeledValue = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.rawNode.asInstanceOf[js.Any])
     __obj.asInstanceOf[LabeledValue]

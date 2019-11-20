@@ -1,9 +1,9 @@
 package typingsJapgolly.reactDashDom.experimentalMod.reactDashDomMod
 
-import typingsJapgolly.std.Comment
-import typingsJapgolly.std.Document
-import typingsJapgolly.std.DocumentFragment
-import typingsJapgolly.std.Element
+import org.scalajs.dom.raw.Comment
+import org.scalajs.dom.raw.Document
+import org.scalajs.dom.raw.DocumentFragment
+import org.scalajs.dom.raw.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

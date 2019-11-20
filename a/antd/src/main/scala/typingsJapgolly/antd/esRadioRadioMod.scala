@@ -1,12 +1,12 @@
 package typingsJapgolly.antd
 
-import japgolly.scalajs.react.raw.React.Element
 import typingsJapgolly.antd.esConfigDashProviderContextMod.ConfigConsumerProps
 import typingsJapgolly.antd.esRadioInterfaceMod.RadioChangeEvent
 import typingsJapgolly.antd.esRadioInterfaceMod.RadioGroupContext
 import typingsJapgolly.antd.esRadioInterfaceMod.RadioProps
 import typingsJapgolly.antd.esRadioRadioMod.Radio
 import typingsJapgolly.react.reactMod.Component
+import typingsJapgolly.react.reactMod._Global_.JSX.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

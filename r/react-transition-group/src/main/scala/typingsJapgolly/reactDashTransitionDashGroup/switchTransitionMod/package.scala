@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object switchTransitionMod {
-  import typingsJapgolly.react.reactMod.Component
+  import japgolly.scalajs.react.raw.React.Component
 
   /**
     * A transition component inspired by the [vue transition modes](https://vuejs.org/v2/guide/transitions.html#Transition-Modes).
@@ -32,5 +32,5 @@ package object switchTransitionMod {
     * }
     * ```
     */
-  type SwitchTransition = Component[SwitchTransitionProps, js.Object, js.Any]
+  type SwitchTransition = Component[SwitchTransitionProps with js.Object, js.Object]
 }

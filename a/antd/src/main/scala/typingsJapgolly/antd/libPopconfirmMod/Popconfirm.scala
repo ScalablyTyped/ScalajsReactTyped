@@ -1,12 +1,10 @@
 package typingsJapgolly.antd.libPopconfirmMod
 
 import japgolly.scalajs.react.ReactMouseEventFrom
-import japgolly.scalajs.react.raw.React.Element
 import org.scalajs.dom.raw.HTMLButtonElement
 import typingsJapgolly.antd.libConfigDashProviderContextMod.ConfigConsumerProps
-import typingsJapgolly.react.NativeMouseEvent
 import typingsJapgolly.react.reactMod.Component
-import typingsJapgolly.react.reactMod.MouseEvent
+import typingsJapgolly.react.reactMod._Global_.JSX.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,6 +21,6 @@ trait Popconfirm
   def renderOverlay(prefixCls: String, popconfirmLocale: PopconfirmLocale): Element = js.native
   def saveTooltip(node: js.Any): Unit = js.native
   def setVisible(visible: Boolean): Unit = js.native
-  def setVisible(visible: Boolean, e: MouseEvent[typingsJapgolly.std.HTMLButtonElement, NativeMouseEvent]): Unit = js.native
+  def setVisible(visible: Boolean, e: ReactMouseEventFrom[HTMLButtonElement]): Unit = js.native
 }
 

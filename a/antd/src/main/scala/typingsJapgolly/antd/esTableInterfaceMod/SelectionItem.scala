@@ -15,10 +15,10 @@ trait SelectionItem extends js.Object {
 
 object SelectionItem {
   @scala.inline
-  def apply(key: String, text: VdomNode, onSelect: /* key */ js.Array[String] => Callback = null): SelectionItem = {
+  def apply(key: String, onSelect: /* key */ js.Array[String] => Callback = null, text: VdomNode = null): SelectionItem = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.rawNode.asInstanceOf[js.Any])
     if (onSelect != null) __obj.updateDynamic("onSelect")(js.Any.fromFunction1((t0: /* key */ js.Array[java.lang.String]) => onSelect(t0).runNow()))
+    if (text != null) __obj.updateDynamic("text")(text.rawNode.asInstanceOf[js.Any])
     __obj.asInstanceOf[SelectionItem]
   }
 }

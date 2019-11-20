@@ -1,7 +1,7 @@
 package typingsJapgolly.d3.d3Mod
 
-import org.scalajs.dom.raw.Element
 import typingsJapgolly.d3DashZoom.d3DashZoomMod.ZoomTransform
+import typingsJapgolly.d3DashZoom.d3DashZoomMod.ZoomedElementBaseType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @JSImport("d3", "zoomTransform")
 @js.native
 object zoomTransform extends js.Object {
-  def apply(node: Element): ZoomTransform = js.native
+  def apply(node: ZoomedElementBaseType): ZoomTransform = js.native
 }
 

@@ -1,8 +1,8 @@
 package typingsJapgolly.antd.esInputPasswordMod
 
-import japgolly.scalajs.react.raw.React.Element
 import org.scalajs.dom.raw.HTMLInputElement
 import typingsJapgolly.react.reactMod.Component
+import typingsJapgolly.react.reactMod._Global_.JSX.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -38,7 +38,6 @@ trait PopconfirmProps extends AbstractTooltipProps {
 object PopconfirmProps {
   @scala.inline
   def apply(
-    title: VdomNode,
     align: TooltipAlignConfig = null,
     arrowPointAtCenter: js.UndefOr[Boolean] = js.undefined,
     autoAdjustOverflow: Boolean | AdjustOverflow = null,
@@ -67,12 +66,12 @@ object PopconfirmProps {
     placement: TooltipPlacement = null,
     prefixCls: String = null,
     style: CSSProperties = null,
+    title: VdomNode = null,
     transitionName: String = null,
     trigger: TooltipTrigger = null,
     visible: js.UndefOr[Boolean] = js.undefined
   ): PopconfirmProps = {
     val __obj = js.Dynamic.literal()
-    if (title != null) __obj.updateDynamic("title")(title.rawNode.asInstanceOf[js.Any])
     if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
     if (!js.isUndefined(arrowPointAtCenter)) __obj.updateDynamic("arrowPointAtCenter")(arrowPointAtCenter.asInstanceOf[js.Any])
     if (autoAdjustOverflow != null) __obj.updateDynamic("autoAdjustOverflow")(autoAdjustOverflow.asInstanceOf[js.Any])
@@ -101,6 +100,7 @@ object PopconfirmProps {
     if (placement != null) __obj.updateDynamic("placement")(placement.asInstanceOf[js.Any])
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.rawNode.asInstanceOf[js.Any])
     if (transitionName != null) __obj.updateDynamic("transitionName")(transitionName.asInstanceOf[js.Any])
     if (trigger != null) __obj.updateDynamic("trigger")(trigger.asInstanceOf[js.Any])
     if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])

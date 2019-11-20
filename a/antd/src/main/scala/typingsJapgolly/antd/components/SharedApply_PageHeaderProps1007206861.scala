@@ -22,7 +22,6 @@ import scala.scalajs.js.annotation._
 abstract class SharedApply_PageHeaderProps1007206861 () {
   def __component: js.Any
   def apply(
-    title: VdomNode,
     avatar: AvatarProps = null,
     backIcon: VdomNode = null,
     breadcrumb: BreadcrumbProps = null,
@@ -35,6 +34,7 @@ abstract class SharedApply_PageHeaderProps1007206861 () {
     style: CSSProperties = null,
     subTitle: VdomNode = null,
     tags: Element | js.Array[Element] = null,
+    title: VdomNode = null,
     key: js.UndefOr[Key] = js.undefined,
     overrides: StringDictionary[js.Any] = null
   )(
@@ -45,8 +45,7 @@ abstract class SharedApply_PageHeaderProps1007206861 () {
   ] = {
     val __obj = js.Dynamic.literal()
   
-      if (title != null) __obj.updateDynamic("title")(title.rawNode.asInstanceOf[js.Any])
-    if (avatar != null) __obj.updateDynamic("avatar")(avatar.asInstanceOf[js.Any])
+      if (avatar != null) __obj.updateDynamic("avatar")(avatar.asInstanceOf[js.Any])
     if (backIcon != null) __obj.updateDynamic("backIcon")(backIcon.rawNode.asInstanceOf[js.Any])
     if (breadcrumb != null) __obj.updateDynamic("breadcrumb")(breadcrumb.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
@@ -58,6 +57,7 @@ abstract class SharedApply_PageHeaderProps1007206861 () {
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (subTitle != null) __obj.updateDynamic("subTitle")(subTitle.rawNode.asInstanceOf[js.Any])
     if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.rawNode.asInstanceOf[js.Any])
     key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
     if (overrides != null) js.Dynamic.global.Object.assign(__obj, overrides)
   

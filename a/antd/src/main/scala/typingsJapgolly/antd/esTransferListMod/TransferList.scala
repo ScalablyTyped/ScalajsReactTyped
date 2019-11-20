@@ -1,7 +1,6 @@
 package typingsJapgolly.antd.esTransferListMod
 
 import japgolly.scalajs.react.ReactEventFrom
-import japgolly.scalajs.react.raw.React.Element
 import japgolly.scalajs.react.raw.React.Node
 import org.scalajs.dom.raw.HTMLInputElement
 import typingsJapgolly.antd.Anon_FilteredItems
@@ -11,7 +10,7 @@ import typingsJapgolly.antd.antdStrings.none
 import typingsJapgolly.antd.antdStrings.part
 import typingsJapgolly.antd.esTransferMod.TransferItem
 import typingsJapgolly.react.reactMod.Component
-import typingsJapgolly.react.reactMod.ReactNode
+import typingsJapgolly.react.reactMod._Global_.JSX.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -45,8 +44,8 @@ trait TransferList
     searchPlaceholder: String,
     filterValue: String,
     filteredItems: js.Array[TransferItem],
-    notFoundContent: ReactNode,
-    bodyDom: ReactNode,
+    notFoundContent: Node,
+    bodyDom: Node,
     filteredRenderItems: js.Array[RenderedItem],
     checkedKeys: js.Array[String]
   ): Node = js.native
@@ -55,8 +54,8 @@ trait TransferList
     searchPlaceholder: String,
     filterValue: String,
     filteredItems: js.Array[TransferItem],
-    notFoundContent: ReactNode,
-    bodyDom: ReactNode,
+    notFoundContent: Node,
+    bodyDom: Node,
     filteredRenderItems: js.Array[RenderedItem],
     checkedKeys: js.Array[String],
     renderList: RenderListFunction
@@ -66,8 +65,8 @@ trait TransferList
     searchPlaceholder: String,
     filterValue: String,
     filteredItems: js.Array[TransferItem],
-    notFoundContent: ReactNode,
-    bodyDom: ReactNode,
+    notFoundContent: Node,
+    bodyDom: Node,
     filteredRenderItems: js.Array[RenderedItem],
     checkedKeys: js.Array[String],
     renderList: RenderListFunction,
@@ -78,8 +77,8 @@ trait TransferList
     searchPlaceholder: String,
     filterValue: String,
     filteredItems: js.Array[TransferItem],
-    notFoundContent: ReactNode,
-    bodyDom: ReactNode,
+    notFoundContent: Node,
+    bodyDom: Node,
     filteredRenderItems: js.Array[RenderedItem],
     checkedKeys: js.Array[String],
     renderList: RenderListFunction,

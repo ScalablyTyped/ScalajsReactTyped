@@ -5,6 +5,14 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object jquery {
+  import org.scalajs.dom.raw.DragEvent
+  import org.scalajs.dom.raw.Element
+  import org.scalajs.dom.raw.Event
+  import org.scalajs.dom.raw.FocusEvent
+  import org.scalajs.dom.raw.KeyboardEvent
+  import org.scalajs.dom.raw.MouseEvent
+  import org.scalajs.dom.raw.TouchEvent
+  import org.scalajs.dom.raw.UIEvent
   import typingsJapgolly.jquery.JQuery.AjaxSettings
   import typingsJapgolly.jquery.JQuery.Callbacks
   import typingsJapgolly.jquery.JQuery.Coordinates
@@ -13,17 +21,10 @@ package object jquery {
   import typingsJapgolly.jquery.JQuery.EventStatic
   import typingsJapgolly.jquery.JQuery.NameValuePair
   import typingsJapgolly.jquery.JQuery.PlainObject
-  import typingsJapgolly.jquery.JQuery.PromiseBase
+  import typingsJapgolly.jquery.JQuery.Promise
+  import typingsJapgolly.jquery.JQuery.Thenable
   import typingsJapgolly.jquery.JQuery.TypeOrArray
   import typingsJapgolly.jquery.JQuery.jqXHR
-  import typingsJapgolly.std.DragEvent
-  import typingsJapgolly.std.Element
-  import typingsJapgolly.std.Event
-  import typingsJapgolly.std.FocusEvent
-  import typingsJapgolly.std.KeyboardEvent
-  import typingsJapgolly.std.MouseEvent
-  import typingsJapgolly.std.TouchEvent
-  import typingsJapgolly.std.UIEvent
 
   type JQuery[TElement] = JQuery_[TElement]
   // tslint:disable-next-line:no-empty-interface
@@ -39,12 +40,12 @@ package object jquery {
   type JQueryEasingFunction = js.Function1[/* percent */ Double, Double]
   // tslint:disable-next-line:no-empty-interface
   type JQueryEventConstructor = EventStatic
-  type JQueryGenericPromise[T] = js.Thenable[T]
+  type JQueryGenericPromise[T] = Thenable[T]
   /**
     * @deprecated ​ Deprecated. Use \`{@link JQueryStatic.param JQueryStatic&#91;'param'&#93;}\`.
     */
   type JQueryParam = js.Function2[/* obj */ js.Any, /* traditional */ js.UndefOr[Boolean], String]
-  type JQueryPromise[T] = PromiseBase[T, js.Any, js.Any, T, js.Any, js.Any, T, js.Any, js.Any, T, js.Any, js.Any]
+  type JQueryPromise[T] = Promise[T, js.Any, js.Any]
   // Legacy types that are not represented in the current type definitions are marked deprecated.
   /**
     * @deprecated ​ Deprecated. Use \`{@link JQuery.Deferred.Callback }\` or \`{@link JQuery.Deferred.CallbackBase }\`.

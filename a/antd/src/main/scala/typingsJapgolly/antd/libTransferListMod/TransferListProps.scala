@@ -57,7 +57,6 @@ object TransferListProps {
     handleSelectAll: (js.Array[TransferItem], Boolean) => Callback,
     itemUnit: String,
     itemsUnit: String,
-    notFoundContent: VdomNode,
     onItemSelect: (String, Boolean) => Callback,
     onItemSelectAll: (js.Array[String], Boolean) => Callback,
     onScroll: js.Function,
@@ -69,6 +68,7 @@ object TransferListProps {
     filterOption: (/* filterText */ String, /* item */ TransferItem) => CallbackTo[Boolean] = null,
     footer: /* props */ TransferListProps => CallbackTo[Node] = null,
     `lazy`: Boolean | js.Object = null,
+    notFoundContent: VdomNode = null,
     render: /* item */ TransferItem => CallbackTo[RenderResult] = null,
     renderList: /* props */ TransferListBodyProps => CallbackTo[Node] = null,
     showSearch: js.UndefOr[Boolean] = js.undefined,
@@ -80,7 +80,6 @@ object TransferListProps {
     __obj.updateDynamic("handleFilter")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[org.scalajs.dom.raw.HTMLInputElement]) => handleFilter(t0).runNow()))
     __obj.updateDynamic("handleSelect")(js.Any.fromFunction2((t0: typingsJapgolly.antd.libTransferMod.TransferItem, t1: scala.Boolean) => handleSelect(t0, t1).runNow()))
     __obj.updateDynamic("handleSelectAll")(js.Any.fromFunction2((t0: js.Array[typingsJapgolly.antd.libTransferMod.TransferItem], t1: scala.Boolean) => handleSelectAll(t0, t1).runNow()))
-    if (notFoundContent != null) __obj.updateDynamic("notFoundContent")(notFoundContent.rawNode.asInstanceOf[js.Any])
     __obj.updateDynamic("onItemSelect")(js.Any.fromFunction2((t0: java.lang.String, t1: scala.Boolean) => onItemSelect(t0, t1).runNow()))
     __obj.updateDynamic("onItemSelectAll")(js.Any.fromFunction2((t0: js.Array[java.lang.String], t1: scala.Boolean) => onItemSelectAll(t0, t1).runNow()))
     if (body != null) __obj.updateDynamic("body")(js.Any.fromFunction1((t0: /* props */ typingsJapgolly.antd.libTransferListMod.TransferListProps) => body(t0).runNow()))
@@ -88,6 +87,7 @@ object TransferListProps {
     if (filterOption != null) __obj.updateDynamic("filterOption")(js.Any.fromFunction2((t0: /* filterText */ java.lang.String, t1: /* item */ typingsJapgolly.antd.libTransferMod.TransferItem) => filterOption(t0, t1).runNow()))
     if (footer != null) __obj.updateDynamic("footer")(js.Any.fromFunction1((t0: /* props */ typingsJapgolly.antd.libTransferListMod.TransferListProps) => footer(t0).runNow()))
     if (`lazy` != null) __obj.updateDynamic("lazy")(`lazy`.asInstanceOf[js.Any])
+    if (notFoundContent != null) __obj.updateDynamic("notFoundContent")(notFoundContent.rawNode.asInstanceOf[js.Any])
     if (render != null) __obj.updateDynamic("render")(js.Any.fromFunction1((t0: /* item */ typingsJapgolly.antd.libTransferMod.TransferItem) => render(t0).runNow()))
     if (renderList != null) __obj.updateDynamic("renderList")(js.Any.fromFunction1((t0: /* props */ typingsJapgolly.antd.libTransferRenderListBodyMod.TransferListBodyProps) => renderList(t0).runNow()))
     if (!js.isUndefined(showSearch)) __obj.updateDynamic("showSearch")(showSearch.asInstanceOf[js.Any])

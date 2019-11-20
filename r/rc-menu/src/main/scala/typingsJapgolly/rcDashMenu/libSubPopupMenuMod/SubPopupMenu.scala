@@ -12,7 +12,6 @@ import typingsJapgolly.rcDashMenu.libInterfaceMod.SelectEventHandler
 import typingsJapgolly.rcDashMenu.libMenuItemMod.MenuItem
 import typingsJapgolly.rcDashMenu.libMenuItemMod.MenuItemProps
 import typingsJapgolly.react.reactMod.Component
-import typingsJapgolly.react.reactMod.ReactElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -43,8 +42,8 @@ class SubPopupMenu protected ()
     */
   def onKeyDown(e: ReactKeyboardEventFrom[HTMLElement], callback: js.Function1[/* item */ MenuItem, Unit]): Double = js.native
   def renderCommonMenuItem(child: Element, i: Double, extraProps: MenuItemProps): Element = js.native
-  def renderMenuItem(c: ReactElement, i: Double, subMenuKey: String): Element = js.native
-  def renderMenuItem(c: ReactElement, i: Double, subMenuKey: Double): Element = js.native
+  def renderMenuItem(c: Element, i: Double, subMenuKey: String): Element = js.native
+  def renderMenuItem(c: Element, i: Double, subMenuKey: Double): Element = js.native
   @JSName("shouldComponentUpdate")
   def shouldComponentUpdate_MSubPopupMenu(nextProps: SubPopupMenuProps): Boolean = js.native
   def step(direction: Double): MenuItem = js.native

@@ -312,8 +312,6 @@ trait SwitchBaseProps extends js.Object {
 object SwitchBaseProps {
   @scala.inline
   def apply(
-    checkedIcon: VdomNode,
-    icon: VdomNode,
     TouchRippleProps: Partial[TouchRippleProps] = null,
     about: String = null,
     accessKey: String = null,
@@ -373,6 +371,7 @@ object SwitchBaseProps {
     buttonRef: Ref | RefHandle[_] = null,
     centerRipple: js.UndefOr[Boolean] = js.undefined,
     checked: Boolean | String = null,
+    checkedIcon: VdomNode = null,
     children: VdomNode = null,
     className: String = null,
     classes: PartialClassNameMapSwitchBaseClassKey = null,
@@ -401,6 +400,7 @@ object SwitchBaseProps {
     hidden: js.UndefOr[Boolean] = js.undefined,
     href: String = null,
     hrefLang: String = null,
+    icon: VdomNode = null,
     id: String = null,
     inlist: js.Any = null,
     innerRef: Ref | RefHandle[_] = null,
@@ -448,7 +448,7 @@ object SwitchBaseProps {
     onEnded: ReactEventFrom[HTMLElement] => Callback = null,
     onError: ReactEventFrom[HTMLElement] => Callback = null,
     onFocus: ReactFocusEventFrom[HTMLElement] => Callback = null,
-    onFocusVisible: ReactFocusEventFrom[Element] => Callback = null,
+    onFocusVisible: ReactFocusEventFrom[js.Any with Element] => Callback = null,
     onInput: ReactEventFrom[HTMLElement] => Callback = null,
     onInvalid: ReactEventFrom[HTMLElement] => Callback = null,
     onKeyDown: ReactKeyboardEventFrom[HTMLElement] => Callback = null,
@@ -524,8 +524,6 @@ object SwitchBaseProps {
     vocab: String = null
   ): SwitchBaseProps = {
     val __obj = js.Dynamic.literal()
-    if (checkedIcon != null) __obj.updateDynamic("checkedIcon")(checkedIcon.rawNode.asInstanceOf[js.Any])
-    if (icon != null) __obj.updateDynamic("icon")(icon.rawNode.asInstanceOf[js.Any])
     if (TouchRippleProps != null) __obj.updateDynamic("TouchRippleProps")(TouchRippleProps.asInstanceOf[js.Any])
     if (about != null) __obj.updateDynamic("about")(about.asInstanceOf[js.Any])
     if (accessKey != null) __obj.updateDynamic("accessKey")(accessKey.asInstanceOf[js.Any])
@@ -585,6 +583,7 @@ object SwitchBaseProps {
     if (buttonRef != null) __obj.updateDynamic("buttonRef")(buttonRef.asInstanceOf[js.Any])
     if (!js.isUndefined(centerRipple)) __obj.updateDynamic("centerRipple")(centerRipple.asInstanceOf[js.Any])
     if (checked != null) __obj.updateDynamic("checked")(checked.asInstanceOf[js.Any])
+    if (checkedIcon != null) __obj.updateDynamic("checkedIcon")(checkedIcon.rawNode.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.rawNode.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (classes != null) __obj.updateDynamic("classes")(classes.asInstanceOf[js.Any])
@@ -613,6 +612,7 @@ object SwitchBaseProps {
     if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.asInstanceOf[js.Any])
     if (href != null) __obj.updateDynamic("href")(href.asInstanceOf[js.Any])
     if (hrefLang != null) __obj.updateDynamic("hrefLang")(hrefLang.asInstanceOf[js.Any])
+    if (icon != null) __obj.updateDynamic("icon")(icon.rawNode.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (inlist != null) __obj.updateDynamic("inlist")(inlist.asInstanceOf[js.Any])
     if (innerRef != null) __obj.updateDynamic("innerRef")(innerRef.asInstanceOf[js.Any])
@@ -660,7 +660,7 @@ object SwitchBaseProps {
     if (onEnded != null) __obj.updateDynamic("onEnded")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[org.scalajs.dom.raw.HTMLElement]) => onEnded(t0).runNow()))
     if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[org.scalajs.dom.raw.HTMLElement]) => onError(t0).runNow()))
     if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactFocusEventFrom[org.scalajs.dom.raw.HTMLElement]) => onFocus(t0).runNow()))
-    if (onFocusVisible != null) __obj.updateDynamic("onFocusVisible")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactFocusEventFrom[org.scalajs.dom.raw.Element]) => onFocusVisible(t0).runNow()))
+    if (onFocusVisible != null) __obj.updateDynamic("onFocusVisible")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactFocusEventFrom[js.Any with org.scalajs.dom.raw.Element]) => onFocusVisible(t0).runNow()))
     if (onInput != null) __obj.updateDynamic("onInput")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[org.scalajs.dom.raw.HTMLElement]) => onInput(t0).runNow()))
     if (onInvalid != null) __obj.updateDynamic("onInvalid")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[org.scalajs.dom.raw.HTMLElement]) => onInvalid(t0).runNow()))
     if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactKeyboardEventFrom[org.scalajs.dom.raw.HTMLElement]) => onKeyDown(t0).runNow()))

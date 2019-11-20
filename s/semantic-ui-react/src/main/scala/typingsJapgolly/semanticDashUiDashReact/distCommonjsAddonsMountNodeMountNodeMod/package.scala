@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object distCommonjsAddonsMountNodeMountNodeMod {
-  import typingsJapgolly.react.reactMod.Component
+  import japgolly.scalajs.react.raw.React.Component
 
-  type MountNode = Component[MountNodeProps, js.Object, js.Any]
+  type MountNode = Component[MountNodeProps with js.Object, js.Object]
 }

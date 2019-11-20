@@ -427,8 +427,8 @@ object SnackbarProps {
     onLoadedData: ReactEventFrom[HTMLDivElement] => Callback = null,
     onLoadedMetadata: ReactEventFrom[HTMLDivElement] => Callback = null,
     onMouseDown: ReactMouseEventFrom[HTMLDivElement] => Callback = null,
-    onMouseEnter: ReactMouseEventFrom[Element] => Callback = null,
-    onMouseLeave: ReactMouseEventFrom[Element] => Callback = null,
+    onMouseEnter: ReactMouseEventFrom[js.Any with Element] => Callback = null,
+    onMouseLeave: ReactMouseEventFrom[js.Any with Element] => Callback = null,
     onMouseMove: ReactMouseEventFrom[HTMLDivElement] => Callback = null,
     onMouseOut: ReactMouseEventFrom[HTMLDivElement] => Callback = null,
     onMouseOver: ReactMouseEventFrom[HTMLDivElement] => Callback = null,
@@ -621,8 +621,8 @@ object SnackbarProps {
     if (onLoadedData != null) __obj.updateDynamic("onLoadedData")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[org.scalajs.dom.raw.HTMLDivElement]) => onLoadedData(t0).runNow()))
     if (onLoadedMetadata != null) __obj.updateDynamic("onLoadedMetadata")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[org.scalajs.dom.raw.HTMLDivElement]) => onLoadedMetadata(t0).runNow()))
     if (onMouseDown != null) __obj.updateDynamic("onMouseDown")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactMouseEventFrom[org.scalajs.dom.raw.HTMLDivElement]) => onMouseDown(t0).runNow()))
-    if (onMouseEnter != null) __obj.updateDynamic("onMouseEnter")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactMouseEventFrom[org.scalajs.dom.raw.Element]) => onMouseEnter(t0).runNow()))
-    if (onMouseLeave != null) __obj.updateDynamic("onMouseLeave")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactMouseEventFrom[org.scalajs.dom.raw.Element]) => onMouseLeave(t0).runNow()))
+    if (onMouseEnter != null) __obj.updateDynamic("onMouseEnter")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactMouseEventFrom[js.Any with org.scalajs.dom.raw.Element]) => onMouseEnter(t0).runNow()))
+    if (onMouseLeave != null) __obj.updateDynamic("onMouseLeave")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactMouseEventFrom[js.Any with org.scalajs.dom.raw.Element]) => onMouseLeave(t0).runNow()))
     if (onMouseMove != null) __obj.updateDynamic("onMouseMove")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactMouseEventFrom[org.scalajs.dom.raw.HTMLDivElement]) => onMouseMove(t0).runNow()))
     if (onMouseOut != null) __obj.updateDynamic("onMouseOut")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactMouseEventFrom[org.scalajs.dom.raw.HTMLDivElement]) => onMouseOut(t0).runNow()))
     if (onMouseOver != null) __obj.updateDynamic("onMouseOver")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactMouseEventFrom[org.scalajs.dom.raw.HTMLDivElement]) => onMouseOver(t0).runNow()))

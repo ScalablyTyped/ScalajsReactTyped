@@ -17,8 +17,8 @@ trait TransitionablePortalProps
 object TransitionablePortalProps {
   @scala.inline
   def apply(
-    children: VdomNode,
     StringDictionary: /* key */ StringDictionary[js.Any] = null,
+    children: VdomNode = null,
     onClose: (/* nothing */ Null, /* data */ PortalProps with TransitionablePortalState) => Callback = null,
     onHide: (/* nothing */ Null, /* data */ TransitionEventData with TransitionablePortalState) => Callback = null,
     onOpen: (/* nothing */ Null, /* data */ PortalProps with TransitionablePortalState) => Callback = null,
@@ -27,8 +27,8 @@ object TransitionablePortalProps {
     transition: TransitionProps = null
   ): TransitionablePortalProps = {
     val __obj = js.Dynamic.literal()
-    if (children != null) __obj.updateDynamic("children")(children.rawNode.asInstanceOf[js.Any])
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (children != null) __obj.updateDynamic("children")(children.rawNode.asInstanceOf[js.Any])
     if (onClose != null) __obj.updateDynamic("onClose")(js.Any.fromFunction2((t0: /* nothing */ scala.Null, t1: /* data */ typingsJapgolly.semanticDashUiDashReact.distCommonjsAddonsPortalPortalMod.PortalProps with typingsJapgolly.semanticDashUiDashReact.distCommonjsAddonsTransitionablePortalTransitionablePortalMod.TransitionablePortalState) => onClose(t0, t1).runNow()))
     if (onHide != null) __obj.updateDynamic("onHide")(js.Any.fromFunction2((t0: /* nothing */ scala.Null, t1: /* data */ typingsJapgolly.semanticDashUiDashReact.distCommonjsModulesTransitionTransitionMod.TransitionEventData with typingsJapgolly.semanticDashUiDashReact.distCommonjsAddonsTransitionablePortalTransitionablePortalMod.TransitionablePortalState) => onHide(t0, t1).runNow()))
     if (onOpen != null) __obj.updateDynamic("onOpen")(js.Any.fromFunction2((t0: /* nothing */ scala.Null, t1: /* data */ typingsJapgolly.semanticDashUiDashReact.distCommonjsAddonsPortalPortalMod.PortalProps with typingsJapgolly.semanticDashUiDashReact.distCommonjsAddonsTransitionablePortalTransitionablePortalMod.TransitionablePortalState) => onOpen(t0, t1).runNow()))

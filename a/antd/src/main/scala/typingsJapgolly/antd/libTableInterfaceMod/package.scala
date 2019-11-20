@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation._
 
 package object libTableInterfaceMod {
   import org.scalablytyped.runtime.StringDictionary
+  import org.scalajs.dom.raw.Event
+  import org.scalajs.dom.raw.HTMLElement
   import typingsJapgolly.antd.Anon_CurrentDataSource
-  import typingsJapgolly.std.Event
-  import typingsJapgolly.std.HTMLElement
 
   type CheckboxPropsCache = StringDictionary[js.Any]
   type CompareFn[T] = js.Function3[/* a */ T, /* b */ T, /* sortOrder */ js.UndefOr[SortOrder], Double]

@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object atAntDashDesignCreateDashReactDashContextMod {
-  import typingsJapgolly.react.reactMod.ReactNode
+  import japgolly.scalajs.react.raw.React.Node
 
-  type RenderFn[T] = js.Function1[/* value */ T, ReactNode]
+  type RenderFn[T] = js.Function1[/* value */ T, Node]
 }

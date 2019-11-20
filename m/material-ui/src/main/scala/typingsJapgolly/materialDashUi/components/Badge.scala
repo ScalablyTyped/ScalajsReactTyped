@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation._
 
 object Badge {
   def apply(
-    badgeContent: VdomNode,
+    badgeContent: VdomNode = null,
     badgeStyle: CSSProperties = null,
     className: String = null,
     primary: js.UndefOr[Boolean] = js.undefined,

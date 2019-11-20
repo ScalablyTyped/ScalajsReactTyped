@@ -5,9 +5,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object transitionMod {
-  import typingsJapgolly.react.reactMod.Component
-  import typingsJapgolly.react.reactMod.ReactNode
-  import typingsJapgolly.std.HTMLElement
+  import japgolly.scalajs.react.raw.React.Component
+  import japgolly.scalajs.react.raw.React.Node
+  import org.scalajs.dom.raw.HTMLElement
 
   type EndHandler = js.Function2[/* node */ HTMLElement, /* done */ js.Function0[Unit], Unit]
   type EnterHandler = js.Function2[/* node */ HTMLElement, /* isAppearing */ Boolean, Unit]
@@ -53,6 +53,6 @@ package object transitionMod {
     * ```
     *
     */
-  type Transition = Component[TransitionProps, js.Object, js.Any]
-  type TransitionChildren = ReactNode | (js.Function1[/* status */ TransitionStatus, ReactNode])
+  type Transition = Component[TransitionProps with js.Object, js.Object]
+  type TransitionChildren = Node | (js.Function1[/* status */ TransitionStatus, Node])
 }

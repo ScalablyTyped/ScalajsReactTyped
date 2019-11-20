@@ -14,10 +14,10 @@ trait ColumnFilterItem extends js.Object {
 
 object ColumnFilterItem {
   @scala.inline
-  def apply(text: VdomNode, value: String, children: js.Array[ColumnFilterItem] = null): ColumnFilterItem = {
+  def apply(value: String, children: js.Array[ColumnFilterItem] = null, text: VdomNode = null): ColumnFilterItem = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.rawNode.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.rawNode.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColumnFilterItem]
   }
 }

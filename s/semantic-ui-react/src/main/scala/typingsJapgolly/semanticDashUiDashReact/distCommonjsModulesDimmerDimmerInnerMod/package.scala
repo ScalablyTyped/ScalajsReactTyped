@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object distCommonjsModulesDimmerDimmerInnerMod {
-  import typingsJapgolly.react.reactMod.Component
+  import japgolly.scalajs.react.raw.React.Component
 
-  type DimmerInner = Component[DimmerInnerProps, js.Object, js.Any]
+  type DimmerInner = Component[DimmerInnerProps with js.Object, js.Object]
 }

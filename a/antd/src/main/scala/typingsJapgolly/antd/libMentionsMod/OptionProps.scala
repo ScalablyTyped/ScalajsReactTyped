@@ -15,10 +15,14 @@ trait OptionProps
 
 object OptionProps {
   @scala.inline
-  def apply(children: VdomNode, value: String, StringDictionary: /* key */ StringDictionary[js.Any] = null): OptionProps = {
+  def apply(
+    value: String,
+    StringDictionary: /* key */ StringDictionary[js.Any] = null,
+    children: VdomNode = null
+  ): OptionProps = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-    if (children != null) __obj.updateDynamic("children")(children.rawNode.asInstanceOf[js.Any])
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (children != null) __obj.updateDynamic("children")(children.rawNode.asInstanceOf[js.Any])
     __obj.asInstanceOf[OptionProps]
   }
 }

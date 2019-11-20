@@ -449,7 +449,7 @@ object PartialListItemProps {
     onEnded: ReactEventFrom[HTMLElement] => Callback = null,
     onError: ReactEventFrom[HTMLElement] => Callback = null,
     onFocus: ReactFocusEventFrom[HTMLElement] => Callback = null,
-    onFocusVisible: ReactFocusEventFrom[Element] => Callback = null,
+    onFocusVisible: ReactFocusEventFrom[js.Any with Element] => Callback = null,
     onInput: ReactEventFrom[HTMLElement] => Callback = null,
     onInvalid: ReactEventFrom[HTMLElement] => Callback = null,
     onKeyDown: ReactKeyboardEventFrom[HTMLElement] => Callback = null,
@@ -662,7 +662,7 @@ object PartialListItemProps {
     if (onEnded != null) __obj.updateDynamic("onEnded")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[org.scalajs.dom.raw.HTMLElement]) => onEnded(t0).runNow()))
     if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[org.scalajs.dom.raw.HTMLElement]) => onError(t0).runNow()))
     if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactFocusEventFrom[org.scalajs.dom.raw.HTMLElement]) => onFocus(t0).runNow()))
-    if (onFocusVisible != null) __obj.updateDynamic("onFocusVisible")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactFocusEventFrom[org.scalajs.dom.raw.Element]) => onFocusVisible(t0).runNow()))
+    if (onFocusVisible != null) __obj.updateDynamic("onFocusVisible")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactFocusEventFrom[js.Any with org.scalajs.dom.raw.Element]) => onFocusVisible(t0).runNow()))
     if (onInput != null) __obj.updateDynamic("onInput")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[org.scalajs.dom.raw.HTMLElement]) => onInput(t0).runNow()))
     if (onInvalid != null) __obj.updateDynamic("onInvalid")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[org.scalajs.dom.raw.HTMLElement]) => onInvalid(t0).runNow()))
     if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactKeyboardEventFrom[org.scalajs.dom.raw.HTMLElement]) => onKeyDown(t0).runNow()))

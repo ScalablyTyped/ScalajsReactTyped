@@ -17,7 +17,7 @@ trait DescriptionsItemProps extends js.Object {
 object DescriptionsItemProps {
   @scala.inline
   def apply(
-    children: VdomNode,
+    children: VdomNode = null,
     className: String = null,
     label: VdomNode = null,
     prefixCls: String = null,

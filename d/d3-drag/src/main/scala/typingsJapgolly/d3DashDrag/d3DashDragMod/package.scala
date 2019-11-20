@@ -5,10 +5,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object d3DashDragMod {
-  import typingsJapgolly.std.Element
-  import typingsJapgolly.std.HTMLElement
-  import typingsJapgolly.std.SVGGElement
-  import typingsJapgolly.std.SVGSVGElement
+  import org.scalajs.dom.raw.Element
+  import org.scalajs.dom.raw.HTMLElement
+  import org.scalajs.dom.raw.SVGGElement
+  import org.scalajs.dom.raw.SVGSVGElement
 
   type DragContainerElement = HTMLElement | SVGSVGElement | SVGGElement
   type DraggedElementBaseType = Element

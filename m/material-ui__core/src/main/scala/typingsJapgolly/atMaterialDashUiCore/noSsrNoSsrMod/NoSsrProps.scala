@@ -13,7 +13,7 @@ trait NoSsrProps extends js.Object {
 
 object NoSsrProps {
   @scala.inline
-  def apply(children: VdomNode, fallback: VdomNode = null): NoSsrProps = {
+  def apply(children: VdomNode = null, fallback: VdomNode = null): NoSsrProps = {
     val __obj = js.Dynamic.literal()
     if (children != null) __obj.updateDynamic("children")(children.rawNode.asInstanceOf[js.Any])
     if (fallback != null) __obj.updateDynamic("fallback")(fallback.rawNode.asInstanceOf[js.Any])

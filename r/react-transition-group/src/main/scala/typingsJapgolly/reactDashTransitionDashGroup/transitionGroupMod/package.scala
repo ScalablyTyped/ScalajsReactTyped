@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object transitionGroupMod {
-  import typingsJapgolly.react.reactMod.Component
+  import japgolly.scalajs.react.raw.React.Component
   import typingsJapgolly.react.reactMod.ReactType
   import typingsJapgolly.reactDashTransitionDashGroup.Anon_Child
   import typingsJapgolly.reactDashTransitionDashGroup.reactDashTransitionDashGroupStrings.div
@@ -67,6 +67,6 @@ package object transitionGroupMod {
     * components. This means you can mix and match animations across different
     * list items.
     */
-  type TransitionGroup = Component[TransitionGroupProps[div, js.Any], js.Object, js.Any]
+  type TransitionGroup = Component[(TransitionGroupProps[div, js.Any]) with js.Object, js.Object]
   type TransitionGroupProps[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 174 */ js.Any */, V /* <: ReactType[_] */] = (IntrinsicTransitionGroupProps[T] with (/* import warning: importer.ImportType#apply Failed type conversion: react.react._Global_.JSX.IntrinsicElements[T] */ js.Any)) | (ComponentTransitionGroupProps[V] with Anon_Child)
 }

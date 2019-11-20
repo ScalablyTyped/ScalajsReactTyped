@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object inputLabelInputLabelMod {
-  import typingsJapgolly.react.reactMod.Component
+  import japgolly.scalajs.react.raw.React.Component
 
-  type InputLabel = Component[InputLabelProps, js.Object, js.Any]
+  type InputLabel = Component[InputLabelProps with js.Object, js.Object]
 }

@@ -5,10 +5,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object mobxDashReactMod {
+  import japgolly.scalajs.react.raw.React.ComponentClassP
   import org.scalablytyped.runtime.StringDictionary
   import typingsJapgolly.react.reactMod.ClassicComponentClass
-  import typingsJapgolly.react.reactMod.ComponentClass
-  import typingsJapgolly.react.reactMod.ComponentState
   import typingsJapgolly.react.reactMod.StatelessComponent
 
   // Ideal implementation:
@@ -28,7 +27,7 @@ package object mobxDashReactMod {
     * disposeOnUnmount
     */
   type Disposer = js.Function0[Unit]
-  type IReactComponent[P] = StatelessComponent[P] | (ComponentClass[P, ComponentState]) | ClassicComponentClass[P]
+  type IReactComponent[P] = StatelessComponent[P] | (ComponentClassP[P with js.Object]) | ClassicComponentClass[P]
   type IStoresToProps[S /* <: IValueMap */, P /* <: IValueMap */, I /* <: IValueMap */, C /* <: IValueMap */] = js.Function3[/* stores */ S, /* nextProps */ P, /* context */ C, I]
   type IValueMap = StringDictionary[js.Any]
 }

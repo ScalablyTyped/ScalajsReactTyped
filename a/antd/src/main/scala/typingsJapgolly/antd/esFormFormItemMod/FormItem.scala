@@ -29,12 +29,12 @@ trait FormItem
   def isRequired(): js.Any = js.native
   def onHelpAnimEnd(_key: String, helpShow: Boolean): Unit = js.native
   def onLabelClick(): Unit = js.native
-  def renderChildren(prefixCls: String): js.Array[Element] = js.native
-  def renderExtra(prefixCls: String): Element | Null = js.native
-  def renderFormItem(hasGetPrefixCls: ConfigConsumerProps): Element = js.native
-  def renderHelp(prefixCls: String): Element = js.native
-  def renderLabel(prefixCls: String): Element = js.native
-  def renderValidateWrapper(prefixCls: String, c1: Node, c2: Node, c3: Node): Element = js.native
-  def renderWrapper(prefixCls: String, children: Node): Element = js.native
+  def renderChildren(prefixCls: String): js.Array[typingsJapgolly.react.reactMod._Global_.JSX.Element] = js.native
+  def renderExtra(prefixCls: String): typingsJapgolly.react.reactMod._Global_.JSX.Element | Null = js.native
+  def renderFormItem(hasGetPrefixCls: ConfigConsumerProps): typingsJapgolly.react.reactMod._Global_.JSX.Element = js.native
+  def renderHelp(prefixCls: String): typingsJapgolly.react.reactMod._Global_.JSX.Element = js.native
+  def renderLabel(prefixCls: String): typingsJapgolly.react.reactMod._Global_.JSX.Element = js.native
+  def renderValidateWrapper(prefixCls: String, c1: Node, c2: Node, c3: Node): typingsJapgolly.react.reactMod._Global_.JSX.Element = js.native
+  def renderWrapper(prefixCls: String, children: Node): typingsJapgolly.react.reactMod._Global_.JSX.Element = js.native
 }
 

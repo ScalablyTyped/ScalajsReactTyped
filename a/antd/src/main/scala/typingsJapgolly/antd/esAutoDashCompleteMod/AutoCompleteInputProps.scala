@@ -15,9 +15,9 @@ trait AutoCompleteInputProps extends js.Object {
 
 object AutoCompleteInputProps {
   @scala.inline
-  def apply(value: js.Any, onChange: ReactEventFrom[Element] => Callback = null): AutoCompleteInputProps = {
+  def apply(value: js.Any, onChange: ReactEventFrom[js.Any with Element] => Callback = null): AutoCompleteInputProps = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[org.scalajs.dom.raw.Element]) => onChange(t0).runNow()))
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[js.Any with org.scalajs.dom.raw.Element]) => onChange(t0).runNow()))
     __obj.asInstanceOf[AutoCompleteInputProps]
   }
 }

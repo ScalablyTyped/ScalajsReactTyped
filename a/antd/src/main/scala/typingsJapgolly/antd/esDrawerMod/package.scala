@@ -5,13 +5,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object esDrawerMod {
-  import typingsJapgolly.react.NativeMouseEvent
-  import typingsJapgolly.react.reactMod.KeyboardEvent
-  import typingsJapgolly.react.reactMod.MouseEvent
-  import typingsJapgolly.std.HTMLButtonElement
-  import typingsJapgolly.std.HTMLDivElement
-  import typingsJapgolly.std.HTMLElement
+  import japgolly.scalajs.react.ReactKeyboardEventFrom
+  import japgolly.scalajs.react.ReactMouseEventFrom
+  import org.scalajs.dom.raw.Element
+  import org.scalajs.dom.raw.HTMLButtonElement
+  import org.scalajs.dom.raw.HTMLDivElement
+  import org.scalajs.dom.raw.HTMLElement
 
-  type EventType = KeyboardEvent[HTMLDivElement] | (MouseEvent[HTMLDivElement | HTMLButtonElement, NativeMouseEvent])
+  type EventType = ReactKeyboardEventFrom[HTMLDivElement] | (ReactMouseEventFrom[(HTMLDivElement | HTMLButtonElement) with Element])
   type getContainerFunc = js.Function0[HTMLElement]
 }

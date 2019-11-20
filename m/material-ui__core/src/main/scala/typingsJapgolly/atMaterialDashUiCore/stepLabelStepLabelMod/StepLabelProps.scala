@@ -278,7 +278,6 @@ trait StepLabelProps extends js.Object {
 object StepLabelProps {
   @scala.inline
   def apply(
-    children: VdomNode,
     StepIconComponent: ReactType[_] = null,
     StepIconProps: PartialStepIconProps = null,
     about: String = null,
@@ -336,6 +335,7 @@ object StepLabelProps {
     autoCapitalize: String = null,
     autoCorrect: String = null,
     autoSave: String = null,
+    children: VdomNode = null,
     className: String = null,
     classes: PartialClassNameMapStepLabelClasskey = null,
     color: String = null,
@@ -465,7 +465,6 @@ object StepLabelProps {
     vocab: String = null
   ): StepLabelProps = {
     val __obj = js.Dynamic.literal()
-    if (children != null) __obj.updateDynamic("children")(children.rawNode.asInstanceOf[js.Any])
     if (StepIconComponent != null) __obj.updateDynamic("StepIconComponent")(StepIconComponent.asInstanceOf[js.Any])
     if (StepIconProps != null) __obj.updateDynamic("StepIconProps")(StepIconProps.asInstanceOf[js.Any])
     if (about != null) __obj.updateDynamic("about")(about.asInstanceOf[js.Any])
@@ -523,6 +522,7 @@ object StepLabelProps {
     if (autoCapitalize != null) __obj.updateDynamic("autoCapitalize")(autoCapitalize.asInstanceOf[js.Any])
     if (autoCorrect != null) __obj.updateDynamic("autoCorrect")(autoCorrect.asInstanceOf[js.Any])
     if (autoSave != null) __obj.updateDynamic("autoSave")(autoSave.asInstanceOf[js.Any])
+    if (children != null) __obj.updateDynamic("children")(children.rawNode.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (classes != null) __obj.updateDynamic("classes")(classes.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])

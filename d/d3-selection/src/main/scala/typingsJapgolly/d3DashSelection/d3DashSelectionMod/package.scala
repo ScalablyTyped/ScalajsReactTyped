@@ -6,12 +6,12 @@ import scala.scalajs.js.annotation._
 
 package object d3DashSelectionMod {
   import org.scalablytyped.runtime.StringDictionary
-  import typingsJapgolly.std.Document
-  import typingsJapgolly.std.Element
-  import typingsJapgolly.std.HTMLElement
-  import typingsJapgolly.std.SVGGElement
-  import typingsJapgolly.std.SVGSVGElement
-  import typingsJapgolly.std.Window
+  import org.scalajs.dom.raw.Document
+  import org.scalajs.dom.raw.Element
+  import org.scalajs.dom.raw.HTMLElement
+  import org.scalajs.dom.raw.SVGGElement
+  import org.scalajs.dom.raw.SVGSVGElement
+  import org.scalajs.dom.raw.Window
 
   type BaseType = Element | EnterElement | Document | Window | Null
   type ContainerElement = HTMLElement | SVGSVGElement | SVGGElement

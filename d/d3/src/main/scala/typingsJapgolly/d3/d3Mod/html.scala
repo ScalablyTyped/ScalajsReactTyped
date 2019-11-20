@@ -1,7 +1,7 @@
 package typingsJapgolly.d3.d3Mod
 
+import org.scalajs.dom.experimental.RequestInit
 import org.scalajs.dom.raw.Document
-import typingsJapgolly.std.RequestInit
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

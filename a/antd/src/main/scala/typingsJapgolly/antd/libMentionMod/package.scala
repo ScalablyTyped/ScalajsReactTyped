@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object libMentionMod {
-  import typingsJapgolly.react.reactMod.ReactElement
+  import japgolly.scalajs.react.raw.React.Element
 
-  type SuggestionItme = ReactElement | String
+  type SuggestionItme = Element | String
 }

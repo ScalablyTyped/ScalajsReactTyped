@@ -5,8 +5,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object formLabelFormLabelMod {
+  import org.scalajs.dom.raw.HTMLLabelElement
   import typingsJapgolly.react.reactMod.LabelHTMLAttributes
-  import typingsJapgolly.std.HTMLLabelElement
 
   type FormLabelBaseProps = LabelHTMLAttributes[HTMLLabelElement]
 }

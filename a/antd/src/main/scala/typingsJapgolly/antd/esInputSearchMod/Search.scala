@@ -1,11 +1,11 @@
 package typingsJapgolly.antd.esInputSearchMod
 
 import japgolly.scalajs.react.ReactEventFrom
-import japgolly.scalajs.react.raw.React.Element
 import org.scalajs.dom.raw.HTMLInputElement
 import typingsJapgolly.antd.esConfigDashProviderContextMod.ConfigConsumerProps
 import typingsJapgolly.react.reactMod.Component
 import typingsJapgolly.react.reactMod.KeyboardEvent
+import typingsJapgolly.react.reactMod._Global_.JSX.Element
 import typingsJapgolly.std.HTMLElement
 import typingsJapgolly.std.MouseEvent
 import scala.scalajs.js

@@ -66,7 +66,7 @@ trait StrictTransitionablePortalProps extends js.Object {
 object StrictTransitionablePortalProps {
   @scala.inline
   def apply(
-    children: VdomNode,
+    children: VdomNode = null,
     onClose: (/* nothing */ Null, /* data */ PortalProps with TransitionablePortalState) => Callback = null,
     onHide: (/* nothing */ Null, /* data */ TransitionEventData with TransitionablePortalState) => Callback = null,
     onOpen: (/* nothing */ Null, /* data */ PortalProps with TransitionablePortalState) => Callback = null,

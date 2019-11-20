@@ -19,7 +19,7 @@ trait BadgeProps extends js.Object {
 object BadgeProps {
   @scala.inline
   def apply(
-    badgeContent: VdomNode,
+    badgeContent: VdomNode = null,
     badgeStyle: CSSProperties = null,
     className: String = null,
     primary: js.UndefOr[Boolean] = js.undefined,

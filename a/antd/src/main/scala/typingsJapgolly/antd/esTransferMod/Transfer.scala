@@ -1,7 +1,6 @@
 package typingsJapgolly.antd.esTransferMod
 
 import japgolly.scalajs.react.ReactEventFrom
-import japgolly.scalajs.react.raw.React.Element
 import japgolly.scalajs.react.raw.React.Node
 import org.scalajs.dom.raw.HTMLDivElement
 import org.scalajs.dom.raw.HTMLInputElement
@@ -11,6 +10,7 @@ import typingsJapgolly.antd.antdStrings.sourceSelectedKeys
 import typingsJapgolly.antd.antdStrings.targetSelectedKeys
 import typingsJapgolly.antd.esCollapseCollapseMod.ExpandIconPosition
 import typingsJapgolly.react.reactMod.Component
+import typingsJapgolly.react.reactMod._Global_.JSX.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

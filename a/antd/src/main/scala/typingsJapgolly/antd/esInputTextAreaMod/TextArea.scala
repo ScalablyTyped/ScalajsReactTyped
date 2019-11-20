@@ -2,11 +2,11 @@ package typingsJapgolly.antd.esInputTextAreaMod
 
 import japgolly.scalajs.react.ReactEventFrom
 import japgolly.scalajs.react.ReactKeyboardEventFrom
-import japgolly.scalajs.react.raw.React.Element
 import org.scalajs.dom.raw.HTMLTextAreaElement
 import typingsJapgolly.antd.Anon_Resizing
 import typingsJapgolly.antd.esConfigDashProviderContextMod.ConfigConsumerProps
 import typingsJapgolly.react.reactMod.Component
+import typingsJapgolly.react.reactMod._Global_.JSX.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

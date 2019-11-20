@@ -5,9 +5,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object libMessageMod {
-  import typingsJapgolly.react.reactMod.ReactNode
+  import japgolly.scalajs.react.raw.React.Node
 
-  type ConfigContent = ReactNode | String
+  type ConfigContent = Node | String
   type ConfigDuration = Double | js.Function0[Unit]
   type ConfigOnClose = js.Function0[Unit]
   type JointContent = ConfigContent | ArgsProps

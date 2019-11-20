@@ -1,6 +1,6 @@
 package typingsJapgolly.d3DashDrag.d3DashDragMod
 
-import typingsJapgolly.std.Window
+import org.scalajs.dom.raw.Window
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

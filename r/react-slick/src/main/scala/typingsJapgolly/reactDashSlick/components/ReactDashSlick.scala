@@ -5,10 +5,9 @@ import japgolly.scalajs.react.CallbackTo
 import japgolly.scalajs.react.CtorType.ChildArg
 import japgolly.scalajs.react.Key
 import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import japgolly.scalajs.react.raw.React.Element
 import japgolly.scalajs.react.raw.React.Node
-import japgolly.scalajs.react.vdom.VdomElement
 import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.react.reactMod._Global_.JSX.Element
 import typingsJapgolly.reactDashSlick.reactDashSlickMod.LazyLoadTypes
 import typingsJapgolly.reactDashSlick.reactDashSlickMod.ResponsiveObject
 import typingsJapgolly.reactDashSlick.reactDashSlickMod.Settings
@@ -45,7 +44,7 @@ object ReactDashSlick {
     infinite: js.UndefOr[Boolean] = js.undefined,
     initialSlide: Int | Double = null,
     lazyLoad: LazyLoadTypes = null,
-    nextArrow: VdomElement = null,
+    nextArrow: Element = null,
     onEdge: /* swipeDirection */ SwipeDirection => Callback = null,
     onInit: js.UndefOr[Callback] = js.undefined,
     onLazyLoad: /* slidesToLoad */ js.Array[Double] => Callback = null,
@@ -54,7 +53,7 @@ object ReactDashSlick {
     pauseOnDotsHover: js.UndefOr[Boolean] = js.undefined,
     pauseOnFocus: js.UndefOr[Boolean] = js.undefined,
     pauseOnHover: js.UndefOr[Boolean] = js.undefined,
-    prevArrow: VdomElement = null,
+    prevArrow: Element = null,
     responsive: js.Array[ResponsiveObject] = null,
     rows: Int | Double = null,
     rtl: js.UndefOr[Boolean] = js.undefined,
@@ -105,7 +104,7 @@ object ReactDashSlick {
     if (!js.isUndefined(infinite)) __obj.updateDynamic("infinite")(infinite.asInstanceOf[js.Any])
     if (initialSlide != null) __obj.updateDynamic("initialSlide")(initialSlide.asInstanceOf[js.Any])
     if (lazyLoad != null) __obj.updateDynamic("lazyLoad")(lazyLoad.asInstanceOf[js.Any])
-    if (nextArrow != null) __obj.updateDynamic("nextArrow")(nextArrow.rawElement.asInstanceOf[js.Any])
+    if (nextArrow != null) __obj.updateDynamic("nextArrow")(nextArrow.asInstanceOf[js.Any])
     if (onEdge != null) __obj.updateDynamic("onEdge")(js.Any.fromFunction1((t0: /* swipeDirection */ typingsJapgolly.reactDashSlick.reactDashSlickMod.SwipeDirection) => onEdge(t0).runNow()))
     onInit.foreach(p => __obj.updateDynamic("onInit")(p.toJsFn))
     if (onLazyLoad != null) __obj.updateDynamic("onLazyLoad")(js.Any.fromFunction1((t0: /* slidesToLoad */ js.Array[scala.Double]) => onLazyLoad(t0).runNow()))
@@ -114,7 +113,7 @@ object ReactDashSlick {
     if (!js.isUndefined(pauseOnDotsHover)) __obj.updateDynamic("pauseOnDotsHover")(pauseOnDotsHover.asInstanceOf[js.Any])
     if (!js.isUndefined(pauseOnFocus)) __obj.updateDynamic("pauseOnFocus")(pauseOnFocus.asInstanceOf[js.Any])
     if (!js.isUndefined(pauseOnHover)) __obj.updateDynamic("pauseOnHover")(pauseOnHover.asInstanceOf[js.Any])
-    if (prevArrow != null) __obj.updateDynamic("prevArrow")(prevArrow.rawElement.asInstanceOf[js.Any])
+    if (prevArrow != null) __obj.updateDynamic("prevArrow")(prevArrow.asInstanceOf[js.Any])
     if (responsive != null) __obj.updateDynamic("responsive")(responsive.asInstanceOf[js.Any])
     if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
     if (!js.isUndefined(rtl)) __obj.updateDynamic("rtl")(rtl.asInstanceOf[js.Any])

@@ -1,9 +1,9 @@
 package typingsJapgolly.antd.libBadgeMod
 
-import japgolly.scalajs.react.raw.React.Element
 import typingsJapgolly.antd.libConfigDashProviderContextMod.ConfigConsumerProps
 import typingsJapgolly.react.reactMod.CSSProperties
 import typingsJapgolly.react.reactMod.Component
+import typingsJapgolly.react.reactMod._Global_.JSX.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,7 +22,7 @@ trait Badge
   def isZero(): Boolean = js.native
   def renderBadge(hasGetPrefixCls: ConfigConsumerProps): Element = js.native
   def renderBadgeNumber(prefixCls: String, scrollNumberPrefixCls: String): Element | Null = js.native
-  def renderDispayComponent(): js.UndefOr[Element] = js.native
+  def renderDispayComponent(): js.UndefOr[japgolly.scalajs.react.raw.React.Element] = js.native
   def renderStatusText(prefixCls: String): Element | Null = js.native
 }
 

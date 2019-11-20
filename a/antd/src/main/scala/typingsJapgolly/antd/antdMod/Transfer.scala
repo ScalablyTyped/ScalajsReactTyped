@@ -1,6 +1,5 @@
 package typingsJapgolly.antd.antdMod
 
-import japgolly.scalajs.react.raw.React.Element
 import typingsJapgolly.antd.Anon_ArgsBodyClassName
 import typingsJapgolly.antd.Anon_DataSourceLocale
 import typingsJapgolly.antd.Anon_SourceSelectedKeys
@@ -9,6 +8,7 @@ import typingsJapgolly.antd.TypeofClassSearchDefaultPropsAnonPlaceholder
 import typingsJapgolly.antd.libTransferMod.TransferProps
 import typingsJapgolly.antd.libTransferMod.default
 import typingsJapgolly.antd.libTransferOperationMod.TransferOperationProps
+import typingsJapgolly.react.reactMod._Global_.JSX.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

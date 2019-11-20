@@ -1,12 +1,12 @@
 package typingsJapgolly.antd.libMentionsMod
 
-import japgolly.scalajs.react.raw.React.Element
 import org.scalajs.dom.raw.HTMLTextAreaElement
 import typingsJapgolly.antd.Anon_Focused
 import typingsJapgolly.antd.libConfigDashProviderContextMod.ConfigConsumerProps
 import typingsJapgolly.antd.libConfigDashProviderRenderEmptyMod.RenderEmptyHandler
 import typingsJapgolly.react.reactMod.Component
 import typingsJapgolly.react.reactMod.FocusEventHandler
+import typingsJapgolly.react.reactMod._Global_.JSX.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

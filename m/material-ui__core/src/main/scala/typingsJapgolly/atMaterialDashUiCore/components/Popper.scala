@@ -259,11 +259,12 @@ object Popper {
     key: js.UndefOr[Key] = js.undefined,
     overrides: StringDictionary[js.Any] = null
   )(
-    children: Node | (js.Function1[/* props */ Anon_Placement, Node])
+    children: Node | (js.Function1[/* props */ Anon_Placement, Node]) = null
   ): UnmountedWithRoot[PopperProps, default, Unit, PopperProps] = {
-    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], open = open.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(open = open.asInstanceOf[js.Any])
   
-      if (about != null) __obj.updateDynamic("about")(about.asInstanceOf[js.Any])
+      if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (about != null) __obj.updateDynamic("about")(about.asInstanceOf[js.Any])
     if (accessKey != null) __obj.updateDynamic("accessKey")(accessKey.asInstanceOf[js.Any])
     if (anchorEl != null) __obj.updateDynamic("anchorEl")(anchorEl.asInstanceOf[js.Any])
     if (`aria-activedescendant` != null) __obj.updateDynamic("aria-activedescendant")(`aria-activedescendant`.asInstanceOf[js.Any])

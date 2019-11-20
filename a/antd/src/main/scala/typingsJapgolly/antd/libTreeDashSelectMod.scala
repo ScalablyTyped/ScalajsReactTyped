@@ -1,12 +1,12 @@
 package typingsJapgolly.antd
 
-import japgolly.scalajs.react.raw.React.Element
 import typingsJapgolly.antd.libConfigDashProviderContextMod.ConfigConsumerProps
 import typingsJapgolly.antd.libTreeDashSelectInterfaceMod.TreeNodeValue
 import typingsJapgolly.antd.libTreeDashSelectInterfaceMod.TreeSelectProps
 import typingsJapgolly.antd.libTreeDashSelectMod.TreeSelect
 import typingsJapgolly.antd.libTreeTreeMod.AntTreeNodeProps
 import typingsJapgolly.react.reactMod.Component
+import typingsJapgolly.react.reactMod._Global_.JSX.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

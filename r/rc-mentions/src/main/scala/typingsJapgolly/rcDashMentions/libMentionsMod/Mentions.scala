@@ -1,11 +1,11 @@
 package typingsJapgolly.rcDashMentions.libMentionsMod
 
+import japgolly.scalajs.react.ReactFocusEventFrom
 import org.scalajs.dom.raw.HTMLDivElement
 import org.scalajs.dom.raw.HTMLTextAreaElement
 import typingsJapgolly.rcDashMentions.libOptionMod.OptionProps
 import typingsJapgolly.react.reactMod.ChangeEventHandler
 import typingsJapgolly.react.reactMod.Component
-import typingsJapgolly.react.reactMod.FocusEvent
 import typingsJapgolly.react.reactMod.FocusEventHandler
 import typingsJapgolly.react.reactMod.KeyboardEventHandler
 import scala.scalajs.js
@@ -42,11 +42,11 @@ trait Mentions
   def getOptions(): js.Array[OptionProps] = js.native
   def getOptions(measureText: String): js.Array[OptionProps] = js.native
   def onBlur(): Unit = js.native
-  def onBlur(event: FocusEvent[typingsJapgolly.std.HTMLTextAreaElement]): Unit = js.native
+  def onBlur(event: ReactFocusEventFrom[HTMLTextAreaElement]): Unit = js.native
   def onDropdownBlur(): Unit = js.native
   def onDropdownFocus(): Unit = js.native
   def onFocus(): Unit = js.native
-  def onFocus(event: FocusEvent[typingsJapgolly.std.HTMLTextAreaElement]): Unit = js.native
+  def onFocus(event: ReactFocusEventFrom[HTMLTextAreaElement]): Unit = js.native
   def selectOption(option: OptionProps): Unit = js.native
   def setActiveIndex(activeIndex: Double): Unit = js.native
   def setMeasureRef(element: HTMLDivElement): Unit = js.native

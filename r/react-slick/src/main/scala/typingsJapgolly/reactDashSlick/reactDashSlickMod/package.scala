@@ -5,11 +5,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object reactDashSlickMod {
-  import typingsJapgolly.react.reactMod.ComponentClass
-  import typingsJapgolly.react.reactMod.ComponentState
+  import japgolly.scalajs.react.raw.React.ComponentClassP
   import typingsJapgolly.react.reactMod.StatelessComponent
 
-  type ComponentConstructor[TProps] = (ComponentClass[TProps, ComponentState]) | StatelessComponent[TProps]
+  type ComponentConstructor[TProps] = (ComponentClassP[TProps with js.Object]) | StatelessComponent[TProps]
   /* Rewritten from type alias, can be one of: 
     - typings.reactDashSlick.reactDashSlickStrings.left
     - typings.reactDashSlick.reactDashSlickStrings.down

@@ -1,8 +1,7 @@
 package typingsJapgolly.antd.esTableInterfaceMod
 
-import typingsJapgolly.react.NativeMouseEvent
-import typingsJapgolly.react.reactMod.MouseEvent
-import typingsJapgolly.std.Element
+import japgolly.scalajs.react.ReactMouseEventFrom
+import org.scalajs.dom.raw.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,6 +14,6 @@ trait ExpandIconProps[T] extends js.Object {
   var prefixCls: String = js.native
   var record: T = js.native
   def onExpand(record: T): Unit = js.native
-  def onExpand(record: T, event: MouseEvent[Element, NativeMouseEvent]): Unit = js.native
+  def onExpand(record: T, event: ReactMouseEventFrom[Element]): Unit = js.native
 }
 

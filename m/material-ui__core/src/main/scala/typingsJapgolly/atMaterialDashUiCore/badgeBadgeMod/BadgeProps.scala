@@ -274,7 +274,6 @@ trait BadgeProps extends js.Object {
 object BadgeProps {
   @scala.inline
   def apply(
-    children: VdomNode,
     about: String = null,
     accessKey: String = null,
     `aria-activedescendant`: String = null,
@@ -329,6 +328,7 @@ object BadgeProps {
     autoCorrect: String = null,
     autoSave: String = null,
     badgeContent: VdomNode = null,
+    children: VdomNode = null,
     className: String = null,
     classes: PartialClassNameMapBadgeClassKey = null,
     color: Color | error = null,
@@ -456,7 +456,6 @@ object BadgeProps {
     vocab: String = null
   ): BadgeProps = {
     val __obj = js.Dynamic.literal()
-    if (children != null) __obj.updateDynamic("children")(children.rawNode.asInstanceOf[js.Any])
     if (about != null) __obj.updateDynamic("about")(about.asInstanceOf[js.Any])
     if (accessKey != null) __obj.updateDynamic("accessKey")(accessKey.asInstanceOf[js.Any])
     if (`aria-activedescendant` != null) __obj.updateDynamic("aria-activedescendant")(`aria-activedescendant`.asInstanceOf[js.Any])
@@ -511,6 +510,7 @@ object BadgeProps {
     if (autoCorrect != null) __obj.updateDynamic("autoCorrect")(autoCorrect.asInstanceOf[js.Any])
     if (autoSave != null) __obj.updateDynamic("autoSave")(autoSave.asInstanceOf[js.Any])
     if (badgeContent != null) __obj.updateDynamic("badgeContent")(badgeContent.rawNode.asInstanceOf[js.Any])
+    if (children != null) __obj.updateDynamic("children")(children.rawNode.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (classes != null) __obj.updateDynamic("classes")(classes.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])

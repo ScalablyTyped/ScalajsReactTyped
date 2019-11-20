@@ -5,8 +5,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object esTransferMod {
-  import typingsJapgolly.react.reactMod.ReactElement
+  import japgolly.scalajs.react.raw.React.Element
 
-  type RenderResult = ReactElement | RenderResultObject | String | Null
+  type RenderResult = Element | RenderResultObject | String | Null
   type TransferRender = js.Function1[/* item */ TransferItem, RenderResult]
 }

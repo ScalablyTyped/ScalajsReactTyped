@@ -2,9 +2,9 @@ package typingsJapgolly.reactDashBigDashCalendar.reactDashBigDashCalendarMod
 
 import japgolly.scalajs.react.raw.React.Component
 import japgolly.scalajs.react.raw.React.ComponentClassP
-import japgolly.scalajs.react.raw.React.Element
 import typingsJapgolly.react.reactMod.ComponentType
 import typingsJapgolly.react.reactMod.SFC
+import typingsJapgolly.react.reactMod._Global_.JSX.Element
 import typingsJapgolly.reactDashBigDashCalendar.Anon_Date
 import typingsJapgolly.reactDashBigDashCalendar.Anon_DateHeader
 import typingsJapgolly.reactDashBigDashCalendar.Anon_Event

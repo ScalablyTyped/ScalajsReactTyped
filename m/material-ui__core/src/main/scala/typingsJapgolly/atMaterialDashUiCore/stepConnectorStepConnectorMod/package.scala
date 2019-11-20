@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object stepConnectorStepConnectorMod {
-  import typingsJapgolly.react.reactMod.ReactElement
+  import japgolly.scalajs.react.raw.React.Element
 
-  type StepConnectorIcon = ReactElement | String | Double
+  type StepConnectorIcon = Element | String | Double
 }

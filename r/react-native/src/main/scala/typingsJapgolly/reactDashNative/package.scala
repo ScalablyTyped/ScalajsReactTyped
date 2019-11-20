@@ -6,21 +6,10 @@ import scala.scalajs.js.annotation._
 
 package object reactDashNative {
   import org.scalablytyped.runtime.StringDictionary
-  import typingsJapgolly.std.ArrayBuffer
-  import typingsJapgolly.std.Blob
-  import typingsJapgolly.std.DataView
-  import typingsJapgolly.std.Float32Array
-  import typingsJapgolly.std.Float64Array
-  import typingsJapgolly.std.Int16Array
-  import typingsJapgolly.std.Int32Array
-  import typingsJapgolly.std.Int8Array
-  import typingsJapgolly.std.Uint16Array
-  import typingsJapgolly.std.Uint32Array
-  import typingsJapgolly.std.Uint8Array
-  import typingsJapgolly.std.Uint8ClampedArray
+  import org.scalajs.dom.raw.Blob
 
   type AccessibilityChangeEvent = Boolean
-  type BodyInit_ = Blob | Int8Array | Int16Array | Int32Array | Uint8Array | Uint16Array | Uint32Array | Uint8ClampedArray | Float32Array | Float64Array | DataView | ArrayBuffer | FormData | String | Null
+  type BodyInit_ = Blob | scala.scalajs.js.typedarray.Int8Array | scala.scalajs.js.typedarray.Int16Array | scala.scalajs.js.typedarray.Int32Array | scala.scalajs.js.typedarray.Uint8Array | scala.scalajs.js.typedarray.Uint16Array | scala.scalajs.js.typedarray.Uint32Array | scala.scalajs.js.typedarray.Uint8ClampedArray | scala.scalajs.js.typedarray.Float32Array | scala.scalajs.js.typedarray.Float64Array | scala.scalajs.js.typedarray.DataView | scala.scalajs.js.typedarray.ArrayBuffer | FormData | String | Null
   type HeadersInit_ = Headers | js.Array[js.Array[String]] | StringDictionary[String]
   type NodeHandle = Double
   type RequestInfo = Request | String

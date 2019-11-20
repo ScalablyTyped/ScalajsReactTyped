@@ -1,13 +1,13 @@
 package typingsJapgolly.rxjs.rxjsMod
 
+import typingsJapgolly.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("rxjs", "EmptyError")
 @js.native
-class EmptyErrorCls ()
-  extends typingsJapgolly.rxjs.internalUtilEmptyErrorMod.EmptyError {
+class EmptyErrorCls () extends Error {
   /* CompleteClass */
   override var message: String = js.native
   /* CompleteClass */

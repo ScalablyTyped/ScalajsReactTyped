@@ -45,7 +45,6 @@ trait AlertProps extends js.Object {
 object AlertProps {
   @scala.inline
   def apply(
-    message: VdomNode,
     afterClose: js.UndefOr[Callback] = js.undefined,
     banner: js.UndefOr[Boolean] = js.undefined,
     className: String = null,
@@ -54,6 +53,7 @@ object AlertProps {
     description: VdomNode = null,
     icon: VdomNode = null,
     iconType: String = null,
+    message: VdomNode = null,
     onClose: ReactMouseEventFrom[HTMLButtonElement] => Callback = null,
     prefixCls: String = null,
     showIcon: js.UndefOr[Boolean] = js.undefined,
@@ -61,7 +61,6 @@ object AlertProps {
     `type`: success | info | warning | error = null
   ): AlertProps = {
     val __obj = js.Dynamic.literal()
-    if (message != null) __obj.updateDynamic("message")(message.rawNode.asInstanceOf[js.Any])
     afterClose.foreach(p => __obj.updateDynamic("afterClose")(p.toJsFn))
     if (!js.isUndefined(banner)) __obj.updateDynamic("banner")(banner.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
@@ -70,6 +69,7 @@ object AlertProps {
     if (description != null) __obj.updateDynamic("description")(description.rawNode.asInstanceOf[js.Any])
     if (icon != null) __obj.updateDynamic("icon")(icon.rawNode.asInstanceOf[js.Any])
     if (iconType != null) __obj.updateDynamic("iconType")(iconType.asInstanceOf[js.Any])
+    if (message != null) __obj.updateDynamic("message")(message.rawNode.asInstanceOf[js.Any])
     if (onClose != null) __obj.updateDynamic("onClose")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactMouseEventFrom[org.scalajs.dom.raw.HTMLButtonElement]) => onClose(t0).runNow()))
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
     if (!js.isUndefined(showIcon)) __obj.updateDynamic("showIcon")(showIcon.asInstanceOf[js.Any])

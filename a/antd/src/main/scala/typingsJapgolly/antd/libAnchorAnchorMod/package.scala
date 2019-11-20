@@ -5,8 +5,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object libAnchorAnchorMod {
-  import typingsJapgolly.std.HTMLElement
-  import typingsJapgolly.std.Window
+  import org.scalajs.dom.raw.HTMLElement
+  import org.scalajs.dom.raw.Window
 
   type AnchorContainer = HTMLElement | Window
 }

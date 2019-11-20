@@ -13,7 +13,6 @@ package object atAngularCoreMod {
   import typingsJapgolly.atAngularCore.PipeDefList
   import typingsJapgolly.atAngularCore.PipeTypeList
   import typingsJapgolly.atAngularCore.PropertyAliasValue
-  import typingsJapgolly.std.Iterable
 
   type CollectionChangeRecord[V] = IterableChangeRecord[V]
   type ComponentInstance = js.Object
@@ -210,7 +209,7 @@ package object atAngularCoreMod {
     /* currentView */ ɵangular_packages_core_core_bj, 
     js.Any
   ]
-  type NgIterable[T] = js.Array[T] | Iterable[T]
+  type NgIterable[T] = js.Array[T] | js.Iterable[T]
   /**
     * Function to call console.error at the right source location. This is an indirection
     * via another function as browser will log the location that actually called

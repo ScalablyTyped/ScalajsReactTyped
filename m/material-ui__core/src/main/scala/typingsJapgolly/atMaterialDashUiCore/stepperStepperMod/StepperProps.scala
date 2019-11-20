@@ -274,7 +274,6 @@ trait StepperProps extends js.Object {
 object StepperProps {
   @scala.inline
   def apply(
-    children: VdomNode,
     about: String = null,
     accessKey: String = null,
     activeStep: Int | Double = null,
@@ -330,6 +329,7 @@ object StepperProps {
     autoCapitalize: String = null,
     autoCorrect: String = null,
     autoSave: String = null,
+    children: VdomNode = null,
     className: String = null,
     classes: PartialClassNameMapStepperClasskey = null,
     color: String = null,
@@ -458,7 +458,6 @@ object StepperProps {
     vocab: String = null
   ): StepperProps = {
     val __obj = js.Dynamic.literal()
-    if (children != null) __obj.updateDynamic("children")(children.rawNode.asInstanceOf[js.Any])
     if (about != null) __obj.updateDynamic("about")(about.asInstanceOf[js.Any])
     if (accessKey != null) __obj.updateDynamic("accessKey")(accessKey.asInstanceOf[js.Any])
     if (activeStep != null) __obj.updateDynamic("activeStep")(activeStep.asInstanceOf[js.Any])
@@ -514,6 +513,7 @@ object StepperProps {
     if (autoCapitalize != null) __obj.updateDynamic("autoCapitalize")(autoCapitalize.asInstanceOf[js.Any])
     if (autoCorrect != null) __obj.updateDynamic("autoCorrect")(autoCorrect.asInstanceOf[js.Any])
     if (autoSave != null) __obj.updateDynamic("autoSave")(autoSave.asInstanceOf[js.Any])
+    if (children != null) __obj.updateDynamic("children")(children.rawNode.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (classes != null) __obj.updateDynamic("classes")(classes.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])

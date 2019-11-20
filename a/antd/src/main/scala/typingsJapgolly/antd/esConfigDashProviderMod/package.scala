@@ -5,10 +5,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object esConfigDashProviderMod {
+  import japgolly.scalajs.react.raw.React.ComponentClassP
   import typingsJapgolly.react.reactMod.ClassicComponentClass
-  import typingsJapgolly.react.reactMod.ComponentClass
-  import typingsJapgolly.react.reactMod.ComponentState
   import typingsJapgolly.react.reactMod.StatelessComponent
 
-  type IReactComponent[P] = StatelessComponent[P] | (ComponentClass[P, ComponentState]) | ClassicComponentClass[P]
+  type IReactComponent[P] = StatelessComponent[P] | (ComponentClassP[P with js.Object]) | ClassicComponentClass[P]
 }

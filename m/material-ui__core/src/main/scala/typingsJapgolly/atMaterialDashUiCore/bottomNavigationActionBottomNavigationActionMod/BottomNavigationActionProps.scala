@@ -421,7 +421,7 @@ object BottomNavigationActionProps {
     onCanPlay: ReactEventFrom[HTMLElement] => Callback = null,
     onCanPlayThrough: ReactEventFrom[HTMLElement] => Callback = null,
     onChange: (/* event */ ReactEventFrom[js.Object with org.scalajs.dom.raw.Element], /* value */ js.Any) => Callback = null,
-    onClick: ReactEventFrom[org.scalajs.dom.raw.Element] => Callback = null,
+    onClick: ReactEventFrom[js.Any with org.scalajs.dom.raw.Element] => Callback = null,
     onCompositionEnd: ReactCompositionEventFrom[HTMLElement] => Callback = null,
     onCompositionStart: ReactCompositionEventFrom[HTMLElement] => Callback = null,
     onCompositionUpdate: ReactCompositionEventFrom[HTMLElement] => Callback = null,
@@ -443,7 +443,7 @@ object BottomNavigationActionProps {
     onEnded: ReactEventFrom[HTMLElement] => Callback = null,
     onError: ReactEventFrom[HTMLElement] => Callback = null,
     onFocus: ReactFocusEventFrom[HTMLElement] => Callback = null,
-    onFocusVisible: ReactFocusEventFrom[org.scalajs.dom.raw.Element] => Callback = null,
+    onFocusVisible: ReactFocusEventFrom[js.Any with org.scalajs.dom.raw.Element] => Callback = null,
     onInput: ReactEventFrom[HTMLElement] => Callback = null,
     onInvalid: ReactEventFrom[HTMLElement] => Callback = null,
     onKeyDown: ReactKeyboardEventFrom[HTMLElement] => Callback = null,
@@ -630,7 +630,7 @@ object BottomNavigationActionProps {
     if (onCanPlay != null) __obj.updateDynamic("onCanPlay")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[org.scalajs.dom.raw.HTMLElement]) => onCanPlay(t0).runNow()))
     if (onCanPlayThrough != null) __obj.updateDynamic("onCanPlayThrough")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[org.scalajs.dom.raw.HTMLElement]) => onCanPlayThrough(t0).runNow()))
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction2((t0: /* event */ japgolly.scalajs.react.ReactEventFrom[js.Object with org.scalajs.dom.raw.Element], t1: /* value */ js.Any) => onChange(t0, t1).runNow()))
-    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[org.scalajs.dom.raw.Element]) => onClick(t0).runNow()))
+    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[js.Any with org.scalajs.dom.raw.Element]) => onClick(t0).runNow()))
     if (onCompositionEnd != null) __obj.updateDynamic("onCompositionEnd")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactCompositionEventFrom[org.scalajs.dom.raw.HTMLElement]) => onCompositionEnd(t0).runNow()))
     if (onCompositionStart != null) __obj.updateDynamic("onCompositionStart")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactCompositionEventFrom[org.scalajs.dom.raw.HTMLElement]) => onCompositionStart(t0).runNow()))
     if (onCompositionUpdate != null) __obj.updateDynamic("onCompositionUpdate")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactCompositionEventFrom[org.scalajs.dom.raw.HTMLElement]) => onCompositionUpdate(t0).runNow()))
@@ -652,7 +652,7 @@ object BottomNavigationActionProps {
     if (onEnded != null) __obj.updateDynamic("onEnded")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[org.scalajs.dom.raw.HTMLElement]) => onEnded(t0).runNow()))
     if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[org.scalajs.dom.raw.HTMLElement]) => onError(t0).runNow()))
     if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactFocusEventFrom[org.scalajs.dom.raw.HTMLElement]) => onFocus(t0).runNow()))
-    if (onFocusVisible != null) __obj.updateDynamic("onFocusVisible")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactFocusEventFrom[org.scalajs.dom.raw.Element]) => onFocusVisible(t0).runNow()))
+    if (onFocusVisible != null) __obj.updateDynamic("onFocusVisible")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactFocusEventFrom[js.Any with org.scalajs.dom.raw.Element]) => onFocusVisible(t0).runNow()))
     if (onInput != null) __obj.updateDynamic("onInput")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[org.scalajs.dom.raw.HTMLElement]) => onInput(t0).runNow()))
     if (onInvalid != null) __obj.updateDynamic("onInvalid")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[org.scalajs.dom.raw.HTMLElement]) => onInvalid(t0).runNow()))
     if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactKeyboardEventFrom[org.scalajs.dom.raw.HTMLElement]) => onKeyDown(t0).runNow()))

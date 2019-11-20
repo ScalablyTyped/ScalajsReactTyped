@@ -1,7 +1,5 @@
 package typingsJapgolly.antd
 
-import japgolly.scalajs.react.raw.React.Element
-import japgolly.scalajs.react.vdom.VdomElement
 import typingsJapgolly.antd.antdStrings.bottom
 import typingsJapgolly.antd.antdStrings.bottomLeft
 import typingsJapgolly.antd.antdStrings.bottomRight
@@ -24,6 +22,7 @@ import typingsJapgolly.antd.antdStrings.rightTop
 import typingsJapgolly.antd.antdStrings.top
 import typingsJapgolly.antd.antdStrings.topLeft
 import typingsJapgolly.antd.antdStrings.topRight
+import typingsJapgolly.react.reactMod._Global_.JSX.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -43,14 +42,13 @@ object Anon_Bottom {
   @scala.inline
   def apply(
     disabled: Boolean,
-    icon: VdomElement,
+    icon: Element,
     transitionName: String,
     okType: link | default | dashed | primary | ghost | danger = null,
     placement: left | right | top | bottom | bottomRight | topLeft | topRight | bottomLeft | leftTop | leftBottom | rightTop | rightBottom = null,
     trigger: click | focus | contextMenu | hover = null
   ): Anon_Bottom = {
-    val __obj = js.Dynamic.literal(disabled = disabled.asInstanceOf[js.Any], transitionName = transitionName.asInstanceOf[js.Any])
-    if (icon != null) __obj.updateDynamic("icon")(icon.rawElement.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(disabled = disabled.asInstanceOf[js.Any], icon = icon.asInstanceOf[js.Any], transitionName = transitionName.asInstanceOf[js.Any])
     if (okType != null) __obj.updateDynamic("okType")(okType.asInstanceOf[js.Any])
     if (placement != null) __obj.updateDynamic("placement")(placement.asInstanceOf[js.Any])
     if (trigger != null) __obj.updateDynamic("trigger")(trigger.asInstanceOf[js.Any])

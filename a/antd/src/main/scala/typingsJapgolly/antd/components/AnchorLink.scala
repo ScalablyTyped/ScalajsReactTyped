@@ -14,10 +14,10 @@ import scala.scalajs.js.annotation._
 object AnchorLink {
   def apply(
     href: String,
-    title: VdomNode,
     className: String = null,
     prefixCls: String = null,
     target: String = null,
+    title: VdomNode = null,
     key: js.UndefOr[Key] = js.undefined,
     overrides: StringDictionary[js.Any] = null
   )(
@@ -25,10 +25,10 @@ object AnchorLink {
   ): UnmountedWithRoot[AnchorLinkProps, default, Unit, AnchorLinkProps] = {
     val __obj = js.Dynamic.literal(href = href.asInstanceOf[js.Any])
   
-      if (title != null) __obj.updateDynamic("title")(title.rawNode.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+      if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
     if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.rawNode.asInstanceOf[js.Any])
     key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
     if (overrides != null) js.Dynamic.global.Object.assign(__obj, overrides)
   

@@ -23,23 +23,23 @@ trait CollapsePanelProps extends js.Object {
 object CollapsePanelProps {
   @scala.inline
   def apply(
-    header: VdomNode,
     key: String | Double,
     className: String = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
     extra: VdomNode = null,
     forceRender: js.UndefOr[Boolean] = js.undefined,
+    header: VdomNode = null,
     id: String = null,
     prefixCls: String = null,
     showArrow: js.UndefOr[Boolean] = js.undefined,
     style: CSSProperties = null
   ): CollapsePanelProps = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
-    if (header != null) __obj.updateDynamic("header")(header.rawNode.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
     if (extra != null) __obj.updateDynamic("extra")(extra.rawNode.asInstanceOf[js.Any])
     if (!js.isUndefined(forceRender)) __obj.updateDynamic("forceRender")(forceRender.asInstanceOf[js.Any])
+    if (header != null) __obj.updateDynamic("header")(header.rawNode.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
     if (!js.isUndefined(showArrow)) __obj.updateDynamic("showArrow")(showArrow.asInstanceOf[js.Any])

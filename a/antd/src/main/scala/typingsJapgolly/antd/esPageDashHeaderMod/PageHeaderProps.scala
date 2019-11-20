@@ -32,7 +32,6 @@ trait PageHeaderProps extends js.Object {
 object PageHeaderProps {
   @scala.inline
   def apply(
-    title: VdomNode,
     avatar: AvatarProps = null,
     backIcon: VdomNode = null,
     breadcrumb: BreadcrumbProps = null,
@@ -44,10 +43,10 @@ object PageHeaderProps {
     prefixCls: String = null,
     style: CSSProperties = null,
     subTitle: VdomNode = null,
-    tags: Element | js.Array[Element] = null
+    tags: Element | js.Array[Element] = null,
+    title: VdomNode = null
   ): PageHeaderProps = {
     val __obj = js.Dynamic.literal()
-    if (title != null) __obj.updateDynamic("title")(title.rawNode.asInstanceOf[js.Any])
     if (avatar != null) __obj.updateDynamic("avatar")(avatar.asInstanceOf[js.Any])
     if (backIcon != null) __obj.updateDynamic("backIcon")(backIcon.rawNode.asInstanceOf[js.Any])
     if (breadcrumb != null) __obj.updateDynamic("breadcrumb")(breadcrumb.asInstanceOf[js.Any])
@@ -60,6 +59,7 @@ object PageHeaderProps {
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (subTitle != null) __obj.updateDynamic("subTitle")(subTitle.rawNode.asInstanceOf[js.Any])
     if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.rawNode.asInstanceOf[js.Any])
     __obj.asInstanceOf[PageHeaderProps]
   }
 }

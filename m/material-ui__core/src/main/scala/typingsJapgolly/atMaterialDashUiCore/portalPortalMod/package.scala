@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object portalPortalMod {
-  import typingsJapgolly.react.reactMod.Component
+  import japgolly.scalajs.react.raw.React.Component
 
-  type Portal = Component[PortalProps, js.Object, js.Any]
+  type Portal = Component[PortalProps with js.Object, js.Object]
 }

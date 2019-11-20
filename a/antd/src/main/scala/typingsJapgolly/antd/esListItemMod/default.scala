@@ -1,7 +1,7 @@
 package typingsJapgolly.antd.esListItemMod
 
-import japgolly.scalajs.react.raw.React.Element
 import typingsJapgolly.antd.Anon_Grid
+import typingsJapgolly.react.reactMod._Global_.JSX.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

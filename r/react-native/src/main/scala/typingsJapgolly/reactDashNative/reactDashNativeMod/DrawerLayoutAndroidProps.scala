@@ -104,13 +104,13 @@ trait DrawerLayoutAndroidProps extends ViewProps {
     * The navigation view that will be rendered to the side of the
     * screen and can be pulled in.
     */
-  def renderNavigationView(): japgolly.scalajs.react.raw.React.Element
+  def renderNavigationView(): typingsJapgolly.react.reactMod._Global_.JSX.Element
 }
 
 object DrawerLayoutAndroidProps {
   @scala.inline
   def apply(
-    renderNavigationView: CallbackTo[japgolly.scalajs.react.raw.React.Element],
+    renderNavigationView: CallbackTo[typingsJapgolly.react.reactMod._Global_.JSX.Element],
     accessibilityActions: js.Array[AccessibilityActionInfo] = null,
     accessibilityComponentType: none | button | radiobutton_checked | radiobutton_unchecked = null,
     accessibilityElementsHidden: js.UndefOr[Boolean] = js.undefined,

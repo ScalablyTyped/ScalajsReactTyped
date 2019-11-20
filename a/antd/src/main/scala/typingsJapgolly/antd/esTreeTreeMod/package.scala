@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object esTreeTreeMod {
-  import typingsJapgolly.react.reactMod.Component
+  import japgolly.scalajs.react.raw.React.Component
 
-  type AntTreeNode = Component[AntTreeNodeProps, js.Object, js.Any]
+  type AntTreeNode = Component[AntTreeNodeProps with js.Object, js.Object]
 }

@@ -34,7 +34,7 @@ trait StrictPortalInnerProps extends js.Object {
 object StrictPortalInnerProps {
   @scala.inline
   def apply(
-    children: VdomNode,
+    children: VdomNode = null,
     innerRef: Ref = null,
     mountNode: js.Any = null,
     onMount: (/* nothing */ Null, /* data */ PortalInnerProps) => Callback = null,

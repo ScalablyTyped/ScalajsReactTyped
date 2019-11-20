@@ -1,7 +1,6 @@
 package typingsJapgolly.reactDashDom.testDashUtilsMod
 
 import japgolly.scalajs.react.raw.React.Element
-import typingsJapgolly.react.reactMod.ReactElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,8 +14,8 @@ trait ShallowRenderer extends js.Object {
   /**
     * Similar to `ReactDOM.render` but it doesn't require DOM and only renders a single level deep.
     */
-  def render(element: ReactElement): Unit = js.native
-  def render(element: ReactElement, context: js.Any): Unit = js.native
+  def render(element: Element): Unit = js.native
+  def render(element: Element, context: js.Any): Unit = js.native
   def unmount(): Unit = js.native
 }
 

@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object distCommonjsAddonsPaginationPaginationItemMod {
-  import typingsJapgolly.react.reactMod.Component
+  import japgolly.scalajs.react.raw.React.Component
 
-  type PaginationItem = Component[PaginationItemProps, js.Object, js.Any]
+  type PaginationItem = Component[PaginationItemProps with js.Object, js.Object]
 }

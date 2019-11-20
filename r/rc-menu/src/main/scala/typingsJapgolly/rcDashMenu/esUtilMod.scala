@@ -20,12 +20,12 @@ object esUtilMod extends js.Object {
   def loopMenuItemRecursively(children: Node, keys: js.Array[String], ret: Anon_Find): Unit = js.native
   def noop(): Unit = js.native
   def setStyle(
-    elem: typingsJapgolly.std.HTMLElement,
+    elem: HTMLElement,
     styleProperty: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 756 */ js.Any,
     value: String
   ): Unit = js.native
   def setStyle(
-    elem: typingsJapgolly.std.HTMLElement,
+    elem: HTMLElement,
     styleProperty: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 756 */ js.Any,
     value: Double
   ): Unit = js.native

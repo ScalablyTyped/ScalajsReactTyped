@@ -19,8 +19,8 @@ trait MuiThemeProviderProps extends js.Object {
 object MuiThemeProviderProps {
   @scala.inline
   def apply(
-    children: VdomNode,
     theme: Theme | (js.Function1[/* outer */ Theme | Null, Theme]),
+    children: VdomNode = null,
     disableStylesGeneration: js.UndefOr[Boolean] = js.undefined,
     sheetsManager: Map[StylesCreator, Map[Theme, SheetManagerTheme]] = null
   ): MuiThemeProviderProps = {

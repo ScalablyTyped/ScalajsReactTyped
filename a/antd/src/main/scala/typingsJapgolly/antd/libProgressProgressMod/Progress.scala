@@ -1,12 +1,12 @@
 package typingsJapgolly.antd.libProgressProgressMod
 
-import japgolly.scalajs.react.raw.React.Element
 import typingsJapgolly.antd.antdStrings.active
 import typingsJapgolly.antd.antdStrings.exception
 import typingsJapgolly.antd.antdStrings.normal
 import typingsJapgolly.antd.antdStrings.success
 import typingsJapgolly.antd.libConfigDashProviderContextMod.ConfigConsumerProps
 import typingsJapgolly.react.reactMod.Component
+import typingsJapgolly.react.reactMod._Global_.JSX.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

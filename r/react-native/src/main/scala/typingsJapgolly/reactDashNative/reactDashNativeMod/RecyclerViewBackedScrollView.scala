@@ -1,7 +1,7 @@
 package typingsJapgolly.reactDashNative.reactDashNativeMod
 
-import japgolly.scalajs.react.raw.React.Element
 import typingsJapgolly.react.reactMod.Component
+import typingsJapgolly.react.reactMod._Global_.JSX.Element
 import typingsJapgolly.reactDashNative.Anon_Animated
 import scala.scalajs.js
 import scala.scalajs.js.`|`

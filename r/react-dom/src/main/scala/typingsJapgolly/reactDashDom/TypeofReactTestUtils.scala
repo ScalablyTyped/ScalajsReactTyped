@@ -34,9 +34,9 @@ trait TypeofReactTestUtils extends js.Object {
   def isCompositeComponentWithType[T /* <: Component[js.Object, js.Object] */, C /* <: ComponentClassP[js.Object] */](instance: ReactInstance, `type`: ClassType[_, T, C]): Boolean = js.native
   def isDOMComponent(instance: ReactInstance): /* is std.Element */ Boolean = js.native
   def isElement(element: js.Any): Boolean = js.native
-  def isElementOfType[T /* <: HTMLElement */](element: ReactElement, `type`: String): /* is react.react.ReactHTMLElement<T> */ Boolean = js.native
-  def isElementOfType[P](element: ReactElement, `type`: SFC[P]): /* is react.react.SFCElement<P> */ Boolean = js.native
-  def isElementOfType[P, T /* <: Component[P with js.Object, js.Object] */, C /* <: ComponentClassP[P with js.Object] */](element: ReactElement, `type`: ClassType[P, T, C]): /* is react.react.CElement<P, T> */ Boolean = js.native
+  def isElementOfType[T /* <: HTMLElement */](element: japgolly.scalajs.react.raw.React.Element, `type`: String): /* is react.react.ReactHTMLElement<T> */ Boolean = js.native
+  def isElementOfType[P](element: japgolly.scalajs.react.raw.React.Element, `type`: SFC[P]): /* is react.react.SFCElement<P> */ Boolean = js.native
+  def isElementOfType[P, T /* <: Component[P with js.Object, js.Object] */, C /* <: ComponentClassP[P with js.Object] */](element: japgolly.scalajs.react.raw.React.Element, `type`: ClassType[P, T, C]): /* is react.react.CElement<P, T> */ Boolean = js.native
   @JSName("isElementOfType")
   def isElementOfType_P_DOMAttributesObjectT_Element[P /* <: DOMAttributes[js.Object] */, T /* <: Element */](element: japgolly.scalajs.react.raw.React.Element, `type`: String): /* is react.react.DOMElement<P, T> */ Boolean = js.native
   def mockComponent(mocked: MockedComponentClass): /* import warning: importer.ImportType#apply Failed type conversion: typeof ReactTestUtils */ js.Any = js.native

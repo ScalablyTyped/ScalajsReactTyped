@@ -1,9 +1,9 @@
 package typingsJapgolly.antd.libCheckboxGroupMod
 
-import japgolly.scalajs.react.raw.React.Element
 import typingsJapgolly.antd.Anon_CheckboxGroupAnonCancelValueDisabled
 import typingsJapgolly.antd.libConfigDashProviderContextMod.ConfigConsumerProps
 import typingsJapgolly.react.reactMod.Component
+import typingsJapgolly.react.reactMod._Global_.JSX.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

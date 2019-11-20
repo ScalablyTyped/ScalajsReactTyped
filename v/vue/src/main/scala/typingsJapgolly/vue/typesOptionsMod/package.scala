@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 package object typesOptionsMod {
   import org.scalablytyped.runtime.StringDictionary
-  import typingsJapgolly.std.HTMLElement
+  import org.scalajs.dom.raw.HTMLElement
   import typingsJapgolly.std.Record
   import typingsJapgolly.std.ThisType
   import typingsJapgolly.vue.Anon_Component

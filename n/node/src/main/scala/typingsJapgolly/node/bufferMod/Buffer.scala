@@ -98,8 +98,8 @@ object Buffer
     * @param totalLength Total length of the buffers when concatenated.
     *   If totalLength is not provided, it is read from the buffers in the list. However, this adds an additional loop to the function, so it is faster to provide the length explicitly.
     */
-  def concat(list: js.Array[Uint8Array]): typingsJapgolly.node.Buffer = js.native
-  def concat(list: js.Array[Uint8Array], totalLength: Double): typingsJapgolly.node.Buffer = js.native
+  def concat(list: js.Array[scala.scalajs.js.typedarray.Uint8Array]): typingsJapgolly.node.Buffer = js.native
+  def concat(list: js.Array[scala.scalajs.js.typedarray.Uint8Array], totalLength: Double): typingsJapgolly.node.Buffer = js.native
   def from(arrayBuffer: SharedArrayBuffer): typingsJapgolly.node.Buffer = js.native
   def from(arrayBuffer: SharedArrayBuffer, byteOffset: Double): typingsJapgolly.node.Buffer = js.native
   def from(arrayBuffer: SharedArrayBuffer, byteOffset: Double, length: Double): typingsJapgolly.node.Buffer = js.native

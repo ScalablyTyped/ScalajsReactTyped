@@ -32,7 +32,6 @@ trait ArgsProps extends js.Object {
 object ArgsProps {
   @scala.inline
   def apply(
-    message: VdomNode,
     bottom: Int | Double = null,
     btn: VdomNode = null,
     className: String = null,
@@ -41,6 +40,7 @@ object ArgsProps {
     getContainer: js.UndefOr[CallbackTo[HTMLElement]] = js.undefined,
     icon: VdomNode = null,
     key: String = null,
+    message: VdomNode = null,
     onClick: js.UndefOr[Callback] = js.undefined,
     onClose: js.UndefOr[Callback] = js.undefined,
     placement: NotificationPlacement = null,
@@ -50,7 +50,6 @@ object ArgsProps {
     `type`: IconType = null
   ): ArgsProps = {
     val __obj = js.Dynamic.literal()
-    if (message != null) __obj.updateDynamic("message")(message.rawNode.asInstanceOf[js.Any])
     if (bottom != null) __obj.updateDynamic("bottom")(bottom.asInstanceOf[js.Any])
     if (btn != null) __obj.updateDynamic("btn")(btn.rawNode.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
@@ -59,6 +58,7 @@ object ArgsProps {
     getContainer.foreach(p => __obj.updateDynamic("getContainer")(p.toJsFn))
     if (icon != null) __obj.updateDynamic("icon")(icon.rawNode.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (message != null) __obj.updateDynamic("message")(message.rawNode.asInstanceOf[js.Any])
     onClick.foreach(p => __obj.updateDynamic("onClick")(p.toJsFn))
     onClose.foreach(p => __obj.updateDynamic("onClose")(p.toJsFn))
     if (placement != null) __obj.updateDynamic("placement")(placement.asInstanceOf[js.Any])

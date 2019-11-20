@@ -75,7 +75,6 @@ import typingsJapgolly.electron.electronStrings.unresponsive
 import typingsJapgolly.electron.electronStrings.webview
 import typingsJapgolly.electron.electronStrings.window
 import typingsJapgolly.node.Buffer
-import typingsJapgolly.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -1460,7 +1459,7 @@ class WebContents () extends EventEmitter {
     * settings. The callback will be called with callback(error, data) on completion.
     * The data is a Buffer that contains the generated PDF data. Deprecated Soon
     */
-  def printToPDF(options: PrintToPDFOptions, callback: js.Function2[/* error */ Error, /* data */ Buffer, Unit]): Unit = js.native
+  def printToPDF(options: PrintToPDFOptions, callback: js.Function2[/* error */ js.Error, /* data */ Buffer, Unit]): Unit = js.native
   /**
     * Executes the editing command redo in web page.
     */

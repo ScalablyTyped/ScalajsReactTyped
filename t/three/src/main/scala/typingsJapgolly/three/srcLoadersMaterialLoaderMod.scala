@@ -1,10 +1,8 @@
 package typingsJapgolly.three
 
 import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.std.Error
-import typingsJapgolly.std.ErrorEvent
-import typingsJapgolly.std.EventTarget
-import typingsJapgolly.std.ProgressEvent
+import org.scalajs.dom.raw.ErrorEvent
+import org.scalajs.dom.raw.ProgressEvent
 import typingsJapgolly.three.srcLoadersLoaderMod.Loader
 import typingsJapgolly.three.srcLoadersLoadingManagerMod.LoadingManager
 import typingsJapgolly.three.srcMaterialsMaterialMod.Material
@@ -24,13 +22,13 @@ object srcLoadersMaterialLoaderMod extends js.Object {
     def load(
       url: String,
       onLoad: js.Function1[/* material */ Material, Unit],
-      onProgress: js.Function1[/* event */ ProgressEvent[EventTarget], Unit]
+      onProgress: js.Function1[/* event */ ProgressEvent, Unit]
     ): Unit = js.native
     def load(
       url: String,
       onLoad: js.Function1[/* material */ Material, Unit],
-      onProgress: js.Function1[/* event */ ProgressEvent[EventTarget], Unit],
-      onError: js.Function1[/* event */ Error | ErrorEvent, Unit]
+      onProgress: js.Function1[/* event */ ProgressEvent, Unit],
+      onError: js.Function1[/* event */ js.Error | ErrorEvent, Unit]
     ): Unit = js.native
     def parse(json: js.Any): Material = js.native
     def setTextures(textures: StringDictionary[Texture]): this.type = js.native

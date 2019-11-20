@@ -1,6 +1,6 @@
 package typingsJapgolly.googlemaps.google.maps
 
-import typingsJapgolly.std.Event
+import org.scalajs.dom.raw.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

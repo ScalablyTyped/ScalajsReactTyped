@@ -90,7 +90,6 @@ import scala.scalajs.js.annotation._
 
 object Tooltip {
   def apply(
-    title: VdomNode,
     PopperProps: js.Object = null,
     TransitionComponent: ComponentType[TransitionProps] = null,
     TransitionProps: TransitionProps = null,
@@ -275,6 +274,7 @@ object Tooltip {
     suppressContentEditableWarning: js.UndefOr[Boolean] = js.undefined,
     suppressHydrationWarning: js.UndefOr[Boolean] = js.undefined,
     tabIndex: Int | Double = null,
+    title: VdomNode = null,
     typeof: String = null,
     unselectable: on | off = null,
     vocab: String = null,
@@ -285,8 +285,7 @@ object Tooltip {
   ): UnmountedWithRoot[TooltipProps, default, Unit, TooltipProps] = {
     val __obj = js.Dynamic.literal()
   
-      if (title != null) __obj.updateDynamic("title")(title.rawNode.asInstanceOf[js.Any])
-    if (PopperProps != null) __obj.updateDynamic("PopperProps")(PopperProps.asInstanceOf[js.Any])
+      if (PopperProps != null) __obj.updateDynamic("PopperProps")(PopperProps.asInstanceOf[js.Any])
     if (TransitionComponent != null) __obj.updateDynamic("TransitionComponent")(TransitionComponent.asInstanceOf[js.Any])
     if (TransitionProps != null) __obj.updateDynamic("TransitionProps")(TransitionProps.asInstanceOf[js.Any])
     if (about != null) __obj.updateDynamic("about")(about.asInstanceOf[js.Any])
@@ -470,6 +469,7 @@ object Tooltip {
     if (!js.isUndefined(suppressContentEditableWarning)) __obj.updateDynamic("suppressContentEditableWarning")(suppressContentEditableWarning.asInstanceOf[js.Any])
     if (!js.isUndefined(suppressHydrationWarning)) __obj.updateDynamic("suppressHydrationWarning")(suppressHydrationWarning.asInstanceOf[js.Any])
     if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.rawNode.asInstanceOf[js.Any])
     if (typeof != null) __obj.updateDynamic("typeof")(typeof.asInstanceOf[js.Any])
     if (unselectable != null) __obj.updateDynamic("unselectable")(unselectable.asInstanceOf[js.Any])
     if (vocab != null) __obj.updateDynamic("vocab")(vocab.asInstanceOf[js.Any])

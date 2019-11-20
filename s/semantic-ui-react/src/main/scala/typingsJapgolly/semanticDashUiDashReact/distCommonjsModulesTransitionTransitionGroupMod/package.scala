@@ -5,8 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object distCommonjsModulesTransitionTransitionGroupMod {
-  import typingsJapgolly.react.reactMod.ComponentClass
-  import typingsJapgolly.react.reactMod.ComponentState
+  import japgolly.scalajs.react.raw.React.ComponentClassP
 
-  type TransitionGroupComponent = ComponentClass[TransitionGroupProps, ComponentState]
+  type TransitionGroupComponent = ComponentClassP[TransitionGroupProps with js.Object]
 }

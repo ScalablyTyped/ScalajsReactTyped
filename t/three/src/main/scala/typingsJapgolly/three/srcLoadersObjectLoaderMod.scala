@@ -1,11 +1,9 @@
 package typingsJapgolly.three
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalajs.dom.raw.ErrorEvent
 import org.scalajs.dom.raw.HTMLImageElement
-import typingsJapgolly.std.Error
-import typingsJapgolly.std.ErrorEvent
-import typingsJapgolly.std.EventTarget
-import typingsJapgolly.std.ProgressEvent
+import org.scalajs.dom.raw.ProgressEvent
 import typingsJapgolly.three.srcAnimationAnimationClipMod.AnimationClip
 import typingsJapgolly.three.srcCoreObject3DMod.Object3D
 import typingsJapgolly.three.srcLoadersLoaderMod.Loader
@@ -27,13 +25,13 @@ object srcLoadersObjectLoaderMod extends js.Object {
     def load(
       url: String,
       onLoad: js.Function1[/* object */ Object3D, Unit],
-      onProgress: js.Function1[/* event */ ProgressEvent[EventTarget], Unit]
+      onProgress: js.Function1[/* event */ ProgressEvent, Unit]
     ): Unit = js.native
     def load(
       url: String,
       onLoad: js.Function1[/* object */ Object3D, Unit],
-      onProgress: js.Function1[/* event */ ProgressEvent[EventTarget], Unit],
-      onError: js.Function1[/* event */ Error | ErrorEvent, Unit]
+      onProgress: js.Function1[/* event */ ProgressEvent, Unit],
+      onError: js.Function1[/* event */ js.Error | ErrorEvent, Unit]
     ): Unit = js.native
     def parse[T /* <: Object3D */](json: js.Any): T = js.native
     def parse[T /* <: Object3D */](json: js.Any, onLoad: js.Function1[/* object */ Object3D, Unit]): T = js.native

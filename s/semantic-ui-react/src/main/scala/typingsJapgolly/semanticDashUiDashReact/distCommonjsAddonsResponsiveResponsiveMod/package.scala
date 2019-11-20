@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object distCommonjsAddonsResponsiveResponsiveMod {
-  import typingsJapgolly.react.reactMod.Component
+  import japgolly.scalajs.react.raw.React.Component
 
-  type Responsive = Component[ResponsiveProps, js.Object, js.Any]
+  type Responsive = Component[ResponsiveProps with js.Object, js.Object]
 }

@@ -65,10 +65,10 @@ object SelectInputProps {
     disabled: js.UndefOr[Boolean] = js.undefined,
     inputRef: /* ref */ HTMLSelectElement | Anon_NodeValue => Callback = null,
     name: String = null,
-    onBlur: ReactFocusEventFrom[Element] => Callback = null,
+    onBlur: ReactFocusEventFrom[js.Any with Element] => Callback = null,
     onChange: (/* event */ ReactEventFrom[HTMLSelectElement], /* child */ Node) => Callback = null,
     onClose: /* event */ ReactEventFrom[js.Object with Element] => Callback = null,
-    onFocus: ReactFocusEventFrom[Element] => Callback = null,
+    onFocus: ReactFocusEventFrom[js.Any with Element] => Callback = null,
     onOpen: /* event */ ReactEventFrom[js.Object with Element] => Callback = null,
     open: js.UndefOr[Boolean] = js.undefined,
     readOnly: js.UndefOr[Boolean] = js.undefined,
@@ -84,10 +84,10 @@ object SelectInputProps {
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
     if (inputRef != null) __obj.updateDynamic("inputRef")(js.Any.fromFunction1((t0: /* ref */ org.scalajs.dom.raw.HTMLSelectElement | typingsJapgolly.atMaterialDashUiCore.Anon_NodeValue) => inputRef(t0).runNow()))
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactFocusEventFrom[org.scalajs.dom.raw.Element]) => onBlur(t0).runNow()))
+    if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactFocusEventFrom[js.Any with org.scalajs.dom.raw.Element]) => onBlur(t0).runNow()))
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction2((t0: /* event */ japgolly.scalajs.react.ReactEventFrom[org.scalajs.dom.raw.HTMLSelectElement], t1: /* child */ japgolly.scalajs.react.raw.React.Node) => onChange(t0, t1).runNow()))
     if (onClose != null) __obj.updateDynamic("onClose")(js.Any.fromFunction1((t0: /* event */ japgolly.scalajs.react.ReactEventFrom[js.Object with org.scalajs.dom.raw.Element]) => onClose(t0).runNow()))
-    if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactFocusEventFrom[org.scalajs.dom.raw.Element]) => onFocus(t0).runNow()))
+    if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactFocusEventFrom[js.Any with org.scalajs.dom.raw.Element]) => onFocus(t0).runNow()))
     if (onOpen != null) __obj.updateDynamic("onOpen")(js.Any.fromFunction1((t0: /* event */ japgolly.scalajs.react.ReactEventFrom[js.Object with org.scalajs.dom.raw.Element]) => onOpen(t0).runNow()))
     if (!js.isUndefined(open)) __obj.updateDynamic("open")(open.asInstanceOf[js.Any])
     if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.asInstanceOf[js.Any])

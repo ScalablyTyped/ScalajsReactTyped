@@ -5,8 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object libTableColumnGroupMod {
-  import typingsJapgolly.react.reactMod.Component
-  import typingsJapgolly.react.reactMod.ComponentState
+  import japgolly.scalajs.react.raw.React.Component
 
-  type ColumnGroup = Component[ColumnGroupProps, ComponentState, js.Any]
+  type ColumnGroup = Component[ColumnGroupProps with js.Object, js.Object]
 }

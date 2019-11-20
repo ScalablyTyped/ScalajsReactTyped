@@ -82,7 +82,6 @@ import scala.scalajs.js.annotation._
 object FormControlLabel {
   def apply(
     control: VdomElement,
-    label: VdomNode,
     about: String = null,
     accessKey: String = null,
     `aria-activedescendant`: String = null,
@@ -163,6 +162,7 @@ object FormControlLabel {
     itemRef: String = null,
     itemScope: js.UndefOr[Boolean] = js.undefined,
     itemType: String = null,
+    label: VdomNode = null,
     labelPlacement: end | start | top | bottom = null,
     lang: String = null,
     name: String = null,
@@ -272,7 +272,6 @@ object FormControlLabel {
     val __obj = js.Dynamic.literal()
   
       if (control != null) __obj.updateDynamic("control")(control.rawElement.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.rawNode.asInstanceOf[js.Any])
     if (about != null) __obj.updateDynamic("about")(about.asInstanceOf[js.Any])
     if (accessKey != null) __obj.updateDynamic("accessKey")(accessKey.asInstanceOf[js.Any])
     if (`aria-activedescendant` != null) __obj.updateDynamic("aria-activedescendant")(`aria-activedescendant`.asInstanceOf[js.Any])
@@ -353,6 +352,7 @@ object FormControlLabel {
     if (itemRef != null) __obj.updateDynamic("itemRef")(itemRef.asInstanceOf[js.Any])
     if (!js.isUndefined(itemScope)) __obj.updateDynamic("itemScope")(itemScope.asInstanceOf[js.Any])
     if (itemType != null) __obj.updateDynamic("itemType")(itemType.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.rawNode.asInstanceOf[js.Any])
     if (labelPlacement != null) __obj.updateDynamic("labelPlacement")(labelPlacement.asInstanceOf[js.Any])
     if (lang != null) __obj.updateDynamic("lang")(lang.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])

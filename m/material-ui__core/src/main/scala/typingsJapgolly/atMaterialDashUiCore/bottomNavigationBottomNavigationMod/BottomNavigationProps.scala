@@ -270,7 +270,6 @@ trait BottomNavigationProps extends js.Object {
 object BottomNavigationProps {
   @scala.inline
   def apply(
-    children: VdomNode,
     about: String = null,
     accessKey: String = null,
     `aria-activedescendant`: String = null,
@@ -324,6 +323,7 @@ object BottomNavigationProps {
     autoCapitalize: String = null,
     autoCorrect: String = null,
     autoSave: String = null,
+    children: VdomNode = null,
     className: String = null,
     classes: PartialClassNameMapBottomNavigationClassKey = null,
     color: String = null,
@@ -449,7 +449,6 @@ object BottomNavigationProps {
     vocab: String = null
   ): BottomNavigationProps = {
     val __obj = js.Dynamic.literal()
-    if (children != null) __obj.updateDynamic("children")(children.rawNode.asInstanceOf[js.Any])
     if (about != null) __obj.updateDynamic("about")(about.asInstanceOf[js.Any])
     if (accessKey != null) __obj.updateDynamic("accessKey")(accessKey.asInstanceOf[js.Any])
     if (`aria-activedescendant` != null) __obj.updateDynamic("aria-activedescendant")(`aria-activedescendant`.asInstanceOf[js.Any])
@@ -503,6 +502,7 @@ object BottomNavigationProps {
     if (autoCapitalize != null) __obj.updateDynamic("autoCapitalize")(autoCapitalize.asInstanceOf[js.Any])
     if (autoCorrect != null) __obj.updateDynamic("autoCorrect")(autoCorrect.asInstanceOf[js.Any])
     if (autoSave != null) __obj.updateDynamic("autoSave")(autoSave.asInstanceOf[js.Any])
+    if (children != null) __obj.updateDynamic("children")(children.rawNode.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (classes != null) __obj.updateDynamic("classes")(classes.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])

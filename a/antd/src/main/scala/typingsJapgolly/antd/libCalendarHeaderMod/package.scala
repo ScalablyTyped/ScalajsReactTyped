@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object libCalendarHeaderMod {
-  import typingsJapgolly.react.reactMod.ReactNode
+  import japgolly.scalajs.react.raw.React.Node
 
-  type HeaderRender = js.Function1[/* headerRender */ RenderHeader, ReactNode]
+  type HeaderRender = js.Function1[/* headerRender */ RenderHeader, Node]
 }

@@ -25,14 +25,14 @@ trait ClickAwayListenerProps extends js.Object {
 object ClickAwayListenerProps {
   @scala.inline
   def apply(
-    children: VdomNode,
     onClickAway: ReactEventFrom[js.Object with Element] => Callback,
+    children: VdomNode = null,
     mouseEvent: onClick | onMouseDown | onMouseUp | `false` = null,
     touchEvent: onTouchStart | onTouchEnd | `false` = null
   ): ClickAwayListenerProps = {
     val __obj = js.Dynamic.literal()
-    if (children != null) __obj.updateDynamic("children")(children.rawNode.asInstanceOf[js.Any])
     __obj.updateDynamic("onClickAway")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[js.Object with org.scalajs.dom.raw.Element]) => onClickAway(t0).runNow()))
+    if (children != null) __obj.updateDynamic("children")(children.rawNode.asInstanceOf[js.Any])
     if (mouseEvent != null) __obj.updateDynamic("mouseEvent")(mouseEvent.asInstanceOf[js.Any])
     if (touchEvent != null) __obj.updateDynamic("touchEvent")(touchEvent.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClickAwayListenerProps]

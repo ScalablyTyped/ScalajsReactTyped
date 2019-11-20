@@ -1,15 +1,15 @@
 organization := "org.gulliblytyped.japgolly"
 name := "stardust-ui__react-component-ref"
-version := "0.38.0-728dc3"
+version := "0.38.0-01b586"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.github.japgolly.scalajs-react" %%% "core" % "1.4.2",
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.gulliblytyped.japgolly" %%% "csstype" % "2.6.6-5023da",
-  "org.gulliblytyped.japgolly" %%% "prop-types" % "15.7-dt-20190924Z-2d597e",
-  "org.gulliblytyped.japgolly" %%% "react" % "16.9-dt-20191025Z-485300",
-  "org.gulliblytyped.japgolly" %%% "std" % "3.7-b7faa7")
+  "org.gulliblytyped.japgolly" %%% "csstype" % "2.6.6-f3bc82",
+  "org.gulliblytyped.japgolly" %%% "prop-types" % "15.7-dt-20190924Z-090a31",
+  "org.gulliblytyped.japgolly" %%% "react" % "16.9-dt-20191025Z-992e25",
+  "org.gulliblytyped.japgolly" %%% "std" % "3.7-c9d0d4")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

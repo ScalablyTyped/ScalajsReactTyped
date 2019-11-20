@@ -3,12 +3,12 @@ package typingsJapgolly.antd.esInputInputMod
 import japgolly.scalajs.react.ReactEventFrom
 import japgolly.scalajs.react.ReactKeyboardEventFrom
 import japgolly.scalajs.react.ReactMouseEventFrom
-import japgolly.scalajs.react.raw.React.Element
 import org.scalajs.dom.raw.HTMLElement
 import org.scalajs.dom.raw.HTMLInputElement
 import typingsJapgolly.antd.esConfigDashProviderContextMod.ConfigConsumerProps
 import typingsJapgolly.react.reactMod.ChangeEvent
 import typingsJapgolly.react.reactMod.Component
+import typingsJapgolly.react.reactMod._Global_.JSX.Element
 import typingsJapgolly.std.MouseEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -31,8 +31,8 @@ trait Input
   def renderClearIcon(prefixCls: String): Element | Null = js.native
   def renderComponent(hasGetPrefixCls: ConfigConsumerProps): Element = js.native
   def renderInput(prefixCls: String): Element = js.native
-  def renderLabeledIcon(prefixCls: String, children: Element): Element = js.native
-  def renderLabeledInput(prefixCls: String, children: Element): Element = js.native
+  def renderLabeledIcon(prefixCls: String, children: japgolly.scalajs.react.raw.React.Element): Element = js.native
+  def renderLabeledInput(prefixCls: String, children: japgolly.scalajs.react.raw.React.Element): Element = js.native
   def renderSuffix(prefixCls: String): Element | Null = js.native
   def saveInput(node: HTMLInputElement): Unit = js.native
   def select(): Unit = js.native

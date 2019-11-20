@@ -2,7 +2,6 @@ package typingsJapgolly.materialDashUi.__MaterialUI.Stepper
 
 import japgolly.scalajs.react.Callback
 import japgolly.scalajs.react.ReactMouseEventFrom
-import japgolly.scalajs.react.raw.React.Element
 import japgolly.scalajs.react.vdom.VdomNode
 import typingsJapgolly.materialDashUi.__MaterialUI.Snackbar
 import typingsJapgolly.react.reactMod.CSSProperties
@@ -10,6 +9,7 @@ import typingsJapgolly.react.reactMod.Key
 import typingsJapgolly.react.reactMod.LegacyRef
 import typingsJapgolly.react.reactMod.MouseEventHandler
 import typingsJapgolly.react.reactMod.Props
+import typingsJapgolly.react.reactMod._Global_.JSX.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

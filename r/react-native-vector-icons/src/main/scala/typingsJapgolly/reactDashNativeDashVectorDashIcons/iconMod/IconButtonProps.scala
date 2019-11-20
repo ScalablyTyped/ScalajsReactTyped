@@ -10,9 +10,12 @@ import typingsJapgolly.reactDashNative.reactDashNativeMod.AccessibilityState
 import typingsJapgolly.reactDashNative.reactDashNativeMod.AccessibilityStates
 import typingsJapgolly.reactDashNative.reactDashNativeMod.AccessibilityTrait
 import typingsJapgolly.reactDashNative.reactDashNativeMod.BackgroundPropType
+import typingsJapgolly.reactDashNative.reactDashNativeMod.GestureResponderEvent
 import typingsJapgolly.reactDashNative.reactDashNativeMod.Insets
 import typingsJapgolly.reactDashNative.reactDashNativeMod.LayoutChangeEvent
+import typingsJapgolly.reactDashNative.reactDashNativeMod.NativeSyntheticEvent
 import typingsJapgolly.reactDashNative.reactDashNativeMod.TVParallaxProperties
+import typingsJapgolly.reactDashNative.reactDashNativeMod.TargetedEvent
 import typingsJapgolly.reactDashNative.reactDashNativeMod.TextStyle
 import typingsJapgolly.reactDashNative.reactDashNativeMod.TouchableWithoutFeedbackPropsIOS
 import typingsJapgolly.reactDashNative.reactDashNativeMod.ViewStyle
@@ -114,20 +117,20 @@ import scala.scalajs.js.annotation._
     * the OS-specific concept of "blur" occurs, meaning the element lost focus.
     * Some platforms may not have the concept of blur.
     */
-  var onBlur: js.UndefOr[js.Function1[ReactEventFrom[NodeHandle with Element], Unit]] = js.undefined
+  var onBlur: js.UndefOr[js.Function1[/* e */ NativeSyntheticEvent[TargetedEvent], Unit]] = js.undefined
   /**
     * When `accessible` is true (which is the default) this may be called when
     * the OS-specific concept of "focus" occurs. Some platforms may not have
     * the concept of focus.
     */
-  var onFocus: js.UndefOr[js.Function1[ReactEventFrom[NodeHandle with Element], Unit]] = js.undefined
+  var onFocus: js.UndefOr[js.Function1[/* e */ NativeSyntheticEvent[TargetedEvent], Unit]] = js.undefined
   /**
     *
     * Called immediately after the underlay is hidden
     */
   var onHideUnderlay: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var onPressIn: js.UndefOr[js.Function1[ReactEventFrom[NodeHandle with Element], Unit]] = js.undefined
-  var onPressOut: js.UndefOr[js.Function1[ReactEventFrom[NodeHandle with Element], Unit]] = js.undefined
+  var onPressIn: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
+  var onPressOut: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
   /**
     * Called immediately after the underlay is shown
     */
@@ -195,15 +198,15 @@ object IconButtonProps {
     numberOfLines: Int | Double = null,
     onAccessibilityAction: ReactEventFrom[NodeHandle with Element] => Callback = null,
     onAccessibilityTap: js.UndefOr[Callback] = js.undefined,
-    onBlur: ReactEventFrom[NodeHandle with Element] => Callback = null,
-    onFocus: ReactEventFrom[NodeHandle with Element] => Callback = null,
+    onBlur: /* e */ NativeSyntheticEvent[TargetedEvent] => Callback = null,
+    onFocus: /* e */ NativeSyntheticEvent[TargetedEvent] => Callback = null,
     onHideUnderlay: js.UndefOr[Callback] = js.undefined,
     onLayout: /* event */ LayoutChangeEvent => Callback = null,
     onLongPress: ReactEventFrom[NodeHandle with Element] => Callback = null,
     onMagicTap: js.UndefOr[Callback] = js.undefined,
     onPress: ReactEventFrom[NodeHandle with Element] => Callback = null,
-    onPressIn: ReactEventFrom[NodeHandle with Element] => Callback = null,
-    onPressOut: ReactEventFrom[NodeHandle with Element] => Callback = null,
+    onPressIn: /* event */ GestureResponderEvent => Callback = null,
+    onPressOut: /* event */ GestureResponderEvent => Callback = null,
     onShowUnderlay: js.UndefOr[Callback] = js.undefined,
     pressRetentionOffset: Insets = null,
     selectable: js.UndefOr[Boolean] = js.undefined,
@@ -254,15 +257,15 @@ object IconButtonProps {
     if (numberOfLines != null) __obj.updateDynamic("numberOfLines")(numberOfLines.asInstanceOf[js.Any])
     if (onAccessibilityAction != null) __obj.updateDynamic("onAccessibilityAction")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[typingsJapgolly.reactDashNative.NodeHandle with org.scalajs.dom.raw.Element]) => onAccessibilityAction(t0).runNow()))
     onAccessibilityTap.foreach(p => __obj.updateDynamic("onAccessibilityTap")(p.toJsFn))
-    if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[typingsJapgolly.reactDashNative.NodeHandle with org.scalajs.dom.raw.Element]) => onBlur(t0).runNow()))
-    if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[typingsJapgolly.reactDashNative.NodeHandle with org.scalajs.dom.raw.Element]) => onFocus(t0).runNow()))
+    if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.reactDashNative.reactDashNativeMod.NativeSyntheticEvent[typingsJapgolly.reactDashNative.reactDashNativeMod.TargetedEvent]) => onBlur(t0).runNow()))
+    if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.reactDashNative.reactDashNativeMod.NativeSyntheticEvent[typingsJapgolly.reactDashNative.reactDashNativeMod.TargetedEvent]) => onFocus(t0).runNow()))
     onHideUnderlay.foreach(p => __obj.updateDynamic("onHideUnderlay")(p.toJsFn))
     if (onLayout != null) __obj.updateDynamic("onLayout")(js.Any.fromFunction1((t0: /* event */ typingsJapgolly.reactDashNative.reactDashNativeMod.LayoutChangeEvent) => onLayout(t0).runNow()))
     if (onLongPress != null) __obj.updateDynamic("onLongPress")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[typingsJapgolly.reactDashNative.NodeHandle with org.scalajs.dom.raw.Element]) => onLongPress(t0).runNow()))
     onMagicTap.foreach(p => __obj.updateDynamic("onMagicTap")(p.toJsFn))
     if (onPress != null) __obj.updateDynamic("onPress")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[typingsJapgolly.reactDashNative.NodeHandle with org.scalajs.dom.raw.Element]) => onPress(t0).runNow()))
-    if (onPressIn != null) __obj.updateDynamic("onPressIn")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[typingsJapgolly.reactDashNative.NodeHandle with org.scalajs.dom.raw.Element]) => onPressIn(t0).runNow()))
-    if (onPressOut != null) __obj.updateDynamic("onPressOut")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[typingsJapgolly.reactDashNative.NodeHandle with org.scalajs.dom.raw.Element]) => onPressOut(t0).runNow()))
+    if (onPressIn != null) __obj.updateDynamic("onPressIn")(js.Any.fromFunction1((t0: /* event */ typingsJapgolly.reactDashNative.reactDashNativeMod.GestureResponderEvent) => onPressIn(t0).runNow()))
+    if (onPressOut != null) __obj.updateDynamic("onPressOut")(js.Any.fromFunction1((t0: /* event */ typingsJapgolly.reactDashNative.reactDashNativeMod.GestureResponderEvent) => onPressOut(t0).runNow()))
     onShowUnderlay.foreach(p => __obj.updateDynamic("onShowUnderlay")(p.toJsFn))
     if (pressRetentionOffset != null) __obj.updateDynamic("pressRetentionOffset")(pressRetentionOffset.asInstanceOf[js.Any])
     if (!js.isUndefined(selectable)) __obj.updateDynamic("selectable")(selectable.asInstanceOf[js.Any])

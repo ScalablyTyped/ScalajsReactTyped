@@ -1,6 +1,5 @@
 package typingsJapgolly.rcDashMenu.libSubMenuMod
 
-import japgolly.scalajs.react.raw.React.Element
 import japgolly.scalajs.react.raw.React.Node
 import org.scalajs.dom.raw.HTMLElement
 import typingsJapgolly.rcDashMenu.Anon_DomEventItem
@@ -13,6 +12,7 @@ import typingsJapgolly.react.reactMod.Component
 import typingsJapgolly.react.reactMod.KeyboardEvent
 import typingsJapgolly.react.reactMod.KeyboardEventHandler
 import typingsJapgolly.react.reactMod.MouseEventHandler
+import typingsJapgolly.react.reactMod._Global_.JSX.Element
 import typingsJapgolly.std.MouseEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -88,7 +88,6 @@ trait PopperProps extends HTMLAttributes[HTMLDivElement] {
 object PopperProps {
   @scala.inline
   def apply(
-    children: Node | (js.Function1[/* props */ Anon_Placement, Node]),
     open: Boolean,
     about: String = null,
     accessKey: String = null,
@@ -144,6 +143,7 @@ object PopperProps {
     autoCapitalize: String = null,
     autoCorrect: String = null,
     autoSave: String = null,
+    children: Node | (js.Function1[/* props */ Anon_Placement, Node]) = null,
     className: String = null,
     color: String = null,
     container: ReactInstance | js.Function0[ReactInstance] = null,
@@ -270,7 +270,7 @@ object PopperProps {
     unselectable: on | off = null,
     vocab: String = null
   ): PopperProps = {
-    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], open = open.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(open = open.asInstanceOf[js.Any])
     if (about != null) __obj.updateDynamic("about")(about.asInstanceOf[js.Any])
     if (accessKey != null) __obj.updateDynamic("accessKey")(accessKey.asInstanceOf[js.Any])
     if (anchorEl != null) __obj.updateDynamic("anchorEl")(anchorEl.asInstanceOf[js.Any])
@@ -325,6 +325,7 @@ object PopperProps {
     if (autoCapitalize != null) __obj.updateDynamic("autoCapitalize")(autoCapitalize.asInstanceOf[js.Any])
     if (autoCorrect != null) __obj.updateDynamic("autoCorrect")(autoCorrect.asInstanceOf[js.Any])
     if (autoSave != null) __obj.updateDynamic("autoSave")(autoSave.asInstanceOf[js.Any])
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])

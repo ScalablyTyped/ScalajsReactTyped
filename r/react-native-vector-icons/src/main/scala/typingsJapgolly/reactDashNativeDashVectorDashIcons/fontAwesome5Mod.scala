@@ -46,7 +46,7 @@ object fontAwesome5Mod extends js.Object {
   }
   
   type AllowOnlyOne[T, Keys /* <: String */] = (Omit[T, Keys]) with (/* import warning: importer.ImportType#apply Failed type conversion: {[ K in Keys ]: -? std.Partial<std.Pick<T, K>> & std.Partial<std.Record<std.Exclude<Keys, K>, undefined>>}[Keys] */ js.Any)
-  type FontAwesome5Icon = Component[FontAwesome5IconProps, js.Any, js.Any]
+  type FontAwesome5Icon = japgolly.scalajs.react.raw.React.Component[FontAwesome5IconProps with js.Object, js.Object]
   type FontAwesome5IconProps = AllowOnlyOne[
     typingsJapgolly.reactDashNativeDashVectorDashIcons.reactDashNativeDashVectorDashIconsStrings.FontAwesome5IconProps with js.Any with IconProps, 
     FontAwesome5IconVariants

@@ -1,12 +1,12 @@
 package typingsJapgolly.antd.libCalendarHeaderMod
 
-import japgolly.scalajs.react.raw.React.Element
 import japgolly.scalajs.react.raw.React.Node
 import org.scalajs.dom.raw.HTMLDivElement
 import typingsJapgolly.antd.Anon_MonthReactNode
 import typingsJapgolly.antd.libConfigDashProviderContextMod.ConfigConsumerProps
 import typingsJapgolly.antd.libRadioInterfaceMod.RadioChangeEvent
 import typingsJapgolly.react.reactMod.Component
+import typingsJapgolly.react.reactMod._Global_.JSX.Element
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

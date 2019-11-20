@@ -1,7 +1,7 @@
 package typingsJapgolly.d3.d3Mod
 
+import org.scalajs.dom.raw.TouchList
 import typingsJapgolly.d3DashSelection.d3DashSelectionMod.ContainerElement
-import typingsJapgolly.std.TouchList
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
