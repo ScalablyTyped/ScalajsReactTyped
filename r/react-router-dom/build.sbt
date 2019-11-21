@@ -1,6 +1,6 @@
 organization := "org.gulliblytyped.japgolly"
 name := "react-router-dom"
-version := "5.1-dt-20191101Z-54919b"
+version := "5.1-dt-20191101Z-2f82fc"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,8 +9,8 @@ libraryDependencies ++= Seq(
   "org.gulliblytyped.japgolly" %%% "csstype" % "2.6.6-f3bc82",
   "org.gulliblytyped.japgolly" %%% "history" % "4.7.2-dt-20190822Z-d2d5be",
   "org.gulliblytyped.japgolly" %%% "prop-types" % "15.7-dt-20190924Z-090a31",
-  "org.gulliblytyped.japgolly" %%% "react" % "16.9-dt-20191025Z-992e25",
-  "org.gulliblytyped.japgolly" %%% "react-router" % "5.1-dt-20191113Z-774179",
+  "org.gulliblytyped.japgolly" %%% "react" % "16.9-dt-20191025Z-864456",
+  "org.gulliblytyped.japgolly" %%% "react-router" % "5.1-dt-20191113Z-b97318",
   "org.gulliblytyped.japgolly" %%% "std" % "3.7-c9d0d4")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

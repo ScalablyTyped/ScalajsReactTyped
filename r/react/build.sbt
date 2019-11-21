@@ -1,6 +1,6 @@
 organization := "org.gulliblytyped.japgolly"
 name := "react"
-version := "16.9-dt-20191025Z-992e25"
+version := "16.9-dt-20191025Z-864456"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object PageDashHeader extends SharedApply_PageHeaderProps1007206861 {
+object PageDashHeader extends SharedApply_typingsJapgollyantdesPageDashHeaderModPageHeaderProps1007206861 {
   override val __component: js.Any = typingsJapgolly.antd.esPageDashHeaderMod.default
 }
 

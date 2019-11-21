@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object DateDashPicker extends SharedApply_DatePickerProps307416674[default] {
+object DateDashPicker extends SharedApply_typingsJapgollyantdesDateDashPickerInterfaceModDatePickerProps307416674[default] {
   override val __component: js.Any = js.constructorOf[typingsJapgolly.antd.esDateDashPickerMod.default]
 }
 

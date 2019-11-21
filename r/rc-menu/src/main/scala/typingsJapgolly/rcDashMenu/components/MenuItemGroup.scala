@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object MenuItemGroup extends SharedApply_MenuItemGroupProps2130969418[default] {
+object MenuItemGroup extends SharedApply_typingsJapgollyrcDashMenuesMenuItemGroupModMenuItemGroupProps2130969418[default] {
   override val __component: js.Any = js.constructorOf[typingsJapgolly.rcDashMenu.esMenuItemGroupMod.default]
 }
 

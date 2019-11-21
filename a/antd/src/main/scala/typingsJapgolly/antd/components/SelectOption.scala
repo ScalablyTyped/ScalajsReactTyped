@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object SelectOption extends SharedApply_OptionProps_1332960432 {
+object SelectOption extends SharedApply_typingsJapgollyantdesSelectModOptionProps_1332960432 {
   override val __component: js.Any = typingsJapgolly.antd.esMod.Select.Option
 }
 
