@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 object ActionFingerprint
-  extends SharedApply_typingsJapgollymaterialDashUiMaterialUISvgIconProps1538262166[typingsJapgolly.materialDashUi.svgDashIconsMod.ActionFingerprint] {
+  extends SharedApply_SvgIconProps1538262166[typingsJapgolly.materialDashUi.svgDashIconsMod.ActionFingerprint] {
   override val __component: js.Any = js.constructorOf[typingsJapgolly.materialDashUi.svgDashIconsMod.ActionFingerprint]
 }
 

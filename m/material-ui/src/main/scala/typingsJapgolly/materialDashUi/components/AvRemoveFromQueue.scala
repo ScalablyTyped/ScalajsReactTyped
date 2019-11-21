@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 object AvRemoveFromQueue
-  extends SharedApply_typingsJapgollymaterialDashUiMaterialUISvgIconProps1538262166[typingsJapgolly.materialDashUi.svgDashIconsMod.AvRemoveFromQueue] {
+  extends SharedApply_SvgIconProps1538262166[typingsJapgolly.materialDashUi.svgDashIconsMod.AvRemoveFromQueue] {
   override val __component: js.Any = js.constructorOf[typingsJapgolly.materialDashUi.svgDashIconsMod.AvRemoveFromQueue]
 }
 

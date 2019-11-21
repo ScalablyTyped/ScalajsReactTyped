@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 object SkipPrevious
-  extends SharedApply_typingsJapgollyatMaterialDashUiCoresvgIconSvgIconModSvgIconProps1591622337[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.SkipPrevious] {
+  extends SharedApply_SvgIconProps1591622337[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.SkipPrevious] {
   override val __component: js.Any = js.constructorOf[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.SkipPrevious]
 }
 

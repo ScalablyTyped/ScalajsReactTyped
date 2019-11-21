@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 object LooksRounded
-  extends SharedApply_typingsJapgollyatMaterialDashUiCoresvgIconSvgIconModSvgIconProps1591622337[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.LooksRounded] {
+  extends SharedApply_SvgIconProps1591622337[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.LooksRounded] {
   override val __component: js.Any = js.constructorOf[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.LooksRounded]
 }
 

@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 object EditorFormatTextdirectionRToL
-  extends SharedApply_typingsJapgollymaterialDashUiMaterialUISvgIconProps1538262166[typingsJapgolly.materialDashUi.svgDashIconsMod.EditorFormatTextdirectionRToL] {
+  extends SharedApply_SvgIconProps1538262166[typingsJapgolly.materialDashUi.svgDashIconsMod.EditorFormatTextdirectionRToL] {
   override val __component: js.Any = js.constructorOf[typingsJapgolly.materialDashUi.svgDashIconsMod.EditorFormatTextdirectionRToL]
 }
 

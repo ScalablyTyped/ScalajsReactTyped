@@ -1,6 +1,6 @@
 organization := "org.gulliblytyped.japgolly"
 name := "storybook__react"
-version := "4.0-dt-20190605Z-bb05cf"
+version := "4.0-dt-20190605Z-30c9fe"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,7 +9,7 @@ libraryDependencies ++= Seq(
   "org.gulliblytyped.japgolly" %%% "csstype" % "2.6.6-f3bc82",
   "org.gulliblytyped.japgolly" %%% "node" % "12.12-dt-20191108Z-7fec91",
   "org.gulliblytyped.japgolly" %%% "prop-types" % "15.7-dt-20190924Z-090a31",
-  "org.gulliblytyped.japgolly" %%% "react" % "16.9-dt-20191025Z-864456",
+  "org.gulliblytyped.japgolly" %%% "react" % "16.9-dt-20191025Z-992e25",
   "org.gulliblytyped.japgolly" %%% "std" % "3.7-c9d0d4")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

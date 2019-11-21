@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object FoundationToolbarAndroid extends SharedApply_typingsJapgollyreactDashNativeDashVectorDashIconsiconModToolbarAndroidProps1373982361[ToolbarAndroid] {
+object FoundationToolbarAndroid extends SharedApply_ToolbarAndroidProps1373982361[ToolbarAndroid] {
   override val __component: js.Any = js.constructorOf[typingsJapgolly.atExpoVectorDashIcons.atExpoVectorDashIconsMod.Foundation.ToolbarAndroid]
 }
 

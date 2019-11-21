@@ -26,10 +26,10 @@ This should make it one of the biggest Scala repos on the planet:
  Language             Files        Lines        Blank      Comment         Code
 --------------------------------------------------------------------------------
  Scala                35170      1356040       137762       172817      1045461
- Markdown               139         5757         1802            0         3955
+ Markdown               139         5381         1802            0         3579
  JSON                     1            1            0            0            1
 --------------------------------------------------------------------------------
- Total                35310      1361798       139564       172817      1049417
+ Total                35310      1361422       139564       172817      1049041
 --------------------------------------------------------------------------------
 
 ```
@@ -98,7 +98,7 @@ These should be the main steps you would have to follow:
 ScalablyTyped is hosted at bintray, so make sure to include the resolver
 ```scala
   resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")
-  addSbtPlugin("org.scalablytyped" % "sbt-scalablytyped" % "201911210804")
+  addSbtPlugin("org.scalablytyped" % "sbt-scalablytyped" % "201911210700")
 ```
 
 ### `build.sbt`

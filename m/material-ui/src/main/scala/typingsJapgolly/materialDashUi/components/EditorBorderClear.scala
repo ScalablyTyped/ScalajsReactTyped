@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 object EditorBorderClear
-  extends SharedApply_typingsJapgollymaterialDashUiMaterialUISvgIconProps1538262166[typingsJapgolly.materialDashUi.svgDashIconsMod.EditorBorderClear] {
+  extends SharedApply_SvgIconProps1538262166[typingsJapgolly.materialDashUi.svgDashIconsMod.EditorBorderClear] {
   override val __component: js.Any = js.constructorOf[typingsJapgolly.materialDashUi.svgDashIconsMod.EditorBorderClear]
 }
 

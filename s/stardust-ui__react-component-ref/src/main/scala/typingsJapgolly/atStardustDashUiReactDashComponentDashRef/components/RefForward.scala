@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object RefForward extends SharedApply_typingsJapgollyatStardustDashUiReactDashComponentDashRefdistEsTypesModRefProps1889243212[default] {
+object RefForward extends SharedApply_RefProps1889243212[default] {
   override val __component: js.Any = js.constructorOf[typingsJapgolly.atStardustDashUiReactDashComponentDashRef.distEsRefForwardMod.default]
 }
 

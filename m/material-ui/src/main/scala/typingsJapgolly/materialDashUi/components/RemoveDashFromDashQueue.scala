@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object RemoveDashFromDashQueue extends SharedApply_typingsJapgollymaterialDashUiMaterialUISvgIconProps1538262166[default] {
+object RemoveDashFromDashQueue extends SharedApply_SvgIconProps1538262166[default] {
   override val __component: js.Any = js.constructorOf[typingsJapgolly.materialDashUi.svgDashIconsAvRemoveDashFromDashQueueMod.default]
 }
 
