@@ -54,6 +54,7 @@ import typingsJapgolly.atMaterialDashUiCore.atMaterialDashUiCoreStrings.menu
 import typingsJapgolly.atMaterialDashUiCore.atMaterialDashUiCoreStrings.middle
 import typingsJapgolly.atMaterialDashUiCore.atMaterialDashUiCoreStrings.mixed
 import typingsJapgolly.atMaterialDashUiCore.atMaterialDashUiCoreStrings.move
+import typingsJapgolly.atMaterialDashUiCore.atMaterialDashUiCoreStrings.no
 import typingsJapgolly.atMaterialDashUiCore.atMaterialDashUiCoreStrings.none
 import typingsJapgolly.atMaterialDashUiCore.atMaterialDashUiCoreStrings.numeric
 import typingsJapgolly.atMaterialDashUiCore.atMaterialDashUiCoreStrings.off
@@ -74,6 +75,7 @@ import typingsJapgolly.atMaterialDashUiCore.atMaterialDashUiCoreStrings.top
 import typingsJapgolly.atMaterialDashUiCore.atMaterialDashUiCoreStrings.tree
 import typingsJapgolly.atMaterialDashUiCore.atMaterialDashUiCoreStrings.url
 import typingsJapgolly.atMaterialDashUiCore.atMaterialDashUiCoreStrings.vertical
+import typingsJapgolly.atMaterialDashUiCore.atMaterialDashUiCoreStrings.yes
 import typingsJapgolly.atMaterialDashUiCore.tableCellTableCellMod.Padding
 import typingsJapgolly.atMaterialDashUiCore.tableCellTableCellMod.SortDirection
 import typingsJapgolly.atMaterialDashUiCore.tableCellTableCellMod.TableCellBaseProps
@@ -280,6 +282,7 @@ trait TablePaginationBaseProps extends js.Object {
   var suppressHydrationWarning: js.UndefOr[Boolean] = js.undefined
   var tabIndex: js.UndefOr[Double] = js.undefined
   var title: js.UndefOr[String] = js.undefined
+  var translate: js.UndefOr[yes | no] = js.undefined
   var typeof: js.UndefOr[String] = js.undefined
   var unselectable: js.UndefOr[on | off] = js.undefined
   var valign: js.UndefOr[top | middle | bottom | baseline] = js.undefined
@@ -470,6 +473,7 @@ object TablePaginationBaseProps {
     suppressHydrationWarning: js.UndefOr[Boolean] = js.undefined,
     tabIndex: Int | Double = null,
     title: String = null,
+    translate: yes | no = null,
     typeof: String = null,
     unselectable: on | off = null,
     valign: top | middle | bottom | baseline = null,
@@ -657,6 +661,7 @@ object TablePaginationBaseProps {
     if (!js.isUndefined(suppressHydrationWarning)) __obj.updateDynamic("suppressHydrationWarning")(suppressHydrationWarning.asInstanceOf[js.Any])
     if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (translate != null) __obj.updateDynamic("translate")(translate.asInstanceOf[js.Any])
     if (typeof != null) __obj.updateDynamic("typeof")(typeof.asInstanceOf[js.Any])
     if (unselectable != null) __obj.updateDynamic("unselectable")(unselectable.asInstanceOf[js.Any])
     if (valign != null) __obj.updateDynamic("valign")(valign.asInstanceOf[js.Any])

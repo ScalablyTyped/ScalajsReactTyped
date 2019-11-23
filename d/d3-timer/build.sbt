@@ -1,6 +1,6 @@
 organization := "org.gulliblytyped.japgolly"
 name := "d3-timer"
-version := "1.0-dt-20190212Z-d84639"
+version := "1.0-dt-20190212Z-7ec633"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

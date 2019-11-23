@@ -47,6 +47,7 @@ import typingsJapgolly.atMaterialDashUiCore.atMaterialDashUiCoreStrings.location
 import typingsJapgolly.atMaterialDashUiCore.atMaterialDashUiCoreStrings.menu
 import typingsJapgolly.atMaterialDashUiCore.atMaterialDashUiCoreStrings.mixed
 import typingsJapgolly.atMaterialDashUiCore.atMaterialDashUiCoreStrings.move
+import typingsJapgolly.atMaterialDashUiCore.atMaterialDashUiCoreStrings.no
 import typingsJapgolly.atMaterialDashUiCore.atMaterialDashUiCoreStrings.none
 import typingsJapgolly.atMaterialDashUiCore.atMaterialDashUiCoreStrings.numeric
 import typingsJapgolly.atMaterialDashUiCore.atMaterialDashUiCoreStrings.off
@@ -70,6 +71,7 @@ import typingsJapgolly.atMaterialDashUiCore.atMaterialDashUiCoreStrings.top
 import typingsJapgolly.atMaterialDashUiCore.atMaterialDashUiCoreStrings.tree
 import typingsJapgolly.atMaterialDashUiCore.atMaterialDashUiCoreStrings.url
 import typingsJapgolly.atMaterialDashUiCore.atMaterialDashUiCoreStrings.vertical
+import typingsJapgolly.atMaterialDashUiCore.atMaterialDashUiCoreStrings.yes
 import typingsJapgolly.atMaterialDashUiCore.backdropBackdropMod.BackdropProps
 import typingsJapgolly.atMaterialDashUiCore.modalModalManagerMod.ModalManager
 import typingsJapgolly.atMaterialDashUiCore.stylesCreateMuiThemeMod.Theme
@@ -303,6 +305,7 @@ trait PartialDrawerProps extends js.Object {
   var theme: js.UndefOr[Theme] = js.undefined
   var title: js.UndefOr[String] = js.undefined
   var transitionDuration: js.UndefOr[Double | Anon_Appear] = js.undefined
+  var translate: js.UndefOr[yes | no] = js.undefined
   var typeof: js.UndefOr[String] = js.undefined
   var unselectable: js.UndefOr[on | off] = js.undefined
   var variant: js.UndefOr[permanent | persistent | temporary] = js.undefined
@@ -515,6 +518,7 @@ object PartialDrawerProps {
     theme: Theme = null,
     title: String = null,
     transitionDuration: Double | Anon_Appear = null,
+    translate: yes | no = null,
     typeof: String = null,
     unselectable: on | off = null,
     variant: permanent | persistent | temporary = null,
@@ -724,6 +728,7 @@ object PartialDrawerProps {
     if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     if (transitionDuration != null) __obj.updateDynamic("transitionDuration")(transitionDuration.asInstanceOf[js.Any])
+    if (translate != null) __obj.updateDynamic("translate")(translate.asInstanceOf[js.Any])
     if (typeof != null) __obj.updateDynamic("typeof")(typeof.asInstanceOf[js.Any])
     if (unselectable != null) __obj.updateDynamic("unselectable")(unselectable.asInstanceOf[js.Any])
     if (variant != null) __obj.updateDynamic("variant")(variant.asInstanceOf[js.Any])

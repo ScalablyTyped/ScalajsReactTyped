@@ -45,6 +45,7 @@ import typingsJapgolly.antd.antdStrings.location
 import typingsJapgolly.antd.antdStrings.menu
 import typingsJapgolly.antd.antdStrings.mixed
 import typingsJapgolly.antd.antdStrings.move
+import typingsJapgolly.antd.antdStrings.no
 import typingsJapgolly.antd.antdStrings.none
 import typingsJapgolly.antd.antdStrings.numeric
 import typingsJapgolly.antd.antdStrings.off
@@ -63,6 +64,7 @@ import typingsJapgolly.antd.antdStrings.time
 import typingsJapgolly.antd.antdStrings.tree
 import typingsJapgolly.antd.antdStrings.url
 import typingsJapgolly.antd.antdStrings.vertical
+import typingsJapgolly.antd.antdStrings.yes
 import typingsJapgolly.antd.esMenuMenuItemMod.MenuItemProps
 import typingsJapgolly.antd.esMenuMenuItemMod.default
 import typingsJapgolly.antd.esMenuMod.ClickParam
@@ -245,6 +247,7 @@ object MenuItem {
     suppressHydrationWarning: js.UndefOr[Boolean] = js.undefined,
     tabIndex: Int | Double = null,
     title: VdomNode = null,
+    translate: yes | no = null,
     typeof: String = null,
     unselectable: on | off = null,
     vocab: String = null,
@@ -426,6 +429,7 @@ object MenuItem {
     if (!js.isUndefined(suppressHydrationWarning)) __obj.updateDynamic("suppressHydrationWarning")(suppressHydrationWarning.asInstanceOf[js.Any])
     if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.rawNode.asInstanceOf[js.Any])
+    if (translate != null) __obj.updateDynamic("translate")(translate.asInstanceOf[js.Any])
     if (typeof != null) __obj.updateDynamic("typeof")(typeof.asInstanceOf[js.Any])
     if (unselectable != null) __obj.updateDynamic("unselectable")(unselectable.asInstanceOf[js.Any])
     if (vocab != null) __obj.updateDynamic("vocab")(vocab.asInstanceOf[js.Any])

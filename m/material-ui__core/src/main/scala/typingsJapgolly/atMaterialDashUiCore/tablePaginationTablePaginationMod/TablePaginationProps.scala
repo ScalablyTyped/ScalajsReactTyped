@@ -43,6 +43,7 @@ import typingsJapgolly.atMaterialDashUiCore.atMaterialDashUiCoreStrings.menu
 import typingsJapgolly.atMaterialDashUiCore.atMaterialDashUiCoreStrings.middle
 import typingsJapgolly.atMaterialDashUiCore.atMaterialDashUiCoreStrings.mixed
 import typingsJapgolly.atMaterialDashUiCore.atMaterialDashUiCoreStrings.move
+import typingsJapgolly.atMaterialDashUiCore.atMaterialDashUiCoreStrings.no
 import typingsJapgolly.atMaterialDashUiCore.atMaterialDashUiCoreStrings.none
 import typingsJapgolly.atMaterialDashUiCore.atMaterialDashUiCoreStrings.numeric
 import typingsJapgolly.atMaterialDashUiCore.atMaterialDashUiCoreStrings.off
@@ -63,6 +64,7 @@ import typingsJapgolly.atMaterialDashUiCore.atMaterialDashUiCoreStrings.top
 import typingsJapgolly.atMaterialDashUiCore.atMaterialDashUiCoreStrings.tree
 import typingsJapgolly.atMaterialDashUiCore.atMaterialDashUiCoreStrings.url
 import typingsJapgolly.atMaterialDashUiCore.atMaterialDashUiCoreStrings.vertical
+import typingsJapgolly.atMaterialDashUiCore.atMaterialDashUiCoreStrings.yes
 import typingsJapgolly.atMaterialDashUiCore.tableCellTableCellMod.Padding
 import typingsJapgolly.atMaterialDashUiCore.tableCellTableCellMod.SortDirection
 import typingsJapgolly.atMaterialDashUiCore.tablePaginationTablePaginationActionsMod.TablePaginationActionsProps
@@ -285,6 +287,7 @@ trait TablePaginationProps extends js.Object {
   var suppressHydrationWarning: js.UndefOr[Boolean] = js.native
   var tabIndex: js.UndefOr[Double] = js.native
   var title: js.UndefOr[String] = js.native
+  var translate: js.UndefOr[yes | no] = js.native
   var typeof: js.UndefOr[String] = js.native
   var unselectable: js.UndefOr[on | off] = js.native
   var valign: js.UndefOr[top | middle | bottom | baseline] = js.native

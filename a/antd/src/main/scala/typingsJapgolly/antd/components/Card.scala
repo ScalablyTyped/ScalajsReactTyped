@@ -45,6 +45,7 @@ import typingsJapgolly.antd.antdStrings.location
 import typingsJapgolly.antd.antdStrings.menu
 import typingsJapgolly.antd.antdStrings.mixed
 import typingsJapgolly.antd.antdStrings.move
+import typingsJapgolly.antd.antdStrings.no
 import typingsJapgolly.antd.antdStrings.none
 import typingsJapgolly.antd.antdStrings.numeric
 import typingsJapgolly.antd.antdStrings.off
@@ -63,6 +64,7 @@ import typingsJapgolly.antd.antdStrings.time
 import typingsJapgolly.antd.antdStrings.tree
 import typingsJapgolly.antd.antdStrings.url
 import typingsJapgolly.antd.antdStrings.vertical
+import typingsJapgolly.antd.antdStrings.yes
 import typingsJapgolly.antd.esCardMod.CardProps
 import typingsJapgolly.antd.esCardMod.CardSize
 import typingsJapgolly.antd.esCardMod.CardTabListType
@@ -260,6 +262,7 @@ object Card {
     tabIndex: Int | Double = null,
     tabList: js.Array[CardTabListType] = null,
     title: VdomNode = null,
+    translate: yes | no = null,
     `type`: CardType = null,
     typeof: String = null,
     unselectable: on | off = null,
@@ -455,6 +458,7 @@ object Card {
     if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
     if (tabList != null) __obj.updateDynamic("tabList")(tabList.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.rawNode.asInstanceOf[js.Any])
+    if (translate != null) __obj.updateDynamic("translate")(translate.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (typeof != null) __obj.updateDynamic("typeof")(typeof.asInstanceOf[js.Any])
     if (unselectable != null) __obj.updateDynamic("unselectable")(unselectable.asInstanceOf[js.Any])

@@ -1,6 +1,6 @@
 organization := "org.gulliblytyped.japgolly"
 name := "d3-random"
-version := "1.1-dt-20190212Z-c5b5c4"
+version := "1.1-dt-20190212Z-7e6668"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,13 +1,13 @@
 organization := "org.gulliblytyped.japgolly"
 name := "d3-fetch"
-version := "1.1-dt-20181228Z-733af9"
+version := "1.1-dt-20181228Z-8bef6c"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.github.japgolly.scalajs-react" %%% "core" % "1.4.2",
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.gulliblytyped.japgolly" %%% "d3-dsv" % "1.0-dt-20190326Z-790504",
-  "org.gulliblytyped.japgolly" %%% "std" % "3.7-c9d0d4")
+  "org.gulliblytyped.japgolly" %%% "d3-dsv" % "1.0-dt-20190326Z-e4716b",
+  "org.gulliblytyped.japgolly" %%% "std" % "3.7-6f398d")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

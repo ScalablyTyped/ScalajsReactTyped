@@ -46,6 +46,7 @@ import typingsJapgolly.antd.antdStrings.location
 import typingsJapgolly.antd.antdStrings.menu
 import typingsJapgolly.antd.antdStrings.mixed
 import typingsJapgolly.antd.antdStrings.move
+import typingsJapgolly.antd.antdStrings.no
 import typingsJapgolly.antd.antdStrings.none
 import typingsJapgolly.antd.antdStrings.numeric
 import typingsJapgolly.antd.antdStrings.off
@@ -65,6 +66,7 @@ import typingsJapgolly.antd.antdStrings.time
 import typingsJapgolly.antd.antdStrings.tree
 import typingsJapgolly.antd.antdStrings.url
 import typingsJapgolly.antd.antdStrings.vertical
+import typingsJapgolly.antd.antdStrings.yes
 import typingsJapgolly.antd.esInputDashNumberMod.InputNumberProps
 import typingsJapgolly.react.Anon_Html
 import typingsJapgolly.react.reactMod.CSSProperties
@@ -277,6 +279,7 @@ abstract class SharedApply_InputNumberProps1314002642[ComponentRef] () {
     suppressHydrationWarning: js.UndefOr[Boolean] = js.undefined,
     tabIndex: Int | Double = null,
     title: String = null,
+    translate: yes | no = null,
     `type`: String = null,
     typeof: String = null,
     unselectable: on | off = null,
@@ -492,6 +495,7 @@ abstract class SharedApply_InputNumberProps1314002642[ComponentRef] () {
     if (!js.isUndefined(suppressHydrationWarning)) __obj.updateDynamic("suppressHydrationWarning")(suppressHydrationWarning.asInstanceOf[js.Any])
     if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (translate != null) __obj.updateDynamic("translate")(translate.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (typeof != null) __obj.updateDynamic("typeof")(typeof.asInstanceOf[js.Any])
     if (unselectable != null) __obj.updateDynamic("unselectable")(unselectable.asInstanceOf[js.Any])

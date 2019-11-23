@@ -55,6 +55,7 @@ import typingsJapgolly.atMaterialDashUiCore.atMaterialDashUiCoreStrings.location
 import typingsJapgolly.atMaterialDashUiCore.atMaterialDashUiCoreStrings.menu
 import typingsJapgolly.atMaterialDashUiCore.atMaterialDashUiCoreStrings.mixed
 import typingsJapgolly.atMaterialDashUiCore.atMaterialDashUiCoreStrings.move
+import typingsJapgolly.atMaterialDashUiCore.atMaterialDashUiCoreStrings.no
 import typingsJapgolly.atMaterialDashUiCore.atMaterialDashUiCoreStrings.none
 import typingsJapgolly.atMaterialDashUiCore.atMaterialDashUiCoreStrings.numeric
 import typingsJapgolly.atMaterialDashUiCore.atMaterialDashUiCoreStrings.off
@@ -73,6 +74,7 @@ import typingsJapgolly.atMaterialDashUiCore.atMaterialDashUiCoreStrings.time
 import typingsJapgolly.atMaterialDashUiCore.atMaterialDashUiCoreStrings.tree
 import typingsJapgolly.atMaterialDashUiCore.atMaterialDashUiCoreStrings.url
 import typingsJapgolly.atMaterialDashUiCore.atMaterialDashUiCoreStrings.vertical
+import typingsJapgolly.atMaterialDashUiCore.atMaterialDashUiCoreStrings.yes
 import typingsJapgolly.atMaterialDashUiCore.backdropBackdropMod.BackdropProps
 import typingsJapgolly.atMaterialDashUiCore.menuMenuMod.MenuProps
 import typingsJapgolly.atMaterialDashUiCore.menuMod.default
@@ -307,6 +309,7 @@ object Menu {
     title: String = null,
     transformOrigin: PopoverOrigin = null,
     transitionDuration: Double | Anon_Appear | auto = null,
+    translate: yes | no = null,
     typeof: String = null,
     unselectable: on | off = null,
     vocab: String = null,
@@ -529,6 +532,7 @@ object Menu {
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     if (transformOrigin != null) __obj.updateDynamic("transformOrigin")(transformOrigin.asInstanceOf[js.Any])
     if (transitionDuration != null) __obj.updateDynamic("transitionDuration")(transitionDuration.asInstanceOf[js.Any])
+    if (translate != null) __obj.updateDynamic("translate")(translate.asInstanceOf[js.Any])
     if (typeof != null) __obj.updateDynamic("typeof")(typeof.asInstanceOf[js.Any])
     if (unselectable != null) __obj.updateDynamic("unselectable")(unselectable.asInstanceOf[js.Any])
     if (vocab != null) __obj.updateDynamic("vocab")(vocab.asInstanceOf[js.Any])

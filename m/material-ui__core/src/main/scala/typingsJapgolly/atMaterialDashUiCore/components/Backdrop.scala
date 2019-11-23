@@ -48,6 +48,7 @@ import typingsJapgolly.atMaterialDashUiCore.atMaterialDashUiCoreStrings.location
 import typingsJapgolly.atMaterialDashUiCore.atMaterialDashUiCoreStrings.menu
 import typingsJapgolly.atMaterialDashUiCore.atMaterialDashUiCoreStrings.mixed
 import typingsJapgolly.atMaterialDashUiCore.atMaterialDashUiCoreStrings.move
+import typingsJapgolly.atMaterialDashUiCore.atMaterialDashUiCoreStrings.no
 import typingsJapgolly.atMaterialDashUiCore.atMaterialDashUiCoreStrings.none
 import typingsJapgolly.atMaterialDashUiCore.atMaterialDashUiCoreStrings.numeric
 import typingsJapgolly.atMaterialDashUiCore.atMaterialDashUiCoreStrings.off
@@ -66,6 +67,7 @@ import typingsJapgolly.atMaterialDashUiCore.atMaterialDashUiCoreStrings.time
 import typingsJapgolly.atMaterialDashUiCore.atMaterialDashUiCoreStrings.tree
 import typingsJapgolly.atMaterialDashUiCore.atMaterialDashUiCoreStrings.url
 import typingsJapgolly.atMaterialDashUiCore.atMaterialDashUiCoreStrings.vertical
+import typingsJapgolly.atMaterialDashUiCore.atMaterialDashUiCoreStrings.yes
 import typingsJapgolly.atMaterialDashUiCore.backdropBackdropMod.BackdropProps
 import typingsJapgolly.atMaterialDashUiCore.backdropMod.default
 import typingsJapgolly.atMaterialDashUiCore.stylesCreateMuiThemeMod.Theme
@@ -265,6 +267,7 @@ object Backdrop {
     timeout: Double | Anon_Appear = null,
     title: String = null,
     transitionDuration: Double | Anon_Appear = null,
+    translate: yes | no = null,
     typeof: String = null,
     unmountOnExit: js.UndefOr[Boolean] = js.undefined,
     unselectable: on | off = null,
@@ -462,6 +465,7 @@ object Backdrop {
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     if (transitionDuration != null) __obj.updateDynamic("transitionDuration")(transitionDuration.asInstanceOf[js.Any])
+    if (translate != null) __obj.updateDynamic("translate")(translate.asInstanceOf[js.Any])
     if (typeof != null) __obj.updateDynamic("typeof")(typeof.asInstanceOf[js.Any])
     if (!js.isUndefined(unmountOnExit)) __obj.updateDynamic("unmountOnExit")(unmountOnExit.asInstanceOf[js.Any])
     if (unselectable != null) __obj.updateDynamic("unselectable")(unselectable.asInstanceOf[js.Any])

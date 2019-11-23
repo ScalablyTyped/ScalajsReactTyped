@@ -49,6 +49,7 @@ import typingsJapgolly.react.reactStrings.location
 import typingsJapgolly.react.reactStrings.menu
 import typingsJapgolly.react.reactStrings.mixed
 import typingsJapgolly.react.reactStrings.move
+import typingsJapgolly.react.reactStrings.no
 import typingsJapgolly.react.reactStrings.none
 import typingsJapgolly.react.reactStrings.numeric
 import typingsJapgolly.react.reactStrings.off
@@ -67,6 +68,7 @@ import typingsJapgolly.react.reactStrings.time
 import typingsJapgolly.react.reactStrings.tree
 import typingsJapgolly.react.reactStrings.url
 import typingsJapgolly.react.reactStrings.vertical
+import typingsJapgolly.react.reactStrings.yes
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -262,6 +264,7 @@ object IconButton {
     touch: js.UndefOr[Boolean] = js.undefined,
     touchRippleColor: String = null,
     touchRippleOpacity: Int | Double = null,
+    translate: yes | no = null,
     `type`: String = null,
     typeof: String = null,
     unselectable: on | off = null,
@@ -462,6 +465,7 @@ object IconButton {
     if (!js.isUndefined(touch)) __obj.updateDynamic("touch")(touch.asInstanceOf[js.Any])
     if (touchRippleColor != null) __obj.updateDynamic("touchRippleColor")(touchRippleColor.asInstanceOf[js.Any])
     if (touchRippleOpacity != null) __obj.updateDynamic("touchRippleOpacity")(touchRippleOpacity.asInstanceOf[js.Any])
+    if (translate != null) __obj.updateDynamic("translate")(translate.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (typeof != null) __obj.updateDynamic("typeof")(typeof.asInstanceOf[js.Any])
     if (unselectable != null) __obj.updateDynamic("unselectable")(unselectable.asInstanceOf[js.Any])

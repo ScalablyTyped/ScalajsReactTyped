@@ -50,6 +50,7 @@ import typingsJapgolly.react.reactStrings.menu
 import typingsJapgolly.react.reactStrings.middle
 import typingsJapgolly.react.reactStrings.mixed
 import typingsJapgolly.react.reactStrings.move
+import typingsJapgolly.react.reactStrings.no
 import typingsJapgolly.react.reactStrings.none
 import typingsJapgolly.react.reactStrings.numeric
 import typingsJapgolly.react.reactStrings.off
@@ -70,6 +71,7 @@ import typingsJapgolly.react.reactStrings.top
 import typingsJapgolly.react.reactStrings.tree
 import typingsJapgolly.react.reactStrings.url
 import typingsJapgolly.react.reactStrings.vertical
+import typingsJapgolly.react.reactStrings.yes
 import typingsJapgolly.semanticDashUiDashReact.distCommonjsElementsIconIconMod.IconProps
 import typingsJapgolly.semanticDashUiDashReact.distCommonjsGenericMod.SemanticShorthandContent
 import typingsJapgolly.semanticDashUiDashReact.distCommonjsGenericMod.SemanticShorthandItem
@@ -274,6 +276,7 @@ object TableHeaderCellProps {
     tabIndex: Int | Double = null,
     textAlign: typingsJapgolly.semanticDashUiDashReact.semanticDashUiDashReactStrings.center | typingsJapgolly.semanticDashUiDashReact.semanticDashUiDashReactStrings.left | typingsJapgolly.semanticDashUiDashReact.semanticDashUiDashReactStrings.right = null,
     title: String = null,
+    translate: yes | no = null,
     typeof: String = null,
     unselectable: on | off = null,
     valign: top | middle | bottom | baseline = null,
@@ -471,6 +474,7 @@ object TableHeaderCellProps {
     if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
     if (textAlign != null) __obj.updateDynamic("textAlign")(textAlign.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (translate != null) __obj.updateDynamic("translate")(translate.asInstanceOf[js.Any])
     if (typeof != null) __obj.updateDynamic("typeof")(typeof.asInstanceOf[js.Any])
     if (unselectable != null) __obj.updateDynamic("unselectable")(unselectable.asInstanceOf[js.Any])
     if (valign != null) __obj.updateDynamic("valign")(valign.asInstanceOf[js.Any])

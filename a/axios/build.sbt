@@ -1,12 +1,12 @@
 organization := "org.gulliblytyped.japgolly"
 name := "axios"
-version := "0.19.0-de1538"
+version := "0.19.0-40250a"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.github.japgolly.scalajs-react" %%% "core" % "1.4.2",
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.gulliblytyped.japgolly" %%% "std" % "3.7-c9d0d4")
+  "org.gulliblytyped.japgolly" %%% "std" % "3.7-6f398d")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

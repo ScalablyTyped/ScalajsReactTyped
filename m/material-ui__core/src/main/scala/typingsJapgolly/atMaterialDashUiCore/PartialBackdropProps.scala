@@ -45,6 +45,7 @@ import typingsJapgolly.atMaterialDashUiCore.atMaterialDashUiCoreStrings.location
 import typingsJapgolly.atMaterialDashUiCore.atMaterialDashUiCoreStrings.menu
 import typingsJapgolly.atMaterialDashUiCore.atMaterialDashUiCoreStrings.mixed
 import typingsJapgolly.atMaterialDashUiCore.atMaterialDashUiCoreStrings.move
+import typingsJapgolly.atMaterialDashUiCore.atMaterialDashUiCoreStrings.no
 import typingsJapgolly.atMaterialDashUiCore.atMaterialDashUiCoreStrings.none
 import typingsJapgolly.atMaterialDashUiCore.atMaterialDashUiCoreStrings.numeric
 import typingsJapgolly.atMaterialDashUiCore.atMaterialDashUiCoreStrings.off
@@ -63,6 +64,7 @@ import typingsJapgolly.atMaterialDashUiCore.atMaterialDashUiCoreStrings.time
 import typingsJapgolly.atMaterialDashUiCore.atMaterialDashUiCoreStrings.tree
 import typingsJapgolly.atMaterialDashUiCore.atMaterialDashUiCoreStrings.url
 import typingsJapgolly.atMaterialDashUiCore.atMaterialDashUiCoreStrings.vertical
+import typingsJapgolly.atMaterialDashUiCore.atMaterialDashUiCoreStrings.yes
 import typingsJapgolly.atMaterialDashUiCore.stylesCreateMuiThemeMod.Theme
 import typingsJapgolly.react.Anon_Html
 import typingsJapgolly.react.reactMod.AnimationEventHandler
@@ -278,6 +280,7 @@ trait PartialBackdropProps extends js.Object {
   var timeout: js.UndefOr[Double | Anon_Appear] = js.undefined
   var title: js.UndefOr[String] = js.undefined
   var transitionDuration: js.UndefOr[Double | Anon_Appear] = js.undefined
+  var translate: js.UndefOr[yes | no] = js.undefined
   var typeof: js.UndefOr[String] = js.undefined
   var unmountOnExit: js.UndefOr[Boolean] = js.undefined
   var unselectable: js.UndefOr[on | off] = js.undefined
@@ -475,6 +478,7 @@ object PartialBackdropProps {
     timeout: Double | Anon_Appear = null,
     title: String = null,
     transitionDuration: Double | Anon_Appear = null,
+    translate: yes | no = null,
     typeof: String = null,
     unmountOnExit: js.UndefOr[Boolean] = js.undefined,
     unselectable: on | off = null,
@@ -669,6 +673,7 @@ object PartialBackdropProps {
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     if (transitionDuration != null) __obj.updateDynamic("transitionDuration")(transitionDuration.asInstanceOf[js.Any])
+    if (translate != null) __obj.updateDynamic("translate")(translate.asInstanceOf[js.Any])
     if (typeof != null) __obj.updateDynamic("typeof")(typeof.asInstanceOf[js.Any])
     if (!js.isUndefined(unmountOnExit)) __obj.updateDynamic("unmountOnExit")(unmountOnExit.asInstanceOf[js.Any])
     if (unselectable != null) __obj.updateDynamic("unselectable")(unselectable.asInstanceOf[js.Any])

@@ -52,6 +52,7 @@ import typingsJapgolly.react.reactStrings.location
 import typingsJapgolly.react.reactStrings.menu
 import typingsJapgolly.react.reactStrings.mixed
 import typingsJapgolly.react.reactStrings.move
+import typingsJapgolly.react.reactStrings.no
 import typingsJapgolly.react.reactStrings.none
 import typingsJapgolly.react.reactStrings.numeric
 import typingsJapgolly.react.reactStrings.off
@@ -70,6 +71,7 @@ import typingsJapgolly.react.reactStrings.time
 import typingsJapgolly.react.reactStrings.tree
 import typingsJapgolly.react.reactStrings.url
 import typingsJapgolly.react.reactStrings.vertical
+import typingsJapgolly.react.reactStrings.yes
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -279,6 +281,7 @@ object Checkbox {
     suppressHydrationWarning: js.UndefOr[Boolean] = js.undefined,
     tabIndex: Int | Double = null,
     title: String = null,
+    translate: yes | no = null,
     `type`: String = null,
     typeof: String = null,
     uncheckedIcon: VdomElement = null,
@@ -497,6 +500,7 @@ object Checkbox {
     if (!js.isUndefined(suppressHydrationWarning)) __obj.updateDynamic("suppressHydrationWarning")(suppressHydrationWarning.asInstanceOf[js.Any])
     if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (translate != null) __obj.updateDynamic("translate")(translate.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (typeof != null) __obj.updateDynamic("typeof")(typeof.asInstanceOf[js.Any])
     if (uncheckedIcon != null) __obj.updateDynamic("uncheckedIcon")(uncheckedIcon.rawElement.asInstanceOf[js.Any])

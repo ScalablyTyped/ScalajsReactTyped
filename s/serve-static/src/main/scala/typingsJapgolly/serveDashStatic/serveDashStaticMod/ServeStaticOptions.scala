@@ -66,7 +66,7 @@ trait ServeStaticOptions extends js.Object {
     * path the file path that is being sent
     * stat the stat object of the file that is being sent
     */
-  var setHeaders: js.UndefOr[js.Function3[/* res */ Response, /* path */ String, /* stat */ js.Any, _]] = js.undefined
+  var setHeaders: js.UndefOr[js.Function3[/* res */ Response[_], /* path */ String, /* stat */ js.Any, _]] = js.undefined
 }
 
 object ServeStaticOptions {
@@ -82,7 +82,7 @@ object ServeStaticOptions {
     lastModified: js.UndefOr[Boolean] = js.undefined,
     maxAge: Double | String = null,
     redirect: js.UndefOr[Boolean] = js.undefined,
-    setHeaders: (/* res */ Response, /* path */ String, /* stat */ js.Any) => CallbackTo[_] = null
+    setHeaders: (/* res */ Response[js.Any], /* path */ String, /* stat */ js.Any) => CallbackTo[_] = null
   ): ServeStaticOptions = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(cacheControl)) __obj.updateDynamic("cacheControl")(cacheControl.asInstanceOf[js.Any])
@@ -95,7 +95,7 @@ object ServeStaticOptions {
     if (!js.isUndefined(lastModified)) __obj.updateDynamic("lastModified")(lastModified.asInstanceOf[js.Any])
     if (maxAge != null) __obj.updateDynamic("maxAge")(maxAge.asInstanceOf[js.Any])
     if (!js.isUndefined(redirect)) __obj.updateDynamic("redirect")(redirect.asInstanceOf[js.Any])
-    if (setHeaders != null) __obj.updateDynamic("setHeaders")(js.Any.fromFunction3((t0: /* res */ typingsJapgolly.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Response, t1: /* path */ java.lang.String, t2: /* stat */ js.Any) => setHeaders(t0, t1, t2).runNow()))
+    if (setHeaders != null) __obj.updateDynamic("setHeaders")(js.Any.fromFunction3((t0: /* res */ typingsJapgolly.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod.Response[js.Any], t1: /* path */ java.lang.String, t2: /* stat */ js.Any) => setHeaders(t0, t1, t2).runNow()))
     __obj.asInstanceOf[ServeStaticOptions]
   }
 }

@@ -1,12 +1,12 @@
 organization := "org.gulliblytyped.japgolly"
 name := "d3-force"
-version := "1.2-dt-20190212Z-d78f55"
+version := "1.2-dt-20190212Z-6ae5b6"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.github.japgolly.scalajs-react" %%% "core" % "1.4.2",
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.gulliblytyped.japgolly" %%% "std" % "3.7-c9d0d4")
+  "org.gulliblytyped.japgolly" %%% "std" % "3.7-6f398d")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

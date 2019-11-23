@@ -42,6 +42,7 @@ import typingsJapgolly.antd.antdStrings.location
 import typingsJapgolly.antd.antdStrings.menu
 import typingsJapgolly.antd.antdStrings.mixed
 import typingsJapgolly.antd.antdStrings.move
+import typingsJapgolly.antd.antdStrings.no
 import typingsJapgolly.antd.antdStrings.none
 import typingsJapgolly.antd.antdStrings.numeric
 import typingsJapgolly.antd.antdStrings.off
@@ -61,6 +62,7 @@ import typingsJapgolly.antd.antdStrings.time
 import typingsJapgolly.antd.antdStrings.tree
 import typingsJapgolly.antd.antdStrings.url
 import typingsJapgolly.antd.antdStrings.vertical
+import typingsJapgolly.antd.antdStrings.yes
 import typingsJapgolly.react.Anon_Html
 import typingsJapgolly.react.reactMod.AnimationEventHandler
 import typingsJapgolly.react.reactMod.CSSProperties
@@ -289,6 +291,7 @@ trait PasswordProps extends js.Object {
   var suppressHydrationWarning: js.UndefOr[Boolean] = js.undefined
   var tabIndex: js.UndefOr[Double] = js.undefined
   var title: js.UndefOr[String] = js.undefined
+  var translate: js.UndefOr[yes | no] = js.undefined
   var `type`: js.UndefOr[String] = js.undefined
   var typeof: js.UndefOr[String] = js.undefined
   var unselectable: js.UndefOr[on | off] = js.undefined
@@ -506,6 +509,7 @@ object PasswordProps {
     suppressHydrationWarning: js.UndefOr[Boolean] = js.undefined,
     tabIndex: Int | Double = null,
     title: String = null,
+    translate: yes | no = null,
     `type`: String = null,
     typeof: String = null,
     unselectable: on | off = null,
@@ -720,6 +724,7 @@ object PasswordProps {
     if (!js.isUndefined(suppressHydrationWarning)) __obj.updateDynamic("suppressHydrationWarning")(suppressHydrationWarning.asInstanceOf[js.Any])
     if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (translate != null) __obj.updateDynamic("translate")(translate.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (typeof != null) __obj.updateDynamic("typeof")(typeof.asInstanceOf[js.Any])
     if (unselectable != null) __obj.updateDynamic("unselectable")(unselectable.asInstanceOf[js.Any])
