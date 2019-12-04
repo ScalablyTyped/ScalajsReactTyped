@@ -29,9 +29,9 @@ import typingsJapgolly.antd.antdStrings.middle
 import typingsJapgolly.antd.antdStrings.start
 import typingsJapgolly.antd.antdStrings.stretch
 import typingsJapgolly.antd.antdStrings.top
-import typingsJapgolly.antd.esGridRowMod.Gutter
-import typingsJapgolly.antd.esGridRowMod.RowProps
-import typingsJapgolly.antd.esRowMod.default
+import typingsJapgolly.antd.libGridRowMod.Gutter
+import typingsJapgolly.antd.libGridRowMod.RowProps
+import typingsJapgolly.antd.libRowMod.default
 import typingsJapgolly.react.Anon_Html
 import typingsJapgolly.react.reactMod.CSSProperties
 import typingsJapgolly.react.reactStrings.`additions text`
@@ -449,10 +449,14 @@ object Row {
     if (overrides != null) js.Dynamic.global.Object.assign(__obj, overrides)
   
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antd.esGridRowMod.RowProps, 
+  typingsJapgolly.antd.libGridRowMod.RowProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antd.esRowMod.default](js.constructorOf[typingsJapgolly.antd.esRowMod.default])
-    f(__obj.asInstanceOf[typingsJapgolly.antd.esGridRowMod.RowProps])(children: _*)
+  typingsJapgolly.antd.libRowMod.default](this.componentImport)
+    f(__obj.asInstanceOf[typingsJapgolly.antd.libGridRowMod.RowProps])(children: _*)
   }
+  @JSImport("antd/lib/row", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

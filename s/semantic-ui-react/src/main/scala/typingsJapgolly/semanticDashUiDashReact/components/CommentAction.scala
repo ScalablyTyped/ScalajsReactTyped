@@ -36,8 +36,12 @@ object CommentAction {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.semanticDashUiDashReact.distCommonjsViewsCommentCommentActionMod.CommentActionProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.semanticDashUiDashReact.distCommonjsViewsCommentCommentActionMod.default](js.constructorOf[typingsJapgolly.semanticDashUiDashReact.distCommonjsViewsCommentCommentActionMod.default])
+  typingsJapgolly.semanticDashUiDashReact.distCommonjsViewsCommentCommentActionMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.semanticDashUiDashReact.distCommonjsViewsCommentCommentActionMod.CommentActionProps])(children: _*)
   }
+  @JSImport("semantic-ui-react/dist/commonjs/views/Comment/CommentAction", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

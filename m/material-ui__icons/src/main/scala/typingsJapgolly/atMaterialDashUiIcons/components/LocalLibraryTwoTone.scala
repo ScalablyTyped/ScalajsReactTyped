@@ -1,13 +1,14 @@
 package typingsJapgolly.atMaterialDashUiIcons.components
 
+import typingsJapgolly.atMaterialDashUiIcons.localLibraryTwoToneMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object LocalLibraryTwoTone
-  extends SharedApply_SvgIconProps1591622337[
-      typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.LocalLibraryTwoTone
-    ] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.LocalLibraryTwoTone]
+object LocalLibraryTwoTone extends SharedApply_SvgIconProps1591622337[default] {
+  @JSImport("@material-ui/icons/LocalLibraryTwoTone", "default")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

@@ -7,7 +7,7 @@ import japgolly.scalajs.react.component.Js.RawMounted
 import japgolly.scalajs.react.component.Js.UnmountedSimple
 import japgolly.scalajs.react.vdom.VdomNode
 import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.antd.esEmptyMod.EmptyProps
+import typingsJapgolly.antd.libEmptyMod.EmptyProps
 import typingsJapgolly.react.reactMod.CSSProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -41,10 +41,14 @@ object Empty {
     if (overrides != null) js.Dynamic.global.Object.assign(__obj, overrides)
   
     val f = japgolly.scalajs.react.JsComponent[
-  typingsJapgolly.antd.esEmptyMod.EmptyProps, 
+  typingsJapgolly.antd.libEmptyMod.EmptyProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  js.Object](typingsJapgolly.antd.esEmptyMod.default)
-    f(__obj.asInstanceOf[typingsJapgolly.antd.esEmptyMod.EmptyProps])(children: _*)
+  js.Object](this.componentImport)
+    f(__obj.asInstanceOf[typingsJapgolly.antd.libEmptyMod.EmptyProps])(children: _*)
   }
+  @JSImport("antd/lib/empty", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

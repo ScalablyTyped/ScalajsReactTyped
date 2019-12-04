@@ -1,12 +1,15 @@
 package typingsJapgolly.antd.components
 
-import typingsJapgolly.antd.esTreeDashSelectMod.default
+import typingsJapgolly.antd.libTreeDashSelectMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 object TreeDashSelect
-  extends SharedApply_TreeSelectProps_518155137[default[js.Any]] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.antd.esTreeDashSelectMod.default[js.Any]]
+  extends SharedApply_TreeSelectProps_7572186[default[js.Any]] {
+  @JSImport("antd/lib/tree-select", JSImport.Default)
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

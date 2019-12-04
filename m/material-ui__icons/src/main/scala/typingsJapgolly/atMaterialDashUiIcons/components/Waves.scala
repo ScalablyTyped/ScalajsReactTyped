@@ -1,11 +1,14 @@
 package typingsJapgolly.atMaterialDashUiIcons.components
 
+import typingsJapgolly.atMaterialDashUiIcons.wavesMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object Waves
-  extends SharedApply_SvgIconProps1591622337[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.Waves] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.Waves]
+object Waves extends SharedApply_SvgIconProps1591622337[default] {
+  @JSImport("@material-ui/icons/Waves", "default")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

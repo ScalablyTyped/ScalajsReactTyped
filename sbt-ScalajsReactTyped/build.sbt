@@ -1,6 +1,6 @@
 name := "sbt-ScalajsReactTyped"
 organization := "org.gulliblytyped.japgolly"
-version := "201911230456"
+version := "201912040838"
 sbtPlugin := true
 bintrayRepository := "ScalajsReactTyped"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

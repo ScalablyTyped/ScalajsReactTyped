@@ -1,13 +1,14 @@
 package typingsJapgolly.atMaterialDashUiIcons.components
 
+import typingsJapgolly.atMaterialDashUiIcons.pausePresentationSharpMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object PausePresentationSharp
-  extends SharedApply_SvgIconProps1591622337[
-      typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PausePresentationSharp
-    ] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PausePresentationSharp]
+object PausePresentationSharp extends SharedApply_SvgIconProps1591622337[default] {
+  @JSImport("@material-ui/icons/PausePresentationSharp", "default")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

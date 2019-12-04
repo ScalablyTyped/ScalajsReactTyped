@@ -1,11 +1,14 @@
 package typingsJapgolly.atMaterialDashUiIcons.components
 
+import typingsJapgolly.atMaterialDashUiIcons.forumOutlinedMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object ForumOutlined
-  extends SharedApply_SvgIconProps1591622337[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.ForumOutlined] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.ForumOutlined]
+object ForumOutlined extends SharedApply_SvgIconProps1591622337[default] {
+  @JSImport("@material-ui/icons/ForumOutlined", "default")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

@@ -10,11 +10,11 @@ import japgolly.scalajs.react.vdom.VdomNode
 import org.scalablytyped.runtime.StringDictionary
 import org.scalajs.dom.raw.HTMLElement
 import typingsJapgolly.antd.antdNumbers.`false`
-import typingsJapgolly.antd.esButtonButtonMod.ButtonType
-import typingsJapgolly.antd.esButtonButtonMod.NativeButtonProps
-import typingsJapgolly.antd.esModalMod.default
-import typingsJapgolly.antd.esModalModalMod.ModalProps
-import typingsJapgolly.antd.esModalModalMod.getContainerFunc
+import typingsJapgolly.antd.libButtonButtonMod.ButtonType
+import typingsJapgolly.antd.libButtonButtonMod.NativeButtonProps
+import typingsJapgolly.antd.libModalMod.default
+import typingsJapgolly.antd.libModalModalMod.ModalProps
+import typingsJapgolly.antd.libModalModalMod.getContainerFunc
 import typingsJapgolly.react.reactMod.CSSProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -97,10 +97,14 @@ object Modal {
     if (overrides != null) js.Dynamic.global.Object.assign(__obj, overrides)
   
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antd.esModalModalMod.ModalProps, 
+  typingsJapgolly.antd.libModalModalMod.ModalProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antd.esModalMod.default](js.constructorOf[typingsJapgolly.antd.esModalMod.default])
-    f(__obj.asInstanceOf[typingsJapgolly.antd.esModalModalMod.ModalProps])(children: _*)
+  typingsJapgolly.antd.libModalMod.default](this.componentImport)
+    f(__obj.asInstanceOf[typingsJapgolly.antd.libModalModalMod.ModalProps])(children: _*)
   }
+  @JSImport("antd/lib/modal", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

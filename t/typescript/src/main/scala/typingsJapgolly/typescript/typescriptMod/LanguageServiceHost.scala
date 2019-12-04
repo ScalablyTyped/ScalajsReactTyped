@@ -92,7 +92,7 @@ object LanguageServiceHost {
     getCancellationToken: js.UndefOr[CallbackTo[HostCancellationToken]] = js.undefined,
     getCustomTransformers: js.UndefOr[CallbackTo[js.UndefOr[CustomTransformers]]] = js.undefined,
     getDirectories: /* directoryName */ String => CallbackTo[js.Array[String]] = null,
-    getLocalizedDiagnosticMessages: js.UndefOr[CallbackTo[_]] = js.undefined,
+    getLocalizedDiagnosticMessages: js.UndefOr[CallbackTo[js.Any]] = js.undefined,
     getNewLine: js.UndefOr[CallbackTo[String]] = js.undefined,
     getProjectReferences: js.UndefOr[CallbackTo[js.UndefOr[js.Array[ProjectReference]]]] = js.undefined,
     getProjectVersion: js.UndefOr[CallbackTo[String]] = js.undefined,

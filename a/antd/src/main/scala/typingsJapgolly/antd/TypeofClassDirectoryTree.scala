@@ -1,9 +1,9 @@
 package typingsJapgolly.antd
 
 import org.scalablytyped.runtime.Instantiable1
-import typingsJapgolly.antd.esTreeDirectoryTreeMod.DirectoryTreeProps
-import typingsJapgolly.antd.esTreeDirectoryTreeMod.DirectoryTreeState
-import typingsJapgolly.antd.esTreeDirectoryTreeMod.default
+import typingsJapgolly.antd.libTreeDirectoryTreeMod.DirectoryTreeProps
+import typingsJapgolly.antd.libTreeDirectoryTreeMod.DirectoryTreeState
+import typingsJapgolly.antd.libTreeDirectoryTreeMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

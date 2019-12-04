@@ -25,8 +25,12 @@ object AppCanvas {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.materialDashUi.internalAppCanvasMod.AppCanvasProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.materialDashUi.internalAppCanvasMod.default](js.constructorOf[typingsJapgolly.materialDashUi.internalAppCanvasMod.default])
+  typingsJapgolly.materialDashUi.internalAppCanvasMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.materialDashUi.internalAppCanvasMod.AppCanvasProps])(children: _*)
   }
+  @JSImport("material-ui/internal/AppCanvas", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

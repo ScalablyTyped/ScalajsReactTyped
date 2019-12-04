@@ -51,9 +51,9 @@ object ValidationRule {
     min: Int | Double = null,
     pattern: js.RegExp = null,
     required: js.UndefOr[Boolean] = js.undefined,
-    transform: /* value */ js.Any => CallbackTo[_] = null,
+    transform: /* value */ js.Any => CallbackTo[js.Any] = null,
     `type`: String = null,
-    validator: (/* rule */ js.Any, /* value */ js.Any, /* callback */ js.Any, /* source */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => CallbackTo[_] = null,
+    validator: (/* rule */ js.Any, /* value */ js.Any, /* callback */ js.Any, /* source */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => CallbackTo[js.Any] = null,
     whitespace: js.UndefOr[Boolean] = js.undefined
   ): ValidationRule = {
     val __obj = js.Dynamic.literal()

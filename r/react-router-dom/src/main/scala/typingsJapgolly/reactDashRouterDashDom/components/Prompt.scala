@@ -34,8 +34,12 @@ object Prompt {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.reactDashRouter.reactDashRouterMod.PromptProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactDashRouterDashDom.reactDashRouterDashDomMod.Prompt](js.constructorOf[typingsJapgolly.reactDashRouterDashDom.reactDashRouterDashDomMod.Prompt])
+  typingsJapgolly.reactDashRouterDashDom.reactDashRouterDashDomMod.Prompt](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.reactDashRouter.reactDashRouterMod.PromptProps])(children: _*)
   }
+  @JSImport("react-router-dom", "Prompt")
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

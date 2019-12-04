@@ -45,8 +45,12 @@ object FeedLabel {
     val f = japgolly.scalajs.react.JsComponent[
   typingsJapgolly.semanticDashUiDashReact.distCommonjsViewsFeedFeedLabelMod.FeedLabelProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  js.Object](typingsJapgolly.semanticDashUiDashReact.distCommonjsViewsFeedFeedLabelMod.default)
+  js.Object](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.semanticDashUiDashReact.distCommonjsViewsFeedFeedLabelMod.FeedLabelProps])(children: _*)
   }
+  @JSImport("semantic-ui-react/dist/commonjs/views/Feed/FeedLabel", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

@@ -138,8 +138,12 @@ object Popup {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.semanticDashUiDashReact.distCommonjsModulesPopupPopupMod.PopupProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.semanticDashUiDashReact.distCommonjsModulesPopupMod.default](js.constructorOf[typingsJapgolly.semanticDashUiDashReact.distCommonjsModulesPopupMod.default])
+  typingsJapgolly.semanticDashUiDashReact.distCommonjsModulesPopupMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.semanticDashUiDashReact.distCommonjsModulesPopupPopupMod.PopupProps])(children: _*)
   }
+  @JSImport("semantic-ui-react/dist/commonjs/modules/Popup", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

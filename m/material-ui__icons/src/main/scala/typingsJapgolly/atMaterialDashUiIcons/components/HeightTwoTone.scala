@@ -1,11 +1,14 @@
 package typingsJapgolly.atMaterialDashUiIcons.components
 
+import typingsJapgolly.atMaterialDashUiIcons.heightTwoToneMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object HeightTwoTone
-  extends SharedApply_SvgIconProps1591622337[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.HeightTwoTone] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.HeightTwoTone]
+object HeightTwoTone extends SharedApply_SvgIconProps1591622337[default] {
+  @JSImport("@material-ui/icons/HeightTwoTone", "default")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

@@ -1,11 +1,14 @@
 package typingsJapgolly.atMaterialDashUiIcons.components
 
+import typingsJapgolly.atMaterialDashUiIcons.exposureOutlinedMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object ExposureOutlined
-  extends SharedApply_SvgIconProps1591622337[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.ExposureOutlined] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.ExposureOutlined]
+object ExposureOutlined extends SharedApply_SvgIconProps1591622337[default] {
+  @JSImport("@material-ui/icons/ExposureOutlined", "default")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

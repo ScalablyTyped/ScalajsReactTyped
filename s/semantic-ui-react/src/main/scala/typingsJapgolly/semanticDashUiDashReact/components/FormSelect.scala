@@ -89,7 +89,7 @@ object FormSelect {
     openOnFocus: js.UndefOr[Boolean] = js.undefined,
     placeholder: String = null,
     pointing: Boolean | left | right | top | (`top left`) | (`top right`) | bottom | (`bottom left`) | (`bottom right`) = null,
-    renderLabel: (/* item */ DropdownItemProps, /* index */ Double, /* defaultLabelProps */ LabelProps) => CallbackTo[_] = null,
+    renderLabel: (/* item */ DropdownItemProps, /* index */ Double, /* defaultLabelProps */ LabelProps) => CallbackTo[js.Any] = null,
     required: js.Any = null,
     scrolling: js.UndefOr[Boolean] = js.undefined,
     search: Boolean | (js.Function2[
@@ -198,8 +198,12 @@ object FormSelect {
     val f = japgolly.scalajs.react.JsComponent[
   typingsJapgolly.semanticDashUiDashReact.distCommonjsCollectionsFormFormSelectMod.FormSelectProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  js.Object](typingsJapgolly.semanticDashUiDashReact.distCommonjsCollectionsFormFormSelectMod.default)
+  js.Object](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.semanticDashUiDashReact.distCommonjsCollectionsFormFormSelectMod.FormSelectProps])(children: _*)
   }
+  @JSImport("semantic-ui-react/dist/commonjs/collections/Form/FormSelect", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

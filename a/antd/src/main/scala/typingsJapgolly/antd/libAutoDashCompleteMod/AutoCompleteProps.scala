@@ -89,7 +89,7 @@ object AutoCompleteProps {
     onDropdownVisibleChange: /* open */ Boolean => Callback = null,
     onFocus: js.UndefOr[Callback] = js.undefined,
     onSearch: /* value */ String => Callback = null,
-    onSelect: (/* value */ SelectValue, /* option */ js.Object) => CallbackTo[_] = null,
+    onSelect: (/* value */ SelectValue, /* option */ js.Object) => CallbackTo[js.Any] = null,
     open: js.UndefOr[Boolean] = js.undefined,
     optionLabelProp: String = null,
     placeholder: String | Node = null,

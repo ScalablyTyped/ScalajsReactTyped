@@ -1,11 +1,14 @@
 package typingsJapgolly.atMaterialDashUiIcons.components
 
+import typingsJapgolly.atMaterialDashUiIcons.locationCityMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object LocationCity
-  extends SharedApply_SvgIconProps1591622337[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.LocationCity] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.LocationCity]
+object LocationCity extends SharedApply_SvgIconProps1591622337[default] {
+  @JSImport("@material-ui/icons/LocationCity", "default")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

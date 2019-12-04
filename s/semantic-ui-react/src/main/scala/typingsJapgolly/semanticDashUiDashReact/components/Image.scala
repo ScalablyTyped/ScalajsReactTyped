@@ -82,8 +82,12 @@ object Image {
     val f = japgolly.scalajs.react.JsComponent[
   typingsJapgolly.semanticDashUiDashReact.distCommonjsElementsImageImageMod.ImageProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  js.Object](typingsJapgolly.semanticDashUiDashReact.distCommonjsElementsImageMod.default)
+  js.Object](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.semanticDashUiDashReact.distCommonjsElementsImageImageMod.ImageProps])(children: _*)
   }
+  @JSImport("semantic-ui-react/dist/commonjs/elements/Image", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

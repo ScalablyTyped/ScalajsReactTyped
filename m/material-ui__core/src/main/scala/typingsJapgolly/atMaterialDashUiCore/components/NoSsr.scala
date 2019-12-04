@@ -28,8 +28,12 @@ object NoSsr {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.atMaterialDashUiCore.noSsrNoSsrMod.NoSsrProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.atMaterialDashUiCore.noSsrMod.default](js.constructorOf[typingsJapgolly.atMaterialDashUiCore.noSsrMod.default])
+  typingsJapgolly.atMaterialDashUiCore.noSsrMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.atMaterialDashUiCore.noSsrNoSsrMod.NoSsrProps])(children: _*)
   }
+  @JSImport("@material-ui/core/NoSsr", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

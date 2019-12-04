@@ -69,8 +69,12 @@ object Icon {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.semanticDashUiDashReact.distCommonjsElementsIconIconMod.IconProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.semanticDashUiDashReact.distCommonjsElementsIconMod.default](js.constructorOf[typingsJapgolly.semanticDashUiDashReact.distCommonjsElementsIconMod.default])
+  typingsJapgolly.semanticDashUiDashReact.distCommonjsElementsIconMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.semanticDashUiDashReact.distCommonjsElementsIconIconMod.IconProps])(children: _*)
   }
+  @JSImport("semantic-ui-react/dist/commonjs/elements/Icon", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

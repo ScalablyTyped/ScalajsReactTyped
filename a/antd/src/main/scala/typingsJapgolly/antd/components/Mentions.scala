@@ -10,8 +10,8 @@ import japgolly.scalajs.react.vdom.VdomNode
 import org.scalablytyped.runtime.StringDictionary
 import org.scalajs.dom.raw.HTMLElement
 import org.scalajs.dom.raw.HTMLTextAreaElement
-import typingsJapgolly.antd.esMentionsMod.MentionProps
-import typingsJapgolly.antd.esMentionsMod.default
+import typingsJapgolly.antd.libMentionsMod.MentionProps
+import typingsJapgolly.antd.libMentionsMod.default
 import typingsJapgolly.rcDashMentions.libMentionsMod.Placement
 import typingsJapgolly.rcDashMentions.libOptionMod.OptionProps
 import typingsJapgolly.rcDashMentions.rcDashMentionsNumbers.`false`
@@ -67,16 +67,20 @@ object Mentions {
     if (split != null) __obj.updateDynamic("split")(split.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (transitionName != null) __obj.updateDynamic("transitionName")(transitionName.asInstanceOf[js.Any])
-    if (validateSearch != null) __obj.updateDynamic("validateSearch")(js.Any.fromFunction2((t0: /* text */ java.lang.String, t1: typingsJapgolly.antd.esMentionsMod.MentionProps) => validateSearch(t0, t1).runNow()))
+    if (validateSearch != null) __obj.updateDynamic("validateSearch")(js.Any.fromFunction2((t0: /* text */ java.lang.String, t1: typingsJapgolly.antd.libMentionsMod.MentionProps) => validateSearch(t0, t1).runNow()))
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
     if (overrides != null) js.Dynamic.global.Object.assign(__obj, overrides)
   
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antd.esMentionsMod.MentionProps, 
+  typingsJapgolly.antd.libMentionsMod.MentionProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antd.esMentionsMod.default](js.constructorOf[typingsJapgolly.antd.esMentionsMod.default])
-    f(__obj.asInstanceOf[typingsJapgolly.antd.esMentionsMod.MentionProps])(children: _*)
+  typingsJapgolly.antd.libMentionsMod.default](this.componentImport)
+    f(__obj.asInstanceOf[typingsJapgolly.antd.libMentionsMod.MentionProps])(children: _*)
   }
+  @JSImport("antd/lib/mentions", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

@@ -58,8 +58,12 @@ object FormField {
     val f = japgolly.scalajs.react.JsComponent[
   typingsJapgolly.semanticDashUiDashReact.distCommonjsCollectionsFormFormFieldMod.FormFieldProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  js.Object](typingsJapgolly.semanticDashUiDashReact.distCommonjsCollectionsFormFormFieldMod.default)
+  js.Object](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.semanticDashUiDashReact.distCommonjsCollectionsFormFormFieldMod.FormFieldProps])(children: _*)
   }
+  @JSImport("semantic-ui-react/dist/commonjs/collections/Form/FormField", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

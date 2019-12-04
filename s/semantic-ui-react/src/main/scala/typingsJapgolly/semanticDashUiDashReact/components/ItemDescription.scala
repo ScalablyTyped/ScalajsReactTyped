@@ -38,8 +38,12 @@ object ItemDescription {
     val f = japgolly.scalajs.react.JsComponent[
   typingsJapgolly.semanticDashUiDashReact.distCommonjsViewsItemItemDescriptionMod.ItemDescriptionProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  js.Object](typingsJapgolly.semanticDashUiDashReact.distCommonjsViewsItemItemDescriptionMod.default)
+  js.Object](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.semanticDashUiDashReact.distCommonjsViewsItemItemDescriptionMod.ItemDescriptionProps])(children: _*)
   }
+  @JSImport("semantic-ui-react/dist/commonjs/views/Item/ItemDescription", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

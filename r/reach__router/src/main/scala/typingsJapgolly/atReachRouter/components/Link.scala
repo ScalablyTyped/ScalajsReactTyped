@@ -38,8 +38,12 @@ object Link {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.atReachRouter.atReachRouterMod.LinkProps[TState], 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.atReachRouter.atReachRouterMod.Link[TState]](js.constructorOf[typingsJapgolly.atReachRouter.atReachRouterMod.Link[TState]])
+  typingsJapgolly.atReachRouter.atReachRouterMod.Link[TState]](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.atReachRouter.atReachRouterMod.LinkProps[TState]])(children: _*)
   }
+  @JSImport("@reach/router", "Link")
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

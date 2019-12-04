@@ -55,8 +55,12 @@ object Drawer {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.materialDashUi.__MaterialUI.DrawerProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.materialDashUi.drawerMod.default](js.constructorOf[typingsJapgolly.materialDashUi.drawerMod.default])
+  typingsJapgolly.materialDashUi.drawerMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.materialDashUi.__MaterialUI.DrawerProps])(children: _*)
   }
+  @JSImport("material-ui/Drawer", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

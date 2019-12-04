@@ -257,7 +257,7 @@ object DatepickerOptions {
     autoSize: js.UndefOr[Boolean] = js.undefined,
     autohide: js.UndefOr[Boolean] = js.undefined,
     beforeShow: (/* input */ Element, /* inst */ js.Any) => CallbackTo[DatepickerOptions] = null,
-    beforeShowDay: /* date */ js.Date => CallbackTo[js.Array[_]] = null,
+    beforeShowDay: /* date */ js.Date => CallbackTo[js.Array[js.Any]] = null,
     buttonImage: String = null,
     buttonImageOnly: js.UndefOr[Boolean] = js.undefined,
     buttonText: String = null,

@@ -46,8 +46,12 @@ object Avatar {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.materialDashUi.__MaterialUI.AvatarProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.materialDashUi.avatarMod.default](js.constructorOf[typingsJapgolly.materialDashUi.avatarMod.default])
+  typingsJapgolly.materialDashUi.avatarMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.materialDashUi.__MaterialUI.AvatarProps])(children: _*)
   }
+  @JSImport("material-ui/Avatar", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

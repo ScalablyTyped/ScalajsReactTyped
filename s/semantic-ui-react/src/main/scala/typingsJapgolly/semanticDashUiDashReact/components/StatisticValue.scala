@@ -40,8 +40,12 @@ object StatisticValue {
     val f = japgolly.scalajs.react.JsComponent[
   typingsJapgolly.semanticDashUiDashReact.distCommonjsViewsStatisticStatisticValueMod.StatisticValueProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  js.Object](typingsJapgolly.semanticDashUiDashReact.distCommonjsViewsStatisticStatisticValueMod.default)
+  js.Object](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.semanticDashUiDashReact.distCommonjsViewsStatisticStatisticValueMod.StatisticValueProps])(children: _*)
   }
+  @JSImport("semantic-ui-react/dist/commonjs/views/Statistic/StatisticValue", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

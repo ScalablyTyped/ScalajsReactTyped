@@ -8,14 +8,14 @@ import japgolly.scalajs.react.raw.React.Node
 import japgolly.scalajs.react.vdom.VdomNode
 import org.scalablytyped.runtime.StringDictionary
 import typingsJapgolly.antd.antdNumbers.`false`
-import typingsJapgolly.antd.esListMod.ListGridType
-import typingsJapgolly.antd.esListMod.ListItemLayout
-import typingsJapgolly.antd.esListMod.ListLocale
-import typingsJapgolly.antd.esListMod.ListProps
-import typingsJapgolly.antd.esListMod.ListSize
-import typingsJapgolly.antd.esListMod.default
-import typingsJapgolly.antd.esPaginationPaginationMod.PaginationConfig
-import typingsJapgolly.antd.esSpinMod.SpinProps
+import typingsJapgolly.antd.libListMod.ListGridType
+import typingsJapgolly.antd.libListMod.ListItemLayout
+import typingsJapgolly.antd.libListMod.ListLocale
+import typingsJapgolly.antd.libListMod.ListProps
+import typingsJapgolly.antd.libListMod.ListSize
+import typingsJapgolly.antd.libListMod.default
+import typingsJapgolly.antd.libPaginationPaginationMod.PaginationConfig
+import typingsJapgolly.antd.libSpinMod.SpinProps
 import typingsJapgolly.react.reactMod.CSSProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -72,10 +72,14 @@ object List {
     if (overrides != null) js.Dynamic.global.Object.assign(__obj, overrides)
   
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antd.esListMod.ListProps[T], 
+  typingsJapgolly.antd.libListMod.ListProps[T], 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antd.esListMod.default[T]](js.constructorOf[typingsJapgolly.antd.esListMod.default[T]])
-    f(__obj.asInstanceOf[typingsJapgolly.antd.esListMod.ListProps[T]])(children: _*)
+  typingsJapgolly.antd.libListMod.default[T]](this.componentImport)
+    f(__obj.asInstanceOf[typingsJapgolly.antd.libListMod.ListProps[T]])(children: _*)
   }
+  @JSImport("antd/lib/list", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

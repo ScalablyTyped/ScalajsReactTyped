@@ -1,13 +1,14 @@
 package typingsJapgolly.atMaterialDashUiIcons.components
 
+import typingsJapgolly.atMaterialDashUiIcons.folderSpecialOutlinedMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object FolderSpecialOutlined
-  extends SharedApply_SvgIconProps1591622337[
-      typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.FolderSpecialOutlined
-    ] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.FolderSpecialOutlined]
+object FolderSpecialOutlined extends SharedApply_SvgIconProps1591622337[default] {
+  @JSImport("@material-ui/icons/FolderSpecialOutlined", "default")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

@@ -3,7 +3,6 @@ package typingsJapgolly.reactDashNative.reactDashNativeMod
 import japgolly.scalajs.react.Callback
 import japgolly.scalajs.react.ReactEventFrom
 import org.scalajs.dom.raw.Element
-import typingsJapgolly.reactDashNative.NodeHandle
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -46,7 +45,8 @@ object ImagePropsIOS {
     if (blurRadius != null) __obj.updateDynamic("blurRadius")(blurRadius.asInstanceOf[js.Any])
     if (capInsets != null) __obj.updateDynamic("capInsets")(capInsets.asInstanceOf[js.Any])
     onPartialLoad.foreach(p => __obj.updateDynamic("onPartialLoad")(p.toJsFn))
-    if (onProgress != null) __obj.updateDynamic("onProgress")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[typingsJapgolly.reactDashNative.NodeHandle with org.scalajs.dom.raw.Element]) => onProgress(t0).runNow()))
+    if (onProgress != null) __obj.updateDynamic("onProgress")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[
+  typingsJapgolly.reactDashNative.reactDashNativeMod.NodeHandle with org.scalajs.dom.raw.Element]) => onProgress(t0).runNow()))
     __obj.asInstanceOf[ImagePropsIOS]
   }
 }

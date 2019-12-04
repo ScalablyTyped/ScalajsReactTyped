@@ -22,7 +22,7 @@ object Body {
     blob: CallbackTo[js.Promise[org.scalajs.dom.raw.Blob]],
     bodyUsed: scala.Boolean,
     formData: CallbackTo[js.Promise[org.scalajs.dom.raw.FormData]],
-    json: CallbackTo[js.Promise[_]],
+    json: CallbackTo[js.Promise[js.Any]],
     text: CallbackTo[js.Promise[java.lang.String]],
     body: org.scalajs.dom.experimental.ReadableStream[scala.scalajs.js.typedarray.Uint8Array] = null
   ): Body = {

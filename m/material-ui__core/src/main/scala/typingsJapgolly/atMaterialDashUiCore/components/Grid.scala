@@ -476,8 +476,12 @@ object Grid {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.atMaterialDashUiCore.gridGridMod.GridProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.atMaterialDashUiCore.gridMod.default](js.constructorOf[typingsJapgolly.atMaterialDashUiCore.gridMod.default])
+  typingsJapgolly.atMaterialDashUiCore.gridMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.atMaterialDashUiCore.gridGridMod.GridProps])(children: _*)
   }
+  @JSImport("@material-ui/core/Grid", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

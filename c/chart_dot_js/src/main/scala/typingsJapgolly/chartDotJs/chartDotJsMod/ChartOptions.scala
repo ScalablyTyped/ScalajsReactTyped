@@ -57,7 +57,7 @@ object ChartOptions {
     legend: ChartLegendOptions = null,
     legendCallback: /* chart */ Chart => CallbackTo[String] = null,
     maintainAspectRatio: js.UndefOr[Boolean] = js.undefined,
-    onClick: (/* event */ js.UndefOr[MouseEvent], /* activeElements */ js.UndefOr[js.Array[js.Object]]) => CallbackTo[_] = null,
+    onClick: (/* event */ js.UndefOr[MouseEvent], /* activeElements */ js.UndefOr[js.Array[js.Object]]) => CallbackTo[js.Any] = null,
     onHover: js.ThisFunction2[/* this */ Chart, /* event */ MouseEvent, /* activeElements */ js.Array[js.Object], _] = null,
     onResize: js.ThisFunction1[/* this */ Chart, /* newSize */ ChartSize, Unit] = null,
     plugins: ChartPluginsOptions = null,

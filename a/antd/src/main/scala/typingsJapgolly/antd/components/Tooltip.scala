@@ -8,13 +8,13 @@ import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
 import japgolly.scalajs.react.raw.React.Node
 import org.scalablytyped.runtime.StringDictionary
 import org.scalajs.dom.raw.HTMLElement
-import typingsJapgolly.antd.esTooltipMod.RenderFunction
-import typingsJapgolly.antd.esTooltipMod.TooltipAlignConfig
-import typingsJapgolly.antd.esTooltipMod.TooltipPlacement
-import typingsJapgolly.antd.esTooltipMod.TooltipProps
-import typingsJapgolly.antd.esTooltipMod.TooltipTrigger
-import typingsJapgolly.antd.esTooltipMod.default
-import typingsJapgolly.antd.esTooltipPlacementsMod.AdjustOverflow
+import typingsJapgolly.antd.libTooltipMod.RenderFunction
+import typingsJapgolly.antd.libTooltipMod.TooltipAlignConfig
+import typingsJapgolly.antd.libTooltipMod.TooltipPlacement
+import typingsJapgolly.antd.libTooltipMod.TooltipProps
+import typingsJapgolly.antd.libTooltipMod.TooltipTrigger
+import typingsJapgolly.antd.libTooltipMod.default
+import typingsJapgolly.antd.libTooltipPlacementsMod.AdjustOverflow
 import typingsJapgolly.react.reactMod.CSSProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -79,10 +79,10 @@ object Tooltip {
     if (overrides != null) js.Dynamic.global.Object.assign(__obj, overrides)
   
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antd.esTooltipMod.TooltipProps, 
+  typingsJapgolly.antd.libTooltipMod.TooltipProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antd.esTooltipMod.default](js.constructorOf[typingsJapgolly.antd.esTooltipMod.default])
-    f(__obj.asInstanceOf[typingsJapgolly.antd.esTooltipMod.TooltipProps])(children: _*)
+  typingsJapgolly.antd.libTooltipMod.default](this.componentImport)
+    f(__obj.asInstanceOf[typingsJapgolly.antd.libTooltipMod.TooltipProps])(children: _*)
   }
   def TooltipPropsWithOverlay(
     align: TooltipAlignConfig = null,
@@ -142,10 +142,14 @@ object Tooltip {
     if (overrides != null) js.Dynamic.global.Object.assign(__obj, overrides)
   
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antd.esTooltipMod.TooltipProps, 
+  typingsJapgolly.antd.libTooltipMod.TooltipProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antd.esTooltipMod.default](js.constructorOf[typingsJapgolly.antd.esTooltipMod.default])
-    f(__obj.asInstanceOf[typingsJapgolly.antd.esTooltipMod.TooltipProps])(children: _*)
+  typingsJapgolly.antd.libTooltipMod.default](this.componentImport)
+    f(__obj.asInstanceOf[typingsJapgolly.antd.libTooltipMod.TooltipProps])(children: _*)
   }
+  @JSImport("antd/lib/tooltip", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

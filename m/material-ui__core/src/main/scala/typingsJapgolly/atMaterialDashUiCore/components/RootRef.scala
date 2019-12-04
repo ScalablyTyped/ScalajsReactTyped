@@ -28,8 +28,12 @@ object RootRef {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.atMaterialDashUiCore.rootRefRootRefMod.RootRefProps[js.Any], 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.atMaterialDashUiCore.rootRefMod.default](js.constructorOf[typingsJapgolly.atMaterialDashUiCore.rootRefMod.default])
+  typingsJapgolly.atMaterialDashUiCore.rootRefMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.atMaterialDashUiCore.rootRefRootRefMod.RootRefProps[js.Any]])(children: _*)
   }
+  @JSImport("@material-ui/core/RootRef", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

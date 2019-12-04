@@ -1,11 +1,14 @@
 package typingsJapgolly.atMaterialDashUiIcons.components
 
+import typingsJapgolly.atMaterialDashUiIcons.musicOffSharpMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object MusicOffSharp
-  extends SharedApply_SvgIconProps1591622337[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.MusicOffSharp] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.MusicOffSharp]
+object MusicOffSharp extends SharedApply_SvgIconProps1591622337[default] {
+  @JSImport("@material-ui/icons/MusicOffSharp", "default")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

@@ -1,15 +1,15 @@
 package typingsJapgolly.antd
 
 import japgolly.scalajs.react.raw.React.Node
-import typingsJapgolly.antd.esStatisticUtilsMod.Formatter
-import typingsJapgolly.antd.esStatisticUtilsMod.valueType
+import typingsJapgolly.antd.libStatisticUtilsMod.Formatter
+import typingsJapgolly.antd.libStatisticUtilsMod.valueType
 import typingsJapgolly.react.reactMod.CSSProperties
 import typingsJapgolly.react.reactMod.Validator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined react.react.WeakValidationMap<antd.antd/es/statistic/Statistic.StatisticProps> */
+/* Inlined react.react.WeakValidationMap<antd.antd/lib/statistic/Statistic.StatisticProps> */
 trait WeakValidationMapStatisticProps extends js.Object {
   var className: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   var decimalSeparator: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined

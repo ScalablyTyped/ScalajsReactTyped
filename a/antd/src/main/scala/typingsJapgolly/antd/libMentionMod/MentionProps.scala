@@ -50,7 +50,7 @@ object MentionProps {
     onBlur: ReactFocusEventFrom[HTMLElement] => Callback = null,
     onChange: /* contentState */ js.Any => Callback = null,
     onFocus: ReactFocusEventFrom[HTMLElement] => Callback = null,
-    onSearchChange: (/* value */ String, /* trigger */ String) => CallbackTo[_] = null,
+    onSearchChange: (/* value */ String, /* trigger */ String) => CallbackTo[js.Any] = null,
     onSelect: (/* suggestion */ String, /* data */ js.UndefOr[js.Any]) => Callback = null,
     placeholder: String = null,
     placement: MentionPlacement = null,

@@ -7,7 +7,7 @@ import japgolly.scalajs.react.component.Js.RawMounted
 import japgolly.scalajs.react.component.Js.UnmountedSimple
 import japgolly.scalajs.react.vdom.VdomNode
 import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.antd.esTimelineTimelineItemMod.TimeLineItemProps
+import typingsJapgolly.antd.libTimelineTimelineItemMod.TimeLineItemProps
 import typingsJapgolly.react.reactMod.CSSProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -43,10 +43,14 @@ object TimelineItem {
     if (overrides != null) js.Dynamic.global.Object.assign(__obj, overrides)
   
     val f = japgolly.scalajs.react.JsComponent[
-  typingsJapgolly.antd.esTimelineTimelineItemMod.TimeLineItemProps, 
+  typingsJapgolly.antd.libTimelineTimelineItemMod.TimeLineItemProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  js.Object](typingsJapgolly.antd.esTimelineTimelineItemMod.default)
-    f(__obj.asInstanceOf[typingsJapgolly.antd.esTimelineTimelineItemMod.TimeLineItemProps])(children: _*)
+  js.Object](this.componentImport)
+    f(__obj.asInstanceOf[typingsJapgolly.antd.libTimelineTimelineItemMod.TimeLineItemProps])(children: _*)
   }
+  @JSImport("antd/lib/timeline/TimelineItem", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

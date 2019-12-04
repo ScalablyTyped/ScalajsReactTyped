@@ -4,7 +4,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object TransferOperation extends SharedApply_TransferOperationProps_818002685 {
-  override val __component: js.Any = typingsJapgolly.antd.esMod.Transfer.asInstanceOf[js.Dynamic].selectDynamic("Operation")
+object TransferOperation extends SharedApply_TransferOperationProps824324864 {
+  @JSImport("antd", "Transfer.Operation")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

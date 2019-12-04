@@ -74,8 +74,12 @@ object FontAwesomeIcon {
     val f = japgolly.scalajs.react.JsComponent[
   typingsJapgolly.atFortawesomeReactDashFontawesome.atFortawesomeReactDashFontawesomeMod.FontAwesomeIconProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  js.Object](typingsJapgolly.atFortawesomeReactDashFontawesome.atFortawesomeReactDashFontawesomeMod.FontAwesomeIcon)
+  js.Object](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.atFortawesomeReactDashFontawesome.atFortawesomeReactDashFontawesomeMod.FontAwesomeIconProps])(children: _*)
   }
+  @JSImport("@fortawesome/react-fontawesome", "FontAwesomeIcon")
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

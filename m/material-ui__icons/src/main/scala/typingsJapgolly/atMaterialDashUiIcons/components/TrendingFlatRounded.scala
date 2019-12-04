@@ -1,13 +1,14 @@
 package typingsJapgolly.atMaterialDashUiIcons.components
 
+import typingsJapgolly.atMaterialDashUiIcons.trendingFlatRoundedMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object TrendingFlatRounded
-  extends SharedApply_SvgIconProps1591622337[
-      typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.TrendingFlatRounded
-    ] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.TrendingFlatRounded]
+object TrendingFlatRounded extends SharedApply_SvgIconProps1591622337[default] {
+  @JSImport("@material-ui/icons/TrendingFlatRounded", "default")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

@@ -33,8 +33,12 @@ object Flag {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.semanticDashUiDashReact.distCommonjsElementsFlagFlagMod.FlagProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.semanticDashUiDashReact.distCommonjsElementsFlagMod.default](js.constructorOf[typingsJapgolly.semanticDashUiDashReact.distCommonjsElementsFlagMod.default])
+  typingsJapgolly.semanticDashUiDashReact.distCommonjsElementsFlagMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.semanticDashUiDashReact.distCommonjsElementsFlagFlagMod.FlagProps])(children: _*)
   }
+  @JSImport("semantic-ui-react/dist/commonjs/elements/Flag", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

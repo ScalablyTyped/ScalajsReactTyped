@@ -437,8 +437,12 @@ object ExpansionPanelActions {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.atMaterialDashUiCore.expansionPanelActionsExpansionPanelActionsMod.ExpansionPanelActionsProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.atMaterialDashUiCore.expansionPanelActionsMod.default](js.constructorOf[typingsJapgolly.atMaterialDashUiCore.expansionPanelActionsMod.default])
+  typingsJapgolly.atMaterialDashUiCore.expansionPanelActionsMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.atMaterialDashUiCore.expansionPanelActionsExpansionPanelActionsMod.ExpansionPanelActionsProps])(children: _*)
   }
+  @JSImport("@material-ui/core/ExpansionPanelActions", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

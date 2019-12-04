@@ -1,13 +1,14 @@
 package typingsJapgolly.atMaterialDashUiIcons.components
 
+import typingsJapgolly.atMaterialDashUiIcons.featuredVideoSharpMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object FeaturedVideoSharp
-  extends SharedApply_SvgIconProps1591622337[
-      typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.FeaturedVideoSharp
-    ] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.FeaturedVideoSharp]
+object FeaturedVideoSharp extends SharedApply_SvgIconProps1591622337[default] {
+  @JSImport("@material-ui/icons/FeaturedVideoSharp", "default")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

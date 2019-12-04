@@ -464,8 +464,12 @@ object StepLabel {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.atMaterialDashUiCore.stepLabelStepLabelMod.StepLabelProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.atMaterialDashUiCore.stepLabelMod.default](js.constructorOf[typingsJapgolly.atMaterialDashUiCore.stepLabelMod.default])
+  typingsJapgolly.atMaterialDashUiCore.stepLabelMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.atMaterialDashUiCore.stepLabelStepLabelMod.StepLabelProps])(children: _*)
   }
+  @JSImport("@material-ui/core/StepLabel", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

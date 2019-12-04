@@ -74,8 +74,12 @@ object Visibility {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.semanticDashUiDashReact.distCommonjsBehaviorsVisibilityVisibilityMod.VisibilityProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.semanticDashUiDashReact.distCommonjsBehaviorsVisibilityMod.default](js.constructorOf[typingsJapgolly.semanticDashUiDashReact.distCommonjsBehaviorsVisibilityMod.default])
+  typingsJapgolly.semanticDashUiDashReact.distCommonjsBehaviorsVisibilityMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.semanticDashUiDashReact.distCommonjsBehaviorsVisibilityVisibilityMod.VisibilityProps])(children: _*)
   }
+  @JSImport("semantic-ui-react/dist/commonjs/behaviors/Visibility", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

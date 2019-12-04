@@ -264,8 +264,12 @@ object FlatButton {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.materialDashUi.__MaterialUI.FlatButtonProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.materialDashUi.flatButtonMod.default](js.constructorOf[typingsJapgolly.materialDashUi.flatButtonMod.default])
+  typingsJapgolly.materialDashUi.flatButtonMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.materialDashUi.__MaterialUI.FlatButtonProps])(children: _*)
   }
+  @JSImport("material-ui/FlatButton", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

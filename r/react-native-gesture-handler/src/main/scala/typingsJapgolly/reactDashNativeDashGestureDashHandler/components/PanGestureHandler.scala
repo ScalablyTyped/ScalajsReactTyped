@@ -88,8 +88,12 @@ object PanGestureHandler {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.reactDashNativeDashGestureDashHandler.reactDashNativeDashGestureDashHandlerMod.PanGestureHandlerProperties, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactDashNativeDashGestureDashHandler.reactDashNativeDashGestureDashHandlerMod.PanGestureHandler](js.constructorOf[typingsJapgolly.reactDashNativeDashGestureDashHandler.reactDashNativeDashGestureDashHandlerMod.PanGestureHandler])
+  typingsJapgolly.reactDashNativeDashGestureDashHandler.reactDashNativeDashGestureDashHandlerMod.PanGestureHandler](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.reactDashNativeDashGestureDashHandler.reactDashNativeDashGestureDashHandlerMod.PanGestureHandlerProperties])(children: _*)
   }
+  @JSImport("react-native-gesture-handler", "PanGestureHandler")
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

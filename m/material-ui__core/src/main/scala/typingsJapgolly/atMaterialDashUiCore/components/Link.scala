@@ -486,8 +486,12 @@ object Link {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.atMaterialDashUiCore.linkLinkMod.LinkProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.atMaterialDashUiCore.linkMod.default](js.constructorOf[typingsJapgolly.atMaterialDashUiCore.linkMod.default])
+  typingsJapgolly.atMaterialDashUiCore.linkMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.atMaterialDashUiCore.linkLinkMod.LinkProps])(children: _*)
   }
+  @JSImport("@material-ui/core/Link", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

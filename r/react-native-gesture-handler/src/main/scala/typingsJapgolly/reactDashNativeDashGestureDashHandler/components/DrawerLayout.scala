@@ -25,7 +25,7 @@ import scala.scalajs.js.annotation._
 object DrawerLayout {
   def apply(
     renderNavigationView: Value => CallbackTo[Node],
-    containerStyle: StyleProp[ViewStyle] = null,
+    contentContainerStyle: StyleProp[ViewStyle] = null,
     drawerBackgroundColor: String = null,
     drawerLockMode: DrawerLockMode = null,
     drawerPosition: DrawerPosition = null,
@@ -49,7 +49,7 @@ object DrawerLayout {
     val __obj = js.Dynamic.literal()
   
       __obj.updateDynamic("renderNavigationView")(js.Any.fromFunction1((t0: typingsJapgolly.reactDashNative.reactDashNativeMod.Animated.Value) => renderNavigationView(t0).runNow()))
-    if (containerStyle != null) __obj.updateDynamic("containerStyle")(containerStyle.asInstanceOf[js.Any])
+    if (contentContainerStyle != null) __obj.updateDynamic("contentContainerStyle")(contentContainerStyle.asInstanceOf[js.Any])
     if (drawerBackgroundColor != null) __obj.updateDynamic("drawerBackgroundColor")(drawerBackgroundColor.asInstanceOf[js.Any])
     if (drawerLockMode != null) __obj.updateDynamic("drawerLockMode")(drawerLockMode.asInstanceOf[js.Any])
     if (drawerPosition != null) __obj.updateDynamic("drawerPosition")(drawerPosition.asInstanceOf[js.Any])
@@ -71,8 +71,12 @@ object DrawerLayout {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.reactDashNativeDashGestureDashHandler.drawerLayoutMod.DrawerLayoutProperties, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactDashNativeDashGestureDashHandler.drawerLayoutMod.default](js.constructorOf[typingsJapgolly.reactDashNativeDashGestureDashHandler.drawerLayoutMod.default])
+  typingsJapgolly.reactDashNativeDashGestureDashHandler.drawerLayoutMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.reactDashNativeDashGestureDashHandler.drawerLayoutMod.DrawerLayoutProperties])(children: _*)
   }
+  @JSImport("react-native-gesture-handler/DrawerLayout", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

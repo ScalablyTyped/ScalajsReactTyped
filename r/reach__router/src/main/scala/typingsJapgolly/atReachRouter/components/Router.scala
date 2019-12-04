@@ -34,8 +34,12 @@ object Router {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.atReachRouter.atReachRouterMod.RouterProps with typingsJapgolly.react.reactMod.HTMLProps[org.scalajs.dom.raw.HTMLDivElement] with js.Object, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.atReachRouter.atReachRouterMod.Router](js.constructorOf[typingsJapgolly.atReachRouter.atReachRouterMod.Router])
+  typingsJapgolly.atReachRouter.atReachRouterMod.Router](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.atReachRouter.atReachRouterMod.RouterProps with typingsJapgolly.react.reactMod.HTMLProps[org.scalajs.dom.raw.HTMLDivElement] with js.Object])(children: _*)
   }
+  @JSImport("@reach/router", "Router")
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

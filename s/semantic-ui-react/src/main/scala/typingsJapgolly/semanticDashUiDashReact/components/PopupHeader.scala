@@ -38,8 +38,12 @@ object PopupHeader {
     val f = japgolly.scalajs.react.JsComponent[
   typingsJapgolly.semanticDashUiDashReact.distCommonjsModulesPopupPopupHeaderMod.PopupHeaderProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  js.Object](typingsJapgolly.semanticDashUiDashReact.distCommonjsModulesPopupPopupHeaderMod.default)
+  js.Object](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.semanticDashUiDashReact.distCommonjsModulesPopupPopupHeaderMod.PopupHeaderProps])(children: _*)
   }
+  @JSImport("semantic-ui-react/dist/commonjs/modules/Popup/PopupHeader", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

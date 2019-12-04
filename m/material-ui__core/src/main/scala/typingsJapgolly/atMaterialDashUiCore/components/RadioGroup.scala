@@ -446,8 +446,12 @@ object RadioGroup {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.atMaterialDashUiCore.radioGroupRadioGroupMod.RadioGroupProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.atMaterialDashUiCore.radioGroupMod.default](js.constructorOf[typingsJapgolly.atMaterialDashUiCore.radioGroupMod.default])
+  typingsJapgolly.atMaterialDashUiCore.radioGroupMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.atMaterialDashUiCore.radioGroupRadioGroupMod.RadioGroupProps])(children: _*)
   }
+  @JSImport("@material-ui/core/RadioGroup", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

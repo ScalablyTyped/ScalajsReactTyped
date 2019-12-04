@@ -32,8 +32,12 @@ object MountNode {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.semanticDashUiDashReact.distCommonjsAddonsMountNodeMountNodeMod.MountNodeProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.semanticDashUiDashReact.distCommonjsAddonsMountNodeMod.default](js.constructorOf[typingsJapgolly.semanticDashUiDashReact.distCommonjsAddonsMountNodeMod.default])
+  typingsJapgolly.semanticDashUiDashReact.distCommonjsAddonsMountNodeMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.semanticDashUiDashReact.distCommonjsAddonsMountNodeMountNodeMod.MountNodeProps])(children: _*)
   }
+  @JSImport("semantic-ui-react/dist/commonjs/addons/MountNode", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

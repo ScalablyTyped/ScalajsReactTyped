@@ -1,11 +1,14 @@
 package typingsJapgolly.atMaterialDashUiIcons.components
 
+import typingsJapgolly.atMaterialDashUiIcons.gpsNotFixedMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object GpsNotFixed
-  extends SharedApply_SvgIconProps1591622337[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.GpsNotFixed] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.GpsNotFixed]
+object GpsNotFixed extends SharedApply_SvgIconProps1591622337[default] {
+  @JSImport("@material-ui/icons/GpsNotFixed", "default")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

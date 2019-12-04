@@ -21,7 +21,7 @@ object ChartLegendLabelOptions {
   @scala.inline
   def apply(
     boxWidth: Int | Double = null,
-    filter: (/* legendItem */ ChartLegendLabelItem, /* data */ ChartData) => CallbackTo[_] = null,
+    filter: (/* legendItem */ ChartLegendLabelItem, /* data */ ChartData) => CallbackTo[js.Any] = null,
     fontColor: ChartColor = null,
     fontFamily: String = null,
     fontSize: Int | Double = null,

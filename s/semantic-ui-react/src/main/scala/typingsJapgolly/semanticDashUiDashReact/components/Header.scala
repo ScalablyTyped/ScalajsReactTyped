@@ -74,8 +74,12 @@ object Header {
     val f = japgolly.scalajs.react.JsComponent[
   typingsJapgolly.semanticDashUiDashReact.distCommonjsElementsHeaderHeaderMod.HeaderProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  js.Object](typingsJapgolly.semanticDashUiDashReact.distCommonjsElementsHeaderMod.default)
+  js.Object](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.semanticDashUiDashReact.distCommonjsElementsHeaderHeaderMod.HeaderProps])(children: _*)
   }
+  @JSImport("semantic-ui-react/dist/commonjs/elements/Header", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

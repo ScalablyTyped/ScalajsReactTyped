@@ -67,7 +67,7 @@ import typingsJapgolly.antd.antdStrings.tree
 import typingsJapgolly.antd.antdStrings.url
 import typingsJapgolly.antd.antdStrings.vertical
 import typingsJapgolly.antd.antdStrings.yes
-import typingsJapgolly.antd.esInputInputMod.InputProps
+import typingsJapgolly.antd.libInputInputMod.InputProps
 import typingsJapgolly.react.Anon_Html
 import typingsJapgolly.react.reactMod.CSSProperties
 import scala.scalajs.js
@@ -289,7 +289,7 @@ object Input {
     overrides: StringDictionary[js.Any] = null
   )(
     children: ChildArg*
-  ): UnmountedWithRoot[InputProps, typingsJapgolly.antd.esInputMod.default, Unit, InputProps] = {
+  ): UnmountedWithRoot[InputProps, typingsJapgolly.antd.libInputMod.default, Unit, InputProps] = {
     val __obj = js.Dynamic.literal()
   
       if (about != null) __obj.updateDynamic("about")(about.asInstanceOf[js.Any])
@@ -505,10 +505,14 @@ object Input {
     if (overrides != null) js.Dynamic.global.Object.assign(__obj, overrides)
   
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antd.esInputInputMod.InputProps, 
+  typingsJapgolly.antd.libInputInputMod.InputProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antd.esInputMod.default](js.constructorOf[typingsJapgolly.antd.esInputMod.default])
-    f(__obj.asInstanceOf[typingsJapgolly.antd.esInputInputMod.InputProps])(children: _*)
+  typingsJapgolly.antd.libInputMod.default](this.componentImport)
+    f(__obj.asInstanceOf[typingsJapgolly.antd.libInputInputMod.InputProps])(children: _*)
   }
+  @JSImport("antd/lib/input", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

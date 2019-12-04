@@ -1,13 +1,14 @@
 package typingsJapgolly.atMaterialDashUiIcons.components
 
+import typingsJapgolly.atMaterialDashUiIcons.gTranslateOutlinedMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object GTranslateOutlined
-  extends SharedApply_SvgIconProps1591622337[
-      typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.GTranslateOutlined
-    ] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.GTranslateOutlined]
+object GTranslateOutlined extends SharedApply_SvgIconProps1591622337[default] {
+  @JSImport("@material-ui/icons/GTranslateOutlined", "default")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

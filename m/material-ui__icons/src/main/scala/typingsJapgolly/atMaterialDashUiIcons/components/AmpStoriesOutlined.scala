@@ -1,13 +1,14 @@
 package typingsJapgolly.atMaterialDashUiIcons.components
 
+import typingsJapgolly.atMaterialDashUiIcons.ampStoriesOutlinedMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object AmpStoriesOutlined
-  extends SharedApply_SvgIconProps1591622337[
-      typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.AmpStoriesOutlined
-    ] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.AmpStoriesOutlined]
+object AmpStoriesOutlined extends SharedApply_SvgIconProps1591622337[default] {
+  @JSImport("@material-ui/icons/AmpStoriesOutlined", "default")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

@@ -29,8 +29,12 @@ object SwitchTransition {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.reactDashTransitionDashGroup.switchTransitionMod.SwitchTransitionProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactDashTransitionDashGroup.switchTransitionMod.default](js.constructorOf[typingsJapgolly.reactDashTransitionDashGroup.switchTransitionMod.default])
+  typingsJapgolly.reactDashTransitionDashGroup.switchTransitionMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.reactDashTransitionDashGroup.switchTransitionMod.SwitchTransitionProps])(children: _*)
   }
+  @JSImport("react-transition-group/SwitchTransition", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

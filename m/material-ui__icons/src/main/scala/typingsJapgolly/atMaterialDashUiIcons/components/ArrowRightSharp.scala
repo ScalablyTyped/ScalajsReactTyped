@@ -1,11 +1,14 @@
 package typingsJapgolly.atMaterialDashUiIcons.components
 
+import typingsJapgolly.atMaterialDashUiIcons.arrowRightSharpMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object ArrowRightSharp
-  extends SharedApply_SvgIconProps1591622337[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.ArrowRightSharp] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.ArrowRightSharp]
+object ArrowRightSharp extends SharedApply_SvgIconProps1591622337[default] {
+  @JSImport("@material-ui/icons/ArrowRightSharp", "default")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

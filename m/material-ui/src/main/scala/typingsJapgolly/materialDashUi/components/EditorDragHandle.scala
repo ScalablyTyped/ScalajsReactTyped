@@ -6,6 +6,9 @@ import scala.scalajs.js.annotation._
 
 object EditorDragHandle
   extends SharedApply_SvgIconProps1538262166[typingsJapgolly.materialDashUi.svgDashIconsMod.EditorDragHandle] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.materialDashUi.svgDashIconsMod.EditorDragHandle]
+  @JSImport("material-ui/svg-icons", "EditorDragHandle")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

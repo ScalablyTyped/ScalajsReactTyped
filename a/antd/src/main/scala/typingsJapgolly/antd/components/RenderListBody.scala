@@ -6,9 +6,9 @@ import japgolly.scalajs.react.component.Js.MountedWithRawType
 import japgolly.scalajs.react.component.Js.RawMounted
 import japgolly.scalajs.react.component.Js.UnmountedSimple
 import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.antd.esTransferListMod.RenderedItem
-import typingsJapgolly.antd.esTransferMod.TransferItem
-import typingsJapgolly.antd.esTransferRenderListBodyMod.TransferListBodyProps
+import typingsJapgolly.antd.libTransferListMod.RenderedItem
+import typingsJapgolly.antd.libTransferMod.TransferItem
+import typingsJapgolly.antd.libTransferRenderListBodyMod.TransferListBodyProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -32,10 +32,14 @@ object RenderListBody {
     if (overrides != null) js.Dynamic.global.Object.assign(__obj, overrides)
   
     val f = japgolly.scalajs.react.JsComponent[
-  typingsJapgolly.antd.esTransferRenderListBodyMod.TransferListBodyProps, 
+  typingsJapgolly.antd.libTransferRenderListBodyMod.TransferListBodyProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  js.Object](typingsJapgolly.antd.esTransferRenderListBodyMod.default)
-    f(__obj.asInstanceOf[typingsJapgolly.antd.esTransferRenderListBodyMod.TransferListBodyProps])(children: _*)
+  js.Object](this.componentImport)
+    f(__obj.asInstanceOf[typingsJapgolly.antd.libTransferRenderListBodyMod.TransferListBodyProps])(children: _*)
   }
+  @JSImport("antd/lib/transfer/renderListBody", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

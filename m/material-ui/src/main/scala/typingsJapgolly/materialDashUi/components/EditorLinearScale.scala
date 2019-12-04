@@ -6,6 +6,9 @@ import scala.scalajs.js.annotation._
 
 object EditorLinearScale
   extends SharedApply_SvgIconProps1538262166[typingsJapgolly.materialDashUi.svgDashIconsMod.EditorLinearScale] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.materialDashUi.svgDashIconsMod.EditorLinearScale]
+  @JSImport("material-ui/svg-icons", "EditorLinearScale")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

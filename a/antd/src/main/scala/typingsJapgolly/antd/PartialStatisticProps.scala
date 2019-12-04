@@ -3,14 +3,14 @@ package typingsJapgolly.antd
 import japgolly.scalajs.react.CallbackTo
 import japgolly.scalajs.react.raw.React.Node
 import japgolly.scalajs.react.vdom.VdomNode
-import typingsJapgolly.antd.esStatisticUtilsMod.Formatter
-import typingsJapgolly.antd.esStatisticUtilsMod.valueType
+import typingsJapgolly.antd.libStatisticUtilsMod.Formatter
+import typingsJapgolly.antd.libStatisticUtilsMod.valueType
 import typingsJapgolly.react.reactMod.CSSProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined std.Partial<antd.antd/es/statistic/Statistic.StatisticProps> */
+/* Inlined std.Partial<antd.antd/lib/statistic/Statistic.StatisticProps> */
 trait PartialStatisticProps extends js.Object {
   var className: js.UndefOr[String] = js.undefined
   var decimalSeparator: js.UndefOr[String] = js.undefined

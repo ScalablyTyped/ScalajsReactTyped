@@ -94,7 +94,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 abstract class SharedApply_SvgIconProps1591622337[ComponentRef] () {
-  def __component: js.Any
+  val componentImport: js.Any
   def apply(
     accentHeight: Double | String = null,
     accumulate: none | sum = null,
@@ -607,7 +607,7 @@ abstract class SharedApply_SvgIconProps1591622337[ComponentRef] () {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  ComponentRef](__component)
+  ComponentRef](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps])(children: _*)
   }
 }

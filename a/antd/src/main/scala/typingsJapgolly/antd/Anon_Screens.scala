@@ -1,6 +1,6 @@
 package typingsJapgolly.antd
 
-import typingsJapgolly.antd.esUnderscoreUtilResponsiveObserveMod.BreakpointMap
+import typingsJapgolly.antd.libUnderscoreUtilResponsiveObserveMod.BreakpointMap
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

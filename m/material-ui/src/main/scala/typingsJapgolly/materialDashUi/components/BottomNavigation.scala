@@ -32,8 +32,12 @@ object BottomNavigation {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.materialDashUi.__MaterialUI.BottomNavigation.BottomNavigationProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.materialDashUi.bottomNavigationMod.default](js.constructorOf[typingsJapgolly.materialDashUi.bottomNavigationMod.default])
+  typingsJapgolly.materialDashUi.bottomNavigationMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.materialDashUi.__MaterialUI.BottomNavigation.BottomNavigationProps])(children: _*)
   }
+  @JSImport("material-ui/BottomNavigation", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

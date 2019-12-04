@@ -1,11 +1,14 @@
 package typingsJapgolly.antd.components
 
-import typingsJapgolly.antd.esInputDashNumberMod.default
+import typingsJapgolly.antd.libInputDashNumberMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object InputDashNumber extends SharedApply_InputNumberProps1314002642[default] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.antd.esInputDashNumberMod.default]
+object InputDashNumber extends SharedApply_InputNumberProps_117352452[default] {
+  @JSImport("antd/lib/input-number", JSImport.Default)
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

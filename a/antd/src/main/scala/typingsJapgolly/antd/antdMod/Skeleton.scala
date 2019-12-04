@@ -1,6 +1,6 @@
 package typingsJapgolly.antd.antdMod
 
-import typingsJapgolly.antd.PartialSkeletonPropsActive
+import typingsJapgolly.antd.PartialSkeletonProps
 import typingsJapgolly.antd.libSkeletonMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,6 +14,6 @@ class Skeleton () extends default
 @JSImport("antd", "Skeleton")
 @js.native
 object Skeleton extends js.Object {
-  var defaultProps: PartialSkeletonPropsActive = js.native
+  var defaultProps: PartialSkeletonProps = js.native
 }
 

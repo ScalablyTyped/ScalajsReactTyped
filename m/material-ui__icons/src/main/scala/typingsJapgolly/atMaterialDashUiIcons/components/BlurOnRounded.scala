@@ -1,11 +1,14 @@
 package typingsJapgolly.atMaterialDashUiIcons.components
 
+import typingsJapgolly.atMaterialDashUiIcons.blurOnRoundedMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object BlurOnRounded
-  extends SharedApply_SvgIconProps1591622337[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.BlurOnRounded] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.BlurOnRounded]
+object BlurOnRounded extends SharedApply_SvgIconProps1591622337[default] {
+  @JSImport("@material-ui/icons/BlurOnRounded", "default")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

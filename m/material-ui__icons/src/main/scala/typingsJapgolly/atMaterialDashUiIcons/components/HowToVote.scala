@@ -1,11 +1,14 @@
 package typingsJapgolly.atMaterialDashUiIcons.components
 
+import typingsJapgolly.atMaterialDashUiIcons.howToVoteMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object HowToVote
-  extends SharedApply_SvgIconProps1591622337[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.HowToVote] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.HowToVote]
+object HowToVote extends SharedApply_SvgIconProps1591622337[default] {
+  @JSImport("@material-ui/icons/HowToVote", "default")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

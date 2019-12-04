@@ -455,8 +455,12 @@ object FormLabel {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.atMaterialDashUiCore.formLabelFormLabelMod.FormLabelProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.atMaterialDashUiCore.formLabelMod.default](js.constructorOf[typingsJapgolly.atMaterialDashUiCore.formLabelMod.default])
+  typingsJapgolly.atMaterialDashUiCore.formLabelMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.atMaterialDashUiCore.formLabelFormLabelMod.FormLabelProps])(children: _*)
   }
+  @JSImport("@material-ui/core/FormLabel", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

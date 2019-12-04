@@ -5,6 +5,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 object Item extends SharedApply_MenuItemProps_522095072 {
-  override val __component: js.Any = typingsJapgolly.materialDashUi.__MaterialUI.AutoComplete.Item
+  @JSGlobal("__MaterialUI.AutoComplete.Item")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

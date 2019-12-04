@@ -3,7 +3,7 @@ package typingsJapgolly.rcDashMenu.libMenuMod
 import japgolly.scalajs.react.ReactKeyboardEventFrom
 import japgolly.scalajs.react.raw.React.ComponentClassP
 import org.scalajs.dom.raw.HTMLElement
-import typingsJapgolly.rcDashMenu.Anon_GetWrappedInstanceSubPopupMenu
+import typingsJapgolly.rcDashMenu.Anon_GetWrappedInstance
 import typingsJapgolly.rcDashMenu.libInterfaceMod.MenuClickEventHandler
 import typingsJapgolly.rcDashMenu.libInterfaceMod.MiniStore
 import typingsJapgolly.rcDashMenu.libInterfaceMod.SelectInfo
@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Menu
   extends Component[MenuProps, js.Object, js.Any] {
-  var innerMenu: (ComponentClassP[SubPopupMenuProps with js.Object]) with Anon_GetWrappedInstanceSubPopupMenu = js.native
+  var innerMenu: (ComponentClassP[SubPopupMenuProps with js.Object]) with Anon_GetWrappedInstance = js.native
   var isRootMenu: Boolean = js.native
   var onClick: MenuClickEventHandler = js.native
   var store: MiniStore = js.native

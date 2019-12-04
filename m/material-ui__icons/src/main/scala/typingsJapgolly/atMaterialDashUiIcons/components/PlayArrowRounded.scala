@@ -1,11 +1,14 @@
 package typingsJapgolly.atMaterialDashUiIcons.components
 
+import typingsJapgolly.atMaterialDashUiIcons.playArrowRoundedMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object PlayArrowRounded
-  extends SharedApply_SvgIconProps1591622337[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PlayArrowRounded] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PlayArrowRounded]
+object PlayArrowRounded extends SharedApply_SvgIconProps1591622337[default] {
+  @JSImport("@material-ui/icons/PlayArrowRounded", "default")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

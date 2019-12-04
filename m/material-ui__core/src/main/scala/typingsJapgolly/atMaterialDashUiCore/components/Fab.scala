@@ -515,8 +515,12 @@ object Fab {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.atMaterialDashUiCore.fabFabMod.FabProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.atMaterialDashUiCore.fabMod.default](js.constructorOf[typingsJapgolly.atMaterialDashUiCore.fabMod.default])
+  typingsJapgolly.atMaterialDashUiCore.fabMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.atMaterialDashUiCore.fabFabMod.FabProps])(children: _*)
   }
+  @JSImport("@material-ui/core/Fab", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

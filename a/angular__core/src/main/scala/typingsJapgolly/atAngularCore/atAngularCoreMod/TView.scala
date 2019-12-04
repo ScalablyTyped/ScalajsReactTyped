@@ -1,10 +1,6 @@
 package typingsJapgolly.atAngularCore.atAngularCoreMod
 
 import japgolly.scalajs.react.Callback
-import typingsJapgolly.atAngularCore.DirectiveDefList
-import typingsJapgolly.atAngularCore.HookData
-import typingsJapgolly.atAngularCore.PipeDefList
-import typingsJapgolly.atAngularCore.TData
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

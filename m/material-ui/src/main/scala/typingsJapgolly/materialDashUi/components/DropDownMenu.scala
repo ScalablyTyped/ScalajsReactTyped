@@ -77,8 +77,12 @@ object DropDownMenu {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.materialDashUi.__MaterialUI.Menus.DropDownMenuProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.materialDashUi.dropDownMenuMod.default](js.constructorOf[typingsJapgolly.materialDashUi.dropDownMenuMod.default])
+  typingsJapgolly.materialDashUi.dropDownMenuMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.materialDashUi.__MaterialUI.Menus.DropDownMenuProps])(children: _*)
   }
+  @JSImport("material-ui/DropDownMenu", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

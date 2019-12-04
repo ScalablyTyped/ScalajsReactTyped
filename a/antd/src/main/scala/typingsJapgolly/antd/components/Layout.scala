@@ -19,8 +19,8 @@ import japgolly.scalajs.react.ReactWheelEventFrom
 import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
 import org.scalablytyped.runtime.StringDictionary
 import org.scalajs.dom.raw.HTMLDivElement
-import typingsJapgolly.antd.esLayoutLayoutMod.BasicProps
-import typingsJapgolly.antd.esLayoutMod.default
+import typingsJapgolly.antd.libLayoutLayoutMod.BasicProps
+import typingsJapgolly.antd.libLayoutMod.default
 import typingsJapgolly.react.Anon_Html
 import typingsJapgolly.react.reactMod.CSSProperties
 import typingsJapgolly.react.reactStrings.`additions text`
@@ -432,10 +432,14 @@ object Layout {
     if (overrides != null) js.Dynamic.global.Object.assign(__obj, overrides)
   
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antd.esLayoutLayoutMod.BasicProps, 
+  typingsJapgolly.antd.libLayoutLayoutMod.BasicProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antd.esLayoutMod.default](js.constructorOf[typingsJapgolly.antd.esLayoutMod.default])
-    f(__obj.asInstanceOf[typingsJapgolly.antd.esLayoutLayoutMod.BasicProps])(children: _*)
+  typingsJapgolly.antd.libLayoutMod.default](this.componentImport)
+    f(__obj.asInstanceOf[typingsJapgolly.antd.libLayoutLayoutMod.BasicProps])(children: _*)
   }
+  @JSImport("antd/lib/layout", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

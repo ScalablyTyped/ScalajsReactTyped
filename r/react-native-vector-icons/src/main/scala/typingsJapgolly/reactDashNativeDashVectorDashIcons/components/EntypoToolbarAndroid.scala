@@ -6,6 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 object EntypoToolbarAndroid extends SharedApply_ToolbarAndroidProps1373982361[ToolbarAndroid] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.reactDashNativeDashVectorDashIcons.entypoMod.default.ToolbarAndroid]
+  @JSImport("react-native-vector-icons/Entypo", "default.ToolbarAndroid")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

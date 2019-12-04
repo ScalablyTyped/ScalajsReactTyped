@@ -10,21 +10,21 @@ import org.scalablytyped.runtime.StringDictionary
 import org.scalajs.dom.raw.Event
 import org.scalajs.dom.raw.HTMLElement
 import typingsJapgolly.antd.Anon_ScrollToFirstRowOnChange
-import typingsJapgolly.antd.OmitTablePropsTkeyofWithStore
 import typingsJapgolly.antd.antdNumbers.`false`
-import typingsJapgolly.antd.esPaginationPaginationMod.PaginationConfig
-import typingsJapgolly.antd.esSpinMod.SpinProps
-import typingsJapgolly.antd.esTableInterfaceMod.ColumnProps
-import typingsJapgolly.antd.esTableInterfaceMod.ExpandIconProps
-import typingsJapgolly.antd.esTableInterfaceMod.SortOrder
-import typingsJapgolly.antd.esTableInterfaceMod.SorterResult
-import typingsJapgolly.antd.esTableInterfaceMod.TableComponents
-import typingsJapgolly.antd.esTableInterfaceMod.TableCurrentDataSource
-import typingsJapgolly.antd.esTableInterfaceMod.TableEventListeners
-import typingsJapgolly.antd.esTableInterfaceMod.TableLocale
-import typingsJapgolly.antd.esTableInterfaceMod.TableRowSelection
-import typingsJapgolly.antd.esTableInterfaceMod.TableSize
-import typingsJapgolly.antd.esTableMod.default
+import typingsJapgolly.antd.libPaginationPaginationMod.PaginationConfig
+import typingsJapgolly.antd.libSpinMod.SpinProps
+import typingsJapgolly.antd.libTableInterfaceMod.ColumnProps
+import typingsJapgolly.antd.libTableInterfaceMod.ExpandIconProps
+import typingsJapgolly.antd.libTableInterfaceMod.SortOrder
+import typingsJapgolly.antd.libTableInterfaceMod.SorterResult
+import typingsJapgolly.antd.libTableInterfaceMod.TableComponents
+import typingsJapgolly.antd.libTableInterfaceMod.TableCurrentDataSource
+import typingsJapgolly.antd.libTableInterfaceMod.TableEventListeners
+import typingsJapgolly.antd.libTableInterfaceMod.TableLocale
+import typingsJapgolly.antd.libTableInterfaceMod.TableProps
+import typingsJapgolly.antd.libTableInterfaceMod.TableRowSelection
+import typingsJapgolly.antd.libTableInterfaceMod.TableSize
+import typingsJapgolly.antd.libTableMod.default
 import typingsJapgolly.csstype.csstypeMod.TableLayoutProperty
 import typingsJapgolly.react.reactMod.CSSProperties
 import typingsJapgolly.std.Record
@@ -78,7 +78,7 @@ object Table {
     overrides: StringDictionary[js.Any] = null
   )(
     children: ChildArg*
-  ): UnmountedWithRoot[OmitTablePropsTkeyofWithStore[T], default[T], Unit, OmitTablePropsTkeyofWithStore[T]] = {
+  ): UnmountedWithRoot[TableProps[T], default[T], Unit, TableProps[T]] = {
     val __obj = js.Dynamic.literal()
   
       if (bodyStyle != null) __obj.updateDynamic("bodyStyle")(bodyStyle.asInstanceOf[js.Any])
@@ -91,7 +91,7 @@ object Table {
     if (!js.isUndefined(defaultExpandAllRows)) __obj.updateDynamic("defaultExpandAllRows")(defaultExpandAllRows.asInstanceOf[js.Any])
     if (defaultExpandedRowKeys != null) __obj.updateDynamic("defaultExpandedRowKeys")(defaultExpandedRowKeys.asInstanceOf[js.Any])
     if (dropdownPrefixCls != null) __obj.updateDynamic("dropdownPrefixCls")(dropdownPrefixCls.asInstanceOf[js.Any])
-    if (expandIcon != null) __obj.updateDynamic("expandIcon")(js.Any.fromFunction1((t0: /* props */ typingsJapgolly.antd.esTableInterfaceMod.ExpandIconProps[T]) => expandIcon(t0).runNow()))
+    if (expandIcon != null) __obj.updateDynamic("expandIcon")(js.Any.fromFunction1((t0: /* props */ typingsJapgolly.antd.libTableInterfaceMod.ExpandIconProps[T]) => expandIcon(t0).runNow()))
     if (!js.isUndefined(expandIconAsCell)) __obj.updateDynamic("expandIconAsCell")(expandIconAsCell.asInstanceOf[js.Any])
     if (expandIconColumnIndex != null) __obj.updateDynamic("expandIconColumnIndex")(expandIconColumnIndex.asInstanceOf[js.Any])
     if (!js.isUndefined(expandRowByClick)) __obj.updateDynamic("expandRowByClick")(expandRowByClick.asInstanceOf[js.Any])
@@ -102,10 +102,10 @@ object Table {
     if (indentSize != null) __obj.updateDynamic("indentSize")(indentSize.asInstanceOf[js.Any])
     if (loading != null) __obj.updateDynamic("loading")(loading.asInstanceOf[js.Any])
     if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction4((t0: /* pagination */ typingsJapgolly.antd.esPaginationPaginationMod.PaginationConfig, t1: /* filters */ typingsJapgolly.std.Record[java.lang.String, js.Array[java.lang.String]], t2: /* sorter */ typingsJapgolly.antd.esTableInterfaceMod.SorterResult[T], t3: /* extra */ typingsJapgolly.antd.esTableInterfaceMod.TableCurrentDataSource[T]) => onChange(t0, t1, t2, t3).runNow()))
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction4((t0: /* pagination */ typingsJapgolly.antd.libPaginationPaginationMod.PaginationConfig, t1: /* filters */ typingsJapgolly.std.Record[java.lang.String, js.Array[java.lang.String]], t2: /* sorter */ typingsJapgolly.antd.libTableInterfaceMod.SorterResult[T], t3: /* extra */ typingsJapgolly.antd.libTableInterfaceMod.TableCurrentDataSource[T]) => onChange(t0, t1, t2, t3).runNow()))
     if (onExpand != null) __obj.updateDynamic("onExpand")(js.Any.fromFunction2((t0: /* expanded */ scala.Boolean, t1: T) => onExpand(t0, t1).runNow()))
     if (onExpandedRowsChange != null) __obj.updateDynamic("onExpandedRowsChange")(js.Any.fromFunction1((t0: /* expandedRowKeys */ js.Array[scala.Double | java.lang.String]) => onExpandedRowsChange(t0).runNow()))
-    if (onHeaderRow != null) __obj.updateDynamic("onHeaderRow")(js.Any.fromFunction1((t0: /* columns */ js.Array[typingsJapgolly.antd.esTableInterfaceMod.ColumnProps[T]]) => onHeaderRow(t0).runNow()))
+    if (onHeaderRow != null) __obj.updateDynamic("onHeaderRow")(js.Any.fromFunction1((t0: /* columns */ js.Array[typingsJapgolly.antd.libTableInterfaceMod.ColumnProps[T]]) => onHeaderRow(t0).runNow()))
     if (onRow != null) __obj.updateDynamic("onRow")(js.Any.fromFunction2((t0: T, t1: /* index */ scala.Double) => onRow(t0, t1).runNow()))
     if (onRowClick != null) __obj.updateDynamic("onRowClick")(js.Any.fromFunction3((t0: T, t1: /* index */ scala.Double, t2: /* event */ org.scalajs.dom.raw.Event) => onRowClick(t0, t1, t2).runNow()))
     if (pagination != null) __obj.updateDynamic("pagination")(pagination.asInstanceOf[js.Any])
@@ -125,10 +125,14 @@ object Table {
     if (overrides != null) js.Dynamic.global.Object.assign(__obj, overrides)
   
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antd.OmitTablePropsTkeyofWithStore[T], 
+  typingsJapgolly.antd.libTableInterfaceMod.TableProps[T], 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antd.esTableMod.default[T]](js.constructorOf[typingsJapgolly.antd.esTableMod.default[T]])
-    f(__obj.asInstanceOf[typingsJapgolly.antd.OmitTablePropsTkeyofWithStore[T]])(children: _*)
+  typingsJapgolly.antd.libTableMod.default[T]](this.componentImport)
+    f(__obj.asInstanceOf[typingsJapgolly.antd.libTableInterfaceMod.TableProps[T]])(children: _*)
   }
+  @JSImport("antd/lib/table", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

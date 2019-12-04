@@ -38,8 +38,12 @@ object MenuDivider {
     val f = japgolly.scalajs.react.JsComponent[
   typingsJapgolly.rcDashMenu.libDividerMod.DividerProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  js.Object](typingsJapgolly.antd.esMod.Menu.Divider)
+  js.Object](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.rcDashMenu.libDividerMod.DividerProps])(children: _*)
   }
+  @JSImport("antd", "Menu.Divider")
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

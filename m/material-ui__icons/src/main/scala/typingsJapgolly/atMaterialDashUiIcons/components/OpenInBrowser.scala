@@ -1,11 +1,14 @@
 package typingsJapgolly.atMaterialDashUiIcons.components
 
+import typingsJapgolly.atMaterialDashUiIcons.openInBrowserMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object OpenInBrowser
-  extends SharedApply_SvgIconProps1591622337[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.OpenInBrowser] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.OpenInBrowser]
+object OpenInBrowser extends SharedApply_SvgIconProps1591622337[default] {
+  @JSImport("@material-ui/icons/OpenInBrowser", "default")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

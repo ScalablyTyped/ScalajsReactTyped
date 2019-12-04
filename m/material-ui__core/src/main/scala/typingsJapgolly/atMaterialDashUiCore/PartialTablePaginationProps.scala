@@ -111,6 +111,7 @@ import scala.scalajs.js.annotation._
 trait PartialTablePaginationProps extends js.Object {
   var ActionsComponent: js.UndefOr[ReactType[TablePaginationActionsProps]] = js.undefined
   var SelectProps: js.UndefOr[PartialSelectProps] = js.undefined
+  var abbr: js.UndefOr[String] = js.undefined
   var about: js.UndefOr[String] = js.undefined
   var accessKey: js.UndefOr[String] = js.undefined
   var align: js.UndefOr[inherit | left | center | right | justify] = js.undefined
@@ -316,6 +317,7 @@ object PartialTablePaginationProps {
   def apply(
     ActionsComponent: ReactType[TablePaginationActionsProps] = null,
     SelectProps: PartialSelectProps = null,
+    abbr: String = null,
     about: String = null,
     accessKey: String = null,
     align: inherit | left | center | right | justify = null,
@@ -516,6 +518,7 @@ object PartialTablePaginationProps {
     val __obj = js.Dynamic.literal()
     if (ActionsComponent != null) __obj.updateDynamic("ActionsComponent")(ActionsComponent.asInstanceOf[js.Any])
     if (SelectProps != null) __obj.updateDynamic("SelectProps")(SelectProps.asInstanceOf[js.Any])
+    if (abbr != null) __obj.updateDynamic("abbr")(abbr.asInstanceOf[js.Any])
     if (about != null) __obj.updateDynamic("about")(about.asInstanceOf[js.Any])
     if (accessKey != null) __obj.updateDynamic("accessKey")(accessKey.asInstanceOf[js.Any])
     if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])

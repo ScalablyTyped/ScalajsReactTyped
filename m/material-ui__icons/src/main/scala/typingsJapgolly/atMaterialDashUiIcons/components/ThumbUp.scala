@@ -1,11 +1,14 @@
 package typingsJapgolly.atMaterialDashUiIcons.components
 
+import typingsJapgolly.atMaterialDashUiIcons.thumbUpMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object ThumbUp
-  extends SharedApply_SvgIconProps1591622337[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.ThumbUp] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.ThumbUp]
+object ThumbUp extends SharedApply_SvgIconProps1591622337[default] {
+  @JSImport("@material-ui/icons/ThumbUp", "default")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

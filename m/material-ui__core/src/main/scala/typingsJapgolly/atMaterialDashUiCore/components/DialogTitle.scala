@@ -439,8 +439,12 @@ object DialogTitle {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.atMaterialDashUiCore.dialogTitleDialogTitleMod.DialogTitleProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.atMaterialDashUiCore.dialogTitleMod.default](js.constructorOf[typingsJapgolly.atMaterialDashUiCore.dialogTitleMod.default])
+  typingsJapgolly.atMaterialDashUiCore.dialogTitleMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.atMaterialDashUiCore.dialogTitleDialogTitleMod.DialogTitleProps])(children: _*)
   }
+  @JSImport("@material-ui/core/DialogTitle", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

@@ -3,7 +3,6 @@ package typingsJapgolly.reactDashNative.reactDashNativeMod
 import japgolly.scalajs.react.Callback
 import japgolly.scalajs.react.ReactEventFrom
 import org.scalajs.dom.raw.Element
-import typingsJapgolly.reactDashNative.NodeHandle
 import typingsJapgolly.reactDashNative.reactDashNativeStrings.`no-hide-descendants`
 import typingsJapgolly.reactDashNative.reactDashNativeStrings.assertive
 import typingsJapgolly.reactDashNative.reactDashNativeStrings.auto
@@ -94,7 +93,8 @@ object AccessibilityProps {
     if (!js.isUndefined(accessibilityViewIsModal)) __obj.updateDynamic("accessibilityViewIsModal")(accessibilityViewIsModal.asInstanceOf[js.Any])
     if (!js.isUndefined(accessible)) __obj.updateDynamic("accessible")(accessible.asInstanceOf[js.Any])
     if (importantForAccessibility != null) __obj.updateDynamic("importantForAccessibility")(importantForAccessibility.asInstanceOf[js.Any])
-    if (onAccessibilityAction != null) __obj.updateDynamic("onAccessibilityAction")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[typingsJapgolly.reactDashNative.NodeHandle with org.scalajs.dom.raw.Element]) => onAccessibilityAction(t0).runNow()))
+    if (onAccessibilityAction != null) __obj.updateDynamic("onAccessibilityAction")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[
+  typingsJapgolly.reactDashNative.reactDashNativeMod.NodeHandle with org.scalajs.dom.raw.Element]) => onAccessibilityAction(t0).runNow()))
     onAccessibilityTap.foreach(p => __obj.updateDynamic("onAccessibilityTap")(p.toJsFn))
     onMagicTap.foreach(p => __obj.updateDynamic("onMagicTap")(p.toJsFn))
     __obj.asInstanceOf[AccessibilityProps]

@@ -1,11 +1,14 @@
 package typingsJapgolly.atMaterialDashUiIcons.components
 
+import typingsJapgolly.atMaterialDashUiIcons.bookmarkMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object Bookmark
-  extends SharedApply_SvgIconProps1591622337[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.Bookmark] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.Bookmark]
+object Bookmark extends SharedApply_SvgIconProps1591622337[default] {
+  @JSImport("@material-ui/icons/Bookmark", "default")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

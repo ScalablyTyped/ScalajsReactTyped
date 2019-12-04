@@ -9,12 +9,12 @@ import japgolly.scalajs.react.vdom.VdomNode
 import org.scalablytyped.runtime.StringDictionary
 import org.scalajs.dom.raw.HTMLElement
 import org.scalajs.dom.raw.MouseEvent
-import typingsJapgolly.antd.esMenuMenuContextMod.MenuTheme
-import typingsJapgolly.antd.esMenuMod.ClickParam
-import typingsJapgolly.antd.esMenuMod.MenuMode
-import typingsJapgolly.antd.esMenuMod.MenuProps
-import typingsJapgolly.antd.esMenuMod.SelectParam
-import typingsJapgolly.antd.esMenuMod.default
+import typingsJapgolly.antd.libMenuMenuContextMod.MenuTheme
+import typingsJapgolly.antd.libMenuMod.ClickParam
+import typingsJapgolly.antd.libMenuMod.MenuMode
+import typingsJapgolly.antd.libMenuMod.MenuProps
+import typingsJapgolly.antd.libMenuMod.SelectParam
+import typingsJapgolly.antd.libMenuMod.default
 import typingsJapgolly.react.reactMod.CSSProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -69,11 +69,11 @@ object Menu {
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     if (motion != null) __obj.updateDynamic("motion")(motion.asInstanceOf[js.Any])
     if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple.asInstanceOf[js.Any])
-    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1((t0: /* param */ typingsJapgolly.antd.esMenuMod.ClickParam) => onClick(t0).runNow()))
-    if (onDeselect != null) __obj.updateDynamic("onDeselect")(js.Any.fromFunction1((t0: /* param */ typingsJapgolly.antd.esMenuMod.SelectParam) => onDeselect(t0).runNow()))
+    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1((t0: /* param */ typingsJapgolly.antd.libMenuMod.ClickParam) => onClick(t0).runNow()))
+    if (onDeselect != null) __obj.updateDynamic("onDeselect")(js.Any.fromFunction1((t0: /* param */ typingsJapgolly.antd.libMenuMod.SelectParam) => onDeselect(t0).runNow()))
     if (onMouseEnter != null) __obj.updateDynamic("onMouseEnter")(js.Any.fromFunction1((t0: /* e */ org.scalajs.dom.raw.MouseEvent) => onMouseEnter(t0).runNow()))
     if (onOpenChange != null) __obj.updateDynamic("onOpenChange")(js.Any.fromFunction1((t0: /* openKeys */ js.Array[java.lang.String]) => onOpenChange(t0).runNow()))
-    if (onSelect != null) __obj.updateDynamic("onSelect")(js.Any.fromFunction1((t0: /* param */ typingsJapgolly.antd.esMenuMod.SelectParam) => onSelect(t0).runNow()))
+    if (onSelect != null) __obj.updateDynamic("onSelect")(js.Any.fromFunction1((t0: /* param */ typingsJapgolly.antd.libMenuMod.SelectParam) => onSelect(t0).runNow()))
     if (openAnimation != null) __obj.updateDynamic("openAnimation")(openAnimation.asInstanceOf[js.Any])
     if (openKeys != null) __obj.updateDynamic("openKeys")(openKeys.asInstanceOf[js.Any])
     if (openTransitionName != null) __obj.updateDynamic("openTransitionName")(openTransitionName.asInstanceOf[js.Any])
@@ -89,10 +89,14 @@ object Menu {
     if (overrides != null) js.Dynamic.global.Object.assign(__obj, overrides)
   
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antd.esMenuMod.MenuProps, 
+  typingsJapgolly.antd.libMenuMod.MenuProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antd.esMenuMod.default](js.constructorOf[typingsJapgolly.antd.esMenuMod.default])
-    f(__obj.asInstanceOf[typingsJapgolly.antd.esMenuMod.MenuProps])(children: _*)
+  typingsJapgolly.antd.libMenuMod.default](this.componentImport)
+    f(__obj.asInstanceOf[typingsJapgolly.antd.libMenuMod.MenuProps])(children: _*)
   }
+  @JSImport("antd/lib/menu", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

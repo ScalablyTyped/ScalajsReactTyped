@@ -1,10 +1,10 @@
 package typingsJapgolly.antd.antdMod
 
-import typingsJapgolly.antd.TypeofClassItemIsMenuItemBoolean
-import typingsJapgolly.antd.TypeofClassSubMenuContextTypes
+import typingsJapgolly.antd.TypeofClassItemIsMenuItem
+import typingsJapgolly.antd.TypeofClassSubMenu
 import typingsJapgolly.antd.libMenuMod.default
 import typingsJapgolly.rcDashMenu.libDividerMod.DividerProps
-import typingsJapgolly.react.reactMod.FunctionComponent
+import typingsJapgolly.react.reactMod.FC
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,9 +17,9 @@ class Menu () extends default
 @JSImport("antd", "Menu")
 @js.native
 object Menu extends js.Object {
-  var Divider: FunctionComponent[DividerProps] = js.native
-  var Item: TypeofClassItemIsMenuItemBoolean = js.native
+  var Divider: FC[DividerProps] = js.native
+  var Item: TypeofClassItemIsMenuItem = js.native
   var ItemGroup: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ItemGroup */ js.Any = js.native
-  var SubMenu: TypeofClassSubMenuContextTypes = js.native
+  var SubMenu: TypeofClassSubMenu = js.native
 }
 

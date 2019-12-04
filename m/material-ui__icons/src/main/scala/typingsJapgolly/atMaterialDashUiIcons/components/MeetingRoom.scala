@@ -1,11 +1,14 @@
 package typingsJapgolly.atMaterialDashUiIcons.components
 
+import typingsJapgolly.atMaterialDashUiIcons.meetingRoomMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object MeetingRoom
-  extends SharedApply_SvgIconProps1591622337[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.MeetingRoom] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.MeetingRoom]
+object MeetingRoom extends SharedApply_SvgIconProps1591622337[default] {
+  @JSImport("@material-ui/icons/MeetingRoom", "default")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

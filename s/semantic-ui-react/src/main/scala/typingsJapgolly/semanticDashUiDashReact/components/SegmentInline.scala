@@ -38,8 +38,12 @@ object SegmentInline {
     val f = japgolly.scalajs.react.JsComponent[
   typingsJapgolly.semanticDashUiDashReact.distCommonjsElementsSegmentSegmentInlineMod.SegmentInlineProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  js.Object](typingsJapgolly.semanticDashUiDashReact.distCommonjsElementsSegmentSegmentInlineMod.default)
+  js.Object](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.semanticDashUiDashReact.distCommonjsElementsSegmentSegmentInlineMod.SegmentInlineProps])(children: _*)
   }
+  @JSImport("semantic-ui-react/dist/commonjs/elements/Segment/SegmentInline", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

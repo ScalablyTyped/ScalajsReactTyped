@@ -65,12 +65,12 @@ import typingsJapgolly.antd.antdStrings.tree
 import typingsJapgolly.antd.antdStrings.url
 import typingsJapgolly.antd.antdStrings.vertical
 import typingsJapgolly.antd.antdStrings.yes
-import typingsJapgolly.antd.esButtonButtonMod.ButtonHTMLType
-import typingsJapgolly.antd.esButtonButtonMod.ButtonProps
-import typingsJapgolly.antd.esButtonButtonMod.ButtonShape
-import typingsJapgolly.antd.esButtonButtonMod.ButtonSize
-import typingsJapgolly.antd.esButtonButtonMod.ButtonType
-import typingsJapgolly.antd.esButtonMod.default
+import typingsJapgolly.antd.libButtonButtonMod.ButtonHTMLType
+import typingsJapgolly.antd.libButtonButtonMod.ButtonProps
+import typingsJapgolly.antd.libButtonButtonMod.ButtonShape
+import typingsJapgolly.antd.libButtonButtonMod.ButtonSize
+import typingsJapgolly.antd.libButtonButtonMod.ButtonType
+import typingsJapgolly.antd.libButtonMod.default
 import typingsJapgolly.react.Anon_Html
 import typingsJapgolly.react.reactMod.CSSProperties
 import scala.scalajs.js
@@ -488,10 +488,14 @@ object Button {
     if (overrides != null) js.Dynamic.global.Object.assign(__obj, overrides)
   
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antd.esButtonButtonMod.ButtonProps, 
+  typingsJapgolly.antd.libButtonButtonMod.ButtonProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antd.esButtonMod.default](js.constructorOf[typingsJapgolly.antd.esButtonMod.default])
-    f(__obj.asInstanceOf[typingsJapgolly.antd.esButtonButtonMod.ButtonProps])(children: _*)
+  typingsJapgolly.antd.libButtonMod.default](this.componentImport)
+    f(__obj.asInstanceOf[typingsJapgolly.antd.libButtonButtonMod.ButtonProps])(children: _*)
   }
+  @JSImport("antd/lib/button", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

@@ -1,13 +1,14 @@
 package typingsJapgolly.atMaterialDashUiIcons.components
 
+import typingsJapgolly.atMaterialDashUiIcons.batteryCharging90RoundedMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object BatteryCharging90Rounded
-  extends SharedApply_SvgIconProps1591622337[
-      typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.BatteryCharging90Rounded
-    ] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.BatteryCharging90Rounded]
+object BatteryCharging90Rounded extends SharedApply_SvgIconProps1591622337[default] {
+  @JSImport("@material-ui/icons/BatteryCharging90Rounded", "default")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

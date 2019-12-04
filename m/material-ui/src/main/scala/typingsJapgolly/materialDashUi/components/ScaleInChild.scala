@@ -34,8 +34,12 @@ object ScaleInChild {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.materialDashUi.internalScaleInChildMod.ScaleInChildProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.materialDashUi.internalScaleInChildMod.default](js.constructorOf[typingsJapgolly.materialDashUi.internalScaleInChildMod.default])
+  typingsJapgolly.materialDashUi.internalScaleInChildMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.materialDashUi.internalScaleInChildMod.ScaleInChildProps])(children: _*)
   }
+  @JSImport("material-ui/internal/ScaleInChild", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

@@ -76,8 +76,12 @@ object RectButton {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.reactDashNativeDashGestureDashHandler.reactDashNativeDashGestureDashHandlerMod.RectButtonProperties, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactDashNativeDashGestureDashHandler.reactDashNativeDashGestureDashHandlerMod.RectButton](js.constructorOf[typingsJapgolly.reactDashNativeDashGestureDashHandler.reactDashNativeDashGestureDashHandlerMod.RectButton])
+  typingsJapgolly.reactDashNativeDashGestureDashHandler.reactDashNativeDashGestureDashHandlerMod.RectButton](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.reactDashNativeDashGestureDashHandler.reactDashNativeDashGestureDashHandlerMod.RectButtonProperties])(children: _*)
   }
+  @JSImport("react-native-gesture-handler", "RectButton")
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

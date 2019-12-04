@@ -92,6 +92,7 @@ import scala.scalajs.js.annotation._
 
 object TableCell {
   def apply(
+    abbr: String = null,
     about: String = null,
     accessKey: String = null,
     align: inherit | left | center | right | justify = null,
@@ -284,7 +285,8 @@ object TableCell {
   ): UnmountedWithRoot[TableCellProps, default, Unit, TableCellProps] = {
     val __obj = js.Dynamic.literal()
   
-      if (about != null) __obj.updateDynamic("about")(about.asInstanceOf[js.Any])
+      if (abbr != null) __obj.updateDynamic("abbr")(abbr.asInstanceOf[js.Any])
+    if (about != null) __obj.updateDynamic("about")(about.asInstanceOf[js.Any])
     if (accessKey != null) __obj.updateDynamic("accessKey")(accessKey.asInstanceOf[js.Any])
     if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
     if (`aria-activedescendant` != null) __obj.updateDynamic("aria-activedescendant")(`aria-activedescendant`.asInstanceOf[js.Any])
@@ -475,8 +477,12 @@ object TableCell {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.atMaterialDashUiCore.tableCellTableCellMod.TableCellProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.atMaterialDashUiCore.tableCellMod.default](js.constructorOf[typingsJapgolly.atMaterialDashUiCore.tableCellMod.default])
+  typingsJapgolly.atMaterialDashUiCore.tableCellMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.atMaterialDashUiCore.tableCellTableCellMod.TableCellProps])(children: _*)
   }
+  @JSImport("@material-ui/core/TableCell", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

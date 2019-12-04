@@ -19,8 +19,8 @@ import japgolly.scalajs.react.ReactWheelEventFrom
 import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
 import org.scalablytyped.runtime.StringDictionary
 import org.scalajs.dom.raw.HTMLSpanElement
-import typingsJapgolly.antd.esTagMod.TagProps
-import typingsJapgolly.antd.esTagMod.default
+import typingsJapgolly.antd.libTagMod.TagProps
+import typingsJapgolly.antd.libTagMod.default
 import typingsJapgolly.react.Anon_Html
 import typingsJapgolly.react.reactMod.CSSProperties
 import typingsJapgolly.react.reactStrings.`additions text`
@@ -438,10 +438,14 @@ object Tag {
     if (overrides != null) js.Dynamic.global.Object.assign(__obj, overrides)
   
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antd.esTagMod.TagProps, 
+  typingsJapgolly.antd.libTagMod.TagProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antd.esTagMod.default](js.constructorOf[typingsJapgolly.antd.esTagMod.default])
-    f(__obj.asInstanceOf[typingsJapgolly.antd.esTagMod.TagProps])(children: _*)
+  typingsJapgolly.antd.libTagMod.default](this.componentImport)
+    f(__obj.asInstanceOf[typingsJapgolly.antd.libTagMod.TagProps])(children: _*)
   }
+  @JSImport("antd/lib/tag", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

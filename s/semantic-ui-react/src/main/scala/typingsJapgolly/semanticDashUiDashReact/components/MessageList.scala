@@ -39,8 +39,12 @@ object MessageList {
     val f = japgolly.scalajs.react.JsComponent[
   typingsJapgolly.semanticDashUiDashReact.distCommonjsCollectionsMessageMessageListMod.MessageListProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  js.Object](typingsJapgolly.semanticDashUiDashReact.distCommonjsCollectionsMessageMessageListMod.default)
+  js.Object](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.semanticDashUiDashReact.distCommonjsCollectionsMessageMessageListMod.MessageListProps])(children: _*)
   }
+  @JSImport("semantic-ui-react/dist/commonjs/collections/Message/MessageList", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

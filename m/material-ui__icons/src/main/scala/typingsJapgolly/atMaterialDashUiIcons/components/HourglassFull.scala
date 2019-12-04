@@ -1,11 +1,14 @@
 package typingsJapgolly.atMaterialDashUiIcons.components
 
+import typingsJapgolly.atMaterialDashUiIcons.hourglassFullMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object HourglassFull
-  extends SharedApply_SvgIconProps1591622337[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.HourglassFull] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.HourglassFull]
+object HourglassFull extends SharedApply_SvgIconProps1591622337[default] {
+  @JSImport("@material-ui/icons/HourglassFull", "default")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

@@ -1,11 +1,14 @@
 package typingsJapgolly.atMaterialDashUiIcons.components
 
+import typingsJapgolly.atMaterialDashUiIcons.commuteSharpMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object CommuteSharp
-  extends SharedApply_SvgIconProps1591622337[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.CommuteSharp] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.CommuteSharp]
+object CommuteSharp extends SharedApply_SvgIconProps1591622337[default] {
+  @JSImport("@material-ui/icons/CommuteSharp", "default")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

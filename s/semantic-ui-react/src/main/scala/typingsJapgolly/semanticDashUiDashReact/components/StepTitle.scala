@@ -38,8 +38,12 @@ object StepTitle {
     val f = japgolly.scalajs.react.JsComponent[
   typingsJapgolly.semanticDashUiDashReact.distCommonjsElementsStepStepTitleMod.StepTitleProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  js.Object](typingsJapgolly.semanticDashUiDashReact.distCommonjsElementsStepStepTitleMod.default)
+  js.Object](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.semanticDashUiDashReact.distCommonjsElementsStepStepTitleMod.StepTitleProps])(children: _*)
   }
+  @JSImport("semantic-ui-react/dist/commonjs/elements/Step/StepTitle", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

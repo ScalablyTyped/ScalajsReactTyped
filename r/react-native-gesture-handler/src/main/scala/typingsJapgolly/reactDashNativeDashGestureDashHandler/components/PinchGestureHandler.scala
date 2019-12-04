@@ -54,8 +54,12 @@ object PinchGestureHandler {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.reactDashNativeDashGestureDashHandler.reactDashNativeDashGestureDashHandlerMod.PinchGestureHandlerProperties, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactDashNativeDashGestureDashHandler.reactDashNativeDashGestureDashHandlerMod.PinchGestureHandler](js.constructorOf[typingsJapgolly.reactDashNativeDashGestureDashHandler.reactDashNativeDashGestureDashHandlerMod.PinchGestureHandler])
+  typingsJapgolly.reactDashNativeDashGestureDashHandler.reactDashNativeDashGestureDashHandlerMod.PinchGestureHandler](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.reactDashNativeDashGestureDashHandler.reactDashNativeDashGestureDashHandlerMod.PinchGestureHandlerProperties])(children: _*)
   }
+  @JSImport("react-native-gesture-handler", "PinchGestureHandler")
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

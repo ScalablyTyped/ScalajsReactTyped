@@ -2,6 +2,8 @@ package typingsJapgolly.antd.libDateDashPickerInterfaceMod
 
 import japgolly.scalajs.react.Callback
 import japgolly.scalajs.react.CallbackTo
+import japgolly.scalajs.react.ReactEventFrom
+import japgolly.scalajs.react.ReactFocusEventFrom
 import japgolly.scalajs.react.raw.React.Node
 import japgolly.scalajs.react.vdom.VdomNode
 import org.scalajs.dom.raw.Element
@@ -48,11 +50,15 @@ object DatePickerProps {
     locale: js.Any = null,
     mode: DatePickerMode = null,
     name: String = null,
+    onBlur: /* e */ ReactEventFrom[Element] => Callback = null,
     onChange: (/* date */ Moment | Null, /* dateString */ String) => Callback = null,
+    onFocus: ReactFocusEventFrom[Element] => Callback = null,
     onOk: /* selectedTime */ Moment => Callback = null,
     onOpenChange: /* status */ Boolean => Callback = null,
     onPanelChange: (/* value */ js.UndefOr[Moment], /* mode */ DatePickerMode) => Callback = null,
     open: js.UndefOr[Boolean] = js.undefined,
+    pickerClass: String = null,
+    pickerInputClass: String = null,
     placeholder: String = null,
     popupStyle: CSSProperties = null,
     prefixCls: String = null,
@@ -82,11 +88,15 @@ object DatePickerProps {
     if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction1((t0: /* e */ japgolly.scalajs.react.ReactEventFrom[org.scalajs.dom.raw.Element]) => onBlur(t0).runNow()))
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction2((t0: /* date */ typingsJapgolly.moment.momentMod.Moment | scala.Null, t1: /* dateString */ java.lang.String) => onChange(t0, t1).runNow()))
+    if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactFocusEventFrom[org.scalajs.dom.raw.Element]) => onFocus(t0).runNow()))
     if (onOk != null) __obj.updateDynamic("onOk")(js.Any.fromFunction1((t0: /* selectedTime */ typingsJapgolly.moment.momentMod.Moment) => onOk(t0).runNow()))
     if (onOpenChange != null) __obj.updateDynamic("onOpenChange")(js.Any.fromFunction1((t0: /* status */ scala.Boolean) => onOpenChange(t0).runNow()))
     if (onPanelChange != null) __obj.updateDynamic("onPanelChange")(js.Any.fromFunction2((t0: /* value */ js.UndefOr[typingsJapgolly.moment.momentMod.Moment], t1: /* mode */ typingsJapgolly.antd.libDateDashPickerInterfaceMod.DatePickerMode) => onPanelChange(t0, t1).runNow()))
     if (!js.isUndefined(open)) __obj.updateDynamic("open")(open.asInstanceOf[js.Any])
+    if (pickerClass != null) __obj.updateDynamic("pickerClass")(pickerClass.asInstanceOf[js.Any])
+    if (pickerInputClass != null) __obj.updateDynamic("pickerInputClass")(pickerInputClass.asInstanceOf[js.Any])
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
     if (popupStyle != null) __obj.updateDynamic("popupStyle")(popupStyle.asInstanceOf[js.Any])
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])

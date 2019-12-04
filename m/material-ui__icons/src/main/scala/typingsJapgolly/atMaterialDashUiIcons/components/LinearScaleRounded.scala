@@ -1,13 +1,14 @@
 package typingsJapgolly.atMaterialDashUiIcons.components
 
+import typingsJapgolly.atMaterialDashUiIcons.linearScaleRoundedMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object LinearScaleRounded
-  extends SharedApply_SvgIconProps1591622337[
-      typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.LinearScaleRounded
-    ] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.LinearScaleRounded]
+object LinearScaleRounded extends SharedApply_SvgIconProps1591622337[default] {
+  @JSImport("@material-ui/icons/LinearScaleRounded", "default")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

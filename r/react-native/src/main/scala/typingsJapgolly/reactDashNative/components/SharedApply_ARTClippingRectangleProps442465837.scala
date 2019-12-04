@@ -10,7 +10,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 abstract class SharedApply_ARTClippingRectangleProps442465837[ComponentRef] () {
-  def __component: js.Any
+  val componentImport: js.Any
   def apply(
     height: Int | Double = null,
     opacity: Int | Double = null,
@@ -49,7 +49,7 @@ abstract class SharedApply_ARTClippingRectangleProps442465837[ComponentRef] () {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.reactDashNative.reactDashNativeMod.ARTClippingRectangleProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  ComponentRef](__component)
+  ComponentRef](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.reactDashNative.reactDashNativeMod.ARTClippingRectangleProps])(children: _*)
   }
 }

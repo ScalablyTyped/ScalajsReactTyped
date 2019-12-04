@@ -33,8 +33,12 @@ object Portal {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.atMaterialDashUiCore.portalPortalMod.PortalProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.atMaterialDashUiCore.portalMod.default](js.constructorOf[typingsJapgolly.atMaterialDashUiCore.portalMod.default])
+  typingsJapgolly.atMaterialDashUiCore.portalMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.atMaterialDashUiCore.portalPortalMod.PortalProps])(children: _*)
   }
+  @JSImport("@material-ui/core/Portal", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

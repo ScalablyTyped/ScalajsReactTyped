@@ -12,8 +12,8 @@ import typingsJapgolly.antd.antdStrings.error
 import typingsJapgolly.antd.antdStrings.info
 import typingsJapgolly.antd.antdStrings.success
 import typingsJapgolly.antd.antdStrings.warning
-import typingsJapgolly.antd.esAlertMod.AlertProps
-import typingsJapgolly.antd.esAlertMod.default
+import typingsJapgolly.antd.libAlertMod.AlertProps
+import typingsJapgolly.antd.libAlertMod.default
 import typingsJapgolly.react.reactMod.CSSProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -60,10 +60,14 @@ object Alert {
     if (overrides != null) js.Dynamic.global.Object.assign(__obj, overrides)
   
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antd.esAlertMod.AlertProps, 
+  typingsJapgolly.antd.libAlertMod.AlertProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antd.esAlertMod.default](js.constructorOf[typingsJapgolly.antd.esAlertMod.default])
-    f(__obj.asInstanceOf[typingsJapgolly.antd.esAlertMod.AlertProps])(children: _*)
+  typingsJapgolly.antd.libAlertMod.default](this.componentImport)
+    f(__obj.asInstanceOf[typingsJapgolly.antd.libAlertMod.AlertProps])(children: _*)
   }
+  @JSImport("antd/lib/alert", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

@@ -440,8 +440,12 @@ object CardContent {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.atMaterialDashUiCore.cardContentCardContentMod.CardContentProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.atMaterialDashUiCore.cardContentMod.default](js.constructorOf[typingsJapgolly.atMaterialDashUiCore.cardContentMod.default])
+  typingsJapgolly.atMaterialDashUiCore.cardContentMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.atMaterialDashUiCore.cardContentCardContentMod.CardContentProps])(children: _*)
   }
+  @JSImport("@material-ui/core/CardContent", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

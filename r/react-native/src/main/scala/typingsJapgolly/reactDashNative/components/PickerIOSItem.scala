@@ -33,8 +33,12 @@ object PickerIOSItem {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.reactDashNative.reactDashNativeMod.PickerIOSItemProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactDashNative.reactDashNativeMod.PickerIOSItem](js.constructorOf[typingsJapgolly.reactDashNative.reactDashNativeMod.PickerIOSItem])
+  typingsJapgolly.reactDashNative.reactDashNativeMod.PickerIOSItem](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.reactDashNative.reactDashNativeMod.PickerIOSItemProps])(children: _*)
   }
+  @JSImport("react-native", "PickerIOSItem")
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

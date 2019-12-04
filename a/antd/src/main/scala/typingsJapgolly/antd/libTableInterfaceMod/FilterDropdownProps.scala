@@ -9,7 +9,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait FilterDropdownProps extends js.Object {
-  var clearFilters: js.UndefOr[js.Function1[/* selectedKeys */ js.Array[String], Unit]] = js.undefined
+  var clearFilters: js.UndefOr[js.Function0[Unit]] = js.undefined
   var confirm: js.UndefOr[js.Function0[Unit]] = js.undefined
   var filters: js.UndefOr[js.Array[ColumnFilterItem]] = js.undefined
   var getPopupContainer: js.UndefOr[js.Function1[/* triggerNode */ HTMLElement, HTMLElement]] = js.undefined
@@ -22,7 +22,7 @@ trait FilterDropdownProps extends js.Object {
 object FilterDropdownProps {
   @scala.inline
   def apply(
-    clearFilters: /* selectedKeys */ js.Array[String] => Callback = null,
+    clearFilters: js.UndefOr[Callback] = js.undefined,
     confirm: js.UndefOr[Callback] = js.undefined,
     filters: js.Array[ColumnFilterItem] = null,
     getPopupContainer: /* triggerNode */ HTMLElement => CallbackTo[HTMLElement] = null,
@@ -32,7 +32,7 @@ object FilterDropdownProps {
     visible: js.UndefOr[Boolean] = js.undefined
   ): FilterDropdownProps = {
     val __obj = js.Dynamic.literal()
-    if (clearFilters != null) __obj.updateDynamic("clearFilters")(js.Any.fromFunction1((t0: /* selectedKeys */ js.Array[java.lang.String]) => clearFilters(t0).runNow()))
+    clearFilters.foreach(p => __obj.updateDynamic("clearFilters")(p.toJsFn))
     confirm.foreach(p => __obj.updateDynamic("confirm")(p.toJsFn))
     if (filters != null) __obj.updateDynamic("filters")(filters.asInstanceOf[js.Any])
     if (getPopupContainer != null) __obj.updateDynamic("getPopupContainer")(js.Any.fromFunction1((t0: /* triggerNode */ org.scalajs.dom.raw.HTMLElement) => getPopupContainer(t0).runNow()))

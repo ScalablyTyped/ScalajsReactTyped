@@ -1,11 +1,14 @@
 package typingsJapgolly.atMaterialDashUiIcons.components
 
+import typingsJapgolly.atMaterialDashUiIcons.contactlessSharpMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object ContactlessSharp
-  extends SharedApply_SvgIconProps1591622337[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.ContactlessSharp] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.ContactlessSharp]
+object ContactlessSharp extends SharedApply_SvgIconProps1591622337[default] {
+  @JSImport("@material-ui/icons/ContactlessSharp", "default")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

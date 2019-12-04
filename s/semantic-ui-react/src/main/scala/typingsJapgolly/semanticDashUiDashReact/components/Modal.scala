@@ -112,8 +112,12 @@ object Modal {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.semanticDashUiDashReact.distCommonjsModulesModalModalMod.ModalProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.semanticDashUiDashReact.distCommonjsModulesModalMod.default](js.constructorOf[typingsJapgolly.semanticDashUiDashReact.distCommonjsModulesModalMod.default])
+  typingsJapgolly.semanticDashUiDashReact.distCommonjsModulesModalMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.semanticDashUiDashReact.distCommonjsModulesModalModalMod.ModalProps])(children: _*)
   }
+  @JSImport("semantic-ui-react/dist/commonjs/modules/Modal", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

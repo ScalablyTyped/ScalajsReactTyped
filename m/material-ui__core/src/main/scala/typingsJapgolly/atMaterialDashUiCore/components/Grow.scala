@@ -63,8 +63,12 @@ object Grow {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.atMaterialDashUiCore.growGrowMod.GrowProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.atMaterialDashUiCore.growMod.default](js.constructorOf[typingsJapgolly.atMaterialDashUiCore.growMod.default])
+  typingsJapgolly.atMaterialDashUiCore.growMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.atMaterialDashUiCore.growGrowMod.GrowProps])(children: _*)
   }
+  @JSImport("@material-ui/core/Grow", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

@@ -92,8 +92,12 @@ object Label {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.semanticDashUiDashReact.distCommonjsElementsLabelLabelMod.LabelProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.semanticDashUiDashReact.distCommonjsElementsLabelMod.default](js.constructorOf[typingsJapgolly.semanticDashUiDashReact.distCommonjsElementsLabelMod.default])
+  typingsJapgolly.semanticDashUiDashReact.distCommonjsElementsLabelMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.semanticDashUiDashReact.distCommonjsElementsLabelLabelMod.LabelProps])(children: _*)
   }
+  @JSImport("semantic-ui-react/dist/commonjs/elements/Label", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

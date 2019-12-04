@@ -1,11 +1,14 @@
 package typingsJapgolly.atMaterialDashUiIcons.components
 
+import typingsJapgolly.atMaterialDashUiIcons.swapHorizRoundedMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object SwapHorizRounded
-  extends SharedApply_SvgIconProps1591622337[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.SwapHorizRounded] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.SwapHorizRounded]
+object SwapHorizRounded extends SharedApply_SvgIconProps1591622337[default] {
+  @JSImport("@material-ui/icons/SwapHorizRounded", "default")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

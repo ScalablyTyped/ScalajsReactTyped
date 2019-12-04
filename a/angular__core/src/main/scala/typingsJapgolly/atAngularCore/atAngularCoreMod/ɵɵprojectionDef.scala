@@ -1,6 +1,5 @@
 package typingsJapgolly.atAngularCore.atAngularCoreMod
 
-import typingsJapgolly.atAngularCore.ProjectionSlots
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,7 +1,7 @@
 package typingsJapgolly.antd
 
 import org.scalablytyped.runtime.Instantiable0
-import typingsJapgolly.antd.esFormFormItemMod.default
+import typingsJapgolly.antd.libFormFormItemMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -477,8 +477,12 @@ object NavLink {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.reactDashRouterDashDom.reactDashRouterDashDomMod.NavLinkProps[S], 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactDashRouterDashDom.reactDashRouterDashDomMod.NavLink[S]](js.constructorOf[typingsJapgolly.reactDashRouterDashDom.reactDashRouterDashDomMod.NavLink[S]])
+  typingsJapgolly.reactDashRouterDashDom.reactDashRouterDashDomMod.NavLink[S]](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.reactDashRouterDashDom.reactDashRouterDashDomMod.NavLinkProps[S]])(children: _*)
   }
+  @JSImport("react-router-dom", "NavLink")
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

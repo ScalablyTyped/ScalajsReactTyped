@@ -1,13 +1,14 @@
 package typingsJapgolly.atMaterialDashUiIcons.components
 
+import typingsJapgolly.atMaterialDashUiIcons.networkLockedSharpMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object NetworkLockedSharp
-  extends SharedApply_SvgIconProps1591622337[
-      typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.NetworkLockedSharp
-    ] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.NetworkLockedSharp]
+object NetworkLockedSharp extends SharedApply_SvgIconProps1591622337[default] {
+  @JSImport("@material-ui/icons/NetworkLockedSharp", "default")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

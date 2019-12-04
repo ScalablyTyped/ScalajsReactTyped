@@ -460,8 +460,12 @@ object TextArea {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.semanticDashUiDashReact.distCommonjsAddonsTextAreaTextAreaMod.TextAreaProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.semanticDashUiDashReact.distCommonjsAddonsTextAreaMod.default](js.constructorOf[typingsJapgolly.semanticDashUiDashReact.distCommonjsAddonsTextAreaMod.default])
+  typingsJapgolly.semanticDashUiDashReact.distCommonjsAddonsTextAreaMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.semanticDashUiDashReact.distCommonjsAddonsTextAreaTextAreaMod.TextAreaProps])(children: _*)
   }
+  @JSImport("semantic-ui-react/dist/commonjs/addons/TextArea", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

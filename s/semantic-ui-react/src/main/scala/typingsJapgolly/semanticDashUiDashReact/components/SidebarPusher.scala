@@ -40,8 +40,12 @@ object SidebarPusher {
     val f = japgolly.scalajs.react.JsComponent[
   typingsJapgolly.semanticDashUiDashReact.distCommonjsModulesSidebarSidebarPusherMod.SidebarPusherProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  js.Object](typingsJapgolly.semanticDashUiDashReact.distCommonjsModulesSidebarSidebarPusherMod.default)
+  js.Object](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.semanticDashUiDashReact.distCommonjsModulesSidebarSidebarPusherMod.SidebarPusherProps])(children: _*)
   }
+  @JSImport("semantic-ui-react/dist/commonjs/modules/Sidebar/SidebarPusher", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

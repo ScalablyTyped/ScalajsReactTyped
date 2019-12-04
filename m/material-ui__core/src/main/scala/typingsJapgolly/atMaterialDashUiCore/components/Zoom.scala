@@ -62,8 +62,12 @@ object Zoom {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.atMaterialDashUiCore.zoomZoomMod.ZoomProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.atMaterialDashUiCore.zoomMod.default](js.constructorOf[typingsJapgolly.atMaterialDashUiCore.zoomMod.default])
+  typingsJapgolly.atMaterialDashUiCore.zoomMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.atMaterialDashUiCore.zoomZoomMod.ZoomProps])(children: _*)
   }
+  @JSImport("@material-ui/core/Zoom", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

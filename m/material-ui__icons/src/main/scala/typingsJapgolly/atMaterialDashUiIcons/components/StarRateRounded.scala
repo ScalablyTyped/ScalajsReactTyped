@@ -1,11 +1,14 @@
 package typingsJapgolly.atMaterialDashUiIcons.components
 
+import typingsJapgolly.atMaterialDashUiIcons.starRateRoundedMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object StarRateRounded
-  extends SharedApply_SvgIconProps1591622337[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.StarRateRounded] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.StarRateRounded]
+object StarRateRounded extends SharedApply_SvgIconProps1591622337[default] {
+  @JSImport("@material-ui/icons/StarRateRounded", "default")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

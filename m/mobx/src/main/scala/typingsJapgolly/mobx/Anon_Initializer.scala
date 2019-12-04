@@ -11,7 +11,7 @@ trait Anon_Initializer extends js.Object {
 
 object Anon_Initializer {
   @scala.inline
-  def apply(initializer: js.UndefOr[CallbackTo[_]] = js.undefined): Anon_Initializer = {
+  def apply(initializer: js.UndefOr[CallbackTo[js.Any]] = js.undefined): Anon_Initializer = {
     val __obj = js.Dynamic.literal()
     initializer.foreach(p => __obj.updateDynamic("initializer")(p.toJsFn))
     __obj.asInstanceOf[Anon_Initializer]

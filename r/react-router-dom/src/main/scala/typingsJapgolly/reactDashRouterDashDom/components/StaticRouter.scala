@@ -36,8 +36,12 @@ object StaticRouter {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.reactDashRouter.reactDashRouterMod.StaticRouterProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactDashRouterDashDom.reactDashRouterDashDomMod.StaticRouter](js.constructorOf[typingsJapgolly.reactDashRouterDashDom.reactDashRouterDashDomMod.StaticRouter])
+  typingsJapgolly.reactDashRouterDashDom.reactDashRouterDashDomMod.StaticRouter](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.reactDashRouter.reactDashRouterMod.StaticRouterProps])(children: _*)
   }
+  @JSImport("react-router-dom", "StaticRouter")
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

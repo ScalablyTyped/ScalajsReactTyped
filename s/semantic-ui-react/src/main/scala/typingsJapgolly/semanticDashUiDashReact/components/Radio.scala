@@ -519,8 +519,12 @@ object Radio {
     val f = japgolly.scalajs.react.JsComponent[
   typingsJapgolly.semanticDashUiDashReact.distCommonjsAddonsRadioRadioMod.RadioProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  js.Object](typingsJapgolly.semanticDashUiDashReact.distCommonjsAddonsRadioMod.default)
+  js.Object](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.semanticDashUiDashReact.distCommonjsAddonsRadioRadioMod.RadioProps])(children: _*)
   }
+  @JSImport("semantic-ui-react/dist/commonjs/addons/Radio", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

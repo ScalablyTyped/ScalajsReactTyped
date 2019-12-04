@@ -65,9 +65,9 @@ import typingsJapgolly.antd.antdStrings.tree
 import typingsJapgolly.antd.antdStrings.url
 import typingsJapgolly.antd.antdStrings.vertical
 import typingsJapgolly.antd.antdStrings.yes
-import typingsJapgolly.antd.esMenuMenuItemMod.MenuItemProps
-import typingsJapgolly.antd.esMenuMenuItemMod.default
-import typingsJapgolly.antd.esMenuMod.ClickParam
+import typingsJapgolly.antd.libMenuMenuItemMod.MenuItemProps
+import typingsJapgolly.antd.libMenuMenuItemMod.default
+import typingsJapgolly.antd.libMenuMod.ClickParam
 import typingsJapgolly.react.Anon_Html
 import typingsJapgolly.react.reactMod.CSSProperties
 import scala.scalajs.js
@@ -344,7 +344,7 @@ object MenuItem {
     if (onCanPlay != null) __obj.updateDynamic("onCanPlay")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[org.scalajs.dom.raw.HTMLLIElement]) => onCanPlay(t0).runNow()))
     if (onCanPlayThrough != null) __obj.updateDynamic("onCanPlayThrough")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[org.scalajs.dom.raw.HTMLLIElement]) => onCanPlayThrough(t0).runNow()))
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[org.scalajs.dom.raw.HTMLLIElement]) => onChange(t0).runNow()))
-    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1((t0: /* param */ typingsJapgolly.antd.esMenuMod.ClickParam) => onClick(t0).runNow()))
+    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1((t0: /* param */ typingsJapgolly.antd.libMenuMod.ClickParam) => onClick(t0).runNow()))
     if (onCompositionEnd != null) __obj.updateDynamic("onCompositionEnd")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactCompositionEventFrom[org.scalajs.dom.raw.HTMLLIElement]) => onCompositionEnd(t0).runNow()))
     if (onCompositionStart != null) __obj.updateDynamic("onCompositionStart")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactCompositionEventFrom[org.scalajs.dom.raw.HTMLLIElement]) => onCompositionStart(t0).runNow()))
     if (onCompositionUpdate != null) __obj.updateDynamic("onCompositionUpdate")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactCompositionEventFrom[org.scalajs.dom.raw.HTMLLIElement]) => onCompositionUpdate(t0).runNow()))
@@ -437,10 +437,14 @@ object MenuItem {
     if (overrides != null) js.Dynamic.global.Object.assign(__obj, overrides)
   
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antd.esMenuMenuItemMod.MenuItemProps, 
+  typingsJapgolly.antd.libMenuMenuItemMod.MenuItemProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antd.esMenuMenuItemMod.default](js.constructorOf[typingsJapgolly.antd.esMenuMenuItemMod.default])
-    f(__obj.asInstanceOf[typingsJapgolly.antd.esMenuMenuItemMod.MenuItemProps])(children: _*)
+  typingsJapgolly.antd.libMenuMenuItemMod.default](this.componentImport)
+    f(__obj.asInstanceOf[typingsJapgolly.antd.libMenuMenuItemMod.MenuItemProps])(children: _*)
   }
+  @JSImport("antd/lib/menu/MenuItem", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

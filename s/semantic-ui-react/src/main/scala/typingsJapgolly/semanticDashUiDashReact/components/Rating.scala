@@ -59,8 +59,12 @@ object Rating {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.semanticDashUiDashReact.distCommonjsModulesRatingRatingMod.RatingProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.semanticDashUiDashReact.distCommonjsModulesRatingMod.default](js.constructorOf[typingsJapgolly.semanticDashUiDashReact.distCommonjsModulesRatingMod.default])
+  typingsJapgolly.semanticDashUiDashReact.distCommonjsModulesRatingMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.semanticDashUiDashReact.distCommonjsModulesRatingRatingMod.RatingProps])(children: _*)
   }
+  @JSImport("semantic-ui-react/dist/commonjs/modules/Rating", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

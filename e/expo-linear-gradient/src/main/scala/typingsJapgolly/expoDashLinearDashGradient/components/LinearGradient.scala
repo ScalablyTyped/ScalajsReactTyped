@@ -28,8 +28,12 @@ object LinearGradient {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.expoDashLinearDashGradient.buildLinearGradientMod.Props with js.Object, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.expoDashLinearDashGradient.buildLinearGradientMod.default](js.constructorOf[typingsJapgolly.expoDashLinearDashGradient.buildLinearGradientMod.default])
+  typingsJapgolly.expoDashLinearDashGradient.buildLinearGradientMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.expoDashLinearDashGradient.buildLinearGradientMod.Props with js.Object])(children: _*)
   }
+  @JSImport("expo-linear-gradient/build/LinearGradient", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

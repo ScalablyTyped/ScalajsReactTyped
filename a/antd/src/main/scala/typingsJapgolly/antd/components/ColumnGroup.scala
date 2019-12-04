@@ -5,8 +5,8 @@ import japgolly.scalajs.react.Key
 import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
 import japgolly.scalajs.react.vdom.VdomNode
 import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.antd.esTableColumnGroupMod.ColumnGroupProps
-import typingsJapgolly.antd.esTableColumnGroupMod.default
+import typingsJapgolly.antd.libTableColumnGroupMod.ColumnGroupProps
+import typingsJapgolly.antd.libTableColumnGroupMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,10 +28,14 @@ object ColumnGroup {
     if (overrides != null) js.Dynamic.global.Object.assign(__obj, overrides)
   
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antd.esTableColumnGroupMod.ColumnGroupProps, 
+  typingsJapgolly.antd.libTableColumnGroupMod.ColumnGroupProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antd.esTableColumnGroupMod.default](js.constructorOf[typingsJapgolly.antd.esTableColumnGroupMod.default])
-    f(__obj.asInstanceOf[typingsJapgolly.antd.esTableColumnGroupMod.ColumnGroupProps])(children: _*)
+  typingsJapgolly.antd.libTableColumnGroupMod.default](this.componentImport)
+    f(__obj.asInstanceOf[typingsJapgolly.antd.libTableColumnGroupMod.ColumnGroupProps])(children: _*)
   }
+  @JSImport("antd/lib/table/ColumnGroup", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

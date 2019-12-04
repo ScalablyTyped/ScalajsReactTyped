@@ -458,8 +458,12 @@ object FormHelperText {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.atMaterialDashUiCore.formHelperTextFormHelperTextMod.FormHelperTextProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.atMaterialDashUiCore.formHelperTextMod.default](js.constructorOf[typingsJapgolly.atMaterialDashUiCore.formHelperTextMod.default])
+  typingsJapgolly.atMaterialDashUiCore.formHelperTextMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.atMaterialDashUiCore.formHelperTextFormHelperTextMod.FormHelperTextProps])(children: _*)
   }
+  @JSImport("@material-ui/core/FormHelperText", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

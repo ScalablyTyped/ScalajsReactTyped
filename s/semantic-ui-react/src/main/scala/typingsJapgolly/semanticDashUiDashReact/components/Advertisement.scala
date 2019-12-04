@@ -66,8 +66,12 @@ object Advertisement {
     val f = japgolly.scalajs.react.JsComponent[
   typingsJapgolly.semanticDashUiDashReact.distCommonjsViewsAdvertisementAdvertisementMod.AdvertisementProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  js.Object](typingsJapgolly.semanticDashUiDashReact.distCommonjsViewsAdvertisementMod.default)
+  js.Object](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.semanticDashUiDashReact.distCommonjsViewsAdvertisementAdvertisementMod.AdvertisementProps])(children: _*)
   }
+  @JSImport("semantic-ui-react/dist/commonjs/views/Advertisement", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

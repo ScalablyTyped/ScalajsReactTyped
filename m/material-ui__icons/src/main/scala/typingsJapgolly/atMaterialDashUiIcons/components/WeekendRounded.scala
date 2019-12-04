@@ -1,11 +1,14 @@
 package typingsJapgolly.atMaterialDashUiIcons.components
 
+import typingsJapgolly.atMaterialDashUiIcons.weekendRoundedMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object WeekendRounded
-  extends SharedApply_SvgIconProps1591622337[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.WeekendRounded] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.WeekendRounded]
+object WeekendRounded extends SharedApply_SvgIconProps1591622337[default] {
+  @JSImport("@material-ui/icons/WeekendRounded", "default")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

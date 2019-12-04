@@ -6,11 +6,11 @@ import japgolly.scalajs.react.component.Js.MountedWithRawType
 import japgolly.scalajs.react.component.Js.RawMounted
 import japgolly.scalajs.react.component.Js.UnmountedSimple
 import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.antd.esTypographyBaseMod.BaseType
-import typingsJapgolly.antd.esTypographyBaseMod.CopyConfig
-import typingsJapgolly.antd.esTypographyBaseMod.EditConfig
-import typingsJapgolly.antd.esTypographyBaseMod.EllipsisConfig
-import typingsJapgolly.antd.esTypographyParagraphMod.ParagraphProps
+import typingsJapgolly.antd.libTypographyBaseMod.BaseType
+import typingsJapgolly.antd.libTypographyBaseMod.CopyConfig
+import typingsJapgolly.antd.libTypographyBaseMod.EditConfig
+import typingsJapgolly.antd.libTypographyBaseMod.EllipsisConfig
+import typingsJapgolly.antd.libTypographyParagraphMod.ParagraphProps
 import typingsJapgolly.react.reactMod.CSSProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -62,10 +62,14 @@ object Paragraph {
     if (overrides != null) js.Dynamic.global.Object.assign(__obj, overrides)
   
     val f = japgolly.scalajs.react.JsComponent[
-  typingsJapgolly.antd.esTypographyParagraphMod.ParagraphProps, 
+  typingsJapgolly.antd.libTypographyParagraphMod.ParagraphProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  js.Object](typingsJapgolly.antd.esTypographyParagraphMod.default)
-    f(__obj.asInstanceOf[typingsJapgolly.antd.esTypographyParagraphMod.ParagraphProps])(children: _*)
+  js.Object](this.componentImport)
+    f(__obj.asInstanceOf[typingsJapgolly.antd.libTypographyParagraphMod.ParagraphProps])(children: _*)
   }
+  @JSImport("antd/lib/typography/Paragraph", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

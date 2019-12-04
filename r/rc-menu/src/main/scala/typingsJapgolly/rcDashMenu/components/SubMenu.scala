@@ -11,15 +11,15 @@ import typingsJapgolly.rcDashMenu.Anon_DomEventKey
 import typingsJapgolly.rcDashMenu.Anon_Hover
 import typingsJapgolly.rcDashMenu.Anon_IsRootMenu
 import typingsJapgolly.rcDashMenu.Anon_Item
-import typingsJapgolly.rcDashMenu.esInterfaceMod.BuiltinPlacements
-import typingsJapgolly.rcDashMenu.esInterfaceMod.MenuInfo
-import typingsJapgolly.rcDashMenu.esInterfaceMod.MenuMode
-import typingsJapgolly.rcDashMenu.esInterfaceMod.MiniStore
-import typingsJapgolly.rcDashMenu.esInterfaceMod.MotionType
-import typingsJapgolly.rcDashMenu.esInterfaceMod.RenderIconType
-import typingsJapgolly.rcDashMenu.esInterfaceMod.SelectInfo
-import typingsJapgolly.rcDashMenu.esInterfaceMod.TriggerSubMenuAction
-import typingsJapgolly.rcDashMenu.esSubMenuMod.SubMenuProps
+import typingsJapgolly.rcDashMenu.libInterfaceMod.BuiltinPlacements
+import typingsJapgolly.rcDashMenu.libInterfaceMod.MenuInfo
+import typingsJapgolly.rcDashMenu.libInterfaceMod.MenuMode
+import typingsJapgolly.rcDashMenu.libInterfaceMod.MiniStore
+import typingsJapgolly.rcDashMenu.libInterfaceMod.MotionType
+import typingsJapgolly.rcDashMenu.libInterfaceMod.RenderIconType
+import typingsJapgolly.rcDashMenu.libInterfaceMod.SelectInfo
+import typingsJapgolly.rcDashMenu.libInterfaceMod.TriggerSubMenuAction
+import typingsJapgolly.rcDashMenu.libSubMenuMod.SubMenuProps
 import typingsJapgolly.react.reactMod.Key
 import typingsJapgolly.react.reactMod.ReactInstance
 import scala.scalajs.js
@@ -69,7 +69,7 @@ object SubMenu {
     overrides: StringDictionary[js.Any] = null
   )(
     children: ChildArg*
-  ): UnmountedWithRoot[SubMenuProps, typingsJapgolly.rcDashMenu.esSubMenuMod.SubMenu, Unit, SubMenuProps] = {
+  ): UnmountedWithRoot[SubMenuProps, typingsJapgolly.rcDashMenu.libSubMenuMod.SubMenu, Unit, SubMenuProps] = {
     val __obj = js.Dynamic.literal()
   
       if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.asInstanceOf[js.Any])
@@ -87,14 +87,14 @@ object SubMenu {
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     if (motion != null) __obj.updateDynamic("motion")(motion.asInstanceOf[js.Any])
     if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple.asInstanceOf[js.Any])
-    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1((t0: /* info */ typingsJapgolly.rcDashMenu.esInterfaceMod.MenuInfo) => onClick(t0).runNow()))
-    if (onDeselect != null) __obj.updateDynamic("onDeselect")(js.Any.fromFunction1((t0: /* info */ typingsJapgolly.rcDashMenu.esInterfaceMod.SelectInfo) => onDeselect(t0).runNow()))
+    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1((t0: /* info */ typingsJapgolly.rcDashMenu.libInterfaceMod.MenuInfo) => onClick(t0).runNow()))
+    if (onDeselect != null) __obj.updateDynamic("onDeselect")(js.Any.fromFunction1((t0: /* info */ typingsJapgolly.rcDashMenu.libInterfaceMod.SelectInfo) => onDeselect(t0).runNow()))
     if (onDestroy != null) __obj.updateDynamic("onDestroy")(js.Any.fromFunction1((t0: /* key */ typingsJapgolly.react.reactMod.Key) => onDestroy(t0).runNow()))
     if (onItemHover != null) __obj.updateDynamic("onItemHover")(js.Any.fromFunction1((t0: /* info */ typingsJapgolly.rcDashMenu.Anon_Hover) => onItemHover(t0).runNow()))
     if (onMouseEnter != null) __obj.updateDynamic("onMouseEnter")(js.Any.fromFunction1((t0: /* info */ typingsJapgolly.rcDashMenu.Anon_DomEventKey) => onMouseEnter(t0).runNow()))
     if (onMouseLeave != null) __obj.updateDynamic("onMouseLeave")(js.Any.fromFunction1((t0: /* info */ typingsJapgolly.rcDashMenu.Anon_DomEventKey) => onMouseLeave(t0).runNow()))
     if (onOpenChange != null) __obj.updateDynamic("onOpenChange")(js.Any.fromFunction1((t0: /* keys */ js.Array[typingsJapgolly.react.reactMod.Key] | typingsJapgolly.rcDashMenu.Anon_Item) => onOpenChange(t0).runNow()))
-    if (onSelect != null) __obj.updateDynamic("onSelect")(js.Any.fromFunction1((t0: /* info */ typingsJapgolly.rcDashMenu.esInterfaceMod.SelectInfo) => onSelect(t0).runNow()))
+    if (onSelect != null) __obj.updateDynamic("onSelect")(js.Any.fromFunction1((t0: /* info */ typingsJapgolly.rcDashMenu.libInterfaceMod.SelectInfo) => onSelect(t0).runNow()))
     if (onTitleClick != null) __obj.updateDynamic("onTitleClick")(js.Any.fromFunction1((t0: /* info */ typingsJapgolly.rcDashMenu.Anon_DomEvent) => onTitleClick(t0).runNow()))
     if (onTitleMouseEnter != null) __obj.updateDynamic("onTitleMouseEnter")(js.Any.fromFunction1((t0: /* info */ typingsJapgolly.rcDashMenu.Anon_DomEventKey) => onTitleMouseEnter(t0).runNow()))
     if (onTitleMouseLeave != null) __obj.updateDynamic("onTitleMouseLeave")(js.Any.fromFunction1((t0: /* info */ typingsJapgolly.rcDashMenu.Anon_DomEventKey) => onTitleMouseLeave(t0).runNow()))
@@ -113,10 +113,14 @@ object SubMenu {
     if (overrides != null) js.Dynamic.global.Object.assign(__obj, overrides)
   
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.rcDashMenu.esSubMenuMod.SubMenuProps, 
+  typingsJapgolly.rcDashMenu.libSubMenuMod.SubMenuProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.rcDashMenu.esSubMenuMod.SubMenu](js.constructorOf[typingsJapgolly.rcDashMenu.esSubMenuMod.SubMenu])
-    f(__obj.asInstanceOf[typingsJapgolly.rcDashMenu.esSubMenuMod.SubMenuProps])(children: _*)
+  typingsJapgolly.rcDashMenu.libSubMenuMod.SubMenu](this.componentImport)
+    f(__obj.asInstanceOf[typingsJapgolly.rcDashMenu.libSubMenuMod.SubMenuProps])(children: _*)
   }
+  @JSImport("rc-menu/lib/SubMenu", "SubMenu")
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

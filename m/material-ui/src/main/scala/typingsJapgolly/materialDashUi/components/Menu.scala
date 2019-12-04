@@ -63,8 +63,12 @@ object Menu {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.materialDashUi.__MaterialUI.Menus.MenuProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.materialDashUi.menuMod.default](js.constructorOf[typingsJapgolly.materialDashUi.menuMod.default])
+  typingsJapgolly.materialDashUi.menuMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.materialDashUi.__MaterialUI.Menus.MenuProps])(children: _*)
   }
+  @JSImport("material-ui/Menu", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

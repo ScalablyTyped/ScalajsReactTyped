@@ -36,7 +36,7 @@ object TemplateAstVisitor {
     visitReference: (ReferenceAst, js.Any) => CallbackTo[js.Any],
     visitText: (TextAst, js.Any) => CallbackTo[js.Any],
     visitVariable: (VariableAst, js.Any) => CallbackTo[js.Any],
-    visit: (/* ast */ TemplateAst, /* context */ js.Any) => CallbackTo[_] = null
+    visit: (/* ast */ TemplateAst, /* context */ js.Any) => CallbackTo[js.Any] = null
   ): TemplateAstVisitor = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("visitAttr")(js.Any.fromFunction2((t0: typingsJapgolly.atAngularCompiler.srcTemplateUnderscoreParserTemplateUnderscoreAstMod.AttrAst, t1: js.Any) => visitAttr(t0, t1).runNow()))

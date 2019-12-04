@@ -249,8 +249,12 @@ object Dialog {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.materialDashUi.__MaterialUI.DialogProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.materialDashUi.dialogMod.default](js.constructorOf[typingsJapgolly.materialDashUi.dialogMod.default])
+  typingsJapgolly.materialDashUi.dialogMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.materialDashUi.__MaterialUI.DialogProps])(children: _*)
   }
+  @JSImport("material-ui/Dialog", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

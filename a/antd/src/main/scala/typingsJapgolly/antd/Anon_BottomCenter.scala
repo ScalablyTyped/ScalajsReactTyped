@@ -6,7 +6,7 @@ import typingsJapgolly.antd.antdStrings.bottomRight
 import typingsJapgolly.antd.antdStrings.topCenter
 import typingsJapgolly.antd.antdStrings.topLeft
 import typingsJapgolly.antd.antdStrings.topRight
-import typingsJapgolly.antd.esDropdownDropdownDashButtonMod.DropdownButtonType
+import typingsJapgolly.antd.libDropdownDropdownDashButtonMod.DropdownButtonType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

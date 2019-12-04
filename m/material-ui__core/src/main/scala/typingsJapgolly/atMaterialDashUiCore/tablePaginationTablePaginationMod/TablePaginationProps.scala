@@ -69,7 +69,6 @@ import typingsJapgolly.atMaterialDashUiCore.tableCellTableCellMod.Padding
 import typingsJapgolly.atMaterialDashUiCore.tableCellTableCellMod.SortDirection
 import typingsJapgolly.atMaterialDashUiCore.tablePaginationTablePaginationActionsMod.TablePaginationActionsProps
 import typingsJapgolly.react.Anon_Html
-import typingsJapgolly.react.NativeMouseEvent
 import typingsJapgolly.react.reactMod.AnimationEventHandler
 import typingsJapgolly.react.reactMod.CSSProperties
 import typingsJapgolly.react.reactMod.ChangeEventHandler
@@ -81,6 +80,7 @@ import typingsJapgolly.react.reactMod.FormEventHandler
 import typingsJapgolly.react.reactMod.KeyboardEventHandler
 import typingsJapgolly.react.reactMod.MouseEvent
 import typingsJapgolly.react.reactMod.MouseEventHandler
+import typingsJapgolly.react.reactMod.NativeMouseEvent
 import typingsJapgolly.react.reactMod.PointerEventHandler
 import typingsJapgolly.react.reactMod.ReactEventHandler
 import typingsJapgolly.react.reactMod.ReactType
@@ -98,6 +98,7 @@ import scala.scalajs.js.annotation._
 trait TablePaginationProps extends js.Object {
   var ActionsComponent: js.UndefOr[ReactType[TablePaginationActionsProps]] = js.native
   var SelectProps: js.UndefOr[PartialSelectProps] = js.native
+  var abbr: js.UndefOr[String] = js.native
   var about: js.UndefOr[String] = js.native
   var accessKey: js.UndefOr[String] = js.native
   var align: js.UndefOr[inherit | left | center | right | justify] = js.native

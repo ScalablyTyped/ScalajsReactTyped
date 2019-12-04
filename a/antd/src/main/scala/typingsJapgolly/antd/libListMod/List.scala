@@ -2,7 +2,7 @@ package typingsJapgolly.antd.libListMod
 
 import japgolly.scalajs.react.raw.React.Node
 import typingsJapgolly.antd.Anon_CurrentTotal
-import typingsJapgolly.antd.Anon_GridHorizontalItemLayout
+import typingsJapgolly.antd.Anon_GridHorizontal
 import typingsJapgolly.antd.libConfigDashProviderContextMod.ConfigConsumerProps
 import typingsJapgolly.react.reactMod.Component
 import typingsJapgolly.react.reactMod._Global_.JSX.Element
@@ -17,7 +17,7 @@ trait List[T]
   var keys: js.Any = js.native
   var onPaginationChange: js.Any = js.native
   var onPaginationShowSizeChange: js.Any = js.native
-  def getChildContext(): Anon_GridHorizontalItemLayout = js.native
+  def getChildContext(): Anon_GridHorizontal = js.native
   def isSomethingAfterLastItem(): Boolean = js.native
   def renderEmpty(prefixCls: String, renderEmpty: js.Function1[/* componentName */ js.UndefOr[String], Node]): Element = js.native
   def renderItem(item: js.Any, index: Double): js.UndefOr[js.Object | Null] = js.native

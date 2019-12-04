@@ -1,6 +1,6 @@
 package typingsJapgolly.antd
 
-import typingsJapgolly.antd.esTransferMod.TransferItem
+import typingsJapgolly.antd.libTransferMod.TransferItem
 import typingsJapgolly.propDashTypes.propDashTypesMod.ReactNodeLike
 import typingsJapgolly.propDashTypes.propDashTypesMod.Requireable
 import typingsJapgolly.propDashTypes.propDashTypesMod.Validator

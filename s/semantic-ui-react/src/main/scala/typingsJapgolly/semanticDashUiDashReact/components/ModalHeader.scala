@@ -38,8 +38,12 @@ object ModalHeader {
     val f = japgolly.scalajs.react.JsComponent[
   typingsJapgolly.semanticDashUiDashReact.distCommonjsModulesModalModalHeaderMod.ModalHeaderProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  js.Object](typingsJapgolly.semanticDashUiDashReact.distCommonjsModulesModalModalHeaderMod.default)
+  js.Object](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.semanticDashUiDashReact.distCommonjsModulesModalModalHeaderMod.ModalHeaderProps])(children: _*)
   }
+  @JSImport("semantic-ui-react/dist/commonjs/modules/Modal/ModalHeader", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

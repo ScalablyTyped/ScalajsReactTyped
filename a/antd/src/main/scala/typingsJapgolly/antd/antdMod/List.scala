@@ -1,8 +1,8 @@
 package typingsJapgolly.antd.antdMod
 
-import typingsJapgolly.antd.Anon_BorderedDataSourceFalse
+import typingsJapgolly.antd.Anon_BorderedDataSource
 import typingsJapgolly.antd.Anon_Grid
-import typingsJapgolly.antd.TypeofClassItemContextTypes
+import typingsJapgolly.antd.TypeofClassItem
 import typingsJapgolly.antd.libListMod.ListProps
 import typingsJapgolly.antd.libListMod.default
 import scala.scalajs.js
@@ -19,8 +19,8 @@ class List[T] protected () extends default[T] {
 @JSImport("antd", "List")
 @js.native
 object List extends js.Object {
-  var Item: TypeofClassItemContextTypes = js.native
+  var Item: TypeofClassItem = js.native
   var childContextTypes: Anon_Grid = js.native
-  var defaultProps: Anon_BorderedDataSourceFalse = js.native
+  var defaultProps: Anon_BorderedDataSource = js.native
 }
 

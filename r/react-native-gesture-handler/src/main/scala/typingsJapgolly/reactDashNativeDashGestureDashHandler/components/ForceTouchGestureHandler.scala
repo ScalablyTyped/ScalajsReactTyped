@@ -60,8 +60,12 @@ object ForceTouchGestureHandler {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.reactDashNativeDashGestureDashHandler.reactDashNativeDashGestureDashHandlerMod.ForceTouchGestureHandlerProperties, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactDashNativeDashGestureDashHandler.reactDashNativeDashGestureDashHandlerMod.ForceTouchGestureHandler](js.constructorOf[typingsJapgolly.reactDashNativeDashGestureDashHandler.reactDashNativeDashGestureDashHandlerMod.ForceTouchGestureHandler])
+  typingsJapgolly.reactDashNativeDashGestureDashHandler.reactDashNativeDashGestureDashHandlerMod.ForceTouchGestureHandler](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.reactDashNativeDashGestureDashHandler.reactDashNativeDashGestureDashHandlerMod.ForceTouchGestureHandlerProperties])(children: _*)
   }
+  @JSImport("react-native-gesture-handler", "ForceTouchGestureHandler")
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

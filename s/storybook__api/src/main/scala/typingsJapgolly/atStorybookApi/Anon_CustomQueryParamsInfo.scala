@@ -1,7 +1,6 @@
 package typingsJapgolly.atStorybookApi
 
 import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.atReachRouter.atReachRouterMod.WindowLocation
 import typingsJapgolly.atStorybookApi.atStorybookApiStrings.info
 import typingsJapgolly.atStorybookApi.atStorybookApiStrings.settings
 import typingsJapgolly.atStorybookApi.atStorybookApiStrings.story

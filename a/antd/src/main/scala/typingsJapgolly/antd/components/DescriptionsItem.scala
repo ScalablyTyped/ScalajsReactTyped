@@ -7,7 +7,7 @@ import japgolly.scalajs.react.component.Js.RawMounted
 import japgolly.scalajs.react.component.Js.UnmountedSimple
 import japgolly.scalajs.react.vdom.VdomNode
 import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.antd.esDescriptionsMod.DescriptionsItemProps
+import typingsJapgolly.antd.libDescriptionsMod.DescriptionsItemProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -36,10 +36,14 @@ object DescriptionsItem {
     if (overrides != null) js.Dynamic.global.Object.assign(__obj, overrides)
   
     val f = japgolly.scalajs.react.JsComponent[
-  typingsJapgolly.antd.esDescriptionsMod.DescriptionsItemProps, 
+  typingsJapgolly.antd.libDescriptionsMod.DescriptionsItemProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  js.Object](typingsJapgolly.antd.esMod.Descriptions.Item)
-    f(__obj.asInstanceOf[typingsJapgolly.antd.esDescriptionsMod.DescriptionsItemProps])(children: _*)
+  js.Object](this.componentImport)
+    f(__obj.asInstanceOf[typingsJapgolly.antd.libDescriptionsMod.DescriptionsItemProps])(children: _*)
   }
+  @JSImport("antd", "Descriptions.Item")
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

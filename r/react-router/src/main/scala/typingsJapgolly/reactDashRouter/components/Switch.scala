@@ -33,8 +33,12 @@ object Switch {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.reactDashRouter.reactDashRouterMod.SwitchProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactDashRouter.reactDashRouterMod.Switch](js.constructorOf[typingsJapgolly.reactDashRouter.reactDashRouterMod.Switch])
+  typingsJapgolly.reactDashRouter.reactDashRouterMod.Switch](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.reactDashRouter.reactDashRouterMod.SwitchProps])(children: _*)
   }
+  @JSImport("react-router", "Switch")
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

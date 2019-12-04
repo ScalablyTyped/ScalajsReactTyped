@@ -41,8 +41,12 @@ object ImageGroup {
     val f = japgolly.scalajs.react.JsComponent[
   typingsJapgolly.semanticDashUiDashReact.distCommonjsElementsImageImageGroupMod.ImageGroupProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  js.Object](typingsJapgolly.semanticDashUiDashReact.distCommonjsElementsImageImageGroupMod.default)
+  js.Object](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.semanticDashUiDashReact.distCommonjsElementsImageImageGroupMod.ImageGroupProps])(children: _*)
   }
+  @JSImport("semantic-ui-react/dist/commonjs/elements/Image/ImageGroup", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

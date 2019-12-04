@@ -89,6 +89,7 @@ object TableHeaderCellProps {
   @scala.inline
   def apply(
     StringDictionary: /* key */ StringDictionary[js.Any] = null,
+    abbr: String = null,
     about: String = null,
     accessKey: String = null,
     active: js.UndefOr[Boolean] = js.undefined,
@@ -287,6 +288,7 @@ object TableHeaderCellProps {
   ): TableHeaderCellProps = {
     val __obj = js.Dynamic.literal()
     if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (abbr != null) __obj.updateDynamic("abbr")(abbr.asInstanceOf[js.Any])
     if (about != null) __obj.updateDynamic("about")(about.asInstanceOf[js.Any])
     if (accessKey != null) __obj.updateDynamic("accessKey")(accessKey.asInstanceOf[js.Any])
     if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.asInstanceOf[js.Any])

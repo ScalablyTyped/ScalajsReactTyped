@@ -44,8 +44,12 @@ object Responsive {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.semanticDashUiDashReact.distCommonjsAddonsResponsiveResponsiveMod.ResponsiveProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.semanticDashUiDashReact.distCommonjsAddonsResponsiveMod.default](js.constructorOf[typingsJapgolly.semanticDashUiDashReact.distCommonjsAddonsResponsiveMod.default])
+  typingsJapgolly.semanticDashUiDashReact.distCommonjsAddonsResponsiveMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.semanticDashUiDashReact.distCommonjsAddonsResponsiveResponsiveMod.ResponsiveProps])(children: _*)
   }
+  @JSImport("semantic-ui-react/dist/commonjs/addons/Responsive", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

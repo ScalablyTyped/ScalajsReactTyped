@@ -73,8 +73,12 @@ object Portal {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.semanticDashUiDashReact.distCommonjsAddonsPortalPortalMod.PortalProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.semanticDashUiDashReact.distCommonjsAddonsPortalMod.default](js.constructorOf[typingsJapgolly.semanticDashUiDashReact.distCommonjsAddonsPortalMod.default])
+  typingsJapgolly.semanticDashUiDashReact.distCommonjsAddonsPortalMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.semanticDashUiDashReact.distCommonjsAddonsPortalPortalMod.PortalProps])(children: _*)
   }
+  @JSImport("semantic-ui-react/dist/commonjs/addons/Portal", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

@@ -100,8 +100,12 @@ object SelectField {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.materialDashUi.__MaterialUI.SelectFieldProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.materialDashUi.selectFieldMod.default](js.constructorOf[typingsJapgolly.materialDashUi.selectFieldMod.default])
+  typingsJapgolly.materialDashUi.selectFieldMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.materialDashUi.__MaterialUI.SelectFieldProps])(children: _*)
   }
+  @JSImport("material-ui/SelectField", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

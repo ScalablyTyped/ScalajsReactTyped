@@ -4,7 +4,6 @@ import japgolly.scalajs.react.Callback
 import japgolly.scalajs.react.CallbackTo
 import japgolly.scalajs.react.ReactEventFrom
 import org.scalajs.dom.raw.Element
-import typingsJapgolly.reactDashNative.NodeHandle
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -80,10 +79,14 @@ object TouchableMixin {
     __obj.updateDynamic("touchableGetLongPressDelayMS")(touchableGetLongPressDelayMS.toJsFn)
     __obj.updateDynamic("touchableGetPressOutDelayMS")(touchableGetPressOutDelayMS.toJsFn)
     __obj.updateDynamic("touchableGetPressRectOffset")(touchableGetPressRectOffset.toJsFn)
-    __obj.updateDynamic("touchableHandleActivePressIn")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[typingsJapgolly.reactDashNative.NodeHandle with org.scalajs.dom.raw.Element]) => touchableHandleActivePressIn(t0).runNow()))
-    __obj.updateDynamic("touchableHandleActivePressOut")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[typingsJapgolly.reactDashNative.NodeHandle with org.scalajs.dom.raw.Element]) => touchableHandleActivePressOut(t0).runNow()))
-    __obj.updateDynamic("touchableHandleLongPress")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[typingsJapgolly.reactDashNative.NodeHandle with org.scalajs.dom.raw.Element]) => touchableHandleLongPress(t0).runNow()))
-    __obj.updateDynamic("touchableHandlePress")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[typingsJapgolly.reactDashNative.NodeHandle with org.scalajs.dom.raw.Element]) => touchableHandlePress(t0).runNow()))
+    __obj.updateDynamic("touchableHandleActivePressIn")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[
+  typingsJapgolly.reactDashNative.reactDashNativeMod.NodeHandle with org.scalajs.dom.raw.Element]) => touchableHandleActivePressIn(t0).runNow()))
+    __obj.updateDynamic("touchableHandleActivePressOut")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[
+  typingsJapgolly.reactDashNative.reactDashNativeMod.NodeHandle with org.scalajs.dom.raw.Element]) => touchableHandleActivePressOut(t0).runNow()))
+    __obj.updateDynamic("touchableHandleLongPress")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[
+  typingsJapgolly.reactDashNative.reactDashNativeMod.NodeHandle with org.scalajs.dom.raw.Element]) => touchableHandleLongPress(t0).runNow()))
+    __obj.updateDynamic("touchableHandlePress")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[
+  typingsJapgolly.reactDashNative.reactDashNativeMod.NodeHandle with org.scalajs.dom.raw.Element]) => touchableHandlePress(t0).runNow()))
     __obj.asInstanceOf[TouchableMixin]
   }
 }

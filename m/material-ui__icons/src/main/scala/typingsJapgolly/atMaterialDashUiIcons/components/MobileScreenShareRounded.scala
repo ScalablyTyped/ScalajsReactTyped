@@ -1,13 +1,14 @@
 package typingsJapgolly.atMaterialDashUiIcons.components
 
+import typingsJapgolly.atMaterialDashUiIcons.mobileScreenShareRoundedMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object MobileScreenShareRounded
-  extends SharedApply_SvgIconProps1591622337[
-      typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.MobileScreenShareRounded
-    ] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.MobileScreenShareRounded]
+object MobileScreenShareRounded extends SharedApply_SvgIconProps1591622337[default] {
+  @JSImport("@material-ui/icons/MobileScreenShareRounded", "default")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

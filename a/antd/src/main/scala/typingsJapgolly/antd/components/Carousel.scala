@@ -7,10 +7,10 @@ import japgolly.scalajs.react.Key
 import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
 import japgolly.scalajs.react.raw.React.Node
 import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.antd.esCarouselMod.CarouselEffect
-import typingsJapgolly.antd.esCarouselMod.CarouselProps
-import typingsJapgolly.antd.esCarouselMod.DotPosition
-import typingsJapgolly.antd.esCarouselMod.default
+import typingsJapgolly.antd.libCarouselMod.CarouselEffect
+import typingsJapgolly.antd.libCarouselMod.CarouselProps
+import typingsJapgolly.antd.libCarouselMod.DotPosition
+import typingsJapgolly.antd.libCarouselMod.default
 import typingsJapgolly.react.reactMod.CSSProperties
 import typingsJapgolly.react.reactMod._Global_.JSX.Element
 import typingsJapgolly.reactDashSlick.reactDashSlickMod.LazyLoadTypes
@@ -149,10 +149,14 @@ object Carousel {
     if (overrides != null) js.Dynamic.global.Object.assign(__obj, overrides)
   
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antd.esCarouselMod.CarouselProps, 
+  typingsJapgolly.antd.libCarouselMod.CarouselProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antd.esCarouselMod.default](js.constructorOf[typingsJapgolly.antd.esCarouselMod.default])
-    f(__obj.asInstanceOf[typingsJapgolly.antd.esCarouselMod.CarouselProps])(children: _*)
+  typingsJapgolly.antd.libCarouselMod.default](this.componentImport)
+    f(__obj.asInstanceOf[typingsJapgolly.antd.libCarouselMod.CarouselProps])(children: _*)
   }
+  @JSImport("antd/lib/carousel", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

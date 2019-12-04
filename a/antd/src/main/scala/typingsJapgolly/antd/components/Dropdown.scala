@@ -11,11 +11,11 @@ import org.scalajs.dom.raw.HTMLElement
 import typingsJapgolly.antd.antdStrings.click
 import typingsJapgolly.antd.antdStrings.contextMenu
 import typingsJapgolly.antd.antdStrings.hover
-import typingsJapgolly.antd.esDropdownDropdownMod.Align
-import typingsJapgolly.antd.esDropdownDropdownMod.DropDownProps
-import typingsJapgolly.antd.esDropdownDropdownMod.OverlayFunc
-import typingsJapgolly.antd.esDropdownDropdownMod.Placement
-import typingsJapgolly.antd.esDropdownMod.default
+import typingsJapgolly.antd.libDropdownDropdownMod.Align
+import typingsJapgolly.antd.libDropdownDropdownMod.DropDownProps
+import typingsJapgolly.antd.libDropdownDropdownMod.OverlayFunc
+import typingsJapgolly.antd.libDropdownDropdownMod.Placement
+import typingsJapgolly.antd.libDropdownMod.default
 import typingsJapgolly.react.reactMod.CSSProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -68,10 +68,14 @@ object Dropdown {
     if (overrides != null) js.Dynamic.global.Object.assign(__obj, overrides)
   
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antd.esDropdownDropdownMod.DropDownProps, 
+  typingsJapgolly.antd.libDropdownDropdownMod.DropDownProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antd.esDropdownMod.default](js.constructorOf[typingsJapgolly.antd.esDropdownMod.default])
-    f(__obj.asInstanceOf[typingsJapgolly.antd.esDropdownDropdownMod.DropDownProps])(children: _*)
+  typingsJapgolly.antd.libDropdownMod.default](this.componentImport)
+    f(__obj.asInstanceOf[typingsJapgolly.antd.libDropdownDropdownMod.DropDownProps])(children: _*)
   }
+  @JSImport("antd/lib/dropdown", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

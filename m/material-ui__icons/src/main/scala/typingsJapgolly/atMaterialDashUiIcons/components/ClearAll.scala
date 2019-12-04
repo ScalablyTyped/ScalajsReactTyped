@@ -1,11 +1,14 @@
 package typingsJapgolly.atMaterialDashUiIcons.components
 
+import typingsJapgolly.atMaterialDashUiIcons.clearAllMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object ClearAll
-  extends SharedApply_SvgIconProps1591622337[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.ClearAll] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.ClearAll]
+object ClearAll extends SharedApply_SvgIconProps1591622337[default] {
+  @JSImport("@material-ui/icons/ClearAll", "default")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

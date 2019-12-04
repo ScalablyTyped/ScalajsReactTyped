@@ -31,8 +31,12 @@ object DropdownDivider {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.semanticDashUiDashReact.distCommonjsModulesDropdownDropdownDividerMod.DropdownDividerProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.semanticDashUiDashReact.distCommonjsModulesDropdownDropdownDividerMod.default](js.constructorOf[typingsJapgolly.semanticDashUiDashReact.distCommonjsModulesDropdownDropdownDividerMod.default])
+  typingsJapgolly.semanticDashUiDashReact.distCommonjsModulesDropdownDropdownDividerMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.semanticDashUiDashReact.distCommonjsModulesDropdownDropdownDividerMod.DropdownDividerProps])(children: _*)
   }
+  @JSImport("semantic-ui-react/dist/commonjs/modules/Dropdown/DropdownDivider", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

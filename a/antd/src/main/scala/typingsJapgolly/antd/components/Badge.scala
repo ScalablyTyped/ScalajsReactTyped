@@ -10,7 +10,7 @@ import typingsJapgolly.antd.antdStrings.error
 import typingsJapgolly.antd.antdStrings.processing
 import typingsJapgolly.antd.antdStrings.success
 import typingsJapgolly.antd.antdStrings.warning
-import typingsJapgolly.antd.esBadgeMod.BadgeProps
+import typingsJapgolly.antd.libBadgeMod.BadgeProps
 import typingsJapgolly.react.reactMod.CSSProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -35,7 +35,7 @@ object Badge {
     overrides: StringDictionary[js.Any] = null
   )(
     children: ChildArg*
-  ): UnmountedWithRoot[BadgeProps, typingsJapgolly.antd.esBadgeMod.default, Unit, BadgeProps] = {
+  ): UnmountedWithRoot[BadgeProps, typingsJapgolly.antd.libBadgeMod.default, Unit, BadgeProps] = {
     val __obj = js.Dynamic.literal()
   
       if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
@@ -55,10 +55,14 @@ object Badge {
     if (overrides != null) js.Dynamic.global.Object.assign(__obj, overrides)
   
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antd.esBadgeMod.BadgeProps, 
+  typingsJapgolly.antd.libBadgeMod.BadgeProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antd.esBadgeMod.default](js.constructorOf[typingsJapgolly.antd.esBadgeMod.default])
-    f(__obj.asInstanceOf[typingsJapgolly.antd.esBadgeMod.BadgeProps])(children: _*)
+  typingsJapgolly.antd.libBadgeMod.default](this.componentImport)
+    f(__obj.asInstanceOf[typingsJapgolly.antd.libBadgeMod.BadgeProps])(children: _*)
   }
+  @JSImport("antd/lib/badge", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

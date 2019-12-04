@@ -47,8 +47,12 @@ object AccordionTitle {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.semanticDashUiDashReact.distCommonjsModulesAccordionAccordionTitleMod.AccordionTitleProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.semanticDashUiDashReact.distCommonjsModulesAccordionAccordionTitleMod.default](js.constructorOf[typingsJapgolly.semanticDashUiDashReact.distCommonjsModulesAccordionAccordionTitleMod.default])
+  typingsJapgolly.semanticDashUiDashReact.distCommonjsModulesAccordionAccordionTitleMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.semanticDashUiDashReact.distCommonjsModulesAccordionAccordionTitleMod.AccordionTitleProps])(children: _*)
   }
+  @JSImport("semantic-ui-react/dist/commonjs/modules/Accordion/AccordionTitle", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

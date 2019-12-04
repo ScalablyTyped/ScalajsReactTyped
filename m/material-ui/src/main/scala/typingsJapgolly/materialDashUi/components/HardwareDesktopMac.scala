@@ -6,6 +6,9 @@ import scala.scalajs.js.annotation._
 
 object HardwareDesktopMac
   extends SharedApply_SvgIconProps1538262166[typingsJapgolly.materialDashUi.svgDashIconsMod.HardwareDesktopMac] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.materialDashUi.svgDashIconsMod.HardwareDesktopMac]
+  @JSImport("material-ui/svg-icons", "HardwareDesktopMac")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

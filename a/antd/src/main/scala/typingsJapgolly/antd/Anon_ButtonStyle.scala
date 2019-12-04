@@ -1,6 +1,6 @@
 package typingsJapgolly.antd
 
-import typingsJapgolly.antd.esRadioInterfaceMod.RadioGroupButtonStyle
+import typingsJapgolly.antd.libRadioInterfaceMod.RadioGroupButtonStyle
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

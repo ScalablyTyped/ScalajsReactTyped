@@ -28,8 +28,12 @@ object ClearFix {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.materialDashUi.internalClearFixMod.ClearFixProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.materialDashUi.internalClearFixMod.default](js.constructorOf[typingsJapgolly.materialDashUi.internalClearFixMod.default])
+  typingsJapgolly.materialDashUi.internalClearFixMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.materialDashUi.internalClearFixMod.ClearFixProps])(children: _*)
   }
+  @JSImport("material-ui/internal/ClearFix", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

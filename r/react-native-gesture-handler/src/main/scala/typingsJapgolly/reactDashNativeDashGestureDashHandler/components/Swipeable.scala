@@ -8,7 +8,6 @@ import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
 import japgolly.scalajs.react.raw.React.Node
 import org.scalablytyped.runtime.StringDictionary
 import typingsJapgolly.reactDashNative.reactDashNativeMod.Animated.AnimatedInterpolation
-import typingsJapgolly.reactDashNative.reactDashNativeMod.Animated.Value
 import typingsJapgolly.reactDashNative.reactDashNativeMod.StyleProp
 import typingsJapgolly.reactDashNative.reactDashNativeMod.ViewStyle
 import typingsJapgolly.reactDashNativeDashGestureDashHandler.swipeableMod.SwipeableProperties
@@ -34,8 +33,8 @@ object Swipeable {
     overshootFriction: Int | Double = null,
     overshootLeft: js.UndefOr[Boolean] = js.undefined,
     overshootRight: js.UndefOr[Boolean] = js.undefined,
-    renderLeftActions: (/* progressAnimatedValue */ Value | AnimatedInterpolation, /* dragAnimatedValue */ AnimatedInterpolation) => CallbackTo[Node] = null,
-    renderRightActions: (/* progressAnimatedValue */ Value | AnimatedInterpolation, /* dragAnimatedValue */ AnimatedInterpolation) => CallbackTo[Node] = null,
+    renderLeftActions: (/* progressAnimatedValue */ AnimatedInterpolation, /* dragAnimatedValue */ AnimatedInterpolation) => CallbackTo[Node] = null,
+    renderRightActions: (/* progressAnimatedValue */ AnimatedInterpolation, /* dragAnimatedValue */ AnimatedInterpolation) => CallbackTo[Node] = null,
     rightThreshold: Int | Double = null,
     useNativeAnimations: js.UndefOr[Boolean] = js.undefined,
     key: js.UndefOr[Key] = js.undefined,
@@ -60,8 +59,8 @@ object Swipeable {
     if (overshootFriction != null) __obj.updateDynamic("overshootFriction")(overshootFriction.asInstanceOf[js.Any])
     if (!js.isUndefined(overshootLeft)) __obj.updateDynamic("overshootLeft")(overshootLeft.asInstanceOf[js.Any])
     if (!js.isUndefined(overshootRight)) __obj.updateDynamic("overshootRight")(overshootRight.asInstanceOf[js.Any])
-    if (renderLeftActions != null) __obj.updateDynamic("renderLeftActions")(js.Any.fromFunction2((t0: /* progressAnimatedValue */ typingsJapgolly.reactDashNative.reactDashNativeMod.Animated.Value | typingsJapgolly.reactDashNative.reactDashNativeMod.Animated.AnimatedInterpolation, t1: /* dragAnimatedValue */ typingsJapgolly.reactDashNative.reactDashNativeMod.Animated.AnimatedInterpolation) => renderLeftActions(t0, t1).runNow()))
-    if (renderRightActions != null) __obj.updateDynamic("renderRightActions")(js.Any.fromFunction2((t0: /* progressAnimatedValue */ typingsJapgolly.reactDashNative.reactDashNativeMod.Animated.Value | typingsJapgolly.reactDashNative.reactDashNativeMod.Animated.AnimatedInterpolation, t1: /* dragAnimatedValue */ typingsJapgolly.reactDashNative.reactDashNativeMod.Animated.AnimatedInterpolation) => renderRightActions(t0, t1).runNow()))
+    if (renderLeftActions != null) __obj.updateDynamic("renderLeftActions")(js.Any.fromFunction2((t0: /* progressAnimatedValue */ typingsJapgolly.reactDashNative.reactDashNativeMod.Animated.AnimatedInterpolation, t1: /* dragAnimatedValue */ typingsJapgolly.reactDashNative.reactDashNativeMod.Animated.AnimatedInterpolation) => renderLeftActions(t0, t1).runNow()))
+    if (renderRightActions != null) __obj.updateDynamic("renderRightActions")(js.Any.fromFunction2((t0: /* progressAnimatedValue */ typingsJapgolly.reactDashNative.reactDashNativeMod.Animated.AnimatedInterpolation, t1: /* dragAnimatedValue */ typingsJapgolly.reactDashNative.reactDashNativeMod.Animated.AnimatedInterpolation) => renderRightActions(t0, t1).runNow()))
     if (rightThreshold != null) __obj.updateDynamic("rightThreshold")(rightThreshold.asInstanceOf[js.Any])
     if (!js.isUndefined(useNativeAnimations)) __obj.updateDynamic("useNativeAnimations")(useNativeAnimations.asInstanceOf[js.Any])
     key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
@@ -70,8 +69,12 @@ object Swipeable {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.reactDashNativeDashGestureDashHandler.swipeableMod.SwipeableProperties, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactDashNativeDashGestureDashHandler.swipeableMod.default](js.constructorOf[typingsJapgolly.reactDashNativeDashGestureDashHandler.swipeableMod.default])
+  typingsJapgolly.reactDashNativeDashGestureDashHandler.swipeableMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.reactDashNativeDashGestureDashHandler.swipeableMod.SwipeableProperties])(children: _*)
   }
+  @JSImport("react-native-gesture-handler/Swipeable", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

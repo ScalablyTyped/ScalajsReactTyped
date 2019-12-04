@@ -6,6 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 object PermDashContactDashCalendar extends SharedApply_SvgIconProps1538262166[default] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.materialDashUi.svgDashIconsActionPermDashContactDashCalendarMod.default]
+  @JSImport("material-ui/svg-icons/action/perm-contact-calendar", JSImport.Default)
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

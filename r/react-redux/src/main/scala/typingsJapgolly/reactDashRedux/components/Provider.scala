@@ -15,18 +15,18 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 object Provider {
-  def apply(
-    store: Store[_, Action[_]],
+  def apply[A /* <: Action[js.Any] */](
+    store: Store[_, A],
     context: Context[ReactReduxContextValue[_, AnyAction]] = null,
     key: js.UndefOr[Key] = js.undefined,
     overrides: StringDictionary[js.Any] = null
   )(
     children: ChildArg*
   ): UnmountedWithRoot[
-    ProviderProps[Action[_]], 
-    typingsJapgolly.reactDashRedux.reactDashReduxMod.Provider[Action[_]], 
+    ProviderProps[A], 
+    typingsJapgolly.reactDashRedux.reactDashReduxMod.Provider[A], 
     Unit, 
-    ProviderProps[Action[_]]
+    ProviderProps[A]
   ] = {
     val __obj = js.Dynamic.literal(store = store.asInstanceOf[js.Any])
   
@@ -35,10 +35,14 @@ object Provider {
     if (overrides != null) js.Dynamic.global.Object.assign(__obj, overrides)
   
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactDashRedux.reactDashReduxMod.ProviderProps[typingsJapgolly.redux.reduxMod.Action[_]], 
+  typingsJapgolly.reactDashRedux.reactDashReduxMod.ProviderProps[A], 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactDashRedux.reactDashReduxMod.Provider[typingsJapgolly.redux.reduxMod.Action[_]]](js.constructorOf[typingsJapgolly.reactDashRedux.reactDashReduxMod.Provider[typingsJapgolly.redux.reduxMod.Action[_]]])
-    f(__obj.asInstanceOf[typingsJapgolly.reactDashRedux.reactDashReduxMod.ProviderProps[typingsJapgolly.redux.reduxMod.Action[_]]])(children: _*)
+  typingsJapgolly.reactDashRedux.reactDashReduxMod.Provider[A]](this.componentImport)
+    f(__obj.asInstanceOf[typingsJapgolly.reactDashRedux.reactDashReduxMod.ProviderProps[A]])(children: _*)
   }
+  @JSImport("react-redux", "Provider")
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

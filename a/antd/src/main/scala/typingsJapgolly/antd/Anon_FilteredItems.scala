@@ -1,7 +1,7 @@
 package typingsJapgolly.antd
 
-import typingsJapgolly.antd.esTransferListMod.RenderedItem
-import typingsJapgolly.antd.esTransferMod.TransferItem
+import typingsJapgolly.antd.libTransferListMod.RenderedItem
+import typingsJapgolly.antd.libTransferMod.TransferItem
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

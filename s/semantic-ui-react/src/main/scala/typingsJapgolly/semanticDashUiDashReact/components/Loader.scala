@@ -52,8 +52,12 @@ object Loader {
     val f = japgolly.scalajs.react.JsComponent[
   typingsJapgolly.semanticDashUiDashReact.distCommonjsElementsLoaderLoaderMod.LoaderProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  js.Object](typingsJapgolly.semanticDashUiDashReact.distCommonjsElementsLoaderMod.default)
+  js.Object](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.semanticDashUiDashReact.distCommonjsElementsLoaderLoaderMod.LoaderProps])(children: _*)
   }
+  @JSImport("semantic-ui-react/dist/commonjs/elements/Loader", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

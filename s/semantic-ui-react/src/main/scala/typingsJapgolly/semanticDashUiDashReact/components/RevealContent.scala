@@ -42,8 +42,12 @@ object RevealContent {
     val f = japgolly.scalajs.react.JsComponent[
   typingsJapgolly.semanticDashUiDashReact.distCommonjsElementsRevealRevealContentMod.RevealContentProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  js.Object](typingsJapgolly.semanticDashUiDashReact.distCommonjsElementsRevealRevealContentMod.default)
+  js.Object](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.semanticDashUiDashReact.distCommonjsElementsRevealRevealContentMod.RevealContentProps])(children: _*)
   }
+  @JSImport("semantic-ui-react/dist/commonjs/elements/Reveal/RevealContent", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

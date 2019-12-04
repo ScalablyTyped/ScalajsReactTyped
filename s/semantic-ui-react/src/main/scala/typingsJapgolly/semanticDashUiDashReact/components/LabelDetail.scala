@@ -38,8 +38,12 @@ object LabelDetail {
     val f = japgolly.scalajs.react.JsComponent[
   typingsJapgolly.semanticDashUiDashReact.distCommonjsElementsLabelLabelDetailMod.LabelDetailProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  js.Object](typingsJapgolly.semanticDashUiDashReact.distCommonjsElementsLabelLabelDetailMod.default)
+  js.Object](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.semanticDashUiDashReact.distCommonjsElementsLabelLabelDetailMod.LabelDetailProps])(children: _*)
   }
+  @JSImport("semantic-ui-react/dist/commonjs/elements/Label/LabelDetail", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

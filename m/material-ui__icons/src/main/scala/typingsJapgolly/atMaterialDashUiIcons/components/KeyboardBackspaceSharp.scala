@@ -1,13 +1,14 @@
 package typingsJapgolly.atMaterialDashUiIcons.components
 
+import typingsJapgolly.atMaterialDashUiIcons.keyboardBackspaceSharpMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object KeyboardBackspaceSharp
-  extends SharedApply_SvgIconProps1591622337[
-      typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.KeyboardBackspaceSharp
-    ] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.KeyboardBackspaceSharp]
+object KeyboardBackspaceSharp extends SharedApply_SvgIconProps1591622337[default] {
+  @JSImport("@material-ui/icons/KeyboardBackspaceSharp", "default")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

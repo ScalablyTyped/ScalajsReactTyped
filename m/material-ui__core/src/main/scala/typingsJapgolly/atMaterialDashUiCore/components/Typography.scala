@@ -462,8 +462,12 @@ object Typography {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.atMaterialDashUiCore.typographyTypographyMod.TypographyProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.atMaterialDashUiCore.typographyMod.default](js.constructorOf[typingsJapgolly.atMaterialDashUiCore.typographyMod.default])
+  typingsJapgolly.atMaterialDashUiCore.typographyMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.atMaterialDashUiCore.typographyTypographyMod.TypographyProps])(children: _*)
   }
+  @JSImport("@material-ui/core/Typography", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

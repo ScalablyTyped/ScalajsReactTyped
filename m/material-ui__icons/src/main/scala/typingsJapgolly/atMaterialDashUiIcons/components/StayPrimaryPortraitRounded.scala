@@ -1,13 +1,14 @@
 package typingsJapgolly.atMaterialDashUiIcons.components
 
+import typingsJapgolly.atMaterialDashUiIcons.stayPrimaryPortraitRoundedMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object StayPrimaryPortraitRounded
-  extends SharedApply_SvgIconProps1591622337[
-      typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.StayPrimaryPortraitRounded
-    ] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.StayPrimaryPortraitRounded]
+object StayPrimaryPortraitRounded extends SharedApply_SvgIconProps1591622337[default] {
+  @JSImport("@material-ui/icons/StayPrimaryPortraitRounded", "default")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

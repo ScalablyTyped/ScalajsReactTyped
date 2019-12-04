@@ -11,7 +11,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 abstract class SharedApply_SvgIconProps1538262166[ComponentRef] () {
-  def __component: js.Any
+  val componentImport: js.Any
   def apply(
     SVGAttributes: SVGAttributes[js.Object] = null,
     hoverColor: String = null,
@@ -30,7 +30,7 @@ abstract class SharedApply_SvgIconProps1538262166[ComponentRef] () {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.materialDashUi.__MaterialUI.SvgIconProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  ComponentRef](__component)
+  ComponentRef](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.materialDashUi.__MaterialUI.SvgIconProps])(children: _*)
   }
 }

@@ -1,13 +1,14 @@
 package typingsJapgolly.atMaterialDashUiIcons.components
 
+import typingsJapgolly.atMaterialDashUiIcons.businessCenterRoundedMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object BusinessCenterRounded
-  extends SharedApply_SvgIconProps1591622337[
-      typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.BusinessCenterRounded
-    ] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.BusinessCenterRounded]
+object BusinessCenterRounded extends SharedApply_SvgIconProps1591622337[default] {
+  @JSImport("@material-ui/icons/BusinessCenterRounded", "default")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

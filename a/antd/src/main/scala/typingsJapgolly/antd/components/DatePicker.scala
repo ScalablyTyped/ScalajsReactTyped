@@ -5,7 +5,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 object DatePicker
-  extends SharedApply_DatePickerProps307416674[typingsJapgolly.antd.esMod.DatePicker] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.antd.esMod.DatePicker]
+  extends SharedApply_DatePickerProps_1952537217[typingsJapgolly.antd.antdMod.DatePicker] {
+  @JSImport("antd", "DatePicker")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

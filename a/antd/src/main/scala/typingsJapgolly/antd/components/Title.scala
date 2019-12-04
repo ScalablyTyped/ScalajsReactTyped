@@ -10,11 +10,11 @@ import typingsJapgolly.antd.antdNumbers.`1`
 import typingsJapgolly.antd.antdNumbers.`2`
 import typingsJapgolly.antd.antdNumbers.`3`
 import typingsJapgolly.antd.antdNumbers.`4`
-import typingsJapgolly.antd.esTypographyBaseMod.BaseType
-import typingsJapgolly.antd.esTypographyBaseMod.CopyConfig
-import typingsJapgolly.antd.esTypographyBaseMod.EditConfig
-import typingsJapgolly.antd.esTypographyBaseMod.EllipsisConfig
-import typingsJapgolly.antd.esTypographyTitleMod.TitleProps
+import typingsJapgolly.antd.libTypographyBaseMod.BaseType
+import typingsJapgolly.antd.libTypographyBaseMod.CopyConfig
+import typingsJapgolly.antd.libTypographyBaseMod.EditConfig
+import typingsJapgolly.antd.libTypographyBaseMod.EllipsisConfig
+import typingsJapgolly.antd.libTypographyTitleMod.TitleProps
 import typingsJapgolly.react.reactMod.CSSProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -66,10 +66,14 @@ object Title {
     if (overrides != null) js.Dynamic.global.Object.assign(__obj, overrides)
   
     val f = japgolly.scalajs.react.JsComponent[
-  typingsJapgolly.antd.esTypographyTitleMod.TitleProps, 
+  typingsJapgolly.antd.libTypographyTitleMod.TitleProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  js.Object](typingsJapgolly.antd.esTypographyTitleMod.default)
-    f(__obj.asInstanceOf[typingsJapgolly.antd.esTypographyTitleMod.TitleProps])(children: _*)
+  js.Object](this.componentImport)
+    f(__obj.asInstanceOf[typingsJapgolly.antd.libTypographyTitleMod.TitleProps])(children: _*)
   }
+  @JSImport("antd/lib/typography/Title", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

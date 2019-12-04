@@ -1,15 +1,12 @@
 package typingsJapgolly.atStorybookApi
 
 import typingsJapgolly.atReachRouter.atReachRouterMod.NavigateFn
-import typingsJapgolly.atReachRouter.atReachRouterMod.WindowLocation
 import typingsJapgolly.atStorybookApi.distModulesLayoutMod.Layout
 import typingsJapgolly.atStorybookApi.distModulesLayoutMod.UI
 import typingsJapgolly.atStorybookApi.distModulesNotificationsMod.Notification
 import typingsJapgolly.atStorybookApi.distModulesShortcutsMod.Shortcuts
 import typingsJapgolly.atStorybookApi.distModulesStoriesMod.StoriesHash
 import typingsJapgolly.atStorybookApi.distModulesUrlMod.QueryParams
-import typingsJapgolly.atStorybookApi.distModulesVersionsMod.UnknownEntries
-import typingsJapgolly.atStorybookApi.distModulesVersionsMod.Versions
 import typingsJapgolly.atStorybookTheming.distTypesMod.ThemeVars
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -33,7 +30,7 @@ trait Anon_CustomQueryParams extends js.Object {
   var theme: ThemeVars
   var ui: UI
   var uri: js.UndefOr[String] = js.undefined
-  var versions: Versions with UnknownEntries
+  var versions: VersionsUnknownEntries
   var viewMode: String
 }
 
@@ -54,7 +51,7 @@ object Anon_CustomQueryParams {
     storyId: String,
     theme: ThemeVars,
     ui: UI,
-    versions: Versions with UnknownEntries,
+    versions: VersionsUnknownEntries,
     viewMode: String,
     default: js.UndefOr[Boolean] = js.undefined,
     navigate: NavigateFn = null,

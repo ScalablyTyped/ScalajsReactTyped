@@ -89,7 +89,7 @@ object FormDropdown {
     options: js.Array[DropdownItemProps] = null,
     placeholder: String = null,
     pointing: Boolean | left | right | top | (`top left`) | (`top right`) | bottom | (`bottom left`) | (`bottom right`) = null,
-    renderLabel: (/* item */ DropdownItemProps, /* index */ Double, /* defaultLabelProps */ LabelProps) => CallbackTo[_] = null,
+    renderLabel: (/* item */ DropdownItemProps, /* index */ Double, /* defaultLabelProps */ LabelProps) => CallbackTo[js.Any] = null,
     required: js.Any = null,
     scrolling: js.UndefOr[Boolean] = js.undefined,
     search: Boolean | (js.Function2[
@@ -199,8 +199,12 @@ object FormDropdown {
     val f = japgolly.scalajs.react.JsComponent[
   typingsJapgolly.semanticDashUiDashReact.distCommonjsCollectionsFormFormDropdownMod.FormDropdownProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  js.Object](typingsJapgolly.semanticDashUiDashReact.distCommonjsCollectionsFormFormDropdownMod.default)
+  js.Object](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.semanticDashUiDashReact.distCommonjsCollectionsFormFormDropdownMod.FormDropdownProps])(children: _*)
   }
+  @JSImport("semantic-ui-react/dist/commonjs/collections/Form/FormDropdown", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

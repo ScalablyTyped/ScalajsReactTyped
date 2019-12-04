@@ -51,8 +51,12 @@ object Tab {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.semanticDashUiDashReact.distCommonjsModulesTabTabMod.TabProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.semanticDashUiDashReact.distCommonjsModulesTabMod.default](js.constructorOf[typingsJapgolly.semanticDashUiDashReact.distCommonjsModulesTabMod.default])
+  typingsJapgolly.semanticDashUiDashReact.distCommonjsModulesTabMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.semanticDashUiDashReact.distCommonjsModulesTabTabMod.TabProps])(children: _*)
   }
+  @JSImport("semantic-ui-react/dist/commonjs/modules/Tab", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

@@ -1,11 +1,14 @@
 package typingsJapgolly.atMaterialDashUiIcons.components
 
+import typingsJapgolly.atMaterialDashUiIcons.watchLaterRoundedMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object WatchLaterRounded
-  extends SharedApply_SvgIconProps1591622337[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.WatchLaterRounded] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.WatchLaterRounded]
+object WatchLaterRounded extends SharedApply_SvgIconProps1591622337[default] {
+  @JSImport("@material-ui/icons/WatchLaterRounded", "default")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

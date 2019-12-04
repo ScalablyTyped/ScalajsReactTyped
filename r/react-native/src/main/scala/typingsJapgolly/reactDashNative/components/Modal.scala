@@ -32,8 +32,12 @@ object Modal {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.reactDashNative.reactDashNativeMod.ModalProps with js.Object, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactDashNative.reactDashNativeMod.Modal](js.constructorOf[typingsJapgolly.reactDashNative.reactDashNativeMod.Modal])
+  typingsJapgolly.reactDashNative.reactDashNativeMod.Modal](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.reactDashNative.reactDashNativeMod.ModalProps with js.Object])(children: _*)
   }
+  @JSImport("react-native", "Modal")
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

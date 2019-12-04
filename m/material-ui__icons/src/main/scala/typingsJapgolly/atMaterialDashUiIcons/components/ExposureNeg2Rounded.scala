@@ -1,13 +1,14 @@
 package typingsJapgolly.atMaterialDashUiIcons.components
 
+import typingsJapgolly.atMaterialDashUiIcons.exposureNeg2RoundedMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object ExposureNeg2Rounded
-  extends SharedApply_SvgIconProps1591622337[
-      typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.ExposureNeg2Rounded
-    ] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.ExposureNeg2Rounded]
+object ExposureNeg2Rounded extends SharedApply_SvgIconProps1591622337[default] {
+  @JSImport("@material-ui/icons/ExposureNeg2Rounded", "default")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

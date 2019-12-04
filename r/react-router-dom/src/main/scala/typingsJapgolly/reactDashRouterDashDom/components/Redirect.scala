@@ -42,8 +42,12 @@ object Redirect {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.reactDashRouter.reactDashRouterMod.RedirectProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactDashRouterDashDom.reactDashRouterDashDomMod.Redirect](js.constructorOf[typingsJapgolly.reactDashRouterDashDom.reactDashRouterDashDomMod.Redirect])
+  typingsJapgolly.reactDashRouterDashDom.reactDashRouterDashDomMod.Redirect](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.reactDashRouter.reactDashRouterMod.RedirectProps])(children: _*)
   }
+  @JSImport("react-router-dom", "Redirect")
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

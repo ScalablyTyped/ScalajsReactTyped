@@ -6,6 +6,9 @@ import scala.scalajs.js.annotation._
 
 object NotificationBluetoothAudio
   extends SharedApply_SvgIconProps1538262166[typingsJapgolly.materialDashUi.svgDashIconsMod.NotificationBluetoothAudio] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.materialDashUi.svgDashIconsMod.NotificationBluetoothAudio]
+  @JSImport("material-ui/svg-icons", "NotificationBluetoothAudio")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

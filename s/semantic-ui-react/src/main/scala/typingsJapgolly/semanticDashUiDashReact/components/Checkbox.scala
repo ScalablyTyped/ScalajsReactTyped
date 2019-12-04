@@ -514,8 +514,12 @@ object Checkbox {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.semanticDashUiDashReact.distCommonjsModulesCheckboxCheckboxMod.CheckboxProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.semanticDashUiDashReact.distCommonjsModulesCheckboxMod.default](js.constructorOf[typingsJapgolly.semanticDashUiDashReact.distCommonjsModulesCheckboxMod.default])
+  typingsJapgolly.semanticDashUiDashReact.distCommonjsModulesCheckboxMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.semanticDashUiDashReact.distCommonjsModulesCheckboxCheckboxMod.CheckboxProps])(children: _*)
   }
+  @JSImport("semantic-ui-react/dist/commonjs/modules/Checkbox", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

@@ -52,8 +52,12 @@ object Divider {
     val f = japgolly.scalajs.react.JsComponent[
   typingsJapgolly.semanticDashUiDashReact.distCommonjsElementsDividerDividerMod.DividerProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  js.Object](typingsJapgolly.semanticDashUiDashReact.distCommonjsElementsDividerMod.default)
+  js.Object](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.semanticDashUiDashReact.distCommonjsElementsDividerDividerMod.DividerProps])(children: _*)
   }
+  @JSImport("semantic-ui-react/dist/commonjs/elements/Divider", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

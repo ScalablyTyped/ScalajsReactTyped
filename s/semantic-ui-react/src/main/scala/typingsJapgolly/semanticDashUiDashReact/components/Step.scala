@@ -61,8 +61,12 @@ object Step {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.semanticDashUiDashReact.distCommonjsElementsStepStepMod.StepProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.semanticDashUiDashReact.distCommonjsElementsStepMod.default](js.constructorOf[typingsJapgolly.semanticDashUiDashReact.distCommonjsElementsStepMod.default])
+  typingsJapgolly.semanticDashUiDashReact.distCommonjsElementsStepMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.semanticDashUiDashReact.distCommonjsElementsStepStepMod.StepProps])(children: _*)
   }
+  @JSImport("semantic-ui-react/dist/commonjs/elements/Step", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

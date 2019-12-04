@@ -1,11 +1,14 @@
 package typingsJapgolly.atMaterialDashUiIcons.components
 
+import typingsJapgolly.atMaterialDashUiIcons.bugReportSharpMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object BugReportSharp
-  extends SharedApply_SvgIconProps1591622337[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.BugReportSharp] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.BugReportSharp]
+object BugReportSharp extends SharedApply_SvgIconProps1591622337[default] {
+  @JSImport("@material-ui/icons/BugReportSharp", "default")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

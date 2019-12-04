@@ -1,6 +1,6 @@
 package typingsJapgolly.antd
 
-import typingsJapgolly.antd.esTooltipMod.TooltipPlacement
+import typingsJapgolly.antd.libTooltipMod.TooltipPlacement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,11 +1,14 @@
 package typingsJapgolly.atMaterialDashUiIcons.components
 
+import typingsJapgolly.atMaterialDashUiIcons.borderClearSharpMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object BorderClearSharp
-  extends SharedApply_SvgIconProps1591622337[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.BorderClearSharp] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.BorderClearSharp]
+object BorderClearSharp extends SharedApply_SvgIconProps1591622337[default] {
+  @JSImport("@material-ui/icons/BorderClearSharp", "default")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

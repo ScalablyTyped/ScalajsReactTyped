@@ -16,7 +16,7 @@ Expect the first stable release soon.
 
 ## About
 
-This is the home of Scala.js typings for **120** Javascript libraries,
+This is the home of Scala.js typings for **122** Javascript libraries,
  which should span more or less the entire set of modern and popular libraries.
 
 This should make it one of the biggest Scala repos on the planet:
@@ -25,11 +25,11 @@ This should make it one of the biggest Scala repos on the planet:
 --------------------------------------------------------------------------------
  Language             Files        Lines        Blank      Comment         Code
 --------------------------------------------------------------------------------
- Scala                35541      1375849       140103       172951      1062795
- Markdown               151         6165         1946            0         4219
+ Scala                50517      1696839       200615       178570      1317654
+ Markdown               160         6503         2054            0         4449
  JSON                     1            1            0            0            1
 --------------------------------------------------------------------------------
- Total                35693      1382015       142049       172951      1067015
+ Total                50678      1703343       202669       178570      1322104
 --------------------------------------------------------------------------------
 
 ```
@@ -98,7 +98,7 @@ These should be the main steps you would have to follow:
 ScalablyTyped is hosted at bintray, so make sure to include the resolver
 ```scala
   resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")
-  addSbtPlugin("org.scalablytyped" % "sbt-scalablytyped" % "201911230456")
+  addSbtPlugin("org.scalablytyped" % "sbt-scalablytyped" % "201912040838")
 ```
 
 ### `build.sbt`

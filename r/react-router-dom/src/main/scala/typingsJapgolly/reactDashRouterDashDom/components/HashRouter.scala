@@ -39,8 +39,12 @@ object HashRouter {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.reactDashRouterDashDom.reactDashRouterDashDomMod.HashRouterProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactDashRouterDashDom.reactDashRouterDashDomMod.HashRouter](js.constructorOf[typingsJapgolly.reactDashRouterDashDom.reactDashRouterDashDomMod.HashRouter])
+  typingsJapgolly.reactDashRouterDashDom.reactDashRouterDashDomMod.HashRouter](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.reactDashRouterDashDom.reactDashRouterDashDomMod.HashRouterProps])(children: _*)
   }
+  @JSImport("react-router-dom", "HashRouter")
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

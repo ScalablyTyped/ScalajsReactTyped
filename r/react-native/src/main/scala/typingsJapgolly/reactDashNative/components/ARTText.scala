@@ -70,8 +70,12 @@ object ARTText {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.reactDashNative.reactDashNativeMod.ARTTextProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactDashNative.reactDashNativeMod.ARTText](js.constructorOf[typingsJapgolly.reactDashNative.reactDashNativeMod.ARTText])
+  typingsJapgolly.reactDashNative.reactDashNativeMod.ARTText](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.reactDashNative.reactDashNativeMod.ARTTextProps])(children: _*)
   }
+  @JSImport("react-native", "ARTText")
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

@@ -453,8 +453,12 @@ object Popper {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.atMaterialDashUiCore.popperPopperMod.PopperProps, 
   japgolly.scalajs.react.Children.None, 
-  typingsJapgolly.atMaterialDashUiCore.popperMod.default](js.constructorOf[typingsJapgolly.atMaterialDashUiCore.popperMod.default])
+  typingsJapgolly.atMaterialDashUiCore.popperMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.atMaterialDashUiCore.popperPopperMod.PopperProps])
   }
+  @JSImport("@material-ui/core/Popper", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

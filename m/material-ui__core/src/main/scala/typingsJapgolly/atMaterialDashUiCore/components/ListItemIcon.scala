@@ -437,8 +437,12 @@ object ListItemIcon {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.atMaterialDashUiCore.listItemIconListItemIconMod.ListItemIconProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.atMaterialDashUiCore.listItemIconMod.default](js.constructorOf[typingsJapgolly.atMaterialDashUiCore.listItemIconMod.default])
+  typingsJapgolly.atMaterialDashUiCore.listItemIconMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.atMaterialDashUiCore.listItemIconListItemIconMod.ListItemIconProps])(children: _*)
   }
+  @JSImport("@material-ui/core/ListItemIcon", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

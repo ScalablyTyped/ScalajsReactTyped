@@ -5,7 +5,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 object TreeSelect
-  extends SharedApply_TreeSelectProps_518155137[typingsJapgolly.antd.esMod.TreeSelect[js.Any]] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.antd.esMod.TreeSelect[js.Any]]
+  extends SharedApply_TreeSelectProps_7572186[typingsJapgolly.antd.antdMod.TreeSelect[js.Any]] {
+  @JSImport("antd", "TreeSelect")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

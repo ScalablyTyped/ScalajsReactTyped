@@ -8,8 +8,8 @@ import org.scalablytyped.runtime.StringDictionary
 import typingsJapgolly.antd.antdStrings.alternate
 import typingsJapgolly.antd.antdStrings.left
 import typingsJapgolly.antd.antdStrings.right
-import typingsJapgolly.antd.esTimelineMod.default
-import typingsJapgolly.antd.esTimelineTimelineMod.TimelineProps
+import typingsJapgolly.antd.libTimelineMod.default
+import typingsJapgolly.antd.libTimelineTimelineMod.TimelineProps
 import typingsJapgolly.react.reactMod.CSSProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -42,10 +42,14 @@ object Timeline {
     if (overrides != null) js.Dynamic.global.Object.assign(__obj, overrides)
   
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antd.esTimelineTimelineMod.TimelineProps, 
+  typingsJapgolly.antd.libTimelineTimelineMod.TimelineProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antd.esTimelineMod.default](js.constructorOf[typingsJapgolly.antd.esTimelineMod.default])
-    f(__obj.asInstanceOf[typingsJapgolly.antd.esTimelineTimelineMod.TimelineProps])(children: _*)
+  typingsJapgolly.antd.libTimelineMod.default](this.componentImport)
+    f(__obj.asInstanceOf[typingsJapgolly.antd.libTimelineTimelineMod.TimelineProps])(children: _*)
   }
+  @JSImport("antd/lib/timeline", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

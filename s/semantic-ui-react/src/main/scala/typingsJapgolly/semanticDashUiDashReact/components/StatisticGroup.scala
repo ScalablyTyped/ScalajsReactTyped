@@ -55,8 +55,12 @@ object StatisticGroup {
     val f = japgolly.scalajs.react.JsComponent[
   typingsJapgolly.semanticDashUiDashReact.distCommonjsViewsStatisticStatisticGroupMod.StatisticGroupProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  js.Object](typingsJapgolly.semanticDashUiDashReact.distCommonjsViewsStatisticStatisticGroupMod.default)
+  js.Object](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.semanticDashUiDashReact.distCommonjsViewsStatisticStatisticGroupMod.StatisticGroupProps])(children: _*)
   }
+  @JSImport("semantic-ui-react/dist/commonjs/views/Statistic/StatisticGroup", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

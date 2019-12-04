@@ -79,8 +79,12 @@ object Message {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.semanticDashUiDashReact.distCommonjsCollectionsMessageMessageMod.MessageProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.semanticDashUiDashReact.distCommonjsCollectionsMessageMod.default](js.constructorOf[typingsJapgolly.semanticDashUiDashReact.distCommonjsCollectionsMessageMod.default])
+  typingsJapgolly.semanticDashUiDashReact.distCommonjsCollectionsMessageMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.semanticDashUiDashReact.distCommonjsCollectionsMessageMessageMod.MessageProps])(children: _*)
   }
+  @JSImport("semantic-ui-react/dist/commonjs/collections/Message", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

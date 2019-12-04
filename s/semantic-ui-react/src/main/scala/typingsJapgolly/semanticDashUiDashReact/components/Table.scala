@@ -46,7 +46,7 @@ object Table {
     headerRows: SemanticShorthandCollection[TableRowProps] = null,
     inverted: js.UndefOr[Boolean] = js.undefined,
     padded: Boolean | very = null,
-    renderBodyRow: (/* data */ js.Any, /* index */ Double) => CallbackTo[_] = null,
+    renderBodyRow: (/* data */ js.Any, /* index */ Double) => CallbackTo[js.Any] = null,
     selectable: js.UndefOr[Boolean] = js.undefined,
     singleLine: js.UndefOr[Boolean] = js.undefined,
     size: small | large = null,
@@ -103,8 +103,12 @@ object Table {
     val f = japgolly.scalajs.react.JsComponent[
   typingsJapgolly.semanticDashUiDashReact.distCommonjsCollectionsTableTableMod.TableProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  js.Object](typingsJapgolly.semanticDashUiDashReact.distCommonjsCollectionsTableMod.default)
+  js.Object](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.semanticDashUiDashReact.distCommonjsCollectionsTableTableMod.TableProps])(children: _*)
   }
+  @JSImport("semantic-ui-react/dist/commonjs/collections/Table", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

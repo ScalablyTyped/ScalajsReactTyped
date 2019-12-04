@@ -2,7 +2,7 @@ package typingsJapgolly.antd.antdMod
 
 import typingsJapgolly.antd.Anon_ArgsChildren
 import typingsJapgolly.antd.Anon_Colon
-import typingsJapgolly.antd.TypeofClassFormItemDefaultProps
+import typingsJapgolly.antd.TypeofClassFormItem
 import typingsJapgolly.antd.libFormFormMod.FormComponentProps
 import typingsJapgolly.antd.libFormFormMod.FormCreateOption
 import typingsJapgolly.antd.libFormFormMod.FormProps
@@ -22,7 +22,7 @@ class Form protected () extends default {
 @JSImport("antd", "Form")
 @js.native
 object Form extends js.Object {
-  var Item: TypeofClassFormItemDefaultProps = js.native
+  var Item: TypeofClassFormItem = js.native
   var createFormField: js.Any = js.native
   var defaultProps: Anon_Colon = js.native
   var propTypes: Anon_ArgsChildren = js.native

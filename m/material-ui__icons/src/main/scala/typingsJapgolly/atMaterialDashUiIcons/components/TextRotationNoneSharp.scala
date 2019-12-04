@@ -1,13 +1,14 @@
 package typingsJapgolly.atMaterialDashUiIcons.components
 
+import typingsJapgolly.atMaterialDashUiIcons.textRotationNoneSharpMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object TextRotationNoneSharp
-  extends SharedApply_SvgIconProps1591622337[
-      typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.TextRotationNoneSharp
-    ] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.TextRotationNoneSharp]
+object TextRotationNoneSharp extends SharedApply_SvgIconProps1591622337[default] {
+  @JSImport("@material-ui/icons/TextRotationNoneSharp", "default")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

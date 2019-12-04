@@ -526,8 +526,12 @@ object Toggle {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.materialDashUi.__MaterialUI.Switches.ToggleProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.materialDashUi.toggleMod.default](js.constructorOf[typingsJapgolly.materialDashUi.toggleMod.default])
+  typingsJapgolly.materialDashUi.toggleMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.materialDashUi.__MaterialUI.Switches.ToggleProps])(children: _*)
   }
+  @JSImport("material-ui/Toggle", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

@@ -1,13 +1,14 @@
 package typingsJapgolly.atMaterialDashUiIcons.components
 
+import typingsJapgolly.atMaterialDashUiIcons.directionsRailwaySharpMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object DirectionsRailwaySharp
-  extends SharedApply_SvgIconProps1591622337[
-      typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.DirectionsRailwaySharp
-    ] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.DirectionsRailwaySharp]
+object DirectionsRailwaySharp extends SharedApply_SvgIconProps1591622337[default] {
+  @JSImport("@material-ui/icons/DirectionsRailwaySharp", "default")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

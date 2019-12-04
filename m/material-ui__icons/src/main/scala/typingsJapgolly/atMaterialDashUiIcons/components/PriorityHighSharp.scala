@@ -1,11 +1,14 @@
 package typingsJapgolly.atMaterialDashUiIcons.components
 
+import typingsJapgolly.atMaterialDashUiIcons.priorityHighSharpMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object PriorityHighSharp
-  extends SharedApply_SvgIconProps1591622337[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PriorityHighSharp] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PriorityHighSharp]
+object PriorityHighSharp extends SharedApply_SvgIconProps1591622337[default] {
+  @JSImport("@material-ui/icons/PriorityHighSharp", "default")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

@@ -1,11 +1,14 @@
 package typingsJapgolly.atMaterialDashUiIcons.components
 
+import typingsJapgolly.atMaterialDashUiIcons.replay30SharpMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object Replay30Sharp
-  extends SharedApply_SvgIconProps1591622337[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.Replay30Sharp] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.Replay30Sharp]
+object Replay30Sharp extends SharedApply_SvgIconProps1591622337[default] {
+  @JSImport("@material-ui/icons/Replay30Sharp", "default")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

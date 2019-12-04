@@ -1,13 +1,14 @@
 package typingsJapgolly.atMaterialDashUiIcons.components
 
+import typingsJapgolly.atMaterialDashUiIcons.accountBalanceWalletRoundedMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object AccountBalanceWalletRounded
-  extends SharedApply_SvgIconProps1591622337[
-      typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.AccountBalanceWalletRounded
-    ] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.AccountBalanceWalletRounded]
+object AccountBalanceWalletRounded extends SharedApply_SvgIconProps1591622337[default] {
+  @JSImport("@material-ui/icons/AccountBalanceWalletRounded", "default")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

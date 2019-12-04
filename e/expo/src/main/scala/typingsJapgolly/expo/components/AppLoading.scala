@@ -35,7 +35,7 @@ object AppLoading {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.expo.buildLaunchAppLoadingMod.Props, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.expo.buildLaunchAppLoadingMod.default](js.constructorOf[typingsJapgolly.expo.buildLaunchAppLoadingMod.default])
+  typingsJapgolly.expo.buildLaunchAppLoadingMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.expo.buildLaunchAppLoadingMod.Props])(children: _*)
   }
   def Anon_OnError(
@@ -55,8 +55,12 @@ object AppLoading {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.expo.buildLaunchAppLoadingMod.Props, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.expo.buildLaunchAppLoadingMod.default](js.constructorOf[typingsJapgolly.expo.buildLaunchAppLoadingMod.default])
+  typingsJapgolly.expo.buildLaunchAppLoadingMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.expo.buildLaunchAppLoadingMod.Props])(children: _*)
   }
+  @JSImport("expo/build/launch/AppLoading", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

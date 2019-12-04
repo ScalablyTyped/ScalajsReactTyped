@@ -1,11 +1,14 @@
 package typingsJapgolly.atMaterialDashUiIcons.components
 
+import typingsJapgolly.atMaterialDashUiIcons.addShoppingCartMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object AddShoppingCart
-  extends SharedApply_SvgIconProps1591622337[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.AddShoppingCart] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.AddShoppingCart]
+object AddShoppingCart extends SharedApply_SvgIconProps1591622337[default] {
+  @JSImport("@material-ui/icons/AddShoppingCart", "default")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

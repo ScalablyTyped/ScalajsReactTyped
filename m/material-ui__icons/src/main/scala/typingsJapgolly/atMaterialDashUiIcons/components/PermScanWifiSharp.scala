@@ -1,11 +1,14 @@
 package typingsJapgolly.atMaterialDashUiIcons.components
 
+import typingsJapgolly.atMaterialDashUiIcons.permScanWifiSharpMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object PermScanWifiSharp
-  extends SharedApply_SvgIconProps1591622337[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PermScanWifiSharp] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PermScanWifiSharp]
+object PermScanWifiSharp extends SharedApply_SvgIconProps1591622337[default] {
+  @JSImport("@material-ui/icons/PermScanWifiSharp", "default")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

@@ -19,12 +19,12 @@ import japgolly.scalajs.react.ReactWheelEventFrom
 import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
 import org.scalablytyped.runtime.StringDictionary
 import org.scalajs.dom.raw.HTMLFormElement
-import typingsJapgolly.antd.esFormFormItemMod.FormLabelAlign
-import typingsJapgolly.antd.esFormFormMod.FormLayout
-import typingsJapgolly.antd.esFormFormMod.FormProps
-import typingsJapgolly.antd.esFormFormMod.WrappedFormUtils
-import typingsJapgolly.antd.esFormMod.default
-import typingsJapgolly.antd.esGridColMod.ColProps
+import typingsJapgolly.antd.libFormFormItemMod.FormLabelAlign
+import typingsJapgolly.antd.libFormFormMod.FormLayout
+import typingsJapgolly.antd.libFormFormMod.FormProps
+import typingsJapgolly.antd.libFormFormMod.WrappedFormUtils
+import typingsJapgolly.antd.libFormMod.default
+import typingsJapgolly.antd.libGridColMod.ColProps
 import typingsJapgolly.react.Anon_Html
 import typingsJapgolly.react.reactMod.CSSProperties
 import typingsJapgolly.react.reactStrings.`additions text`
@@ -464,10 +464,14 @@ object Form {
     if (overrides != null) js.Dynamic.global.Object.assign(__obj, overrides)
   
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antd.esFormFormMod.FormProps, 
+  typingsJapgolly.antd.libFormFormMod.FormProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antd.esFormMod.default](js.constructorOf[typingsJapgolly.antd.esFormMod.default])
-    f(__obj.asInstanceOf[typingsJapgolly.antd.esFormFormMod.FormProps])(children: _*)
+  typingsJapgolly.antd.libFormMod.default](this.componentImport)
+    f(__obj.asInstanceOf[typingsJapgolly.antd.libFormFormMod.FormProps])(children: _*)
   }
+  @JSImport("antd/lib/form", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

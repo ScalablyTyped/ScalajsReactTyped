@@ -31,8 +31,12 @@ object ThemeWrapper {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.materialDashUi.__MaterialUI.ThemeWrapperProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.materialDashUi.__MaterialUI.ThemeWrapper](js.constructorOf[typingsJapgolly.materialDashUi.__MaterialUI.ThemeWrapper])
+  typingsJapgolly.materialDashUi.__MaterialUI.ThemeWrapper](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.materialDashUi.__MaterialUI.ThemeWrapperProps])(children: _*)
   }
+  @JSGlobal("__MaterialUI.ThemeWrapper")
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

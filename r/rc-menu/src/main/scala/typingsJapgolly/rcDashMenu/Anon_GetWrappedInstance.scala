@@ -1,7 +1,7 @@
 package typingsJapgolly.rcDashMenu
 
 import japgolly.scalajs.react.CallbackTo
-import typingsJapgolly.rcDashMenu.esSubPopupMenuMod.SubPopupMenu
+import typingsJapgolly.rcDashMenu.libSubPopupMenuMod.SubPopupMenu
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,8 +1,8 @@
 package typingsJapgolly.rcDashMentions
 
 import japgolly.scalajs.react.CallbackTo
-import typingsJapgolly.rcDashMentions.esMentionsMod.MentionsProps
-import typingsJapgolly.rcDashMentions.esOptionMod.OptionProps
+import typingsJapgolly.rcDashMentions.libMentionsMod.MentionsProps
+import typingsJapgolly.rcDashMentions.libOptionMod.OptionProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -29,8 +29,8 @@ object Anon_FilterOption {
     validateSearch: (/* text */ String, /* props */ MentionsProps) => CallbackTo[Boolean]
   ): Anon_FilterOption = {
     val __obj = js.Dynamic.literal(notFoundContent = notFoundContent.asInstanceOf[js.Any], prefix = prefix.asInstanceOf[js.Any], prefixCls = prefixCls.asInstanceOf[js.Any], rows = rows.asInstanceOf[js.Any], split = split.asInstanceOf[js.Any])
-    __obj.updateDynamic("filterOption")(js.Any.fromFunction2((t0: /* input */ java.lang.String, t1: /* hasValue */ typingsJapgolly.rcDashMentions.esOptionMod.OptionProps) => filterOption(t0, t1).runNow()))
-    __obj.updateDynamic("validateSearch")(js.Any.fromFunction2((t0: /* text */ java.lang.String, t1: /* props */ typingsJapgolly.rcDashMentions.esMentionsMod.MentionsProps) => validateSearch(t0, t1).runNow()))
+    __obj.updateDynamic("filterOption")(js.Any.fromFunction2((t0: /* input */ java.lang.String, t1: /* hasValue */ typingsJapgolly.rcDashMentions.libOptionMod.OptionProps) => filterOption(t0, t1).runNow()))
+    __obj.updateDynamic("validateSearch")(js.Any.fromFunction2((t0: /* text */ java.lang.String, t1: /* props */ typingsJapgolly.rcDashMentions.libMentionsMod.MentionsProps) => validateSearch(t0, t1).runNow()))
     __obj.asInstanceOf[Anon_FilterOption]
   }
 }

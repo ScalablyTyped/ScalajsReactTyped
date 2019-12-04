@@ -66,8 +66,12 @@ object MenuItem {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.semanticDashUiDashReact.distCommonjsCollectionsMenuMenuItemMod.MenuItemProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.semanticDashUiDashReact.distCommonjsCollectionsMenuMenuItemMod.default](js.constructorOf[typingsJapgolly.semanticDashUiDashReact.distCommonjsCollectionsMenuMenuItemMod.default])
+  typingsJapgolly.semanticDashUiDashReact.distCommonjsCollectionsMenuMenuItemMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.semanticDashUiDashReact.distCommonjsCollectionsMenuMenuItemMod.MenuItemProps])(children: _*)
   }
+  @JSImport("semantic-ui-react/dist/commonjs/collections/Menu/MenuItem", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

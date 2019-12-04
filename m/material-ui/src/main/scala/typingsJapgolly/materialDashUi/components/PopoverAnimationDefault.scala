@@ -36,8 +36,12 @@ object PopoverAnimationDefault {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.materialDashUi.__MaterialUI.Popover.PopoverAnimationDefaultProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.materialDashUi.popoverPopoverAnimationDefaultMod.default](js.constructorOf[typingsJapgolly.materialDashUi.popoverPopoverAnimationDefaultMod.default])
+  typingsJapgolly.materialDashUi.popoverPopoverAnimationDefaultMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.materialDashUi.__MaterialUI.Popover.PopoverAnimationDefaultProps])(children: _*)
   }
+  @JSImport("material-ui/Popover/PopoverAnimationDefault", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

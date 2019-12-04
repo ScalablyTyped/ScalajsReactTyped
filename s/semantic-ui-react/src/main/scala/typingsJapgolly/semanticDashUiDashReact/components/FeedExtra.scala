@@ -44,8 +44,12 @@ object FeedExtra {
     val f = japgolly.scalajs.react.JsComponent[
   typingsJapgolly.semanticDashUiDashReact.distCommonjsViewsFeedFeedExtraMod.FeedExtraProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  js.Object](typingsJapgolly.semanticDashUiDashReact.distCommonjsViewsFeedFeedExtraMod.default)
+  js.Object](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.semanticDashUiDashReact.distCommonjsViewsFeedFeedExtraMod.FeedExtraProps])(children: _*)
   }
+  @JSImport("semantic-ui-react/dist/commonjs/views/Feed/FeedExtra", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

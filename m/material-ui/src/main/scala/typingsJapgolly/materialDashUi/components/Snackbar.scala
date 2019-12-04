@@ -49,8 +49,12 @@ object Snackbar {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.materialDashUi.__MaterialUI.SnackbarProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.materialDashUi.snackbarMod.default](js.constructorOf[typingsJapgolly.materialDashUi.snackbarMod.default])
+  typingsJapgolly.materialDashUi.snackbarMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.materialDashUi.__MaterialUI.SnackbarProps])(children: _*)
   }
+  @JSImport("material-ui/Snackbar", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

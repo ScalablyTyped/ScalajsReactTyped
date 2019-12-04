@@ -6,6 +6,9 @@ import scala.scalajs.js.annotation._
 
 object ActionHighlightOff
   extends SharedApply_SvgIconProps1538262166[typingsJapgolly.materialDashUi.svgDashIconsMod.ActionHighlightOff] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.materialDashUi.svgDashIconsMod.ActionHighlightOff]
+  @JSImport("material-ui/svg-icons", "ActionHighlightOff")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

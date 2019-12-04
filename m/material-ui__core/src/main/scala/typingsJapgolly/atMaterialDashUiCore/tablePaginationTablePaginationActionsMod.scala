@@ -1,12 +1,12 @@
 package typingsJapgolly.atMaterialDashUiCore
 
 import typingsJapgolly.atMaterialDashUiCore.tablePaginationTablePaginationActionsMod.TablePaginationActionsProps
-import typingsJapgolly.react.NativeMouseEvent
 import typingsJapgolly.react.reactMod.Component
 import typingsJapgolly.react.reactMod.ComponentState
 import typingsJapgolly.react.reactMod.ComponentType
 import typingsJapgolly.react.reactMod.HTMLAttributes
 import typingsJapgolly.react.reactMod.MouseEvent
+import typingsJapgolly.react.reactMod.NativeMouseEvent
 import typingsJapgolly.std.HTMLButtonElement
 import typingsJapgolly.std.HTMLDivElement
 import scala.scalajs.js

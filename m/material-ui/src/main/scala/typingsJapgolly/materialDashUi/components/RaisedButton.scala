@@ -124,8 +124,12 @@ object RaisedButton {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.materialDashUi.__MaterialUI.RaisedButtonProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.materialDashUi.raisedButtonMod.default](js.constructorOf[typingsJapgolly.materialDashUi.raisedButtonMod.default])
+  typingsJapgolly.materialDashUi.raisedButtonMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.materialDashUi.__MaterialUI.RaisedButtonProps])(children: _*)
   }
+  @JSImport("material-ui/RaisedButton", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

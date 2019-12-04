@@ -139,8 +139,12 @@ object ReactDashSlick {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.reactDashSlick.reactDashSlickMod.Settings, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactDashSlick.reactDashSlickMod.default](js.constructorOf[typingsJapgolly.reactDashSlick.reactDashSlickMod.default])
+  typingsJapgolly.reactDashSlick.reactDashSlickMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.reactDashSlick.reactDashSlickMod.Settings])(children: _*)
   }
+  @JSImport("react-slick", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

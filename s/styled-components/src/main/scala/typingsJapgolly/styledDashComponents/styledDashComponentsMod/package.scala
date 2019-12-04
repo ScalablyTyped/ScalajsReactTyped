@@ -19,7 +19,6 @@ package object styledDashComponentsMod {
   import typingsJapgolly.styledDashComponents.Anon_Children
   import typingsJapgolly.styledDashComponents.Anon_SuppressMultiMountWarning
   import typingsJapgolly.styledDashComponents.Anon_ThemeT
-  import typingsJapgolly.styledDashComponents.Omit
   import typingsJapgolly.styledDashComponents.WithOptionalThemeComponentPropsWithRefCT
   import typingsJapgolly.styledDashComponents.styledDashComponentsNumbers.`false`
 
@@ -59,6 +58,8 @@ package object styledDashComponentsMod {
     - typings.styledDashComponents.styledDashComponentsMod.CSSObject
   */
   type InterpolationValue = _InterpolationValue | String | Double | FalseyValue
+  // Helper type operators
+  type Omit[T, K /* <: String */] = Pick[T, Exclude[String, K]]
   // extracts React defaultProps
   type ReactDefaultProps[C] = js.Any
   type ReactDefaultizedProps[C, P] = P | (Defaultize[P, js.Any])

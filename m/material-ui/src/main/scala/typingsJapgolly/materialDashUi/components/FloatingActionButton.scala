@@ -475,8 +475,12 @@ object FloatingActionButton {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.materialDashUi.__MaterialUI.FloatingActionButtonProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.materialDashUi.floatingActionButtonMod.default](js.constructorOf[typingsJapgolly.materialDashUi.floatingActionButtonMod.default])
+  typingsJapgolly.materialDashUi.floatingActionButtonMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.materialDashUi.__MaterialUI.FloatingActionButtonProps])(children: _*)
   }
+  @JSImport("material-ui/FloatingActionButton", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

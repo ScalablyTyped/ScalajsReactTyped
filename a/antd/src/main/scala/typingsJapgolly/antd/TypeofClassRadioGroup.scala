@@ -1,8 +1,8 @@
 package typingsJapgolly.antd
 
 import org.scalablytyped.runtime.Instantiable1
-import typingsJapgolly.antd.esRadioGroupMod.default
-import typingsJapgolly.antd.esRadioInterfaceMod.RadioGroupProps
+import typingsJapgolly.antd.libRadioGroupMod.default
+import typingsJapgolly.antd.libRadioInterfaceMod.RadioGroupProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

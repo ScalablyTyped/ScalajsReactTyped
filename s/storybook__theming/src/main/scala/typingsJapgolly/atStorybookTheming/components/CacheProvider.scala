@@ -35,8 +35,12 @@ object CacheProvider {
     val f = japgolly.scalajs.react.JsComponent[
   typingsJapgolly.react.reactMod.ProviderProps[typingsJapgolly.atEmotionUtils.atEmotionUtilsMod.EmotionCache], 
   japgolly.scalajs.react.Children.Varargs, 
-  js.Object](typingsJapgolly.atStorybookTheming.atStorybookThemingMod.CacheProvider)
+  js.Object](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.react.reactMod.ProviderProps[typingsJapgolly.atEmotionUtils.atEmotionUtilsMod.EmotionCache]])(children: _*)
   }
+  @JSImport("@storybook/theming", "CacheProvider")
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

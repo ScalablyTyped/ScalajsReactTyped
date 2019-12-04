@@ -36,8 +36,12 @@ object AutoCompleteDivider {
     val f = japgolly.scalajs.react.JsComponent[
   typingsJapgolly.materialDashUi.__MaterialUI.DividerProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  js.Object](typingsJapgolly.materialDashUi.autoCompleteMod.default.Divider)
+  js.Object](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.materialDashUi.__MaterialUI.DividerProps])(children: _*)
   }
+  @JSImport("material-ui/AutoComplete", "default.Divider")
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

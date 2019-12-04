@@ -6,6 +6,9 @@ import scala.scalajs.js.annotation._
 
 object EditorAttachFile
   extends SharedApply_SvgIconProps1538262166[typingsJapgolly.materialDashUi.svgDashIconsMod.EditorAttachFile] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.materialDashUi.svgDashIconsMod.EditorAttachFile]
+  @JSImport("material-ui/svg-icons", "EditorAttachFile")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

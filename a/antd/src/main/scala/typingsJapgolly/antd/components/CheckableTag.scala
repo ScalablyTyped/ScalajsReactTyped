@@ -5,8 +5,8 @@ import japgolly.scalajs.react.CtorType.ChildArg
 import japgolly.scalajs.react.Key
 import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
 import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.antd.esTagCheckableTagMod.CheckableTagProps
-import typingsJapgolly.antd.esTagCheckableTagMod.default
+import typingsJapgolly.antd.libTagCheckableTagMod.CheckableTagProps
+import typingsJapgolly.antd.libTagCheckableTagMod.default
 import typingsJapgolly.react.reactMod.CSSProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -34,10 +34,14 @@ object CheckableTag {
     if (overrides != null) js.Dynamic.global.Object.assign(__obj, overrides)
   
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antd.esTagCheckableTagMod.CheckableTagProps, 
+  typingsJapgolly.antd.libTagCheckableTagMod.CheckableTagProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antd.esTagCheckableTagMod.default](js.constructorOf[typingsJapgolly.antd.esTagCheckableTagMod.default])
-    f(__obj.asInstanceOf[typingsJapgolly.antd.esTagCheckableTagMod.CheckableTagProps])(children: _*)
+  typingsJapgolly.antd.libTagCheckableTagMod.default](this.componentImport)
+    f(__obj.asInstanceOf[typingsJapgolly.antd.libTagCheckableTagMod.CheckableTagProps])(children: _*)
   }
+  @JSImport("antd/lib/tag/CheckableTag", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

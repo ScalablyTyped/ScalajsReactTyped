@@ -73,8 +73,12 @@ object Embed {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.semanticDashUiDashReact.distCommonjsModulesEmbedEmbedMod.EmbedProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.semanticDashUiDashReact.distCommonjsModulesEmbedMod.default](js.constructorOf[typingsJapgolly.semanticDashUiDashReact.distCommonjsModulesEmbedMod.default])
+  typingsJapgolly.semanticDashUiDashReact.distCommonjsModulesEmbedMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.semanticDashUiDashReact.distCommonjsModulesEmbedEmbedMod.EmbedProps])(children: _*)
   }
+  @JSImport("semantic-ui-react/dist/commonjs/modules/Embed", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

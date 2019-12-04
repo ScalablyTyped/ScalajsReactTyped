@@ -513,8 +513,12 @@ object TableSortLabel {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.atMaterialDashUiCore.tableSortLabelTableSortLabelMod.TableSortLabelProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.atMaterialDashUiCore.tableSortLabelMod.default](js.constructorOf[typingsJapgolly.atMaterialDashUiCore.tableSortLabelMod.default])
+  typingsJapgolly.atMaterialDashUiCore.tableSortLabelMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.atMaterialDashUiCore.tableSortLabelTableSortLabelMod.TableSortLabelProps])(children: _*)
   }
+  @JSImport("@material-ui/core/TableSortLabel", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

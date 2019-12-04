@@ -6,6 +6,9 @@ import scala.scalajs.js.annotation._
 
 object ImageAddToPhotos
   extends SharedApply_SvgIconProps1538262166[typingsJapgolly.materialDashUi.svgDashIconsMod.ImageAddToPhotos] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.materialDashUi.svgDashIconsMod.ImageAddToPhotos]
+  @JSImport("material-ui/svg-icons", "ImageAddToPhotos")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

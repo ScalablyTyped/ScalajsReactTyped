@@ -47,12 +47,12 @@ trait ProxyHandler[T /* <: js.Object */] extends js.Object {
 object ProxyHandler {
   @scala.inline
   def apply[T /* <: js.Object */](
-    apply: (/* target */ T, /* thisArg */ js.Any, /* argArray */ js.UndefOr[js.Any]) => CallbackTo[_] = null,
+    apply: (/* target */ T, /* thisArg */ js.Any, /* argArray */ js.UndefOr[js.Any]) => CallbackTo[js.Any] = null,
     construct: (/* target */ T, /* argArray */ js.Any, /* newTarget */ js.UndefOr[js.Any]) => CallbackTo[js.Object] = null,
     defineProperty: (/* target */ T, /* p */ PropertyKey, /* attributes */ js.PropertyDescriptor) => CallbackTo[scala.Boolean] = null,
     deleteProperty: (/* target */ T, /* p */ PropertyKey) => CallbackTo[scala.Boolean] = null,
     enumerate: /* target */ T => CallbackTo[js.Array[PropertyKey]] = null,
-    get: (/* target */ T, /* p */ PropertyKey, /* receiver */ js.Any) => CallbackTo[_] = null,
+    get: (/* target */ T, /* p */ PropertyKey, /* receiver */ js.Any) => CallbackTo[js.Any] = null,
     getOwnPropertyDescriptor: (/* target */ T, /* p */ PropertyKey) => CallbackTo[js.UndefOr[js.PropertyDescriptor]] = null,
     getPrototypeOf: /* target */ T => CallbackTo[js.Object | Null] = null,
     has: (/* target */ T, /* p */ PropertyKey) => CallbackTo[scala.Boolean] = null,

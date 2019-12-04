@@ -1,11 +1,14 @@
 package typingsJapgolly.atMaterialDashUiIcons.components
 
+import typingsJapgolly.atMaterialDashUiIcons.keyboardVoiceMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object KeyboardVoice
-  extends SharedApply_SvgIconProps1591622337[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.KeyboardVoice] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.KeyboardVoice]
+object KeyboardVoice extends SharedApply_SvgIconProps1591622337[default] {
+  @JSImport("@material-ui/icons/KeyboardVoice", "default")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

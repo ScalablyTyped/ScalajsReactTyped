@@ -1,11 +1,14 @@
 package typingsJapgolly.atMaterialDashUiIcons.components
 
+import typingsJapgolly.atMaterialDashUiIcons.cropFreeRoundedMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object CropFreeRounded
-  extends SharedApply_SvgIconProps1591622337[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.CropFreeRounded] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.CropFreeRounded]
+object CropFreeRounded extends SharedApply_SvgIconProps1591622337[default] {
+  @JSImport("@material-ui/icons/CropFreeRounded", "default")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

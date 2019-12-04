@@ -6,6 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 object OpenDashWith extends SharedApply_SvgIconProps1538262166[default] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.materialDashUi.svgDashIconsActionOpenDashWithMod.default]
+  @JSImport("material-ui/svg-icons/action/open-with", JSImport.Default)
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

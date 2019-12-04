@@ -467,8 +467,12 @@ object InputLabel {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.atMaterialDashUiCore.inputLabelInputLabelMod.InputLabelProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.atMaterialDashUiCore.inputLabelMod.default](js.constructorOf[typingsJapgolly.atMaterialDashUiCore.inputLabelMod.default])
+  typingsJapgolly.atMaterialDashUiCore.inputLabelMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.atMaterialDashUiCore.inputLabelInputLabelMod.InputLabelProps])(children: _*)
   }
+  @JSImport("@material-ui/core/InputLabel", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

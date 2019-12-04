@@ -1,7 +1,7 @@
 package typingsJapgolly.antd.libDropdownDropdownMod
 
 import typingsJapgolly.antd.Anon_BottomCenterBottomLeft
-import typingsJapgolly.antd.TypeofClassDropdownButtonDefaultProps
+import typingsJapgolly.antd.TypeofClassDropdownButton
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +14,7 @@ class default () extends Dropdown
 @JSImport("antd/lib/dropdown/dropdown", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var Button: TypeofClassDropdownButtonDefaultProps = js.native
+  var Button: TypeofClassDropdownButton = js.native
   var defaultProps: Anon_BottomCenterBottomLeft = js.native
 }
 

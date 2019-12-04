@@ -25,6 +25,7 @@ trait SliderProps extends js.Object {
   var onChange: js.UndefOr[js.Function1[/* value */ SliderValue, Unit]] = js.undefined
   var prefixCls: js.UndefOr[String] = js.undefined
   var range: js.UndefOr[Boolean] = js.undefined
+  var reverse: js.UndefOr[Boolean] = js.undefined
   var step: js.UndefOr[Double | Null] = js.undefined
   var style: js.UndefOr[CSSProperties] = js.undefined
   var tipFormatter: js.UndefOr[Null | (js.Function1[/* value */ Double, Node])] = js.undefined
@@ -52,6 +53,7 @@ object SliderProps {
     onChange: /* value */ SliderValue => Callback = null,
     prefixCls: String = null,
     range: js.UndefOr[Boolean] = js.undefined,
+    reverse: js.UndefOr[Boolean] = js.undefined,
     step: Int | Double = null,
     style: CSSProperties = null,
     tipFormatter: /* value */ Double => CallbackTo[Node] = null,
@@ -76,6 +78,7 @@ object SliderProps {
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1((t0: /* value */ typingsJapgolly.antd.libSliderMod.SliderValue) => onChange(t0).runNow()))
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
     if (!js.isUndefined(range)) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
+    if (!js.isUndefined(reverse)) __obj.updateDynamic("reverse")(reverse.asInstanceOf[js.Any])
     if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (tipFormatter != null) __obj.updateDynamic("tipFormatter")(js.Any.fromFunction1((t0: /* value */ scala.Double) => tipFormatter(t0).runNow()))

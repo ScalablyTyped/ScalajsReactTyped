@@ -10,9 +10,9 @@ import japgolly.scalajs.react.component.Js.RawMounted
 import japgolly.scalajs.react.component.Js.UnmountedSimple
 import org.scalablytyped.runtime.StringDictionary
 import org.scalajs.dom.raw.HTMLElement
-import typingsJapgolly.antd.esIconMod.CustomIconComponentProps
-import typingsJapgolly.antd.esIconMod.IconProps
-import typingsJapgolly.antd.esIconMod.ThemeType
+import typingsJapgolly.antd.libIconMod.CustomIconComponentProps
+import typingsJapgolly.antd.libIconMod.IconProps
+import typingsJapgolly.antd.libIconMod.ThemeType
 import typingsJapgolly.react.reactMod.CSSProperties
 import typingsJapgolly.react.reactMod.ComponentType
 import scala.scalajs.js
@@ -65,10 +65,14 @@ object Icon {
     if (overrides != null) js.Dynamic.global.Object.assign(__obj, overrides)
   
     val f = japgolly.scalajs.react.JsComponent[
-  typingsJapgolly.antd.esIconMod.IconProps, 
+  typingsJapgolly.antd.libIconMod.IconProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  js.Object](typingsJapgolly.antd.esIconMod.default)
-    f(__obj.asInstanceOf[typingsJapgolly.antd.esIconMod.IconProps])(children: _*)
+  js.Object](this.componentImport)
+    f(__obj.asInstanceOf[typingsJapgolly.antd.libIconMod.IconProps])(children: _*)
   }
+  @JSImport("antd/lib/icon", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

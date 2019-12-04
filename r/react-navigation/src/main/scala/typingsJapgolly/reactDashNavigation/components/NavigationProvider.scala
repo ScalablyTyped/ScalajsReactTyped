@@ -31,8 +31,12 @@ object NavigationProvider {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.reactDashNavigation.Anon_Value, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactDashNavigation.reactDashNavigationMod.NavigationProvider](js.constructorOf[typingsJapgolly.reactDashNavigation.reactDashNavigationMod.NavigationProvider])
+  typingsJapgolly.reactDashNavigation.reactDashNavigationMod.NavigationProvider](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.reactDashNavigation.Anon_Value])(children: _*)
   }
+  @JSImport("react-navigation", "NavigationProvider")
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

@@ -38,8 +38,12 @@ object BeforeAfterWrapper {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.materialDashUi.internalBeforeAfterWrapperMod.BeforeAfterWrapperProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.materialDashUi.internalBeforeAfterWrapperMod.default](js.constructorOf[typingsJapgolly.materialDashUi.internalBeforeAfterWrapperMod.default])
+  typingsJapgolly.materialDashUi.internalBeforeAfterWrapperMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.materialDashUi.internalBeforeAfterWrapperMod.BeforeAfterWrapperProps])(children: _*)
   }
+  @JSImport("material-ui/internal/BeforeAfterWrapper", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

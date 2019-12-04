@@ -6,6 +6,9 @@ import scala.scalajs.js.annotation._
 
 object ActionViewCarousel
   extends SharedApply_SvgIconProps1538262166[typingsJapgolly.materialDashUi.svgDashIconsMod.ActionViewCarousel] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.materialDashUi.svgDashIconsMod.ActionViewCarousel]
+  @JSImport("material-ui/svg-icons", "ActionViewCarousel")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

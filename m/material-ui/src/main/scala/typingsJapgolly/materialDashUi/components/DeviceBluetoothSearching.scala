@@ -6,6 +6,9 @@ import scala.scalajs.js.annotation._
 
 object DeviceBluetoothSearching
   extends SharedApply_SvgIconProps1538262166[typingsJapgolly.materialDashUi.svgDashIconsMod.DeviceBluetoothSearching] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.materialDashUi.svgDashIconsMod.DeviceBluetoothSearching]
+  @JSImport("material-ui/svg-icons", "DeviceBluetoothSearching")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

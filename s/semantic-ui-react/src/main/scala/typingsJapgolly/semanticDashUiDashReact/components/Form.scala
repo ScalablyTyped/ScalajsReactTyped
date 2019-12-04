@@ -471,8 +471,12 @@ object Form {
     val f = japgolly.scalajs.react.JsComponent[
   typingsJapgolly.semanticDashUiDashReact.distCommonjsCollectionsFormFormMod.FormProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  js.Object](typingsJapgolly.semanticDashUiDashReact.distCommonjsCollectionsFormMod.default)
+  js.Object](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.semanticDashUiDashReact.distCommonjsCollectionsFormFormMod.FormProps])(children: _*)
   }
+  @JSImport("semantic-ui-react/dist/commonjs/collections/Form", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

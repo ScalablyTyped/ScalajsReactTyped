@@ -37,8 +37,12 @@ object InputAccessoryView {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.reactDashNative.reactDashNativeMod.InputAccessoryViewProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactDashNative.reactDashNativeMod.InputAccessoryView](js.constructorOf[typingsJapgolly.reactDashNative.reactDashNativeMod.InputAccessoryView])
+  typingsJapgolly.reactDashNative.reactDashNativeMod.InputAccessoryView](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.reactDashNative.reactDashNativeMod.InputAccessoryViewProps])(children: _*)
   }
+  @JSImport("react-native", "InputAccessoryView")
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

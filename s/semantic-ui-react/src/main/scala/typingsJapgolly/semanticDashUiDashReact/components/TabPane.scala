@@ -42,8 +42,12 @@ object TabPane {
     val f = japgolly.scalajs.react.JsComponent[
   typingsJapgolly.semanticDashUiDashReact.distCommonjsModulesTabTabPaneMod.TabPaneProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  js.Object](typingsJapgolly.semanticDashUiDashReact.distCommonjsModulesTabTabPaneMod.default)
+  js.Object](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.semanticDashUiDashReact.distCommonjsModulesTabTabPaneMod.TabPaneProps])(children: _*)
   }
+  @JSImport("semantic-ui-react/dist/commonjs/modules/Tab/TabPane", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

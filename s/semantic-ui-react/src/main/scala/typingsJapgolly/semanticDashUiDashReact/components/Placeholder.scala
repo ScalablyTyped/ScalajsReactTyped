@@ -42,8 +42,12 @@ object Placeholder {
     val f = japgolly.scalajs.react.JsComponent[
   typingsJapgolly.semanticDashUiDashReact.distCommonjsElementsPlaceholderPlaceholderMod.PlaceholderProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  js.Object](typingsJapgolly.semanticDashUiDashReact.distCommonjsElementsPlaceholderMod.default)
+  js.Object](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.semanticDashUiDashReact.distCommonjsElementsPlaceholderPlaceholderMod.PlaceholderProps])(children: _*)
   }
+  @JSImport("semantic-ui-react/dist/commonjs/elements/Placeholder", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

@@ -486,8 +486,12 @@ object FormTextArea {
     val f = japgolly.scalajs.react.JsComponent[
   typingsJapgolly.semanticDashUiDashReact.distCommonjsCollectionsFormFormTextAreaMod.FormTextAreaProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  js.Object](typingsJapgolly.semanticDashUiDashReact.distCommonjsCollectionsFormFormTextAreaMod.default)
+  js.Object](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.semanticDashUiDashReact.distCommonjsCollectionsFormFormTextAreaMod.FormTextAreaProps])(children: _*)
   }
+  @JSImport("semantic-ui-react/dist/commonjs/collections/Form/FormTextArea", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

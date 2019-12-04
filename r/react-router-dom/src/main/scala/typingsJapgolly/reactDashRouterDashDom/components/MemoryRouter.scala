@@ -40,8 +40,12 @@ object MemoryRouter {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.reactDashRouter.reactDashRouterMod.MemoryRouterProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactDashRouterDashDom.reactDashRouterDashDomMod.MemoryRouter](js.constructorOf[typingsJapgolly.reactDashRouterDashDom.reactDashRouterDashDomMod.MemoryRouter])
+  typingsJapgolly.reactDashRouterDashDom.reactDashRouterDashDomMod.MemoryRouter](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.reactDashRouter.reactDashRouterMod.MemoryRouterProps])(children: _*)
   }
+  @JSImport("react-router-dom", "MemoryRouter")
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

@@ -1,7 +1,7 @@
 package typingsJapgolly.antd
 
 import org.scalablytyped.runtime.Instantiable0
-import typingsJapgolly.antd.esDropdownDropdownDashButtonMod.default
+import typingsJapgolly.antd.libDropdownDropdownDashButtonMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

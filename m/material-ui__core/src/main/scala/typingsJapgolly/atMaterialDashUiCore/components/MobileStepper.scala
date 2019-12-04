@@ -465,8 +465,12 @@ object MobileStepper {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.atMaterialDashUiCore.mobileStepperMobileStepperMod.MobileStepperProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.atMaterialDashUiCore.mobileStepperMod.default](js.constructorOf[typingsJapgolly.atMaterialDashUiCore.mobileStepperMod.default])
+  typingsJapgolly.atMaterialDashUiCore.mobileStepperMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.atMaterialDashUiCore.mobileStepperMobileStepperMod.MobileStepperProps])(children: _*)
   }
+  @JSImport("@material-ui/core/MobileStepper", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

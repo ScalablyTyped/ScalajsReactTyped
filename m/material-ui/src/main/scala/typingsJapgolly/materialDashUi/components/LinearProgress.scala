@@ -40,8 +40,12 @@ object LinearProgress {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.materialDashUi.__MaterialUI.LinearProgressProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.materialDashUi.linearProgressMod.default](js.constructorOf[typingsJapgolly.materialDashUi.linearProgressMod.default])
+  typingsJapgolly.materialDashUi.linearProgressMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.materialDashUi.__MaterialUI.LinearProgressProps])(children: _*)
   }
+  @JSImport("material-ui/LinearProgress", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

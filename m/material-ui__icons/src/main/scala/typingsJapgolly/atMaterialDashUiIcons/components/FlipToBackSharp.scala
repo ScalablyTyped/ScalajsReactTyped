@@ -1,11 +1,14 @@
 package typingsJapgolly.atMaterialDashUiIcons.components
 
+import typingsJapgolly.atMaterialDashUiIcons.flipToBackSharpMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object FlipToBackSharp
-  extends SharedApply_SvgIconProps1591622337[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.FlipToBackSharp] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.FlipToBackSharp]
+object FlipToBackSharp extends SharedApply_SvgIconProps1591622337[default] {
+  @JSImport("@material-ui/icons/FlipToBackSharp", "default")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

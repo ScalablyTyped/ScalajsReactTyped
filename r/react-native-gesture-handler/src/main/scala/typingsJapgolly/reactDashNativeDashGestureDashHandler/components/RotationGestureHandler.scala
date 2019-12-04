@@ -54,8 +54,12 @@ object RotationGestureHandler {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.reactDashNativeDashGestureDashHandler.reactDashNativeDashGestureDashHandlerMod.RotationGestureHandlerProperties, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactDashNativeDashGestureDashHandler.reactDashNativeDashGestureDashHandlerMod.RotationGestureHandler](js.constructorOf[typingsJapgolly.reactDashNativeDashGestureDashHandler.reactDashNativeDashGestureDashHandlerMod.RotationGestureHandler])
+  typingsJapgolly.reactDashNativeDashGestureDashHandler.reactDashNativeDashGestureDashHandlerMod.RotationGestureHandler](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.reactDashNativeDashGestureDashHandler.reactDashNativeDashGestureDashHandlerMod.RotationGestureHandlerProperties])(children: _*)
   }
+  @JSImport("react-native-gesture-handler", "RotationGestureHandler")
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

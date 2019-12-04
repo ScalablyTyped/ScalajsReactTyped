@@ -9,10 +9,10 @@ import typingsJapgolly.antd.antdStrings.error
 import typingsJapgolly.antd.antdStrings.success
 import typingsJapgolly.antd.antdStrings.validating
 import typingsJapgolly.antd.antdStrings.warning
-import typingsJapgolly.antd.esFormFormItemMod.FormItemProps
-import typingsJapgolly.antd.esFormFormItemMod.FormLabelAlign
-import typingsJapgolly.antd.esFormFormItemMod.default
-import typingsJapgolly.antd.esGridColMod.ColProps
+import typingsJapgolly.antd.libFormFormItemMod.FormItemProps
+import typingsJapgolly.antd.libFormFormItemMod.FormLabelAlign
+import typingsJapgolly.antd.libFormFormItemMod.default
+import typingsJapgolly.antd.libGridColMod.ColProps
 import typingsJapgolly.react.reactMod.CSSProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -61,10 +61,14 @@ object FormItem {
     if (overrides != null) js.Dynamic.global.Object.assign(__obj, overrides)
   
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antd.esFormFormItemMod.FormItemProps, 
+  typingsJapgolly.antd.libFormFormItemMod.FormItemProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antd.esFormFormItemMod.default](js.constructorOf[typingsJapgolly.antd.esFormFormItemMod.default])
-    f(__obj.asInstanceOf[typingsJapgolly.antd.esFormFormItemMod.FormItemProps])(children: _*)
+  typingsJapgolly.antd.libFormFormItemMod.default](this.componentImport)
+    f(__obj.asInstanceOf[typingsJapgolly.antd.libFormFormItemMod.FormItemProps])(children: _*)
   }
+  @JSImport("antd/lib/form/FormItem", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

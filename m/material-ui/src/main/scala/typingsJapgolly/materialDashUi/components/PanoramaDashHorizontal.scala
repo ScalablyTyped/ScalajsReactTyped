@@ -6,6 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 object PanoramaDashHorizontal extends SharedApply_SvgIconProps1538262166[default] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.materialDashUi.svgDashIconsImagePanoramaDashHorizontalMod.default]
+  @JSImport("material-ui/svg-icons/image/panorama-horizontal", JSImport.Default)
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

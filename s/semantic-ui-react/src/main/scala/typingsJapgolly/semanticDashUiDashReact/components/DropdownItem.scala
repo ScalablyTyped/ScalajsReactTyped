@@ -65,8 +65,12 @@ object DropdownItem {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.semanticDashUiDashReact.distCommonjsModulesDropdownDropdownItemMod.DropdownItemProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.semanticDashUiDashReact.distCommonjsModulesDropdownDropdownItemMod.default](js.constructorOf[typingsJapgolly.semanticDashUiDashReact.distCommonjsModulesDropdownDropdownItemMod.default])
+  typingsJapgolly.semanticDashUiDashReact.distCommonjsModulesDropdownDropdownItemMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.semanticDashUiDashReact.distCommonjsModulesDropdownDropdownItemMod.DropdownItemProps])(children: _*)
   }
+  @JSImport("semantic-ui-react/dist/commonjs/modules/Dropdown/DropdownItem", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

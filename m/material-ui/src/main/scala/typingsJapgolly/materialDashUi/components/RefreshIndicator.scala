@@ -43,8 +43,12 @@ object RefreshIndicator {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.materialDashUi.__MaterialUI.RefreshIndicatorProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.materialDashUi.refreshIndicatorMod.default](js.constructorOf[typingsJapgolly.materialDashUi.refreshIndicatorMod.default])
+  typingsJapgolly.materialDashUi.refreshIndicatorMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.materialDashUi.__MaterialUI.RefreshIndicatorProps])(children: _*)
   }
+  @JSImport("material-ui/RefreshIndicator", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

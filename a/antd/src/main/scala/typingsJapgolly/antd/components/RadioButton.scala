@@ -8,9 +8,9 @@ import japgolly.scalajs.react.ReactMouseEventFrom
 import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
 import org.scalablytyped.runtime.StringDictionary
 import org.scalajs.dom.raw.HTMLElement
-import typingsJapgolly.antd.esRadioInterfaceMod.RadioChangeEvent
-import typingsJapgolly.antd.esRadioRadioButtonMod.RadioButtonProps
-import typingsJapgolly.antd.esRadioRadioButtonMod.default
+import typingsJapgolly.antd.libRadioInterfaceMod.RadioChangeEvent
+import typingsJapgolly.antd.libRadioRadioButtonMod.RadioButtonProps
+import typingsJapgolly.antd.libRadioRadioButtonMod.default
 import typingsJapgolly.react.reactMod.CSSProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -49,7 +49,7 @@ object RadioButton {
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1((t0: typingsJapgolly.antd.esRadioInterfaceMod.RadioChangeEvent) => onChange(t0).runNow()))
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1((t0: typingsJapgolly.antd.libRadioInterfaceMod.RadioChangeEvent) => onChange(t0).runNow()))
     if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactMouseEventFrom[org.scalajs.dom.raw.HTMLElement]) => onClick(t0).runNow()))
     if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactKeyboardEventFrom[org.scalajs.dom.raw.HTMLElement]) => onKeyDown(t0).runNow()))
     if (onKeyPress != null) __obj.updateDynamic("onKeyPress")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactKeyboardEventFrom[org.scalajs.dom.raw.HTMLElement]) => onKeyPress(t0).runNow()))
@@ -63,10 +63,14 @@ object RadioButton {
     if (overrides != null) js.Dynamic.global.Object.assign(__obj, overrides)
   
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antd.esRadioRadioButtonMod.RadioButtonProps, 
+  typingsJapgolly.antd.libRadioRadioButtonMod.RadioButtonProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antd.esRadioRadioButtonMod.default](js.constructorOf[typingsJapgolly.antd.esRadioRadioButtonMod.default])
-    f(__obj.asInstanceOf[typingsJapgolly.antd.esRadioRadioButtonMod.RadioButtonProps])(children: _*)
+  typingsJapgolly.antd.libRadioRadioButtonMod.default](this.componentImport)
+    f(__obj.asInstanceOf[typingsJapgolly.antd.libRadioRadioButtonMod.RadioButtonProps])(children: _*)
   }
+  @JSImport("antd/lib/radio/radioButton", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

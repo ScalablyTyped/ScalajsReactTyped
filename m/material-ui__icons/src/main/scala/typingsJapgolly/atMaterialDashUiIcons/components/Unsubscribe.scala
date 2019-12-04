@@ -1,11 +1,14 @@
 package typingsJapgolly.atMaterialDashUiIcons.components
 
+import typingsJapgolly.atMaterialDashUiIcons.unsubscribeMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object Unsubscribe
-  extends SharedApply_SvgIconProps1591622337[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.Unsubscribe] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.Unsubscribe]
+object Unsubscribe extends SharedApply_SvgIconProps1591622337[default] {
+  @JSImport("@material-ui/icons/Unsubscribe", "default")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

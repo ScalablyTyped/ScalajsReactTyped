@@ -8,12 +8,12 @@ import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
 import japgolly.scalajs.react.vdom.VdomNode
 import org.scalablytyped.runtime.StringDictionary
 import org.scalajs.dom.raw.HTMLElement
-import typingsJapgolly.antd.esPopoverMod.PopoverProps
-import typingsJapgolly.antd.esPopoverMod.default
-import typingsJapgolly.antd.esTooltipMod.TooltipAlignConfig
-import typingsJapgolly.antd.esTooltipMod.TooltipPlacement
-import typingsJapgolly.antd.esTooltipMod.TooltipTrigger
-import typingsJapgolly.antd.esTooltipPlacementsMod.AdjustOverflow
+import typingsJapgolly.antd.libPopoverMod.PopoverProps
+import typingsJapgolly.antd.libPopoverMod.default
+import typingsJapgolly.antd.libTooltipMod.TooltipAlignConfig
+import typingsJapgolly.antd.libTooltipMod.TooltipPlacement
+import typingsJapgolly.antd.libTooltipMod.TooltipTrigger
+import typingsJapgolly.antd.libTooltipPlacementsMod.AdjustOverflow
 import typingsJapgolly.react.reactMod.CSSProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -78,10 +78,14 @@ object Popover {
     if (overrides != null) js.Dynamic.global.Object.assign(__obj, overrides)
   
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antd.esPopoverMod.PopoverProps, 
+  typingsJapgolly.antd.libPopoverMod.PopoverProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antd.esPopoverMod.default](js.constructorOf[typingsJapgolly.antd.esPopoverMod.default])
-    f(__obj.asInstanceOf[typingsJapgolly.antd.esPopoverMod.PopoverProps])(children: _*)
+  typingsJapgolly.antd.libPopoverMod.default](this.componentImport)
+    f(__obj.asInstanceOf[typingsJapgolly.antd.libPopoverMod.PopoverProps])(children: _*)
   }
+  @JSImport("antd/lib/popover", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

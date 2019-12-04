@@ -1,13 +1,14 @@
 package typingsJapgolly.atMaterialDashUiIcons.components
 
+import typingsJapgolly.atMaterialDashUiIcons.supervisorAccountRoundedMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object SupervisorAccountRounded
-  extends SharedApply_SvgIconProps1591622337[
-      typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.SupervisorAccountRounded
-    ] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.SupervisorAccountRounded]
+object SupervisorAccountRounded extends SharedApply_SvgIconProps1591622337[default] {
+  @JSImport("@material-ui/icons/SupervisorAccountRounded", "default")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

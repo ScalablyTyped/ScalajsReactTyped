@@ -35,8 +35,12 @@ object ThemeProvider {
     val f = japgolly.scalajs.react.JsComponent[
   typingsJapgolly.emotionDashTheming.emotionDashThemingMod.ThemeProviderProps[Theme], 
   japgolly.scalajs.react.Children.Varargs, 
-  js.Object](typingsJapgolly.emotionDashTheming.emotionDashThemingMod.ThemeProvider)
+  js.Object](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.emotionDashTheming.emotionDashThemingMod.ThemeProviderProps[Theme]])(children: _*)
   }
+  @JSImport("emotion-theming", "ThemeProvider")
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

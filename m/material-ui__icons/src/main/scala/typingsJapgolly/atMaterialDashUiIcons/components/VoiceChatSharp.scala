@@ -1,11 +1,14 @@
 package typingsJapgolly.atMaterialDashUiIcons.components
 
+import typingsJapgolly.atMaterialDashUiIcons.voiceChatSharpMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object VoiceChatSharp
-  extends SharedApply_SvgIconProps1591622337[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.VoiceChatSharp] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.VoiceChatSharp]
+object VoiceChatSharp extends SharedApply_SvgIconProps1591622337[default] {
+  @JSImport("@material-ui/icons/VoiceChatSharp", "default")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

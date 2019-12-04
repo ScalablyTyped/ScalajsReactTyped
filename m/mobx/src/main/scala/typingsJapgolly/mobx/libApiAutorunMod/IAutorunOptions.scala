@@ -25,7 +25,7 @@ object IAutorunOptions {
     name: String = null,
     onError: /* error */ js.Any => Callback = null,
     requiresObservable: js.UndefOr[Boolean] = js.undefined,
-    scheduler: /* callback */ js.Function0[Unit] => CallbackTo[_] = null
+    scheduler: /* callback */ js.Function0[Unit] => CallbackTo[js.Any] = null
   ): IAutorunOptions = {
     val __obj = js.Dynamic.literal()
     if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])

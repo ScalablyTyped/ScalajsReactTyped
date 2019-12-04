@@ -505,7 +505,7 @@ object TextField {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.atMaterialDashUiCore.textFieldTextFieldMod.TextFieldProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.atMaterialDashUiCore.textFieldMod.default](js.constructorOf[typingsJapgolly.atMaterialDashUiCore.textFieldMod.default])
+  typingsJapgolly.atMaterialDashUiCore.textFieldMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.atMaterialDashUiCore.textFieldTextFieldMod.TextFieldProps])(children: _*)
   }
   def FilledTextFieldProps(
@@ -920,7 +920,7 @@ object TextField {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.atMaterialDashUiCore.textFieldTextFieldMod.TextFieldProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.atMaterialDashUiCore.textFieldMod.default](js.constructorOf[typingsJapgolly.atMaterialDashUiCore.textFieldMod.default])
+  typingsJapgolly.atMaterialDashUiCore.textFieldMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.atMaterialDashUiCore.textFieldTextFieldMod.TextFieldProps])(children: _*)
   }
   def OutlinedTextFieldProps(
@@ -1335,8 +1335,12 @@ object TextField {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.atMaterialDashUiCore.textFieldTextFieldMod.TextFieldProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.atMaterialDashUiCore.textFieldMod.default](js.constructorOf[typingsJapgolly.atMaterialDashUiCore.textFieldMod.default])
+  typingsJapgolly.atMaterialDashUiCore.textFieldMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.atMaterialDashUiCore.textFieldTextFieldMod.TextFieldProps])(children: _*)
   }
+  @JSImport("@material-ui/core/TextField", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

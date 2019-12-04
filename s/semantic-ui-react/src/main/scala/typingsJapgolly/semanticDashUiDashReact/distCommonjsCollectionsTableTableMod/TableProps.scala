@@ -47,7 +47,7 @@ object TableProps {
     headerRows: SemanticShorthandCollection[TableRowProps] = null,
     inverted: js.UndefOr[Boolean] = js.undefined,
     padded: Boolean | very = null,
-    renderBodyRow: (/* data */ js.Any, /* index */ Double) => CallbackTo[_] = null,
+    renderBodyRow: (/* data */ js.Any, /* index */ Double) => CallbackTo[js.Any] = null,
     selectable: js.UndefOr[Boolean] = js.undefined,
     singleLine: js.UndefOr[Boolean] = js.undefined,
     size: small | large = null,

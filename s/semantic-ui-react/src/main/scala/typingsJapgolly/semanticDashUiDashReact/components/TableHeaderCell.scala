@@ -89,6 +89,7 @@ import scala.scalajs.js.annotation._
 object TableHeaderCell {
   def apply(
     StringDictionary: /* key */ StringDictionary[js.Any] = null,
+    abbr: String = null,
     about: String = null,
     accessKey: String = null,
     active: js.UndefOr[Boolean] = js.undefined,
@@ -294,6 +295,7 @@ object TableHeaderCell {
     val __obj = js.Dynamic.literal()
   
       if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (abbr != null) __obj.updateDynamic("abbr")(abbr.asInstanceOf[js.Any])
     if (about != null) __obj.updateDynamic("about")(about.asInstanceOf[js.Any])
     if (accessKey != null) __obj.updateDynamic("accessKey")(accessKey.asInstanceOf[js.Any])
     if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.asInstanceOf[js.Any])
@@ -494,8 +496,12 @@ object TableHeaderCell {
     val f = japgolly.scalajs.react.JsComponent[
   typingsJapgolly.semanticDashUiDashReact.distCommonjsCollectionsTableTableHeaderCellMod.TableHeaderCellProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  js.Object](typingsJapgolly.semanticDashUiDashReact.distCommonjsCollectionsTableTableHeaderCellMod.default)
+  js.Object](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.semanticDashUiDashReact.distCommonjsCollectionsTableTableHeaderCellMod.TableHeaderCellProps])(children: _*)
   }
+  @JSImport("semantic-ui-react/dist/commonjs/collections/Table/TableHeaderCell", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

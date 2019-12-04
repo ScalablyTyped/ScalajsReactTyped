@@ -1,13 +1,14 @@
 package typingsJapgolly.atMaterialDashUiIcons.components
 
+import typingsJapgolly.atMaterialDashUiIcons.permDeviceInformationSharpMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object PermDeviceInformationSharp
-  extends SharedApply_SvgIconProps1591622337[
-      typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PermDeviceInformationSharp
-    ] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PermDeviceInformationSharp]
+object PermDeviceInformationSharp extends SharedApply_SvgIconProps1591622337[default] {
+  @JSImport("@material-ui/icons/PermDeviceInformationSharp", "default")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

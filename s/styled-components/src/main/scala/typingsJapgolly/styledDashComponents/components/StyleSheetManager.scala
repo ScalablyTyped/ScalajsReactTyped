@@ -32,7 +32,7 @@ object StyleSheetManager {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.styledDashComponents.styledDashComponentsMod.StyleSheetManagerProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.styledDashComponents.macroMod.StyleSheetManager](js.constructorOf[typingsJapgolly.styledDashComponents.macroMod.StyleSheetManager])
+  typingsJapgolly.styledDashComponents.macroMod.StyleSheetManager](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.styledDashComponents.styledDashComponentsMod.StyleSheetManagerProps])(children: _*)
   }
   def Anon_Target(
@@ -55,8 +55,12 @@ object StyleSheetManager {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.styledDashComponents.styledDashComponentsMod.StyleSheetManagerProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.styledDashComponents.macroMod.StyleSheetManager](js.constructorOf[typingsJapgolly.styledDashComponents.macroMod.StyleSheetManager])
+  typingsJapgolly.styledDashComponents.macroMod.StyleSheetManager](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.styledDashComponents.styledDashComponentsMod.StyleSheetManagerProps])(children: _*)
   }
+  @JSImport("styled-components/macro", "StyleSheetManager")
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

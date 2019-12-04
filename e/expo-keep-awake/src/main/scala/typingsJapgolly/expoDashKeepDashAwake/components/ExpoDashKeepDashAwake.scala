@@ -24,8 +24,12 @@ object ExpoDashKeepDashAwake {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   js.Object, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.expoDashKeepDashAwake.expoDashKeepDashAwakeMod.default](js.constructorOf[typingsJapgolly.expoDashKeepDashAwake.expoDashKeepDashAwakeMod.default])
+  typingsJapgolly.expoDashKeepDashAwake.expoDashKeepDashAwakeMod.default](this.componentImport)
     f(__obj.asInstanceOf[js.Object])(children: _*)
   }
+  @JSImport("expo-keep-awake", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

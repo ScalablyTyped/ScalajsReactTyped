@@ -33,8 +33,12 @@ object Match {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.atReachRouter.atReachRouterMod.MatchProps[TParams], 
   japgolly.scalajs.react.Children.None, 
-  typingsJapgolly.atReachRouter.atReachRouterMod.Match[TParams]](js.constructorOf[typingsJapgolly.atReachRouter.atReachRouterMod.Match[TParams]])
+  typingsJapgolly.atReachRouter.atReachRouterMod.Match[TParams]](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.atReachRouter.atReachRouterMod.MatchProps[TParams]])
   }
+  @JSImport("@reach/router", "Match")
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

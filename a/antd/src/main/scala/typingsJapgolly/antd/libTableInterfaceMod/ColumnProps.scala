@@ -4,7 +4,7 @@ import japgolly.scalajs.react.Callback
 import japgolly.scalajs.react.CallbackTo
 import japgolly.scalajs.react.raw.React.Node
 import org.scalajs.dom.raw.Event
-import typingsJapgolly.antd.Anon_FiltersSortColumn
+import typingsJapgolly.antd.Anon_Filters
 import typingsJapgolly.antd.antdStrings.center
 import typingsJapgolly.antd.antdStrings.left
 import typingsJapgolly.antd.antdStrings.right
@@ -25,7 +25,7 @@ trait ColumnProps[T] extends js.Object {
   var filterDropdownVisible: js.UndefOr[Boolean] = js.undefined
   var filterIcon: js.UndefOr[Node | (js.Function1[/* filtered */ Boolean, Node])] = js.undefined
   var filterMultiple: js.UndefOr[Boolean] = js.undefined
-  var filteredValue: js.UndefOr[js.Array[_]] = js.undefined
+  var filteredValue: js.UndefOr[js.Array[_] | Null] = js.undefined
   var filters: js.UndefOr[js.Array[ColumnFilterItem]] = js.undefined
   var fixed: js.UndefOr[Boolean | left | right] = js.undefined
   var key: js.UndefOr[Key] = js.undefined
@@ -38,7 +38,7 @@ trait ColumnProps[T] extends js.Object {
   var sortDirections: js.UndefOr[js.Array[SortOrder]] = js.undefined
   var sortOrder: js.UndefOr[SortOrder | Boolean] = js.undefined
   var sorter: js.UndefOr[Boolean | CompareFn[T]] = js.undefined
-  var title: js.UndefOr[Node | (js.Function1[/* options */ Anon_FiltersSortColumn[T], Node])] = js.undefined
+  var title: js.UndefOr[Node | (js.Function1[/* options */ Anon_Filters[T], Node])] = js.undefined
   var width: js.UndefOr[String | Double] = js.undefined
 }
 
@@ -69,7 +69,7 @@ object ColumnProps {
     sortDirections: js.Array[SortOrder] = null,
     sortOrder: SortOrder | Boolean = null,
     sorter: Boolean | CompareFn[T] = null,
-    title: Node | (js.Function1[/* options */ Anon_FiltersSortColumn[T], Node]) = null,
+    title: Node | (js.Function1[/* options */ Anon_Filters[T], Node]) = null,
     width: String | Double = null
   ): ColumnProps[T] = {
     val __obj = js.Dynamic.literal()

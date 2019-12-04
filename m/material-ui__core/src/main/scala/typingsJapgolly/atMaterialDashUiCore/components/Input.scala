@@ -494,8 +494,12 @@ object Input {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.atMaterialDashUiCore.inputInputMod.InputProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.atMaterialDashUiCore.inputMod.default](js.constructorOf[typingsJapgolly.atMaterialDashUiCore.inputMod.default])
+  typingsJapgolly.atMaterialDashUiCore.inputMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.atMaterialDashUiCore.inputInputMod.InputProps])(children: _*)
   }
+  @JSImport("@material-ui/core/Input", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

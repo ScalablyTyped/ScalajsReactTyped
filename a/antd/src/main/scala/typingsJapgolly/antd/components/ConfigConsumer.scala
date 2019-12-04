@@ -3,7 +3,7 @@ package typingsJapgolly.antd.components
 import japgolly.scalajs.react.Key
 import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
 import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.antd.esConfigDashProviderContextMod.ConfigConsumerProps
+import typingsJapgolly.antd.libConfigDashProviderContextMod.ConfigConsumerProps
 import typingsJapgolly.atAntDashDesignCreateDashReactDashContext.atAntDashDesignCreateDashReactDashContextMod.ConsumerProps
 import typingsJapgolly.atAntDashDesignCreateDashReactDashContext.atAntDashDesignCreateDashReactDashContextMod.RenderFn
 import scala.scalajs.js
@@ -19,7 +19,7 @@ object ConfigConsumer {
     children: RenderFn[ConfigConsumerProps] | js.Array[RenderFn[ConfigConsumerProps]]
   ): UnmountedWithRoot[
     ConsumerProps[ConfigConsumerProps], 
-    typingsJapgolly.antd.esConfigDashProviderMod.ConfigConsumer, 
+    typingsJapgolly.antd.libConfigDashProviderMod.ConfigConsumer, 
     Unit, 
     ConsumerProps[ConfigConsumerProps]
   ] = {
@@ -30,10 +30,14 @@ object ConfigConsumer {
     if (overrides != null) js.Dynamic.global.Object.assign(__obj, overrides)
   
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.atAntDashDesignCreateDashReactDashContext.atAntDashDesignCreateDashReactDashContextMod.ConsumerProps[typingsJapgolly.antd.esConfigDashProviderContextMod.ConfigConsumerProps], 
+  typingsJapgolly.atAntDashDesignCreateDashReactDashContext.atAntDashDesignCreateDashReactDashContextMod.ConsumerProps[typingsJapgolly.antd.libConfigDashProviderContextMod.ConfigConsumerProps], 
   japgolly.scalajs.react.Children.None, 
-  typingsJapgolly.antd.esConfigDashProviderMod.ConfigConsumer](js.constructorOf[typingsJapgolly.antd.esConfigDashProviderMod.ConfigConsumer])
-    f(__obj.asInstanceOf[typingsJapgolly.atAntDashDesignCreateDashReactDashContext.atAntDashDesignCreateDashReactDashContextMod.ConsumerProps[typingsJapgolly.antd.esConfigDashProviderContextMod.ConfigConsumerProps]])
+  typingsJapgolly.antd.libConfigDashProviderMod.ConfigConsumer](this.componentImport)
+    f(__obj.asInstanceOf[typingsJapgolly.atAntDashDesignCreateDashReactDashContext.atAntDashDesignCreateDashReactDashContextMod.ConsumerProps[typingsJapgolly.antd.libConfigDashProviderContextMod.ConfigConsumerProps]])
   }
+  @JSImport("antd/lib/config-provider", "ConfigConsumer")
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

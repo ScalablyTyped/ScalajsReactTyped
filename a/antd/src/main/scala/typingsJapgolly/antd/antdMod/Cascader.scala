@@ -1,7 +1,7 @@
 package typingsJapgolly.antd.antdMod
 
 import typingsJapgolly.antd.Anon_AllowClear
-import typingsJapgolly.antd.PartialCascaderStateFlattenOptions
+import typingsJapgolly.antd.PartialCascaderState
 import typingsJapgolly.antd.libCascaderMod.CascaderProps
 import typingsJapgolly.antd.libCascaderMod.CascaderState
 import typingsJapgolly.antd.libCascaderMod.default
@@ -20,6 +20,6 @@ class Cascader protected () extends default {
 @js.native
 object Cascader extends js.Object {
   var defaultProps: Anon_AllowClear = js.native
-  def getDerivedStateFromProps(nextProps: CascaderProps, hasPrevProps: CascaderState): PartialCascaderStateFlattenOptions = js.native
+  def getDerivedStateFromProps(nextProps: CascaderProps, hasPrevProps: CascaderState): PartialCascaderState = js.native
 }
 

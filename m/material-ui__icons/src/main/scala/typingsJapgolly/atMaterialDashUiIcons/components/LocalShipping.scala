@@ -1,11 +1,14 @@
 package typingsJapgolly.atMaterialDashUiIcons.components
 
+import typingsJapgolly.atMaterialDashUiIcons.localShippingMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object LocalShipping
-  extends SharedApply_SvgIconProps1591622337[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.LocalShipping] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.LocalShipping]
+object LocalShipping extends SharedApply_SvgIconProps1591622337[default] {
+  @JSImport("@material-ui/icons/LocalShipping", "default")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

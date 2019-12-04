@@ -1,11 +1,14 @@
 package typingsJapgolly.atMaterialDashUiIcons.components
 
+import typingsJapgolly.atMaterialDashUiIcons.alternateEmailMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object AlternateEmail
-  extends SharedApply_SvgIconProps1591622337[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.AlternateEmail] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.AlternateEmail]
+object AlternateEmail extends SharedApply_SvgIconProps1591622337[default] {
+  @JSImport("@material-ui/icons/AlternateEmail", "default")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

@@ -40,8 +40,12 @@ object TableFooter {
     val f = japgolly.scalajs.react.JsComponent[
   typingsJapgolly.semanticDashUiDashReact.distCommonjsCollectionsTableTableFooterMod.TableFooterProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  js.Object](typingsJapgolly.semanticDashUiDashReact.distCommonjsCollectionsTableTableFooterMod.default)
+  js.Object](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.semanticDashUiDashReact.distCommonjsCollectionsTableTableFooterMod.TableFooterProps])(children: _*)
   }
+  @JSImport("semantic-ui-react/dist/commonjs/collections/Table/TableFooter", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

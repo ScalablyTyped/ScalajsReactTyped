@@ -5,10 +5,10 @@ import japgolly.scalajs.react.CtorType.ChildArg
 import japgolly.scalajs.react.Key
 import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
 import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.antd.esButtonButtonMod.ButtonType
-import typingsJapgolly.antd.esButtonButtonMod.NativeButtonProps
-import typingsJapgolly.antd.esModalActionButtonMod.ActionButtonProps
-import typingsJapgolly.antd.esModalActionButtonMod.default
+import typingsJapgolly.antd.libButtonButtonMod.ButtonType
+import typingsJapgolly.antd.libButtonButtonMod.NativeButtonProps
+import typingsJapgolly.antd.libModalActionButtonMod.ActionButtonProps
+import typingsJapgolly.antd.libModalActionButtonMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation._
 object ActionButton {
   def apply(
     closeModal: js.Function,
-    actionFn: /* repeated */ js.Any => CallbackTo[_ | js.Thenable[_]] = null,
+    actionFn: /* repeated */ js.Any => CallbackTo[js.Any | js.Thenable[js.Any]] = null,
     autoFocus: js.UndefOr[Boolean] = js.undefined,
     buttonProps: NativeButtonProps = null,
     `type`: ButtonType = null,
@@ -35,10 +35,14 @@ object ActionButton {
     if (overrides != null) js.Dynamic.global.Object.assign(__obj, overrides)
   
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antd.esModalActionButtonMod.ActionButtonProps, 
+  typingsJapgolly.antd.libModalActionButtonMod.ActionButtonProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antd.esModalActionButtonMod.default](js.constructorOf[typingsJapgolly.antd.esModalActionButtonMod.default])
-    f(__obj.asInstanceOf[typingsJapgolly.antd.esModalActionButtonMod.ActionButtonProps])(children: _*)
+  typingsJapgolly.antd.libModalActionButtonMod.default](this.componentImport)
+    f(__obj.asInstanceOf[typingsJapgolly.antd.libModalActionButtonMod.ActionButtonProps])(children: _*)
   }
+  @JSImport("antd/lib/modal/ActionButton", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

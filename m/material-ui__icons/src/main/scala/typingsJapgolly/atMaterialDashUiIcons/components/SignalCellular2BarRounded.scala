@@ -1,13 +1,14 @@
 package typingsJapgolly.atMaterialDashUiIcons.components
 
+import typingsJapgolly.atMaterialDashUiIcons.signalCellular2BarRoundedMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object SignalCellular2BarRounded
-  extends SharedApply_SvgIconProps1591622337[
-      typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.SignalCellular2BarRounded
-    ] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.SignalCellular2BarRounded]
+object SignalCellular2BarRounded extends SharedApply_SvgIconProps1591622337[default] {
+  @JSImport("@material-ui/icons/SignalCellular2BarRounded", "default")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

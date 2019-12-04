@@ -534,8 +534,12 @@ object Popover {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.atMaterialDashUiCore.popoverPopoverMod.PopoverProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.atMaterialDashUiCore.popoverMod.default](js.constructorOf[typingsJapgolly.atMaterialDashUiCore.popoverMod.default])
+  typingsJapgolly.atMaterialDashUiCore.popoverMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.atMaterialDashUiCore.popoverPopoverMod.PopoverProps])(children: _*)
   }
+  @JSImport("@material-ui/core/Popover", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

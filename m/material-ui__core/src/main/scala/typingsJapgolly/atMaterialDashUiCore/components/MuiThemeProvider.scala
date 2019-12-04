@@ -34,8 +34,12 @@ object MuiThemeProvider {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.atMaterialDashUiCore.stylesMuiThemeProviderMod.MuiThemeProviderProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.atMaterialDashUiCore.stylesMuiThemeProviderMod.default](js.constructorOf[typingsJapgolly.atMaterialDashUiCore.stylesMuiThemeProviderMod.default])
+  typingsJapgolly.atMaterialDashUiCore.stylesMuiThemeProviderMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.atMaterialDashUiCore.stylesMuiThemeProviderMod.MuiThemeProviderProps])(children: _*)
   }
+  @JSImport("@material-ui/core/styles/MuiThemeProvider", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

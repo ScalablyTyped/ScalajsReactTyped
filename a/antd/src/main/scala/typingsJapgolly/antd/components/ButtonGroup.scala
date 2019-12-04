@@ -4,7 +4,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object ButtonGroup extends SharedApply_ButtonGroupProps608446030 {
-  override val __component: js.Any = typingsJapgolly.antd.esMod.Button.Group
+object ButtonGroup extends SharedApply_ButtonGroupProps_271667659 {
+  @JSImport("antd", "Button.Group")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

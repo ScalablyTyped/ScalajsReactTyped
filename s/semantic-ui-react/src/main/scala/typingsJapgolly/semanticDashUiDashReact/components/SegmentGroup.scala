@@ -51,8 +51,12 @@ object SegmentGroup {
     val f = japgolly.scalajs.react.JsComponent[
   typingsJapgolly.semanticDashUiDashReact.distCommonjsElementsSegmentSegmentGroupMod.SegmentGroupProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  js.Object](typingsJapgolly.semanticDashUiDashReact.distCommonjsElementsSegmentSegmentGroupMod.default)
+  js.Object](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.semanticDashUiDashReact.distCommonjsElementsSegmentSegmentGroupMod.SegmentGroupProps])(children: _*)
   }
+  @JSImport("semantic-ui-react/dist/commonjs/elements/Segment/SegmentGroup", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

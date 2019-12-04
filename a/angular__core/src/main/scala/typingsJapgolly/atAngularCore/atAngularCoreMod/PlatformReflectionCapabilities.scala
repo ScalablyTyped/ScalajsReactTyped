@@ -35,7 +35,7 @@ trait PlatformReflectionCapabilities extends js.Object {
 object PlatformReflectionCapabilities {
   @scala.inline
   def apply(
-    annotations: Type[js.Any] => CallbackTo[js.Array[_]],
+    annotations: Type[js.Any] => CallbackTo[js.Array[js.Any]],
     factory: Type[js.Any] => CallbackTo[js.Function],
     getter: String => CallbackTo[ɵGetterFn],
     guards: js.Any => CallbackTo[StringDictionary[js.Any]],
@@ -43,8 +43,8 @@ object PlatformReflectionCapabilities {
     importUri: Type[js.Any] => CallbackTo[String],
     isReflectionEnabled: CallbackTo[Boolean],
     method: String => CallbackTo[ɵMethodFn],
-    parameters: Type[js.Any] => CallbackTo[js.Array[js.Array[_]]],
-    propMetadata: Type[js.Any] => CallbackTo[StringDictionary[js.Array[_]]],
+    parameters: Type[js.Any] => CallbackTo[js.Array[js.Array[js.Any]]],
+    propMetadata: Type[js.Any] => CallbackTo[StringDictionary[js.Array[js.Any]]],
     resolveEnum: (js.Any, String) => CallbackTo[js.Any],
     resolveIdentifier: (String, String, js.Array[String], js.Any) => CallbackTo[js.Any],
     resourceUri: Type[js.Any] => CallbackTo[String],

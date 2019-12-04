@@ -46,8 +46,12 @@ object RatingIcon {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.semanticDashUiDashReact.distCommonjsModulesRatingRatingIconMod.RatingIconProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.semanticDashUiDashReact.distCommonjsModulesRatingRatingIconMod.default](js.constructorOf[typingsJapgolly.semanticDashUiDashReact.distCommonjsModulesRatingRatingIconMod.default])
+  typingsJapgolly.semanticDashUiDashReact.distCommonjsModulesRatingRatingIconMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.semanticDashUiDashReact.distCommonjsModulesRatingRatingIconMod.RatingIconProps])(children: _*)
   }
+  @JSImport("semantic-ui-react/dist/commonjs/modules/Rating/RatingIcon", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

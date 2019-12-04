@@ -6,6 +6,9 @@ import scala.scalajs.js.annotation._
 
 object NotificationVibration
   extends SharedApply_SvgIconProps1538262166[typingsJapgolly.materialDashUi.svgDashIconsMod.NotificationVibration] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.materialDashUi.svgDashIconsMod.NotificationVibration]
+  @JSImport("material-ui/svg-icons", "NotificationVibration")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

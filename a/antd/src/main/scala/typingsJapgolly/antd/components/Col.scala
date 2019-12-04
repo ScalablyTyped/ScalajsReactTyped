@@ -19,10 +19,10 @@ import japgolly.scalajs.react.ReactWheelEventFrom
 import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
 import org.scalablytyped.runtime.StringDictionary
 import org.scalajs.dom.raw.HTMLDivElement
-import typingsJapgolly.antd.esColMod.default
-import typingsJapgolly.antd.esGridColMod.ColProps
-import typingsJapgolly.antd.esGridColMod.ColSize
-import typingsJapgolly.antd.esGridColMod.ColSpanType
+import typingsJapgolly.antd.libColMod.default
+import typingsJapgolly.antd.libGridColMod.ColProps
+import typingsJapgolly.antd.libGridColMod.ColSize
+import typingsJapgolly.antd.libGridColMod.ColSpanType
 import typingsJapgolly.react.Anon_Html
 import typingsJapgolly.react.reactMod.CSSProperties
 import typingsJapgolly.react.reactStrings.`additions text`
@@ -454,10 +454,14 @@ object Col {
     if (overrides != null) js.Dynamic.global.Object.assign(__obj, overrides)
   
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antd.esGridColMod.ColProps, 
+  typingsJapgolly.antd.libGridColMod.ColProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antd.esColMod.default](js.constructorOf[typingsJapgolly.antd.esColMod.default])
-    f(__obj.asInstanceOf[typingsJapgolly.antd.esGridColMod.ColProps])(children: _*)
+  typingsJapgolly.antd.libColMod.default](this.componentImport)
+    f(__obj.asInstanceOf[typingsJapgolly.antd.libGridColMod.ColProps])(children: _*)
   }
+  @JSImport("antd/lib/col", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

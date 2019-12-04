@@ -1,13 +1,14 @@
 package typingsJapgolly.atMaterialDashUiIcons.components
 
+import typingsJapgolly.atMaterialDashUiIcons.formatIndentIncreaseMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object FormatIndentIncrease
-  extends SharedApply_SvgIconProps1591622337[
-      typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.FormatIndentIncrease
-    ] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.FormatIndentIncrease]
+object FormatIndentIncrease extends SharedApply_SvgIconProps1591622337[default] {
+  @JSImport("@material-ui/icons/FormatIndentIncrease", "default")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

@@ -148,8 +148,12 @@ object Calendar {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.reactDashBigDashCalendar.reactDashBigDashCalendarMod.CalendarProps[TEvent, TResource], 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactDashBigDashCalendar.reactDashBigDashCalendarMod.Calendar[TEvent, TResource]](js.constructorOf[typingsJapgolly.reactDashBigDashCalendar.reactDashBigDashCalendarMod.Calendar[TEvent, TResource]])
+  typingsJapgolly.reactDashBigDashCalendar.reactDashBigDashCalendarMod.Calendar[TEvent, TResource]](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.reactDashBigDashCalendar.reactDashBigDashCalendarMod.CalendarProps[TEvent, TResource]])(children: _*)
   }
+  @JSImport("react-big-calendar", "Calendar")
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

@@ -1,11 +1,14 @@
 package typingsJapgolly.atMaterialDashUiIcons.components
 
+import typingsJapgolly.atMaterialDashUiIcons.chatBubbleMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object ChatBubble
-  extends SharedApply_SvgIconProps1591622337[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.ChatBubble] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.ChatBubble]
+object ChatBubble extends SharedApply_SvgIconProps1591622337[default] {
+  @JSImport("@material-ui/icons/ChatBubble", "default")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

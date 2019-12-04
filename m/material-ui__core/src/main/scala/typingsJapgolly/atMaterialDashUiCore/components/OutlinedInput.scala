@@ -495,8 +495,12 @@ object OutlinedInput {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.atMaterialDashUiCore.outlinedInputOutlinedInputMod.OutlinedInputProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.atMaterialDashUiCore.outlinedInputMod.default](js.constructorOf[typingsJapgolly.atMaterialDashUiCore.outlinedInputMod.default])
+  typingsJapgolly.atMaterialDashUiCore.outlinedInputMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.atMaterialDashUiCore.outlinedInputOutlinedInputMod.OutlinedInputProps])(children: _*)
   }
+  @JSImport("@material-ui/core/OutlinedInput", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

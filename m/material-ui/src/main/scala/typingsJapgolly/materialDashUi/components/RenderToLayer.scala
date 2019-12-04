@@ -31,8 +31,12 @@ object RenderToLayer {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.materialDashUi.internalRenderToLayerMod.RenderToLayerProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.materialDashUi.internalRenderToLayerMod.default](js.constructorOf[typingsJapgolly.materialDashUi.internalRenderToLayerMod.default])
+  typingsJapgolly.materialDashUi.internalRenderToLayerMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.materialDashUi.internalRenderToLayerMod.RenderToLayerProps])(children: _*)
   }
+  @JSImport("material-ui/internal/RenderToLayer", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

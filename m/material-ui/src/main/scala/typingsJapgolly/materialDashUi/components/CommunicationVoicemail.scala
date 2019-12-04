@@ -6,6 +6,9 @@ import scala.scalajs.js.annotation._
 
 object CommunicationVoicemail
   extends SharedApply_SvgIconProps1538262166[typingsJapgolly.materialDashUi.svgDashIconsMod.CommunicationVoicemail] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.materialDashUi.svgDashIconsMod.CommunicationVoicemail]
+  @JSImport("material-ui/svg-icons", "CommunicationVoicemail")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

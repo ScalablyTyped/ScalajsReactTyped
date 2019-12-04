@@ -7,8 +7,8 @@ import japgolly.scalajs.react.component.Js.RawMounted
 import japgolly.scalajs.react.component.Js.UnmountedSimple
 import japgolly.scalajs.react.vdom.VdomNode
 import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.antd.esResultMod.ResultProps
-import typingsJapgolly.antd.esResultMod.ResultStatusType
+import typingsJapgolly.antd.libResultMod.ResultProps
+import typingsJapgolly.antd.libResultMod.ResultStatusType
 import typingsJapgolly.react.reactMod.CSSProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -46,10 +46,14 @@ object Result {
     if (overrides != null) js.Dynamic.global.Object.assign(__obj, overrides)
   
     val f = japgolly.scalajs.react.JsComponent[
-  typingsJapgolly.antd.esResultMod.ResultProps, 
+  typingsJapgolly.antd.libResultMod.ResultProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  js.Object](typingsJapgolly.antd.esResultMod.default)
-    f(__obj.asInstanceOf[typingsJapgolly.antd.esResultMod.ResultProps])(children: _*)
+  js.Object](this.componentImport)
+    f(__obj.asInstanceOf[typingsJapgolly.antd.libResultMod.ResultProps])(children: _*)
   }
+  @JSImport("antd/lib/result", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

@@ -26,8 +26,12 @@ object AutoLockScrolling {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.materialDashUi.internalAutoLockScrollingMod.AutoLockScrollingProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.materialDashUi.internalAutoLockScrollingMod.default](js.constructorOf[typingsJapgolly.materialDashUi.internalAutoLockScrollingMod.default])
+  typingsJapgolly.materialDashUi.internalAutoLockScrollingMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.materialDashUi.internalAutoLockScrollingMod.AutoLockScrollingProps])(children: _*)
   }
+  @JSImport("material-ui/internal/AutoLockScrolling", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

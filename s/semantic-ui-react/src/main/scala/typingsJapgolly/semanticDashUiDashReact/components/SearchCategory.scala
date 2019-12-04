@@ -50,8 +50,12 @@ object SearchCategory {
     val f = japgolly.scalajs.react.JsComponent[
   typingsJapgolly.semanticDashUiDashReact.distCommonjsModulesSearchSearchCategoryMod.SearchCategoryProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  js.Object](typingsJapgolly.semanticDashUiDashReact.distCommonjsModulesSearchSearchCategoryMod.default)
+  js.Object](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.semanticDashUiDashReact.distCommonjsModulesSearchSearchCategoryMod.SearchCategoryProps])(children: _*)
   }
+  @JSImport("semantic-ui-react/dist/commonjs/modules/Search/SearchCategory", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

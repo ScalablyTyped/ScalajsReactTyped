@@ -1,6 +1,5 @@
 package typingsJapgolly.atAngularCore.atAngularCoreMod
 
-import typingsJapgolly.atAngularCore.TsickleIssue1009
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

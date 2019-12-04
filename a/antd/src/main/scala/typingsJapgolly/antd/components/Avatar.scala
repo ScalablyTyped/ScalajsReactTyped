@@ -4,13 +4,14 @@ import japgolly.scalajs.react.CallbackTo
 import japgolly.scalajs.react.CtorType.ChildArg
 import japgolly.scalajs.react.Key
 import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
+import japgolly.scalajs.react.raw.React.Node
 import org.scalablytyped.runtime.StringDictionary
 import typingsJapgolly.antd.antdStrings.circle
 import typingsJapgolly.antd.antdStrings.default
 import typingsJapgolly.antd.antdStrings.large
 import typingsJapgolly.antd.antdStrings.small
 import typingsJapgolly.antd.antdStrings.square
-import typingsJapgolly.antd.esAvatarMod.AvatarProps
+import typingsJapgolly.antd.libAvatarMod.AvatarProps
 import typingsJapgolly.react.reactMod.CSSProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -20,7 +21,7 @@ object Avatar {
   def apply(
     alt: String = null,
     className: String = null,
-    icon: String = null,
+    icon: String | Node = null,
     onError: js.UndefOr[CallbackTo[Boolean]] = js.undefined,
     prefixCls: String = null,
     shape: circle | square = null,
@@ -32,7 +33,7 @@ object Avatar {
     overrides: StringDictionary[js.Any] = null
   )(
     children: ChildArg*
-  ): UnmountedWithRoot[AvatarProps, typingsJapgolly.antd.esAvatarMod.default, Unit, AvatarProps] = {
+  ): UnmountedWithRoot[AvatarProps, typingsJapgolly.antd.libAvatarMod.default, Unit, AvatarProps] = {
     val __obj = js.Dynamic.literal()
   
       if (alt != null) __obj.updateDynamic("alt")(alt.asInstanceOf[js.Any])
@@ -49,10 +50,14 @@ object Avatar {
     if (overrides != null) js.Dynamic.global.Object.assign(__obj, overrides)
   
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antd.esAvatarMod.AvatarProps, 
+  typingsJapgolly.antd.libAvatarMod.AvatarProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antd.esAvatarMod.default](js.constructorOf[typingsJapgolly.antd.esAvatarMod.default])
-    f(__obj.asInstanceOf[typingsJapgolly.antd.esAvatarMod.AvatarProps])(children: _*)
+  typingsJapgolly.antd.libAvatarMod.default](this.componentImport)
+    f(__obj.asInstanceOf[typingsJapgolly.antd.libAvatarMod.AvatarProps])(children: _*)
   }
+  @JSImport("antd/lib/avatar", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

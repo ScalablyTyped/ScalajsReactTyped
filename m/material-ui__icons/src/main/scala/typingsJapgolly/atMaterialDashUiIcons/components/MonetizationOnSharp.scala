@@ -1,13 +1,14 @@
 package typingsJapgolly.atMaterialDashUiIcons.components
 
+import typingsJapgolly.atMaterialDashUiIcons.monetizationOnSharpMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object MonetizationOnSharp
-  extends SharedApply_SvgIconProps1591622337[
-      typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.MonetizationOnSharp
-    ] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.MonetizationOnSharp]
+object MonetizationOnSharp extends SharedApply_SvgIconProps1591622337[default] {
+  @JSImport("@material-ui/icons/MonetizationOnSharp", "default")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

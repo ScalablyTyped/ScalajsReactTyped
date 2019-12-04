@@ -1,13 +1,14 @@
 package typingsJapgolly.atMaterialDashUiIcons.components
 
+import typingsJapgolly.atMaterialDashUiIcons.restoreFromTrashRoundedMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object RestoreFromTrashRounded
-  extends SharedApply_SvgIconProps1591622337[
-      typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.RestoreFromTrashRounded
-    ] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.RestoreFromTrashRounded]
+object RestoreFromTrashRounded extends SharedApply_SvgIconProps1591622337[default] {
+  @JSImport("@material-ui/icons/RestoreFromTrashRounded", "default")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

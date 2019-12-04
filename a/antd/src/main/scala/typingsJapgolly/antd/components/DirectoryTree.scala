@@ -11,20 +11,20 @@ import japgolly.scalajs.react.raw.React.Node
 import japgolly.scalajs.react.vdom.VdomElement
 import org.scalablytyped.runtime.StringDictionary
 import org.scalajs.dom.raw.HTMLElement
-import typingsJapgolly.antd.Anon_Checked
+import typingsJapgolly.antd.Anon_CheckedHalfChecked
 import typingsJapgolly.antd.Anon_Event
-import typingsJapgolly.antd.esTreeDirectoryTreeMod.DirectoryTreeProps
-import typingsJapgolly.antd.esTreeDirectoryTreeMod.ExpandAction
-import typingsJapgolly.antd.esTreeDirectoryTreeMod.default
-import typingsJapgolly.antd.esTreeTreeMod.AntTreeNodeCheckedEvent
-import typingsJapgolly.antd.esTreeTreeMod.AntTreeNodeDragEnterEvent
-import typingsJapgolly.antd.esTreeTreeMod.AntTreeNodeDropEvent
-import typingsJapgolly.antd.esTreeTreeMod.AntTreeNodeExpandedEvent
-import typingsJapgolly.antd.esTreeTreeMod.AntTreeNodeMouseEvent
-import typingsJapgolly.antd.esTreeTreeMod.AntTreeNodeProps
-import typingsJapgolly.antd.esTreeTreeMod.AntTreeNodeSelectedEvent
-import typingsJapgolly.antd.esTreeTreeMod.AntdTreeNodeAttribute
-import typingsJapgolly.antd.esTreeTreeMod.TreeNodeNormal
+import typingsJapgolly.antd.libTreeDirectoryTreeMod.DirectoryTreeProps
+import typingsJapgolly.antd.libTreeDirectoryTreeMod.ExpandAction
+import typingsJapgolly.antd.libTreeDirectoryTreeMod.default
+import typingsJapgolly.antd.libTreeTreeMod.AntTreeNodeCheckedEvent
+import typingsJapgolly.antd.libTreeTreeMod.AntTreeNodeDragEnterEvent
+import typingsJapgolly.antd.libTreeTreeMod.AntTreeNodeDropEvent
+import typingsJapgolly.antd.libTreeTreeMod.AntTreeNodeExpandedEvent
+import typingsJapgolly.antd.libTreeTreeMod.AntTreeNodeMouseEvent
+import typingsJapgolly.antd.libTreeTreeMod.AntTreeNodeProps
+import typingsJapgolly.antd.libTreeTreeMod.AntTreeNodeSelectedEvent
+import typingsJapgolly.antd.libTreeTreeMod.AntdTreeNodeAttribute
+import typingsJapgolly.antd.libTreeTreeMod.TreeNodeNormal
 import typingsJapgolly.react.reactMod.CSSProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -36,7 +36,7 @@ object DirectoryTree {
     blockNode: js.UndefOr[Boolean] = js.undefined,
     checkStrictly: js.UndefOr[Boolean] = js.undefined,
     checkable: js.UndefOr[Boolean] = js.undefined,
-    checkedKeys: js.Array[String] | Anon_Checked = null,
+    checkedKeys: js.Array[String] | Anon_CheckedHalfChecked = null,
     className: String = null,
     defaultCheckedKeys: js.Array[String] = null,
     defaultExpandAll: js.UndefOr[Boolean] = js.undefined,
@@ -53,7 +53,7 @@ object DirectoryTree {
     loadData: Component[AntTreeNodeProps with js.Object, js.Object] => CallbackTo[js.Thenable[Unit]] = null,
     loadedKeys: js.Array[String] = null,
     multiple: js.UndefOr[Boolean] = js.undefined,
-    onCheck: (/* checkedKeys */ js.Array[String] | Anon_Checked, /* e */ AntTreeNodeCheckedEvent) => Callback = null,
+    onCheck: (/* checkedKeys */ js.Array[String] | Anon_CheckedHalfChecked, /* e */ AntTreeNodeCheckedEvent) => Callback = null,
     onClick: (/* e */ ReactMouseEventFrom[HTMLElement], Component[AntTreeNodeProps with js.Object, js.Object]) => Callback = null,
     onDoubleClick: (/* e */ ReactMouseEventFrom[HTMLElement], Component[AntTreeNodeProps with js.Object, js.Object]) => Callback = null,
     onDragEnd: /* options */ AntTreeNodeMouseEvent => Callback = null,
@@ -98,27 +98,27 @@ object DirectoryTree {
     if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable.asInstanceOf[js.Any])
     if (expandAction != null) __obj.updateDynamic("expandAction")(expandAction.asInstanceOf[js.Any])
     if (expandedKeys != null) __obj.updateDynamic("expandedKeys")(expandedKeys.asInstanceOf[js.Any])
-    if (filterAntTreeNode != null) __obj.updateDynamic("filterAntTreeNode")(js.Any.fromFunction1((t0: japgolly.scalajs.react.raw.React.Component[typingsJapgolly.antd.esTreeTreeMod.AntTreeNodeProps with js.Object, js.Object]) => filterAntTreeNode(t0).runNow()))
-    if (filterTreeNode != null) __obj.updateDynamic("filterTreeNode")(js.Any.fromFunction1((t0: japgolly.scalajs.react.raw.React.Component[typingsJapgolly.antd.esTreeTreeMod.AntTreeNodeProps with js.Object, js.Object]) => filterTreeNode(t0).runNow()))
+    if (filterAntTreeNode != null) __obj.updateDynamic("filterAntTreeNode")(js.Any.fromFunction1((t0: japgolly.scalajs.react.raw.React.Component[typingsJapgolly.antd.libTreeTreeMod.AntTreeNodeProps with js.Object, js.Object]) => filterAntTreeNode(t0).runNow()))
+    if (filterTreeNode != null) __obj.updateDynamic("filterTreeNode")(js.Any.fromFunction1((t0: japgolly.scalajs.react.raw.React.Component[typingsJapgolly.antd.libTreeTreeMod.AntTreeNodeProps with js.Object, js.Object]) => filterTreeNode(t0).runNow()))
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    if (loadData != null) __obj.updateDynamic("loadData")(js.Any.fromFunction1((t0: japgolly.scalajs.react.raw.React.Component[typingsJapgolly.antd.esTreeTreeMod.AntTreeNodeProps with js.Object, js.Object]) => loadData(t0).runNow()))
+    if (loadData != null) __obj.updateDynamic("loadData")(js.Any.fromFunction1((t0: japgolly.scalajs.react.raw.React.Component[typingsJapgolly.antd.libTreeTreeMod.AntTreeNodeProps with js.Object, js.Object]) => loadData(t0).runNow()))
     if (loadedKeys != null) __obj.updateDynamic("loadedKeys")(loadedKeys.asInstanceOf[js.Any])
     if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple.asInstanceOf[js.Any])
-    if (onCheck != null) __obj.updateDynamic("onCheck")(js.Any.fromFunction2((t0: /* checkedKeys */ js.Array[java.lang.String] | typingsJapgolly.antd.Anon_Checked, t1: /* e */ typingsJapgolly.antd.esTreeTreeMod.AntTreeNodeCheckedEvent) => onCheck(t0, t1).runNow()))
-    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction2((t0: /* e */ japgolly.scalajs.react.ReactMouseEventFrom[org.scalajs.dom.raw.HTMLElement], t1: japgolly.scalajs.react.raw.React.Component[typingsJapgolly.antd.esTreeTreeMod.AntTreeNodeProps with js.Object, js.Object]) => onClick(t0, t1).runNow()))
-    if (onDoubleClick != null) __obj.updateDynamic("onDoubleClick")(js.Any.fromFunction2((t0: /* e */ japgolly.scalajs.react.ReactMouseEventFrom[org.scalajs.dom.raw.HTMLElement], t1: japgolly.scalajs.react.raw.React.Component[typingsJapgolly.antd.esTreeTreeMod.AntTreeNodeProps with js.Object, js.Object]) => onDoubleClick(t0, t1).runNow()))
-    if (onDragEnd != null) __obj.updateDynamic("onDragEnd")(js.Any.fromFunction1((t0: /* options */ typingsJapgolly.antd.esTreeTreeMod.AntTreeNodeMouseEvent) => onDragEnd(t0).runNow()))
-    if (onDragEnter != null) __obj.updateDynamic("onDragEnter")(js.Any.fromFunction1((t0: /* options */ typingsJapgolly.antd.esTreeTreeMod.AntTreeNodeDragEnterEvent) => onDragEnter(t0).runNow()))
-    if (onDragLeave != null) __obj.updateDynamic("onDragLeave")(js.Any.fromFunction1((t0: /* options */ typingsJapgolly.antd.esTreeTreeMod.AntTreeNodeMouseEvent) => onDragLeave(t0).runNow()))
-    if (onDragOver != null) __obj.updateDynamic("onDragOver")(js.Any.fromFunction1((t0: /* options */ typingsJapgolly.antd.esTreeTreeMod.AntTreeNodeMouseEvent) => onDragOver(t0).runNow()))
-    if (onDragStart != null) __obj.updateDynamic("onDragStart")(js.Any.fromFunction1((t0: /* options */ typingsJapgolly.antd.esTreeTreeMod.AntTreeNodeMouseEvent) => onDragStart(t0).runNow()))
-    if (onDrop != null) __obj.updateDynamic("onDrop")(js.Any.fromFunction1((t0: /* options */ typingsJapgolly.antd.esTreeTreeMod.AntTreeNodeDropEvent) => onDrop(t0).runNow()))
-    if (onExpand != null) __obj.updateDynamic("onExpand")(js.Any.fromFunction2((t0: /* expandedKeys */ js.Array[java.lang.String], t1: /* info */ typingsJapgolly.antd.esTreeTreeMod.AntTreeNodeExpandedEvent) => onExpand(t0, t1).runNow()))
+    if (onCheck != null) __obj.updateDynamic("onCheck")(js.Any.fromFunction2((t0: /* checkedKeys */ js.Array[java.lang.String] | typingsJapgolly.antd.Anon_CheckedHalfChecked, t1: /* e */ typingsJapgolly.antd.libTreeTreeMod.AntTreeNodeCheckedEvent) => onCheck(t0, t1).runNow()))
+    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction2((t0: /* e */ japgolly.scalajs.react.ReactMouseEventFrom[org.scalajs.dom.raw.HTMLElement], t1: japgolly.scalajs.react.raw.React.Component[typingsJapgolly.antd.libTreeTreeMod.AntTreeNodeProps with js.Object, js.Object]) => onClick(t0, t1).runNow()))
+    if (onDoubleClick != null) __obj.updateDynamic("onDoubleClick")(js.Any.fromFunction2((t0: /* e */ japgolly.scalajs.react.ReactMouseEventFrom[org.scalajs.dom.raw.HTMLElement], t1: japgolly.scalajs.react.raw.React.Component[typingsJapgolly.antd.libTreeTreeMod.AntTreeNodeProps with js.Object, js.Object]) => onDoubleClick(t0, t1).runNow()))
+    if (onDragEnd != null) __obj.updateDynamic("onDragEnd")(js.Any.fromFunction1((t0: /* options */ typingsJapgolly.antd.libTreeTreeMod.AntTreeNodeMouseEvent) => onDragEnd(t0).runNow()))
+    if (onDragEnter != null) __obj.updateDynamic("onDragEnter")(js.Any.fromFunction1((t0: /* options */ typingsJapgolly.antd.libTreeTreeMod.AntTreeNodeDragEnterEvent) => onDragEnter(t0).runNow()))
+    if (onDragLeave != null) __obj.updateDynamic("onDragLeave")(js.Any.fromFunction1((t0: /* options */ typingsJapgolly.antd.libTreeTreeMod.AntTreeNodeMouseEvent) => onDragLeave(t0).runNow()))
+    if (onDragOver != null) __obj.updateDynamic("onDragOver")(js.Any.fromFunction1((t0: /* options */ typingsJapgolly.antd.libTreeTreeMod.AntTreeNodeMouseEvent) => onDragOver(t0).runNow()))
+    if (onDragStart != null) __obj.updateDynamic("onDragStart")(js.Any.fromFunction1((t0: /* options */ typingsJapgolly.antd.libTreeTreeMod.AntTreeNodeMouseEvent) => onDragStart(t0).runNow()))
+    if (onDrop != null) __obj.updateDynamic("onDrop")(js.Any.fromFunction1((t0: /* options */ typingsJapgolly.antd.libTreeTreeMod.AntTreeNodeDropEvent) => onDrop(t0).runNow()))
+    if (onExpand != null) __obj.updateDynamic("onExpand")(js.Any.fromFunction2((t0: /* expandedKeys */ js.Array[java.lang.String], t1: /* info */ typingsJapgolly.antd.libTreeTreeMod.AntTreeNodeExpandedEvent) => onExpand(t0, t1).runNow()))
     if (onLoad != null) __obj.updateDynamic("onLoad")(js.Any.fromFunction2((t0: /* loadedKeys */ js.Array[java.lang.String], t1: /* info */ typingsJapgolly.antd.Anon_Event) => onLoad(t0, t1).runNow()))
-    if (onMouseEnter != null) __obj.updateDynamic("onMouseEnter")(js.Any.fromFunction1((t0: /* options */ typingsJapgolly.antd.esTreeTreeMod.AntTreeNodeMouseEvent) => onMouseEnter(t0).runNow()))
-    if (onMouseLeave != null) __obj.updateDynamic("onMouseLeave")(js.Any.fromFunction1((t0: /* options */ typingsJapgolly.antd.esTreeTreeMod.AntTreeNodeMouseEvent) => onMouseLeave(t0).runNow()))
-    if (onRightClick != null) __obj.updateDynamic("onRightClick")(js.Any.fromFunction1((t0: /* options */ typingsJapgolly.antd.esTreeTreeMod.AntTreeNodeMouseEvent) => onRightClick(t0).runNow()))
-    if (onSelect != null) __obj.updateDynamic("onSelect")(js.Any.fromFunction2((t0: /* selectedKeys */ js.Array[java.lang.String], t1: /* e */ typingsJapgolly.antd.esTreeTreeMod.AntTreeNodeSelectedEvent) => onSelect(t0, t1).runNow()))
+    if (onMouseEnter != null) __obj.updateDynamic("onMouseEnter")(js.Any.fromFunction1((t0: /* options */ typingsJapgolly.antd.libTreeTreeMod.AntTreeNodeMouseEvent) => onMouseEnter(t0).runNow()))
+    if (onMouseLeave != null) __obj.updateDynamic("onMouseLeave")(js.Any.fromFunction1((t0: /* options */ typingsJapgolly.antd.libTreeTreeMod.AntTreeNodeMouseEvent) => onMouseLeave(t0).runNow()))
+    if (onRightClick != null) __obj.updateDynamic("onRightClick")(js.Any.fromFunction1((t0: /* options */ typingsJapgolly.antd.libTreeTreeMod.AntTreeNodeMouseEvent) => onRightClick(t0).runNow()))
+    if (onSelect != null) __obj.updateDynamic("onSelect")(js.Any.fromFunction2((t0: /* selectedKeys */ js.Array[java.lang.String], t1: /* e */ typingsJapgolly.antd.libTreeTreeMod.AntTreeNodeSelectedEvent) => onSelect(t0, t1).runNow()))
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
     if (!js.isUndefined(selectable)) __obj.updateDynamic("selectable")(selectable.asInstanceOf[js.Any])
     if (selectedKeys != null) __obj.updateDynamic("selectedKeys")(selectedKeys.asInstanceOf[js.Any])
@@ -131,10 +131,14 @@ object DirectoryTree {
     if (overrides != null) js.Dynamic.global.Object.assign(__obj, overrides)
   
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antd.esTreeDirectoryTreeMod.DirectoryTreeProps, 
+  typingsJapgolly.antd.libTreeDirectoryTreeMod.DirectoryTreeProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antd.esTreeDirectoryTreeMod.default](js.constructorOf[typingsJapgolly.antd.esTreeDirectoryTreeMod.default])
-    f(__obj.asInstanceOf[typingsJapgolly.antd.esTreeDirectoryTreeMod.DirectoryTreeProps])(children: _*)
+  typingsJapgolly.antd.libTreeDirectoryTreeMod.default](this.componentImport)
+    f(__obj.asInstanceOf[typingsJapgolly.antd.libTreeDirectoryTreeMod.DirectoryTreeProps])(children: _*)
   }
+  @JSImport("antd/lib/tree/DirectoryTree", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

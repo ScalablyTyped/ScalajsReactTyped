@@ -4,7 +4,6 @@ import japgolly.scalajs.react.ReactEventFrom
 import org.scalajs.dom.raw.Element
 import typingsJapgolly.reactDashNative.Anon_Animated
 import typingsJapgolly.reactDashNative.Anon_AnimatedHeight
-import typingsJapgolly.reactDashNative.NodeHandle
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

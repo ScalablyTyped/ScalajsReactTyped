@@ -40,8 +40,12 @@ object ClickAwayListener {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.atMaterialDashUiCore.clickAwayListenerClickAwayListenerMod.ClickAwayListenerProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.atMaterialDashUiCore.clickAwayListenerMod.default](js.constructorOf[typingsJapgolly.atMaterialDashUiCore.clickAwayListenerMod.default])
+  typingsJapgolly.atMaterialDashUiCore.clickAwayListenerMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.atMaterialDashUiCore.clickAwayListenerClickAwayListenerMod.ClickAwayListenerProps])(children: _*)
   }
+  @JSImport("@material-ui/core/ClickAwayListener", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

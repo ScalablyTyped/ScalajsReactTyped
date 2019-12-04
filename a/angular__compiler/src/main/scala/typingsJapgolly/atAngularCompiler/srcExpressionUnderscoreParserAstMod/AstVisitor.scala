@@ -53,8 +53,8 @@ object AstVisitor {
     visitQuote: (Quote, js.Any) => CallbackTo[js.Any],
     visitSafeMethodCall: (SafeMethodCall, js.Any) => CallbackTo[js.Any],
     visitSafePropertyRead: (SafePropertyRead, js.Any) => CallbackTo[js.Any],
-    visit: (/* ast */ AST, /* context */ js.UndefOr[js.Any]) => CallbackTo[_] = null,
-    visitASTWithSource: (/* ast */ ASTWithSource, /* context */ js.Any) => CallbackTo[_] = null
+    visit: (/* ast */ AST, /* context */ js.UndefOr[js.Any]) => CallbackTo[js.Any] = null,
+    visitASTWithSource: (/* ast */ ASTWithSource, /* context */ js.Any) => CallbackTo[js.Any] = null
   ): AstVisitor = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("visitBinary")(js.Any.fromFunction2((t0: typingsJapgolly.atAngularCompiler.srcExpressionUnderscoreParserAstMod.Binary, t1: js.Any) => visitBinary(t0, t1).runNow()))

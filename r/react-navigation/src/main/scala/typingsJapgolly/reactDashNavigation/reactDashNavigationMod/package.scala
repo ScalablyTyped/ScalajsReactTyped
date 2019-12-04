@@ -11,17 +11,16 @@ package object reactDashNavigationMod {
   import typingsJapgolly.react.reactMod.ComponentType
   import typingsJapgolly.reactDashNative.reactDashNativeMod.Text
   import typingsJapgolly.reactDashNavigation.Anon_DefaultNavigationOptions
-  import typingsJapgolly.reactDashNavigation.Anon_Descriptors
   import typingsJapgolly.reactDashNavigation.Anon_GetScreen
-  import typingsJapgolly.reactDashNavigation.Anon_JumpTo
   import typingsJapgolly.reactDashNavigation.Anon_Key
   import typingsJapgolly.reactDashNavigation.Anon_NavigationOptions
   import typingsJapgolly.reactDashNavigation.Anon_NavigationOptionsNavigationParams
-  import typingsJapgolly.reactDashNavigation.Anon_NavigationOptionsOptions
   import typingsJapgolly.reactDashNavigation.Anon_NavigationOptionsRouter
   import typingsJapgolly.reactDashNavigation.Anon_Screen
+  import typingsJapgolly.reactDashNavigation.NavigationScreenConfigPropsNavigationScreenPropTyp
   import typingsJapgolly.reactDashNavigation.TypeofClassStatusBar
   import typingsJapgolly.reactDashNavigation.TypeofClassTextInput
+  import typingsJapgolly.reactDashNavigation.descriptorskeystringNavigationDescriptorNavigation
   import typingsJapgolly.std.Exclude
   import typingsJapgolly.std.Pick
 
@@ -43,12 +42,11 @@ package object reactDashNavigationMod {
   type NavigationNavigator[Options, NavigationPropType] = (ComponentType[NavigationNavigatorProps[Options, js.Object, _]]) with (Anon_NavigationOptionsRouter[Options, NavigationPropType])
   type NavigationParams = StringDictionary[js.Any]
   type NavigationPathsConfig = StringDictionary[String]
-  type NavigationRoute[Params] = NavigationLeafRoute[Params] | NavigationStateRoute[Params]
   type NavigationRouteConfig[Options, NavigationScreenPropType] = (NavigationComponent[Options, NavigationScreenPropType]) | (((Anon_Screen[Options, NavigationScreenPropType]) | (Anon_GetScreen[Options, NavigationScreenPropType])) with (Anon_Key[Options, NavigationScreenPropType]))
   type NavigationRouteConfigMap[Options, NavigationScreenPropType] = StringDictionary[NavigationRouteConfig[Options, NavigationScreenPropType]]
   type NavigationScreenComponent[Options, NavigationScreenPropType] = ComponentType[_] with (Anon_NavigationOptions[Options, NavigationScreenPropType])
   type NavigationScreenConfig[Options, NavigationScreenPropType, ScreenProps] = Options | (js.Function1[
-    /* navigationOptionsContainer */ (NavigationScreenConfigProps[NavigationScreenPropType, ScreenProps]) with Anon_NavigationOptionsOptions[Options], 
+    /* navigationOptionsContainer */ NavigationScreenConfigPropsNavigationScreenPropTyp[NavigationScreenPropType, ScreenProps, Options], 
     Options
   ])
   type NavigationScreenOptionsGetter[Options] = js.Function3[
@@ -57,13 +55,9 @@ package object reactDashNavigationMod {
     /* theme */ SupportedThemes, 
     Options
   ]
-  type NavigationStateRoute[NavigationLeafRouteParams] = NavigationLeafRoute[NavigationLeafRouteParams] with NavigationState
   type NavigationSwitchAction = NavigationJumpToAction
-  type NavigationSwitchProp[State, Params] = (NavigationScreenProp[State, Params]) with Anon_JumpTo
   type NavigationSwitchScreenComponent[Params, ScreenProps] = (ComponentType[NavigationSwitchScreenProps[Params, ScreenProps]]) with (Anon_NavigationOptionsNavigationParams[Params, ScreenProps])
-  type NavigationView[Options, State, ScreenProps] = ComponentType[
-    (Anon_Descriptors[Options, ScreenProps]) with NavigationInjectedProps[NavigationParams]
-  ]
+  type NavigationView[Options, State, ScreenProps] = ComponentType[descriptorskeystringNavigationDescriptorNavigation[Options, ScreenProps]]
   type Omit[T, K /* <: String */] = Pick[T, Exclude[String, K]]
   // Themed components
   type ThemedStatusBarProps = ComponentProps[TypeofClassStatusBar]

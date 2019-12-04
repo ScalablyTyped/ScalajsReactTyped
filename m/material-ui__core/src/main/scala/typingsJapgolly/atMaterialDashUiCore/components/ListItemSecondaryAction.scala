@@ -37,8 +37,12 @@ object ListItemSecondaryAction {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.atMaterialDashUiCore.listItemSecondaryActionListItemSecondaryActionMod.ListItemSecondaryActionProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.atMaterialDashUiCore.listItemSecondaryActionMod.default](js.constructorOf[typingsJapgolly.atMaterialDashUiCore.listItemSecondaryActionMod.default])
+  typingsJapgolly.atMaterialDashUiCore.listItemSecondaryActionMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.atMaterialDashUiCore.listItemSecondaryActionListItemSecondaryActionMod.ListItemSecondaryActionProps])(children: _*)
   }
+  @JSImport("@material-ui/core/ListItemSecondaryAction", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

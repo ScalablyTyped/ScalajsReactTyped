@@ -1,11 +1,14 @@
 package typingsJapgolly.atMaterialDashUiIcons.components
 
+import typingsJapgolly.atMaterialDashUiIcons.moneyOffSharpMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object MoneyOffSharp
-  extends SharedApply_SvgIconProps1591622337[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.MoneyOffSharp] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.MoneyOffSharp]
+object MoneyOffSharp extends SharedApply_SvgIconProps1591622337[default] {
+  @JSImport("@material-ui/icons/MoneyOffSharp", "default")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

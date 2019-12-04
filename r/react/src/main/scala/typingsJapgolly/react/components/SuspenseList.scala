@@ -37,7 +37,7 @@ object SuspenseList {
     val f = japgolly.scalajs.react.JsComponent[
   typingsJapgolly.react.experimentalMod.reactMod.SuspenseListProps, 
   japgolly.scalajs.react.Children.None, 
-  js.Object](typingsJapgolly.react.reactMod.SuspenseList)
+  js.Object](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.react.experimentalMod.reactMod.SuspenseListProps])
   }
   def NonDirectionalSuspenseListProps(
@@ -59,8 +59,12 @@ object SuspenseList {
     val f = japgolly.scalajs.react.JsComponent[
   typingsJapgolly.react.experimentalMod.reactMod.SuspenseListProps, 
   japgolly.scalajs.react.Children.None, 
-  js.Object](typingsJapgolly.react.reactMod.SuspenseList)
+  js.Object](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.react.experimentalMod.reactMod.SuspenseListProps])
   }
+  @JSImport("react", "SuspenseList")
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

@@ -1,11 +1,14 @@
 package typingsJapgolly.atMaterialDashUiIcons.components
 
+import typingsJapgolly.atMaterialDashUiIcons.syncAltSharpMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object SyncAltSharp
-  extends SharedApply_SvgIconProps1591622337[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.SyncAltSharp] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.SyncAltSharp]
+object SyncAltSharp extends SharedApply_SvgIconProps1591622337[default] {
+  @JSImport("@material-ui/icons/SyncAltSharp", "default")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

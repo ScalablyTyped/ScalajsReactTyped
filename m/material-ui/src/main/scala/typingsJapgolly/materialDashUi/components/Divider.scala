@@ -32,8 +32,12 @@ object Divider {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.materialDashUi.__MaterialUI.DividerProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.materialDashUi.dividerMod.default](js.constructorOf[typingsJapgolly.materialDashUi.dividerMod.default])
+  typingsJapgolly.materialDashUi.dividerMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.materialDashUi.__MaterialUI.DividerProps])(children: _*)
   }
+  @JSImport("material-ui/Divider", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

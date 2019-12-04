@@ -67,8 +67,12 @@ object Slide {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.atMaterialDashUiCore.slideSlideMod.SlideProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.atMaterialDashUiCore.slideMod.default](js.constructorOf[typingsJapgolly.atMaterialDashUiCore.slideMod.default])
+  typingsJapgolly.atMaterialDashUiCore.slideMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.atMaterialDashUiCore.slideSlideMod.SlideProps])(children: _*)
   }
+  @JSImport("@material-ui/core/Slide", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

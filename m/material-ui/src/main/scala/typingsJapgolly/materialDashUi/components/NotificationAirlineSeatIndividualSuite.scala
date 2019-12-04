@@ -8,6 +8,9 @@ object NotificationAirlineSeatIndividualSuite
   extends SharedApply_SvgIconProps1538262166[
       typingsJapgolly.materialDashUi.svgDashIconsMod.NotificationAirlineSeatIndividualSuite
     ] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.materialDashUi.svgDashIconsMod.NotificationAirlineSeatIndividualSuite]
+  @JSImport("material-ui/svg-icons", "NotificationAirlineSeatIndividualSuite")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

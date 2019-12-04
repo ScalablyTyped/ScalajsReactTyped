@@ -56,8 +56,12 @@ object CardGroup {
     val f = japgolly.scalajs.react.JsComponent[
   typingsJapgolly.semanticDashUiDashReact.distCommonjsViewsCardCardGroupMod.CardGroupProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  js.Object](typingsJapgolly.semanticDashUiDashReact.distCommonjsViewsCardCardGroupMod.default)
+  js.Object](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.semanticDashUiDashReact.distCommonjsViewsCardCardGroupMod.CardGroupProps])(children: _*)
   }
+  @JSImport("semantic-ui-react/dist/commonjs/views/Card/CardGroup", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

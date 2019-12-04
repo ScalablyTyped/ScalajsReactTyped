@@ -6,7 +6,7 @@ import japgolly.scalajs.react.component.Js.MountedWithRawType
 import japgolly.scalajs.react.component.Js.RawMounted
 import japgolly.scalajs.react.component.Js.UnmountedSimple
 import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.antd.esTypographyTypographyMod.TypographyProps
+import typingsJapgolly.antd.libTypographyTypographyMod.TypographyProps
 import typingsJapgolly.react.reactMod.CSSProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -38,10 +38,14 @@ object Typography {
     if (overrides != null) js.Dynamic.global.Object.assign(__obj, overrides)
   
     val f = japgolly.scalajs.react.JsComponent[
-  typingsJapgolly.antd.esTypographyTypographyMod.TypographyProps, 
+  typingsJapgolly.antd.libTypographyTypographyMod.TypographyProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  js.Object](typingsJapgolly.antd.esTypographyTypographyMod.default)
-    f(__obj.asInstanceOf[typingsJapgolly.antd.esTypographyTypographyMod.TypographyProps])(children: _*)
+  js.Object](this.componentImport)
+    f(__obj.asInstanceOf[typingsJapgolly.antd.libTypographyTypographyMod.TypographyProps])(children: _*)
   }
+  @JSImport("antd/lib/typography/Typography", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

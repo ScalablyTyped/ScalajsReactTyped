@@ -4,7 +4,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object AutoCompleteOptGroup extends SharedApply_OptGroupProps_667758973 {
-  override val __component: js.Any = typingsJapgolly.antd.esMod.AutoComplete.OptGroup
+object AutoCompleteOptGroup extends SharedApply_OptGroupProps_420692601 {
+  @JSImport("antd", "AutoComplete.OptGroup")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

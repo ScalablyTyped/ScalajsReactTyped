@@ -1,13 +1,14 @@
 package typingsJapgolly.atMaterialDashUiIcons.components
 
+import typingsJapgolly.atMaterialDashUiIcons.formatTextdirectionLToRMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object FormatTextdirectionLToR
-  extends SharedApply_SvgIconProps1591622337[
-      typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.FormatTextdirectionLToR
-    ] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.FormatTextdirectionLToR]
+object FormatTextdirectionLToR extends SharedApply_SvgIconProps1591622337[default] {
+  @JSImport("@material-ui/icons/FormatTextdirectionLToR", "default")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

@@ -3,14 +3,14 @@ package typingsJapgolly.antd
 import japgolly.scalajs.react.CallbackTo
 import japgolly.scalajs.react.raw.React.Node
 import japgolly.scalajs.react.vdom.VdomNode
-import typingsJapgolly.antd.esStatisticUtilsMod.Formatter
-import typingsJapgolly.antd.esStatisticUtilsMod.valueType
+import typingsJapgolly.antd.libStatisticUtilsMod.Formatter
+import typingsJapgolly.antd.libStatisticUtilsMod.valueType
 import typingsJapgolly.react.reactMod.CSSProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined react.react.PropsWithChildren<antd.antd/es/statistic/Statistic.StatisticProps> */
+/* Inlined react.react.PropsWithChildren<antd.antd/lib/statistic/Statistic.StatisticProps> */
 trait PropsWithChildrenStatisticProps extends js.Object {
   var children: js.UndefOr[Node] = js.undefined
   var className: js.UndefOr[String] = js.undefined

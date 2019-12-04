@@ -20,7 +20,7 @@ object PropertyDescriptor {
   def apply(
     configurable: js.UndefOr[scala.Boolean] = js.undefined,
     enumerable: js.UndefOr[scala.Boolean] = js.undefined,
-    get: js.UndefOr[CallbackTo[_]] = js.undefined,
+    get: js.UndefOr[CallbackTo[js.Any]] = js.undefined,
     set: /* v */ js.Any => Callback = null,
     value: js.Any = null,
     writable: js.UndefOr[scala.Boolean] = js.undefined

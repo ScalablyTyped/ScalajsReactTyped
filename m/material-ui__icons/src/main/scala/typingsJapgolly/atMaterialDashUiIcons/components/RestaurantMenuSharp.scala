@@ -1,13 +1,14 @@
 package typingsJapgolly.atMaterialDashUiIcons.components
 
+import typingsJapgolly.atMaterialDashUiIcons.restaurantMenuSharpMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object RestaurantMenuSharp
-  extends SharedApply_SvgIconProps1591622337[
-      typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.RestaurantMenuSharp
-    ] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.RestaurantMenuSharp]
+object RestaurantMenuSharp extends SharedApply_SvgIconProps1591622337[default] {
+  @JSImport("@material-ui/icons/RestaurantMenuSharp", "default")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

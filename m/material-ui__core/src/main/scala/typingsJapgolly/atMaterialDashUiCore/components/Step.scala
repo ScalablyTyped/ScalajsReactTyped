@@ -455,8 +455,12 @@ object Step {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.atMaterialDashUiCore.stepStepMod.StepProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.atMaterialDashUiCore.stepMod.default](js.constructorOf[typingsJapgolly.atMaterialDashUiCore.stepMod.default])
+  typingsJapgolly.atMaterialDashUiCore.stepMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.atMaterialDashUiCore.stepStepMod.StepProps])(children: _*)
   }
+  @JSImport("@material-ui/core/Step", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

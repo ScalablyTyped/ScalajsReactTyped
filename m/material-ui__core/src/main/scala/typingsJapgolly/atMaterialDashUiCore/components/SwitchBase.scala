@@ -519,8 +519,12 @@ object SwitchBase {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.atMaterialDashUiCore.internalSwitchBaseMod.SwitchBaseProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.atMaterialDashUiCore.internalSwitchBaseMod.default](js.constructorOf[typingsJapgolly.atMaterialDashUiCore.internalSwitchBaseMod.default])
+  typingsJapgolly.atMaterialDashUiCore.internalSwitchBaseMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.atMaterialDashUiCore.internalSwitchBaseMod.SwitchBaseProps])(children: _*)
   }
+  @JSImport("@material-ui/core/internal/SwitchBase", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

@@ -62,8 +62,12 @@ object Fade {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.atMaterialDashUiCore.fadeFadeMod.FadeProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.atMaterialDashUiCore.fadeMod.default](js.constructorOf[typingsJapgolly.atMaterialDashUiCore.fadeMod.default])
+  typingsJapgolly.atMaterialDashUiCore.fadeMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.atMaterialDashUiCore.fadeFadeMod.FadeProps])(children: _*)
   }
+  @JSImport("@material-ui/core/Fade", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

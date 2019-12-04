@@ -446,8 +446,12 @@ object StepIcon {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.atMaterialDashUiCore.stepIconStepIconMod.StepIconProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.atMaterialDashUiCore.stepIconMod.default](js.constructorOf[typingsJapgolly.atMaterialDashUiCore.stepIconMod.default])
+  typingsJapgolly.atMaterialDashUiCore.stepIconMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.atMaterialDashUiCore.stepIconStepIconMod.StepIconProps])(children: _*)
   }
+  @JSImport("@material-ui/core/StepIcon", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

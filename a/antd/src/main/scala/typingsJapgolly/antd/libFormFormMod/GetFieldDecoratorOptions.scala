@@ -36,10 +36,10 @@ object GetFieldDecoratorOptions {
   @scala.inline
   def apply(
     exclusive: js.UndefOr[Boolean] = js.undefined,
-    getValueFromEvent: /* repeated */ js.Any => CallbackTo[_] = null,
-    getValueProps: /* value */ js.Any => CallbackTo[_] = null,
+    getValueFromEvent: /* repeated */ js.Any => CallbackTo[js.Any] = null,
+    getValueProps: /* value */ js.Any => CallbackTo[js.Any] = null,
     initialValue: js.Any = null,
-    normalize: (/* value */ js.Any, /* prevValue */ js.Any, /* allValues */ js.Any) => CallbackTo[_] = null,
+    normalize: (/* value */ js.Any, /* prevValue */ js.Any, /* allValues */ js.Any) => CallbackTo[js.Any] = null,
     preserve: js.UndefOr[Boolean] = js.undefined,
     rules: js.Array[ValidationRule] = null,
     trigger: String = null,

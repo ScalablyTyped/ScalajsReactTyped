@@ -39,8 +39,12 @@ object Badge {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.materialDashUi.__MaterialUI.BadgeProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.materialDashUi.badgeMod.default](js.constructorOf[typingsJapgolly.materialDashUi.badgeMod.default])
+  typingsJapgolly.materialDashUi.badgeMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.materialDashUi.__MaterialUI.BadgeProps])(children: _*)
   }
+  @JSImport("material-ui/Badge", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

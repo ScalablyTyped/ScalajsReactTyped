@@ -36,8 +36,12 @@ object PortalInner {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.semanticDashUiDashReact.distCommonjsAddonsPortalPortalInnerMod.PortalInnerProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.semanticDashUiDashReact.distCommonjsAddonsPortalPortalInnerMod.default](js.constructorOf[typingsJapgolly.semanticDashUiDashReact.distCommonjsAddonsPortalPortalInnerMod.default])
+  typingsJapgolly.semanticDashUiDashReact.distCommonjsAddonsPortalPortalInnerMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.semanticDashUiDashReact.distCommonjsAddonsPortalPortalInnerMod.PortalInnerProps])(children: _*)
   }
+  @JSImport("semantic-ui-react/dist/commonjs/addons/Portal/PortalInner", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

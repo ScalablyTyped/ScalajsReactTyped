@@ -135,8 +135,12 @@ object DatePicker {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.materialDashUi.__MaterialUI.DatePicker.DatePickerProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.materialDashUi.datePickerMod.default](js.constructorOf[typingsJapgolly.materialDashUi.datePickerMod.default])
+  typingsJapgolly.materialDashUi.datePickerMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.materialDashUi.__MaterialUI.DatePicker.DatePickerProps])(children: _*)
   }
+  @JSImport("material-ui/DatePicker", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

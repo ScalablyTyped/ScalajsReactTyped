@@ -51,8 +51,12 @@ object NavigatorIOS {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.reactDashNative.reactDashNativeMod.NavigatorIOSProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactDashNative.reactDashNativeMod.NavigatorIOS](js.constructorOf[typingsJapgolly.reactDashNative.reactDashNativeMod.NavigatorIOS])
+  typingsJapgolly.reactDashNative.reactDashNativeMod.NavigatorIOS](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.reactDashNative.reactDashNativeMod.NavigatorIOSProps])(children: _*)
   }
+  @JSImport("react-native", "NavigatorIOS")
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

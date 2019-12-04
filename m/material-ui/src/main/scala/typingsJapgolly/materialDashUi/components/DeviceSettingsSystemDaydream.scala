@@ -6,6 +6,9 @@ import scala.scalajs.js.annotation._
 
 object DeviceSettingsSystemDaydream
   extends SharedApply_SvgIconProps1538262166[typingsJapgolly.materialDashUi.svgDashIconsMod.DeviceSettingsSystemDaydream] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.materialDashUi.svgDashIconsMod.DeviceSettingsSystemDaydream]
+  @JSImport("material-ui/svg-icons", "DeviceSettingsSystemDaydream")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

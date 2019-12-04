@@ -34,8 +34,12 @@ object SceneView {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.reactDashNavigation.reactDashNavigationMod.SceneViewProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactDashNavigation.reactDashNavigationMod.SceneView](js.constructorOf[typingsJapgolly.reactDashNavigation.reactDashNavigationMod.SceneView])
+  typingsJapgolly.reactDashNavigation.reactDashNavigationMod.SceneView](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.reactDashNavigation.reactDashNavigationMod.SceneViewProps])(children: _*)
   }
+  @JSImport("react-navigation", "SceneView")
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

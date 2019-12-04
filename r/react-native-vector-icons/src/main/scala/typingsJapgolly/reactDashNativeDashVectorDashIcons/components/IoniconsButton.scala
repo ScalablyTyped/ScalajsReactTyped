@@ -6,6 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 object IoniconsButton extends SharedApply_IconButtonProps_919188049[Button] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.reactDashNativeDashVectorDashIcons.ioniconsMod.default.Button]
+  @JSImport("react-native-vector-icons/Ionicons", "default.Button")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

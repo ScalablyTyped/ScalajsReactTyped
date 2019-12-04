@@ -11,9 +11,9 @@ import org.scalablytyped.runtime.StringDictionary
 import org.scalajs.dom.raw.Element
 import org.scalajs.dom.raw.HTMLAnchorElement
 import org.scalajs.dom.raw.HTMLSpanElement
-import typingsJapgolly.antd.esBreadcrumbBreadcrumbItemMod.BreadcrumbItemProps
-import typingsJapgolly.antd.esBreadcrumbBreadcrumbItemMod.default
-import typingsJapgolly.antd.esDropdownDropdownMod.OverlayFunc
+import typingsJapgolly.antd.libBreadcrumbBreadcrumbItemMod.BreadcrumbItemProps
+import typingsJapgolly.antd.libBreadcrumbBreadcrumbItemMod.default
+import typingsJapgolly.antd.libDropdownDropdownMod.OverlayFunc
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -42,10 +42,14 @@ object BreadcrumbItem {
     if (overrides != null) js.Dynamic.global.Object.assign(__obj, overrides)
   
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antd.esBreadcrumbBreadcrumbItemMod.BreadcrumbItemProps, 
+  typingsJapgolly.antd.libBreadcrumbBreadcrumbItemMod.BreadcrumbItemProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antd.esBreadcrumbBreadcrumbItemMod.default](js.constructorOf[typingsJapgolly.antd.esBreadcrumbBreadcrumbItemMod.default])
-    f(__obj.asInstanceOf[typingsJapgolly.antd.esBreadcrumbBreadcrumbItemMod.BreadcrumbItemProps])(children: _*)
+  typingsJapgolly.antd.libBreadcrumbBreadcrumbItemMod.default](this.componentImport)
+    f(__obj.asInstanceOf[typingsJapgolly.antd.libBreadcrumbBreadcrumbItemMod.BreadcrumbItemProps])(children: _*)
   }
+  @JSImport("antd/lib/breadcrumb/BreadcrumbItem", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

@@ -6,6 +6,9 @@ import scala.scalajs.js.annotation._
 
 object ToggleRadioButtonChecked
   extends SharedApply_SvgIconProps1538262166[typingsJapgolly.materialDashUi.svgDashIconsMod.ToggleRadioButtonChecked] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.materialDashUi.svgDashIconsMod.ToggleRadioButtonChecked]
+  @JSImport("material-ui/svg-icons", "ToggleRadioButtonChecked")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

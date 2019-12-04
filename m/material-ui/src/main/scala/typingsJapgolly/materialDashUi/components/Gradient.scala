@@ -6,6 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 object Gradient extends SharedApply_SvgIconProps1538262166[default] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.materialDashUi.svgDashIconsImageGradientMod.default]
+  @JSImport("material-ui/svg-icons/image/gradient", JSImport.Default)
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

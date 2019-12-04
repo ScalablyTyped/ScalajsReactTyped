@@ -7,9 +7,9 @@ import japgolly.scalajs.react.Key
 import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
 import japgolly.scalajs.react.raw.React.Node
 import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.antd.esCalendarHeaderMod.HeaderProps
-import typingsJapgolly.antd.esCalendarHeaderMod.RenderHeader
-import typingsJapgolly.antd.esCalendarHeaderMod.default
+import typingsJapgolly.antd.libCalendarHeaderMod.HeaderProps
+import typingsJapgolly.antd.libCalendarHeaderMod.RenderHeader
+import typingsJapgolly.antd.libCalendarHeaderMod.default
 import typingsJapgolly.moment.momentMod.Moment
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -36,7 +36,7 @@ object Header {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
   
       if (!js.isUndefined(fullscreen)) __obj.updateDynamic("fullscreen")(fullscreen.asInstanceOf[js.Any])
-    if (headerRender != null) __obj.updateDynamic("headerRender")(js.Any.fromFunction1((t0: /* headerRender */ typingsJapgolly.antd.esCalendarHeaderMod.RenderHeader) => headerRender(t0).runNow()))
+    if (headerRender != null) __obj.updateDynamic("headerRender")(js.Any.fromFunction1((t0: /* headerRender */ typingsJapgolly.antd.libCalendarHeaderMod.RenderHeader) => headerRender(t0).runNow()))
     if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
     if (onTypeChange != null) __obj.updateDynamic("onTypeChange")(js.Any.fromFunction1((t0: /* type */ java.lang.String) => onTypeChange(t0).runNow()))
     if (onValueChange != null) __obj.updateDynamic("onValueChange")(js.Any.fromFunction1((t0: /* value */ typingsJapgolly.moment.momentMod.Moment) => onValueChange(t0).runNow()))
@@ -49,10 +49,14 @@ object Header {
     if (overrides != null) js.Dynamic.global.Object.assign(__obj, overrides)
   
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antd.esCalendarHeaderMod.HeaderProps, 
+  typingsJapgolly.antd.libCalendarHeaderMod.HeaderProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antd.esCalendarHeaderMod.default](js.constructorOf[typingsJapgolly.antd.esCalendarHeaderMod.default])
-    f(__obj.asInstanceOf[typingsJapgolly.antd.esCalendarHeaderMod.HeaderProps])(children: _*)
+  typingsJapgolly.antd.libCalendarHeaderMod.default](this.componentImport)
+    f(__obj.asInstanceOf[typingsJapgolly.antd.libCalendarHeaderMod.HeaderProps])(children: _*)
   }
+  @JSImport("antd/lib/calendar/Header", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

@@ -6,11 +6,11 @@ import japgolly.scalajs.react.component.Js.MountedWithRawType
 import japgolly.scalajs.react.component.Js.RawMounted
 import japgolly.scalajs.react.component.Js.UnmountedSimple
 import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.antd.esTypographyBaseMod.BaseType
-import typingsJapgolly.antd.esTypographyBaseMod.CopyConfig
-import typingsJapgolly.antd.esTypographyBaseMod.EditConfig
-import typingsJapgolly.antd.esTypographyBaseMod.EllipsisConfig
-import typingsJapgolly.antd.esTypographyBaseMod.InternalBlockProps
+import typingsJapgolly.antd.libTypographyBaseMod.BaseType
+import typingsJapgolly.antd.libTypographyBaseMod.CopyConfig
+import typingsJapgolly.antd.libTypographyBaseMod.EditConfig
+import typingsJapgolly.antd.libTypographyBaseMod.EllipsisConfig
+import typingsJapgolly.antd.libTypographyBaseMod.InternalBlockProps
 import typingsJapgolly.react.reactMod.CSSProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -63,10 +63,14 @@ object Base {
     if (overrides != null) js.Dynamic.global.Object.assign(__obj, overrides)
   
     val f = japgolly.scalajs.react.JsComponent[
-  typingsJapgolly.antd.esTypographyBaseMod.InternalBlockProps, 
+  typingsJapgolly.antd.libTypographyBaseMod.InternalBlockProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  js.Object](typingsJapgolly.antd.esTypographyBaseMod.default)
-    f(__obj.asInstanceOf[typingsJapgolly.antd.esTypographyBaseMod.InternalBlockProps])(children: _*)
+  js.Object](this.componentImport)
+    f(__obj.asInstanceOf[typingsJapgolly.antd.libTypographyBaseMod.InternalBlockProps])(children: _*)
   }
+  @JSImport("antd/lib/typography/Base", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

@@ -6,6 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 object MaterialCommunityIconsToolbarAndroid extends SharedApply_ToolbarAndroidProps1373982361[ToolbarAndroid] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.atExpoVectorDashIcons.atExpoVectorDashIconsMod.MaterialCommunityIcons.ToolbarAndroid]
+  @JSImport("@expo/vector-icons", "MaterialCommunityIcons.ToolbarAndroid")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

@@ -93,8 +93,12 @@ object IconMenu {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.materialDashUi.__MaterialUI.Menus.IconMenuProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.materialDashUi.iconMenuMod.default](js.constructorOf[typingsJapgolly.materialDashUi.iconMenuMod.default])
+  typingsJapgolly.materialDashUi.iconMenuMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.materialDashUi.__MaterialUI.Menus.IconMenuProps])(children: _*)
   }
+  @JSImport("material-ui/IconMenu", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

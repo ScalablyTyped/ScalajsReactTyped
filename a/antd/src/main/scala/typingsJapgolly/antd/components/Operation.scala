@@ -4,7 +4,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object Operation extends SharedApply_TransferOperationProps_818002685 {
-  override val __component: js.Any = typingsJapgolly.antd.esTransferOperationMod.default
+object Operation extends SharedApply_TransferOperationProps824324864 {
+  @JSImport("antd/lib/transfer/operation", JSImport.Default)
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

@@ -520,8 +520,12 @@ object Radio {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.atMaterialDashUiCore.radioRadioMod.RadioProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.atMaterialDashUiCore.radioMod.default](js.constructorOf[typingsJapgolly.atMaterialDashUiCore.radioMod.default])
+  typingsJapgolly.atMaterialDashUiCore.radioMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.atMaterialDashUiCore.radioRadioMod.RadioProps])(children: _*)
   }
+  @JSImport("@material-ui/core/Radio", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

@@ -84,8 +84,12 @@ object ButtonGroup {
     val f = japgolly.scalajs.react.JsComponent[
   typingsJapgolly.semanticDashUiDashReact.distCommonjsElementsButtonButtonGroupMod.ButtonGroupProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  js.Object](typingsJapgolly.semanticDashUiDashReact.distCommonjsElementsButtonButtonGroupMod.default)
+  js.Object](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.semanticDashUiDashReact.distCommonjsElementsButtonButtonGroupMod.ButtonGroupProps])(children: _*)
   }
+  @JSImport("semantic-ui-react/dist/commonjs/elements/Button/ButtonGroup", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

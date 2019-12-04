@@ -38,8 +38,12 @@ object Overlay {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.materialDashUi.internalOverlayMod.OverlayProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.materialDashUi.internalOverlayMod.default](js.constructorOf[typingsJapgolly.materialDashUi.internalOverlayMod.default])
+  typingsJapgolly.materialDashUi.internalOverlayMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.materialDashUi.internalOverlayMod.OverlayProps])(children: _*)
   }
+  @JSImport("material-ui/internal/Overlay", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

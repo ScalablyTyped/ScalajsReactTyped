@@ -21,9 +21,9 @@ import japgolly.scalajs.react.raw.React.Node
 import japgolly.scalajs.react.vdom.VdomNode
 import org.scalablytyped.runtime.StringDictionary
 import org.scalajs.dom.raw.HTMLDivElement
-import typingsJapgolly.antd.esListItemMod.ListItemProps
-import typingsJapgolly.antd.esListItemMod.default
-import typingsJapgolly.antd.esListMod.ListGridType
+import typingsJapgolly.antd.libListItemMod.ListItemProps
+import typingsJapgolly.antd.libListItemMod.default
+import typingsJapgolly.antd.libListMod.ListGridType
 import typingsJapgolly.react.Anon_Html
 import typingsJapgolly.react.reactMod.CSSProperties
 import typingsJapgolly.react.reactStrings.`additions text`
@@ -439,10 +439,14 @@ object Item {
     if (overrides != null) js.Dynamic.global.Object.assign(__obj, overrides)
   
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antd.esListItemMod.ListItemProps, 
+  typingsJapgolly.antd.libListItemMod.ListItemProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antd.esListItemMod.default](js.constructorOf[typingsJapgolly.antd.esListItemMod.default])
-    f(__obj.asInstanceOf[typingsJapgolly.antd.esListItemMod.ListItemProps])(children: _*)
+  typingsJapgolly.antd.libListItemMod.default](this.componentImport)
+    f(__obj.asInstanceOf[typingsJapgolly.antd.libListItemMod.ListItemProps])(children: _*)
   }
+  @JSImport("antd/lib/list/Item", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

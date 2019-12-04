@@ -10,7 +10,6 @@ import typingsJapgolly.antd.Anon_ScrollToFirstRowOnChange
 import typingsJapgolly.antd.antdNumbers.`false`
 import typingsJapgolly.antd.libPaginationPaginationMod.PaginationConfig
 import typingsJapgolly.antd.libSpinMod.SpinProps
-import typingsJapgolly.antd.libTableCreateStoreMod.Store
 import typingsJapgolly.csstype.csstypeMod.TableLayoutProperty
 import typingsJapgolly.react.reactMod.CSSProperties
 import typingsJapgolly.std.Record
@@ -18,7 +17,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait TableProps[T] extends WithStore {
+trait TableProps[T] extends js.Object {
   var bodyStyle: js.UndefOr[CSSProperties] = js.undefined
   var bordered: js.UndefOr[Boolean] = js.undefined
   var children: js.UndefOr[Node] = js.undefined
@@ -75,9 +74,6 @@ trait TableProps[T] extends WithStore {
 object TableProps {
   @scala.inline
   def apply[T](
-    checkboxPropsCache: CheckboxPropsCache,
-    setCheckboxPropsCache: CheckboxPropsCache => Callback,
-    store: Store,
     bodyStyle: CSSProperties = null,
     bordered: js.UndefOr[Boolean] = js.undefined,
     children: VdomNode = null,
@@ -120,8 +116,7 @@ object TableProps {
     title: /* currentPageData */ js.Array[T] => CallbackTo[Node] = null,
     useFixedHeader: js.UndefOr[Boolean] = js.undefined
   ): TableProps[T] = {
-    val __obj = js.Dynamic.literal(checkboxPropsCache = checkboxPropsCache.asInstanceOf[js.Any], store = store.asInstanceOf[js.Any])
-    __obj.updateDynamic("setCheckboxPropsCache")(js.Any.fromFunction1((t0: typingsJapgolly.antd.libTableInterfaceMod.CheckboxPropsCache) => setCheckboxPropsCache(t0).runNow()))
+    val __obj = js.Dynamic.literal()
     if (bodyStyle != null) __obj.updateDynamic("bodyStyle")(bodyStyle.asInstanceOf[js.Any])
     if (!js.isUndefined(bordered)) __obj.updateDynamic("bordered")(bordered.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.rawNode.asInstanceOf[js.Any])

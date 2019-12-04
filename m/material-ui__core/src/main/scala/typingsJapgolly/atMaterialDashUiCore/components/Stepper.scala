@@ -458,8 +458,12 @@ object Stepper {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.atMaterialDashUiCore.stepperStepperMod.StepperProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.atMaterialDashUiCore.stepperMod.default](js.constructorOf[typingsJapgolly.atMaterialDashUiCore.stepperMod.default])
+  typingsJapgolly.atMaterialDashUiCore.stepperMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.atMaterialDashUiCore.stepperStepperMod.StepperProps])(children: _*)
   }
+  @JSImport("@material-ui/core/Stepper", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

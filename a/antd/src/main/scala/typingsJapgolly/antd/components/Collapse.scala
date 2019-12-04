@@ -7,10 +7,10 @@ import japgolly.scalajs.react.Key
 import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
 import japgolly.scalajs.react.raw.React.Node
 import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.antd.esCollapseCollapseMod.CollapseProps
-import typingsJapgolly.antd.esCollapseCollapseMod.ExpandIconPosition
-import typingsJapgolly.antd.esCollapseCollapseMod.PanelProps
-import typingsJapgolly.antd.esCollapseMod.default
+import typingsJapgolly.antd.libCollapseCollapseMod.CollapseProps
+import typingsJapgolly.antd.libCollapseCollapseMod.ExpandIconPosition
+import typingsJapgolly.antd.libCollapseCollapseMod.PanelProps
+import typingsJapgolly.antd.libCollapseMod.default
 import typingsJapgolly.react.reactMod.CSSProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -42,7 +42,7 @@ object Collapse {
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (defaultActiveKey != null) __obj.updateDynamic("defaultActiveKey")(defaultActiveKey.asInstanceOf[js.Any])
     if (!js.isUndefined(destroyInactivePanel)) __obj.updateDynamic("destroyInactivePanel")(destroyInactivePanel.asInstanceOf[js.Any])
-    if (expandIcon != null) __obj.updateDynamic("expandIcon")(js.Any.fromFunction1((t0: /* panelProps */ typingsJapgolly.antd.esCollapseCollapseMod.PanelProps) => expandIcon(t0).runNow()))
+    if (expandIcon != null) __obj.updateDynamic("expandIcon")(js.Any.fromFunction1((t0: /* panelProps */ typingsJapgolly.antd.libCollapseCollapseMod.PanelProps) => expandIcon(t0).runNow()))
     if (expandIconPosition != null) __obj.updateDynamic("expandIconPosition")(expandIconPosition.asInstanceOf[js.Any])
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1((t0: /* key */ java.lang.String | js.Array[java.lang.String]) => onChange(t0).runNow()))
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
@@ -51,10 +51,14 @@ object Collapse {
     if (overrides != null) js.Dynamic.global.Object.assign(__obj, overrides)
   
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antd.esCollapseCollapseMod.CollapseProps, 
+  typingsJapgolly.antd.libCollapseCollapseMod.CollapseProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antd.esCollapseMod.default](js.constructorOf[typingsJapgolly.antd.esCollapseMod.default])
-    f(__obj.asInstanceOf[typingsJapgolly.antd.esCollapseCollapseMod.CollapseProps])(children: _*)
+  typingsJapgolly.antd.libCollapseMod.default](this.componentImport)
+    f(__obj.asInstanceOf[typingsJapgolly.antd.libCollapseCollapseMod.CollapseProps])(children: _*)
   }
+  @JSImport("antd/lib/collapse", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

@@ -1,12 +1,12 @@
 organization := "org.gulliblytyped.japgolly"
 name := "yandex-maps"
-version := "2.1-dt-20190719Z-70ceb9"
+version := "2.1-dt-20190719Z-c2b850"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.github.japgolly.scalajs-react" %%% "core" % "1.4.2",
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.gulliblytyped.japgolly" %%% "std" % "3.7-6f398d")
+  "org.gulliblytyped.japgolly" %%% "std" % "3.7-ed3398")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

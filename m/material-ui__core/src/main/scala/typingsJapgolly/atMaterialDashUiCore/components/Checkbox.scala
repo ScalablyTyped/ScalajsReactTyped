@@ -529,8 +529,12 @@ object Checkbox {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.atMaterialDashUiCore.checkboxCheckboxMod.CheckboxProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.atMaterialDashUiCore.checkboxMod.default](js.constructorOf[typingsJapgolly.atMaterialDashUiCore.checkboxMod.default])
+  typingsJapgolly.atMaterialDashUiCore.checkboxMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.atMaterialDashUiCore.checkboxCheckboxMod.CheckboxProps])(children: _*)
   }
+  @JSImport("@material-ui/core/Checkbox", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

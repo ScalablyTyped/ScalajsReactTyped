@@ -6,6 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 object Octicons extends SharedApply_IconProps720032241[default] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.reactDashNativeDashVectorDashIcons.octiconsMod.default]
+  @JSImport("react-native-vector-icons/Octicons", JSImport.Default)
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

@@ -9,9 +9,9 @@ import org.scalablytyped.runtime.StringDictionary
 import org.scalajs.dom.raw.HTMLDivElement
 import typingsJapgolly.semanticDashUiDashReact.distCommonjsGenericMod.SemanticShorthandCollection
 import typingsJapgolly.semanticDashUiDashReact.distCommonjsModulesAccordionAccordionMod.AccordionProps
-import typingsJapgolly.semanticDashUiDashReact.distCommonjsModulesAccordionAccordionMod.default
 import typingsJapgolly.semanticDashUiDashReact.distCommonjsModulesAccordionAccordionPanelMod.AccordionPanelProps
 import typingsJapgolly.semanticDashUiDashReact.distCommonjsModulesAccordionAccordionTitleMod.AccordionTitleProps
+import typingsJapgolly.semanticDashUiDashReact.distCommonjsModulesAccordionMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -53,8 +53,12 @@ object Accordion {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.semanticDashUiDashReact.distCommonjsModulesAccordionAccordionMod.AccordionProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.semanticDashUiDashReact.distCommonjsModulesAccordionAccordionMod.default](js.constructorOf[typingsJapgolly.semanticDashUiDashReact.distCommonjsModulesAccordionAccordionMod.default])
+  typingsJapgolly.semanticDashUiDashReact.distCommonjsModulesAccordionMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.semanticDashUiDashReact.distCommonjsModulesAccordionAccordionMod.AccordionProps])(children: _*)
   }
+  @JSImport("semantic-ui-react/dist/commonjs/modules/Accordion", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

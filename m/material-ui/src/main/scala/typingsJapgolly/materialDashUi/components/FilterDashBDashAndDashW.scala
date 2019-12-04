@@ -6,6 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 object FilterDashBDashAndDashW extends SharedApply_SvgIconProps1538262166[default] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.materialDashUi.svgDashIconsImageFilterDashBDashAndDashWMod.default]
+  @JSImport("material-ui/svg-icons/image/filter-b-and-w", JSImport.Default)
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

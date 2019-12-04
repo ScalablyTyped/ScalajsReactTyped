@@ -1,11 +1,14 @@
 package typingsJapgolly.atMaterialDashUiIcons.components
 
+import typingsJapgolly.atMaterialDashUiIcons.wbSunnyMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object WbSunny
-  extends SharedApply_SvgIconProps1591622337[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.WbSunny] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.WbSunny]
+object WbSunny extends SharedApply_SvgIconProps1591622337[default] {
+  @JSImport("@material-ui/icons/WbSunny", "default")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

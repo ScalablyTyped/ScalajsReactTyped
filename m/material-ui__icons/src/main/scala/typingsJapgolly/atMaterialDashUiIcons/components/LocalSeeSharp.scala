@@ -1,11 +1,14 @@
 package typingsJapgolly.atMaterialDashUiIcons.components
 
+import typingsJapgolly.atMaterialDashUiIcons.localSeeSharpMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object LocalSeeSharp
-  extends SharedApply_SvgIconProps1591622337[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.LocalSeeSharp] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.LocalSeeSharp]
+object LocalSeeSharp extends SharedApply_SvgIconProps1591622337[default] {
+  @JSImport("@material-ui/icons/LocalSeeSharp", "default")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

@@ -65,8 +65,12 @@ object GridColumn {
     val f = japgolly.scalajs.react.JsComponent[
   typingsJapgolly.semanticDashUiDashReact.distCommonjsCollectionsGridGridColumnMod.GridColumnProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  js.Object](typingsJapgolly.semanticDashUiDashReact.distCommonjsCollectionsGridGridColumnMod.default)
+  js.Object](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.semanticDashUiDashReact.distCommonjsCollectionsGridGridColumnMod.GridColumnProps])(children: _*)
   }
+  @JSImport("semantic-ui-react/dist/commonjs/collections/Grid/GridColumn", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

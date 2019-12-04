@@ -36,8 +36,12 @@ object FocusRipple {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.materialDashUi.internalFocusRippleMod.FocusRippleProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.materialDashUi.internalFocusRippleMod.default](js.constructorOf[typingsJapgolly.materialDashUi.internalFocusRippleMod.default])
+  typingsJapgolly.materialDashUi.internalFocusRippleMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.materialDashUi.internalFocusRippleMod.FocusRippleProps])(children: _*)
   }
+  @JSImport("material-ui/internal/FocusRipple", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

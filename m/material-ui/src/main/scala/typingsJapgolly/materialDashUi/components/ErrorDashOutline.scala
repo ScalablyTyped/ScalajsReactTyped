@@ -6,6 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 object ErrorDashOutline extends SharedApply_SvgIconProps1538262166[default] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.materialDashUi.svgDashIconsAlertErrorDashOutlineMod.default]
+  @JSImport("material-ui/svg-icons/alert/error-outline", JSImport.Default)
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

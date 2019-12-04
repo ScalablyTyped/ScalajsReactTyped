@@ -4,7 +4,7 @@ import japgolly.scalajs.react.CtorType.ChildArg
 import japgolly.scalajs.react.Key
 import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
 import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.antd.esBreadcrumbBreadcrumbSeparatorMod.default
+import typingsJapgolly.antd.libBreadcrumbBreadcrumbSeparatorMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,8 +27,12 @@ object BreadcrumbSeparator {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   js.Any with js.Object, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antd.esBreadcrumbBreadcrumbSeparatorMod.default](js.constructorOf[typingsJapgolly.antd.esBreadcrumbBreadcrumbSeparatorMod.default])
+  typingsJapgolly.antd.libBreadcrumbBreadcrumbSeparatorMod.default](this.componentImport)
     f(__obj.asInstanceOf[js.Any with js.Object])(children: _*)
   }
+  @JSImport("antd/lib/breadcrumb/BreadcrumbSeparator", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

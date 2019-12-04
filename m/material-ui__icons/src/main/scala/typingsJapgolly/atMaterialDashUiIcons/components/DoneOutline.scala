@@ -1,11 +1,14 @@
 package typingsJapgolly.atMaterialDashUiIcons.components
 
+import typingsJapgolly.atMaterialDashUiIcons.doneOutlineMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object DoneOutline
-  extends SharedApply_SvgIconProps1591622337[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.DoneOutline] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.DoneOutline]
+object DoneOutline extends SharedApply_SvgIconProps1591622337[default] {
+  @JSImport("@material-ui/icons/DoneOutline", "default")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

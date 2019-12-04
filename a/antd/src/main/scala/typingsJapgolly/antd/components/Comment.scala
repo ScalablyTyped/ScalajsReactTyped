@@ -6,8 +6,8 @@ import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
 import japgolly.scalajs.react.raw.React.Node
 import japgolly.scalajs.react.vdom.VdomNode
 import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.antd.esCommentMod.CommentProps
-import typingsJapgolly.antd.esCommentMod.default
+import typingsJapgolly.antd.libCommentMod.CommentProps
+import typingsJapgolly.antd.libCommentMod.default
 import typingsJapgolly.react.reactMod.CSSProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -42,10 +42,14 @@ object Comment {
     if (overrides != null) js.Dynamic.global.Object.assign(__obj, overrides)
   
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antd.esCommentMod.CommentProps, 
+  typingsJapgolly.antd.libCommentMod.CommentProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antd.esCommentMod.default](js.constructorOf[typingsJapgolly.antd.esCommentMod.default])
-    f(__obj.asInstanceOf[typingsJapgolly.antd.esCommentMod.CommentProps])(children: _*)
+  typingsJapgolly.antd.libCommentMod.default](this.componentImport)
+    f(__obj.asInstanceOf[typingsJapgolly.antd.libCommentMod.CommentProps])(children: _*)
   }
+  @JSImport("antd/lib/comment", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

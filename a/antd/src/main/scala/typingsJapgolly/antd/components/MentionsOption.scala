@@ -38,8 +38,12 @@ object MentionsOption {
     val f = japgolly.scalajs.react.JsComponent[
   typingsJapgolly.rcDashMentions.libOptionMod.OptionProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  js.Object](typingsJapgolly.antd.esMod.Mentions.Option)
+  js.Object](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.rcDashMentions.libOptionMod.OptionProps])(children: _*)
   }
+  @JSImport("antd", "Mentions.Option")
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

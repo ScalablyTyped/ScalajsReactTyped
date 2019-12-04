@@ -81,8 +81,12 @@ object Progress {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.semanticDashUiDashReact.distCommonjsModulesProgressProgressMod.ProgressProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.semanticDashUiDashReact.distCommonjsModulesProgressMod.default](js.constructorOf[typingsJapgolly.semanticDashUiDashReact.distCommonjsModulesProgressMod.default])
+  typingsJapgolly.semanticDashUiDashReact.distCommonjsModulesProgressMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.semanticDashUiDashReact.distCommonjsModulesProgressProgressMod.ProgressProps])(children: _*)
   }
+  @JSImport("semantic-ui-react/dist/commonjs/modules/Progress", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

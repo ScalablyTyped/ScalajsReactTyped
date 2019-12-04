@@ -1,6 +1,6 @@
 package typingsJapgolly.antd.antdMod
 
-import typingsJapgolly.antd.Anon_HideAddTabPosition
+import typingsJapgolly.antd.Anon_HideAdd
 import typingsJapgolly.antd.libTabsMod.TabPaneProps
 import typingsJapgolly.antd.libTabsMod.default
 import typingsJapgolly.react.reactMod.ClassicComponentClass
@@ -17,6 +17,6 @@ class Tabs () extends default
 @js.native
 object Tabs extends js.Object {
   var TabPane: ClassicComponentClass[TabPaneProps] = js.native
-  var defaultProps: Anon_HideAddTabPosition = js.native
+  var defaultProps: Anon_HideAdd = js.native
 }
 

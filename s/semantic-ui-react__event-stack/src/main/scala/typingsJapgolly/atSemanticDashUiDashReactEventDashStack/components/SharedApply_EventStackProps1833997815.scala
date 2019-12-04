@@ -12,7 +12,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 abstract class SharedApply_EventStackProps1833997815[ComponentRef] () {
-  def __component: js.Any
+  val componentImport: js.Any
   def apply(
     name: String,
     on: InputEventListener,
@@ -33,7 +33,7 @@ abstract class SharedApply_EventStackProps1833997815[ComponentRef] () {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.atSemanticDashUiDashReactEventDashStack.libTypesEventStackMod.EventStackProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  ComponentRef](__component)
+  ComponentRef](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.atSemanticDashUiDashReactEventDashStack.libTypesEventStackMod.EventStackProps])(children: _*)
   }
 }

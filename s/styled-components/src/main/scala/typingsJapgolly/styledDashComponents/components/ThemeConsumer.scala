@@ -41,9 +41,13 @@ object ThemeConsumer {
     typingsJapgolly.styledDashComponents.styledDashComponentsMod.AnyIfEmpty[typingsJapgolly.styledDashComponents.styledDashComponentsMod.DefaultTheme]
   ], 
   japgolly.scalajs.react.Children.None, 
-  js.Object](typingsJapgolly.styledDashComponents.macroMod.ThemeConsumer)
+  js.Object](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.react.reactMod.ConsumerProps[
   typingsJapgolly.styledDashComponents.styledDashComponentsMod.AnyIfEmpty[typingsJapgolly.styledDashComponents.styledDashComponentsMod.DefaultTheme]]])
   }
+  @JSImport("styled-components/macro", "ThemeConsumer")
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

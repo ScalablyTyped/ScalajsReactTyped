@@ -520,8 +520,12 @@ object Switch {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.atMaterialDashUiCore.switchSwitchMod.SwitchProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.atMaterialDashUiCore.switchMod.default](js.constructorOf[typingsJapgolly.atMaterialDashUiCore.switchMod.default])
+  typingsJapgolly.atMaterialDashUiCore.switchMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.atMaterialDashUiCore.switchSwitchMod.SwitchProps])(children: _*)
   }
+  @JSImport("@material-ui/core/Switch", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

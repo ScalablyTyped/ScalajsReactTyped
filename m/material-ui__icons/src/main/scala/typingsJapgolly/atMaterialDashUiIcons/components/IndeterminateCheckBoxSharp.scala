@@ -1,13 +1,14 @@
 package typingsJapgolly.atMaterialDashUiIcons.components
 
+import typingsJapgolly.atMaterialDashUiIcons.indeterminateCheckBoxSharpMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object IndeterminateCheckBoxSharp
-  extends SharedApply_SvgIconProps1591622337[
-      typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.IndeterminateCheckBoxSharp
-    ] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.IndeterminateCheckBoxSharp]
+object IndeterminateCheckBoxSharp extends SharedApply_SvgIconProps1591622337[default] {
+  @JSImport("@material-ui/icons/IndeterminateCheckBoxSharp", "default")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

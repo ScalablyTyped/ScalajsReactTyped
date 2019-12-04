@@ -1,11 +1,14 @@
 package typingsJapgolly.atMaterialDashUiIcons.components
 
+import typingsJapgolly.atMaterialDashUiIcons.viewModuleMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object ViewModule
-  extends SharedApply_SvgIconProps1591622337[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.ViewModule] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.ViewModule]
+object ViewModule extends SharedApply_SvgIconProps1591622337[default] {
+  @JSImport("@material-ui/icons/ViewModule", "default")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

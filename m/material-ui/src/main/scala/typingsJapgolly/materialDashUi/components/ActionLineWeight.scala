@@ -6,6 +6,9 @@ import scala.scalajs.js.annotation._
 
 object ActionLineWeight
   extends SharedApply_SvgIconProps1538262166[typingsJapgolly.materialDashUi.svgDashIconsMod.ActionLineWeight] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.materialDashUi.svgDashIconsMod.ActionLineWeight]
+  @JSImport("material-ui/svg-icons", "ActionLineWeight")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

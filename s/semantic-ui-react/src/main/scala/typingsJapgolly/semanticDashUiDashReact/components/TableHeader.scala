@@ -40,8 +40,12 @@ object TableHeader {
     val f = japgolly.scalajs.react.JsComponent[
   typingsJapgolly.semanticDashUiDashReact.distCommonjsCollectionsTableTableHeaderMod.TableHeaderProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  js.Object](typingsJapgolly.semanticDashUiDashReact.distCommonjsCollectionsTableTableHeaderMod.default)
+  js.Object](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.semanticDashUiDashReact.distCommonjsCollectionsTableTableHeaderMod.TableHeaderProps])(children: _*)
   }
+  @JSImport("semantic-ui-react/dist/commonjs/collections/Table/TableHeader", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

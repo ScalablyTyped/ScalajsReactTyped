@@ -39,8 +39,12 @@ object DropdownSearchInput {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.semanticDashUiDashReact.distCommonjsModulesDropdownDropdownSearchInputMod.DropdownSearchInputProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.semanticDashUiDashReact.distCommonjsModulesDropdownDropdownSearchInputMod.default](js.constructorOf[typingsJapgolly.semanticDashUiDashReact.distCommonjsModulesDropdownDropdownSearchInputMod.default])
+  typingsJapgolly.semanticDashUiDashReact.distCommonjsModulesDropdownDropdownSearchInputMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.semanticDashUiDashReact.distCommonjsModulesDropdownDropdownSearchInputMod.DropdownSearchInputProps])(children: _*)
   }
+  @JSImport("semantic-ui-react/dist/commonjs/modules/Dropdown/DropdownSearchInput", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

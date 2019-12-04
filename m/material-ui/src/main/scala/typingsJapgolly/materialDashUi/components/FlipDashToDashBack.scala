@@ -6,6 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 object FlipDashToDashBack extends SharedApply_SvgIconProps1538262166[default] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.materialDashUi.svgDashIconsActionFlipDashToDashBackMod.default]
+  @JSImport("material-ui/svg-icons/action/flip-to-back", JSImport.Default)
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

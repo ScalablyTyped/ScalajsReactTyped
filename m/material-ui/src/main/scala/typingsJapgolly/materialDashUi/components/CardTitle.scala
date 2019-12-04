@@ -47,8 +47,12 @@ object CardTitle {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.materialDashUi.__MaterialUI.Card.CardTitleProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.materialDashUi.cardCardTitleMod.default](js.constructorOf[typingsJapgolly.materialDashUi.cardCardTitleMod.default])
+  typingsJapgolly.materialDashUi.cardCardTitleMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.materialDashUi.__MaterialUI.Card.CardTitleProps])(children: _*)
   }
+  @JSImport("material-ui/Card/CardTitle", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

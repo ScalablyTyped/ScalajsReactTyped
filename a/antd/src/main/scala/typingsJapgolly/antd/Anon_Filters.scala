@@ -1,8 +1,8 @@
 package typingsJapgolly.antd
 
-import typingsJapgolly.antd.esTableInterfaceMod.ColumnProps
-import typingsJapgolly.antd.esTableInterfaceMod.SortOrder
-import typingsJapgolly.antd.esTableInterfaceMod.TableStateFilters
+import typingsJapgolly.antd.libTableInterfaceMod.ColumnProps
+import typingsJapgolly.antd.libTableInterfaceMod.SortOrder
+import typingsJapgolly.antd.libTableInterfaceMod.TableStateFilters
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

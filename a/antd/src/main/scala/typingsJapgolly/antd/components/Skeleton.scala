@@ -4,11 +4,11 @@ import japgolly.scalajs.react.CtorType.ChildArg
 import japgolly.scalajs.react.Key
 import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
 import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.antd.esSkeletonAvatarMod.SkeletonAvatarProps
-import typingsJapgolly.antd.esSkeletonMod.SkeletonProps
-import typingsJapgolly.antd.esSkeletonMod.default
-import typingsJapgolly.antd.esSkeletonParagraphMod.SkeletonParagraphProps
-import typingsJapgolly.antd.esSkeletonTitleMod.SkeletonTitleProps
+import typingsJapgolly.antd.libSkeletonAvatarMod.SkeletonAvatarProps
+import typingsJapgolly.antd.libSkeletonMod.SkeletonProps
+import typingsJapgolly.antd.libSkeletonMod.default
+import typingsJapgolly.antd.libSkeletonParagraphMod.SkeletonParagraphProps
+import typingsJapgolly.antd.libSkeletonTitleMod.SkeletonTitleProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -40,10 +40,14 @@ object Skeleton {
     if (overrides != null) js.Dynamic.global.Object.assign(__obj, overrides)
   
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antd.esSkeletonMod.SkeletonProps, 
+  typingsJapgolly.antd.libSkeletonMod.SkeletonProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antd.esSkeletonMod.default](js.constructorOf[typingsJapgolly.antd.esSkeletonMod.default])
-    f(__obj.asInstanceOf[typingsJapgolly.antd.esSkeletonMod.SkeletonProps])(children: _*)
+  typingsJapgolly.antd.libSkeletonMod.default](this.componentImport)
+    f(__obj.asInstanceOf[typingsJapgolly.antd.libSkeletonMod.SkeletonProps])(children: _*)
   }
+  @JSImport("antd/lib/skeleton", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

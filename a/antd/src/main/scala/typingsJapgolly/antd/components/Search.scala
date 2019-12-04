@@ -68,7 +68,7 @@ import typingsJapgolly.antd.antdStrings.tree
 import typingsJapgolly.antd.antdStrings.url
 import typingsJapgolly.antd.antdStrings.vertical
 import typingsJapgolly.antd.antdStrings.yes
-import typingsJapgolly.antd.esInputSearchMod.SearchProps
+import typingsJapgolly.antd.libInputSearchMod.SearchProps
 import typingsJapgolly.react.Anon_Html
 import typingsJapgolly.react.reactMod.CSSProperties
 import scala.scalajs.js
@@ -296,7 +296,7 @@ object Search {
     overrides: StringDictionary[js.Any] = null
   )(
     children: ChildArg*
-  ): UnmountedWithRoot[SearchProps, typingsJapgolly.antd.esInputSearchMod.default, Unit, SearchProps] = {
+  ): UnmountedWithRoot[SearchProps, typingsJapgolly.antd.libInputSearchMod.default, Unit, SearchProps] = {
     val __obj = js.Dynamic.literal()
   
       if (about != null) __obj.updateDynamic("about")(about.asInstanceOf[js.Any])
@@ -517,10 +517,14 @@ object Search {
     if (overrides != null) js.Dynamic.global.Object.assign(__obj, overrides)
   
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antd.esInputSearchMod.SearchProps, 
+  typingsJapgolly.antd.libInputSearchMod.SearchProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antd.esInputSearchMod.default](js.constructorOf[typingsJapgolly.antd.esInputSearchMod.default])
-    f(__obj.asInstanceOf[typingsJapgolly.antd.esInputSearchMod.SearchProps])(children: _*)
+  typingsJapgolly.antd.libInputSearchMod.default](this.componentImport)
+    f(__obj.asInstanceOf[typingsJapgolly.antd.libInputSearchMod.SearchProps])(children: _*)
   }
+  @JSImport("antd/lib/input/Search", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

@@ -508,8 +508,12 @@ object RadioButton {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.materialDashUi.__MaterialUI.Switches.RadioButtonProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.materialDashUi.radioButtonMod.default](js.constructorOf[typingsJapgolly.materialDashUi.radioButtonMod.default])
+  typingsJapgolly.materialDashUi.radioButtonMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.materialDashUi.__MaterialUI.Switches.RadioButtonProps])(children: _*)
   }
+  @JSImport("material-ui/RadioButton", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

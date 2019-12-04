@@ -432,8 +432,12 @@ object ToolbarTitle {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.materialDashUi.__MaterialUI.Toolbar.ToolbarTitleProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.materialDashUi.toolbarToolbarTitleMod.default](js.constructorOf[typingsJapgolly.materialDashUi.toolbarToolbarTitleMod.default])
+  typingsJapgolly.materialDashUi.toolbarToolbarTitleMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.materialDashUi.__MaterialUI.Toolbar.ToolbarTitleProps])(children: _*)
   }
+  @JSImport("material-ui/Toolbar/ToolbarTitle", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

@@ -1,6 +1,7 @@
 package typingsJapgolly.node.childUnderscoreProcessMod
 
 import typingsJapgolly.node.NodeJS.ProcessEnv
+import typingsJapgolly.node.NodeJS.Signals
 import typingsJapgolly.node.nodeStrings.buffer_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -17,7 +18,7 @@ object ExecFileOptionsWithBufferEncoding {
     encoding: buffer_ = null,
     env: ProcessEnv = null,
     gid: Int | Double = null,
-    killSignal: java.lang.String = null,
+    killSignal: Signals | Double = null,
     maxBuffer: Int | Double = null,
     shell: Boolean | java.lang.String = null,
     timeout: Int | Double = null,

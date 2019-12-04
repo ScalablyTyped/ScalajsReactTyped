@@ -1,13 +1,14 @@
 package typingsJapgolly.atMaterialDashUiIcons.components
 
+import typingsJapgolly.atMaterialDashUiIcons.stayPrimaryLandscapeSharpMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object StayPrimaryLandscapeSharp
-  extends SharedApply_SvgIconProps1591622337[
-      typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.StayPrimaryLandscapeSharp
-    ] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.StayPrimaryLandscapeSharp]
+object StayPrimaryLandscapeSharp extends SharedApply_SvgIconProps1591622337[default] {
+  @JSImport("@material-ui/icons/StayPrimaryLandscapeSharp", "default")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

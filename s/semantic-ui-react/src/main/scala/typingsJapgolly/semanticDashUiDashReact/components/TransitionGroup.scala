@@ -37,8 +37,12 @@ object TransitionGroup {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.semanticDashUiDashReact.distCommonjsModulesTransitionTransitionGroupMod.TransitionGroupProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.semanticDashUiDashReact.distCommonjsModulesTransitionTransitionGroupMod.default](js.constructorOf[typingsJapgolly.semanticDashUiDashReact.distCommonjsModulesTransitionTransitionGroupMod.default])
+  typingsJapgolly.semanticDashUiDashReact.distCommonjsModulesTransitionTransitionGroupMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.semanticDashUiDashReact.distCommonjsModulesTransitionTransitionGroupMod.TransitionGroupProps])(children: _*)
   }
+  @JSImport("semantic-ui-react/dist/commonjs/modules/Transition/TransitionGroup", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

@@ -6,6 +6,9 @@ import scala.scalajs.js.annotation._
 
 object HardwareMouse
   extends SharedApply_SvgIconProps1538262166[typingsJapgolly.materialDashUi.svgDashIconsMod.HardwareMouse] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.materialDashUi.svgDashIconsMod.HardwareMouse]
+  @JSImport("material-ui/svg-icons", "HardwareMouse")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

@@ -44,8 +44,12 @@ object TransitionablePortal {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.semanticDashUiDashReact.distCommonjsAddonsTransitionablePortalTransitionablePortalMod.TransitionablePortalProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.semanticDashUiDashReact.distCommonjsAddonsTransitionablePortalMod.default](js.constructorOf[typingsJapgolly.semanticDashUiDashReact.distCommonjsAddonsTransitionablePortalMod.default])
+  typingsJapgolly.semanticDashUiDashReact.distCommonjsAddonsTransitionablePortalMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.semanticDashUiDashReact.distCommonjsAddonsTransitionablePortalTransitionablePortalMod.TransitionablePortalProps])(children: _*)
   }
+  @JSImport("semantic-ui-react/dist/commonjs/addons/TransitionablePortal", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

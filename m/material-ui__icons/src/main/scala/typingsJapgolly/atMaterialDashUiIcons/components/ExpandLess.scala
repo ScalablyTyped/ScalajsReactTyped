@@ -1,11 +1,14 @@
 package typingsJapgolly.atMaterialDashUiIcons.components
 
+import typingsJapgolly.atMaterialDashUiIcons.expandLessMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object ExpandLess
-  extends SharedApply_SvgIconProps1591622337[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.ExpandLess] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.ExpandLess]
+object ExpandLess extends SharedApply_SvgIconProps1591622337[default] {
+  @JSImport("@material-ui/icons/ExpandLess", "default")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

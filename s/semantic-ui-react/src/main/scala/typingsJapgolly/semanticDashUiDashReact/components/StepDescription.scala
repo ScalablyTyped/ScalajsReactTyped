@@ -38,8 +38,12 @@ object StepDescription {
     val f = japgolly.scalajs.react.JsComponent[
   typingsJapgolly.semanticDashUiDashReact.distCommonjsElementsStepStepDescriptionMod.StepDescriptionProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  js.Object](typingsJapgolly.semanticDashUiDashReact.distCommonjsElementsStepStepDescriptionMod.default)
+  js.Object](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.semanticDashUiDashReact.distCommonjsElementsStepStepDescriptionMod.StepDescriptionProps])(children: _*)
   }
+  @JSImport("semantic-ui-react/dist/commonjs/elements/Step/StepDescription", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

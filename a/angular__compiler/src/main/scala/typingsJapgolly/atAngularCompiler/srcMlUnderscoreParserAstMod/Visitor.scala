@@ -24,7 +24,7 @@ object Visitor {
     visitExpansion: (Expansion, js.Any) => CallbackTo[js.Any],
     visitExpansionCase: (ExpansionCase, js.Any) => CallbackTo[js.Any],
     visitText: (Text, js.Any) => CallbackTo[js.Any],
-    visit: (/* node */ Node, /* context */ js.Any) => CallbackTo[_] = null
+    visit: (/* node */ Node, /* context */ js.Any) => CallbackTo[js.Any] = null
   ): Visitor = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("visitAttribute")(js.Any.fromFunction2((t0: typingsJapgolly.atAngularCompiler.srcMlUnderscoreParserAstMod.Attribute, t1: js.Any) => visitAttribute(t0, t1).runNow()))

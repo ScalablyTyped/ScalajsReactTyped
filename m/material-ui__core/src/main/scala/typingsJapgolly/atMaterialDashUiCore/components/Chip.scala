@@ -458,8 +458,12 @@ object Chip {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.atMaterialDashUiCore.chipChipMod.ChipProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.atMaterialDashUiCore.chipMod.default](js.constructorOf[typingsJapgolly.atMaterialDashUiCore.chipMod.default])
+  typingsJapgolly.atMaterialDashUiCore.chipMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.atMaterialDashUiCore.chipChipMod.ChipProps])(children: _*)
   }
+  @JSImport("@material-ui/core/Chip", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

@@ -6,6 +6,9 @@ import scala.scalajs.js.annotation._
 
 object AvFastForward
   extends SharedApply_SvgIconProps1538262166[typingsJapgolly.materialDashUi.svgDashIconsMod.AvFastForward] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.materialDashUi.svgDashIconsMod.AvFastForward]
+  @JSImport("material-ui/svg-icons", "AvFastForward")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

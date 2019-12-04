@@ -7,9 +7,9 @@ import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
 import japgolly.scalajs.react.vdom.VdomNode
 import org.scalablytyped.runtime.StringDictionary
 import org.scalajs.dom.raw.MouseEvent
-import typingsJapgolly.antd.esSwitchMod.SwitchProps
-import typingsJapgolly.antd.esSwitchMod.SwitchSize
-import typingsJapgolly.antd.esSwitchMod.default
+import typingsJapgolly.antd.libSwitchMod.SwitchProps
+import typingsJapgolly.antd.libSwitchMod.SwitchSize
+import typingsJapgolly.antd.libSwitchMod.default
 import typingsJapgolly.react.reactMod.CSSProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -56,10 +56,14 @@ object Switch {
     if (overrides != null) js.Dynamic.global.Object.assign(__obj, overrides)
   
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antd.esSwitchMod.SwitchProps, 
+  typingsJapgolly.antd.libSwitchMod.SwitchProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antd.esSwitchMod.default](js.constructorOf[typingsJapgolly.antd.esSwitchMod.default])
-    f(__obj.asInstanceOf[typingsJapgolly.antd.esSwitchMod.SwitchProps])(children: _*)
+  typingsJapgolly.antd.libSwitchMod.default](this.componentImport)
+    f(__obj.asInstanceOf[typingsJapgolly.antd.libSwitchMod.SwitchProps])(children: _*)
   }
+  @JSImport("antd/lib/switch", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

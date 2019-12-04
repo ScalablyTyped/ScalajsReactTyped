@@ -453,8 +453,12 @@ object ListSubheader {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.atMaterialDashUiCore.listSubheaderListSubheaderMod.ListSubheaderProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.atMaterialDashUiCore.listSubheaderMod.default](js.constructorOf[typingsJapgolly.atMaterialDashUiCore.listSubheaderMod.default])
+  typingsJapgolly.atMaterialDashUiCore.listSubheaderMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.atMaterialDashUiCore.listSubheaderListSubheaderMod.ListSubheaderProps])(children: _*)
   }
+  @JSImport("@material-ui/core/ListSubheader", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

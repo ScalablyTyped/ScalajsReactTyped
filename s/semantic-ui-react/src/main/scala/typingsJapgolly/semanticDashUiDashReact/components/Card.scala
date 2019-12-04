@@ -67,8 +67,12 @@ object Card {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.semanticDashUiDashReact.distCommonjsViewsCardCardMod.CardProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.semanticDashUiDashReact.distCommonjsViewsCardMod.default](js.constructorOf[typingsJapgolly.semanticDashUiDashReact.distCommonjsViewsCardMod.default])
+  typingsJapgolly.semanticDashUiDashReact.distCommonjsViewsCardMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.semanticDashUiDashReact.distCommonjsViewsCardCardMod.CardProps])(children: _*)
   }
+  @JSImport("semantic-ui-react/dist/commonjs/views/Card", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

@@ -6,6 +6,9 @@ import scala.scalajs.js.annotation._
 
 object ActionZoomOut
   extends SharedApply_SvgIconProps1538262166[typingsJapgolly.materialDashUi.svgDashIconsMod.ActionZoomOut] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.materialDashUi.svgDashIconsMod.ActionZoomOut]
+  @JSImport("material-ui/svg-icons", "ActionZoomOut")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

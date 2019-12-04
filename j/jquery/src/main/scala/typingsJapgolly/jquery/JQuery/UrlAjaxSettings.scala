@@ -42,7 +42,7 @@ object UrlAjaxSettings {
     converters: PlainObject[(js.Function1[/* value */ _, _]) | `true`] = null,
     crossDomain: js.UndefOr[Boolean] = js.undefined,
     data: PlainObject[_] | String = null,
-    dataFilter: (/* data */ String, /* type */ String) => CallbackTo[_] = null,
+    dataFilter: (/* data */ String, /* type */ String) => CallbackTo[js.Any] = null,
     dataType: xml | html | script | json | jsonp | text | String = null,
     error: TypeOrArray[ErrorCallback[TContext]] = null,
     global: js.UndefOr[Boolean] = js.undefined,

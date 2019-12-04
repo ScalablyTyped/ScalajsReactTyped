@@ -1,12 +1,12 @@
 organization := "org.gulliblytyped.japgolly"
 name := "redux"
-version := "4.0.4-5c07dd"
+version := "4.0.4-5bcd3a"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.github.japgolly.scalajs-react" %%% "core" % "1.4.2",
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.gulliblytyped.japgolly" %%% "std" % "3.7-6f398d")
+  "org.gulliblytyped.japgolly" %%% "std" % "3.7-ed3398")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

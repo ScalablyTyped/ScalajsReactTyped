@@ -1,11 +1,14 @@
 package typingsJapgolly.atMaterialDashUiIcons.components
 
+import typingsJapgolly.atMaterialDashUiIcons.speakerGroupSharpMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object SpeakerGroupSharp
-  extends SharedApply_SvgIconProps1591622337[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.SpeakerGroupSharp] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.SpeakerGroupSharp]
+object SpeakerGroupSharp extends SharedApply_SvgIconProps1591622337[default] {
+  @JSImport("@material-ui/icons/SpeakerGroupSharp", "default")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

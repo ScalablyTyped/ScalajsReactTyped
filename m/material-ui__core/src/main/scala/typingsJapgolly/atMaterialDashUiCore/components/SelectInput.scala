@@ -78,8 +78,12 @@ object SelectInput {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.atMaterialDashUiCore.selectSelectInputMod.SelectInputProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.atMaterialDashUiCore.selectSelectInputMod.default](js.constructorOf[typingsJapgolly.atMaterialDashUiCore.selectSelectInputMod.default])
+  typingsJapgolly.atMaterialDashUiCore.selectSelectInputMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.atMaterialDashUiCore.selectSelectInputMod.SelectInputProps])(children: _*)
   }
+  @JSImport("@material-ui/core/Select/SelectInput", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

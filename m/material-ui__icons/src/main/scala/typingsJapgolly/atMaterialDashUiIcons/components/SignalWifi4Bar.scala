@@ -1,11 +1,14 @@
 package typingsJapgolly.atMaterialDashUiIcons.components
 
+import typingsJapgolly.atMaterialDashUiIcons.signalWifi4BarMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object SignalWifi4Bar
-  extends SharedApply_SvgIconProps1591622337[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.SignalWifi4Bar] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.SignalWifi4Bar]
+object SignalWifi4Bar extends SharedApply_SvgIconProps1591622337[default] {
+  @JSImport("@material-ui/icons/SignalWifi4Bar", "default")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

@@ -28,9 +28,9 @@ import typingsJapgolly.antd.antdStrings.sm
 import typingsJapgolly.antd.antdStrings.xl
 import typingsJapgolly.antd.antdStrings.xs
 import typingsJapgolly.antd.antdStrings.xxl
-import typingsJapgolly.antd.esLayoutSiderMod.CollapseType
-import typingsJapgolly.antd.esLayoutSiderMod.SiderProps
-import typingsJapgolly.antd.esLayoutSiderMod.SiderTheme
+import typingsJapgolly.antd.libLayoutSiderMod.CollapseType
+import typingsJapgolly.antd.libLayoutSiderMod.SiderProps
+import typingsJapgolly.antd.libLayoutSiderMod.SiderTheme
 import typingsJapgolly.react.Anon_Html
 import typingsJapgolly.react.reactMod.CSSProperties
 import typingsJapgolly.react.reactStrings.`additions text`
@@ -369,7 +369,7 @@ object LayoutSider {
     if (onCanPlayThrough != null) __obj.updateDynamic("onCanPlayThrough")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[org.scalajs.dom.raw.HTMLDivElement]) => onCanPlayThrough(t0).runNow()))
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[org.scalajs.dom.raw.HTMLDivElement]) => onChange(t0).runNow()))
     if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactMouseEventFrom[org.scalajs.dom.raw.HTMLDivElement]) => onClick(t0).runNow()))
-    if (onCollapse != null) __obj.updateDynamic("onCollapse")(js.Any.fromFunction2((t0: /* collapsed */ scala.Boolean, t1: /* type */ typingsJapgolly.antd.esLayoutSiderMod.CollapseType) => onCollapse(t0, t1).runNow()))
+    if (onCollapse != null) __obj.updateDynamic("onCollapse")(js.Any.fromFunction2((t0: /* collapsed */ scala.Boolean, t1: /* type */ typingsJapgolly.antd.libLayoutSiderMod.CollapseType) => onCollapse(t0, t1).runNow()))
     if (onCompositionEnd != null) __obj.updateDynamic("onCompositionEnd")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactCompositionEventFrom[org.scalajs.dom.raw.HTMLDivElement]) => onCompositionEnd(t0).runNow()))
     if (onCompositionStart != null) __obj.updateDynamic("onCompositionStart")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactCompositionEventFrom[org.scalajs.dom.raw.HTMLDivElement]) => onCompositionStart(t0).runNow()))
     if (onCompositionUpdate != null) __obj.updateDynamic("onCompositionUpdate")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactCompositionEventFrom[org.scalajs.dom.raw.HTMLDivElement]) => onCompositionUpdate(t0).runNow()))
@@ -467,10 +467,14 @@ object LayoutSider {
     if (overrides != null) js.Dynamic.global.Object.assign(__obj, overrides)
   
     val f = japgolly.scalajs.react.JsComponent[
-  typingsJapgolly.antd.esLayoutSiderMod.SiderProps, 
+  typingsJapgolly.antd.libLayoutSiderMod.SiderProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  js.Object](typingsJapgolly.antd.esMod.Layout.Sider)
-    f(__obj.asInstanceOf[typingsJapgolly.antd.esLayoutSiderMod.SiderProps])(children: _*)
+  js.Object](this.componentImport)
+    f(__obj.asInstanceOf[typingsJapgolly.antd.libLayoutSiderMod.SiderProps])(children: _*)
   }
+  @JSImport("antd", "Layout.Sider")
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

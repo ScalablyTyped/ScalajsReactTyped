@@ -6,6 +6,9 @@ import scala.scalajs.js.annotation._
 
 object NotificationNetworkLocked
   extends SharedApply_SvgIconProps1538262166[typingsJapgolly.materialDashUi.svgDashIconsMod.NotificationNetworkLocked] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.materialDashUi.svgDashIconsMod.NotificationNetworkLocked]
+  @JSImport("material-ui/svg-icons", "NotificationNetworkLocked")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

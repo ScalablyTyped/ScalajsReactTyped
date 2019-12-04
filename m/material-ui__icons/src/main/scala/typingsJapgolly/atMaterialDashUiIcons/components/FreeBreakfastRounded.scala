@@ -1,13 +1,14 @@
 package typingsJapgolly.atMaterialDashUiIcons.components
 
+import typingsJapgolly.atMaterialDashUiIcons.freeBreakfastRoundedMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object FreeBreakfastRounded
-  extends SharedApply_SvgIconProps1591622337[
-      typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.FreeBreakfastRounded
-    ] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.FreeBreakfastRounded]
+object FreeBreakfastRounded extends SharedApply_SvgIconProps1591622337[default] {
+  @JSImport("@material-ui/icons/FreeBreakfastRounded", "default")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

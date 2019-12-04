@@ -1,13 +1,14 @@
 package typingsJapgolly.atMaterialDashUiIcons.components
 
+import typingsJapgolly.atMaterialDashUiIcons.tabUnselectedSharpMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object TabUnselectedSharp
-  extends SharedApply_SvgIconProps1591622337[
-      typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.TabUnselectedSharp
-    ] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.TabUnselectedSharp]
+object TabUnselectedSharp extends SharedApply_SvgIconProps1591622337[default] {
+  @JSImport("@material-ui/icons/TabUnselectedSharp", "default")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

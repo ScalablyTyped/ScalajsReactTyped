@@ -37,8 +37,12 @@ object ListItemAvatar {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.atMaterialDashUiCore.listItemAvatarListItemAvatarMod.ListItemAvatarProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.atMaterialDashUiCore.listItemAvatarMod.default](js.constructorOf[typingsJapgolly.atMaterialDashUiCore.listItemAvatarMod.default])
+  typingsJapgolly.atMaterialDashUiCore.listItemAvatarMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.atMaterialDashUiCore.listItemAvatarListItemAvatarMod.ListItemAvatarProps])(children: _*)
   }
+  @JSImport("@material-ui/core/ListItemAvatar", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

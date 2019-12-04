@@ -38,8 +38,12 @@ object BrowserRouter {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.reactDashRouterDashDom.reactDashRouterDashDomMod.BrowserRouterProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactDashRouterDashDom.reactDashRouterDashDomMod.BrowserRouter](js.constructorOf[typingsJapgolly.reactDashRouterDashDom.reactDashRouterDashDomMod.BrowserRouter])
+  typingsJapgolly.reactDashRouterDashDom.reactDashRouterDashDomMod.BrowserRouter](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.reactDashRouterDashDom.reactDashRouterDashDomMod.BrowserRouterProps])(children: _*)
   }
+  @JSImport("react-router-dom", "BrowserRouter")
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

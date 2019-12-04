@@ -3,7 +3,7 @@ package typingsJapgolly.rcDashMenu.libSubPopupMenuMod
 import japgolly.scalajs.react.ReactKeyboardEventFrom
 import japgolly.scalajs.react.raw.React.Element
 import org.scalajs.dom.raw.HTMLElement
-import typingsJapgolly.rcDashMenu.Anon_ClassName
+import typingsJapgolly.rcDashMenu.Anon_ClassNameFocusable
 import typingsJapgolly.rcDashMenu.libInterfaceMod.DestroyEventHandler
 import typingsJapgolly.rcDashMenu.libInterfaceMod.HoverEventHandler
 import typingsJapgolly.rcDashMenu.libInterfaceMod.MenuClickEventHandler
@@ -53,6 +53,6 @@ class SubPopupMenu protected ()
 @JSImport("rc-menu/lib/SubPopupMenu", "SubPopupMenu")
 @js.native
 object SubPopupMenu extends js.Object {
-  var defaultProps: Anon_ClassName = js.native
+  var defaultProps: Anon_ClassNameFocusable = js.native
 }
 

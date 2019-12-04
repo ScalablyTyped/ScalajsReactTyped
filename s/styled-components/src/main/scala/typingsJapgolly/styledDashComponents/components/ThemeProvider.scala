@@ -39,7 +39,7 @@ object ThemeProvider {
     ]
   ], 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.styledDashComponents.macroMod.ThemeProvider](js.constructorOf[typingsJapgolly.styledDashComponents.macroMod.ThemeProvider])
+  typingsJapgolly.styledDashComponents.macroMod.ThemeProvider](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.styledDashComponents.styledDashComponentsMod.ThemeProviderProps[
   typingsJapgolly.styledDashComponents.styledDashComponentsMod.AnyIfEmpty[
     typingsJapgolly.styledDashComponents.styledDashComponentsMod.AnyIfEmpty[typingsJapgolly.styledDashComponents.styledDashComponentsMod.DefaultTheme]
@@ -48,5 +48,9 @@ object ThemeProvider {
     typingsJapgolly.styledDashComponents.styledDashComponentsMod.AnyIfEmpty[typingsJapgolly.styledDashComponents.styledDashComponentsMod.DefaultTheme]
   ]]])(children: _*)
   }
+  @JSImport("styled-components/macro", "ThemeProvider")
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

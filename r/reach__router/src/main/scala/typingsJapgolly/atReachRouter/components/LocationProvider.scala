@@ -34,8 +34,12 @@ object LocationProvider {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.atReachRouter.atReachRouterMod.LocationProviderProps, 
   japgolly.scalajs.react.Children.None, 
-  typingsJapgolly.atReachRouter.atReachRouterMod.LocationProvider](js.constructorOf[typingsJapgolly.atReachRouter.atReachRouterMod.LocationProvider])
+  typingsJapgolly.atReachRouter.atReachRouterMod.LocationProvider](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.atReachRouter.atReachRouterMod.LocationProviderProps])
   }
+  @JSImport("@reach/router", "LocationProvider")
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

@@ -476,8 +476,12 @@ object Backdrop {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.atMaterialDashUiCore.backdropBackdropMod.BackdropProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.atMaterialDashUiCore.backdropMod.default](js.constructorOf[typingsJapgolly.atMaterialDashUiCore.backdropMod.default])
+  typingsJapgolly.atMaterialDashUiCore.backdropMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.atMaterialDashUiCore.backdropBackdropMod.BackdropProps])(children: _*)
   }
+  @JSImport("@material-ui/core/Backdrop", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

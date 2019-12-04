@@ -2,14 +2,14 @@ package typingsJapgolly.antd
 
 import japgolly.scalajs.react.raw.React.Node
 import japgolly.scalajs.react.vdom.VdomNode
-import typingsJapgolly.antd.esSkeletonAvatarMod.SkeletonAvatarProps
-import typingsJapgolly.antd.esSkeletonParagraphMod.SkeletonParagraphProps
-import typingsJapgolly.antd.esSkeletonTitleMod.SkeletonTitleProps
+import typingsJapgolly.antd.libSkeletonAvatarMod.SkeletonAvatarProps
+import typingsJapgolly.antd.libSkeletonParagraphMod.SkeletonParagraphProps
+import typingsJapgolly.antd.libSkeletonTitleMod.SkeletonTitleProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined std.Partial<antd.antd/es/skeleton.SkeletonProps> */
+/* Inlined std.Partial<antd.antd/lib/skeleton.SkeletonProps> */
 trait PartialSkeletonProps extends js.Object {
   var active: js.UndefOr[Boolean] = js.undefined
   var avatar: js.UndefOr[SkeletonAvatarProps | Boolean] = js.undefined

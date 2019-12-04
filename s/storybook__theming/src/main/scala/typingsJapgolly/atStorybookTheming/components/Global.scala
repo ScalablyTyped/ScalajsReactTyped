@@ -32,8 +32,12 @@ object Global {
     val f = japgolly.scalajs.react.JsComponent[
   typingsJapgolly.atEmotionCore.atEmotionCoreMod.GlobalProps[Theme], 
   japgolly.scalajs.react.Children.Varargs, 
-  js.Object](typingsJapgolly.atStorybookTheming.atStorybookThemingMod.Global)
+  js.Object](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.atEmotionCore.atEmotionCoreMod.GlobalProps[Theme]])(children: _*)
   }
+  @JSImport("@storybook/theming", "Global")
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

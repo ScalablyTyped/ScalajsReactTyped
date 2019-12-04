@@ -6,6 +6,9 @@ import scala.scalajs.js.annotation._
 
 object HardwareHeadsetMic
   extends SharedApply_SvgIconProps1538262166[typingsJapgolly.materialDashUi.svgDashIconsMod.HardwareHeadsetMic] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.materialDashUi.svgDashIconsMod.HardwareHeadsetMic]
+  @JSImport("material-ui/svg-icons", "HardwareHeadsetMic")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

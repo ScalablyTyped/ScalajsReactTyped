@@ -4,7 +4,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object CardMeta extends SharedApply_CardMetaProps648785242 {
-  override val __component: js.Any = typingsJapgolly.antd.esMod.Card.Meta
+object CardMeta extends SharedApply_CardMetaProps_1359505704 {
+  @JSImport("antd", "Card.Meta")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

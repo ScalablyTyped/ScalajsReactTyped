@@ -67,7 +67,7 @@ import typingsJapgolly.antd.antdStrings.tree
 import typingsJapgolly.antd.antdStrings.url
 import typingsJapgolly.antd.antdStrings.vertical
 import typingsJapgolly.antd.antdStrings.yes
-import typingsJapgolly.antd.esInputPasswordMod.PasswordProps
+import typingsJapgolly.antd.libInputPasswordMod.PasswordProps
 import typingsJapgolly.react.Anon_Html
 import typingsJapgolly.react.reactMod.CSSProperties
 import scala.scalajs.js
@@ -292,7 +292,7 @@ object Password {
     overrides: StringDictionary[js.Any] = null
   )(
     children: ChildArg*
-  ): UnmountedWithRoot[PasswordProps, typingsJapgolly.antd.esInputPasswordMod.default, Unit, PasswordProps] = {
+  ): UnmountedWithRoot[PasswordProps, typingsJapgolly.antd.libInputPasswordMod.default, Unit, PasswordProps] = {
     val __obj = js.Dynamic.literal()
   
       if (about != null) __obj.updateDynamic("about")(about.asInstanceOf[js.Any])
@@ -511,10 +511,14 @@ object Password {
     if (overrides != null) js.Dynamic.global.Object.assign(__obj, overrides)
   
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antd.esInputPasswordMod.PasswordProps, 
+  typingsJapgolly.antd.libInputPasswordMod.PasswordProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antd.esInputPasswordMod.default](js.constructorOf[typingsJapgolly.antd.esInputPasswordMod.default])
-    f(__obj.asInstanceOf[typingsJapgolly.antd.esInputPasswordMod.PasswordProps])(children: _*)
+  typingsJapgolly.antd.libInputPasswordMod.default](this.componentImport)
+    f(__obj.asInstanceOf[typingsJapgolly.antd.libInputPasswordMod.PasswordProps])(children: _*)
   }
+  @JSImport("antd/lib/input/Password", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

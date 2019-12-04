@@ -38,8 +38,12 @@ object DimmerDimmable {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.semanticDashUiDashReact.distCommonjsModulesDimmerDimmerDimmableMod.DimmerDimmableProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.semanticDashUiDashReact.distCommonjsModulesDimmerDimmerDimmableMod.default](js.constructorOf[typingsJapgolly.semanticDashUiDashReact.distCommonjsModulesDimmerDimmerDimmableMod.default])
+  typingsJapgolly.semanticDashUiDashReact.distCommonjsModulesDimmerDimmerDimmableMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.semanticDashUiDashReact.distCommonjsModulesDimmerDimmerDimmableMod.DimmerDimmableProps])(children: _*)
   }
+  @JSImport("semantic-ui-react/dist/commonjs/modules/Dimmer/DimmerDimmable", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

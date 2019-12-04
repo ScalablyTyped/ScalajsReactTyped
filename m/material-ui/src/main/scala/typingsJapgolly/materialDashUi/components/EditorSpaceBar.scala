@@ -6,6 +6,9 @@ import scala.scalajs.js.annotation._
 
 object EditorSpaceBar
   extends SharedApply_SvgIconProps1538262166[typingsJapgolly.materialDashUi.svgDashIconsMod.EditorSpaceBar] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.materialDashUi.svgDashIconsMod.EditorSpaceBar]
+  @JSImport("material-ui/svg-icons", "EditorSpaceBar")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

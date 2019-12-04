@@ -38,8 +38,12 @@ object DropdownHeader {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.semanticDashUiDashReact.distCommonjsModulesDropdownDropdownHeaderMod.DropdownHeaderProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.semanticDashUiDashReact.distCommonjsModulesDropdownDropdownHeaderMod.default](js.constructorOf[typingsJapgolly.semanticDashUiDashReact.distCommonjsModulesDropdownDropdownHeaderMod.default])
+  typingsJapgolly.semanticDashUiDashReact.distCommonjsModulesDropdownDropdownHeaderMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.semanticDashUiDashReact.distCommonjsModulesDropdownDropdownHeaderMod.DropdownHeaderProps])(children: _*)
   }
+  @JSImport("semantic-ui-react/dist/commonjs/modules/Dropdown/DropdownHeader", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

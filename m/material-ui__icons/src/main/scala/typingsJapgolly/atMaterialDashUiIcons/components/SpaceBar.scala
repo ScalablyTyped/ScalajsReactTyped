@@ -1,11 +1,14 @@
 package typingsJapgolly.atMaterialDashUiIcons.components
 
+import typingsJapgolly.atMaterialDashUiIcons.spaceBarMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object SpaceBar
-  extends SharedApply_SvgIconProps1591622337[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.SpaceBar] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.SpaceBar]
+object SpaceBar extends SharedApply_SvgIconProps1591622337[default] {
+  @JSImport("@material-ui/icons/SpaceBar", "default")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

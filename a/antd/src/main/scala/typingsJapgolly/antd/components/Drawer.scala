@@ -10,10 +10,10 @@ import japgolly.scalajs.react.vdom.VdomNode
 import org.scalablytyped.runtime.StringDictionary
 import org.scalajs.dom.raw.HTMLElement
 import typingsJapgolly.antd.antdNumbers.`false`
-import typingsJapgolly.antd.esDrawerMod.DrawerProps
-import typingsJapgolly.antd.esDrawerMod.EventType
-import typingsJapgolly.antd.esDrawerMod.getContainerFunc
-import typingsJapgolly.antd.esDrawerMod.placementType
+import typingsJapgolly.antd.libDrawerMod.DrawerProps
+import typingsJapgolly.antd.libDrawerMod.EventType
+import typingsJapgolly.antd.libDrawerMod.getContainerFunc
+import typingsJapgolly.antd.libDrawerMod.placementType
 import typingsJapgolly.react.reactMod.CSSProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -69,7 +69,7 @@ object Drawer {
     if (!js.isUndefined(mask)) __obj.updateDynamic("mask")(mask.asInstanceOf[js.Any])
     if (!js.isUndefined(maskClosable)) __obj.updateDynamic("maskClosable")(maskClosable.asInstanceOf[js.Any])
     if (maskStyle != null) __obj.updateDynamic("maskStyle")(maskStyle.asInstanceOf[js.Any])
-    if (onClose != null) __obj.updateDynamic("onClose")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.antd.esDrawerMod.EventType) => onClose(t0).runNow()))
+    if (onClose != null) __obj.updateDynamic("onClose")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.antd.libDrawerMod.EventType) => onClose(t0).runNow()))
     if (placement != null) __obj.updateDynamic("placement")(placement.asInstanceOf[js.Any])
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
     if (!js.isUndefined(push)) __obj.updateDynamic("push")(push.asInstanceOf[js.Any])
@@ -83,10 +83,14 @@ object Drawer {
     if (overrides != null) js.Dynamic.global.Object.assign(__obj, overrides)
   
     val f = japgolly.scalajs.react.JsComponent[
-  typingsJapgolly.antd.esDrawerMod.DrawerProps, 
+  typingsJapgolly.antd.libDrawerMod.DrawerProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  js.Object](typingsJapgolly.antd.esDrawerMod.default)
-    f(__obj.asInstanceOf[typingsJapgolly.antd.esDrawerMod.DrawerProps])(children: _*)
+  js.Object](this.componentImport)
+    f(__obj.asInstanceOf[typingsJapgolly.antd.libDrawerMod.DrawerProps])(children: _*)
   }
+  @JSImport("antd/lib/drawer", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

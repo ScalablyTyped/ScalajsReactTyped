@@ -1,6 +1,6 @@
 package typingsJapgolly.antd
 
-import typingsJapgolly.antd.esModalLocaleMod.ModalLocale
+import typingsJapgolly.antd.libModalLocaleMod.ModalLocale
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

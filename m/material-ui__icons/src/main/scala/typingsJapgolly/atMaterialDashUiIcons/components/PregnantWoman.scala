@@ -1,11 +1,14 @@
 package typingsJapgolly.atMaterialDashUiIcons.components
 
+import typingsJapgolly.atMaterialDashUiIcons.pregnantWomanMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object PregnantWoman
-  extends SharedApply_SvgIconProps1591622337[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PregnantWoman] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PregnantWoman]
+object PregnantWoman extends SharedApply_SvgIconProps1591622337[default] {
+  @JSImport("@material-ui/icons/PregnantWoman", "default")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

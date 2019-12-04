@@ -611,8 +611,12 @@ object SvgIcon {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.atMaterialDashUiCore.svgIconMod.default](js.constructorOf[typingsJapgolly.atMaterialDashUiCore.svgIconMod.default])
+  typingsJapgolly.atMaterialDashUiCore.svgIconMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.atMaterialDashUiCore.svgIconSvgIconMod.SvgIconProps])(children: _*)
   }
+  @JSImport("@material-ui/core/SvgIcon", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

@@ -1,13 +1,14 @@
 package typingsJapgolly.atMaterialDashUiIcons.components
 
+import typingsJapgolly.atMaterialDashUiIcons.localConvenienceStoreSharpMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object LocalConvenienceStoreSharp
-  extends SharedApply_SvgIconProps1591622337[
-      typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.LocalConvenienceStoreSharp
-    ] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.LocalConvenienceStoreSharp]
+object LocalConvenienceStoreSharp extends SharedApply_SvgIconProps1591622337[default] {
+  @JSImport("@material-ui/icons/LocalConvenienceStoreSharp", "default")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

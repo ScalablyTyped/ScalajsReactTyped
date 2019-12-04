@@ -8,8 +8,8 @@ import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
 import org.scalablytyped.runtime.StringDictionary
 import org.scalajs.dom.raw.HTMLElement
 import org.scalajs.dom.raw.Window
-import typingsJapgolly.antd.esAffixMod.AffixProps
-import typingsJapgolly.antd.esAffixMod.default
+import typingsJapgolly.antd.libAffixMod.AffixProps
+import typingsJapgolly.antd.libAffixMod.default
 import typingsJapgolly.react.reactMod.CSSProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -44,10 +44,14 @@ object Affix {
     if (overrides != null) js.Dynamic.global.Object.assign(__obj, overrides)
   
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antd.esAffixMod.AffixProps, 
+  typingsJapgolly.antd.libAffixMod.AffixProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antd.esAffixMod.default](js.constructorOf[typingsJapgolly.antd.esAffixMod.default])
-    f(__obj.asInstanceOf[typingsJapgolly.antd.esAffixMod.AffixProps])(children: _*)
+  typingsJapgolly.antd.libAffixMod.default](this.componentImport)
+    f(__obj.asInstanceOf[typingsJapgolly.antd.libAffixMod.AffixProps])(children: _*)
   }
+  @JSImport("antd/lib/affix", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

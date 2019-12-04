@@ -6,7 +6,7 @@ import japgolly.scalajs.react.component.Js.MountedWithRawType
 import japgolly.scalajs.react.component.Js.RawMounted
 import japgolly.scalajs.react.component.Js.UnmountedSimple
 import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.rcDashMenu.esDividerMod.DividerProps
+import typingsJapgolly.rcDashMenu.libDividerMod.DividerProps
 import typingsJapgolly.react.reactMod.CSSProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -36,10 +36,14 @@ object Divider {
     if (overrides != null) js.Dynamic.global.Object.assign(__obj, overrides)
   
     val f = japgolly.scalajs.react.JsComponent[
-  typingsJapgolly.rcDashMenu.esDividerMod.DividerProps, 
+  typingsJapgolly.rcDashMenu.libDividerMod.DividerProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  js.Object](typingsJapgolly.rcDashMenu.esDividerMod.default)
-    f(__obj.asInstanceOf[typingsJapgolly.rcDashMenu.esDividerMod.DividerProps])(children: _*)
+  js.Object](this.componentImport)
+    f(__obj.asInstanceOf[typingsJapgolly.rcDashMenu.libDividerMod.DividerProps])(children: _*)
   }
+  @JSImport("rc-menu/lib/Divider", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

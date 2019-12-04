@@ -453,8 +453,12 @@ object AppBar {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.atMaterialDashUiCore.appBarAppBarMod.AppBarProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.atMaterialDashUiCore.appBarMod.default](js.constructorOf[typingsJapgolly.atMaterialDashUiCore.appBarMod.default])
+  typingsJapgolly.atMaterialDashUiCore.appBarMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.atMaterialDashUiCore.appBarAppBarMod.AppBarProps])(children: _*)
   }
+  @JSImport("@material-ui/core/AppBar", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

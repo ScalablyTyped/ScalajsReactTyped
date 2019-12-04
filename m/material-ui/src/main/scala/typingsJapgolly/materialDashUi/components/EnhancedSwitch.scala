@@ -495,8 +495,12 @@ object EnhancedSwitch {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.materialDashUi.internalEnhancedSwitchMod.EnhancedSwitchProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.materialDashUi.internalEnhancedSwitchMod.default](js.constructorOf[typingsJapgolly.materialDashUi.internalEnhancedSwitchMod.default])
+  typingsJapgolly.materialDashUi.internalEnhancedSwitchMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.materialDashUi.internalEnhancedSwitchMod.EnhancedSwitchProps])(children: _*)
   }
+  @JSImport("material-ui/internal/EnhancedSwitch", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

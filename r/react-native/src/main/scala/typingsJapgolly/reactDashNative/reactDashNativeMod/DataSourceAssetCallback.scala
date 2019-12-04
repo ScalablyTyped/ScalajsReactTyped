@@ -17,8 +17,8 @@ trait DataSourceAssetCallback extends js.Object {
 object DataSourceAssetCallback {
   @scala.inline
   def apply(
-    getRowData: (/* dataBlob */ js.Any, /* sectionID */ Double | String, /* rowID */ Double | String) => CallbackTo[_] = null,
-    getSectionHeaderData: (/* dataBlob */ js.Any, /* sectionID */ Double | String) => CallbackTo[_] = null,
+    getRowData: (/* dataBlob */ js.Any, /* sectionID */ Double | String, /* rowID */ Double | String) => CallbackTo[js.Any] = null,
+    getSectionHeaderData: (/* dataBlob */ js.Any, /* sectionID */ Double | String) => CallbackTo[js.Any] = null,
     rowHasChanged: (/* r1 */ js.Any, /* r2 */ js.Any) => CallbackTo[Boolean] = null,
     sectionHeaderHasChanged: (/* h1 */ js.Any, /* h2 */ js.Any) => CallbackTo[Boolean] = null
   ): DataSourceAssetCallback = {

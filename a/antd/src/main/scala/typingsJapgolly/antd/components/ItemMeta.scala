@@ -7,7 +7,7 @@ import japgolly.scalajs.react.component.Js.RawMounted
 import japgolly.scalajs.react.component.Js.UnmountedSimple
 import japgolly.scalajs.react.vdom.VdomNode
 import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.antd.esListItemMod.ListItemMetaProps
+import typingsJapgolly.antd.libListItemMod.ListItemMetaProps
 import typingsJapgolly.react.reactMod.CSSProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -45,10 +45,14 @@ object ItemMeta {
     if (overrides != null) js.Dynamic.global.Object.assign(__obj, overrides)
   
     val f = japgolly.scalajs.react.JsComponent[
-  /* props */ typingsJapgolly.antd.esListItemMod.ListItemMetaProps, 
+  /* props */ typingsJapgolly.antd.libListItemMod.ListItemMetaProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  js.Object](typingsJapgolly.antd.esListItemMod.default.asInstanceOf[js.Dynamic].selectDynamic("Meta"))
-    f(__obj.asInstanceOf[/* props */ typingsJapgolly.antd.esListItemMod.ListItemMetaProps])(children: _*)
+  js.Object](this.componentImport)
+    f(__obj.asInstanceOf[/* props */ typingsJapgolly.antd.libListItemMod.ListItemMetaProps])(children: _*)
   }
+  @JSImport("antd/lib/list/Item", "default.Meta")
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

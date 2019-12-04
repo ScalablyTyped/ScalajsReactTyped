@@ -55,8 +55,12 @@ object Transition {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.semanticDashUiDashReact.distCommonjsModulesTransitionTransitionMod.TransitionProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.semanticDashUiDashReact.distCommonjsModulesTransitionMod.default](js.constructorOf[typingsJapgolly.semanticDashUiDashReact.distCommonjsModulesTransitionMod.default])
+  typingsJapgolly.semanticDashUiDashReact.distCommonjsModulesTransitionMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.semanticDashUiDashReact.distCommonjsModulesTransitionTransitionMod.TransitionProps])(children: _*)
   }
+  @JSImport("semantic-ui-react/dist/commonjs/modules/Transition", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

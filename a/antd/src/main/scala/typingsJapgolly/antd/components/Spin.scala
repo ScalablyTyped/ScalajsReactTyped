@@ -5,9 +5,9 @@ import japgolly.scalajs.react.Key
 import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
 import japgolly.scalajs.react.vdom.VdomElement
 import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.antd.esSpinMod.SpinProps
-import typingsJapgolly.antd.esSpinMod.SpinSize
-import typingsJapgolly.antd.esSpinMod.default
+import typingsJapgolly.antd.libSpinMod.SpinProps
+import typingsJapgolly.antd.libSpinMod.SpinSize
+import typingsJapgolly.antd.libSpinMod.default
 import typingsJapgolly.react.reactMod.CSSProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -44,10 +44,14 @@ object Spin {
     if (overrides != null) js.Dynamic.global.Object.assign(__obj, overrides)
   
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antd.esSpinMod.SpinProps, 
+  typingsJapgolly.antd.libSpinMod.SpinProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antd.esSpinMod.default](js.constructorOf[typingsJapgolly.antd.esSpinMod.default])
-    f(__obj.asInstanceOf[typingsJapgolly.antd.esSpinMod.SpinProps])(children: _*)
+  typingsJapgolly.antd.libSpinMod.default](this.componentImport)
+    f(__obj.asInstanceOf[typingsJapgolly.antd.libSpinMod.SpinProps])(children: _*)
   }
+  @JSImport("antd/lib/spin", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

@@ -1,11 +1,14 @@
 package typingsJapgolly.atMaterialDashUiIcons.components
 
+import typingsJapgolly.atMaterialDashUiIcons.flashOffMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object FlashOff
-  extends SharedApply_SvgIconProps1591622337[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.FlashOff] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.FlashOff]
+object FlashOff extends SharedApply_SvgIconProps1591622337[default] {
+  @JSImport("@material-ui/icons/FlashOff", "default")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

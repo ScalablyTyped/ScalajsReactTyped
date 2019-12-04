@@ -1,15 +1,22 @@
 organization := "org.gulliblytyped.japgolly"
 name := "angular__platform-browser"
-version := "8.2.14-316225"
+version := "8.2.14-d8ec56"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.github.japgolly.scalajs-react" %%% "core" % "1.4.2",
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.gulliblytyped.japgolly" %%% "angular__common" % "8.2.14-a516d4",
-  "org.gulliblytyped.japgolly" %%% "angular__core" % "8.2.14-ddae48",
-  "org.gulliblytyped.japgolly" %%% "rxjs" % "6.5.3-b05d90",
-  "org.gulliblytyped.japgolly" %%% "std" % "3.7-6f398d")
+  "org.gulliblytyped.japgolly" %%% "angular__animations" % "8.2.14-f32062",
+  "org.gulliblytyped.japgolly" %%% "angular__common" % "8.2.14-ae3770",
+  "org.gulliblytyped.japgolly" %%% "angular__compiler" % "8.2.14-5663cd",
+  "org.gulliblytyped.japgolly" %%% "angular__core" % "8.2.14-3fb66e",
+  "org.gulliblytyped.japgolly" %%% "inquirer" % "6.5-dt-20190731Z-eb2a45",
+  "org.gulliblytyped.japgolly" %%% "node" % "12.12-dt-20191126Z-fec8d2",
+  "org.gulliblytyped.japgolly" %%% "rxjs" % "6.5.3-1605a1",
+  "org.gulliblytyped.japgolly" %%% "rxjs-compat" % "6.5.3-d48513",
+  "org.gulliblytyped.japgolly" %%% "std" % "3.7-ed3398",
+  "org.gulliblytyped.japgolly" %%% "through" % "0.0-unknown-dt-20190322Z-aa144b",
+  "org.gulliblytyped.japgolly" %%% "typescript" % "3.7.2-5daf6b")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

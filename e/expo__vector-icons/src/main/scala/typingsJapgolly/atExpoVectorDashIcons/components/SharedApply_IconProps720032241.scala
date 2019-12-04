@@ -7,13 +7,13 @@ import japgolly.scalajs.react.ReactEventFrom
 import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
 import org.scalablytyped.runtime.StringDictionary
 import org.scalajs.dom.raw.Element
-import typingsJapgolly.reactDashNative.NodeHandle
 import typingsJapgolly.reactDashNative.reactDashNativeMod.AccessibilityActionInfo
 import typingsJapgolly.reactDashNative.reactDashNativeMod.AccessibilityRole
 import typingsJapgolly.reactDashNative.reactDashNativeMod.AccessibilityState
 import typingsJapgolly.reactDashNative.reactDashNativeMod.AccessibilityStates
 import typingsJapgolly.reactDashNative.reactDashNativeMod.AccessibilityTrait
 import typingsJapgolly.reactDashNative.reactDashNativeMod.LayoutChangeEvent
+import typingsJapgolly.reactDashNative.reactDashNativeMod.NodeHandle
 import typingsJapgolly.reactDashNative.reactDashNativeMod.StyleProp
 import typingsJapgolly.reactDashNative.reactDashNativeMod.TextStyle
 import typingsJapgolly.reactDashNative.reactDashNativeStrings.`no-hide-descendants`
@@ -39,7 +39,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 abstract class SharedApply_IconProps720032241[ComponentRef] () {
-  def __component: js.Any
+  val componentImport: js.Any
   def apply(
     name: String,
     accessibilityActions: js.Array[AccessibilityActionInfo] = null,
@@ -108,12 +108,15 @@ abstract class SharedApply_IconProps720032241[ComponentRef] () {
     if (minimumFontScale != null) __obj.updateDynamic("minimumFontScale")(minimumFontScale.asInstanceOf[js.Any])
     if (nativeID != null) __obj.updateDynamic("nativeID")(nativeID.asInstanceOf[js.Any])
     if (numberOfLines != null) __obj.updateDynamic("numberOfLines")(numberOfLines.asInstanceOf[js.Any])
-    if (onAccessibilityAction != null) __obj.updateDynamic("onAccessibilityAction")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[typingsJapgolly.reactDashNative.NodeHandle with org.scalajs.dom.raw.Element]) => onAccessibilityAction(t0).runNow()))
+    if (onAccessibilityAction != null) __obj.updateDynamic("onAccessibilityAction")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[
+  typingsJapgolly.reactDashNative.reactDashNativeMod.NodeHandle with org.scalajs.dom.raw.Element]) => onAccessibilityAction(t0).runNow()))
     onAccessibilityTap.foreach(p => __obj.updateDynamic("onAccessibilityTap")(p.toJsFn))
     if (onLayout != null) __obj.updateDynamic("onLayout")(js.Any.fromFunction1((t0: /* event */ typingsJapgolly.reactDashNative.reactDashNativeMod.LayoutChangeEvent) => onLayout(t0).runNow()))
-    if (onLongPress != null) __obj.updateDynamic("onLongPress")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[typingsJapgolly.reactDashNative.NodeHandle with org.scalajs.dom.raw.Element]) => onLongPress(t0).runNow()))
+    if (onLongPress != null) __obj.updateDynamic("onLongPress")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[
+  typingsJapgolly.reactDashNative.reactDashNativeMod.NodeHandle with org.scalajs.dom.raw.Element]) => onLongPress(t0).runNow()))
     onMagicTap.foreach(p => __obj.updateDynamic("onMagicTap")(p.toJsFn))
-    if (onPress != null) __obj.updateDynamic("onPress")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[typingsJapgolly.reactDashNative.NodeHandle with org.scalajs.dom.raw.Element]) => onPress(t0).runNow()))
+    if (onPress != null) __obj.updateDynamic("onPress")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[
+  typingsJapgolly.reactDashNative.reactDashNativeMod.NodeHandle with org.scalajs.dom.raw.Element]) => onPress(t0).runNow()))
     if (!js.isUndefined(selectable)) __obj.updateDynamic("selectable")(selectable.asInstanceOf[js.Any])
     if (selectionColor != null) __obj.updateDynamic("selectionColor")(selectionColor.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
@@ -127,7 +130,7 @@ abstract class SharedApply_IconProps720032241[ComponentRef] () {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.reactDashNativeDashVectorDashIcons.iconMod.IconProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  ComponentRef](__component)
+  ComponentRef](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.reactDashNativeDashVectorDashIcons.iconMod.IconProps])(children: _*)
   }
 }

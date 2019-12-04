@@ -40,7 +40,7 @@ trait TreeSelectProps[T /* <: TreeNodeValue */] extends AbstractSelectProps {
   var onFocus: js.UndefOr[FocusEventHandler[HTMLInputElement]] = js.undefined
   @JSName("onSearch")
   var onSearch_TreeSelectProps: js.UndefOr[js.Function1[/* value */ js.Any, Unit]] = js.undefined
-  var onSelect: js.UndefOr[js.Function1[/* value */ js.Any, Unit]] = js.undefined
+  var onSelect: js.UndefOr[js.Function3[/* value */ js.Any, /* node */ js.Any, /* extra */ js.Any, Unit]] = js.undefined
   var onTreeExpand: js.UndefOr[js.Function1[/* keys */ js.Array[String], Unit]] = js.undefined
   var removeIcon: js.UndefOr[Node] = js.undefined
   var searchPlaceholder: js.UndefOr[String] = js.undefined
@@ -94,7 +94,7 @@ object TreeSelectProps {
     onDropdownVisibleChange: /* open */ Boolean => Callback = null,
     onFocus: ReactFocusEventFrom[HTMLInputElement] => Callback = null,
     onSearch: /* value */ js.Any => Callback = null,
-    onSelect: /* value */ js.Any => Callback = null,
+    onSelect: (/* value */ js.Any, /* node */ js.Any, /* extra */ js.Any) => Callback = null,
     onTreeExpand: /* keys */ js.Array[String] => Callback = null,
     open: js.UndefOr[Boolean] = js.undefined,
     placeholder: String | Node = null,
@@ -156,7 +156,7 @@ object TreeSelectProps {
     if (onDropdownVisibleChange != null) __obj.updateDynamic("onDropdownVisibleChange")(js.Any.fromFunction1((t0: /* open */ scala.Boolean) => onDropdownVisibleChange(t0).runNow()))
     if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactFocusEventFrom[org.scalajs.dom.raw.HTMLInputElement]) => onFocus(t0).runNow()))
     if (onSearch != null) __obj.updateDynamic("onSearch")(js.Any.fromFunction1((t0: /* value */ js.Any) => onSearch(t0).runNow()))
-    if (onSelect != null) __obj.updateDynamic("onSelect")(js.Any.fromFunction1((t0: /* value */ js.Any) => onSelect(t0).runNow()))
+    if (onSelect != null) __obj.updateDynamic("onSelect")(js.Any.fromFunction3((t0: /* value */ js.Any, t1: /* node */ js.Any, t2: /* extra */ js.Any) => onSelect(t0, t1, t2).runNow()))
     if (onTreeExpand != null) __obj.updateDynamic("onTreeExpand")(js.Any.fromFunction1((t0: /* keys */ js.Array[java.lang.String]) => onTreeExpand(t0).runNow()))
     if (!js.isUndefined(open)) __obj.updateDynamic("open")(open.asInstanceOf[js.Any])
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])

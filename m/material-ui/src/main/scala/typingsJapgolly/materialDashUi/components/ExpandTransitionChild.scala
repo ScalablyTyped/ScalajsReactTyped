@@ -34,8 +34,12 @@ object ExpandTransitionChild {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.materialDashUi.internalExpandTransitionChildMod.ExpandTransitionChildProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.materialDashUi.internalExpandTransitionChildMod.default](js.constructorOf[typingsJapgolly.materialDashUi.internalExpandTransitionChildMod.default])
+  typingsJapgolly.materialDashUi.internalExpandTransitionChildMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.materialDashUi.internalExpandTransitionChildMod.ExpandTransitionChildProps])(children: _*)
   }
+  @JSImport("material-ui/internal/ExpandTransitionChild", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

@@ -6,6 +6,9 @@ import scala.scalajs.js.annotation._
 
 object DeviceAirplanemodeActive
   extends SharedApply_SvgIconProps1538262166[typingsJapgolly.materialDashUi.svgDashIconsMod.DeviceAirplanemodeActive] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.materialDashUi.svgDashIconsMod.DeviceAirplanemodeActive]
+  @JSImport("material-ui/svg-icons", "DeviceAirplanemodeActive")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

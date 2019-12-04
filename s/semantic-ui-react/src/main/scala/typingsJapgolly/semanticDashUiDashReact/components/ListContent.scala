@@ -51,8 +51,12 @@ object ListContent {
     val f = japgolly.scalajs.react.JsComponent[
   typingsJapgolly.semanticDashUiDashReact.distCommonjsElementsListListContentMod.ListContentProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  js.Object](typingsJapgolly.semanticDashUiDashReact.distCommonjsElementsListListContentMod.default)
+  js.Object](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.semanticDashUiDashReact.distCommonjsElementsListListContentMod.ListContentProps])(children: _*)
   }
+  @JSImport("semantic-ui-react/dist/commonjs/elements/List/ListContent", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

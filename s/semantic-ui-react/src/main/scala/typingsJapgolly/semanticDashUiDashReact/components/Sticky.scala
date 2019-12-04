@@ -56,8 +56,12 @@ object Sticky {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.semanticDashUiDashReact.distCommonjsModulesStickyStickyMod.StickyProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.semanticDashUiDashReact.distCommonjsModulesStickyMod.default](js.constructorOf[typingsJapgolly.semanticDashUiDashReact.distCommonjsModulesStickyMod.default])
+  typingsJapgolly.semanticDashUiDashReact.distCommonjsModulesStickyMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.semanticDashUiDashReact.distCommonjsModulesStickyStickyMod.StickyProps])(children: _*)
   }
+  @JSImport("semantic-ui-react/dist/commonjs/modules/Sticky", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

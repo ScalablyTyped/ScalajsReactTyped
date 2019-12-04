@@ -4,14 +4,14 @@ import japgolly.scalajs.react.Callback
 import japgolly.scalajs.react.CallbackTo
 import japgolly.scalajs.react.raw.React.Node
 import japgolly.scalajs.react.vdom.VdomNode
-import typingsJapgolly.antd.esStatisticUtilsMod.Formatter
-import typingsJapgolly.antd.esStatisticUtilsMod.countdownValueType
+import typingsJapgolly.antd.libStatisticUtilsMod.Formatter
+import typingsJapgolly.antd.libStatisticUtilsMod.countdownValueType
 import typingsJapgolly.react.reactMod.CSSProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined std.Partial<antd.antd/es/statistic/Countdown.CountdownProps> */
+/* Inlined std.Partial<antd.antd/lib/statistic/Countdown.CountdownProps> */
 trait PartialCountdownProps extends js.Object {
   var className: js.UndefOr[String] = js.undefined
   var decimalSeparator: js.UndefOr[String] = js.undefined

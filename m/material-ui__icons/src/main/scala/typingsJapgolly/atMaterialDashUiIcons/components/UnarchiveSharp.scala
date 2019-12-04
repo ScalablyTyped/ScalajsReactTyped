@@ -1,11 +1,14 @@
 package typingsJapgolly.atMaterialDashUiIcons.components
 
+import typingsJapgolly.atMaterialDashUiIcons.unarchiveSharpMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object UnarchiveSharp
-  extends SharedApply_SvgIconProps1591622337[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.UnarchiveSharp] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.UnarchiveSharp]
+object UnarchiveSharp extends SharedApply_SvgIconProps1591622337[default] {
+  @JSImport("@material-ui/icons/UnarchiveSharp", "default")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

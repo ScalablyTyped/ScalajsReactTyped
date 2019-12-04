@@ -78,7 +78,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 abstract class SharedApply_MenuItemProps_522095072 () {
-  def __component: js.Any
+  val componentImport: js.Any
   def apply(
     about: String = null,
     accessKey: String = null,
@@ -526,7 +526,7 @@ abstract class SharedApply_MenuItemProps_522095072 () {
     val f = japgolly.scalajs.react.JsComponent[
   typingsJapgolly.materialDashUi.__MaterialUI.Menus.MenuItemProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  js.Object](__component)
+  js.Object](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.materialDashUi.__MaterialUI.Menus.MenuItemProps])(children: _*)
   }
 }

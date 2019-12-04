@@ -14,7 +14,7 @@ import typingsJapgolly.antd.antdStrings.error
 import typingsJapgolly.antd.antdStrings.finish
 import typingsJapgolly.antd.antdStrings.process
 import typingsJapgolly.antd.antdStrings.wait
-import typingsJapgolly.antd.esStepsMod.StepProps
+import typingsJapgolly.antd.libStepsMod.StepProps
 import typingsJapgolly.react.reactMod.CSSProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -54,10 +54,14 @@ object StepsStep {
     if (overrides != null) js.Dynamic.global.Object.assign(__obj, overrides)
   
     val f = japgolly.scalajs.react.JsComponent[
-  typingsJapgolly.antd.esStepsMod.StepProps, 
+  typingsJapgolly.antd.libStepsMod.StepProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  js.Object](typingsJapgolly.antd.esMod.Steps.Step)
-    f(__obj.asInstanceOf[typingsJapgolly.antd.esStepsMod.StepProps])(children: _*)
+  js.Object](this.componentImport)
+    f(__obj.asInstanceOf[typingsJapgolly.antd.libStepsMod.StepProps])(children: _*)
   }
+  @JSImport("antd", "Steps.Step")
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

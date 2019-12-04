@@ -1,13 +1,14 @@
 package typingsJapgolly.atMaterialDashUiIcons.components
 
+import typingsJapgolly.atMaterialDashUiIcons.movieFilterRoundedMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object MovieFilterRounded
-  extends SharedApply_SvgIconProps1591622337[
-      typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.MovieFilterRounded
-    ] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.MovieFilterRounded]
+object MovieFilterRounded extends SharedApply_SvgIconProps1591622337[default] {
+  @JSImport("@material-ui/icons/MovieFilterRounded", "default")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

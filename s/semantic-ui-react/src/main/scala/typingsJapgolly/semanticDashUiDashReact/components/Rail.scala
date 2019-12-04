@@ -58,8 +58,12 @@ object Rail {
     val f = japgolly.scalajs.react.JsComponent[
   typingsJapgolly.semanticDashUiDashReact.distCommonjsElementsRailRailMod.RailProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  js.Object](typingsJapgolly.semanticDashUiDashReact.distCommonjsElementsRailMod.default)
+  js.Object](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.semanticDashUiDashReact.distCommonjsElementsRailRailMod.RailProps])(children: _*)
   }
+  @JSImport("semantic-ui-react/dist/commonjs/elements/Rail", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

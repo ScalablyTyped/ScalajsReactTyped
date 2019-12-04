@@ -437,8 +437,12 @@ object TabIndicator {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.atMaterialDashUiCore.tabsTabIndicatorMod.TabIndicatorProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.atMaterialDashUiCore.tabsTabIndicatorMod.default](js.constructorOf[typingsJapgolly.atMaterialDashUiCore.tabsTabIndicatorMod.default])
+  typingsJapgolly.atMaterialDashUiCore.tabsTabIndicatorMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.atMaterialDashUiCore.tabsTabIndicatorMod.TabIndicatorProps])(children: _*)
   }
+  @JSImport("@material-ui/core/Tabs/TabIndicator", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

@@ -1,13 +1,14 @@
 package typingsJapgolly.atMaterialDashUiIcons.components
 
+import typingsJapgolly.atMaterialDashUiIcons.storeMallDirectoryRoundedMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object StoreMallDirectoryRounded
-  extends SharedApply_SvgIconProps1591622337[
-      typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.StoreMallDirectoryRounded
-    ] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.StoreMallDirectoryRounded]
+object StoreMallDirectoryRounded extends SharedApply_SvgIconProps1591622337[default] {
+  @JSImport("@material-ui/icons/StoreMallDirectoryRounded", "default")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

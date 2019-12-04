@@ -64,8 +64,12 @@ object Table {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.materialDashUi.__MaterialUI.Table.TableProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.materialDashUi.tableMod.default](js.constructorOf[typingsJapgolly.materialDashUi.tableMod.default])
+  typingsJapgolly.materialDashUi.tableMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.materialDashUi.__MaterialUI.Table.TableProps])(children: _*)
   }
+  @JSImport("material-ui/Table", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

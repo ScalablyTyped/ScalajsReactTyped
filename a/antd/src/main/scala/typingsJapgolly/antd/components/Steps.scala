@@ -14,7 +14,7 @@ import typingsJapgolly.antd.antdStrings.process
 import typingsJapgolly.antd.antdStrings.small
 import typingsJapgolly.antd.antdStrings.vertical
 import typingsJapgolly.antd.antdStrings.wait
-import typingsJapgolly.antd.esStepsMod.StepsProps
+import typingsJapgolly.antd.libStepsMod.StepsProps
 import typingsJapgolly.react.reactMod.CSSProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -39,7 +39,7 @@ object Steps {
     overrides: StringDictionary[js.Any] = null
   )(
     children: ChildArg*
-  ): UnmountedWithRoot[StepsProps, typingsJapgolly.antd.esStepsMod.default, Unit, StepsProps] = {
+  ): UnmountedWithRoot[StepsProps, typingsJapgolly.antd.libStepsMod.default, Unit, StepsProps] = {
     val __obj = js.Dynamic.literal()
   
       if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
@@ -59,10 +59,14 @@ object Steps {
     if (overrides != null) js.Dynamic.global.Object.assign(__obj, overrides)
   
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antd.esStepsMod.StepsProps, 
+  typingsJapgolly.antd.libStepsMod.StepsProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antd.esStepsMod.default](js.constructorOf[typingsJapgolly.antd.esStepsMod.default])
-    f(__obj.asInstanceOf[typingsJapgolly.antd.esStepsMod.StepsProps])(children: _*)
+  typingsJapgolly.antd.libStepsMod.default](this.componentImport)
+    f(__obj.asInstanceOf[typingsJapgolly.antd.libStepsMod.StepsProps])(children: _*)
   }
+  @JSImport("antd/lib/steps", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

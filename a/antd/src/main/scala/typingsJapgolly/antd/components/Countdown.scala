@@ -8,10 +8,10 @@ import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
 import japgolly.scalajs.react.raw.React.Node
 import japgolly.scalajs.react.vdom.VdomNode
 import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.antd.esStatisticCountdownMod.CountdownProps
-import typingsJapgolly.antd.esStatisticCountdownMod.default
-import typingsJapgolly.antd.esStatisticUtilsMod.Formatter
-import typingsJapgolly.antd.esStatisticUtilsMod.countdownValueType
+import typingsJapgolly.antd.libStatisticCountdownMod.CountdownProps
+import typingsJapgolly.antd.libStatisticCountdownMod.default
+import typingsJapgolly.antd.libStatisticUtilsMod.Formatter
+import typingsJapgolly.antd.libStatisticUtilsMod.countdownValueType
 import typingsJapgolly.react.reactMod.CSSProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -60,10 +60,14 @@ object Countdown {
     if (overrides != null) js.Dynamic.global.Object.assign(__obj, overrides)
   
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antd.esStatisticCountdownMod.CountdownProps, 
+  typingsJapgolly.antd.libStatisticCountdownMod.CountdownProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antd.esStatisticCountdownMod.default](js.constructorOf[typingsJapgolly.antd.esStatisticCountdownMod.default])
-    f(__obj.asInstanceOf[typingsJapgolly.antd.esStatisticCountdownMod.CountdownProps])(children: _*)
+  typingsJapgolly.antd.libStatisticCountdownMod.default](this.componentImport)
+    f(__obj.asInstanceOf[typingsJapgolly.antd.libStatisticCountdownMod.CountdownProps])(children: _*)
   }
+  @JSImport("antd/lib/statistic/Countdown", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

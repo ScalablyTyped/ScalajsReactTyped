@@ -1,13 +1,14 @@
 package typingsJapgolly.atMaterialDashUiIcons.components
 
+import typingsJapgolly.atMaterialDashUiIcons.pauseCircleOutlineMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object PauseCircleOutline
-  extends SharedApply_SvgIconProps1591622337[
-      typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PauseCircleOutline
-    ] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PauseCircleOutline]
+object PauseCircleOutline extends SharedApply_SvgIconProps1591622337[default] {
+  @JSImport("@material-ui/icons/PauseCircleOutline", "default")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

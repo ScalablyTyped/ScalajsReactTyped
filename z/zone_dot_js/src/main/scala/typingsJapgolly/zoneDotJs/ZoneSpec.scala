@@ -167,13 +167,13 @@ object ZoneSpec {
   @scala.inline
   def apply(
     name: String,
-    onCancelTask: (/* parentZoneDelegate */ ZoneDelegate, /* currentZone */ Zone, /* targetZone */ Zone, /* task */ Task) => CallbackTo[_] = null,
+    onCancelTask: (/* parentZoneDelegate */ ZoneDelegate, /* currentZone */ Zone, /* targetZone */ Zone, /* task */ Task) => CallbackTo[js.Any] = null,
     onFork: (/* parentZoneDelegate */ ZoneDelegate, /* currentZone */ Zone, /* targetZone */ Zone, /* zoneSpec */ ZoneSpec) => CallbackTo[Zone] = null,
     onHandleError: (/* parentZoneDelegate */ ZoneDelegate, /* currentZone */ Zone, /* targetZone */ Zone, /* error */ js.Any) => CallbackTo[Boolean] = null,
     onHasTask: (/* parentZoneDelegate */ ZoneDelegate, /* currentZone */ Zone, /* targetZone */ Zone, /* hasTaskState */ HasTaskState) => Callback = null,
     onIntercept: (/* parentZoneDelegate */ ZoneDelegate, /* currentZone */ Zone, /* targetZone */ Zone, /* delegate */ js.Function, /* source */ String) => CallbackTo[js.Function] = null,
-    onInvoke: (/* parentZoneDelegate */ ZoneDelegate, /* currentZone */ Zone, /* targetZone */ Zone, /* delegate */ js.Function, /* applyThis */ js.Any, /* applyArgs */ js.UndefOr[js.Array[js.Any]], /* source */ js.UndefOr[String]) => CallbackTo[_] = null,
-    onInvokeTask: (/* parentZoneDelegate */ ZoneDelegate, /* currentZone */ Zone, /* targetZone */ Zone, /* task */ Task, /* applyThis */ js.Any, /* applyArgs */ js.UndefOr[js.Array[js.Any]]) => CallbackTo[_] = null,
+    onInvoke: (/* parentZoneDelegate */ ZoneDelegate, /* currentZone */ Zone, /* targetZone */ Zone, /* delegate */ js.Function, /* applyThis */ js.Any, /* applyArgs */ js.UndefOr[js.Array[js.Any]], /* source */ js.UndefOr[String]) => CallbackTo[js.Any] = null,
+    onInvokeTask: (/* parentZoneDelegate */ ZoneDelegate, /* currentZone */ Zone, /* targetZone */ Zone, /* task */ Task, /* applyThis */ js.Any, /* applyArgs */ js.UndefOr[js.Array[js.Any]]) => CallbackTo[js.Any] = null,
     onScheduleTask: (/* parentZoneDelegate */ ZoneDelegate, /* currentZone */ Zone, /* targetZone */ Zone, /* task */ Task) => CallbackTo[Task] = null,
     properties: StringDictionary[js.Any] = null
   ): ZoneSpec = {

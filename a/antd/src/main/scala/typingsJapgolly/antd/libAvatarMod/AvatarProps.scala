@@ -17,7 +17,7 @@ trait AvatarProps extends js.Object {
   var children: js.UndefOr[Node] = js.undefined
   var className: js.UndefOr[String] = js.undefined
   /** Type of the Icon to be used in avatar */
-  var icon: js.UndefOr[String] = js.undefined
+  var icon: js.UndefOr[String | Node] = js.undefined
   var onError: js.UndefOr[js.Function0[Boolean]] = js.undefined
   var prefixCls: js.UndefOr[String] = js.undefined
   /** Shape of avatar, options:`circle`, `square` */
@@ -36,7 +36,7 @@ object AvatarProps {
     alt: String = null,
     children: VdomNode = null,
     className: String = null,
-    icon: String = null,
+    icon: String | Node = null,
     onError: js.UndefOr[CallbackTo[Boolean]] = js.undefined,
     prefixCls: String = null,
     shape: circle | square = null,

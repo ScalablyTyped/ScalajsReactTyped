@@ -457,8 +457,12 @@ object FormControl {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.atMaterialDashUiCore.formControlFormControlMod.FormControlProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.atMaterialDashUiCore.formControlMod.default](js.constructorOf[typingsJapgolly.atMaterialDashUiCore.formControlMod.default])
+  typingsJapgolly.atMaterialDashUiCore.formControlMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.atMaterialDashUiCore.formControlFormControlMod.FormControlProps])(children: _*)
   }
+  @JSImport("@material-ui/core/FormControl", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

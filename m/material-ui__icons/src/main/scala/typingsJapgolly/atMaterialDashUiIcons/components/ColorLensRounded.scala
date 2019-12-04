@@ -1,11 +1,14 @@
 package typingsJapgolly.atMaterialDashUiIcons.components
 
+import typingsJapgolly.atMaterialDashUiIcons.colorLensRoundedMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object ColorLensRounded
-  extends SharedApply_SvgIconProps1591622337[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.ColorLensRounded] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.ColorLensRounded]
+object ColorLensRounded extends SharedApply_SvgIconProps1591622337[default] {
+  @JSImport("@material-ui/icons/ColorLensRounded", "default")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

@@ -12,7 +12,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 abstract class SharedApply_ARTSurfaceProps_920597625[ComponentRef] () {
-  def __component: js.Any
+  val componentImport: js.Any
   def apply(
     height: Double,
     width: Double,
@@ -31,7 +31,7 @@ abstract class SharedApply_ARTSurfaceProps_920597625[ComponentRef] () {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.reactDashNative.reactDashNativeMod.ARTSurfaceProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  ComponentRef](__component)
+  ComponentRef](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.reactDashNative.reactDashNativeMod.ARTSurfaceProps])(children: _*)
   }
 }

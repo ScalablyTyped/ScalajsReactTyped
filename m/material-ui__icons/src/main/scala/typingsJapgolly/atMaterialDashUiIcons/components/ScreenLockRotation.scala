@@ -1,13 +1,14 @@
 package typingsJapgolly.atMaterialDashUiIcons.components
 
+import typingsJapgolly.atMaterialDashUiIcons.screenLockRotationMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object ScreenLockRotation
-  extends SharedApply_SvgIconProps1591622337[
-      typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.ScreenLockRotation
-    ] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.ScreenLockRotation]
+object ScreenLockRotation extends SharedApply_SvgIconProps1591622337[default] {
+  @JSImport("@material-ui/icons/ScreenLockRotation", "default")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

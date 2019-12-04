@@ -14,8 +14,8 @@ import typingsJapgolly.antd.antdStrings.`jump-prev`
 import typingsJapgolly.antd.antdStrings.next
 import typingsJapgolly.antd.antdStrings.page
 import typingsJapgolly.antd.antdStrings.prev
-import typingsJapgolly.antd.esPaginationMod.default
-import typingsJapgolly.antd.esPaginationPaginationMod.PaginationProps
+import typingsJapgolly.antd.libPaginationMod.default
+import typingsJapgolly.antd.libPaginationPaginationMod.PaginationProps
 import typingsJapgolly.react.reactMod.CSSProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -80,10 +80,14 @@ object Pagination {
     if (overrides != null) js.Dynamic.global.Object.assign(__obj, overrides)
   
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antd.esPaginationPaginationMod.PaginationProps, 
+  typingsJapgolly.antd.libPaginationPaginationMod.PaginationProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antd.esPaginationMod.default](js.constructorOf[typingsJapgolly.antd.esPaginationMod.default])
-    f(__obj.asInstanceOf[typingsJapgolly.antd.esPaginationPaginationMod.PaginationProps])(children: _*)
+  typingsJapgolly.antd.libPaginationMod.default](this.componentImport)
+    f(__obj.asInstanceOf[typingsJapgolly.antd.libPaginationPaginationMod.PaginationProps])(children: _*)
   }
+  @JSImport("antd/lib/pagination", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

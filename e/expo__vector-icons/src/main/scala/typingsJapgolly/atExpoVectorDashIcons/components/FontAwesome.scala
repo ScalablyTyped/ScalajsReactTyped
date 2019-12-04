@@ -6,6 +6,9 @@ import scala.scalajs.js.annotation._
 
 object FontAwesome
   extends SharedApply_IconProps720032241[typingsJapgolly.atExpoVectorDashIcons.atExpoVectorDashIconsMod.FontAwesome] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.atExpoVectorDashIcons.atExpoVectorDashIconsMod.FontAwesome]
+  @JSImport("@expo/vector-icons", "FontAwesome")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

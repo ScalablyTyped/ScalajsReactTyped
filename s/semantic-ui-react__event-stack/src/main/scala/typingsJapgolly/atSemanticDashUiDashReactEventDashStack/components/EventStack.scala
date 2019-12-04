@@ -6,6 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 object EventStack extends SharedApply_EventStackProps1833997815[default] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.atSemanticDashUiDashReactEventDashStack.libTypesEventStackMod.default]
+  @JSImport("@semantic-ui-react/event-stack/lib/types/EventStack", JSImport.Default)
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

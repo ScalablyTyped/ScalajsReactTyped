@@ -80,7 +80,7 @@ object Dropdown {
     options: js.Array[DropdownItemProps] = null,
     placeholder: String = null,
     pointing: Boolean | left | right | top | (`top left`) | (`top right`) | bottom | (`bottom left`) | (`bottom right`) = null,
-    renderLabel: (/* item */ DropdownItemProps, /* index */ Double, /* defaultLabelProps */ LabelProps) => CallbackTo[_] = null,
+    renderLabel: (/* item */ DropdownItemProps, /* index */ Double, /* defaultLabelProps */ LabelProps) => CallbackTo[js.Any] = null,
     scrolling: js.UndefOr[Boolean] = js.undefined,
     search: Boolean | (js.Function2[
       /* options */ js.Array[DropdownItemProps], 
@@ -178,8 +178,12 @@ object Dropdown {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.semanticDashUiDashReact.distCommonjsModulesDropdownDropdownMod.DropdownProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.semanticDashUiDashReact.distCommonjsModulesDropdownMod.default](js.constructorOf[typingsJapgolly.semanticDashUiDashReact.distCommonjsModulesDropdownMod.default])
+  typingsJapgolly.semanticDashUiDashReact.distCommonjsModulesDropdownMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.semanticDashUiDashReact.distCommonjsModulesDropdownDropdownMod.DropdownProps])(children: _*)
   }
+  @JSImport("semantic-ui-react/dist/commonjs/modules/Dropdown", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

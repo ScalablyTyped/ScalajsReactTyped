@@ -32,8 +32,12 @@ object ClassNames {
     val f = japgolly.scalajs.react.JsComponent[
   typingsJapgolly.atEmotionCore.atEmotionCoreMod.ClassNamesProps[Theme], 
   japgolly.scalajs.react.Children.None, 
-  js.Object](typingsJapgolly.atEmotionCore.atEmotionCoreMod.ClassNames)
+  js.Object](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.atEmotionCore.atEmotionCoreMod.ClassNamesProps[Theme]])
   }
+  @JSImport("@emotion/core", "ClassNames")
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

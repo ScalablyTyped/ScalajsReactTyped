@@ -1,8 +1,8 @@
 package typingsJapgolly.antd
 
 import japgolly.scalajs.react.CallbackTo
-import typingsJapgolly.antd.esUploadInterfaceMod.UploadListType
-import typingsJapgolly.antd.esUploadInterfaceMod.UploadType
+import typingsJapgolly.antd.libUploadInterfaceMod.UploadListType
+import typingsJapgolly.antd.libUploadInterfaceMod.UploadType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

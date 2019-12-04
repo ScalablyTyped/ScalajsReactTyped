@@ -523,8 +523,12 @@ object Button {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.atMaterialDashUiCore.buttonButtonMod.ButtonProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.atMaterialDashUiCore.buttonMod.default](js.constructorOf[typingsJapgolly.atMaterialDashUiCore.buttonMod.default])
+  typingsJapgolly.atMaterialDashUiCore.buttonMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.atMaterialDashUiCore.buttonButtonMod.ButtonProps])(children: _*)
   }
+  @JSImport("@material-ui/core/Button", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

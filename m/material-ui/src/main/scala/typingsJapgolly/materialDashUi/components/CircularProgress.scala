@@ -46,8 +46,12 @@ object CircularProgress {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.materialDashUi.__MaterialUI.CircularProgressProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.materialDashUi.circularProgressMod.default](js.constructorOf[typingsJapgolly.materialDashUi.circularProgressMod.default])
+  typingsJapgolly.materialDashUi.circularProgressMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.materialDashUi.__MaterialUI.CircularProgressProps])(children: _*)
   }
+  @JSImport("material-ui/CircularProgress", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

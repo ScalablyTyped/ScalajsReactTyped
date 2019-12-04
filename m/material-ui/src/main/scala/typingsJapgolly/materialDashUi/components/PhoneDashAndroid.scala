@@ -6,6 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 object PhoneDashAndroid extends SharedApply_SvgIconProps1538262166[default] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.materialDashUi.svgDashIconsHardwarePhoneDashAndroidMod.default]
+  @JSImport("material-ui/svg-icons/hardware/phone-android", JSImport.Default)
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

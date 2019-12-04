@@ -1,11 +1,14 @@
 package typingsJapgolly.atMaterialDashUiIcons.components
 
+import typingsJapgolly.atMaterialDashUiIcons.openWithSharpMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object OpenWithSharp
-  extends SharedApply_SvgIconProps1591622337[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.OpenWithSharp] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.OpenWithSharp]
+object OpenWithSharp extends SharedApply_SvgIconProps1591622337[default] {
+  @JSImport("@material-ui/icons/OpenWithSharp", "default")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

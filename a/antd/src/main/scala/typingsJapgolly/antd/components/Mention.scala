@@ -9,10 +9,10 @@ import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
 import org.scalablytyped.runtime.StringDictionary
 import org.scalajs.dom.raw.Element
 import org.scalajs.dom.raw.HTMLElement
-import typingsJapgolly.antd.esMentionMod.MentionPlacement
-import typingsJapgolly.antd.esMentionMod.MentionProps
-import typingsJapgolly.antd.esMentionMod.SuggestionItme
-import typingsJapgolly.antd.esMentionMod.default
+import typingsJapgolly.antd.libMentionMod.MentionPlacement
+import typingsJapgolly.antd.libMentionMod.MentionProps
+import typingsJapgolly.antd.libMentionMod.SuggestionItme
+import typingsJapgolly.antd.libMentionMod.default
 import typingsJapgolly.react.reactMod.CSSProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -31,7 +31,7 @@ object Mention {
     onBlur: ReactFocusEventFrom[HTMLElement] => Callback = null,
     onChange: /* contentState */ js.Any => Callback = null,
     onFocus: ReactFocusEventFrom[HTMLElement] => Callback = null,
-    onSearchChange: (/* value */ String, /* trigger */ String) => CallbackTo[_] = null,
+    onSearchChange: (/* value */ String, /* trigger */ String) => CallbackTo[js.Any] = null,
     onSelect: (/* suggestion */ String, /* data */ js.UndefOr[js.Any]) => Callback = null,
     placeholder: String = null,
     placement: MentionPlacement = null,
@@ -75,10 +75,14 @@ object Mention {
     if (overrides != null) js.Dynamic.global.Object.assign(__obj, overrides)
   
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antd.esMentionMod.MentionProps, 
+  typingsJapgolly.antd.libMentionMod.MentionProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antd.esMentionMod.default](js.constructorOf[typingsJapgolly.antd.esMentionMod.default])
-    f(__obj.asInstanceOf[typingsJapgolly.antd.esMentionMod.MentionProps])(children: _*)
+  typingsJapgolly.antd.libMentionMod.default](this.componentImport)
+    f(__obj.asInstanceOf[typingsJapgolly.antd.libMentionMod.MentionProps])(children: _*)
   }
+  @JSImport("antd/lib/mention", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

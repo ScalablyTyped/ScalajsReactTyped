@@ -313,7 +313,7 @@ object StrictDropdownProps {
     options: js.Array[DropdownItemProps] = null,
     placeholder: String = null,
     pointing: Boolean | left | right | top | (`top left`) | (`top right`) | bottom | (`bottom left`) | (`bottom right`) = null,
-    renderLabel: (/* item */ DropdownItemProps, /* index */ Double, /* defaultLabelProps */ LabelProps) => CallbackTo[_] = null,
+    renderLabel: (/* item */ DropdownItemProps, /* index */ Double, /* defaultLabelProps */ LabelProps) => CallbackTo[js.Any] = null,
     scrolling: js.UndefOr[Boolean] = js.undefined,
     search: Boolean | (js.Function2[
       /* options */ js.Array[DropdownItemProps], 

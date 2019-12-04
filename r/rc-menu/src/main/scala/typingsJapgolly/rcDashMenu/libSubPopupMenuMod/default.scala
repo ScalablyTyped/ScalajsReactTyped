@@ -1,7 +1,7 @@
 package typingsJapgolly.rcDashMenu.libSubPopupMenuMod
 
 import org.scalablytyped.runtime.TopLevel
-import typingsJapgolly.rcDashMenu.Anon_GetWrappedInstanceSubPopupMenu
+import typingsJapgolly.rcDashMenu.Anon_GetWrappedInstance
 import typingsJapgolly.react.reactMod.Component
 import typingsJapgolly.react.reactMod.ComponentClass
 import scala.scalajs.js
@@ -18,5 +18,5 @@ class default protected ()
 
 @JSImport("rc-menu/lib/SubPopupMenu", JSImport.Default)
 @js.native
-object default extends TopLevel[(ComponentClass[SubPopupMenuProps, _]) with Anon_GetWrappedInstanceSubPopupMenu]
+object default extends TopLevel[(ComponentClass[SubPopupMenuProps, _]) with Anon_GetWrappedInstance]
 

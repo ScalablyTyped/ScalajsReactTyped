@@ -76,8 +76,12 @@ object ListIcon {
     val f = japgolly.scalajs.react.JsComponent[
   typingsJapgolly.semanticDashUiDashReact.distCommonjsElementsListListIconMod.ListIconProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  js.Object](typingsJapgolly.semanticDashUiDashReact.distCommonjsElementsListListIconMod.default)
+  js.Object](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.semanticDashUiDashReact.distCommonjsElementsListListIconMod.ListIconProps])(children: _*)
   }
+  @JSImport("semantic-ui-react/dist/commonjs/elements/List/ListIcon", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

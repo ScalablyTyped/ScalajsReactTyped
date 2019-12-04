@@ -82,7 +82,7 @@ object ServeStaticOptions {
     lastModified: js.UndefOr[Boolean] = js.undefined,
     maxAge: Double | String = null,
     redirect: js.UndefOr[Boolean] = js.undefined,
-    setHeaders: (/* res */ Response[js.Any], /* path */ String, /* stat */ js.Any) => CallbackTo[_] = null
+    setHeaders: (/* res */ Response[js.Any], /* path */ String, /* stat */ js.Any) => CallbackTo[js.Any] = null
   ): ServeStaticOptions = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(cacheControl)) __obj.updateDynamic("cacheControl")(cacheControl.asInstanceOf[js.Any])

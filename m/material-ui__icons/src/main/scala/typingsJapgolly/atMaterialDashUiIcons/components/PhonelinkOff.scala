@@ -1,11 +1,14 @@
 package typingsJapgolly.atMaterialDashUiIcons.components
 
+import typingsJapgolly.atMaterialDashUiIcons.phonelinkOffMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object PhonelinkOff
-  extends SharedApply_SvgIconProps1591622337[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PhonelinkOff] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PhonelinkOff]
+object PhonelinkOff extends SharedApply_SvgIconProps1591622337[default] {
+  @JSImport("@material-ui/icons/PhonelinkOff", "default")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

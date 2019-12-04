@@ -33,8 +33,12 @@ object FontAwesome5 {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.reactDashNativeDashVectorDashIcons.fontAwesome5Mod.FontAwesome5IconProps with js.Object, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactDashNativeDashVectorDashIcons.fontAwesome5Mod.default](js.constructorOf[typingsJapgolly.reactDashNativeDashVectorDashIcons.fontAwesome5Mod.default])
+  typingsJapgolly.reactDashNativeDashVectorDashIcons.fontAwesome5Mod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.reactDashNativeDashVectorDashIcons.fontAwesome5Mod.FontAwesome5IconProps with js.Object])(children: _*)
   }
+  @JSImport("react-native-vector-icons/FontAwesome5", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

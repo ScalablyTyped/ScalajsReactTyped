@@ -1,13 +1,14 @@
 package typingsJapgolly.atMaterialDashUiIcons.components
 
+import typingsJapgolly.atMaterialDashUiIcons.borderBottomRoundedMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object BorderBottomRounded
-  extends SharedApply_SvgIconProps1591622337[
-      typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.BorderBottomRounded
-    ] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.BorderBottomRounded]
+object BorderBottomRounded extends SharedApply_SvgIconProps1591622337[default] {
+  @JSImport("@material-ui/icons/BorderBottomRounded", "default")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

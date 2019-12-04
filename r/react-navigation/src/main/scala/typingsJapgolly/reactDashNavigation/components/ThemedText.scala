@@ -28,8 +28,12 @@ object ThemedText {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.reactDashNavigation.reactDashNavigationMod.ThemedTextProps with js.Object, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactDashNavigation.reactDashNavigationMod.Themed.Text](js.constructorOf[typingsJapgolly.reactDashNavigation.reactDashNavigationMod.Themed.Text])
+  typingsJapgolly.reactDashNavigation.reactDashNavigationMod.Themed.Text](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.reactDashNavigation.reactDashNavigationMod.ThemedTextProps with js.Object])(children: _*)
   }
+  @JSImport("react-navigation", "Themed.Text")
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

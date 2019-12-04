@@ -6,6 +6,9 @@ import scala.scalajs.js.annotation._
 
 object Zocial
   extends SharedApply_IconProps720032241[typingsJapgolly.atExpoVectorDashIcons.atExpoVectorDashIconsMod.Zocial] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.atExpoVectorDashIcons.atExpoVectorDashIconsMod.Zocial]
+  @JSImport("@expo/vector-icons", "Zocial")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

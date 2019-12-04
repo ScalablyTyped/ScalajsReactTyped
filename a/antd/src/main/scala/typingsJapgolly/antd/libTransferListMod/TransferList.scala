@@ -3,7 +3,7 @@ package typingsJapgolly.antd.libTransferListMod
 import japgolly.scalajs.react.ReactEventFrom
 import japgolly.scalajs.react.raw.React.Node
 import org.scalajs.dom.raw.HTMLInputElement
-import typingsJapgolly.antd.Anon_FilteredItemsFilteredRenderItems
+import typingsJapgolly.antd.Anon_FilteredItems
 import typingsJapgolly.antd.antdNumbers.`false`
 import typingsJapgolly.antd.antdStrings.all
 import typingsJapgolly.antd.antdStrings.none
@@ -37,8 +37,8 @@ trait TransferList
     showSelectAll: Boolean,
     disabled: Boolean
   ): `false` | Element = js.native
-  def getCheckStatus(filteredItems: js.Array[TransferItem]): all | none | part = js.native
-  def getFilteredItems(dataSource: js.Array[TransferItem], filterValue: String): Anon_FilteredItemsFilteredRenderItems = js.native
+  def getCheckStatus(filteredItems: js.Array[TransferItem]): none | all | part = js.native
+  def getFilteredItems(dataSource: js.Array[TransferItem], filterValue: String): Anon_FilteredItems = js.native
   def getListBody(
     prefixCls: String,
     searchPlaceholder: String,

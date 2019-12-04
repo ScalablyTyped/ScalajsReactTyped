@@ -1,11 +1,14 @@
 package typingsJapgolly.atMaterialDashUiIcons.components
 
+import typingsJapgolly.atMaterialDashUiIcons.permMediaRoundedMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object PermMediaRounded
-  extends SharedApply_SvgIconProps1591622337[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PermMediaRounded] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PermMediaRounded]
+object PermMediaRounded extends SharedApply_SvgIconProps1591622337[default] {
+  @JSImport("@material-ui/icons/PermMediaRounded", "default")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

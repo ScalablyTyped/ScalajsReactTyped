@@ -444,8 +444,12 @@ object GridListTile {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.atMaterialDashUiCore.gridListTileGridListTileMod.GridListTileProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.atMaterialDashUiCore.gridListTileMod.default](js.constructorOf[typingsJapgolly.atMaterialDashUiCore.gridListTileMod.default])
+  typingsJapgolly.atMaterialDashUiCore.gridListTileMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.atMaterialDashUiCore.gridListTileGridListTileMod.GridListTileProps])(children: _*)
   }
+  @JSImport("@material-ui/core/GridListTile", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

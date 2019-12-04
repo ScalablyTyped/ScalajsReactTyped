@@ -17,7 +17,7 @@ trait PointLabelOptions extends js.Object {
 object PointLabelOptions {
   @scala.inline
   def apply(
-    callback: /* arg */ js.Any => CallbackTo[_] = null,
+    callback: /* arg */ js.Any => CallbackTo[js.Any] = null,
     fontColor: ChartColor = null,
     fontFamily: String = null,
     fontSize: Int | Double = null,

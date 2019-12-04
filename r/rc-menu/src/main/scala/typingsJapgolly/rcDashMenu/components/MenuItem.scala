@@ -6,11 +6,11 @@ import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
 import org.scalablytyped.runtime.StringDictionary
 import typingsJapgolly.rcDashMenu.Anon_DomEventKey
 import typingsJapgolly.rcDashMenu.Anon_Hover
-import typingsJapgolly.rcDashMenu.esInterfaceMod.MenuInfo
-import typingsJapgolly.rcDashMenu.esInterfaceMod.MenuMode
-import typingsJapgolly.rcDashMenu.esInterfaceMod.RenderIconType
-import typingsJapgolly.rcDashMenu.esInterfaceMod.SelectInfo
-import typingsJapgolly.rcDashMenu.esMenuItemMod.MenuItemProps
+import typingsJapgolly.rcDashMenu.libInterfaceMod.MenuInfo
+import typingsJapgolly.rcDashMenu.libInterfaceMod.MenuMode
+import typingsJapgolly.rcDashMenu.libInterfaceMod.RenderIconType
+import typingsJapgolly.rcDashMenu.libInterfaceMod.SelectInfo
+import typingsJapgolly.rcDashMenu.libMenuItemMod.MenuItemProps
 import typingsJapgolly.react.reactMod.CSSProperties
 import typingsJapgolly.react.reactMod.Key
 import typingsJapgolly.react.reactMod.ReactInstance
@@ -50,7 +50,7 @@ object MenuItem {
     overrides: StringDictionary[js.Any] = null
   )(
     children: ChildArg*
-  ): UnmountedWithRoot[MenuItemProps, typingsJapgolly.rcDashMenu.esMenuItemMod.MenuItem, Unit, MenuItemProps] = {
+  ): UnmountedWithRoot[MenuItemProps, typingsJapgolly.rcDashMenu.libMenuItemMod.MenuItem, Unit, MenuItemProps] = {
     val __obj = js.Dynamic.literal()
   
       if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.asInstanceOf[js.Any])
@@ -65,13 +65,13 @@ object MenuItem {
     if (manualRef != null) __obj.updateDynamic("manualRef")(js.Any.fromFunction1((t0: /* node */ typingsJapgolly.react.reactMod.ReactInstance) => manualRef(t0).runNow()))
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple.asInstanceOf[js.Any])
-    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1((t0: /* info */ typingsJapgolly.rcDashMenu.esInterfaceMod.MenuInfo) => onClick(t0).runNow()))
-    if (onDeselect != null) __obj.updateDynamic("onDeselect")(js.Any.fromFunction1((t0: /* info */ typingsJapgolly.rcDashMenu.esInterfaceMod.SelectInfo) => onDeselect(t0).runNow()))
+    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1((t0: /* info */ typingsJapgolly.rcDashMenu.libInterfaceMod.MenuInfo) => onClick(t0).runNow()))
+    if (onDeselect != null) __obj.updateDynamic("onDeselect")(js.Any.fromFunction1((t0: /* info */ typingsJapgolly.rcDashMenu.libInterfaceMod.SelectInfo) => onDeselect(t0).runNow()))
     if (onDestroy != null) __obj.updateDynamic("onDestroy")(js.Any.fromFunction1((t0: /* key */ typingsJapgolly.react.reactMod.Key) => onDestroy(t0).runNow()))
     if (onItemHover != null) __obj.updateDynamic("onItemHover")(js.Any.fromFunction1((t0: /* info */ typingsJapgolly.rcDashMenu.Anon_Hover) => onItemHover(t0).runNow()))
     if (onMouseEnter != null) __obj.updateDynamic("onMouseEnter")(js.Any.fromFunction1((t0: /* info */ typingsJapgolly.rcDashMenu.Anon_DomEventKey) => onMouseEnter(t0).runNow()))
     if (onMouseLeave != null) __obj.updateDynamic("onMouseLeave")(js.Any.fromFunction1((t0: /* info */ typingsJapgolly.rcDashMenu.Anon_DomEventKey) => onMouseLeave(t0).runNow()))
-    if (onSelect != null) __obj.updateDynamic("onSelect")(js.Any.fromFunction1((t0: /* info */ typingsJapgolly.rcDashMenu.esInterfaceMod.SelectInfo) => onSelect(t0).runNow()))
+    if (onSelect != null) __obj.updateDynamic("onSelect")(js.Any.fromFunction1((t0: /* info */ typingsJapgolly.rcDashMenu.libInterfaceMod.SelectInfo) => onSelect(t0).runNow()))
     if (parentMenu != null) __obj.updateDynamic("parentMenu")(parentMenu.asInstanceOf[js.Any])
     if (role != null) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
     if (rootPrefixCls != null) __obj.updateDynamic("rootPrefixCls")(rootPrefixCls.asInstanceOf[js.Any])
@@ -82,10 +82,14 @@ object MenuItem {
     if (overrides != null) js.Dynamic.global.Object.assign(__obj, overrides)
   
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.rcDashMenu.esMenuItemMod.MenuItemProps, 
+  typingsJapgolly.rcDashMenu.libMenuItemMod.MenuItemProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.rcDashMenu.esMenuItemMod.MenuItem](js.constructorOf[typingsJapgolly.rcDashMenu.esMenuItemMod.MenuItem])
-    f(__obj.asInstanceOf[typingsJapgolly.rcDashMenu.esMenuItemMod.MenuItemProps])(children: _*)
+  typingsJapgolly.rcDashMenu.libMenuItemMod.MenuItem](this.componentImport)
+    f(__obj.asInstanceOf[typingsJapgolly.rcDashMenu.libMenuItemMod.MenuItemProps])(children: _*)
   }
+  @JSImport("rc-menu/lib/MenuItem", "MenuItem")
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

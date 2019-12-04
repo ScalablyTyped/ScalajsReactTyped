@@ -11,7 +11,7 @@ import typingsJapgolly.antd.antdStrings.horizontal
 import typingsJapgolly.antd.antdStrings.left
 import typingsJapgolly.antd.antdStrings.right
 import typingsJapgolly.antd.antdStrings.vertical
-import typingsJapgolly.antd.esDividerMod.DividerProps
+import typingsJapgolly.antd.libDividerMod.DividerProps
 import typingsJapgolly.react.reactMod.CSSProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -45,10 +45,14 @@ object Divider {
     if (overrides != null) js.Dynamic.global.Object.assign(__obj, overrides)
   
     val f = japgolly.scalajs.react.JsComponent[
-  typingsJapgolly.antd.esDividerMod.DividerProps, 
+  typingsJapgolly.antd.libDividerMod.DividerProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  js.Object](typingsJapgolly.antd.esDividerMod.default)
-    f(__obj.asInstanceOf[typingsJapgolly.antd.esDividerMod.DividerProps])(children: _*)
+  js.Object](this.componentImport)
+    f(__obj.asInstanceOf[typingsJapgolly.antd.libDividerMod.DividerProps])(children: _*)
   }
+  @JSImport("antd/lib/divider", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

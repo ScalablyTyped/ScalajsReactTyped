@@ -5,8 +5,8 @@ import japgolly.scalajs.react.Key
 import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
 import japgolly.scalajs.react.vdom.VdomNode
 import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.antd.esCollapseCollapsePanelMod.CollapsePanelProps
-import typingsJapgolly.antd.esCollapseCollapsePanelMod.default
+import typingsJapgolly.antd.libCollapseCollapsePanelMod.CollapsePanelProps
+import typingsJapgolly.antd.libCollapseCollapsePanelMod.default
 import typingsJapgolly.react.reactMod.CSSProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -43,10 +43,14 @@ object CollapsePanel {
     if (overrides != null) js.Dynamic.global.Object.assign(__obj, overrides)
   
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antd.esCollapseCollapsePanelMod.CollapsePanelProps, 
+  typingsJapgolly.antd.libCollapseCollapsePanelMod.CollapsePanelProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antd.esCollapseCollapsePanelMod.default](js.constructorOf[typingsJapgolly.antd.esCollapseCollapsePanelMod.default])
-    f(__obj.asInstanceOf[typingsJapgolly.antd.esCollapseCollapsePanelMod.CollapsePanelProps])(children: _*)
+  typingsJapgolly.antd.libCollapseCollapsePanelMod.default](this.componentImport)
+    f(__obj.asInstanceOf[typingsJapgolly.antd.libCollapseCollapsePanelMod.CollapsePanelProps])(children: _*)
   }
+  @JSImport("antd/lib/collapse/CollapsePanel", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

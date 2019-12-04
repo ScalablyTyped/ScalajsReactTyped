@@ -503,8 +503,12 @@ object NativeSelect {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.atMaterialDashUiCore.nativeSelectNativeSelectMod.NativeSelectProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.atMaterialDashUiCore.nativeSelectMod.default](js.constructorOf[typingsJapgolly.atMaterialDashUiCore.nativeSelectMod.default])
+  typingsJapgolly.atMaterialDashUiCore.nativeSelectMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.atMaterialDashUiCore.nativeSelectNativeSelectMod.NativeSelectProps])(children: _*)
   }
+  @JSImport("@material-ui/core/NativeSelect", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

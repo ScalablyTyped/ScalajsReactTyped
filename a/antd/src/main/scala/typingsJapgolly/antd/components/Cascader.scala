@@ -9,12 +9,12 @@ import japgolly.scalajs.react.raw.React.Node
 import japgolly.scalajs.react.vdom.VdomNode
 import org.scalablytyped.runtime.StringDictionary
 import org.scalajs.dom.raw.HTMLElement
-import typingsJapgolly.antd.esCascaderMod.CascaderExpandTrigger
-import typingsJapgolly.antd.esCascaderMod.CascaderOptionType
-import typingsJapgolly.antd.esCascaderMod.CascaderProps
-import typingsJapgolly.antd.esCascaderMod.FieldNamesType
-import typingsJapgolly.antd.esCascaderMod.ShowSearchType
-import typingsJapgolly.antd.esCascaderMod.default
+import typingsJapgolly.antd.libCascaderMod.CascaderExpandTrigger
+import typingsJapgolly.antd.libCascaderMod.CascaderOptionType
+import typingsJapgolly.antd.libCascaderMod.CascaderProps
+import typingsJapgolly.antd.libCascaderMod.FieldNamesType
+import typingsJapgolly.antd.libCascaderMod.ShowSearchType
+import typingsJapgolly.antd.libCascaderMod.default
 import typingsJapgolly.react.reactMod.CSSProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -60,15 +60,15 @@ object Cascader {
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (displayRender != null) __obj.updateDynamic("displayRender")(js.Any.fromFunction2((t0: /* label */ js.Array[java.lang.String], t1: /* selectedOptions */ js.UndefOr[js.Array[typingsJapgolly.antd.esCascaderMod.CascaderOptionType]]) => displayRender(t0, t1).runNow()))
+    if (displayRender != null) __obj.updateDynamic("displayRender")(js.Any.fromFunction2((t0: /* label */ js.Array[java.lang.String], t1: /* selectedOptions */ js.UndefOr[js.Array[typingsJapgolly.antd.libCascaderMod.CascaderOptionType]]) => displayRender(t0, t1).runNow()))
     if (expandTrigger != null) __obj.updateDynamic("expandTrigger")(expandTrigger.asInstanceOf[js.Any])
     if (fieldNames != null) __obj.updateDynamic("fieldNames")(fieldNames.asInstanceOf[js.Any])
     if (filedNames != null) __obj.updateDynamic("filedNames")(filedNames.asInstanceOf[js.Any])
     if (getPopupContainer != null) __obj.updateDynamic("getPopupContainer")(js.Any.fromFunction1((t0: /* triggerNode */ org.scalajs.dom.raw.HTMLElement) => getPopupContainer(t0).runNow()))
     if (inputPrefixCls != null) __obj.updateDynamic("inputPrefixCls")(inputPrefixCls.asInstanceOf[js.Any])
-    if (loadData != null) __obj.updateDynamic("loadData")(js.Any.fromFunction1((t0: /* selectedOptions */ js.UndefOr[js.Array[typingsJapgolly.antd.esCascaderMod.CascaderOptionType]]) => loadData(t0).runNow()))
+    if (loadData != null) __obj.updateDynamic("loadData")(js.Any.fromFunction1((t0: /* selectedOptions */ js.UndefOr[js.Array[typingsJapgolly.antd.libCascaderMod.CascaderOptionType]]) => loadData(t0).runNow()))
     if (notFoundContent != null) __obj.updateDynamic("notFoundContent")(notFoundContent.rawNode.asInstanceOf[js.Any])
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction2((t0: /* value */ js.Array[java.lang.String], t1: /* selectedOptions */ js.UndefOr[js.Array[typingsJapgolly.antd.esCascaderMod.CascaderOptionType]]) => onChange(t0, t1).runNow()))
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction2((t0: /* value */ js.Array[java.lang.String], t1: /* selectedOptions */ js.UndefOr[js.Array[typingsJapgolly.antd.libCascaderMod.CascaderOptionType]]) => onChange(t0, t1).runNow()))
     if (onPopupVisibleChange != null) __obj.updateDynamic("onPopupVisibleChange")(js.Any.fromFunction1((t0: /* popupVisible */ scala.Boolean) => onPopupVisibleChange(t0).runNow()))
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
     if (popupClassName != null) __obj.updateDynamic("popupClassName")(popupClassName.asInstanceOf[js.Any])
@@ -84,10 +84,14 @@ object Cascader {
     if (overrides != null) js.Dynamic.global.Object.assign(__obj, overrides)
   
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antd.esCascaderMod.CascaderProps, 
+  typingsJapgolly.antd.libCascaderMod.CascaderProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antd.esCascaderMod.default](js.constructorOf[typingsJapgolly.antd.esCascaderMod.default])
-    f(__obj.asInstanceOf[typingsJapgolly.antd.esCascaderMod.CascaderProps])(children: _*)
+  typingsJapgolly.antd.libCascaderMod.default](this.componentImport)
+    f(__obj.asInstanceOf[typingsJapgolly.antd.libCascaderMod.CascaderProps])(children: _*)
   }
+  @JSImport("antd/lib/cascader", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

@@ -54,8 +54,12 @@ object SearchResult {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.semanticDashUiDashReact.distCommonjsModulesSearchSearchResultMod.SearchResultProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.semanticDashUiDashReact.distCommonjsModulesSearchSearchResultMod.default](js.constructorOf[typingsJapgolly.semanticDashUiDashReact.distCommonjsModulesSearchSearchResultMod.default])
+  typingsJapgolly.semanticDashUiDashReact.distCommonjsModulesSearchSearchResultMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.semanticDashUiDashReact.distCommonjsModulesSearchSearchResultMod.SearchResultProps])(children: _*)
   }
+  @JSImport("semantic-ui-react/dist/commonjs/modules/Search/SearchResult", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

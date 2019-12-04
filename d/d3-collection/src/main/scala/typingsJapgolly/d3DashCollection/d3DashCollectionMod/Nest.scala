@@ -153,7 +153,7 @@ object Nest {
   def apply[Datum, RollupType](
     entries: js.Array[Datum] => CallbackTo[js.Array[Anon_KeyValueValuesAny[RollupType]]],
     key: js.Function1[/* datum */ Datum, String] => CallbackTo[Nest[Datum, RollupType]],
-    map: js.Array[Datum] => CallbackTo[Map[_]],
+    map: js.Array[Datum] => CallbackTo[Map[js.Any]],
     `object`: js.Array[Datum] => CallbackTo[StringDictionary[js.Any]],
     rollup: js.Function1[/* values */ js.Array[Datum], RollupType] => CallbackTo[Nest[Datum, RollupType]],
     sortKeys: js.Function2[/* a */ String, /* b */ String, Double] => CallbackTo[Nest[Datum, RollupType]],

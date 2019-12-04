@@ -93,8 +93,12 @@ object StepButton {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.materialDashUi.__MaterialUI.Stepper.StepButtonProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.materialDashUi.stepperMod.StepButton](js.constructorOf[typingsJapgolly.materialDashUi.stepperMod.StepButton])
+  typingsJapgolly.materialDashUi.stepperMod.StepButton](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.materialDashUi.__MaterialUI.Stepper.StepButtonProps])(children: _*)
   }
+  @JSImport("material-ui/Stepper", "StepButton")
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

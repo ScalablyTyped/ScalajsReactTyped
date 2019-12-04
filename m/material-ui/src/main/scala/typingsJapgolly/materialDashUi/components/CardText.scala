@@ -36,8 +36,12 @@ object CardText {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.materialDashUi.__MaterialUI.Card.CardTextProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.materialDashUi.cardCardTextMod.default](js.constructorOf[typingsJapgolly.materialDashUi.cardCardTextMod.default])
+  typingsJapgolly.materialDashUi.cardCardTextMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.materialDashUi.__MaterialUI.Card.CardTextProps])(children: _*)
   }
+  @JSImport("material-ui/Card/CardText", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

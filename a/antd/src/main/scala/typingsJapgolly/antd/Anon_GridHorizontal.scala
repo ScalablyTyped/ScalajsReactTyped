@@ -2,7 +2,7 @@ package typingsJapgolly.antd
 
 import typingsJapgolly.antd.antdStrings.horizontal
 import typingsJapgolly.antd.antdStrings.vertical
-import typingsJapgolly.antd.esListMod.ListGridType
+import typingsJapgolly.antd.libListMod.ListGridType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

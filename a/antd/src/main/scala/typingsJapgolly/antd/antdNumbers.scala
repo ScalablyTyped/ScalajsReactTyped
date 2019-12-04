@@ -1,7 +1,7 @@
 package typingsJapgolly.antd
 
-import typingsJapgolly.antd.esStatisticUtilsMod._Formatter
 import typingsJapgolly.antd.libListMod.ColumnCount
+import typingsJapgolly.antd.libStatisticUtilsMod._Formatter
 import typingsJapgolly.antd.libTreeDirectoryTreeMod.ExpandAction
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -12,51 +12,33 @@ object antdNumbers {
   sealed trait `0` extends js.Object
   
   @js.native
-  sealed trait `1`
-    extends ColumnCount
-       with typingsJapgolly.antd.esListMod.ColumnCount
+  sealed trait `1` extends ColumnCount
   
   @js.native
-  sealed trait `12`
-    extends ColumnCount
-       with typingsJapgolly.antd.esListMod.ColumnCount
+  sealed trait `12` extends ColumnCount
   
   @js.native
-  sealed trait `2`
-    extends ColumnCount
-       with typingsJapgolly.antd.esListMod.ColumnCount
+  sealed trait `2` extends ColumnCount
   
   @js.native
-  sealed trait `24`
-    extends ColumnCount
-       with typingsJapgolly.antd.esListMod.ColumnCount
+  sealed trait `24` extends ColumnCount
   
   @js.native
-  sealed trait `3`
-    extends ColumnCount
-       with typingsJapgolly.antd.esListMod.ColumnCount
+  sealed trait `3` extends ColumnCount
   
   @js.native
-  sealed trait `4`
-    extends ColumnCount
-       with typingsJapgolly.antd.esListMod.ColumnCount
+  sealed trait `4` extends ColumnCount
   
   @js.native
-  sealed trait `6`
-    extends ColumnCount
-       with typingsJapgolly.antd.esListMod.ColumnCount
+  sealed trait `6` extends ColumnCount
   
   @js.native
-  sealed trait `8`
-    extends ColumnCount
-       with typingsJapgolly.antd.esListMod.ColumnCount
+  sealed trait `8` extends ColumnCount
   
   @js.native
   sealed trait `false`
     extends ExpandAction
-       with typingsJapgolly.antd.esTreeDirectoryTreeMod.ExpandAction
        with _Formatter
-       with typingsJapgolly.antd.libStatisticUtilsMod._Formatter
   
   @js.native
   sealed trait `true` extends js.Object

@@ -27,8 +27,12 @@ object Ref {
     val f = japgolly.scalajs.react.JsComponent[
   typingsJapgolly.atStardustDashUiReactDashComponentDashRef.distEsTypesMod.RefProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  js.Object](typingsJapgolly.semanticDashUiDashReact.semanticDashUiDashReactMod.Ref)
+  js.Object](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.atStardustDashUiReactDashComponentDashRef.distEsTypesMod.RefProps])(children: _*)
   }
+  @JSImport("semantic-ui-react", "Ref")
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

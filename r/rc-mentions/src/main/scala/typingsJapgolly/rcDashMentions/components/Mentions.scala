@@ -1,11 +1,14 @@
 package typingsJapgolly.rcDashMentions.components
 
-import typingsJapgolly.rcDashMentions.esMentionsMod.default
+import typingsJapgolly.rcDashMentions.libMentionsMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object Mentions extends SharedApply_MentionsProps1363073257[default] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.rcDashMentions.esMentionsMod.default]
+object Mentions extends SharedApply_MentionsProps_1013810086[default] {
+  @JSImport("rc-mentions/lib/Mentions", JSImport.Default)
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

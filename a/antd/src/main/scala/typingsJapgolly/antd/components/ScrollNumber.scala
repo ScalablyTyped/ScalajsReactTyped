@@ -5,8 +5,8 @@ import japgolly.scalajs.react.Key
 import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
 import japgolly.scalajs.react.vdom.VdomElement
 import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.antd.esBadgeScrollNumberMod.ScrollNumberProps
-import typingsJapgolly.antd.esBadgeScrollNumberMod.default
+import typingsJapgolly.antd.libBadgeScrollNumberMod.ScrollNumberProps
+import typingsJapgolly.antd.libBadgeScrollNumberMod.default
 import typingsJapgolly.react.reactMod.CSSProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -41,10 +41,14 @@ object ScrollNumber {
     if (overrides != null) js.Dynamic.global.Object.assign(__obj, overrides)
   
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antd.esBadgeScrollNumberMod.ScrollNumberProps, 
+  typingsJapgolly.antd.libBadgeScrollNumberMod.ScrollNumberProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antd.esBadgeScrollNumberMod.default](js.constructorOf[typingsJapgolly.antd.esBadgeScrollNumberMod.default])
-    f(__obj.asInstanceOf[typingsJapgolly.antd.esBadgeScrollNumberMod.ScrollNumberProps])(children: _*)
+  typingsJapgolly.antd.libBadgeScrollNumberMod.default](this.componentImport)
+    f(__obj.asInstanceOf[typingsJapgolly.antd.libBadgeScrollNumberMod.ScrollNumberProps])(children: _*)
   }
+  @JSImport("antd/lib/badge/ScrollNumber", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

@@ -6,6 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 object SimpleLineIconsButton extends SharedApply_IconButtonProps_919188049[Button] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.atExpoVectorDashIcons.atExpoVectorDashIconsMod.SimpleLineIcons.Button]
+  @JSImport("@expo/vector-icons", "SimpleLineIcons.Button")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

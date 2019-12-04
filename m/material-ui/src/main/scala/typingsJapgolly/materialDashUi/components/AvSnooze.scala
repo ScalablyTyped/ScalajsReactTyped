@@ -6,6 +6,9 @@ import scala.scalajs.js.annotation._
 
 object AvSnooze
   extends SharedApply_SvgIconProps1538262166[typingsJapgolly.materialDashUi.svgDashIconsMod.AvSnooze] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.materialDashUi.svgDashIconsMod.AvSnooze]
+  @JSImport("material-ui/svg-icons", "AvSnooze")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

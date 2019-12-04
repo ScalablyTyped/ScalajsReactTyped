@@ -1,7 +1,7 @@
 package typingsJapgolly.antd
 
 import org.scalablytyped.runtime.Instantiable0
-import typingsJapgolly.antd.esInputPasswordMod.default
+import typingsJapgolly.antd.libInputPasswordMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

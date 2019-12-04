@@ -517,8 +517,12 @@ object Tab {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.atMaterialDashUiCore.tabTabMod.TabProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.atMaterialDashUiCore.tabMod.default](js.constructorOf[typingsJapgolly.atMaterialDashUiCore.tabMod.default])
+  typingsJapgolly.atMaterialDashUiCore.tabMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.atMaterialDashUiCore.tabTabMod.TabProps])(children: _*)
   }
+  @JSImport("@material-ui/core/Tab", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

@@ -33,8 +33,12 @@ object ThemedStatusBar {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.reactDashNavigation.reactDashNavigationMod.ThemedStatusBarProps with js.Object, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactDashNavigation.reactDashNavigationMod.Themed.StatusBar](js.constructorOf[typingsJapgolly.reactDashNavigation.reactDashNavigationMod.Themed.StatusBar])
+  typingsJapgolly.reactDashNavigation.reactDashNavigationMod.Themed.StatusBar](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.reactDashNavigation.reactDashNavigationMod.ThemedStatusBarProps with js.Object])(children: _*)
   }
+  @JSImport("react-navigation", "Themed.StatusBar")
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

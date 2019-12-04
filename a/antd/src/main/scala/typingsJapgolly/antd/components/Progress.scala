@@ -17,11 +17,11 @@ import typingsJapgolly.antd.antdStrings.round
 import typingsJapgolly.antd.antdStrings.square
 import typingsJapgolly.antd.antdStrings.success
 import typingsJapgolly.antd.antdStrings.top
-import typingsJapgolly.antd.esProgressMod.default
-import typingsJapgolly.antd.esProgressProgressMod.ProgressGradient
-import typingsJapgolly.antd.esProgressProgressMod.ProgressProps
-import typingsJapgolly.antd.esProgressProgressMod.ProgressSize
-import typingsJapgolly.antd.esProgressProgressMod.ProgressType
+import typingsJapgolly.antd.libProgressMod.default
+import typingsJapgolly.antd.libProgressProgressMod.ProgressGradient
+import typingsJapgolly.antd.libProgressProgressMod.ProgressProps
+import typingsJapgolly.antd.libProgressProgressMod.ProgressSize
+import typingsJapgolly.antd.libProgressProgressMod.ProgressType
 import typingsJapgolly.react.reactMod.CSSProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -74,10 +74,14 @@ object Progress {
     if (overrides != null) js.Dynamic.global.Object.assign(__obj, overrides)
   
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antd.esProgressProgressMod.ProgressProps, 
+  typingsJapgolly.antd.libProgressProgressMod.ProgressProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antd.esProgressMod.default](js.constructorOf[typingsJapgolly.antd.esProgressMod.default])
-    f(__obj.asInstanceOf[typingsJapgolly.antd.esProgressProgressMod.ProgressProps])(children: _*)
+  typingsJapgolly.antd.libProgressMod.default](this.componentImport)
+    f(__obj.asInstanceOf[typingsJapgolly.antd.libProgressProgressMod.ProgressProps])(children: _*)
   }
+  @JSImport("antd/lib/progress", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

@@ -9,9 +9,9 @@ import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
 import org.scalablytyped.runtime.StringDictionary
 import org.scalajs.dom.raw.HTMLElement
 import typingsJapgolly.antd.Anon_Href
-import typingsJapgolly.antd.esAnchorAnchorMod.AnchorContainer
-import typingsJapgolly.antd.esAnchorAnchorMod.AnchorProps
-import typingsJapgolly.antd.esAnchorMod.default
+import typingsJapgolly.antd.libAnchorAnchorMod.AnchorContainer
+import typingsJapgolly.antd.libAnchorAnchorMod.AnchorProps
+import typingsJapgolly.antd.libAnchorMod.default
 import typingsJapgolly.react.reactMod.CSSProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -54,10 +54,14 @@ object Anchor {
     if (overrides != null) js.Dynamic.global.Object.assign(__obj, overrides)
   
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antd.esAnchorAnchorMod.AnchorProps, 
+  typingsJapgolly.antd.libAnchorAnchorMod.AnchorProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antd.esAnchorMod.default](js.constructorOf[typingsJapgolly.antd.esAnchorMod.default])
-    f(__obj.asInstanceOf[typingsJapgolly.antd.esAnchorAnchorMod.AnchorProps])(children: _*)
+  typingsJapgolly.antd.libAnchorMod.default](this.componentImport)
+    f(__obj.asInstanceOf[typingsJapgolly.antd.libAnchorAnchorMod.AnchorProps])(children: _*)
   }
+  @JSImport("antd/lib/anchor", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

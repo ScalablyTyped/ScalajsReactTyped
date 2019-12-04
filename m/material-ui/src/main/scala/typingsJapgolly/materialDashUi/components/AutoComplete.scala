@@ -163,8 +163,12 @@ object AutoComplete {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.materialDashUi.__MaterialUI.AutoCompleteProps[js.Any], 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.materialDashUi.autoCompleteMod.default](js.constructorOf[typingsJapgolly.materialDashUi.autoCompleteMod.default])
+  typingsJapgolly.materialDashUi.autoCompleteMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.materialDashUi.__MaterialUI.AutoCompleteProps[js.Any]])(children: _*)
   }
+  @JSImport("material-ui/AutoComplete", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

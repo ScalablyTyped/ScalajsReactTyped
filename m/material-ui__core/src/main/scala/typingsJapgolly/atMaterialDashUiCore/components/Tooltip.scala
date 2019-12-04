@@ -483,8 +483,12 @@ object Tooltip {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.atMaterialDashUiCore.tooltipTooltipMod.TooltipProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.atMaterialDashUiCore.tooltipMod.default](js.constructorOf[typingsJapgolly.atMaterialDashUiCore.tooltipMod.default])
+  typingsJapgolly.atMaterialDashUiCore.tooltipMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.atMaterialDashUiCore.tooltipTooltipMod.TooltipProps])(children: _*)
   }
+  @JSImport("@material-ui/core/Tooltip", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

@@ -452,8 +452,12 @@ object InputAdornment {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.atMaterialDashUiCore.inputAdornmentInputAdornmentMod.InputAdornmentProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.atMaterialDashUiCore.inputAdornmentMod.default](js.constructorOf[typingsJapgolly.atMaterialDashUiCore.inputAdornmentMod.default])
+  typingsJapgolly.atMaterialDashUiCore.inputAdornmentMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.atMaterialDashUiCore.inputAdornmentInputAdornmentMod.InputAdornmentProps])(children: _*)
   }
+  @JSImport("@material-ui/core/InputAdornment", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

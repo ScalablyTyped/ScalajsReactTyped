@@ -1,11 +1,14 @@
 package typingsJapgolly.atMaterialDashUiIcons.components
 
+import typingsJapgolly.atMaterialDashUiIcons.emojiSymbolsMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object EmojiSymbols
-  extends SharedApply_SvgIconProps1591622337[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.EmojiSymbols] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.EmojiSymbols]
+object EmojiSymbols extends SharedApply_SvgIconProps1591622337[default] {
+  @JSImport("@material-ui/icons/EmojiSymbols", "default")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

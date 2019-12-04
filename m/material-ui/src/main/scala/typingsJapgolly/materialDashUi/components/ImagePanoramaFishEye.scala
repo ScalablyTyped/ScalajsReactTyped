@@ -6,6 +6,9 @@ import scala.scalajs.js.annotation._
 
 object ImagePanoramaFishEye
   extends SharedApply_SvgIconProps1538262166[typingsJapgolly.materialDashUi.svgDashIconsMod.ImagePanoramaFishEye] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.materialDashUi.svgDashIconsMod.ImagePanoramaFishEye]
+  @JSImport("material-ui/svg-icons", "ImagePanoramaFishEye")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

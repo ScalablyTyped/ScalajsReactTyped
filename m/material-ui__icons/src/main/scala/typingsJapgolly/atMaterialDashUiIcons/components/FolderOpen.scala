@@ -1,11 +1,14 @@
 package typingsJapgolly.atMaterialDashUiIcons.components
 
+import typingsJapgolly.atMaterialDashUiIcons.folderOpenMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object FolderOpen
-  extends SharedApply_SvgIconProps1591622337[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.FolderOpen] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.FolderOpen]
+object FolderOpen extends SharedApply_SvgIconProps1591622337[default] {
+  @JSImport("@material-ui/icons/FolderOpen", "default")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

@@ -3,7 +3,6 @@ package typingsJapgolly.reactDashNative.reactDashNativeMod
 import japgolly.scalajs.react.Callback
 import japgolly.scalajs.react.ReactEventFrom
 import org.scalajs.dom.raw.Element
-import typingsJapgolly.reactDashNative.NodeHandle
 import typingsJapgolly.reactDashNative.reactDashNativeStrings.`landscape-left`
 import typingsJapgolly.reactDashNative.reactDashNativeStrings.`landscape-right`
 import typingsJapgolly.reactDashNative.reactDashNativeStrings.`portrait-upside-down`
@@ -54,7 +53,8 @@ object ModalPropsIOS {
   ): ModalPropsIOS = {
     val __obj = js.Dynamic.literal()
     onDismiss.foreach(p => __obj.updateDynamic("onDismiss")(p.toJsFn))
-    if (onOrientationChange != null) __obj.updateDynamic("onOrientationChange")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[typingsJapgolly.reactDashNative.NodeHandle with org.scalajs.dom.raw.Element]) => onOrientationChange(t0).runNow()))
+    if (onOrientationChange != null) __obj.updateDynamic("onOrientationChange")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[
+  typingsJapgolly.reactDashNative.reactDashNativeMod.NodeHandle with org.scalajs.dom.raw.Element]) => onOrientationChange(t0).runNow()))
     if (presentationStyle != null) __obj.updateDynamic("presentationStyle")(presentationStyle.asInstanceOf[js.Any])
     if (supportedOrientations != null) __obj.updateDynamic("supportedOrientations")(supportedOrientations.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModalPropsIOS]

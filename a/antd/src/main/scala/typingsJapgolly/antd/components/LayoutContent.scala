@@ -4,7 +4,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object LayoutContent extends SharedApply_BasicProps95024345 {
-  override val __component: js.Any = typingsJapgolly.antd.esMod.Layout.Content
+object LayoutContent extends SharedApply_BasicProps1405605897 {
+  @JSImport("antd", "Layout.Content")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

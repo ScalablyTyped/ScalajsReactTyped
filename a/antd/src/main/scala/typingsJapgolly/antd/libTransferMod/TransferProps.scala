@@ -23,7 +23,7 @@ trait TransferProps extends js.Object {
   var filterOption: js.UndefOr[js.Function2[/* inputValue */ String, /* item */ TransferItem, Boolean]] = js.undefined
   var footer: js.UndefOr[js.Function1[/* props */ TransferListProps, Node]] = js.undefined
   var `lazy`: js.UndefOr[js.Object | Boolean] = js.undefined
-  var listStyle: js.UndefOr[CSSProperties] = js.undefined
+  var listStyle: (js.Function1[/* style */ ListStyle, CSSProperties]) | CSSProperties
   var locale: js.UndefOr[js.Object] = js.undefined
   var notFoundContent: js.UndefOr[Node] = js.undefined
   var onChange: js.UndefOr[
@@ -66,6 +66,7 @@ object TransferProps {
   @scala.inline
   def apply(
     dataSource: js.Array[TransferItem],
+    listStyle: (js.Function1[/* style */ ListStyle, CSSProperties]) | CSSProperties,
     body: /* props */ TransferListProps => CallbackTo[Node] = null,
     children: /* props */ TransferListBodyProps => CallbackTo[Node] = null,
     className: String = null,
@@ -73,7 +74,6 @@ object TransferProps {
     filterOption: (/* inputValue */ String, /* item */ TransferItem) => CallbackTo[Boolean] = null,
     footer: /* props */ TransferListProps => CallbackTo[Node] = null,
     `lazy`: js.Object | Boolean = null,
-    listStyle: CSSProperties = null,
     locale: js.Object = null,
     notFoundContent: VdomNode = null,
     onChange: (/* targetKeys */ js.Array[String], /* direction */ String, /* moveKeys */ js.Array[String]) => Callback = null,
@@ -94,7 +94,7 @@ object TransferProps {
     targetKeys: js.Array[String] = null,
     titles: js.Array[String] = null
   ): TransferProps = {
-    val __obj = js.Dynamic.literal(dataSource = dataSource.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(dataSource = dataSource.asInstanceOf[js.Any], listStyle = listStyle.asInstanceOf[js.Any])
     if (body != null) __obj.updateDynamic("body")(js.Any.fromFunction1((t0: /* props */ typingsJapgolly.antd.libTransferListMod.TransferListProps) => body(t0).runNow()))
     if (children != null) __obj.updateDynamic("children")(js.Any.fromFunction1((t0: /* props */ typingsJapgolly.antd.libTransferRenderListBodyMod.TransferListBodyProps) => children(t0).runNow()))
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
@@ -102,7 +102,6 @@ object TransferProps {
     if (filterOption != null) __obj.updateDynamic("filterOption")(js.Any.fromFunction2((t0: /* inputValue */ java.lang.String, t1: /* item */ typingsJapgolly.antd.libTransferMod.TransferItem) => filterOption(t0, t1).runNow()))
     if (footer != null) __obj.updateDynamic("footer")(js.Any.fromFunction1((t0: /* props */ typingsJapgolly.antd.libTransferListMod.TransferListProps) => footer(t0).runNow()))
     if (`lazy` != null) __obj.updateDynamic("lazy")(`lazy`.asInstanceOf[js.Any])
-    if (listStyle != null) __obj.updateDynamic("listStyle")(listStyle.asInstanceOf[js.Any])
     if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
     if (notFoundContent != null) __obj.updateDynamic("notFoundContent")(notFoundContent.rawNode.asInstanceOf[js.Any])
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction3((t0: /* targetKeys */ js.Array[java.lang.String], t1: /* direction */ java.lang.String, t2: /* moveKeys */ js.Array[java.lang.String]) => onChange(t0, t1, t2).runNow()))

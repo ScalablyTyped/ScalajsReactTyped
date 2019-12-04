@@ -1,11 +1,14 @@
 package typingsJapgolly.atMaterialDashUiIcons.components
 
+import typingsJapgolly.atMaterialDashUiIcons.sportsBaseballMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object SportsBaseball
-  extends SharedApply_SvgIconProps1591622337[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.SportsBaseball] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.SportsBaseball]
+object SportsBaseball extends SharedApply_SvgIconProps1591622337[default] {
+  @JSImport("@material-ui/icons/SportsBaseball", "default")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

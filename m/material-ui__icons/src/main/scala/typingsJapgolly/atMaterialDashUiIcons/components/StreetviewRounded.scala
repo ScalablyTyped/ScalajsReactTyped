@@ -1,11 +1,14 @@
 package typingsJapgolly.atMaterialDashUiIcons.components
 
+import typingsJapgolly.atMaterialDashUiIcons.streetviewRoundedMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object StreetviewRounded
-  extends SharedApply_SvgIconProps1591622337[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.StreetviewRounded] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.StreetviewRounded]
+object StreetviewRounded extends SharedApply_SvgIconProps1591622337[default] {
+  @JSImport("@material-ui/icons/StreetviewRounded", "default")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

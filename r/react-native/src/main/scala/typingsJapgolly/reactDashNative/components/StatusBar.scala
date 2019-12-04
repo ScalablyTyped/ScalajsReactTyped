@@ -46,8 +46,12 @@ object StatusBar {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.reactDashNative.reactDashNativeMod.StatusBarProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactDashNative.reactDashNativeMod.StatusBar](js.constructorOf[typingsJapgolly.reactDashNative.reactDashNativeMod.StatusBar])
+  typingsJapgolly.reactDashNative.reactDashNativeMod.StatusBar](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.reactDashNative.reactDashNativeMod.StatusBarProps])(children: _*)
   }
+  @JSImport("react-native", "StatusBar")
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

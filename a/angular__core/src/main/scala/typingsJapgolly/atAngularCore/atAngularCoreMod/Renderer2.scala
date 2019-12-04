@@ -2,7 +2,7 @@ package typingsJapgolly.atAngularCore.atAngularCoreMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typingsJapgolly.atAngularCore.atAngularCoreStrings.body
-import typingsJapgolly.atAngularCore.atAngularCoreStrings.document
+import typingsJapgolly.atAngularCore.atAngularCoreStrings.document_
 import typingsJapgolly.atAngularCore.atAngularCoreStrings.window
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -70,7 +70,7 @@ abstract class Renderer2 () extends js.Object {
   @JSName("listen")
   def listen_body(target: body, eventName: String, callback: js.Function1[/* event */ js.Any, Boolean | Unit]): js.Function0[Unit] = js.native
   @JSName("listen")
-  def listen_document(target: document, eventName: String, callback: js.Function1[/* event */ js.Any, Boolean | Unit]): js.Function0[Unit] = js.native
+  def listen_document(target: document_, eventName: String, callback: js.Function1[/* event */ js.Any, Boolean | Unit]): js.Function0[Unit] = js.native
   /**
     * Implement this callback to start an event listener.
     * @param target The context in which to listen for events. Can be

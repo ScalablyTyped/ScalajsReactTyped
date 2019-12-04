@@ -18,9 +18,9 @@ import org.scalajs.dom.raw.HTMLInputElement
 import typingsJapgolly.antd.antdStrings.default
 import typingsJapgolly.antd.antdStrings.large
 import typingsJapgolly.antd.antdStrings.small
-import typingsJapgolly.antd.esSelectMod.ModeOption
-import typingsJapgolly.antd.esSelectMod.SelectProps
-import typingsJapgolly.antd.esSelectMod.SelectValue
+import typingsJapgolly.antd.libSelectMod.ModeOption
+import typingsJapgolly.antd.libSelectMod.SelectProps
+import typingsJapgolly.antd.libSelectMod.SelectValue
 import typingsJapgolly.react.reactMod.CSSProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -87,7 +87,7 @@ object Select {
     overrides: StringDictionary[js.Any] = null
   )(
     children: ChildArg*
-  ): UnmountedWithRoot[SelectProps[T], typingsJapgolly.antd.esSelectMod.default[T], Unit, SelectProps[T]] = {
+  ): UnmountedWithRoot[SelectProps[T], typingsJapgolly.antd.libSelectMod.default[T], Unit, SelectProps[T]] = {
     val __obj = js.Dynamic.literal()
   
       if (!js.isUndefined(allowClear)) __obj.updateDynamic("allowClear")(allowClear.asInstanceOf[js.Any])
@@ -104,7 +104,7 @@ object Select {
     if (!js.isUndefined(dropdownMatchSelectWidth)) __obj.updateDynamic("dropdownMatchSelectWidth")(dropdownMatchSelectWidth.asInstanceOf[js.Any])
     if (dropdownMenuStyle != null) __obj.updateDynamic("dropdownMenuStyle")(dropdownMenuStyle.asInstanceOf[js.Any])
     if (dropdownRender != null) __obj.updateDynamic("dropdownRender")(js.Any.fromFunction2((t0: /* menu */ js.UndefOr[japgolly.scalajs.react.raw.React.Node], t1: /* props */ js.UndefOr[
-  typingsJapgolly.antd.esSelectMod.SelectProps[typingsJapgolly.antd.esSelectMod.SelectValue]]) => dropdownRender(t0, t1).runNow()))
+  typingsJapgolly.antd.libSelectMod.SelectProps[typingsJapgolly.antd.libSelectMod.SelectValue]]) => dropdownRender(t0, t1).runNow()))
     if (dropdownStyle != null) __obj.updateDynamic("dropdownStyle")(dropdownStyle.asInstanceOf[js.Any])
     if (filterOption != null) __obj.updateDynamic("filterOption")(filterOption.asInstanceOf[js.Any])
     if (firstActiveValue != null) __obj.updateDynamic("firstActiveValue")(firstActiveValue.asInstanceOf[js.Any])
@@ -150,10 +150,14 @@ object Select {
     if (overrides != null) js.Dynamic.global.Object.assign(__obj, overrides)
   
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antd.esSelectMod.SelectProps[T], 
+  typingsJapgolly.antd.libSelectMod.SelectProps[T], 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antd.esSelectMod.default[T]](js.constructorOf[typingsJapgolly.antd.esSelectMod.default[T]])
-    f(__obj.asInstanceOf[typingsJapgolly.antd.esSelectMod.SelectProps[T]])(children: _*)
+  typingsJapgolly.antd.libSelectMod.default[T]](this.componentImport)
+    f(__obj.asInstanceOf[typingsJapgolly.antd.libSelectMod.SelectProps[T]])(children: _*)
   }
+  @JSImport("antd/lib/select", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

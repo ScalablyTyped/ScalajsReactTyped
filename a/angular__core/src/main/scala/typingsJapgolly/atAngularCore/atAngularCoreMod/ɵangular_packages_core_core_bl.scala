@@ -1,6 +1,5 @@
 package typingsJapgolly.atAngularCore.atAngularCoreMod
 
-import typingsJapgolly.atAngularCore.TData
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

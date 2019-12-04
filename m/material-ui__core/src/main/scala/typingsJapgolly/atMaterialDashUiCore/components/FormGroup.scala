@@ -441,8 +441,12 @@ object FormGroup {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.atMaterialDashUiCore.formGroupFormGroupMod.FormGroupProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.atMaterialDashUiCore.formGroupMod.default](js.constructorOf[typingsJapgolly.atMaterialDashUiCore.formGroupMod.default])
+  typingsJapgolly.atMaterialDashUiCore.formGroupMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.atMaterialDashUiCore.formGroupFormGroupMod.FormGroupProps])(children: _*)
   }
+  @JSImport("@material-ui/core/FormGroup", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

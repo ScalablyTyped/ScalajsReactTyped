@@ -15,7 +15,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 abstract class SharedApply_ARTShapeProps2081479648[ComponentRef] () {
-  def __component: js.Any
+  val componentImport: js.Any
   def apply(
     d: String,
     fill: String = null,
@@ -67,7 +67,7 @@ abstract class SharedApply_ARTShapeProps2081479648[ComponentRef] () {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.reactDashNative.reactDashNativeMod.ARTShapeProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  ComponentRef](__component)
+  ComponentRef](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.reactDashNative.reactDashNativeMod.ARTShapeProps])(children: _*)
   }
 }

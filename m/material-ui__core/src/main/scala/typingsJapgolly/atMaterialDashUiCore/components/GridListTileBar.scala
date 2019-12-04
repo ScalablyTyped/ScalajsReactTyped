@@ -52,8 +52,12 @@ object GridListTileBar {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.atMaterialDashUiCore.gridListTileBarGridListTileBarMod.GridListTileBarProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.atMaterialDashUiCore.gridListTileBarMod.default](js.constructorOf[typingsJapgolly.atMaterialDashUiCore.gridListTileBarMod.default])
+  typingsJapgolly.atMaterialDashUiCore.gridListTileBarMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.atMaterialDashUiCore.gridListTileBarGridListTileBarMod.GridListTileBarProps])(children: _*)
   }
+  @JSImport("@material-ui/core/GridListTileBar", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

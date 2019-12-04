@@ -1,6 +1,6 @@
 package typingsJapgolly.antd.antdMod
 
-import typingsJapgolly.antd.Anon_ArrowPointAtCenterAutoAdjustOverflow
+import typingsJapgolly.antd.Anon_ArrowPointAtCenter
 import typingsJapgolly.antd.Anon_Visible
 import typingsJapgolly.antd.libTooltipMod.TooltipProps
 import typingsJapgolly.antd.libTooltipMod.default
@@ -18,7 +18,7 @@ class Tooltip protected () extends default {
 @JSImport("antd", "Tooltip")
 @js.native
 object Tooltip extends js.Object {
-  var defaultProps: Anon_ArrowPointAtCenterAutoAdjustOverflow = js.native
+  var defaultProps: Anon_ArrowPointAtCenter = js.native
   def getDerivedStateFromProps(nextProps: TooltipProps): Anon_Visible | Null = js.native
 }
 

@@ -9,14 +9,14 @@ import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
 import japgolly.scalajs.react.vdom.VdomNode
 import org.scalablytyped.runtime.StringDictionary
 import org.scalajs.dom.raw.HTMLElement
-import typingsJapgolly.antd.esButtonButtonMod.ButtonType
-import typingsJapgolly.antd.esButtonButtonMod.NativeButtonProps
-import typingsJapgolly.antd.esPopconfirmMod.PopconfirmProps
-import typingsJapgolly.antd.esPopconfirmMod.default
-import typingsJapgolly.antd.esTooltipMod.TooltipAlignConfig
-import typingsJapgolly.antd.esTooltipMod.TooltipPlacement
-import typingsJapgolly.antd.esTooltipMod.TooltipTrigger
-import typingsJapgolly.antd.esTooltipPlacementsMod.AdjustOverflow
+import typingsJapgolly.antd.libButtonButtonMod.ButtonType
+import typingsJapgolly.antd.libButtonButtonMod.NativeButtonProps
+import typingsJapgolly.antd.libPopconfirmMod.PopconfirmProps
+import typingsJapgolly.antd.libPopconfirmMod.default
+import typingsJapgolly.antd.libTooltipMod.TooltipAlignConfig
+import typingsJapgolly.antd.libTooltipMod.TooltipPlacement
+import typingsJapgolly.antd.libTooltipMod.TooltipTrigger
+import typingsJapgolly.antd.libTooltipPlacementsMod.AdjustOverflow
 import typingsJapgolly.react.reactMod.CSSProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -97,10 +97,14 @@ object Popconfirm {
     if (overrides != null) js.Dynamic.global.Object.assign(__obj, overrides)
   
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antd.esPopconfirmMod.PopconfirmProps, 
+  typingsJapgolly.antd.libPopconfirmMod.PopconfirmProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antd.esPopconfirmMod.default](js.constructorOf[typingsJapgolly.antd.esPopconfirmMod.default])
-    f(__obj.asInstanceOf[typingsJapgolly.antd.esPopconfirmMod.PopconfirmProps])(children: _*)
+  typingsJapgolly.antd.libPopconfirmMod.default](this.componentImport)
+    f(__obj.asInstanceOf[typingsJapgolly.antd.libPopconfirmMod.PopconfirmProps])(children: _*)
   }
+  @JSImport("antd/lib/popconfirm", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

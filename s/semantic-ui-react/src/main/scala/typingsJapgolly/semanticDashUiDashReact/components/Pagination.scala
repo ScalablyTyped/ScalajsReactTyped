@@ -59,8 +59,12 @@ object Pagination {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.semanticDashUiDashReact.distCommonjsAddonsPaginationPaginationMod.PaginationProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.semanticDashUiDashReact.distCommonjsAddonsPaginationMod.default](js.constructorOf[typingsJapgolly.semanticDashUiDashReact.distCommonjsAddonsPaginationMod.default])
+  typingsJapgolly.semanticDashUiDashReact.distCommonjsAddonsPaginationMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.semanticDashUiDashReact.distCommonjsAddonsPaginationPaginationMod.PaginationProps])(children: _*)
   }
+  @JSImport("semantic-ui-react/dist/commonjs/addons/Pagination", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

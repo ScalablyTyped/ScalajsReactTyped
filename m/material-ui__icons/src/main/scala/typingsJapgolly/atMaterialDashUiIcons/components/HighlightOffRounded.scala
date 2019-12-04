@@ -1,13 +1,14 @@
 package typingsJapgolly.atMaterialDashUiIcons.components
 
+import typingsJapgolly.atMaterialDashUiIcons.highlightOffRoundedMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object HighlightOffRounded
-  extends SharedApply_SvgIconProps1591622337[
-      typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.HighlightOffRounded
-    ] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.HighlightOffRounded]
+object HighlightOffRounded extends SharedApply_SvgIconProps1591622337[default] {
+  @JSImport("@material-ui/icons/HighlightOffRounded", "default")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

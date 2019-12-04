@@ -70,8 +70,12 @@ object Sidebar {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.semanticDashUiDashReact.distCommonjsModulesSidebarSidebarMod.SidebarProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.semanticDashUiDashReact.distCommonjsModulesSidebarMod.default](js.constructorOf[typingsJapgolly.semanticDashUiDashReact.distCommonjsModulesSidebarMod.default])
+  typingsJapgolly.semanticDashUiDashReact.distCommonjsModulesSidebarMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.semanticDashUiDashReact.distCommonjsModulesSidebarSidebarMod.SidebarProps])(children: _*)
   }
+  @JSImport("semantic-ui-react/dist/commonjs/modules/Sidebar", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

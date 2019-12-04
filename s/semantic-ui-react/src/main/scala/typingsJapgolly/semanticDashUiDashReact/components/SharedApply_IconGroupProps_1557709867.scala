@@ -14,7 +14,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 abstract class SharedApply_IconGroupProps_1557709867 () {
-  def __component: js.Any
+  val componentImport: js.Any
   def apply(
     StringDictionary: /* key */ StringDictionary[js.Any] = null,
     as: js.Any = null,
@@ -42,7 +42,7 @@ abstract class SharedApply_IconGroupProps_1557709867 () {
     val f = japgolly.scalajs.react.JsComponent[
   typingsJapgolly.semanticDashUiDashReact.distCommonjsElementsIconIconGroupMod.IconGroupProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  js.Object](__component)
+  js.Object](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.semanticDashUiDashReact.distCommonjsElementsIconIconGroupMod.IconGroupProps])(children: _*)
   }
 }

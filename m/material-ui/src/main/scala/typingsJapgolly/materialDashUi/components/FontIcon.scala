@@ -432,8 +432,12 @@ object FontIcon {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.materialDashUi.__MaterialUI.FontIconProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.materialDashUi.fontIconMod.default](js.constructorOf[typingsJapgolly.materialDashUi.fontIconMod.default])
+  typingsJapgolly.materialDashUi.fontIconMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.materialDashUi.__MaterialUI.FontIconProps])(children: _*)
   }
+  @JSImport("material-ui/FontIcon", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

@@ -31,8 +31,12 @@ object Provider {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   js.Any with js.Object, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.mobxDashReact.mobxDashReactMod.Provider](js.constructorOf[typingsJapgolly.mobxDashReact.mobxDashReactMod.Provider])
+  typingsJapgolly.mobxDashReact.mobxDashReactMod.Provider](this.componentImport)
     f(__obj.asInstanceOf[js.Any with js.Object])(children: _*)
   }
+  @JSImport("mobx-react", "Provider")
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

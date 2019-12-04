@@ -43,11 +43,11 @@ object NavigationContainerProps {
   @scala.inline
   def apply[State, Options, ScreenProps](
     enableURLHandling: js.UndefOr[Boolean] = js.undefined,
-    loadNavigationState: js.UndefOr[CallbackTo[js.Promise[_]]] = js.undefined,
+    loadNavigationState: js.UndefOr[CallbackTo[js.Promise[js.Any]]] = js.undefined,
     navigation: NavigationScreenProp[State, NavigationParams] = null,
     navigationOptions: Options = null,
     onNavigationStateChange: (/* prevNavigationState */ NavigationState, /* nextNavigationState */ NavigationState, /* action */ NavigationAction) => CallbackTo[js.UndefOr[Unit | Null]] = null,
-    persistNavigationState: /* state */ NavigationState => CallbackTo[js.Promise[_]] = null,
+    persistNavigationState: /* state */ NavigationState => CallbackTo[js.Promise[js.Any]] = null,
     persistenceKey: String = null,
     renderLoadingExperimental: ComponentType[js.Object] = null,
     screenProps: ScreenProps = null,

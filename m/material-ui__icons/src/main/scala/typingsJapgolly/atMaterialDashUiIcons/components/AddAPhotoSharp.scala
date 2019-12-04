@@ -1,11 +1,14 @@
 package typingsJapgolly.atMaterialDashUiIcons.components
 
+import typingsJapgolly.atMaterialDashUiIcons.addAPhotoSharpMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object AddAPhotoSharp
-  extends SharedApply_SvgIconProps1591622337[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.AddAPhotoSharp] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.AddAPhotoSharp]
+object AddAPhotoSharp extends SharedApply_SvgIconProps1591622337[default] {
+  @JSImport("@material-ui/icons/AddAPhotoSharp", "default")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

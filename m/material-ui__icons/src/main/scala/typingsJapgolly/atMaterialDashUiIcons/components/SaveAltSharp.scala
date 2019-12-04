@@ -1,11 +1,14 @@
 package typingsJapgolly.atMaterialDashUiIcons.components
 
+import typingsJapgolly.atMaterialDashUiIcons.saveAltSharpMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object SaveAltSharp
-  extends SharedApply_SvgIconProps1591622337[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.SaveAltSharp] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.SaveAltSharp]
+object SaveAltSharp extends SharedApply_SvgIconProps1591622337[default] {
+  @JSImport("@material-ui/icons/SaveAltSharp", "default")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

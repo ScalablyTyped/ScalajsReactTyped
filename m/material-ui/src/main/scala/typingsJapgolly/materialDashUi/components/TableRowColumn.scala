@@ -47,8 +47,12 @@ object TableRowColumn {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.materialDashUi.__MaterialUI.Table.TableRowColumnProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.materialDashUi.tableTableRowColumnMod.default](js.constructorOf[typingsJapgolly.materialDashUi.tableTableRowColumnMod.default])
+  typingsJapgolly.materialDashUi.tableTableRowColumnMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.materialDashUi.__MaterialUI.Table.TableRowColumnProps])(children: _*)
   }
+  @JSImport("material-ui/Table/TableRowColumn", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

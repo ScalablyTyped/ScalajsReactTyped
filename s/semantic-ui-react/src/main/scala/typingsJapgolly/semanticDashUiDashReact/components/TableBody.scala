@@ -35,8 +35,12 @@ object TableBody {
     val f = japgolly.scalajs.react.JsComponent[
   typingsJapgolly.semanticDashUiDashReact.distCommonjsCollectionsTableTableBodyMod.TableBodyProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  js.Object](typingsJapgolly.semanticDashUiDashReact.distCommonjsCollectionsTableTableBodyMod.default)
+  js.Object](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.semanticDashUiDashReact.distCommonjsCollectionsTableTableBodyMod.TableBodyProps])(children: _*)
   }
+  @JSImport("semantic-ui-react/dist/commonjs/collections/Table/TableBody", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

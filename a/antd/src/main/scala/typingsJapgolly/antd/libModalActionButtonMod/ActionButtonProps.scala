@@ -19,7 +19,7 @@ object ActionButtonProps {
   @scala.inline
   def apply(
     closeModal: js.Function,
-    actionFn: /* repeated */ js.Any => CallbackTo[_ | js.Thenable[_]] = null,
+    actionFn: /* repeated */ js.Any => CallbackTo[js.Any | js.Thenable[js.Any]] = null,
     autoFocus: js.UndefOr[Boolean] = js.undefined,
     buttonProps: NativeButtonProps = null,
     `type`: ButtonType = null

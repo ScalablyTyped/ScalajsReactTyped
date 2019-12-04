@@ -463,8 +463,12 @@ object Link {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.reactDashRouterDashDom.reactDashRouterDashDomMod.LinkProps[S], 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactDashRouterDashDom.reactDashRouterDashDomMod.Link[S]](js.constructorOf[typingsJapgolly.reactDashRouterDashDom.reactDashRouterDashDomMod.Link[S]])
+  typingsJapgolly.reactDashRouterDashDom.reactDashRouterDashDomMod.Link[S]](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.reactDashRouterDashDom.reactDashRouterDashDomMod.LinkProps[S]])(children: _*)
   }
+  @JSImport("react-router-dom", "Link")
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

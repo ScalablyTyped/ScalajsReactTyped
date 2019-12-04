@@ -4,7 +4,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object CardGrid extends SharedApply_CardGridProps517948235 {
-  override val __component: js.Any = typingsJapgolly.antd.esMod.Card.Grid
+object CardGrid extends SharedApply_CardGridProps_788338139 {
+  @JSImport("antd", "Card.Grid")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

@@ -2,11 +2,15 @@ package typingsJapgolly.antd.libDateDashPickerInterfaceMod
 
 import japgolly.scalajs.react.Callback
 import japgolly.scalajs.react.CallbackTo
+import japgolly.scalajs.react.ReactEventFrom
+import japgolly.scalajs.react.ReactFocusEventFrom
+import japgolly.scalajs.react.ReactMouseEventFrom
 import japgolly.scalajs.react.raw.React.Node
 import japgolly.scalajs.react.vdom.VdomNode
 import org.scalablytyped.runtime.StringDictionary
 import org.scalajs.dom.raw.Element
 import org.scalajs.dom.raw.HTMLElement
+import org.scalajs.dom.raw.HTMLSpanElement
 import typingsJapgolly.antd.Anon_DisabledHours
 import typingsJapgolly.antd.antdStrings.default
 import typingsJapgolly.antd.antdStrings.large
@@ -31,6 +35,8 @@ trait RangePickerProps extends PickerProps {
   var onChange: js.UndefOr[
     js.Function2[/* dates */ RangePickerValue, /* dateStrings */ js.Tuple2[String, String], Unit]
   ] = js.undefined
+  var onMouseEnter: js.UndefOr[js.Function1[/* e */ ReactMouseEventFrom[HTMLSpanElement], Unit]] = js.undefined
+  var onMouseLeave: js.UndefOr[js.Function1[/* e */ ReactMouseEventFrom[HTMLSpanElement], Unit]] = js.undefined
   var onOk: js.UndefOr[js.Function1[/* selectedTime */ RangePickerPresetRange, Unit]] = js.undefined
   var onPanelChange: js.UndefOr[
     js.Function2[
@@ -45,6 +51,8 @@ trait RangePickerProps extends PickerProps {
   var separator: js.UndefOr[Node] = js.undefined
   var showTime: js.UndefOr[TimePickerProps | Boolean] = js.undefined
   var showToday: js.UndefOr[Boolean] = js.undefined
+  var tagPrefixCls: js.UndefOr[String] = js.undefined
+  var timePicker: js.UndefOr[Node] = js.undefined
   var value: js.UndefOr[RangePickerValue] = js.undefined
 }
 
@@ -68,12 +76,18 @@ object RangePickerProps {
     locale: js.Any = null,
     mode: String | js.Array[String] = null,
     name: String = null,
+    onBlur: /* e */ ReactEventFrom[Element] => Callback = null,
     onCalendarChange: (/* dates */ RangePickerValue, /* dateStrings */ js.Tuple2[String, String]) => Callback = null,
     onChange: (/* dates */ RangePickerValue, /* dateStrings */ js.Tuple2[String, String]) => Callback = null,
+    onFocus: ReactFocusEventFrom[Element] => Callback = null,
+    onMouseEnter: /* e */ ReactMouseEventFrom[HTMLSpanElement] => Callback = null,
+    onMouseLeave: /* e */ ReactMouseEventFrom[HTMLSpanElement] => Callback = null,
     onOk: /* selectedTime */ RangePickerPresetRange => Callback = null,
     onOpenChange: /* status */ Boolean => Callback = null,
     onPanelChange: (/* value */ js.UndefOr[RangePickerValue], /* mode */ js.UndefOr[String | js.Array[String]]) => Callback = null,
     open: js.UndefOr[Boolean] = js.undefined,
+    pickerClass: String = null,
+    pickerInputClass: String = null,
     placeholder: js.Tuple2[String, String] = null,
     popupStyle: CSSProperties = null,
     prefixCls: String = null,
@@ -85,6 +99,8 @@ object RangePickerProps {
     size: large | small | default = null,
     style: CSSProperties = null,
     suffixIcon: VdomNode = null,
+    tagPrefixCls: String = null,
+    timePicker: VdomNode = null,
     value: RangePickerValue = null
   ): RangePickerProps = {
     val __obj = js.Dynamic.literal()
@@ -105,12 +121,18 @@ object RangePickerProps {
     if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction1((t0: /* e */ japgolly.scalajs.react.ReactEventFrom[org.scalajs.dom.raw.Element]) => onBlur(t0).runNow()))
     if (onCalendarChange != null) __obj.updateDynamic("onCalendarChange")(js.Any.fromFunction2((t0: /* dates */ typingsJapgolly.antd.libDateDashPickerInterfaceMod.RangePickerValue, t1: /* dateStrings */ js.Tuple2[java.lang.String, java.lang.String]) => onCalendarChange(t0, t1).runNow()))
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction2((t0: /* dates */ typingsJapgolly.antd.libDateDashPickerInterfaceMod.RangePickerValue, t1: /* dateStrings */ js.Tuple2[java.lang.String, java.lang.String]) => onChange(t0, t1).runNow()))
+    if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactFocusEventFrom[org.scalajs.dom.raw.Element]) => onFocus(t0).runNow()))
+    if (onMouseEnter != null) __obj.updateDynamic("onMouseEnter")(js.Any.fromFunction1((t0: /* e */ japgolly.scalajs.react.ReactMouseEventFrom[org.scalajs.dom.raw.HTMLSpanElement]) => onMouseEnter(t0).runNow()))
+    if (onMouseLeave != null) __obj.updateDynamic("onMouseLeave")(js.Any.fromFunction1((t0: /* e */ japgolly.scalajs.react.ReactMouseEventFrom[org.scalajs.dom.raw.HTMLSpanElement]) => onMouseLeave(t0).runNow()))
     if (onOk != null) __obj.updateDynamic("onOk")(js.Any.fromFunction1((t0: /* selectedTime */ typingsJapgolly.antd.libDateDashPickerInterfaceMod.RangePickerPresetRange) => onOk(t0).runNow()))
     if (onOpenChange != null) __obj.updateDynamic("onOpenChange")(js.Any.fromFunction1((t0: /* status */ scala.Boolean) => onOpenChange(t0).runNow()))
     if (onPanelChange != null) __obj.updateDynamic("onPanelChange")(js.Any.fromFunction2((t0: /* value */ js.UndefOr[typingsJapgolly.antd.libDateDashPickerInterfaceMod.RangePickerValue], t1: /* mode */ js.UndefOr[java.lang.String | js.Array[java.lang.String]]) => onPanelChange(t0, t1).runNow()))
     if (!js.isUndefined(open)) __obj.updateDynamic("open")(open.asInstanceOf[js.Any])
+    if (pickerClass != null) __obj.updateDynamic("pickerClass")(pickerClass.asInstanceOf[js.Any])
+    if (pickerInputClass != null) __obj.updateDynamic("pickerInputClass")(pickerInputClass.asInstanceOf[js.Any])
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
     if (popupStyle != null) __obj.updateDynamic("popupStyle")(popupStyle.asInstanceOf[js.Any])
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
@@ -122,6 +144,8 @@ object RangePickerProps {
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (suffixIcon != null) __obj.updateDynamic("suffixIcon")(suffixIcon.rawNode.asInstanceOf[js.Any])
+    if (tagPrefixCls != null) __obj.updateDynamic("tagPrefixCls")(tagPrefixCls.asInstanceOf[js.Any])
+    if (timePicker != null) __obj.updateDynamic("timePicker")(timePicker.rawNode.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[RangePickerProps]
   }

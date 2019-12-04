@@ -1,13 +1,14 @@
 package typingsJapgolly.atMaterialDashUiIcons.components
 
+import typingsJapgolly.atMaterialDashUiIcons.airlineSeatIndividualSuiteTwoToneMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object AirlineSeatIndividualSuiteTwoTone
-  extends SharedApply_SvgIconProps1591622337[
-      typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.AirlineSeatIndividualSuiteTwoTone
-    ] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.AirlineSeatIndividualSuiteTwoTone]
+object AirlineSeatIndividualSuiteTwoTone extends SharedApply_SvgIconProps1591622337[default] {
+  @JSImport("@material-ui/icons/AirlineSeatIndividualSuiteTwoTone", "default")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

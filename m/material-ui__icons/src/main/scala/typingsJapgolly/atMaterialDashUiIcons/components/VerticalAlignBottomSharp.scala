@@ -1,13 +1,14 @@
 package typingsJapgolly.atMaterialDashUiIcons.components
 
+import typingsJapgolly.atMaterialDashUiIcons.verticalAlignBottomSharpMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object VerticalAlignBottomSharp
-  extends SharedApply_SvgIconProps1591622337[
-      typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.VerticalAlignBottomSharp
-    ] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.VerticalAlignBottomSharp]
+object VerticalAlignBottomSharp extends SharedApply_SvgIconProps1591622337[default] {
+  @JSImport("@material-ui/icons/VerticalAlignBottomSharp", "default")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

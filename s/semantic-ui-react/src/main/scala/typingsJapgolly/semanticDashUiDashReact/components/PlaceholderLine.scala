@@ -43,8 +43,12 @@ object PlaceholderLine {
     val f = japgolly.scalajs.react.JsComponent[
   typingsJapgolly.semanticDashUiDashReact.distCommonjsElementsPlaceholderPlaceholderLineMod.PlaceholderLineProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  js.Object](typingsJapgolly.semanticDashUiDashReact.distCommonjsElementsPlaceholderPlaceholderLineMod.default)
+  js.Object](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.semanticDashUiDashReact.distCommonjsElementsPlaceholderPlaceholderLineMod.PlaceholderLineProps])(children: _*)
   }
+  @JSImport("semantic-ui-react/dist/commonjs/elements/Placeholder/PlaceholderLine", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

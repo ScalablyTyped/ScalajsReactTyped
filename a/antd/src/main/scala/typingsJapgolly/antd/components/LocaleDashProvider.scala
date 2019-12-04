@@ -1,11 +1,14 @@
 package typingsJapgolly.antd.components
 
-import typingsJapgolly.antd.esLocaleDashProviderMod.default
+import typingsJapgolly.antd.libLocaleDashProviderMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object LocaleDashProvider extends SharedApply_LocaleProviderProps_831781334[default] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.antd.esLocaleDashProviderMod.default]
+object LocaleDashProvider extends SharedApply_LocaleProviderProps1877700421[default] {
+  @JSImport("antd/lib/locale-provider", JSImport.Default)
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

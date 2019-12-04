@@ -480,8 +480,12 @@ object Modal {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.atMaterialDashUiCore.modalModalMod.ModalProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.atMaterialDashUiCore.modalMod.default](js.constructorOf[typingsJapgolly.atMaterialDashUiCore.modalMod.default])
+  typingsJapgolly.atMaterialDashUiCore.modalMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.atMaterialDashUiCore.modalModalMod.ModalProps])(children: _*)
   }
+  @JSImport("@material-ui/core/Modal", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

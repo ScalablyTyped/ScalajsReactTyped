@@ -1,11 +1,14 @@
 package typingsJapgolly.atMaterialDashUiIcons.components
 
+import typingsJapgolly.atMaterialDashUiIcons.filter9OutlinedMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object Filter9Outlined
-  extends SharedApply_SvgIconProps1591622337[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.Filter9Outlined] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.Filter9Outlined]
+object Filter9Outlined extends SharedApply_SvgIconProps1591622337[default] {
+  @JSImport("@material-ui/icons/Filter9Outlined", "default")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

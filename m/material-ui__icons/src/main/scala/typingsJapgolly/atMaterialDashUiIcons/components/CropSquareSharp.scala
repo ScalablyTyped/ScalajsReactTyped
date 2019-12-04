@@ -1,11 +1,14 @@
 package typingsJapgolly.atMaterialDashUiIcons.components
 
+import typingsJapgolly.atMaterialDashUiIcons.cropSquareSharpMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object CropSquareSharp
-  extends SharedApply_SvgIconProps1591622337[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.CropSquareSharp] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.CropSquareSharp]
+object CropSquareSharp extends SharedApply_SvgIconProps1591622337[default] {
+  @JSImport("@material-ui/icons/CropSquareSharp", "default")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

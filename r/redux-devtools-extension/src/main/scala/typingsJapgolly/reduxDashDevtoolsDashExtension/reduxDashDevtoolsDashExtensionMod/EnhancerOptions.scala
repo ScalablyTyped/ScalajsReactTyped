@@ -129,7 +129,7 @@ object EnhancerOptions {
   @scala.inline
   def apply(
     actionCreators: js.Array[ActionCreator[_]] | StringDictionary[ActionCreator[_]] = null,
-    actionSanitizer: (/* action */ Action[js.Any], /* id */ Double) => CallbackTo[Action[_]] = null,
+    actionSanitizer: (/* action */ Action[js.Any], /* id */ Double) => CallbackTo[Action[js.Any]] = null,
     actionsBlacklist: String | js.Array[String] = null,
     actionsWhitelist: String | js.Array[String] = null,
     autoPause: js.UndefOr[Boolean] = js.undefined,
@@ -144,7 +144,7 @@ object EnhancerOptions {
     shouldHotReload: js.UndefOr[Boolean] = js.undefined,
     shouldRecordChanges: js.UndefOr[Boolean] = js.undefined,
     shouldStartLocked: js.UndefOr[Boolean] = js.undefined,
-    stateSanitizer: (/* state */ js.Any, /* index */ Double) => CallbackTo[_] = null,
+    stateSanitizer: (/* state */ js.Any, /* index */ Double) => CallbackTo[js.Any] = null,
     trace: Boolean | (js.Function1[/* action */ Action[_], String]) = null,
     traceLimit: Int | Double = null
   ): EnhancerOptions = {

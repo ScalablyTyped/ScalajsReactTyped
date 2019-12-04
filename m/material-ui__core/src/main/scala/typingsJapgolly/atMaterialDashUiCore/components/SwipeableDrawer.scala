@@ -537,8 +537,12 @@ object SwipeableDrawer {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.atMaterialDashUiCore.swipeableDrawerSwipeableDrawerMod.SwipeableDrawerProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.atMaterialDashUiCore.swipeableDrawerMod.default](js.constructorOf[typingsJapgolly.atMaterialDashUiCore.swipeableDrawerMod.default])
+  typingsJapgolly.atMaterialDashUiCore.swipeableDrawerMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.atMaterialDashUiCore.swipeableDrawerSwipeableDrawerMod.SwipeableDrawerProps])(children: _*)
   }
+  @JSImport("@material-ui/core/SwipeableDrawer", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

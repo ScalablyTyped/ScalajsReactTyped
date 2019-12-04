@@ -1,11 +1,14 @@
 package typingsJapgolly.atMaterialDashUiIcons.components
 
+import typingsJapgolly.atMaterialDashUiIcons.creditCardMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object CreditCard
-  extends SharedApply_SvgIconProps1591622337[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.CreditCard] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.CreditCard]
+object CreditCard extends SharedApply_SvgIconProps1591622337[default] {
+  @JSImport("@material-ui/icons/CreditCard", "default")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

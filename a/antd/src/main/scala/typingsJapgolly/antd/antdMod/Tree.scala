@@ -2,7 +2,7 @@ package typingsJapgolly.antd.antdMod
 
 import japgolly.scalajs.react.raw.React.ComponentClassP
 import typingsJapgolly.antd.Anon_BlockNode
-import typingsJapgolly.antd.TypeofClassDirectoryTreeDefaultProps
+import typingsJapgolly.antd.TypeofClassDirectoryTree
 import typingsJapgolly.antd.libTreeMod.default
 import typingsJapgolly.antd.libTreeTreeMod.AntTreeNodeProps
 import scala.scalajs.js
@@ -17,7 +17,7 @@ class Tree () extends default
 @JSImport("antd", "Tree")
 @js.native
 object Tree extends js.Object {
-  var DirectoryTree: TypeofClassDirectoryTreeDefaultProps = js.native
+  var DirectoryTree: TypeofClassDirectoryTree = js.native
   var TreeNode: ComponentClassP[AntTreeNodeProps with js.Object] = js.native
   var defaultProps: Anon_BlockNode = js.native
 }

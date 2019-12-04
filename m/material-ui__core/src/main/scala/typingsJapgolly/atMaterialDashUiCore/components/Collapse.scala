@@ -77,8 +77,12 @@ object Collapse {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.atMaterialDashUiCore.collapseCollapseMod.CollapseProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.atMaterialDashUiCore.collapseMod.default](js.constructorOf[typingsJapgolly.atMaterialDashUiCore.collapseMod.default])
+  typingsJapgolly.atMaterialDashUiCore.collapseMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.atMaterialDashUiCore.collapseCollapseMod.CollapseProps])(children: _*)
   }
+  @JSImport("@material-ui/core/Collapse", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

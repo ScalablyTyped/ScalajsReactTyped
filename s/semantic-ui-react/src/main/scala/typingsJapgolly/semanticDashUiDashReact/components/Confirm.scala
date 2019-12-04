@@ -123,8 +123,12 @@ object Confirm {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.semanticDashUiDashReact.distCommonjsAddonsConfirmConfirmMod.ConfirmProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.semanticDashUiDashReact.distCommonjsAddonsConfirmMod.default](js.constructorOf[typingsJapgolly.semanticDashUiDashReact.distCommonjsAddonsConfirmMod.default])
+  typingsJapgolly.semanticDashUiDashReact.distCommonjsAddonsConfirmMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.semanticDashUiDashReact.distCommonjsAddonsConfirmConfirmMod.ConfirmProps])(children: _*)
   }
+  @JSImport("semantic-ui-react/dist/commonjs/addons/Confirm", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

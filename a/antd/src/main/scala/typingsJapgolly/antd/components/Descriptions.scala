@@ -11,7 +11,7 @@ import typingsJapgolly.antd.antdStrings.horizontal
 import typingsJapgolly.antd.antdStrings.middle
 import typingsJapgolly.antd.antdStrings.small
 import typingsJapgolly.antd.antdStrings.vertical
-import typingsJapgolly.antd.esDescriptionsMod.DescriptionsProps
+import typingsJapgolly.antd.libDescriptionsMod.DescriptionsProps
 import typingsJapgolly.react.reactMod.CSSProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -34,7 +34,7 @@ object Descriptions {
     children: ChildArg*
   ): UnmountedWithRoot[
     DescriptionsProps, 
-    typingsJapgolly.antd.esDescriptionsMod.default, 
+    typingsJapgolly.antd.libDescriptionsMod.default, 
     Unit, 
     DescriptionsProps
   ] = {
@@ -53,10 +53,14 @@ object Descriptions {
     if (overrides != null) js.Dynamic.global.Object.assign(__obj, overrides)
   
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antd.esDescriptionsMod.DescriptionsProps, 
+  typingsJapgolly.antd.libDescriptionsMod.DescriptionsProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antd.esDescriptionsMod.default](js.constructorOf[typingsJapgolly.antd.esDescriptionsMod.default])
-    f(__obj.asInstanceOf[typingsJapgolly.antd.esDescriptionsMod.DescriptionsProps])(children: _*)
+  typingsJapgolly.antd.libDescriptionsMod.default](this.componentImport)
+    f(__obj.asInstanceOf[typingsJapgolly.antd.libDescriptionsMod.DescriptionsProps])(children: _*)
   }
+  @JSImport("antd/lib/descriptions", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

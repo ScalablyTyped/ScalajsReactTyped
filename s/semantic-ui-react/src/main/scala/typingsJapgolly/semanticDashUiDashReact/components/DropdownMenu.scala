@@ -46,8 +46,12 @@ object DropdownMenu {
     val f = japgolly.scalajs.react.JsComponent[
   typingsJapgolly.semanticDashUiDashReact.distCommonjsModulesDropdownDropdownMenuMod.DropdownMenuProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  js.Object](typingsJapgolly.semanticDashUiDashReact.distCommonjsModulesDropdownDropdownMenuMod.default)
+  js.Object](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.semanticDashUiDashReact.distCommonjsModulesDropdownDropdownMenuMod.DropdownMenuProps])(children: _*)
   }
+  @JSImport("semantic-ui-react/dist/commonjs/modules/Dropdown/DropdownMenu", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

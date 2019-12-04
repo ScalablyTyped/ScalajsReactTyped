@@ -34,8 +34,12 @@ object MenuHeader {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.semanticDashUiDashReact.distCommonjsCollectionsMenuMenuHeaderMod.MenuHeaderProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.semanticDashUiDashReact.distCommonjsCollectionsMenuMenuHeaderMod.default](js.constructorOf[typingsJapgolly.semanticDashUiDashReact.distCommonjsCollectionsMenuMenuHeaderMod.default])
+  typingsJapgolly.semanticDashUiDashReact.distCommonjsCollectionsMenuMenuHeaderMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.semanticDashUiDashReact.distCommonjsCollectionsMenuMenuHeaderMod.MenuHeaderProps])(children: _*)
   }
+  @JSImport("semantic-ui-react/dist/commonjs/collections/Menu/MenuHeader", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

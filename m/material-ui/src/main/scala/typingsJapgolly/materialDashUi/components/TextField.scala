@@ -118,8 +118,12 @@ object TextField {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.materialDashUi.__MaterialUI.TextFieldProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.materialDashUi.textFieldMod.default](js.constructorOf[typingsJapgolly.materialDashUi.textFieldMod.default])
+  typingsJapgolly.materialDashUi.textFieldMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.materialDashUi.__MaterialUI.TextFieldProps])(children: _*)
   }
+  @JSImport("material-ui/TextField", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

@@ -1,13 +1,14 @@
 package typingsJapgolly.atMaterialDashUiIcons.components
 
+import typingsJapgolly.atMaterialDashUiIcons.photoSizeSelectActualMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object PhotoSizeSelectActual
-  extends SharedApply_SvgIconProps1591622337[
-      typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PhotoSizeSelectActual
-    ] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.PhotoSizeSelectActual]
+object PhotoSizeSelectActual extends SharedApply_SvgIconProps1591622337[default] {
+  @JSImport("@material-ui/icons/PhotoSizeSelectActual", "default")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

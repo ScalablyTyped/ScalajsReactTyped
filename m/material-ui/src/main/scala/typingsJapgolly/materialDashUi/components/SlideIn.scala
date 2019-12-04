@@ -35,8 +35,12 @@ object SlideIn {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.materialDashUi.internalSlideInMod.SlideInProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.materialDashUi.internalSlideInMod.default](js.constructorOf[typingsJapgolly.materialDashUi.internalSlideInMod.default])
+  typingsJapgolly.materialDashUi.internalSlideInMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.materialDashUi.internalSlideInMod.SlideInProps])(children: _*)
   }
+  @JSImport("material-ui/internal/SlideIn", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

@@ -34,8 +34,12 @@ object CircleRipple {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.materialDashUi.internalCircleRippleMod.CircleRippleProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.materialDashUi.internalCircleRippleMod.default](js.constructorOf[typingsJapgolly.materialDashUi.internalCircleRippleMod.default])
+  typingsJapgolly.materialDashUi.internalCircleRippleMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.materialDashUi.internalCircleRippleMod.CircleRippleProps])(children: _*)
   }
+  @JSImport("material-ui/internal/CircleRipple", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

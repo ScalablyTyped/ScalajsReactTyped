@@ -32,8 +32,12 @@ object Toolbar {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.materialDashUi.__MaterialUI.Toolbar.ToolbarProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.materialDashUi.toolbarMod.default](js.constructorOf[typingsJapgolly.materialDashUi.toolbarMod.default])
+  typingsJapgolly.materialDashUi.toolbarMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.materialDashUi.__MaterialUI.Toolbar.ToolbarProps])(children: _*)
   }
+  @JSImport("material-ui/Toolbar", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

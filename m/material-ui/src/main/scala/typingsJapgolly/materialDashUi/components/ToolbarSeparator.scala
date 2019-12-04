@@ -30,8 +30,12 @@ object ToolbarSeparator {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.materialDashUi.__MaterialUI.Toolbar.ToolbarSeparatorProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.materialDashUi.toolbarToolbarSeparatorMod.default](js.constructorOf[typingsJapgolly.materialDashUi.toolbarToolbarSeparatorMod.default])
+  typingsJapgolly.materialDashUi.toolbarToolbarSeparatorMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.materialDashUi.__MaterialUI.Toolbar.ToolbarSeparatorProps])(children: _*)
   }
+  @JSImport("material-ui/Toolbar/ToolbarSeparator", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

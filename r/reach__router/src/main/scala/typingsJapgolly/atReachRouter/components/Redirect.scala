@@ -33,8 +33,12 @@ object Redirect {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.atReachRouter.atReachRouterMod.RouteComponentProps[typingsJapgolly.atReachRouter.atReachRouterMod.RedirectProps[TState]] with js.Object, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.atReachRouter.atReachRouterMod.Redirect[TState]](js.constructorOf[typingsJapgolly.atReachRouter.atReachRouterMod.Redirect[TState]])
+  typingsJapgolly.atReachRouter.atReachRouterMod.Redirect[TState]](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.atReachRouter.atReachRouterMod.RouteComponentProps[typingsJapgolly.atReachRouter.atReachRouterMod.RedirectProps[TState]] with js.Object])(children: _*)
   }
+  @JSImport("@reach/router", "Redirect")
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

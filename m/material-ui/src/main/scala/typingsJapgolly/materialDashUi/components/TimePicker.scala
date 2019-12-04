@@ -120,8 +120,12 @@ object TimePicker {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.materialDashUi.__MaterialUI.TimePickerProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.materialDashUi.timePickerMod.default](js.constructorOf[typingsJapgolly.materialDashUi.timePickerMod.default])
+  typingsJapgolly.materialDashUi.timePickerMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.materialDashUi.__MaterialUI.TimePickerProps])(children: _*)
   }
+  @JSImport("material-ui/TimePicker", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

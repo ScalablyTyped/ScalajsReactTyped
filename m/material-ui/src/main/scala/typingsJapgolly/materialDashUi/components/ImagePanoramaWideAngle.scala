@@ -6,6 +6,9 @@ import scala.scalajs.js.annotation._
 
 object ImagePanoramaWideAngle
   extends SharedApply_SvgIconProps1538262166[typingsJapgolly.materialDashUi.svgDashIconsMod.ImagePanoramaWideAngle] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.materialDashUi.svgDashIconsMod.ImagePanoramaWideAngle]
+  @JSImport("material-ui/svg-icons", "ImagePanoramaWideAngle")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

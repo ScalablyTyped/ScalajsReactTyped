@@ -38,8 +38,12 @@ object ListHeader {
     val f = japgolly.scalajs.react.JsComponent[
   typingsJapgolly.semanticDashUiDashReact.distCommonjsElementsListListHeaderMod.ListHeaderProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  js.Object](typingsJapgolly.semanticDashUiDashReact.distCommonjsElementsListListHeaderMod.default)
+  js.Object](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.semanticDashUiDashReact.distCommonjsElementsListListHeaderMod.ListHeaderProps])(children: _*)
   }
+  @JSImport("semantic-ui-react/dist/commonjs/elements/List/ListHeader", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

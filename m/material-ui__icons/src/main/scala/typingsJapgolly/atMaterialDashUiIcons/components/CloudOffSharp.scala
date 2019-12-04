@@ -1,11 +1,14 @@
 package typingsJapgolly.atMaterialDashUiIcons.components
 
+import typingsJapgolly.atMaterialDashUiIcons.cloudOffSharpMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object CloudOffSharp
-  extends SharedApply_SvgIconProps1591622337[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.CloudOffSharp] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.CloudOffSharp]
+object CloudOffSharp extends SharedApply_SvgIconProps1591622337[default] {
+  @JSImport("@material-ui/icons/CloudOffSharp", "default")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

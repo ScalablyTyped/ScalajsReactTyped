@@ -1,11 +1,14 @@
 package typingsJapgolly.atMaterialDashUiIcons.components
 
+import typingsJapgolly.atMaterialDashUiIcons.keyboardArrowUpMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object KeyboardArrowUp
-  extends SharedApply_SvgIconProps1591622337[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.KeyboardArrowUp] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.KeyboardArrowUp]
+object KeyboardArrowUp extends SharedApply_SvgIconProps1591622337[default] {
+  @JSImport("@material-ui/icons/KeyboardArrowUp", "default")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

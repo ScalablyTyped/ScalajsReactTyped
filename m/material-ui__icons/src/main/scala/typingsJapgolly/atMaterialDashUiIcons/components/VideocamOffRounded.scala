@@ -1,13 +1,14 @@
 package typingsJapgolly.atMaterialDashUiIcons.components
 
+import typingsJapgolly.atMaterialDashUiIcons.videocamOffRoundedMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object VideocamOffRounded
-  extends SharedApply_SvgIconProps1591622337[
-      typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.VideocamOffRounded
-    ] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.VideocamOffRounded]
+object VideocamOffRounded extends SharedApply_SvgIconProps1591622337[default] {
+  @JSImport("@material-ui/icons/VideocamOffRounded", "default")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

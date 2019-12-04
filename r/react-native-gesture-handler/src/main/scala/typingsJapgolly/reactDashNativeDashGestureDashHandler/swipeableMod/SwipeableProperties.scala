@@ -4,7 +4,6 @@ import japgolly.scalajs.react.Callback
 import japgolly.scalajs.react.CallbackTo
 import japgolly.scalajs.react.raw.React.Node
 import typingsJapgolly.reactDashNative.reactDashNativeMod.Animated.AnimatedInterpolation
-import typingsJapgolly.reactDashNative.reactDashNativeMod.Animated.Value
 import typingsJapgolly.reactDashNative.reactDashNativeMod.StyleProp
 import typingsJapgolly.reactDashNative.reactDashNativeMod.ViewStyle
 import scala.scalajs.js
@@ -27,16 +26,36 @@ trait SwipeableProperties extends js.Object {
   var overshootFriction: js.UndefOr[Double] = js.undefined
   var overshootLeft: js.UndefOr[Boolean] = js.undefined
   var overshootRight: js.UndefOr[Boolean] = js.undefined
+  /**
+    * 
+    * This map describes the values to use as inputRange for extra interpolation:
+    * AnimatedValue: [startValue, endValue]
+    * 
+    * progressAnimatedValue: [0, 1]
+    * dragAnimatedValue: [0, +]
+    * 
+    * To support `rtl` flexbox layouts use `flexDirection` styling.
+    * */
   var renderLeftActions: js.UndefOr[
     js.Function2[
-      /* progressAnimatedValue */ Value | AnimatedInterpolation, 
+      /* progressAnimatedValue */ AnimatedInterpolation, 
       /* dragAnimatedValue */ AnimatedInterpolation, 
       Node
     ]
   ] = js.undefined
+  /**
+    * 
+    * This map describes the values to use as inputRange for extra interpolation:
+    * AnimatedValue: [startValue, endValue]
+    * 
+    * progressAnimatedValue: [0, 1]
+    * dragAnimatedValue: [0, -]
+    * 
+    * To support `rtl` flexbox layouts use `flexDirection` styling.
+    * */
   var renderRightActions: js.UndefOr[
     js.Function2[
-      /* progressAnimatedValue */ Value | AnimatedInterpolation, 
+      /* progressAnimatedValue */ AnimatedInterpolation, 
       /* dragAnimatedValue */ AnimatedInterpolation, 
       Node
     ]
@@ -63,8 +82,8 @@ object SwipeableProperties {
     overshootFriction: Int | Double = null,
     overshootLeft: js.UndefOr[Boolean] = js.undefined,
     overshootRight: js.UndefOr[Boolean] = js.undefined,
-    renderLeftActions: (/* progressAnimatedValue */ Value | AnimatedInterpolation, /* dragAnimatedValue */ AnimatedInterpolation) => CallbackTo[Node] = null,
-    renderRightActions: (/* progressAnimatedValue */ Value | AnimatedInterpolation, /* dragAnimatedValue */ AnimatedInterpolation) => CallbackTo[Node] = null,
+    renderLeftActions: (/* progressAnimatedValue */ AnimatedInterpolation, /* dragAnimatedValue */ AnimatedInterpolation) => CallbackTo[Node] = null,
+    renderRightActions: (/* progressAnimatedValue */ AnimatedInterpolation, /* dragAnimatedValue */ AnimatedInterpolation) => CallbackTo[Node] = null,
     rightThreshold: Int | Double = null,
     useNativeAnimations: js.UndefOr[Boolean] = js.undefined
   ): SwipeableProperties = {
@@ -84,8 +103,8 @@ object SwipeableProperties {
     if (overshootFriction != null) __obj.updateDynamic("overshootFriction")(overshootFriction.asInstanceOf[js.Any])
     if (!js.isUndefined(overshootLeft)) __obj.updateDynamic("overshootLeft")(overshootLeft.asInstanceOf[js.Any])
     if (!js.isUndefined(overshootRight)) __obj.updateDynamic("overshootRight")(overshootRight.asInstanceOf[js.Any])
-    if (renderLeftActions != null) __obj.updateDynamic("renderLeftActions")(js.Any.fromFunction2((t0: /* progressAnimatedValue */ typingsJapgolly.reactDashNative.reactDashNativeMod.Animated.Value | typingsJapgolly.reactDashNative.reactDashNativeMod.Animated.AnimatedInterpolation, t1: /* dragAnimatedValue */ typingsJapgolly.reactDashNative.reactDashNativeMod.Animated.AnimatedInterpolation) => renderLeftActions(t0, t1).runNow()))
-    if (renderRightActions != null) __obj.updateDynamic("renderRightActions")(js.Any.fromFunction2((t0: /* progressAnimatedValue */ typingsJapgolly.reactDashNative.reactDashNativeMod.Animated.Value | typingsJapgolly.reactDashNative.reactDashNativeMod.Animated.AnimatedInterpolation, t1: /* dragAnimatedValue */ typingsJapgolly.reactDashNative.reactDashNativeMod.Animated.AnimatedInterpolation) => renderRightActions(t0, t1).runNow()))
+    if (renderLeftActions != null) __obj.updateDynamic("renderLeftActions")(js.Any.fromFunction2((t0: /* progressAnimatedValue */ typingsJapgolly.reactDashNative.reactDashNativeMod.Animated.AnimatedInterpolation, t1: /* dragAnimatedValue */ typingsJapgolly.reactDashNative.reactDashNativeMod.Animated.AnimatedInterpolation) => renderLeftActions(t0, t1).runNow()))
+    if (renderRightActions != null) __obj.updateDynamic("renderRightActions")(js.Any.fromFunction2((t0: /* progressAnimatedValue */ typingsJapgolly.reactDashNative.reactDashNativeMod.Animated.AnimatedInterpolation, t1: /* dragAnimatedValue */ typingsJapgolly.reactDashNative.reactDashNativeMod.Animated.AnimatedInterpolation) => renderRightActions(t0, t1).runNow()))
     if (rightThreshold != null) __obj.updateDynamic("rightThreshold")(rightThreshold.asInstanceOf[js.Any])
     if (!js.isUndefined(useNativeAnimations)) __obj.updateDynamic("useNativeAnimations")(useNativeAnimations.asInstanceOf[js.Any])
     __obj.asInstanceOf[SwipeableProperties]

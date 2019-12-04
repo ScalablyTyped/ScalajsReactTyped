@@ -45,8 +45,12 @@ object BreadcrumbSection {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.semanticDashUiDashReact.distCommonjsCollectionsBreadcrumbBreadcrumbSectionMod.BreadcrumbSectionProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.semanticDashUiDashReact.distCommonjsCollectionsBreadcrumbBreadcrumbSectionMod.default](js.constructorOf[typingsJapgolly.semanticDashUiDashReact.distCommonjsCollectionsBreadcrumbBreadcrumbSectionMod.default])
+  typingsJapgolly.semanticDashUiDashReact.distCommonjsCollectionsBreadcrumbBreadcrumbSectionMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.semanticDashUiDashReact.distCommonjsCollectionsBreadcrumbBreadcrumbSectionMod.BreadcrumbSectionProps])(children: _*)
   }
+  @JSImport("semantic-ui-react/dist/commonjs/collections/Breadcrumb/BreadcrumbSection", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

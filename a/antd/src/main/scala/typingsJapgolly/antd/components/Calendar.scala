@@ -7,10 +7,10 @@ import japgolly.scalajs.react.Key
 import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
 import japgolly.scalajs.react.raw.React.Node
 import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.antd.esCalendarHeaderMod.RenderHeader
-import typingsJapgolly.antd.esCalendarMod.CalendarMode
-import typingsJapgolly.antd.esCalendarMod.CalendarProps
-import typingsJapgolly.antd.esCalendarMod.default
+import typingsJapgolly.antd.libCalendarHeaderMod.RenderHeader
+import typingsJapgolly.antd.libCalendarMod.CalendarMode
+import typingsJapgolly.antd.libCalendarMod.CalendarProps
+import typingsJapgolly.antd.libCalendarMod.default
 import typingsJapgolly.moment.momentMod.Moment
 import typingsJapgolly.react.reactMod.CSSProperties
 import scala.scalajs.js
@@ -50,13 +50,13 @@ object Calendar {
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
     if (disabledDate != null) __obj.updateDynamic("disabledDate")(js.Any.fromFunction1((t0: /* current */ typingsJapgolly.moment.momentMod.Moment) => disabledDate(t0).runNow()))
     if (!js.isUndefined(fullscreen)) __obj.updateDynamic("fullscreen")(fullscreen.asInstanceOf[js.Any])
-    if (headerRender != null) __obj.updateDynamic("headerRender")(js.Any.fromFunction1((t0: /* headerRender */ typingsJapgolly.antd.esCalendarHeaderMod.RenderHeader) => headerRender(t0).runNow()))
+    if (headerRender != null) __obj.updateDynamic("headerRender")(js.Any.fromFunction1((t0: /* headerRender */ typingsJapgolly.antd.libCalendarHeaderMod.RenderHeader) => headerRender(t0).runNow()))
     if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     if (monthCellRender != null) __obj.updateDynamic("monthCellRender")(js.Any.fromFunction1((t0: /* date */ typingsJapgolly.moment.momentMod.Moment) => monthCellRender(t0).runNow()))
     if (monthFullCellRender != null) __obj.updateDynamic("monthFullCellRender")(js.Any.fromFunction1((t0: /* date */ typingsJapgolly.moment.momentMod.Moment) => monthFullCellRender(t0).runNow()))
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1((t0: /* date */ js.UndefOr[typingsJapgolly.moment.momentMod.Moment]) => onChange(t0).runNow()))
-    if (onPanelChange != null) __obj.updateDynamic("onPanelChange")(js.Any.fromFunction2((t0: /* date */ js.UndefOr[typingsJapgolly.moment.momentMod.Moment], t1: /* mode */ js.UndefOr[typingsJapgolly.antd.esCalendarMod.CalendarMode]) => onPanelChange(t0, t1).runNow()))
+    if (onPanelChange != null) __obj.updateDynamic("onPanelChange")(js.Any.fromFunction2((t0: /* date */ js.UndefOr[typingsJapgolly.moment.momentMod.Moment], t1: /* mode */ js.UndefOr[typingsJapgolly.antd.libCalendarMod.CalendarMode]) => onPanelChange(t0, t1).runNow()))
     if (onSelect != null) __obj.updateDynamic("onSelect")(js.Any.fromFunction1((t0: /* date */ js.UndefOr[typingsJapgolly.moment.momentMod.Moment]) => onSelect(t0).runNow()))
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
@@ -66,10 +66,14 @@ object Calendar {
     if (overrides != null) js.Dynamic.global.Object.assign(__obj, overrides)
   
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antd.esCalendarMod.CalendarProps, 
+  typingsJapgolly.antd.libCalendarMod.CalendarProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antd.esCalendarMod.default](js.constructorOf[typingsJapgolly.antd.esCalendarMod.default])
-    f(__obj.asInstanceOf[typingsJapgolly.antd.esCalendarMod.CalendarProps])(children: _*)
+  typingsJapgolly.antd.libCalendarMod.default](this.componentImport)
+    f(__obj.asInstanceOf[typingsJapgolly.antd.libCalendarMod.CalendarProps])(children: _*)
   }
+  @JSImport("antd/lib/calendar", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

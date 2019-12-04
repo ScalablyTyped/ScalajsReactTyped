@@ -19,7 +19,7 @@ object OptionsJson {
   def apply(
     inflate: js.UndefOr[Boolean] = js.undefined,
     limit: Double | String = null,
-    reviver: (/* key */ String, /* value */ js.Any) => CallbackTo[_] = null,
+    reviver: (/* key */ String, /* value */ js.Any) => CallbackTo[js.Any] = null,
     strict: js.UndefOr[Boolean] = js.undefined,
     `type`: String | js.Array[String] | (js.Function1[/* req */ IncomingMessage, _]) = null,
     verify: (/* req */ IncomingMessage, /* res */ ServerResponse, /* buf */ Buffer, /* encoding */ String) => Callback = null

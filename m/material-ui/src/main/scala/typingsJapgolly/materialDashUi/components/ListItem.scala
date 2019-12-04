@@ -507,8 +507,12 @@ object ListItem {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.materialDashUi.__MaterialUI.List.ListItemProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.materialDashUi.listListItemMod.default](js.constructorOf[typingsJapgolly.materialDashUi.listListItemMod.default])
+  typingsJapgolly.materialDashUi.listListItemMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.materialDashUi.__MaterialUI.List.ListItemProps])(children: _*)
   }
+  @JSImport("material-ui/List/ListItem", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

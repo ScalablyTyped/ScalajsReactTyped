@@ -6,6 +6,9 @@ import scala.scalajs.js.annotation._
 
 object DeviceBatteryAlert
   extends SharedApply_SvgIconProps1538262166[typingsJapgolly.materialDashUi.svgDashIconsMod.DeviceBatteryAlert] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.materialDashUi.svgDashIconsMod.DeviceBatteryAlert]
+  @JSImport("material-ui/svg-icons", "DeviceBatteryAlert")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

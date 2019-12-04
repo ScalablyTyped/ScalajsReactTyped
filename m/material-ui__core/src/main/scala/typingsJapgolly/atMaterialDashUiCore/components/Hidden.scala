@@ -67,8 +67,12 @@ object Hidden {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.atMaterialDashUiCore.hiddenHiddenMod.HiddenProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.atMaterialDashUiCore.hiddenMod.default](js.constructorOf[typingsJapgolly.atMaterialDashUiCore.hiddenMod.default])
+  typingsJapgolly.atMaterialDashUiCore.hiddenMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.atMaterialDashUiCore.hiddenHiddenMod.HiddenProps])(children: _*)
   }
+  @JSImport("@material-ui/core/Hidden", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

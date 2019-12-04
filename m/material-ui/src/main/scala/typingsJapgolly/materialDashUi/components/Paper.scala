@@ -442,8 +442,12 @@ object Paper {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.materialDashUi.__MaterialUI.PaperProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.materialDashUi.paperMod.default](js.constructorOf[typingsJapgolly.materialDashUi.paperMod.default])
+  typingsJapgolly.materialDashUi.paperMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.materialDashUi.__MaterialUI.PaperProps])(children: _*)
   }
+  @JSImport("material-ui/Paper", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

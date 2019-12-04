@@ -6,8 +6,8 @@ import japgolly.scalajs.react.Key
 import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
 import japgolly.scalajs.react.vdom.VdomNode
 import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.antd.esRateMod.RateProps
-import typingsJapgolly.antd.esRateMod.default
+import typingsJapgolly.antd.libRateMod.RateProps
+import typingsJapgolly.antd.libRateMod.default
 import typingsJapgolly.react.reactMod.CSSProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -52,10 +52,14 @@ object Rate {
     if (overrides != null) js.Dynamic.global.Object.assign(__obj, overrides)
   
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antd.esRateMod.RateProps, 
+  typingsJapgolly.antd.libRateMod.RateProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antd.esRateMod.default](js.constructorOf[typingsJapgolly.antd.esRateMod.default])
-    f(__obj.asInstanceOf[typingsJapgolly.antd.esRateMod.RateProps])(children: _*)
+  typingsJapgolly.antd.libRateMod.default](this.componentImport)
+    f(__obj.asInstanceOf[typingsJapgolly.antd.libRateMod.RateProps])(children: _*)
   }
+  @JSImport("antd/lib/rate", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

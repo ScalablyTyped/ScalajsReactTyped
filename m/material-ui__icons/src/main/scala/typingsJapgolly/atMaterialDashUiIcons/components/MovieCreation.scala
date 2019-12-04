@@ -1,11 +1,14 @@
 package typingsJapgolly.atMaterialDashUiIcons.components
 
+import typingsJapgolly.atMaterialDashUiIcons.movieCreationMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object MovieCreation
-  extends SharedApply_SvgIconProps1591622337[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.MovieCreation] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.MovieCreation]
+object MovieCreation extends SharedApply_SvgIconProps1591622337[default] {
+  @JSImport("@material-ui/icons/MovieCreation", "default")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

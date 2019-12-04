@@ -1,11 +1,14 @@
 package typingsJapgolly.atMaterialDashUiIcons.components
 
+import typingsJapgolly.atMaterialDashUiIcons.motorcycleMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object Motorcycle
-  extends SharedApply_SvgIconProps1591622337[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.Motorcycle] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.Motorcycle]
+object Motorcycle extends SharedApply_SvgIconProps1591622337[default] {
+  @JSImport("@material-ui/icons/Motorcycle", "default")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

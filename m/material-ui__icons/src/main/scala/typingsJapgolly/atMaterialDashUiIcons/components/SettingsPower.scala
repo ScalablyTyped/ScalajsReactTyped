@@ -1,11 +1,14 @@
 package typingsJapgolly.atMaterialDashUiIcons.components
 
+import typingsJapgolly.atMaterialDashUiIcons.settingsPowerMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object SettingsPower
-  extends SharedApply_SvgIconProps1591622337[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.SettingsPower] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.SettingsPower]
+object SettingsPower extends SharedApply_SvgIconProps1591622337[default] {
+  @JSImport("@material-ui/icons/SettingsPower", "default")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

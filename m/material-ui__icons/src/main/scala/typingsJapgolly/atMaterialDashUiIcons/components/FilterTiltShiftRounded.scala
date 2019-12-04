@@ -1,13 +1,14 @@
 package typingsJapgolly.atMaterialDashUiIcons.components
 
+import typingsJapgolly.atMaterialDashUiIcons.filterTiltShiftRoundedMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object FilterTiltShiftRounded
-  extends SharedApply_SvgIconProps1591622337[
-      typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.FilterTiltShiftRounded
-    ] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.FilterTiltShiftRounded]
+object FilterTiltShiftRounded extends SharedApply_SvgIconProps1591622337[default] {
+  @JSImport("@material-ui/icons/FilterTiltShiftRounded", "default")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

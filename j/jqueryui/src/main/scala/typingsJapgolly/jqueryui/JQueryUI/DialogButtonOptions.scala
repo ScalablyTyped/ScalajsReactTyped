@@ -19,7 +19,7 @@ object DialogButtonOptions {
   @scala.inline
   def apply(
     StringDictionary: /* attr */ StringDictionary[js.Any] = null,
-    click: /* eventObject */ JQueryEventObject => CallbackTo[_] = null,
+    click: /* eventObject */ JQueryEventObject => CallbackTo[js.Any] = null,
     icons: js.Any = null,
     showText: String | Boolean = null,
     text: String = null

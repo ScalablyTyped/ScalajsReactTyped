@@ -1,13 +1,14 @@
 package typingsJapgolly.atMaterialDashUiIcons.components
 
+import typingsJapgolly.atMaterialDashUiIcons.notificationsActiveMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object NotificationsActive
-  extends SharedApply_SvgIconProps1591622337[
-      typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.NotificationsActive
-    ] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.NotificationsActive]
+object NotificationsActive extends SharedApply_SvgIconProps1591622337[default] {
+  @JSImport("@material-ui/icons/NotificationsActive", "default")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

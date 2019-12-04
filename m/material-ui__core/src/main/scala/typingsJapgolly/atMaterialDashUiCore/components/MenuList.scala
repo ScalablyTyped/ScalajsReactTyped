@@ -452,8 +452,12 @@ object MenuList {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.atMaterialDashUiCore.menuListMenuListMod.MenuListProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.atMaterialDashUiCore.menuListMod.default](js.constructorOf[typingsJapgolly.atMaterialDashUiCore.menuListMod.default])
+  typingsJapgolly.atMaterialDashUiCore.menuListMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.atMaterialDashUiCore.menuListMenuListMod.MenuListProps])(children: _*)
   }
+  @JSImport("@material-ui/core/MenuList", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

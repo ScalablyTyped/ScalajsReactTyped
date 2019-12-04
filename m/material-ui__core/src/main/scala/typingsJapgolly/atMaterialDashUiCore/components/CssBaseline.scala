@@ -25,8 +25,12 @@ object CssBaseline {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.atMaterialDashUiCore.cssBaselineCssBaselineMod.CssBaselineProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.atMaterialDashUiCore.cssBaselineMod.default](js.constructorOf[typingsJapgolly.atMaterialDashUiCore.cssBaselineMod.default])
+  typingsJapgolly.atMaterialDashUiCore.cssBaselineMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.atMaterialDashUiCore.cssBaselineCssBaselineMod.CssBaselineProps])(children: _*)
   }
+  @JSImport("@material-ui/core/CssBaseline", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

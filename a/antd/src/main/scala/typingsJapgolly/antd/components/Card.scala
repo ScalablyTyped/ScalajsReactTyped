@@ -65,11 +65,11 @@ import typingsJapgolly.antd.antdStrings.tree
 import typingsJapgolly.antd.antdStrings.url
 import typingsJapgolly.antd.antdStrings.vertical
 import typingsJapgolly.antd.antdStrings.yes
-import typingsJapgolly.antd.esCardMod.CardProps
-import typingsJapgolly.antd.esCardMod.CardSize
-import typingsJapgolly.antd.esCardMod.CardTabListType
-import typingsJapgolly.antd.esCardMod.CardType
-import typingsJapgolly.antd.esCardMod.default
+import typingsJapgolly.antd.libCardMod.CardProps
+import typingsJapgolly.antd.libCardMod.CardSize
+import typingsJapgolly.antd.libCardMod.CardTabListType
+import typingsJapgolly.antd.libCardMod.CardType
+import typingsJapgolly.antd.libCardMod.default
 import typingsJapgolly.react.Anon_Html
 import typingsJapgolly.react.reactMod.CSSProperties
 import scala.scalajs.js
@@ -467,10 +467,14 @@ object Card {
     if (overrides != null) js.Dynamic.global.Object.assign(__obj, overrides)
   
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antd.esCardMod.CardProps, 
+  typingsJapgolly.antd.libCardMod.CardProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antd.esCardMod.default](js.constructorOf[typingsJapgolly.antd.esCardMod.default])
-    f(__obj.asInstanceOf[typingsJapgolly.antd.esCardMod.CardProps])(children: _*)
+  typingsJapgolly.antd.libCardMod.default](this.componentImport)
+    f(__obj.asInstanceOf[typingsJapgolly.antd.libCardMod.CardProps])(children: _*)
   }
+  @JSImport("antd/lib/card", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

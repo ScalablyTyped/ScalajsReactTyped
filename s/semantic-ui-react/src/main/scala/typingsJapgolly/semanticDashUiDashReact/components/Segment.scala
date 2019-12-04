@@ -85,8 +85,12 @@ object Segment {
     val f = japgolly.scalajs.react.JsComponent[
   typingsJapgolly.semanticDashUiDashReact.distCommonjsElementsSegmentSegmentMod.SegmentProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  js.Object](typingsJapgolly.semanticDashUiDashReact.distCommonjsElementsSegmentMod.default)
+  js.Object](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.semanticDashUiDashReact.distCommonjsElementsSegmentSegmentMod.SegmentProps])(children: _*)
   }
+  @JSImport("semantic-ui-react/dist/commonjs/elements/Segment", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

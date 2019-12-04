@@ -1,11 +1,14 @@
 package typingsJapgolly.atMaterialDashUiIcons.components
 
+import typingsJapgolly.atMaterialDashUiIcons.noEncryptionSharpMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object NoEncryptionSharp
-  extends SharedApply_SvgIconProps1591622337[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.NoEncryptionSharp] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.NoEncryptionSharp]
+object NoEncryptionSharp extends SharedApply_SvgIconProps1591622337[default] {
+  @JSImport("@material-ui/icons/NoEncryptionSharp", "default")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

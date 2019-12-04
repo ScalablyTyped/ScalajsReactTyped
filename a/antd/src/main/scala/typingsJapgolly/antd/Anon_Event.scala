@@ -2,7 +2,7 @@ package typingsJapgolly.antd
 
 import japgolly.scalajs.react.raw.React.Component
 import typingsJapgolly.antd.antdStrings.load
-import typingsJapgolly.antd.esTreeTreeMod.AntTreeNodeProps
+import typingsJapgolly.antd.libTreeTreeMod.AntTreeNodeProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

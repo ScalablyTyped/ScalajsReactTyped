@@ -14,14 +14,14 @@ import org.scalajs.dom.raw.HTMLElement
 import typingsJapgolly.antd.antdStrings.click
 import typingsJapgolly.antd.antdStrings.contextMenu
 import typingsJapgolly.antd.antdStrings.hover
-import typingsJapgolly.antd.esButtonButtonMod.ButtonHTMLType
-import typingsJapgolly.antd.esButtonButtonMod.ButtonSize
-import typingsJapgolly.antd.esDropdownDropdownDashButtonMod.DropdownButtonProps
-import typingsJapgolly.antd.esDropdownDropdownDashButtonMod.DropdownButtonType
-import typingsJapgolly.antd.esDropdownDropdownDashButtonMod.default
-import typingsJapgolly.antd.esDropdownDropdownMod.Align
-import typingsJapgolly.antd.esDropdownDropdownMod.OverlayFunc
-import typingsJapgolly.antd.esDropdownDropdownMod.Placement
+import typingsJapgolly.antd.libButtonButtonMod.ButtonHTMLType
+import typingsJapgolly.antd.libButtonButtonMod.ButtonSize
+import typingsJapgolly.antd.libDropdownDropdownDashButtonMod.DropdownButtonProps
+import typingsJapgolly.antd.libDropdownDropdownDashButtonMod.DropdownButtonType
+import typingsJapgolly.antd.libDropdownDropdownDashButtonMod.default
+import typingsJapgolly.antd.libDropdownDropdownMod.Align
+import typingsJapgolly.antd.libDropdownDropdownMod.OverlayFunc
+import typingsJapgolly.antd.libDropdownDropdownMod.Placement
 import typingsJapgolly.react.reactMod.CSSProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -90,10 +90,14 @@ object DropdownDashButton {
     if (overrides != null) js.Dynamic.global.Object.assign(__obj, overrides)
   
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antd.esDropdownDropdownDashButtonMod.DropdownButtonProps, 
+  typingsJapgolly.antd.libDropdownDropdownDashButtonMod.DropdownButtonProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antd.esDropdownDropdownDashButtonMod.default](js.constructorOf[typingsJapgolly.antd.esDropdownDropdownDashButtonMod.default])
-    f(__obj.asInstanceOf[typingsJapgolly.antd.esDropdownDropdownDashButtonMod.DropdownButtonProps])(children: _*)
+  typingsJapgolly.antd.libDropdownDropdownDashButtonMod.default](this.componentImport)
+    f(__obj.asInstanceOf[typingsJapgolly.antd.libDropdownDropdownDashButtonMod.DropdownButtonProps])(children: _*)
   }
+  @JSImport("antd/lib/dropdown/dropdown-button", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

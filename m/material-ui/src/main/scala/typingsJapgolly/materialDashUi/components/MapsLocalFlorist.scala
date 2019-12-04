@@ -6,6 +6,9 @@ import scala.scalajs.js.annotation._
 
 object MapsLocalFlorist
   extends SharedApply_SvgIconProps1538262166[typingsJapgolly.materialDashUi.svgDashIconsMod.MapsLocalFlorist] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.materialDashUi.svgDashIconsMod.MapsLocalFlorist]
+  @JSImport("material-ui/svg-icons", "MapsLocalFlorist")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

@@ -74,8 +74,12 @@ object EnhancedButton {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.materialDashUi.internalEnhancedButtonMod.EnhancedButtonProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.materialDashUi.internalEnhancedButtonMod.default](js.constructorOf[typingsJapgolly.materialDashUi.internalEnhancedButtonMod.default])
+  typingsJapgolly.materialDashUi.internalEnhancedButtonMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.materialDashUi.internalEnhancedButtonMod.EnhancedButtonProps])(children: _*)
   }
+  @JSImport("material-ui/internal/EnhancedButton", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

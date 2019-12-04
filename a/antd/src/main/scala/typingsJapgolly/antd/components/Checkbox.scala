@@ -8,9 +8,9 @@ import japgolly.scalajs.react.ReactMouseEventFrom
 import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
 import org.scalablytyped.runtime.StringDictionary
 import org.scalajs.dom.raw.HTMLElement
-import typingsJapgolly.antd.esCheckboxCheckboxMod.CheckboxChangeEvent
-import typingsJapgolly.antd.esCheckboxCheckboxMod.CheckboxProps
-import typingsJapgolly.antd.esCheckboxMod.default
+import typingsJapgolly.antd.libCheckboxCheckboxMod.CheckboxChangeEvent
+import typingsJapgolly.antd.libCheckboxCheckboxMod.CheckboxProps
+import typingsJapgolly.antd.libCheckboxMod.default
 import typingsJapgolly.react.reactMod.CSSProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -51,7 +51,7 @@ object Checkbox {
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (!js.isUndefined(indeterminate)) __obj.updateDynamic("indeterminate")(indeterminate.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1((t0: typingsJapgolly.antd.esCheckboxCheckboxMod.CheckboxChangeEvent) => onChange(t0).runNow()))
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1((t0: typingsJapgolly.antd.libCheckboxCheckboxMod.CheckboxChangeEvent) => onChange(t0).runNow()))
     if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactMouseEventFrom[org.scalajs.dom.raw.HTMLElement]) => onClick(t0).runNow()))
     if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactKeyboardEventFrom[org.scalajs.dom.raw.HTMLElement]) => onKeyDown(t0).runNow()))
     if (onKeyPress != null) __obj.updateDynamic("onKeyPress")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactKeyboardEventFrom[org.scalajs.dom.raw.HTMLElement]) => onKeyPress(t0).runNow()))
@@ -65,10 +65,14 @@ object Checkbox {
     if (overrides != null) js.Dynamic.global.Object.assign(__obj, overrides)
   
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antd.esCheckboxCheckboxMod.CheckboxProps, 
+  typingsJapgolly.antd.libCheckboxCheckboxMod.CheckboxProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antd.esCheckboxMod.default](js.constructorOf[typingsJapgolly.antd.esCheckboxMod.default])
-    f(__obj.asInstanceOf[typingsJapgolly.antd.esCheckboxCheckboxMod.CheckboxProps])(children: _*)
+  typingsJapgolly.antd.libCheckboxMod.default](this.componentImport)
+    f(__obj.asInstanceOf[typingsJapgolly.antd.libCheckboxCheckboxMod.CheckboxProps])(children: _*)
   }
+  @JSImport("antd/lib/checkbox", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

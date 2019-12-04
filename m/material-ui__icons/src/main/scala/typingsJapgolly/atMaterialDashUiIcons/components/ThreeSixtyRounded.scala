@@ -1,11 +1,14 @@
 package typingsJapgolly.atMaterialDashUiIcons.components
 
+import typingsJapgolly.atMaterialDashUiIcons.threeSixtyRoundedMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-object ThreeSixtyRounded
-  extends SharedApply_SvgIconProps1591622337[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.ThreeSixtyRounded] {
-  override val __component: js.Any = js.constructorOf[typingsJapgolly.atMaterialDashUiIcons.atMaterialDashUiIconsMod.ThreeSixtyRounded]
+object ThreeSixtyRounded extends SharedApply_SvgIconProps1591622337[default] {
+  @JSImport("@material-ui/icons/ThreeSixtyRounded", "default")
+  @js.native
+  override object componentImport extends js.Object
+  
 }
 

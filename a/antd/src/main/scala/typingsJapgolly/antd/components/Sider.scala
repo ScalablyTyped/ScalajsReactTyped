@@ -4,7 +4,7 @@ import japgolly.scalajs.react.CtorType.ChildArg
 import japgolly.scalajs.react.Key
 import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
 import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.antd.esLayoutSiderMod.default
+import typingsJapgolly.antd.libLayoutSiderMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -24,8 +24,12 @@ object Sider {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   js.Object, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antd.esLayoutSiderMod.default](js.constructorOf[typingsJapgolly.antd.esLayoutSiderMod.default])
+  typingsJapgolly.antd.libLayoutSiderMod.default](this.componentImport)
     f(__obj.asInstanceOf[js.Object])(children: _*)
   }
+  @JSImport("antd/lib/layout/Sider", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

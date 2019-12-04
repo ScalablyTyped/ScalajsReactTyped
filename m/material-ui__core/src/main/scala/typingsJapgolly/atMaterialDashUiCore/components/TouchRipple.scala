@@ -28,8 +28,12 @@ object TouchRipple {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.atMaterialDashUiCore.buttonBaseTouchRippleMod.TouchRippleProps with js.Object, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.atMaterialDashUiCore.buttonBaseTouchRippleMod.default](js.constructorOf[typingsJapgolly.atMaterialDashUiCore.buttonBaseTouchRippleMod.default])
+  typingsJapgolly.atMaterialDashUiCore.buttonBaseTouchRippleMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.atMaterialDashUiCore.buttonBaseTouchRippleMod.TouchRippleProps with js.Object])(children: _*)
   }
+  @JSImport("@material-ui/core/ButtonBase/TouchRipple", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

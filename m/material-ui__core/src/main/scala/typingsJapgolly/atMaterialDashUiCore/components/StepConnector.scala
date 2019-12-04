@@ -450,8 +450,12 @@ object StepConnector {
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   typingsJapgolly.atMaterialDashUiCore.stepConnectorStepConnectorMod.StepConnectorProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.atMaterialDashUiCore.stepConnectorMod.default](js.constructorOf[typingsJapgolly.atMaterialDashUiCore.stepConnectorMod.default])
+  typingsJapgolly.atMaterialDashUiCore.stepConnectorMod.default](this.componentImport)
     f(__obj.asInstanceOf[typingsJapgolly.atMaterialDashUiCore.stepConnectorStepConnectorMod.StepConnectorProps])(children: _*)
   }
+  @JSImport("@material-ui/core/StepConnector", JSImport.Default)
+  @js.native
+  object componentImport extends js.Object
+  
 }
 

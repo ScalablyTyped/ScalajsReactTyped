@@ -22,7 +22,7 @@ object Body {
     blob: CallbackTo[js.Promise[Blob]],
     bodyUsed: Boolean,
     formData: CallbackTo[js.Promise[FormData]],
-    json: CallbackTo[js.Promise[_]],
+    json: CallbackTo[js.Promise[js.Any]],
     text: CallbackTo[js.Promise[String]]
   ): Body = {
     val __obj = js.Dynamic.literal(bodyUsed = bodyUsed.asInstanceOf[js.Any])
