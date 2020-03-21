@@ -5,9 +5,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
-  - typings.std.stdStrings.auto
-  - typings.std.stdStrings.client
-  - typings.std.stdStrings.server
+  - typingsJapgolly.std.stdStrings.auto
+  - typingsJapgolly.std.stdStrings.client
+  - typingsJapgolly.std.stdStrings.server
 */
 trait RTCDtlsRole extends js.Object
 

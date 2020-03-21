@@ -1,5 +1,27 @@
 package typingsJapgolly.std
 
+import typingsJapgolly.std.stdStrings.ANGLE_instanced_arrays
+import typingsJapgolly.std.stdStrings.EXT_blend_minmax
+import typingsJapgolly.std.stdStrings.EXT_frag_depth
+import typingsJapgolly.std.stdStrings.EXT_sRGB
+import typingsJapgolly.std.stdStrings.EXT_shader_texture_lod
+import typingsJapgolly.std.stdStrings.EXT_texture_filter_anisotropic
+import typingsJapgolly.std.stdStrings.OES_element_index_uint
+import typingsJapgolly.std.stdStrings.OES_standard_derivatives
+import typingsJapgolly.std.stdStrings.OES_texture_float
+import typingsJapgolly.std.stdStrings.OES_texture_float_linear
+import typingsJapgolly.std.stdStrings.OES_texture_half_float
+import typingsJapgolly.std.stdStrings.OES_texture_half_float_linear
+import typingsJapgolly.std.stdStrings.OES_vertex_array_object
+import typingsJapgolly.std.stdStrings.WEBGL_color_buffer_float
+import typingsJapgolly.std.stdStrings.WEBGL_compressed_texture_astc
+import typingsJapgolly.std.stdStrings.WEBGL_compressed_texture_s3tc
+import typingsJapgolly.std.stdStrings.WEBGL_compressed_texture_s3tc_srgb
+import typingsJapgolly.std.stdStrings.WEBGL_debug_renderer_info
+import typingsJapgolly.std.stdStrings.WEBGL_debug_shaders
+import typingsJapgolly.std.stdStrings.WEBGL_depth_texture
+import typingsJapgolly.std.stdStrings.WEBGL_draw_buffers
+import typingsJapgolly.std.stdStrings.WEBGL_lose_context
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -399,49 +421,49 @@ trait WebGLRenderingContextBase extends js.Object {
   def getError(): GLenum = js.native
   def getExtension(extensionName: java.lang.String): js.Any = js.native
   @JSName("getExtension")
-  def getExtension_ANGLEinstancedarrays(extensionName: typingsJapgolly.std.stdStrings.ANGLE_instanced_arrays): ANGLE_instanced_arrays | Null = js.native
+  def getExtension_ANGLEinstancedarrays(extensionName: ANGLE_instanced_arrays): ANGLEInstancedArrays | Null = js.native
   @JSName("getExtension")
-  def getExtension_EXTblendminmax(extensionName: typingsJapgolly.std.stdStrings.EXT_blend_minmax): EXT_blend_minmax | Null = js.native
+  def getExtension_EXTblendminmax(extensionName: EXT_blend_minmax): EXTBlendMinmax | Null = js.native
   @JSName("getExtension")
-  def getExtension_EXTfragdepth(extensionName: typingsJapgolly.std.stdStrings.EXT_frag_depth): EXT_frag_depth | Null = js.native
+  def getExtension_EXTfragdepth(extensionName: EXT_frag_depth): EXTFragDepth | Null = js.native
   @JSName("getExtension")
-  def getExtension_EXTsRGB(extensionName: typingsJapgolly.std.stdStrings.EXT_sRGB): EXT_sRGB | Null = js.native
+  def getExtension_EXTsRGB(extensionName: EXT_sRGB): EXTSRGB | Null = js.native
   @JSName("getExtension")
-  def getExtension_EXTshadertexturelod(extensionName: typingsJapgolly.std.stdStrings.EXT_shader_texture_lod): EXT_shader_texture_lod | Null = js.native
+  def getExtension_EXTshadertexturelod(extensionName: EXT_shader_texture_lod): EXTShaderTextureLod | Null = js.native
   @JSName("getExtension")
-  def getExtension_EXTtexturefilteranisotropic(extensionName: typingsJapgolly.std.stdStrings.EXT_texture_filter_anisotropic): EXT_texture_filter_anisotropic | Null = js.native
+  def getExtension_EXTtexturefilteranisotropic(extensionName: EXT_texture_filter_anisotropic): EXTTextureFilterAnisotropic | Null = js.native
   @JSName("getExtension")
-  def getExtension_OESelementindexuint(extensionName: typingsJapgolly.std.stdStrings.OES_element_index_uint): OES_element_index_uint | Null = js.native
+  def getExtension_OESelementindexuint(extensionName: OES_element_index_uint): OESElementIndexUint | Null = js.native
   @JSName("getExtension")
-  def getExtension_OESstandardderivatives(extensionName: typingsJapgolly.std.stdStrings.OES_standard_derivatives): OES_standard_derivatives | Null = js.native
+  def getExtension_OESstandardderivatives(extensionName: OES_standard_derivatives): OESStandardDerivatives | Null = js.native
   @JSName("getExtension")
-  def getExtension_OEStexturefloat(extensionName: typingsJapgolly.std.stdStrings.OES_texture_float): OES_texture_float | Null = js.native
+  def getExtension_OEStexturefloat(extensionName: OES_texture_float): OESTextureFloat | Null = js.native
   @JSName("getExtension")
-  def getExtension_OEStexturefloatlinear(extensionName: typingsJapgolly.std.stdStrings.OES_texture_float_linear): OES_texture_float_linear | Null = js.native
+  def getExtension_OEStexturefloatlinear(extensionName: OES_texture_float_linear): OESTextureFloatLinear | Null = js.native
   @JSName("getExtension")
-  def getExtension_OEStexturehalffloat(extensionName: typingsJapgolly.std.stdStrings.OES_texture_half_float): OES_texture_half_float | Null = js.native
+  def getExtension_OEStexturehalffloat(extensionName: OES_texture_half_float): OESTextureHalfFloat | Null = js.native
   @JSName("getExtension")
-  def getExtension_OEStexturehalffloatlinear(extensionName: typingsJapgolly.std.stdStrings.OES_texture_half_float_linear): OES_texture_half_float_linear | Null = js.native
+  def getExtension_OEStexturehalffloatlinear(extensionName: OES_texture_half_float_linear): OESTextureHalfFloatLinear | Null = js.native
   @JSName("getExtension")
-  def getExtension_OESvertexarrayobject(extensionName: typingsJapgolly.std.stdStrings.OES_vertex_array_object): OES_vertex_array_object | Null = js.native
+  def getExtension_OESvertexarrayobject(extensionName: OES_vertex_array_object): OESVertexArrayObject | Null = js.native
   @JSName("getExtension")
-  def getExtension_WEBGLcolorbufferfloat(extensionName: typingsJapgolly.std.stdStrings.WEBGL_color_buffer_float): WEBGL_color_buffer_float | Null = js.native
+  def getExtension_WEBGLcolorbufferfloat(extensionName: WEBGL_color_buffer_float): WEBGLColorBufferFloat | Null = js.native
   @JSName("getExtension")
-  def getExtension_WEBGLcompressedtextureastc(extensionName: typingsJapgolly.std.stdStrings.WEBGL_compressed_texture_astc): WEBGL_compressed_texture_astc | Null = js.native
+  def getExtension_WEBGLcompressedtextureastc(extensionName: WEBGL_compressed_texture_astc): WEBGLCompressedTextureAstc | Null = js.native
   @JSName("getExtension")
-  def getExtension_WEBGLcompressedtextures3tc(extensionName: typingsJapgolly.std.stdStrings.WEBGL_compressed_texture_s3tc): WEBGL_compressed_texture_s3tc | Null = js.native
+  def getExtension_WEBGLcompressedtextures3tc(extensionName: WEBGL_compressed_texture_s3tc): WEBGLCompressedTextureS3tc | Null = js.native
   @JSName("getExtension")
-  def getExtension_WEBGLcompressedtextures3tcsrgb(extensionName: typingsJapgolly.std.stdStrings.WEBGL_compressed_texture_s3tc_srgb): WEBGL_compressed_texture_s3tc_srgb | Null = js.native
+  def getExtension_WEBGLcompressedtextures3tcsrgb(extensionName: WEBGL_compressed_texture_s3tc_srgb): WEBGLCompressedTextureS3tcSrgb | Null = js.native
   @JSName("getExtension")
-  def getExtension_WEBGLdebugrendererinfo(extensionName: typingsJapgolly.std.stdStrings.WEBGL_debug_renderer_info): WEBGL_debug_renderer_info | Null = js.native
+  def getExtension_WEBGLdebugrendererinfo(extensionName: WEBGL_debug_renderer_info): WEBGLDebugRendererInfo | Null = js.native
   @JSName("getExtension")
-  def getExtension_WEBGLdebugshaders(extensionName: typingsJapgolly.std.stdStrings.WEBGL_debug_shaders): WEBGL_debug_shaders | Null = js.native
+  def getExtension_WEBGLdebugshaders(extensionName: WEBGL_debug_shaders): WEBGLDebugShaders | Null = js.native
   @JSName("getExtension")
-  def getExtension_WEBGLdepthtexture(extensionName: typingsJapgolly.std.stdStrings.WEBGL_depth_texture): WEBGL_depth_texture | Null = js.native
+  def getExtension_WEBGLdepthtexture(extensionName: WEBGL_depth_texture): WEBGLDepthTexture | Null = js.native
   @JSName("getExtension")
-  def getExtension_WEBGLdrawbuffers(extensionName: typingsJapgolly.std.stdStrings.WEBGL_draw_buffers): WEBGL_draw_buffers | Null = js.native
+  def getExtension_WEBGLdrawbuffers(extensionName: WEBGL_draw_buffers): WEBGLDrawBuffers | Null = js.native
   @JSName("getExtension")
-  def getExtension_WEBGLlosecontext(extensionName: typingsJapgolly.std.stdStrings.WEBGL_lose_context): WEBGL_lose_context | Null = js.native
+  def getExtension_WEBGLlosecontext(extensionName: WEBGL_lose_context): WEBGLLoseContext | Null = js.native
   def getFramebufferAttachmentParameter(target: GLenum, attachment: GLenum, pname: GLenum): js.Any = js.native
   def getParameter(pname: GLenum): js.Any = js.native
   def getProgramInfoLog(program: org.scalajs.dom.raw.WebGLProgram): java.lang.String | Null = js.native

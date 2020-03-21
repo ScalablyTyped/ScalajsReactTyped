@@ -5,15 +5,15 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
-  - typings.googlemaps.googlemapsStrings.all
-  - typings.googlemaps.googlemapsStrings.geometry
-  - typings.googlemaps.googlemapsStrings.geometryDOTfill
-  - typings.googlemaps.googlemapsStrings.geometryDOTstroke
-  - typings.googlemaps.googlemapsStrings.labels
-  - typings.googlemaps.googlemapsStrings.labelsDOTicon
-  - typings.googlemaps.googlemapsStrings.labelsDOTtext
-  - typings.googlemaps.googlemapsStrings.labelsDOTtextDOTfill
-  - typings.googlemaps.googlemapsStrings.labelsDOTtextDOTstroke
+  - typingsJapgolly.googlemaps.googlemapsStrings.all
+  - typingsJapgolly.googlemaps.googlemapsStrings.geometry
+  - typingsJapgolly.googlemaps.googlemapsStrings.geometryDotfill
+  - typingsJapgolly.googlemaps.googlemapsStrings.geometryDotstroke
+  - typingsJapgolly.googlemaps.googlemapsStrings.labels
+  - typingsJapgolly.googlemaps.googlemapsStrings.labelsDoticon
+  - typingsJapgolly.googlemaps.googlemapsStrings.labelsDottext
+  - typingsJapgolly.googlemaps.googlemapsStrings.labelsDottextDotfill
+  - typingsJapgolly.googlemaps.googlemapsStrings.labelsDottextDotstroke
 */
 trait MapTypeStyleElementType extends js.Object
 
@@ -25,18 +25,18 @@ object MapTypeStyleElementType {
   @scala.inline
   def geometry: typingsJapgolly.googlemaps.googlemapsStrings.geometry = this.cast("geometry")
   @scala.inline
-  def geometryDOTfill: typingsJapgolly.googlemaps.googlemapsStrings.geometryDOTfill = this.cast("geometry.fill")
+  def geometryDotfill: typingsJapgolly.googlemaps.googlemapsStrings.geometryDotfill = this.cast("geometry.fill")
   @scala.inline
-  def geometryDOTstroke: typingsJapgolly.googlemaps.googlemapsStrings.geometryDOTstroke = this.cast("geometry.stroke")
+  def geometryDotstroke: typingsJapgolly.googlemaps.googlemapsStrings.geometryDotstroke = this.cast("geometry.stroke")
   @scala.inline
   def labels: typingsJapgolly.googlemaps.googlemapsStrings.labels = this.cast("labels")
   @scala.inline
-  def labelsDOTicon: typingsJapgolly.googlemaps.googlemapsStrings.labelsDOTicon = this.cast("labels.icon")
+  def labelsDoticon: typingsJapgolly.googlemaps.googlemapsStrings.labelsDoticon = this.cast("labels.icon")
   @scala.inline
-  def labelsDOTtext: typingsJapgolly.googlemaps.googlemapsStrings.labelsDOTtext = this.cast("labels.text")
+  def labelsDottext: typingsJapgolly.googlemaps.googlemapsStrings.labelsDottext = this.cast("labels.text")
   @scala.inline
-  def labelsDOTtextDOTfill: typingsJapgolly.googlemaps.googlemapsStrings.labelsDOTtextDOTfill = this.cast("labels.text.fill")
+  def labelsDottextDotfill: typingsJapgolly.googlemaps.googlemapsStrings.labelsDottextDotfill = this.cast("labels.text.fill")
   @scala.inline
-  def labelsDOTtextDOTstroke: typingsJapgolly.googlemaps.googlemapsStrings.labelsDOTtextDOTstroke = this.cast("labels.text.stroke")
+  def labelsDottextDotstroke: typingsJapgolly.googlemaps.googlemapsStrings.labelsDottextDotstroke = this.cast("labels.text.stroke")
 }
 

@@ -1,6 +1,7 @@
 package typingsJapgolly.googlemaps.google.maps.Data
 
 import japgolly.scalajs.react.CallbackTo
+import org.scalajs.dom.raw.Element
 import typingsJapgolly.googlemaps.google.maps.ControlPosition
 import typingsJapgolly.googlemaps.google.maps.DrawingMode
 import typingsJapgolly.googlemaps.google.maps.Map
@@ -13,7 +14,7 @@ trait DataOptions extends js.Object {
   var controls: js.UndefOr[js.Array[DrawingMode] | Null] = js.undefined
   var drawingMode: js.UndefOr[DrawingMode | Null] = js.undefined
   var featureFactory: js.UndefOr[js.Function1[/* geometry */ Geometry, Feature]] = js.undefined
-  var map: js.UndefOr[Map] = js.undefined
+  var map: js.UndefOr[Map[Element]] = js.undefined
   var style: js.UndefOr[StylingFunction | StyleOptions] = js.undefined
 }
 
@@ -24,7 +25,7 @@ object DataOptions {
     controls: js.Array[DrawingMode] = null,
     drawingMode: DrawingMode = null,
     featureFactory: /* geometry */ Geometry => CallbackTo[Feature] = null,
-    map: Map = null,
+    map: Map[Element] = null,
     style: StylingFunction | StyleOptions = null
   ): DataOptions = {
     val __obj = js.Dynamic.literal()

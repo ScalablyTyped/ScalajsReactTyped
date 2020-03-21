@@ -14,9 +14,9 @@ trait ReadableStream[R] extends js.Object {
   def cancel(): js.Promise[Unit] = js.native
   def cancel(reason: js.Any): js.Promise[Unit] = js.native
   def getReader(): ReadableStreamDefaultReader[R] = js.native
-  def getReader(options: Anon_Byob): ReadableStreamBYOBReader = js.native
-  def pipeThrough[T](hasWritableReadable: Anon_Readable[R, T]): org.scalajs.dom.experimental.ReadableStream[T] = js.native
-  def pipeThrough[T](hasWritableReadable: Anon_Readable[R, T], options: PipeOptions): org.scalajs.dom.experimental.ReadableStream[T] = js.native
+  def getReader(options: AnonMode): ReadableStreamBYOBReader = js.native
+  def pipeThrough[T](hasWritableReadable: AnonReadable[R, T]): org.scalajs.dom.experimental.ReadableStream[T] = js.native
+  def pipeThrough[T](hasWritableReadable: AnonReadable[R, T], options: PipeOptions): org.scalajs.dom.experimental.ReadableStream[T] = js.native
   def pipeTo(dest: WritableStream[R]): js.Promise[Unit] = js.native
   def pipeTo(dest: WritableStream[R], options: PipeOptions): js.Promise[Unit] = js.native
   def tee(): js.Tuple2[
@@ -29,13 +29,13 @@ trait ReadableStream[R] extends js.Object {
 @js.native
 object ReadableStream
   extends Instantiable0[ReadableStream[js.Object]]
-     with Instantiable2[
-      (/* underlyingSource */ UnderlyingByteSource) | (/* underlyingSource */ UnderlyingSource[js.Object]), 
-      (/* strategy */ Anon_HighWaterMarkSize) | (/* strategy */ QueuingStrategy[js.Object]), 
-      ReadableStream[js.Object | Uint8Array]
-    ]
      with Instantiable1[
       (/* underlyingSource */ UnderlyingByteSource) | (/* underlyingSource */ UnderlyingSource[js.Object]), 
+      ReadableStream[js.Object | Uint8Array]
+    ]
+     with Instantiable2[
+      (/* underlyingSource */ UnderlyingByteSource) | (/* underlyingSource */ UnderlyingSource[js.Object]), 
+      (/* strategy */ AnonSize) | (/* strategy */ QueuingStrategy[js.Object]), 
       ReadableStream[js.Object | Uint8Array]
     ]
 

@@ -1,7 +1,7 @@
 package typingsJapgolly.history
 
 import typingsJapgolly.history.createHashHistoryMod.HashType
-import typingsJapgolly.history.historyMod.Action
+import typingsJapgolly.history.mod.Action
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -5,13 +5,14 @@ import japgolly.scalajs.react.CtorType.ChildArg
 import japgolly.scalajs.react.Key
 import japgolly.scalajs.react.ReactKeyboardEventFrom
 import japgolly.scalajs.react.ReactMouseEventFrom
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
+import japgolly.scalajs.react.component.Js.MountedWithRawType
+import japgolly.scalajs.react.component.Js.RawMounted
+import japgolly.scalajs.react.component.Js.UnmountedSimple
 import org.scalablytyped.runtime.StringDictionary
 import org.scalajs.dom.raw.HTMLElement
-import typingsJapgolly.antd.libRadioInterfaceMod.RadioChangeEvent
-import typingsJapgolly.antd.libRadioRadioButtonMod.RadioButtonProps
-import typingsJapgolly.antd.libRadioRadioButtonMod.default
-import typingsJapgolly.react.reactMod.CSSProperties
+import typingsJapgolly.antd.checkboxCheckboxMod.AbstractCheckboxProps
+import typingsJapgolly.antd.radioInterfaceMod.RadioChangeEvent
+import typingsJapgolly.react.mod.CSSProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -36,10 +37,17 @@ object RadioButton {
     tabIndex: Int | Double = null,
     value: js.Any = null,
     key: js.UndefOr[Key] = js.undefined,
-    overrides: StringDictionary[js.Any] = null
+    _overrides: StringDictionary[js.Any] = null
   )(
     children: ChildArg*
-  ): UnmountedWithRoot[RadioButtonProps, default, Unit, RadioButtonProps] = {
+  ): UnmountedSimple[
+    AbstractCheckboxProps[RadioChangeEvent], 
+    MountedWithRawType[
+      AbstractCheckboxProps[RadioChangeEvent], 
+      js.Object, 
+      RawMounted[AbstractCheckboxProps[RadioChangeEvent], js.Object]
+    ]
+  ] = {
     val __obj = js.Dynamic.literal()
   
       if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus.asInstanceOf[js.Any])
@@ -49,7 +57,7 @@ object RadioButton {
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1((t0: typingsJapgolly.antd.libRadioInterfaceMod.RadioChangeEvent) => onChange(t0).runNow()))
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1((t0: typingsJapgolly.antd.radioInterfaceMod.RadioChangeEvent) => onChange(t0).runNow()))
     if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactMouseEventFrom[org.scalajs.dom.raw.HTMLElement]) => onClick(t0).runNow()))
     if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactKeyboardEventFrom[org.scalajs.dom.raw.HTMLElement]) => onKeyDown(t0).runNow()))
     if (onKeyPress != null) __obj.updateDynamic("onKeyPress")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactKeyboardEventFrom[org.scalajs.dom.raw.HTMLElement]) => onKeyPress(t0).runNow()))
@@ -60,15 +68,15 @@ object RadioButton {
     if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (overrides != null) js.Dynamic.global.Object.assign(__obj, overrides)
+    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
   
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antd.libRadioRadioButtonMod.RadioButtonProps, 
+    val f = japgolly.scalajs.react.JsComponent[
+  typingsJapgolly.antd.checkboxCheckboxMod.AbstractCheckboxProps[typingsJapgolly.antd.radioInterfaceMod.RadioChangeEvent], 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antd.libRadioRadioButtonMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.antd.libRadioRadioButtonMod.RadioButtonProps])(children: _*)
+  js.Object](this.componentImport)
+    f(__obj.asInstanceOf[typingsJapgolly.antd.checkboxCheckboxMod.AbstractCheckboxProps[typingsJapgolly.antd.radioInterfaceMod.RadioChangeEvent]])(children: _*)
   }
-  @JSImport("antd/lib/radio/radioButton", JSImport.Default)
+  @JSImport("antd", "Radio.Button")
   @js.native
   object componentImport extends js.Object
   

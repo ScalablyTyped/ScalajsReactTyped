@@ -5,9 +5,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
-  - typings.std.stdStrings.attributes
-  - typings.std.stdStrings.characterData
-  - typings.std.stdStrings.childList
+  - typingsJapgolly.std.stdStrings.attributes
+  - typingsJapgolly.std.stdStrings.characterData
+  - typingsJapgolly.std.stdStrings.childList
 */
 trait MutationRecordType extends js.Object
 

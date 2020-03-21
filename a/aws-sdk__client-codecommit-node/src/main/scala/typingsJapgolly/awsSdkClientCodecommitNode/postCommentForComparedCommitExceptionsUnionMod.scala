@@ -1,0 +1,38 @@
+package typingsJapgolly.awsSdkClientCodecommitNode
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("@aws-sdk/client-codecommit-node/types/PostCommentForComparedCommitExceptionsUnion", JSImport.Namespace)
+@js.native
+object postCommentForComparedCommitExceptionsUnionMod extends js.Object {
+  /* Rewritten from type alias, can be one of: 
+    - typingsJapgolly.awsSdkClientCodecommitNode.typesRepositoryNameRequiredExceptionMod.RepositoryNameRequiredException
+    - typingsJapgolly.awsSdkClientCodecommitNode.typesRepositoryDoesNotExistExceptionMod.RepositoryDoesNotExistException
+    - typingsJapgolly.awsSdkClientCodecommitNode.typesInvalidRepositoryNameExceptionMod.InvalidRepositoryNameException
+    - typingsJapgolly.awsSdkClientCodecommitNode.typesClientRequestTokenRequiredExceptionMod.ClientRequestTokenRequiredException
+    - typingsJapgolly.awsSdkClientCodecommitNode.typesInvalidClientRequestTokenExceptionMod.InvalidClientRequestTokenException
+    - typingsJapgolly.awsSdkClientCodecommitNode.typesIdempotencyParameterMismatchExceptionMod.IdempotencyParameterMismatchException
+    - typingsJapgolly.awsSdkClientCodecommitNode.typesCommentContentRequiredExceptionMod.CommentContentRequiredException
+    - typingsJapgolly.awsSdkClientCodecommitNode.typesCommentContentSizeLimitExceededExceptionMod.CommentContentSizeLimitExceededException
+    - typingsJapgolly.awsSdkClientCodecommitNode.typesInvalidFileLocationExceptionMod.InvalidFileLocationException
+    - typingsJapgolly.awsSdkClientCodecommitNode.typesInvalidRelativeFileVersionEnumExceptionMod.InvalidRelativeFileVersionEnumException
+    - typingsJapgolly.awsSdkClientCodecommitNode.typesPathRequiredExceptionMod.PathRequiredException
+    - typingsJapgolly.awsSdkClientCodecommitNode.typesInvalidFilePositionExceptionMod.InvalidFilePositionException
+    - typingsJapgolly.awsSdkClientCodecommitNode.typesCommitIdRequiredExceptionMod.CommitIdRequiredException
+    - typingsJapgolly.awsSdkClientCodecommitNode.typesInvalidCommitIdExceptionMod.InvalidCommitIdException
+    - typingsJapgolly.awsSdkClientCodecommitNode.typesEncryptionIntegrityChecksFailedExceptionMod.EncryptionIntegrityChecksFailedException
+    - typingsJapgolly.awsSdkClientCodecommitNode.typesEncryptionKeyAccessDeniedExceptionMod.EncryptionKeyAccessDeniedException
+    - typingsJapgolly.awsSdkClientCodecommitNode.typesEncryptionKeyDisabledExceptionMod.EncryptionKeyDisabledException
+    - typingsJapgolly.awsSdkClientCodecommitNode.typesEncryptionKeyNotFoundExceptionMod.EncryptionKeyNotFoundException
+    - typingsJapgolly.awsSdkClientCodecommitNode.typesEncryptionKeyUnavailableExceptionMod.EncryptionKeyUnavailableException
+    - typingsJapgolly.awsSdkClientCodecommitNode.typesBeforeCommitIdAndAfterCommitIdAreSameExceptionMod.BeforeCommitIdAndAfterCommitIdAreSameException
+    - typingsJapgolly.awsSdkClientCodecommitNode.typesCommitDoesNotExistExceptionMod.CommitDoesNotExistException
+    - typingsJapgolly.awsSdkClientCodecommitNode.typesInvalidPathExceptionMod.InvalidPathException
+    - typingsJapgolly.awsSdkClientCodecommitNode.typesPathDoesNotExistExceptionMod.PathDoesNotExistException
+  */
+  trait PostCommentForComparedCommitExceptionsUnion extends js.Object
+  
+}
+

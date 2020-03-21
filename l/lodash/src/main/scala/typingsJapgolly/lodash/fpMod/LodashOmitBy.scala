@@ -1,21 +1,17 @@
 package typingsJapgolly.lodash.fpMod
 
-import typingsJapgolly.lodash.lodashMod.Dictionary
-import typingsJapgolly.lodash.lodashMod.NumericDictionary
-import typingsJapgolly.lodash.lodashMod.PartialObject
-import typingsJapgolly.lodash.lodashMod.ValueKeyIteratee
-import typingsJapgolly.lodash.lodashMod.__
+import typingsJapgolly.lodash.mod.Dictionary
+import typingsJapgolly.lodash.mod.NumericDictionary
+import typingsJapgolly.lodash.mod.PartialObject
+import typingsJapgolly.lodash.mod.ValueKeyIteratee
+import typingsJapgolly.lodash.mod.__
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
 trait LodashOmitBy extends js.Object {
-  def apply[T /* <: js.Object */](
-    predicate: ValueKeyIteratee[
-      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
-    ]
-  ): PartialObject[T] = js.native
+  def apply[T](predicate: ValueKeyIteratee[T]): NumericDictionary[T] = js.native
   def apply[T /* <: js.Object */](
     predicate: ValueKeyIteratee[
       /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any

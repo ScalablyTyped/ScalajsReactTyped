@@ -4,11 +4,11 @@ import japgolly.scalajs.react.CtorType.ChildArg
 import japgolly.scalajs.react.Key
 import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
 import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.antd.libSkeletonAvatarMod.SkeletonAvatarProps
-import typingsJapgolly.antd.libSkeletonMod.SkeletonProps
-import typingsJapgolly.antd.libSkeletonMod.default
-import typingsJapgolly.antd.libSkeletonParagraphMod.SkeletonParagraphProps
-import typingsJapgolly.antd.libSkeletonTitleMod.SkeletonTitleProps
+import typingsJapgolly.antd.paragraphMod.SkeletonParagraphProps
+import typingsJapgolly.antd.skeletonMod.default
+import typingsJapgolly.antd.skeletonSkeletonMod.SkeletonAvatarProps
+import typingsJapgolly.antd.skeletonSkeletonMod.SkeletonProps
+import typingsJapgolly.antd.titleMod.SkeletonTitleProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,7 +23,7 @@ object Skeleton {
     prefixCls: String = null,
     title: SkeletonTitleProps | Boolean = null,
     key: js.UndefOr[Key] = js.undefined,
-    overrides: StringDictionary[js.Any] = null
+    _overrides: StringDictionary[js.Any] = null
   )(
     children: ChildArg*
   ): UnmountedWithRoot[SkeletonProps, default, Unit, SkeletonProps] = {
@@ -37,13 +37,13 @@ object Skeleton {
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (overrides != null) js.Dynamic.global.Object.assign(__obj, overrides)
+    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
   
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antd.libSkeletonMod.SkeletonProps, 
+  typingsJapgolly.antd.skeletonSkeletonMod.SkeletonProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antd.libSkeletonMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.antd.libSkeletonMod.SkeletonProps])(children: _*)
+  typingsJapgolly.antd.skeletonMod.default](this.componentImport)
+    f(__obj.asInstanceOf[typingsJapgolly.antd.skeletonSkeletonMod.SkeletonProps])(children: _*)
   }
   @JSImport("antd/lib/skeleton", JSImport.Default)
   @js.native

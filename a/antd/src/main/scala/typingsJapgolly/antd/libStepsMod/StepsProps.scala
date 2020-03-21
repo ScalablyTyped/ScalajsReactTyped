@@ -9,7 +9,7 @@ import typingsJapgolly.antd.antdStrings.process
 import typingsJapgolly.antd.antdStrings.small
 import typingsJapgolly.antd.antdStrings.vertical
 import typingsJapgolly.antd.antdStrings.wait
-import typingsJapgolly.react.reactMod.CSSProperties
+import typingsJapgolly.react.mod.CSSProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,6 +1,6 @@
 package typingsJapgolly.express
 
-import typingsJapgolly.mime.mimeMod.TypeMap
+import typingsJapgolly.mime.mod.TypeMap
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

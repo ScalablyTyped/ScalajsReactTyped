@@ -5,10 +5,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
-  - typings.std.stdStrings.host
-  - typings.std.stdStrings.srflx
-  - typings.std.stdStrings.prflx
-  - typings.std.stdStrings.relay
+  - typingsJapgolly.std.stdStrings.host
+  - typingsJapgolly.std.stdStrings.prflx
+  - typingsJapgolly.std.stdStrings.relay
+  - typingsJapgolly.std.stdStrings.srflx
 */
 trait RTCIceCandidateType extends js.Object
 

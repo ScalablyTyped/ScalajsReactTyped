@@ -1,7 +1,7 @@
 package typingsJapgolly.lodash.fpMod
 
-import typingsJapgolly.lodash.lodashMod.LoDashImplicitWrapper
-import typingsJapgolly.lodash.lodashMod.__
+import typingsJapgolly.lodash.mod.LoDashImplicitWrapper
+import typingsJapgolly.lodash.mod.__
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

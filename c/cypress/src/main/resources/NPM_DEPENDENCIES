@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "cypress" : "3.8.3"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "cypress" : "3.8.3"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -1,15 +1,15 @@
-organization := "org.gulliblytyped.japgolly"
+organization := "org.scalablytyped.japgolly"
 name := "webpack-env"
-version := "1.14-dt-20191014Z-0a051a"
-scalaVersion := "2.12.10"
+version := "1.15-dt-20200227Z-dbcc22"
+scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.github.japgolly.scalajs-react" %%% "core" % "1.4.2",
+  "com.github.japgolly.scalajs-react" %%% "core" % "1.5.0",
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.gulliblytyped.japgolly" %%% "std" % "3.7-ed3398")
+  "org.scalablytyped.japgolly" %%% "node" % "13.7-dt-20200228Z-e4cd2e",
+  "org.scalablytyped.japgolly" %%% "std" % "3.8-8884a5")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
+scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
 bintrayRepository := "ScalajsReactTyped"
 resolvers += Resolver.bintrayRepo("oyvindberg", "ScalajsReactTyped")
-        

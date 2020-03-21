@@ -7,10 +7,10 @@ import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
 import japgolly.scalajs.react.vdom.VdomNode
 import org.scalablytyped.runtime.StringDictionary
 import org.scalajs.dom.raw.MouseEvent
-import typingsJapgolly.antd.libSwitchMod.SwitchProps
-import typingsJapgolly.antd.libSwitchMod.SwitchSize
-import typingsJapgolly.antd.libSwitchMod.default
-import typingsJapgolly.react.reactMod.CSSProperties
+import typingsJapgolly.antd.switchMod.SwitchProps
+import typingsJapgolly.antd.switchMod.SwitchSize
+import typingsJapgolly.antd.switchMod.default
+import typingsJapgolly.react.mod.CSSProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -32,7 +32,7 @@ object Switch {
     title: String = null,
     unCheckedChildren: VdomNode = null,
     key: js.UndefOr[Key] = js.undefined,
-    overrides: StringDictionary[js.Any] = null
+    _overrides: StringDictionary[js.Any] = null
   )(
     children: ChildArg*
   ): UnmountedWithRoot[SwitchProps, default, Unit, SwitchProps] = {
@@ -53,13 +53,13 @@ object Switch {
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     if (unCheckedChildren != null) __obj.updateDynamic("unCheckedChildren")(unCheckedChildren.rawNode.asInstanceOf[js.Any])
     key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (overrides != null) js.Dynamic.global.Object.assign(__obj, overrides)
+    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
   
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antd.libSwitchMod.SwitchProps, 
+  typingsJapgolly.antd.switchMod.SwitchProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antd.libSwitchMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.antd.libSwitchMod.SwitchProps])(children: _*)
+  typingsJapgolly.antd.switchMod.default](this.componentImport)
+    f(__obj.asInstanceOf[typingsJapgolly.antd.switchMod.SwitchProps])(children: _*)
   }
   @JSImport("antd/lib/switch", JSImport.Default)
   @js.native

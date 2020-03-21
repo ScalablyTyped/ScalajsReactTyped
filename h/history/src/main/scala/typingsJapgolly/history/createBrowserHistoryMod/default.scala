@@ -1,6 +1,6 @@
 package typingsJapgolly.history.createBrowserHistoryMod
 
-import typingsJapgolly.history.historyMod.History
+import typingsJapgolly.history.mod.History
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

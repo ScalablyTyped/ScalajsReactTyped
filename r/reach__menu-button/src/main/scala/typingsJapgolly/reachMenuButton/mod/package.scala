@@ -1,0 +1,193 @@
+package typingsJapgolly.reachMenuButton
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+package object mod {
+  type MenuLinkProps[T /* <: typingsJapgolly.reachMenuButton.mod.SupportedMenuLinkComponent */] = typingsJapgolly.reachMenuButton.mod.ResolvedMenuLinkProps[T] with typingsJapgolly.reachMenuButton.AnonAs[T]
+  type MenuListProps = (typingsJapgolly.react.mod.DetailedHTMLProps[
+    typingsJapgolly.react.mod.HTMLAttributes[org.scalajs.dom.raw.HTMLDivElement], 
+    org.scalajs.dom.raw.HTMLDivElement
+  ]) with typingsJapgolly.reachMenuButton.AnonChildren
+  type ResolvedMenuLinkComponent[T] = typingsJapgolly.react.mod.ComponentType[T] | T
+  type ResolvedMenuLinkProps[T] = T | (/* import warning: importer.ImportType#apply Failed type conversion: react.react._Global_.JSX.IntrinsicElements[T] */ js.Any)
+  /* Rewritten from type alias, can be one of: 
+    - js.Object
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.a
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.abbr
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.address
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.area
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.article
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.aside
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.audio
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.b
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.base
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.bdi
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.bdo
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.big
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.blockquote
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.body
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.br
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.button
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.canvas
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.caption
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.cite
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.code
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.col
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.colgroup
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.data
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.datalist
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.dd
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.del
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.details
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.dfn
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.dialog
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.div
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.dl
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.dt
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.em
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.embed
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.fieldset
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.figcaption
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.figure
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.footer
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.form
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.h1
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.h2
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.h3
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.h4
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.h5
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.h6
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.head
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.header
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.hgroup
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.hr
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.html
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.i
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.iframe
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.img
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.input
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.ins
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.kbd
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.keygen
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.label
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.legend
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.li
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.link
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.main
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.map
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.mark
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.menu
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.menuitem
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.meta
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.meter
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.nav
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.noindex
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.noscript
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.`object`
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.ol
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.optgroup
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.option
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.output
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.p
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.param
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.picture
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.pre
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.progress
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.q
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.rp
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.rt
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.ruby
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.s
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.samp
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.script
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.section
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.select
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.small
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.source
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.span
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.strong
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.style
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.sub
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.summary
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.sup
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.table
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.template
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.tbody
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.td
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.textarea
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.tfoot
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.th
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.thead
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.time
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.title
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.tr
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.track
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.u
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.ul
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.`var`
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.video
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.wbr
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.webview
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.svg
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.animate
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.animateMotion
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.animateTransform
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.circle
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.clipPath
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.defs
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.desc
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.ellipse
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.feBlend
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.feColorMatrix
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.feComponentTransfer
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.feComposite
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.feConvolveMatrix
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.feDiffuseLighting
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.feDisplacementMap
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.feDistantLight
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.feDropShadow
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.feFlood
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.feFuncA
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.feFuncB
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.feFuncG
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.feFuncR
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.feGaussianBlur
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.feImage
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.feMerge
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.feMergeNode
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.feMorphology
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.feOffset
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.fePointLight
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.feSpecularLighting
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.feSpotLight
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.feTile
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.feTurbulence
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.filter
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.foreignObject
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.g
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.image
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.line
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.linearGradient
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.marker
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.mask
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.metadata
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.mpath
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.path
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.pattern
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.polygon
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.polyline
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.radialGradient
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.rect
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.stop
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.switch
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.symbol
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.text
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.textPath
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.tspan
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.use
+    - typingsJapgolly.reachMenuButton.reachMenuButtonStrings.view
+  */
+  type SupportedMenuLinkComponent = typingsJapgolly.reachMenuButton.mod._SupportedMenuLinkComponent | js.Object
+}

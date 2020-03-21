@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "clipboardy" : "2.2.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "clipboardy" : "2.2.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

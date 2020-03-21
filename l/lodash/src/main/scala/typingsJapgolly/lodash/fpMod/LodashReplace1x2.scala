@@ -1,6 +1,6 @@
 package typingsJapgolly.lodash.fpMod
 
-import typingsJapgolly.lodash.lodashMod.__
+import typingsJapgolly.lodash.mod.__
 import typingsJapgolly.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`

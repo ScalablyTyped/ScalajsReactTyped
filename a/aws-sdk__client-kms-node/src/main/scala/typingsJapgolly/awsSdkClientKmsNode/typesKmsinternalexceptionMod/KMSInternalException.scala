@@ -1,0 +1,84 @@
+package typingsJapgolly.awsSdkClientKmsNode.typesKmsinternalexceptionMod
+
+import typingsJapgolly.awsSdkClientKmsNode.cancelKeyDeletionExceptionsUnionMod.CancelKeyDeletionExceptionsUnion
+import typingsJapgolly.awsSdkClientKmsNode.createAliasExceptionsUnionMod.CreateAliasExceptionsUnion
+import typingsJapgolly.awsSdkClientKmsNode.createGrantExceptionsUnionMod.CreateGrantExceptionsUnion
+import typingsJapgolly.awsSdkClientKmsNode.createKeyExceptionsUnionMod.CreateKeyExceptionsUnion
+import typingsJapgolly.awsSdkClientKmsNode.decryptExceptionsUnionMod.DecryptExceptionsUnion
+import typingsJapgolly.awsSdkClientKmsNode.deleteAliasExceptionsUnionMod.DeleteAliasExceptionsUnion
+import typingsJapgolly.awsSdkClientKmsNode.deleteImportedKeyMaterialExceptionsUnionMod.DeleteImportedKeyMaterialExceptionsUnion
+import typingsJapgolly.awsSdkClientKmsNode.describeKeyExceptionsUnionMod.DescribeKeyExceptionsUnion
+import typingsJapgolly.awsSdkClientKmsNode.disableKeyExceptionsUnionMod.DisableKeyExceptionsUnion
+import typingsJapgolly.awsSdkClientKmsNode.disableKeyRotationExceptionsUnionMod.DisableKeyRotationExceptionsUnion
+import typingsJapgolly.awsSdkClientKmsNode.enableKeyExceptionsUnionMod.EnableKeyExceptionsUnion
+import typingsJapgolly.awsSdkClientKmsNode.enableKeyRotationExceptionsUnionMod.EnableKeyRotationExceptionsUnion
+import typingsJapgolly.awsSdkClientKmsNode.encryptExceptionsUnionMod.EncryptExceptionsUnion
+import typingsJapgolly.awsSdkClientKmsNode.generateDataKeyExceptionsUnionMod.GenerateDataKeyExceptionsUnion
+import typingsJapgolly.awsSdkClientKmsNode.generateDataKeyWithoutPlaintextExceptionsUnionMod.GenerateDataKeyWithoutPlaintextExceptionsUnion
+import typingsJapgolly.awsSdkClientKmsNode.generateRandomExceptionsUnionMod.GenerateRandomExceptionsUnion
+import typingsJapgolly.awsSdkClientKmsNode.getKeyPolicyExceptionsUnionMod.GetKeyPolicyExceptionsUnion
+import typingsJapgolly.awsSdkClientKmsNode.getKeyRotationStatusExceptionsUnionMod.GetKeyRotationStatusExceptionsUnion
+import typingsJapgolly.awsSdkClientKmsNode.getParametersForImportExceptionsUnionMod.GetParametersForImportExceptionsUnion
+import typingsJapgolly.awsSdkClientKmsNode.importKeyMaterialExceptionsUnionMod.ImportKeyMaterialExceptionsUnion
+import typingsJapgolly.awsSdkClientKmsNode.listAliasesExceptionsUnionMod.ListAliasesExceptionsUnion
+import typingsJapgolly.awsSdkClientKmsNode.listGrantsExceptionsUnionMod.ListGrantsExceptionsUnion
+import typingsJapgolly.awsSdkClientKmsNode.listKeyPoliciesExceptionsUnionMod.ListKeyPoliciesExceptionsUnion
+import typingsJapgolly.awsSdkClientKmsNode.listKeysExceptionsUnionMod.ListKeysExceptionsUnion
+import typingsJapgolly.awsSdkClientKmsNode.listResourceTagsExceptionsUnionMod.ListResourceTagsExceptionsUnion
+import typingsJapgolly.awsSdkClientKmsNode.listRetirableGrantsExceptionsUnionMod.ListRetirableGrantsExceptionsUnion
+import typingsJapgolly.awsSdkClientKmsNode.putKeyPolicyExceptionsUnionMod.PutKeyPolicyExceptionsUnion
+import typingsJapgolly.awsSdkClientKmsNode.reEncryptExceptionsUnionMod.ReEncryptExceptionsUnion
+import typingsJapgolly.awsSdkClientKmsNode.retireGrantExceptionsUnionMod.RetireGrantExceptionsUnion
+import typingsJapgolly.awsSdkClientKmsNode.revokeGrantExceptionsUnionMod.RevokeGrantExceptionsUnion
+import typingsJapgolly.awsSdkClientKmsNode.scheduleKeyDeletionExceptionsUnionMod.ScheduleKeyDeletionExceptionsUnion
+import typingsJapgolly.awsSdkClientKmsNode.tagResourceExceptionsUnionMod.TagResourceExceptionsUnion
+import typingsJapgolly.awsSdkClientKmsNode.untagResourceExceptionsUnionMod.UntagResourceExceptionsUnion
+import typingsJapgolly.awsSdkClientKmsNode.updateAliasExceptionsUnionMod.UpdateAliasExceptionsUnion
+import typingsJapgolly.awsSdkClientKmsNode.updateKeyDescriptionExceptionsUnionMod.UpdateKeyDescriptionExceptionsUnion
+import typingsJapgolly.awsSdkTypes.exceptionMod.ServiceException
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@js.native
+trait KMSInternalException
+  extends ServiceException[KMSInternalExceptionDetails]
+     with CancelKeyDeletionExceptionsUnion
+     with CreateAliasExceptionsUnion
+     with CreateGrantExceptionsUnion
+     with CreateKeyExceptionsUnion
+     with DecryptExceptionsUnion
+     with DeleteAliasExceptionsUnion
+     with DeleteImportedKeyMaterialExceptionsUnion
+     with DescribeKeyExceptionsUnion
+     with DisableKeyExceptionsUnion
+     with DisableKeyRotationExceptionsUnion
+     with EnableKeyExceptionsUnion
+     with EnableKeyRotationExceptionsUnion
+     with EncryptExceptionsUnion
+     with GenerateDataKeyExceptionsUnion
+     with GenerateDataKeyWithoutPlaintextExceptionsUnion
+     with GenerateRandomExceptionsUnion
+     with GetKeyPolicyExceptionsUnion
+     with GetKeyRotationStatusExceptionsUnion
+     with GetParametersForImportExceptionsUnion
+     with ImportKeyMaterialExceptionsUnion
+     with ListAliasesExceptionsUnion
+     with ListGrantsExceptionsUnion
+     with ListKeyPoliciesExceptionsUnion
+     with ListKeysExceptionsUnion
+     with ListResourceTagsExceptionsUnion
+     with ListRetirableGrantsExceptionsUnion
+     with PutKeyPolicyExceptionsUnion
+     with ReEncryptExceptionsUnion
+     with RetireGrantExceptionsUnion
+     with RevokeGrantExceptionsUnion
+     with ScheduleKeyDeletionExceptionsUnion
+     with TagResourceExceptionsUnion
+     with UntagResourceExceptionsUnion
+     with UpdateAliasExceptionsUnion
+     with UpdateKeyDescriptionExceptionsUnion {
+  @JSName("name")
+  var name_KMSInternalException: typingsJapgolly.awsSdkClientKmsNode.awsSdkClientKmsNodeStrings.KMSInternalException = js.native
+}
+

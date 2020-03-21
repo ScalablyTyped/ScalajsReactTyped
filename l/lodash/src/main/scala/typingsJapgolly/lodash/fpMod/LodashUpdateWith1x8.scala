@@ -1,8 +1,8 @@
 package typingsJapgolly.lodash.fpMod
 
-import typingsJapgolly.lodash.lodashMod.PropertyPath
-import typingsJapgolly.lodash.lodashMod.SetWithCustomizer
-import typingsJapgolly.lodash.lodashMod.__
+import typingsJapgolly.lodash.mod.PropertyPath
+import typingsJapgolly.lodash.mod.SetWithCustomizer
+import typingsJapgolly.lodash.mod.__
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

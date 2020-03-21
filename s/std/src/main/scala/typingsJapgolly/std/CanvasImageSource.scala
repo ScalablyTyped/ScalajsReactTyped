@@ -5,11 +5,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
-  - typings.std.HTMLOrSVGImageElement
-  - typings.std.HTMLVideoElement
-  - typings.std.HTMLCanvasElement
-  - typings.std.ImageBitmap
-  - typings.std.OffscreenCanvas
+  - typingsJapgolly.std.HTMLOrSVGImageElement
+  - typingsJapgolly.std.HTMLVideoElement
+  - typingsJapgolly.std.HTMLCanvasElement
+  - typingsJapgolly.std.ImageBitmap
+  - typingsJapgolly.std.OffscreenCanvas
 */
 trait CanvasImageSource extends ImageBitmapSource
 

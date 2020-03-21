@@ -1,7 +1,7 @@
 package typingsJapgolly.lodash.fpMod
 
-import typingsJapgolly.lodash.lodashMod.ValueIterateeCustom
-import typingsJapgolly.lodash.lodashMod.ValueIteratorTypeGuard
+import typingsJapgolly.lodash.mod.ValueIterateeCustom
+import typingsJapgolly.lodash.mod.ValueIteratorTypeGuard
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

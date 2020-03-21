@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 object mobxStrings {
   @js.native
-  sealed trait `An invariant failed, however the error is obfuscated because this is an production buildDOT` extends js.Object
+  sealed trait `An invariant failedComma however the error is obfuscated because this is a production buildDot` extends js.Object
   
   @js.native
   sealed trait IObservableFactories extends js.Object
@@ -39,6 +39,9 @@ object mobxStrings {
   sealed trait never extends js.Object
   
   @js.native
+  sealed trait observable extends js.Object
+  
+  @js.native
   sealed trait observed extends js.Object
   
   @js.native
@@ -54,7 +57,7 @@ object mobxStrings {
   sealed trait update extends js.Object
   
   @scala.inline
-  def `An invariant failed, however the error is obfuscated because this is an production buildDOT`: `An invariant failed, however the error is obfuscated because this is an production buildDOT` = "An invariant failed, however the error is obfuscated because this is an production build.".asInstanceOf[`An invariant failed, however the error is obfuscated because this is an production buildDOT`]
+  def `An invariant failedComma however the error is obfuscated because this is a production buildDot`: `An invariant failedComma however the error is obfuscated because this is a production buildDot` = "An invariant failed, however the error is obfuscated because this is a production build.".asInstanceOf[`An invariant failedComma however the error is obfuscated because this is a production buildDot`]
   @scala.inline
   def IObservableFactories: IObservableFactories = "IObservableFactories".asInstanceOf[IObservableFactories]
   @scala.inline
@@ -75,6 +78,8 @@ object mobxStrings {
   def extendObservable: extendObservable = "extendObservable".asInstanceOf[extendObservable]
   @scala.inline
   def never: never = "never".asInstanceOf[never]
+  @scala.inline
+  def observable: observable = "observable".asInstanceOf[observable]
   @scala.inline
   def observed: observed = "observed".asInstanceOf[observed]
   @scala.inline

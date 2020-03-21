@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@ant-design/pro-layout" : "4.10.13"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@ant-design/pro-layout" : "4.10.13"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "react-player" : "1.15.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "react-player" : "1.15.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

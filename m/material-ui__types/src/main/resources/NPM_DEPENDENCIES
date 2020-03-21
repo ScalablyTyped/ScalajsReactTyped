@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@material-ui/types" : "5.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@material-ui/types" : "5.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

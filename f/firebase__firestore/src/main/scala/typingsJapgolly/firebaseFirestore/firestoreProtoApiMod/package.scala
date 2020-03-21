@@ -1,0 +1,66 @@
+package typingsJapgolly.firebaseFirestore
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+package object firestoreProtoApiMod {
+  type ApiClientHookFactory = js.Any
+  type ApiClientObjectMap[T] = org.scalablytyped.runtime.StringDictionary[T]
+  type ArrayValue = typingsJapgolly.firebaseFirestore.firestoreProtoApiMod.firestoreV1ApiClientInterfaces.ArrayValue
+  type BatchGetDocumentsRequest = typingsJapgolly.firebaseFirestore.firestoreProtoApiMod.firestoreV1ApiClientInterfaces.BatchGetDocumentsRequest
+  type BatchGetDocumentsResponse = typingsJapgolly.firebaseFirestore.firestoreProtoApiMod.firestoreV1ApiClientInterfaces.BatchGetDocumentsResponse
+  type BeginTransactionRequest = typingsJapgolly.firebaseFirestore.firestoreProtoApiMod.firestoreV1ApiClientInterfaces.BeginTransactionRequest
+  type BeginTransactionResponse = typingsJapgolly.firebaseFirestore.firestoreProtoApiMod.firestoreV1ApiClientInterfaces.BeginTransactionResponse
+  type CollectionSelector = typingsJapgolly.firebaseFirestore.firestoreProtoApiMod.firestoreV1ApiClientInterfaces.CollectionSelector
+  type CommitRequest = typingsJapgolly.firebaseFirestore.firestoreProtoApiMod.firestoreV1ApiClientInterfaces.CommitRequest
+  type CommitResponse = typingsJapgolly.firebaseFirestore.firestoreProtoApiMod.firestoreV1ApiClientInterfaces.CommitResponse
+  type CompositeFilter = typingsJapgolly.firebaseFirestore.firestoreProtoApiMod.firestoreV1ApiClientInterfaces.CompositeFilter
+  type Cursor = typingsJapgolly.firebaseFirestore.firestoreProtoApiMod.firestoreV1ApiClientInterfaces.Cursor
+  type Document = typingsJapgolly.firebaseFirestore.firestoreProtoApiMod.firestoreV1ApiClientInterfaces.Document
+  type DocumentChange = typingsJapgolly.firebaseFirestore.firestoreProtoApiMod.firestoreV1ApiClientInterfaces.DocumentChange
+  type DocumentDelete = typingsJapgolly.firebaseFirestore.firestoreProtoApiMod.firestoreV1ApiClientInterfaces.DocumentDelete
+  type DocumentMask = typingsJapgolly.firebaseFirestore.firestoreProtoApiMod.firestoreV1ApiClientInterfaces.DocumentMask
+  type DocumentRemove = typingsJapgolly.firebaseFirestore.firestoreProtoApiMod.firestoreV1ApiClientInterfaces.DocumentRemove
+  type DocumentTransform = typingsJapgolly.firebaseFirestore.firestoreProtoApiMod.firestoreV1ApiClientInterfaces.DocumentTransform
+  type DocumentsTarget = typingsJapgolly.firebaseFirestore.firestoreProtoApiMod.firestoreV1ApiClientInterfaces.DocumentsTarget
+  type Empty = typingsJapgolly.firebaseFirestore.firestoreProtoApiMod.firestoreV1ApiClientInterfaces.Empty
+  type ExistenceFilter = typingsJapgolly.firebaseFirestore.firestoreProtoApiMod.firestoreV1ApiClientInterfaces.ExistenceFilter
+  type FieldFilter = typingsJapgolly.firebaseFirestore.firestoreProtoApiMod.firestoreV1ApiClientInterfaces.FieldFilter
+  type FieldReference = typingsJapgolly.firebaseFirestore.firestoreProtoApiMod.firestoreV1ApiClientInterfaces.FieldReference
+  type FieldTransform = typingsJapgolly.firebaseFirestore.firestoreProtoApiMod.firestoreV1ApiClientInterfaces.FieldTransform
+  type Filter = typingsJapgolly.firebaseFirestore.firestoreProtoApiMod.firestoreV1ApiClientInterfaces.Filter
+  type Index = typingsJapgolly.firebaseFirestore.firestoreProtoApiMod.firestoreV1ApiClientInterfaces.Index
+  type IndexField = typingsJapgolly.firebaseFirestore.firestoreProtoApiMod.firestoreV1ApiClientInterfaces.IndexField
+  type LatLng = typingsJapgolly.firebaseFirestore.firestoreProtoApiMod.firestoreV1ApiClientInterfaces.LatLng
+  type ListCollectionIdsRequest = typingsJapgolly.firebaseFirestore.firestoreProtoApiMod.firestoreV1ApiClientInterfaces.ListCollectionIdsRequest
+  type ListCollectionIdsResponse = typingsJapgolly.firebaseFirestore.firestoreProtoApiMod.firestoreV1ApiClientInterfaces.ListCollectionIdsResponse
+  type ListDocumentsResponse = typingsJapgolly.firebaseFirestore.firestoreProtoApiMod.firestoreV1ApiClientInterfaces.ListDocumentsResponse
+  type ListIndexesResponse = typingsJapgolly.firebaseFirestore.firestoreProtoApiMod.firestoreV1ApiClientInterfaces.ListIndexesResponse
+  type ListenRequest = typingsJapgolly.firebaseFirestore.firestoreProtoApiMod.firestoreV1ApiClientInterfaces.ListenRequest
+  type ListenResponse = typingsJapgolly.firebaseFirestore.firestoreProtoApiMod.firestoreV1ApiClientInterfaces.ListenResponse
+  type MapValue = typingsJapgolly.firebaseFirestore.firestoreProtoApiMod.firestoreV1ApiClientInterfaces.MapValue
+  type Operation = typingsJapgolly.firebaseFirestore.firestoreProtoApiMod.firestoreV1ApiClientInterfaces.Operation
+  type Order = typingsJapgolly.firebaseFirestore.firestoreProtoApiMod.firestoreV1ApiClientInterfaces.Order
+  type Precondition = typingsJapgolly.firebaseFirestore.firestoreProtoApiMod.firestoreV1ApiClientInterfaces.Precondition
+  type Projection = typingsJapgolly.firebaseFirestore.firestoreProtoApiMod.firestoreV1ApiClientInterfaces.Projection
+  type PromiseRequestService = js.Any
+  type QueryTarget = typingsJapgolly.firebaseFirestore.firestoreProtoApiMod.firestoreV1ApiClientInterfaces.QueryTarget
+  type ReadOnly = typingsJapgolly.firebaseFirestore.firestoreProtoApiMod.firestoreV1ApiClientInterfaces.ReadOnly
+  type ReadWrite = typingsJapgolly.firebaseFirestore.firestoreProtoApiMod.firestoreV1ApiClientInterfaces.ReadWrite
+  type RollbackRequest = typingsJapgolly.firebaseFirestore.firestoreProtoApiMod.firestoreV1ApiClientInterfaces.RollbackRequest
+  type RunQueryRequest = typingsJapgolly.firebaseFirestore.firestoreProtoApiMod.firestoreV1ApiClientInterfaces.RunQueryRequest
+  type RunQueryResponse = typingsJapgolly.firebaseFirestore.firestoreProtoApiMod.firestoreV1ApiClientInterfaces.RunQueryResponse
+  type Status = typingsJapgolly.firebaseFirestore.firestoreProtoApiMod.firestoreV1ApiClientInterfaces.Status
+  type StructuredQuery = typingsJapgolly.firebaseFirestore.firestoreProtoApiMod.firestoreV1ApiClientInterfaces.StructuredQuery
+  type Target = typingsJapgolly.firebaseFirestore.firestoreProtoApiMod.firestoreV1ApiClientInterfaces.Target
+  type TargetChange = typingsJapgolly.firebaseFirestore.firestoreProtoApiMod.firestoreV1ApiClientInterfaces.TargetChange
+  type TransactionOptions = typingsJapgolly.firebaseFirestore.firestoreProtoApiMod.firestoreV1ApiClientInterfaces.TransactionOptions
+  type UnaryFilter = typingsJapgolly.firebaseFirestore.firestoreProtoApiMod.firestoreV1ApiClientInterfaces.UnaryFilter
+  type Value = typingsJapgolly.firebaseFirestore.firestoreProtoApiMod.firestoreV1ApiClientInterfaces.Value
+  type ValueNullValue = typingsJapgolly.firebaseFirestore.firebaseFirestoreStrings.NULL_VALUE
+  type Write = typingsJapgolly.firebaseFirestore.firestoreProtoApiMod.firestoreV1ApiClientInterfaces.Write
+  type WriteRequest = typingsJapgolly.firebaseFirestore.firestoreProtoApiMod.firestoreV1ApiClientInterfaces.WriteRequest
+  type WriteResponse = typingsJapgolly.firebaseFirestore.firestoreProtoApiMod.firestoreV1ApiClientInterfaces.WriteResponse
+  type WriteResult = typingsJapgolly.firebaseFirestore.firestoreProtoApiMod.firestoreV1ApiClientInterfaces.WriteResult
+}

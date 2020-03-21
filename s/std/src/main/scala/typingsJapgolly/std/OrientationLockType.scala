@@ -5,14 +5,14 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
-  - typings.std.stdStrings.any
-  - typings.std.stdStrings.natural
-  - typings.std.stdStrings.landscape
-  - typings.std.stdStrings.portrait
-  - typings.std.stdStrings.`portrait-primary`
-  - typings.std.stdStrings.`portrait-secondary`
-  - typings.std.stdStrings.`landscape-primary`
-  - typings.std.stdStrings.`landscape-secondary`
+  - typingsJapgolly.std.stdStrings.any
+  - typingsJapgolly.std.stdStrings.landscape
+  - typingsJapgolly.std.stdStrings.`landscape-primary`
+  - typingsJapgolly.std.stdStrings.`landscape-secondary`
+  - typingsJapgolly.std.stdStrings.natural
+  - typingsJapgolly.std.stdStrings.portrait
+  - typingsJapgolly.std.stdStrings.`portrait-primary`
+  - typingsJapgolly.std.stdStrings.`portrait-secondary`
 */
 trait OrientationLockType extends js.Object
 

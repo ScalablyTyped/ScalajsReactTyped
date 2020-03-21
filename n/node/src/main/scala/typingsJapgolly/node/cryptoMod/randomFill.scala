@@ -1,7 +1,7 @@
 package typingsJapgolly.node.cryptoMod
 
-import typingsJapgolly.node.Error
 import typingsJapgolly.std.DataView
+import typingsJapgolly.std.Error
 import typingsJapgolly.std.Float32Array
 import typingsJapgolly.std.Float64Array
 import typingsJapgolly.std.Int16Array

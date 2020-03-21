@@ -7,16 +7,16 @@ import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
 import japgolly.scalajs.react.raw.React.Node
 import japgolly.scalajs.react.vdom.VdomNode
 import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.antd.antdNumbers.`false`
-import typingsJapgolly.antd.libListMod.ListGridType
-import typingsJapgolly.antd.libListMod.ListItemLayout
-import typingsJapgolly.antd.libListMod.ListLocale
-import typingsJapgolly.antd.libListMod.ListProps
-import typingsJapgolly.antd.libListMod.ListSize
-import typingsJapgolly.antd.libListMod.default
-import typingsJapgolly.antd.libPaginationPaginationMod.PaginationConfig
-import typingsJapgolly.antd.libSpinMod.SpinProps
-import typingsJapgolly.react.reactMod.CSSProperties
+import typingsJapgolly.antd.antdBooleans.`false`
+import typingsJapgolly.antd.listMod.ListGridType
+import typingsJapgolly.antd.listMod.ListItemLayout
+import typingsJapgolly.antd.listMod.ListLocale
+import typingsJapgolly.antd.listMod.ListProps
+import typingsJapgolly.antd.listMod.ListSize
+import typingsJapgolly.antd.listMod.default
+import typingsJapgolly.antd.paginationPaginationMod.PaginationConfig
+import typingsJapgolly.antd.spinMod.SpinProps
+import typingsJapgolly.react.mod.CSSProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -43,7 +43,7 @@ object List {
     split: js.UndefOr[Boolean] = js.undefined,
     style: CSSProperties = null,
     key: js.UndefOr[Key] = js.undefined,
-    overrides: StringDictionary[js.Any] = null
+    _overrides: StringDictionary[js.Any] = null
   )(
     children: ChildArg*
   ): UnmountedWithRoot[ListProps[T], default[T], Unit, ListProps[T]] = {
@@ -69,13 +69,13 @@ object List {
     if (!js.isUndefined(split)) __obj.updateDynamic("split")(split.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (overrides != null) js.Dynamic.global.Object.assign(__obj, overrides)
+    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
   
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antd.libListMod.ListProps[T], 
+  typingsJapgolly.antd.listMod.ListProps[T], 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antd.libListMod.default[T]](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.antd.libListMod.ListProps[T]])(children: _*)
+  typingsJapgolly.antd.listMod.default[T]](this.componentImport)
+    f(__obj.asInstanceOf[typingsJapgolly.antd.listMod.ListProps[T]])(children: _*)
   }
   @JSImport("antd/lib/list", JSImport.Default)
   @js.native

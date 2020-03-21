@@ -2,13 +2,13 @@ package typingsJapgolly.node.http2Mod
 
 import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.node.streamMod.Duplex
-import typingsJapgolly.node.urlMod.URL
+import typingsJapgolly.node.urlMod.URL_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SessionOptions extends js.Object {
-  var createConnection: js.UndefOr[js.Function2[/* authority */ URL, /* option */ this.type, Duplex]] = js.undefined
+  var createConnection: js.UndefOr[js.Function2[/* authority */ URL_, /* option */ this.type, Duplex]] = js.undefined
   var maxDeflateDynamicTableSize: js.UndefOr[Double] = js.undefined
   var maxHeaderListPairs: js.UndefOr[Double] = js.undefined
   var maxOutstandingPings: js.UndefOr[Double] = js.undefined
@@ -23,7 +23,7 @@ trait SessionOptions extends js.Object {
 object SessionOptions {
   @scala.inline
   def apply(
-    createConnection: (/* authority */ URL, SessionOptions) => CallbackTo[Duplex] = null,
+    createConnection: (/* authority */ URL_, SessionOptions) => CallbackTo[Duplex] = null,
     maxDeflateDynamicTableSize: Int | Double = null,
     maxHeaderListPairs: Int | Double = null,
     maxOutstandingPings: Int | Double = null,
@@ -35,7 +35,7 @@ object SessionOptions {
     settings: Settings = null
   ): SessionOptions = {
     val __obj = js.Dynamic.literal()
-    if (createConnection != null) __obj.updateDynamic("createConnection")(js.Any.fromFunction2((t0: /* authority */ typingsJapgolly.node.urlMod.URL, t1: typingsJapgolly.node.http2Mod.SessionOptions) => createConnection(t0, t1).runNow()))
+    if (createConnection != null) __obj.updateDynamic("createConnection")(js.Any.fromFunction2((t0: /* authority */ typingsJapgolly.node.urlMod.URL_, t1: typingsJapgolly.node.http2Mod.SessionOptions) => createConnection(t0, t1).runNow()))
     if (maxDeflateDynamicTableSize != null) __obj.updateDynamic("maxDeflateDynamicTableSize")(maxDeflateDynamicTableSize.asInstanceOf[js.Any])
     if (maxHeaderListPairs != null) __obj.updateDynamic("maxHeaderListPairs")(maxHeaderListPairs.asInstanceOf[js.Any])
     if (maxOutstandingPings != null) __obj.updateDynamic("maxOutstandingPings")(maxOutstandingPings.asInstanceOf[js.Any])

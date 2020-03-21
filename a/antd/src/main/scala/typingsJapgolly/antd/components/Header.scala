@@ -1,58 +1,56 @@
 package typingsJapgolly.antd.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CallbackTo
 import japgolly.scalajs.react.CtorType.ChildArg
 import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import japgolly.scalajs.react.raw.React.Node
+import japgolly.scalajs.react.component.Js.MountedWithRawType
+import japgolly.scalajs.react.component.Js.RawMounted
+import japgolly.scalajs.react.component.Js.UnmountedSimple
 import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.antd.libCalendarHeaderMod.HeaderProps
-import typingsJapgolly.antd.libCalendarHeaderMod.RenderHeader
-import typingsJapgolly.antd.libCalendarHeaderMod.default
-import typingsJapgolly.moment.momentMod.Moment
+import typingsJapgolly.antd.generateCalendarMod.CalendarMode
+import typingsJapgolly.antd.headerMod.CalendarHeaderProps
+import typingsJapgolly.rcPicker.generateMod.GenerateConfig
+import typingsJapgolly.rcPicker.interfaceMod.Locale
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 object Header {
-  def apply(
-    value: Moment,
-    fullscreen: js.UndefOr[Boolean] = js.undefined,
-    headerRender: /* headerRender */ RenderHeader => CallbackTo[Node] = null,
-    locale: js.Any = null,
-    onTypeChange: /* type */ String => Callback = null,
-    onValueChange: /* value */ Moment => Callback = null,
-    prefixCls: String = null,
-    `type`: String = null,
-    validRange: js.Tuple2[Moment, Moment] = null,
-    yearSelectOffset: Int | Double = null,
-    yearSelectTotal: Int | Double = null,
+  def apply[DateType](
+    fullscreen: Boolean,
+    generateConfig: GenerateConfig[DateType],
+    locale: Locale,
+    mode: CalendarMode,
+    prefixCls: String,
+    value: DateType,
+    onChange: DateType => Callback,
+    onModeChange: CalendarMode => Callback,
+    validRange: js.Tuple2[DateType, DateType] = null,
     key: js.UndefOr[Key] = js.undefined,
-    overrides: StringDictionary[js.Any] = null
+    _overrides: StringDictionary[js.Any] = null
   )(
     children: ChildArg*
-  ): UnmountedWithRoot[HeaderProps, default, Unit, HeaderProps] = {
-    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
+  ): UnmountedSimple[
+    CalendarHeaderProps[DateType], 
+    MountedWithRawType[
+      CalendarHeaderProps[DateType], 
+      js.Object, 
+      RawMounted[CalendarHeaderProps[DateType], js.Object]
+    ]
+  ] = {
+    val __obj = js.Dynamic.literal(fullscreen = fullscreen.asInstanceOf[js.Any], generateConfig = generateConfig.asInstanceOf[js.Any], locale = locale.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], prefixCls = prefixCls.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
   
-      if (!js.isUndefined(fullscreen)) __obj.updateDynamic("fullscreen")(fullscreen.asInstanceOf[js.Any])
-    if (headerRender != null) __obj.updateDynamic("headerRender")(js.Any.fromFunction1((t0: /* headerRender */ typingsJapgolly.antd.libCalendarHeaderMod.RenderHeader) => headerRender(t0).runNow()))
-    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
-    if (onTypeChange != null) __obj.updateDynamic("onTypeChange")(js.Any.fromFunction1((t0: /* type */ java.lang.String) => onTypeChange(t0).runNow()))
-    if (onValueChange != null) __obj.updateDynamic("onValueChange")(js.Any.fromFunction1((t0: /* value */ typingsJapgolly.moment.momentMod.Moment) => onValueChange(t0).runNow()))
-    if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("onChange")(js.Any.fromFunction1((t0: DateType) => onChange(t0).runNow()))
+    __obj.updateDynamic("onModeChange")(js.Any.fromFunction1((t0: typingsJapgolly.antd.generateCalendarMod.CalendarMode) => onModeChange(t0).runNow()))
     if (validRange != null) __obj.updateDynamic("validRange")(validRange.asInstanceOf[js.Any])
-    if (yearSelectOffset != null) __obj.updateDynamic("yearSelectOffset")(yearSelectOffset.asInstanceOf[js.Any])
-    if (yearSelectTotal != null) __obj.updateDynamic("yearSelectTotal")(yearSelectTotal.asInstanceOf[js.Any])
     key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (overrides != null) js.Dynamic.global.Object.assign(__obj, overrides)
+    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
   
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antd.libCalendarHeaderMod.HeaderProps, 
+    val f = japgolly.scalajs.react.JsComponent[
+  typingsJapgolly.antd.headerMod.CalendarHeaderProps[DateType], 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antd.libCalendarHeaderMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.antd.libCalendarHeaderMod.HeaderProps])(children: _*)
+  js.Object](this.componentImport)
+    f(__obj.asInstanceOf[typingsJapgolly.antd.headerMod.CalendarHeaderProps[DateType]])(children: _*)
   }
   @JSImport("antd/lib/calendar/Header", JSImport.Default)
   @js.native

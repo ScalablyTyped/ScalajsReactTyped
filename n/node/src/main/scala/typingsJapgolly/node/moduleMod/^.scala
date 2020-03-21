@@ -1,30 +1,32 @@
 package typingsJapgolly.node.moduleMod
 
-import typingsJapgolly.node.NodeJS.Module
 import typingsJapgolly.node.NodeRequire
-import typingsJapgolly.node.TypeofClassModule
+import typingsJapgolly.node.TypeofModule
+import typingsJapgolly.node.urlMod.URL_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("module", JSImport.Namespace)
 @js.native
-class ^ protected () extends Module {
-  def this(id: java.lang.String) = this()
-  def this(id: java.lang.String, parent: Module) = this()
+class ^ protected ()
+  extends typingsJapgolly.node.NodeJS.Module {
+  def this(id: String) = this()
+  def this(id: String, parent: Module) = this()
 }
 
 @JSImport("module", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  var Module: TypeofClassModule = js.native
-  var builtinModules: js.Array[java.lang.String] = js.native
-  def createRequire(path: java.lang.String): NodeRequire = js.native
+  var Module: TypeofModule = js.native
+  var builtinModules: js.Array[String] = js.native
+  def createRequire(path: String): NodeRequire = js.native
+  def createRequire(path: URL_): NodeRequire = js.native
   /**
     * @deprecated Deprecated since: v12.2.0. Please use createRequire() instead.
     */
-  def createRequireFromPath(path: java.lang.String): NodeRequire = js.native
+  def createRequireFromPath(path: String): NodeRequire = js.native
   def runMain(): Unit = js.native
-  def wrap(code: java.lang.String): java.lang.String = js.native
+  def wrap(code: String): String = js.native
 }
 

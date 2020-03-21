@@ -1,0 +1,16 @@
+package typingsJapgolly.stardustUiReactComponentEventListener.typesMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/* Rewritten from type alias, can be one of: 
+  - typingsJapgolly.stardustUiReactComponentEventListener.stardustUiReactComponentEventListenerStrings.fullscreenchange
+  - typingsJapgolly.stardustUiReactComponentEventListener.stardustUiReactComponentEventListenerStrings.fullscreenerror
+  - typingsJapgolly.stardustUiReactComponentEventListener.stardustUiReactComponentEventListenerStrings.pointerlockchange
+  - typingsJapgolly.stardustUiReactComponentEventListener.stardustUiReactComponentEventListenerStrings.pointerlockerror
+  - typingsJapgolly.stardustUiReactComponentEventListener.stardustUiReactComponentEventListenerStrings.readystatechange
+  - typingsJapgolly.stardustUiReactComponentEventListener.stardustUiReactComponentEventListenerStrings.visibilitychange
+*/
+trait EventTypes extends js.Object
+

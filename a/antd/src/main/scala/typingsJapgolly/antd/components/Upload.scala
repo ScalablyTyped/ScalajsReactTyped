@@ -5,6 +5,7 @@ import japgolly.scalajs.react.CallbackTo
 import japgolly.scalajs.react.CtorType.ChildArg
 import japgolly.scalajs.react.Key
 import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
+import japgolly.scalajs.react.raw.React.Node
 import org.scalablytyped.runtime.StringDictionary
 import org.scalajs.dom.raw.Blob
 import org.scalajs.dom.raw.File
@@ -12,18 +13,18 @@ import typingsJapgolly.antd.antdStrings.POST
 import typingsJapgolly.antd.antdStrings.PUT
 import typingsJapgolly.antd.antdStrings.post_
 import typingsJapgolly.antd.antdStrings.put_
-import typingsJapgolly.antd.libUploadInterfaceMod.HttpRequestHeader
-import typingsJapgolly.antd.libUploadInterfaceMod.RcCustomRequestOptions
-import typingsJapgolly.antd.libUploadInterfaceMod.RcFile
-import typingsJapgolly.antd.libUploadInterfaceMod.ShowUploadListInterface
-import typingsJapgolly.antd.libUploadInterfaceMod.UploadChangeParam
-import typingsJapgolly.antd.libUploadInterfaceMod.UploadFile
-import typingsJapgolly.antd.libUploadInterfaceMod.UploadListType
-import typingsJapgolly.antd.libUploadInterfaceMod.UploadLocale
-import typingsJapgolly.antd.libUploadInterfaceMod.UploadProps
-import typingsJapgolly.antd.libUploadInterfaceMod.UploadType
-import typingsJapgolly.antd.libUploadMod.default
-import typingsJapgolly.react.reactMod.CSSProperties
+import typingsJapgolly.antd.uploadInterfaceMod.HttpRequestHeader
+import typingsJapgolly.antd.uploadInterfaceMod.RcCustomRequestOptions
+import typingsJapgolly.antd.uploadInterfaceMod.RcFile
+import typingsJapgolly.antd.uploadInterfaceMod.ShowUploadListInterface
+import typingsJapgolly.antd.uploadInterfaceMod.UploadChangeParam
+import typingsJapgolly.antd.uploadInterfaceMod.UploadFile
+import typingsJapgolly.antd.uploadInterfaceMod.UploadListType
+import typingsJapgolly.antd.uploadInterfaceMod.UploadLocale
+import typingsJapgolly.antd.uploadInterfaceMod.UploadProps
+import typingsJapgolly.antd.uploadInterfaceMod.UploadType
+import typingsJapgolly.antd.uploadMod.default
+import typingsJapgolly.react.mod.CSSProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -41,6 +42,7 @@ object Upload {
     disabled: js.UndefOr[Boolean] = js.undefined,
     fileList: js.Array[UploadFile[_]] = null,
     headers: HttpRequestHeader = null,
+    iconRender: (/* file */ UploadFile[js.Any], /* listType */ js.UndefOr[UploadListType]) => CallbackTo[Node] = null,
     id: String = null,
     listType: UploadListType = null,
     locale: UploadLocale = null,
@@ -61,7 +63,7 @@ object Upload {
     `type`: UploadType = null,
     withCredentials: js.UndefOr[Boolean] = js.undefined,
     key: js.UndefOr[Key] = js.undefined,
-    overrides: StringDictionary[js.Any] = null
+    _overrides: StringDictionary[js.Any] = null
   )(
     children: ChildArg*
   ): UnmountedWithRoot[UploadProps, default, Unit, UploadProps] = {
@@ -69,42 +71,43 @@ object Upload {
   
       if (accept != null) __obj.updateDynamic("accept")(accept.asInstanceOf[js.Any])
     if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
-    if (beforeUpload != null) __obj.updateDynamic("beforeUpload")(js.Any.fromFunction2((t0: /* file */ typingsJapgolly.antd.libUploadInterfaceMod.RcFile, t1: /* FileList */ js.Array[typingsJapgolly.antd.libUploadInterfaceMod.RcFile]) => beforeUpload(t0, t1).runNow()))
+    if (beforeUpload != null) __obj.updateDynamic("beforeUpload")(js.Any.fromFunction2((t0: /* file */ typingsJapgolly.antd.uploadInterfaceMod.RcFile, t1: /* FileList */ js.Array[typingsJapgolly.antd.uploadInterfaceMod.RcFile]) => beforeUpload(t0, t1).runNow()))
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (customRequest != null) __obj.updateDynamic("customRequest")(js.Any.fromFunction1((t0: /* options */ typingsJapgolly.antd.libUploadInterfaceMod.RcCustomRequestOptions) => customRequest(t0).runNow()))
+    if (customRequest != null) __obj.updateDynamic("customRequest")(js.Any.fromFunction1((t0: /* options */ typingsJapgolly.antd.uploadInterfaceMod.RcCustomRequestOptions) => customRequest(t0).runNow()))
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (defaultFileList != null) __obj.updateDynamic("defaultFileList")(defaultFileList.asInstanceOf[js.Any])
     if (!js.isUndefined(directory)) __obj.updateDynamic("directory")(directory.asInstanceOf[js.Any])
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
     if (fileList != null) __obj.updateDynamic("fileList")(fileList.asInstanceOf[js.Any])
     if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (iconRender != null) __obj.updateDynamic("iconRender")(js.Any.fromFunction2((t0: /* file */ typingsJapgolly.antd.uploadInterfaceMod.UploadFile[js.Any], t1: /* listType */ js.UndefOr[typingsJapgolly.antd.uploadInterfaceMod.UploadListType]) => iconRender(t0, t1).runNow()))
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (listType != null) __obj.updateDynamic("listType")(listType.asInstanceOf[js.Any])
     if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
     if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
     if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1((t0: /* info */ typingsJapgolly.antd.libUploadInterfaceMod.UploadChangeParam[typingsJapgolly.antd.libUploadInterfaceMod.UploadFile[js.Any]]) => onChange(t0).runNow()))
-    if (onDownload != null) __obj.updateDynamic("onDownload")(js.Any.fromFunction1((t0: /* file */ typingsJapgolly.antd.libUploadInterfaceMod.UploadFile[js.Any]) => onDownload(t0).runNow()))
-    if (onPreview != null) __obj.updateDynamic("onPreview")(js.Any.fromFunction1((t0: /* file */ typingsJapgolly.antd.libUploadInterfaceMod.UploadFile[js.Any]) => onPreview(t0).runNow()))
-    if (onRemove != null) __obj.updateDynamic("onRemove")(js.Any.fromFunction1((t0: /* file */ typingsJapgolly.antd.libUploadInterfaceMod.UploadFile[js.Any]) => onRemove(t0).runNow()))
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1((t0: /* info */ typingsJapgolly.antd.uploadInterfaceMod.UploadChangeParam[typingsJapgolly.antd.uploadInterfaceMod.UploadFile[js.Any]]) => onChange(t0).runNow()))
+    if (onDownload != null) __obj.updateDynamic("onDownload")(js.Any.fromFunction1((t0: /* file */ typingsJapgolly.antd.uploadInterfaceMod.UploadFile[js.Any]) => onDownload(t0).runNow()))
+    if (onPreview != null) __obj.updateDynamic("onPreview")(js.Any.fromFunction1((t0: /* file */ typingsJapgolly.antd.uploadInterfaceMod.UploadFile[js.Any]) => onPreview(t0).runNow()))
+    if (onRemove != null) __obj.updateDynamic("onRemove")(js.Any.fromFunction1((t0: /* file */ typingsJapgolly.antd.uploadInterfaceMod.UploadFile[js.Any]) => onRemove(t0).runNow()))
     if (!js.isUndefined(openFileDialogOnClick)) __obj.updateDynamic("openFileDialogOnClick")(openFileDialogOnClick.asInstanceOf[js.Any])
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
     if (previewFile != null) __obj.updateDynamic("previewFile")(js.Any.fromFunction1((t0: /* file */ org.scalajs.dom.raw.File | org.scalajs.dom.raw.Blob) => previewFile(t0).runNow()))
     if (showUploadList != null) __obj.updateDynamic("showUploadList")(showUploadList.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (!js.isUndefined(supportServerRender)) __obj.updateDynamic("supportServerRender")(supportServerRender.asInstanceOf[js.Any])
-    if (transformFile != null) __obj.updateDynamic("transformFile")(js.Any.fromFunction1((t0: /* file */ typingsJapgolly.antd.libUploadInterfaceMod.RcFile) => transformFile(t0).runNow()))
+    if (transformFile != null) __obj.updateDynamic("transformFile")(js.Any.fromFunction1((t0: /* file */ typingsJapgolly.antd.uploadInterfaceMod.RcFile) => transformFile(t0).runNow()))
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (!js.isUndefined(withCredentials)) __obj.updateDynamic("withCredentials")(withCredentials.asInstanceOf[js.Any])
     key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (overrides != null) js.Dynamic.global.Object.assign(__obj, overrides)
+    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
   
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antd.libUploadInterfaceMod.UploadProps, 
+  typingsJapgolly.antd.uploadInterfaceMod.UploadProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antd.libUploadMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.antd.libUploadInterfaceMod.UploadProps])(children: _*)
+  typingsJapgolly.antd.uploadMod.default](this.componentImport)
+    f(__obj.asInstanceOf[typingsJapgolly.antd.uploadInterfaceMod.UploadProps])(children: _*)
   }
   @JSImport("antd/lib/upload", JSImport.Default)
   @js.native

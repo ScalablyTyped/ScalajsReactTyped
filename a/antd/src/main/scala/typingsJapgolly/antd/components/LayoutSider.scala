@@ -28,11 +28,12 @@ import typingsJapgolly.antd.antdStrings.sm
 import typingsJapgolly.antd.antdStrings.xl
 import typingsJapgolly.antd.antdStrings.xs
 import typingsJapgolly.antd.antdStrings.xxl
-import typingsJapgolly.antd.libLayoutSiderMod.CollapseType
-import typingsJapgolly.antd.libLayoutSiderMod.SiderProps
-import typingsJapgolly.antd.libLayoutSiderMod.SiderTheme
-import typingsJapgolly.react.Anon_Html
-import typingsJapgolly.react.reactMod.CSSProperties
+import typingsJapgolly.antd.siderMod.CollapseType
+import typingsJapgolly.antd.siderMod.SiderProps
+import typingsJapgolly.antd.siderMod.SiderTheme
+import typingsJapgolly.react.AnonHtml
+import typingsJapgolly.react.mod.Booleanish
+import typingsJapgolly.react.mod.CSSProperties
 import typingsJapgolly.react.reactStrings.`additions text`
 import typingsJapgolly.react.reactStrings.`inline`
 import typingsJapgolly.react.reactStrings.additions
@@ -50,6 +51,7 @@ import typingsJapgolly.react.reactStrings.execute
 import typingsJapgolly.react.reactStrings.grammar
 import typingsJapgolly.react.reactStrings.grid
 import typingsJapgolly.react.reactStrings.horizontal
+import typingsJapgolly.react.reactStrings.inherit
 import typingsJapgolly.react.reactStrings.link
 import typingsJapgolly.react.reactStrings.list
 import typingsJapgolly.react.reactStrings.listbox
@@ -142,9 +144,9 @@ object LayoutSider {
     collapsedWidth: Double | String = null,
     collapsible: js.UndefOr[Boolean] = js.undefined,
     color: String = null,
-    contentEditable: js.UndefOr[Boolean] = js.undefined,
+    contentEditable: Booleanish | inherit = null,
     contextMenu: String = null,
-    dangerouslySetInnerHTML: Anon_Html = null,
+    dangerouslySetInnerHTML: AnonHtml = null,
     datatype: String = null,
     defaultChecked: js.UndefOr[Boolean] = js.undefined,
     defaultCollapsed: js.UndefOr[Boolean] = js.undefined,
@@ -269,7 +271,7 @@ object LayoutSider {
     width: Double | String = null,
     zeroWidthTriggerStyle: CSSProperties = null,
     key: js.UndefOr[Key] = js.undefined,
-    overrides: StringDictionary[js.Any] = null
+    _overrides: StringDictionary[js.Any] = null
   )(
     children: ChildArg*
   ): UnmountedSimple[
@@ -337,7 +339,7 @@ object LayoutSider {
     if (collapsedWidth != null) __obj.updateDynamic("collapsedWidth")(collapsedWidth.asInstanceOf[js.Any])
     if (!js.isUndefined(collapsible)) __obj.updateDynamic("collapsible")(collapsible.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (!js.isUndefined(contentEditable)) __obj.updateDynamic("contentEditable")(contentEditable.asInstanceOf[js.Any])
+    if (contentEditable != null) __obj.updateDynamic("contentEditable")(contentEditable.asInstanceOf[js.Any])
     if (contextMenu != null) __obj.updateDynamic("contextMenu")(contextMenu.asInstanceOf[js.Any])
     if (dangerouslySetInnerHTML != null) __obj.updateDynamic("dangerouslySetInnerHTML")(dangerouslySetInnerHTML.asInstanceOf[js.Any])
     if (datatype != null) __obj.updateDynamic("datatype")(datatype.asInstanceOf[js.Any])
@@ -369,7 +371,7 @@ object LayoutSider {
     if (onCanPlayThrough != null) __obj.updateDynamic("onCanPlayThrough")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[org.scalajs.dom.raw.HTMLDivElement]) => onCanPlayThrough(t0).runNow()))
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[org.scalajs.dom.raw.HTMLDivElement]) => onChange(t0).runNow()))
     if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactMouseEventFrom[org.scalajs.dom.raw.HTMLDivElement]) => onClick(t0).runNow()))
-    if (onCollapse != null) __obj.updateDynamic("onCollapse")(js.Any.fromFunction2((t0: /* collapsed */ scala.Boolean, t1: /* type */ typingsJapgolly.antd.libLayoutSiderMod.CollapseType) => onCollapse(t0, t1).runNow()))
+    if (onCollapse != null) __obj.updateDynamic("onCollapse")(js.Any.fromFunction2((t0: /* collapsed */ scala.Boolean, t1: /* type */ typingsJapgolly.antd.siderMod.CollapseType) => onCollapse(t0, t1).runNow()))
     if (onCompositionEnd != null) __obj.updateDynamic("onCompositionEnd")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactCompositionEventFrom[org.scalajs.dom.raw.HTMLDivElement]) => onCompositionEnd(t0).runNow()))
     if (onCompositionStart != null) __obj.updateDynamic("onCompositionStart")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactCompositionEventFrom[org.scalajs.dom.raw.HTMLDivElement]) => onCompositionStart(t0).runNow()))
     if (onCompositionUpdate != null) __obj.updateDynamic("onCompositionUpdate")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactCompositionEventFrom[org.scalajs.dom.raw.HTMLDivElement]) => onCompositionUpdate(t0).runNow()))
@@ -464,13 +466,13 @@ object LayoutSider {
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     if (zeroWidthTriggerStyle != null) __obj.updateDynamic("zeroWidthTriggerStyle")(zeroWidthTriggerStyle.asInstanceOf[js.Any])
     key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (overrides != null) js.Dynamic.global.Object.assign(__obj, overrides)
+    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
   
     val f = japgolly.scalajs.react.JsComponent[
-  typingsJapgolly.antd.libLayoutSiderMod.SiderProps, 
+  typingsJapgolly.antd.siderMod.SiderProps, 
   japgolly.scalajs.react.Children.Varargs, 
   js.Object](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.antd.libLayoutSiderMod.SiderProps])(children: _*)
+    f(__obj.asInstanceOf[typingsJapgolly.antd.siderMod.SiderProps])(children: _*)
   }
   @JSImport("antd", "Layout.Sider")
   @js.native

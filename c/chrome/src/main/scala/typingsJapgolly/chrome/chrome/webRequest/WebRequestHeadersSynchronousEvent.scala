@@ -1,0 +1,21 @@
+package typingsJapgolly.chrome.chrome.webRequest
+
+import typingsJapgolly.chrome.chrome.events.Event
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@js.native
+trait WebRequestHeadersSynchronousEvent
+  extends Event[js.Function1[/* details */ WebRequestHeadersDetails, BlockingResponse | Unit]] {
+  def addListener(
+    callback: js.Function1[/* details */ WebRequestHeadersDetails, BlockingResponse | Unit],
+    filter: RequestFilter
+  ): Unit = js.native
+  def addListener(
+    callback: js.Function1[/* details */ WebRequestHeadersDetails, BlockingResponse | Unit],
+    filter: RequestFilter,
+    opt_extraInfoSpec: js.Array[String]
+  ): Unit = js.native
+}
+

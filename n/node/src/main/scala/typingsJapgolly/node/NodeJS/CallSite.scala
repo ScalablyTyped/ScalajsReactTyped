@@ -14,11 +14,11 @@ trait CallSite extends js.Object {
     * A call site object representing the location where eval was called
     * [if this function was created using a call to eval]
     */
-  def getEvalOrigin(): js.UndefOr[java.lang.String]
+  def getEvalOrigin(): js.UndefOr[String]
   /**
     * Name of the script [if this function was defined in a script]
     */
-  def getFileName(): java.lang.String | Null
+  def getFileName(): String | Null
   /**
     * Current function
     */
@@ -28,7 +28,7 @@ trait CallSite extends js.Object {
     * If a name property is not available an attempt will be made to try
     * to infer a name from the function's context.
     */
-  def getFunctionName(): java.lang.String | Null
+  def getFunctionName(): String | Null
   /**
     * Current line number [if this function was defined in a script]
     */
@@ -37,7 +37,7 @@ trait CallSite extends js.Object {
     * Name of the property [of "this" or one of its prototypes] that holds
     * the current function
     */
-  def getMethodName(): java.lang.String | Null
+  def getMethodName(): String | Null
   /**
     * Value of "this"
     */
@@ -48,7 +48,7 @@ trait CallSite extends js.Object {
     * "this", if available.  Otherwise the object's [[Class]] internal
     * property.
     */
-  def getTypeName(): java.lang.String | Null
+  def getTypeName(): String | Null
   /**
     * Is this a constructor call?
     */
@@ -71,14 +71,14 @@ object CallSite {
   @scala.inline
   def apply(
     getColumnNumber: CallbackTo[Double | Null],
-    getEvalOrigin: CallbackTo[js.UndefOr[java.lang.String]],
-    getFileName: CallbackTo[java.lang.String | Null],
+    getEvalOrigin: CallbackTo[js.UndefOr[String]],
+    getFileName: CallbackTo[String | Null],
     getFunction: CallbackTo[js.UndefOr[js.Function]],
-    getFunctionName: CallbackTo[java.lang.String | Null],
+    getFunctionName: CallbackTo[String | Null],
     getLineNumber: CallbackTo[Double | Null],
-    getMethodName: CallbackTo[java.lang.String | Null],
+    getMethodName: CallbackTo[String | Null],
     getThis: CallbackTo[js.Any],
-    getTypeName: CallbackTo[java.lang.String | Null],
+    getTypeName: CallbackTo[String | Null],
     isConstructor: CallbackTo[Boolean],
     isEval: CallbackTo[Boolean],
     isNative: CallbackTo[Boolean],

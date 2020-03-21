@@ -1,16 +1,20 @@
 package typingsJapgolly.lodash.fpMod
 
-import typingsJapgolly.lodash.lodashMod.Dictionary
-import typingsJapgolly.lodash.lodashMod.List
-import typingsJapgolly.lodash.lodashMod.ValueIteratee
-import typingsJapgolly.lodash.lodashMod.__
+import typingsJapgolly.lodash.mod.Dictionary
+import typingsJapgolly.lodash.mod.List
+import typingsJapgolly.lodash.mod.ValueIteratee
+import typingsJapgolly.lodash.mod.__
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
 trait LodashCountBy extends js.Object {
-  def apply[T](iteratee: ValueIteratee[T]): Dictionary[Double] = js.native
+  def apply[T /* <: js.Object */](
+    iteratee: ValueIteratee[
+      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
+    ]
+  ): Dictionary[Double] = js.native
   def apply[T /* <: js.Object */](
     iteratee: ValueIteratee[
       /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any

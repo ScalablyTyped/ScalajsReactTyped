@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "protractor" : "5.4.3"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "protractor" : "5.4.3"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

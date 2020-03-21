@@ -1,9 +1,9 @@
 package typingsJapgolly.lodash.fpMod
 
-import typingsJapgolly.lodash.lodashMod.List
-import typingsJapgolly.lodash.lodashMod.ValueIterateeCustom
-import typingsJapgolly.lodash.lodashMod.ValueIteratorTypeGuard
-import typingsJapgolly.lodash.lodashMod.__
+import typingsJapgolly.lodash.mod.List
+import typingsJapgolly.lodash.mod.ValueIterateeCustom
+import typingsJapgolly.lodash.mod.ValueIteratorTypeGuard
+import typingsJapgolly.lodash.mod.__
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -24,7 +24,7 @@ trait LodashFindLast extends js.Object {
   def apply[T /* <: js.Object */](predicate: __): LodashFindLast3x2[T] = js.native
   def apply[T /* <: js.Object */](predicate: __, collection: T): LodashFindLast3x2[T] = js.native
   def apply[T](predicate: __, collection: List[T]): LodashFindLast1x2[T] = js.native
-  def apply[T, S /* <: T */](predicate: ValueIteratorTypeGuard[T, S]): js.UndefOr[S] = js.native
+  def apply[T, S /* <: T */](predicate: ValueIteratorTypeGuard[T, S]): LodashFindLast1x1[T, S] = js.native
   def apply[T /* <: js.Object */, S /* <: /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any */](
     predicate: ValueIteratorTypeGuard[
       /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any, 

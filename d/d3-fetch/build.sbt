@@ -1,16 +1,15 @@
-organization := "org.gulliblytyped.japgolly"
+organization := "org.scalablytyped.japgolly"
 name := "d3-fetch"
-version := "1.1-dt-20181228Z-5c0681"
-scalaVersion := "2.12.10"
+version := "1.1-dt-20200225Z-5305ae"
+scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.github.japgolly.scalajs-react" %%% "core" % "1.4.2",
+  "com.github.japgolly.scalajs-react" %%% "core" % "1.5.0",
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.gulliblytyped.japgolly" %%% "d3-dsv" % "1.0-dt-20190326Z-00701d",
-  "org.gulliblytyped.japgolly" %%% "std" % "3.7-ed3398")
+  "org.scalablytyped.japgolly" %%% "d3-dsv" % "1.0-dt-20200225Z-3a5285",
+  "org.scalablytyped.japgolly" %%% "std" % "3.8-8884a5")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
+scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
 bintrayRepository := "ScalajsReactTyped"
 resolvers += Resolver.bintrayRepo("oyvindberg", "ScalajsReactTyped")
-        

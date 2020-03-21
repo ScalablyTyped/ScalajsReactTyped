@@ -5,10 +5,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
-  - typings.std.stdStrings.`line-left`
-  - typings.std.stdStrings.center
-  - typings.std.stdStrings.`line-right`
-  - typings.std.stdStrings.auto
+  - typingsJapgolly.std.stdStrings.auto
+  - typingsJapgolly.std.stdStrings.center
+  - typingsJapgolly.std.stdStrings.`line-left`
+  - typingsJapgolly.std.stdStrings.`line-right`
 */
 trait PositionAlignSetting extends js.Object
 

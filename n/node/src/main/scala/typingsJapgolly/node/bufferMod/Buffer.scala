@@ -2,6 +2,8 @@ package typingsJapgolly.node.bufferMod
 
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
+import typingsJapgolly.node.AnonToPrimitive
+import typingsJapgolly.node.AnonValueOf
 import typingsJapgolly.node.BufferEncoding
 import typingsJapgolly.node.NodeJS.ArrayBufferView
 import typingsJapgolly.node.SharedArrayBuffer
@@ -22,19 +24,15 @@ class Buffer protected ()
     * @param encoding encoding to use, optional.  Default is 'utf8'
     * @deprecated since v10.0.0 - Use `Buffer.from(string[, encoding])` instead.
     */
-  def this(str: java.lang.String) = this()
-  def this(str: java.lang.String, encoding: BufferEncoding) = this()
+  def this(str: String) = this()
+  def this(str: String, encoding: BufferEncoding) = this()
 }
 
 @JSImport("buffer", "Buffer")
 @js.native
 object Buffer
-  extends Instantiable1[/* str */ java.lang.String, typingsJapgolly.node.Buffer]
-     with Instantiable2[
-      /* str */ java.lang.String, 
-      /* encoding */ BufferEncoding, 
-      typingsJapgolly.node.Buffer
-    ] {
+  extends Instantiable1[/* str */ String, typingsJapgolly.node.Buffer]
+     with Instantiable2[/* str */ String, /* encoding */ BufferEncoding, typingsJapgolly.node.Buffer] {
   /**
     * This is the number of bytes used to determine the size of pre-allocated, internal Buffer instances used for pooling. This value may be modified.
     */
@@ -48,8 +46,8 @@ object Buffer
     * @param encoding encoding used for call to buf.fill while initalizing
     */
   def alloc(size: Double): typingsJapgolly.node.Buffer = js.native
-  def alloc(size: Double, fill: java.lang.String): typingsJapgolly.node.Buffer = js.native
-  def alloc(size: Double, fill: java.lang.String, encoding: BufferEncoding): typingsJapgolly.node.Buffer = js.native
+  def alloc(size: Double, fill: String): typingsJapgolly.node.Buffer = js.native
+  def alloc(size: Double, fill: String, encoding: BufferEncoding): typingsJapgolly.node.Buffer = js.native
   def alloc(size: Double, fill: Double): typingsJapgolly.node.Buffer = js.native
   def alloc(size: Double, fill: Double, encoding: BufferEncoding): typingsJapgolly.node.Buffer = js.native
   def alloc(size: Double, fill: typingsJapgolly.node.Buffer): typingsJapgolly.node.Buffer = js.native
@@ -75,8 +73,8 @@ object Buffer
     * @param string string to test.
     * @param encoding encoding used to evaluate (defaults to 'utf8')
     */
-  def byteLength(string: java.lang.String): Double = js.native
-  def byteLength(string: java.lang.String, encoding: BufferEncoding): Double = js.native
+  def byteLength(string: String): Double = js.native
+  def byteLength(string: String, encoding: BufferEncoding): Double = js.native
   def byteLength(string: ArrayBufferView): Double = js.native
   def byteLength(string: ArrayBufferView, encoding: BufferEncoding): Double = js.native
   def byteLength(string: SharedArrayBuffer): Double = js.native
@@ -120,13 +118,24 @@ object Buffer
     */
   def from(data: js.Array[Double]): typingsJapgolly.node.Buffer = js.native
   def from(data: Uint8Array): typingsJapgolly.node.Buffer = js.native
+  def from(obj: AnonToPrimitive): typingsJapgolly.node.Buffer = js.native
+  def from(obj: AnonToPrimitive, byteOffset: Double): typingsJapgolly.node.Buffer = js.native
+  def from(obj: AnonToPrimitive, byteOffset: Double, length: Double): typingsJapgolly.node.Buffer = js.native
+  /**
+    * Creates a new buffer containing the coerced value of an object
+    * A `TypeError` will be thrown if {obj} has not mentioned methods or is not of other type appropriate for `Buffer.from()` variants.
+    * @param obj An object supporting `Symbol.toPrimitive` or `valueOf()`.
+    */
+  def from(obj: AnonValueOf): typingsJapgolly.node.Buffer = js.native
+  def from(obj: AnonValueOf, byteOffset: Double): typingsJapgolly.node.Buffer = js.native
+  def from(obj: AnonValueOf, byteOffset: Double, length: Double): typingsJapgolly.node.Buffer = js.native
   /**
     * Creates a new Buffer containing the given JavaScript string {str}.
     * If provided, the {encoding} parameter identifies the character encoding.
     * If not provided, {encoding} defaults to 'utf8'.
     */
-  def from(str: java.lang.String): typingsJapgolly.node.Buffer = js.native
-  def from(str: java.lang.String, encoding: BufferEncoding): typingsJapgolly.node.Buffer = js.native
+  def from(str: String): typingsJapgolly.node.Buffer = js.native
+  def from(str: String, encoding: BufferEncoding): typingsJapgolly.node.Buffer = js.native
   /**
     * Returns true if {obj} is a Buffer
     *
@@ -139,7 +148,7 @@ object Buffer
     *
     * @param encoding string to test.
     */
-  def isEncoding(encoding: java.lang.String): /* is node.BufferEncoding */ Boolean = js.native
+  def isEncoding(encoding: String): /* is node.BufferEncoding */ Boolean = js.native
   /**
     * Creates a new Buffer using the passed {data}
     * @param values to create a new Buffer

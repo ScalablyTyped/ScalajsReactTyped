@@ -10,8 +10,8 @@ import typingsJapgolly.antd.antdStrings.error
 import typingsJapgolly.antd.antdStrings.processing
 import typingsJapgolly.antd.antdStrings.success
 import typingsJapgolly.antd.antdStrings.warning
-import typingsJapgolly.antd.libBadgeMod.BadgeProps
-import typingsJapgolly.react.reactMod.CSSProperties
+import typingsJapgolly.antd.badgeMod.BadgeProps
+import typingsJapgolly.react.mod.CSSProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -32,10 +32,10 @@ object Badge {
     text: VdomNode = null,
     title: String = null,
     key: js.UndefOr[Key] = js.undefined,
-    overrides: StringDictionary[js.Any] = null
+    _overrides: StringDictionary[js.Any] = null
   )(
     children: ChildArg*
-  ): UnmountedWithRoot[BadgeProps, typingsJapgolly.antd.libBadgeMod.default, Unit, BadgeProps] = {
+  ): UnmountedWithRoot[BadgeProps, typingsJapgolly.antd.badgeMod.default, Unit, BadgeProps] = {
     val __obj = js.Dynamic.literal()
   
       if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
@@ -52,13 +52,13 @@ object Badge {
     if (text != null) __obj.updateDynamic("text")(text.rawNode.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (overrides != null) js.Dynamic.global.Object.assign(__obj, overrides)
+    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
   
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antd.libBadgeMod.BadgeProps, 
+  typingsJapgolly.antd.badgeMod.BadgeProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antd.libBadgeMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.antd.libBadgeMod.BadgeProps])(children: _*)
+  typingsJapgolly.antd.badgeMod.default](this.componentImport)
+    f(__obj.asInstanceOf[typingsJapgolly.antd.badgeMod.BadgeProps])(children: _*)
   }
   @JSImport("antd/lib/badge", JSImport.Default)
   @js.native

@@ -1,19 +1,18 @@
-organization := "org.gulliblytyped.japgolly"
+organization := "org.scalablytyped.japgolly"
 name := "react-router"
-version := "5.1-dt-20191126Z-68c4f9"
-scalaVersion := "2.12.10"
+version := "5.1-dt-20200227Z-b60b1f"
+scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.github.japgolly.scalajs-react" %%% "core" % "1.4.2",
+  "com.github.japgolly.scalajs-react" %%% "core" % "1.5.0",
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.gulliblytyped.japgolly" %%% "csstype" % "2.6.6-42c42f",
-  "org.gulliblytyped.japgolly" %%% "history" % "4.7.2-dt-20191126Z-a1dd63",
-  "org.gulliblytyped.japgolly" %%% "prop-types" % "15.7-dt-20190924Z-56dadc",
-  "org.gulliblytyped.japgolly" %%% "react" % "16.9-dt-20191126Z-082653",
-  "org.gulliblytyped.japgolly" %%% "std" % "3.7-ed3398")
+  "org.scalablytyped.japgolly" %%% "csstype" % "2.6.6-ec7cc3",
+  "org.scalablytyped.japgolly" %%% "history" % "4.7.2-dt-20200226Z-0e787a",
+  "org.scalablytyped.japgolly" %%% "prop-types" % "15.7-dt-20190924Z-d18e40",
+  "org.scalablytyped.japgolly" %%% "react" % "16.9-dt-20200227Z-a90427",
+  "org.scalablytyped.japgolly" %%% "std" % "3.8-8884a5")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
+scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
 bintrayRepository := "ScalajsReactTyped"
 resolvers += Resolver.bintrayRepo("oyvindberg", "ScalajsReactTyped")
-        

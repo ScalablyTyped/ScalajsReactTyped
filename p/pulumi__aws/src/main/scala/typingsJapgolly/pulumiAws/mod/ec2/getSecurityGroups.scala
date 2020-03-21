@@ -1,0 +1,17 @@
+package typingsJapgolly.pulumiAws.mod.ec2
+
+import typingsJapgolly.pulumiAws.getSecurityGroupsMod.GetSecurityGroupsArgs
+import typingsJapgolly.pulumiAws.getSecurityGroupsMod.GetSecurityGroupsResult
+import typingsJapgolly.pulumiPulumi.invokeMod.InvokeOptions
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("@pulumi/aws", "ec2.getSecurityGroups")
+@js.native
+object getSecurityGroups extends js.Object {
+  def apply(): js.Promise[GetSecurityGroupsResult] with GetSecurityGroupsResult = js.native
+  def apply(args: GetSecurityGroupsArgs): js.Promise[GetSecurityGroupsResult] with GetSecurityGroupsResult = js.native
+  def apply(args: GetSecurityGroupsArgs, opts: InvokeOptions): js.Promise[GetSecurityGroupsResult] with GetSecurityGroupsResult = js.native
+}
+

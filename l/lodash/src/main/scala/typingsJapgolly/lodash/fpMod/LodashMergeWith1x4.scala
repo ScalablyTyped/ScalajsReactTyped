@@ -1,7 +1,7 @@
 package typingsJapgolly.lodash.fpMod
 
-import typingsJapgolly.lodash.lodashMod.MergeWithCustomizer
-import typingsJapgolly.lodash.lodashMod.__
+import typingsJapgolly.lodash.mod.MergeWithCustomizer
+import typingsJapgolly.lodash.mod.__
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

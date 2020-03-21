@@ -1,15 +1,28 @@
 package typingsJapgolly.node.NodeJS
 
+import japgolly.scalajs.react.CallbackTo
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("NodeJS.Immediate")
-@js.native
-class Immediate () extends js.Object {
-  var _onImmediate: js.Function = js.native
-  def hasRef(): Boolean = js.native
-  def ref(): this.type = js.native
-  def unref(): this.type = js.native
+trait Immediate extends RefCounted {
+  var _onImmediate: js.Function
+  def hasRef(): Boolean
+}
+
+object Immediate {
+  @scala.inline
+  def apply(
+    _onImmediate: js.Function,
+    hasRef: CallbackTo[Boolean],
+    ref: CallbackTo[Immediate],
+    unref: CallbackTo[Immediate]
+  ): Immediate = {
+    val __obj = js.Dynamic.literal(_onImmediate = _onImmediate.asInstanceOf[js.Any])
+    __obj.updateDynamic("hasRef")(hasRef.toJsFn)
+    __obj.updateDynamic("ref")(ref.toJsFn)
+    __obj.updateDynamic("unref")(unref.toJsFn)
+    __obj.asInstanceOf[Immediate]
+  }
 }
 

@@ -4,7 +4,7 @@ import japgolly.scalajs.react.CtorType.ChildArg
 import japgolly.scalajs.react.Key
 import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
 import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.antd.libBreadcrumbBreadcrumbSeparatorMod.default
+import typingsJapgolly.antd.breadcrumbSeparatorMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +14,7 @@ object BreadcrumbSeparator {
   def apply(
     props: js.Any with js.Object,
     key: js.UndefOr[Key] = js.undefined,
-    overrides: StringDictionary[js.Any] = null
+    _overrides: StringDictionary[js.Any] = null
   )(
     children: ChildArg*
   ): UnmountedWithRoot[js.Any with js.Object, default, Unit, js.Any with js.Object] = {
@@ -22,12 +22,12 @@ object BreadcrumbSeparator {
   
       js.Dynamic.global.Object.assign(__obj, props)
     key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (overrides != null) js.Dynamic.global.Object.assign(__obj, overrides)
+    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
   
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   js.Any with js.Object, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antd.libBreadcrumbBreadcrumbSeparatorMod.default](this.componentImport)
+  typingsJapgolly.antd.breadcrumbSeparatorMod.default](this.componentImport)
     f(__obj.asInstanceOf[js.Any with js.Object])(children: _*)
   }
   @JSImport("antd/lib/breadcrumb/BreadcrumbSeparator", JSImport.Default)

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "jose" : "1.22.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "jose" : "1.22.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

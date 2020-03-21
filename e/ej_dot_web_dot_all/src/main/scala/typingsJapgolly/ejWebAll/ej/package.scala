@@ -1,0 +1,79 @@
+package typingsJapgolly.ejWebAll
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+package object ej {
+  type Accordion = typingsJapgolly.ejWebAll.ej.Accordion_
+  type Autocomplete = typingsJapgolly.ejWebAll.ej.Autocomplete_
+  type Button = typingsJapgolly.ejWebAll.ej.Button_
+  type Calculate = typingsJapgolly.ejWebAll.ej.Calculate_
+  type Captcha = typingsJapgolly.ejWebAll.ej.Captcha_
+  type CheckBox = typingsJapgolly.ejWebAll.ej.CheckBox_
+  type ColorPicker = typingsJapgolly.ejWebAll.ej.ColorPicker_
+  type ComboBox = typingsJapgolly.ejWebAll.ej.ComboBox_
+  type DatePicker = typingsJapgolly.ejWebAll.ej.DatePicker_
+  type DateRangePicker = typingsJapgolly.ejWebAll.ej.DateRangePicker_
+  type DateTimePicker = typingsJapgolly.ejWebAll.ej.DateTimePicker_
+  type Dialog = typingsJapgolly.ejWebAll.ej.Dialog_
+  type DocumentEditor = typingsJapgolly.ejWebAll.ej.DocumentEditor_
+  type Draggable = typingsJapgolly.ejWebAll.ej.Draggable_
+  type DropDownList = typingsJapgolly.ejWebAll.ej.DropDownList_
+  type DropDownTree = typingsJapgolly.ejWebAll.ej.DropDownTree_
+  type Droppable = typingsJapgolly.ejWebAll.ej.Droppable_
+  type Editor = typingsJapgolly.ejWebAll.ej.Editor_
+  type FileExplorer = typingsJapgolly.ejWebAll.ej.FileExplorer_
+  type Gantt = typingsJapgolly.ejWebAll.ej.Gantt_
+  type Grid = typingsJapgolly.ejWebAll.ej.Grid_
+  type GroupButton = typingsJapgolly.ejWebAll.ej.GroupButton_
+  type Kanban = typingsJapgolly.ejWebAll.ej.Kanban_
+  type ListBox = typingsJapgolly.ejWebAll.ej.ListBox_
+  type ListView = typingsJapgolly.ejWebAll.ej.ListView_
+  type MaskEdit = typingsJapgolly.ejWebAll.ej.MaskEdit_
+  type Menu = typingsJapgolly.ejWebAll.ej.Menu_
+  type NavigationDrawer = typingsJapgolly.ejWebAll.ej.NavigationDrawer_
+  type Pager = typingsJapgolly.ejWebAll.ej.Pager_
+  type PdfViewer = typingsJapgolly.ejWebAll.ej.PdfViewer_
+  type PivotChart = typingsJapgolly.ejWebAll.ej.PivotChart_
+  type PivotClient = typingsJapgolly.ejWebAll.ej.PivotClient_
+  type PivotGauge = typingsJapgolly.ejWebAll.ej.PivotGauge_
+  type PivotGrid = typingsJapgolly.ejWebAll.ej.PivotGrid_
+  type PivotPager = typingsJapgolly.ejWebAll.ej.PivotPager_
+  type PivotSchemaDesigner = typingsJapgolly.ejWebAll.ej.PivotSchemaDesigner_
+  type PivotTreeMap = typingsJapgolly.ejWebAll.ej.PivotTreeMap_
+  type Print_ = typingsJapgolly.ejWebAll.ej.Print__
+  type ProgressBar = typingsJapgolly.ejWebAll.ej.ProgressBar_
+  type RTE = typingsJapgolly.ejWebAll.ej.RTE_
+  type RadialMenu = typingsJapgolly.ejWebAll.ej.RadialMenu_
+  type RadialSlider = typingsJapgolly.ejWebAll.ej.RadialSlider_
+  type RadioButton = typingsJapgolly.ejWebAll.ej.RadioButton_
+  type Rating = typingsJapgolly.ejWebAll.ej.Rating_
+  type RecurrenceEditor = typingsJapgolly.ejWebAll.ej.RecurrenceEditor_
+  type ReportDesigner = typingsJapgolly.ejWebAll.ej.ReportDesigner_
+  type ReportViewer = typingsJapgolly.ejWebAll.ej.ReportViewer_
+  type Resizable = typingsJapgolly.ejWebAll.ej.Resizable_
+  type Ribbon = typingsJapgolly.ejWebAll.ej.Ribbon_
+  type Rotator = typingsJapgolly.ejWebAll.ej.Rotator_
+  type Schedule = typingsJapgolly.ejWebAll.ej.Schedule_
+  type Scroller = typingsJapgolly.ejWebAll.ej.Scroller_
+  type Signature = typingsJapgolly.ejWebAll.ej.Signature_
+  type Slider_ = typingsJapgolly.ejWebAll.ej.Slider__
+  type Sparkline = typingsJapgolly.ejWebAll.ej.Sparkline_
+  type SpellCheck = typingsJapgolly.ejWebAll.ej.SpellCheck_
+  type SplitButton = typingsJapgolly.ejWebAll.ej.SplitButton_
+  type Splitter = typingsJapgolly.ejWebAll.ej.Splitter_
+  type Spreadsheet = typingsJapgolly.ejWebAll.ej.Spreadsheet_
+  type SunburstChart = typingsJapgolly.ejWebAll.ej.SunburstChart_
+  type Tab = typingsJapgolly.ejWebAll.ej.Tab_
+  type TagCloud = typingsJapgolly.ejWebAll.ej.TagCloud_
+  type Tile = typingsJapgolly.ejWebAll.ej.Tile_
+  type TimePicker = typingsJapgolly.ejWebAll.ej.TimePicker_
+  type ToggleButton = typingsJapgolly.ejWebAll.ej.ToggleButton_
+  type Toolbar = typingsJapgolly.ejWebAll.ej.Toolbar_
+  type Tooltip = typingsJapgolly.ejWebAll.ej.Tooltip_
+  type TreeGrid = typingsJapgolly.ejWebAll.ej.TreeGrid_
+  type TreeView = typingsJapgolly.ejWebAll.ej.TreeView_
+  type Uploadbox = typingsJapgolly.ejWebAll.ej.Uploadbox_
+  type WaitingPopup = typingsJapgolly.ejWebAll.ej.WaitingPopup_
+}

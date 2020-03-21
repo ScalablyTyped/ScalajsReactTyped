@@ -6,8 +6,8 @@ import japgolly.scalajs.react.component.Js.MountedWithRawType
 import japgolly.scalajs.react.component.Js.RawMounted
 import japgolly.scalajs.react.component.Js.UnmountedSimple
 import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.rcDashMenu.libDividerMod.DividerProps
-import typingsJapgolly.react.reactMod.CSSProperties
+import typingsJapgolly.rcMenu.dividerMod.DividerProps
+import typingsJapgolly.react.mod.CSSProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,7 +19,7 @@ object MenuDivider {
     rootPrefixCls: String = null,
     style: CSSProperties = null,
     key: js.UndefOr[Key] = js.undefined,
-    overrides: StringDictionary[js.Any] = null
+    _overrides: StringDictionary[js.Any] = null
   )(
     children: ChildArg*
   ): UnmountedSimple[
@@ -33,13 +33,13 @@ object MenuDivider {
     if (rootPrefixCls != null) __obj.updateDynamic("rootPrefixCls")(rootPrefixCls.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (overrides != null) js.Dynamic.global.Object.assign(__obj, overrides)
+    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
   
     val f = japgolly.scalajs.react.JsComponent[
-  typingsJapgolly.rcDashMenu.libDividerMod.DividerProps, 
+  typingsJapgolly.rcMenu.dividerMod.DividerProps, 
   japgolly.scalajs.react.Children.Varargs, 
   js.Object](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.rcDashMenu.libDividerMod.DividerProps])(children: _*)
+    f(__obj.asInstanceOf[typingsJapgolly.rcMenu.dividerMod.DividerProps])(children: _*)
   }
   @JSImport("antd", "Menu.Divider")
   @js.native

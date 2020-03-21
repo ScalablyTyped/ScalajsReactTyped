@@ -5,9 +5,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
-  - typings.std.stdStrings.butt
-  - typings.std.stdStrings.round
-  - typings.std.stdStrings.square
+  - typingsJapgolly.std.stdStrings.butt
+  - typingsJapgolly.std.stdStrings.round
+  - typingsJapgolly.std.stdStrings.square
 */
 trait CanvasLineCap extends js.Object
 

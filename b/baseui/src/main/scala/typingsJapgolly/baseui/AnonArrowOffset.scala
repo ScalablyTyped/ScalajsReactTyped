@@ -1,0 +1,45 @@
+package typingsJapgolly.baseui
+
+import typingsJapgolly.baseui.baseuiBooleans.`false`
+import typingsJapgolly.baseui.baseuiStrings.auto
+import typingsJapgolly.baseui.baseuiStrings.bottom
+import typingsJapgolly.baseui.baseuiStrings.bottomLeft
+import typingsJapgolly.baseui.baseuiStrings.bottomRight
+import typingsJapgolly.baseui.baseuiStrings.left
+import typingsJapgolly.baseui.baseuiStrings.leftBottom
+import typingsJapgolly.baseui.baseuiStrings.leftTop
+import typingsJapgolly.baseui.baseuiStrings.right
+import typingsJapgolly.baseui.baseuiStrings.rightBottom
+import typingsJapgolly.baseui.baseuiStrings.rightTop
+import typingsJapgolly.baseui.baseuiStrings.top
+import typingsJapgolly.baseui.baseuiStrings.topLeft
+import typingsJapgolly.baseui.baseuiStrings.topRight
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait AnonArrowOffset extends js.Object {
+  var arrowOffset: AnonLeft
+  var isAnimating: `false`
+  var isLayerMounted: `false`
+  var isMounted: `false`
+  var placement: topLeft | leftBottom | topRight | rightBottom | bottomLeft | right | auto | bottomRight | leftTop | left | bottom | rightTop | top
+  var popoverOffset: AnonLeft
+}
+
+object AnonArrowOffset {
+  @scala.inline
+  def apply(
+    arrowOffset: AnonLeft,
+    isAnimating: `false`,
+    isLayerMounted: `false`,
+    isMounted: `false`,
+    placement: topLeft | leftBottom | topRight | rightBottom | bottomLeft | right | auto | bottomRight | leftTop | left | bottom | rightTop | top,
+    popoverOffset: AnonLeft
+  ): AnonArrowOffset = {
+    val __obj = js.Dynamic.literal(arrowOffset = arrowOffset.asInstanceOf[js.Any], isAnimating = isAnimating.asInstanceOf[js.Any], isLayerMounted = isLayerMounted.asInstanceOf[js.Any], isMounted = isMounted.asInstanceOf[js.Any], placement = placement.asInstanceOf[js.Any], popoverOffset = popoverOffset.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[AnonArrowOffset]
+  }
+}
+

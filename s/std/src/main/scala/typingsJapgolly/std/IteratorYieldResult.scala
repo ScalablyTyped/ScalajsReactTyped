@@ -1,6 +1,6 @@
 package typingsJapgolly.std
 
-import typingsJapgolly.std.stdNumbers.`false`
+import typingsJapgolly.std.stdBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

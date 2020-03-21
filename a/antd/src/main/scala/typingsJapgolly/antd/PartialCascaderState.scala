@@ -1,7 +1,7 @@
 package typingsJapgolly.antd
 
-import typingsJapgolly.antd.libCascaderMod.CascaderOptionType
-import typingsJapgolly.antd.libCascaderMod.CascaderProps
+import typingsJapgolly.antd.cascaderMod.CascaderOptionType
+import typingsJapgolly.antd.cascaderMod.CascaderProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

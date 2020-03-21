@@ -1,0 +1,19 @@
+organization := "org.scalablytyped.japgolly"
+name := "broccoli-plugin"
+version := "3.1.0-e6cde7"
+scalaVersion := "2.13.1"
+enablePlugins(ScalaJSPlugin)
+libraryDependencies ++= Seq(
+  "com.github.japgolly.scalajs-react" %%% "core" % "1.5.0",
+  "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
+  "org.scalablytyped.japgolly" %%% "broccoli-node-api" % "1.7.0-3aca27",
+  "org.scalablytyped.japgolly" %%% "broccoli-output-wrapper" % "2.0.0-f2a609",
+  "org.scalablytyped.japgolly" %%% "fs-merger" % "3.0.2-4e6c7a",
+  "org.scalablytyped.japgolly" %%% "node" % "13.7-dt-20200228Z-e4cd2e",
+  "org.scalablytyped.japgolly" %%% "std" % "3.8-8884a5",
+  "org.scalablytyped.japgolly" %%% "walk-sync" % "0.3.4-899dae")
+publishArtifact in packageDoc := false
+scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")
+licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
+bintrayRepository := "ScalajsReactTyped"
+resolvers += Resolver.bintrayRepo("oyvindberg", "ScalajsReactTyped")

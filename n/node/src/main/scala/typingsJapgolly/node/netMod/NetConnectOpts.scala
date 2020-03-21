@@ -8,8 +8,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
-  - typings.node.netMod.TcpNetConnectOpts
-  - typings.node.netMod.IpcNetConnectOpts
+  - typingsJapgolly.node.netMod.TcpNetConnectOpts
+  - typingsJapgolly.node.netMod.IpcNetConnectOpts
 */
 trait NetConnectOpts extends js.Object
 
@@ -21,15 +21,10 @@ object NetConnectOpts {
     family: Int | Double = null,
     fd: Int | Double = null,
     hints: Int | Double = null,
-    host: java.lang.String = null,
-    localAddress: java.lang.String = null,
+    host: String = null,
+    localAddress: String = null,
     localPort: Int | Double = null,
-    lookup: (/* hostname */ java.lang.String, /* options */ LookupOneOptions, /* callback */ js.Function3[
-      /* err */ ErrnoException | Null, 
-      /* address */ java.lang.String, 
-      /* family */ Double, 
-      Unit
-    ]) => Callback = null,
+    lookup: (/* hostname */ String, /* options */ LookupOneOptions, /* callback */ js.Function3[/* err */ ErrnoException | Null, /* address */ String, /* family */ Double, Unit]) => Callback = null,
     onread: OnReadOpts = null,
     readable: js.UndefOr[Boolean] = js.undefined,
     timeout: Int | Double = null,
@@ -56,7 +51,7 @@ object NetConnectOpts {
   }
   @scala.inline
   def IpcNetConnectOpts(
-    path: java.lang.String,
+    path: String,
     allowHalfOpen: js.UndefOr[Boolean] = js.undefined,
     fd: Int | Double = null,
     onread: OnReadOpts = null,

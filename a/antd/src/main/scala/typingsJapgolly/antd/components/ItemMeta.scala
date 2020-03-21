@@ -7,8 +7,8 @@ import japgolly.scalajs.react.component.Js.RawMounted
 import japgolly.scalajs.react.component.Js.UnmountedSimple
 import japgolly.scalajs.react.vdom.VdomNode
 import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.antd.libListItemMod.ListItemMetaProps
-import typingsJapgolly.react.reactMod.CSSProperties
+import typingsJapgolly.antd.listItemMod.ListItemMetaProps
+import typingsJapgolly.react.mod.CSSProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,7 +22,7 @@ object ItemMeta {
     style: CSSProperties = null,
     title: VdomNode = null,
     key: js.UndefOr[Key] = js.undefined,
-    overrides: StringDictionary[js.Any] = null
+    _overrides: StringDictionary[js.Any] = null
   )(
     children: ChildArg*
   ): UnmountedSimple[
@@ -42,13 +42,13 @@ object ItemMeta {
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.rawNode.asInstanceOf[js.Any])
     key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (overrides != null) js.Dynamic.global.Object.assign(__obj, overrides)
+    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
   
     val f = japgolly.scalajs.react.JsComponent[
-  /* props */ typingsJapgolly.antd.libListItemMod.ListItemMetaProps, 
+  /* props */ typingsJapgolly.antd.listItemMod.ListItemMetaProps, 
   japgolly.scalajs.react.Children.Varargs, 
   js.Object](this.componentImport)
-    f(__obj.asInstanceOf[/* props */ typingsJapgolly.antd.libListItemMod.ListItemMetaProps])(children: _*)
+    f(__obj.asInstanceOf[/* props */ typingsJapgolly.antd.listItemMod.ListItemMetaProps])(children: _*)
   }
   @JSImport("antd/lib/list/Item", "default.Meta")
   @js.native

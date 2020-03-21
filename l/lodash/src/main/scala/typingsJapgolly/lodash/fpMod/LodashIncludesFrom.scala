@@ -1,9 +1,9 @@
 package typingsJapgolly.lodash.fpMod
 
-import typingsJapgolly.lodash.lodashMod.Dictionary
-import typingsJapgolly.lodash.lodashMod.List
-import typingsJapgolly.lodash.lodashMod.NumericDictionary
-import typingsJapgolly.lodash.lodashMod.__
+import typingsJapgolly.lodash.mod.Dictionary
+import typingsJapgolly.lodash.mod.List
+import typingsJapgolly.lodash.mod.NumericDictionary
+import typingsJapgolly.lodash.mod.__
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 trait LodashIncludesFrom extends js.Object {
   def apply(target: __, fromIndex: Double): LodashIncludesFrom1x2 = js.native
   def apply[T](target: T): LodashIncludesFrom1x1[T] = js.native
-  def apply[T](target: T, fromIndex: Double): Boolean = js.native
+  def apply[T](target: T, fromIndex: Double): LodashIncludesFrom1x3[T] = js.native
   def apply[T](target: T, fromIndex: Double, collection: Dictionary[T]): Boolean = js.native
   def apply[T](target: T, fromIndex: Double, collection: List[T]): Boolean = js.native
   def apply[T](target: T, fromIndex: Double, collection: NumericDictionary[T]): Boolean = js.native

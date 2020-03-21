@@ -1,6 +1,6 @@
 package typingsJapgolly.node.fsMod
 
-import typingsJapgolly.node.Anon_AutoClose
+import typingsJapgolly.node.AnonAutoClose
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +14,7 @@ object createReadStream extends js.Object {
     * URL support is _experimental_.
     */
   def apply(path: PathLike): ReadStream = js.native
-  def apply(path: PathLike, options: java.lang.String): ReadStream = js.native
-  def apply(path: PathLike, options: Anon_AutoClose): ReadStream = js.native
+  def apply(path: PathLike, options: String): ReadStream = js.native
+  def apply(path: PathLike, options: AnonAutoClose): ReadStream = js.native
 }
 

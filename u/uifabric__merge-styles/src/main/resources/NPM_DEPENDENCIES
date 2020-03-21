@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@uifabric/merge-styles" : "7.8.6"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@uifabric/merge-styles" : "7.8.6"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

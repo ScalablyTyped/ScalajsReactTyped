@@ -1,11 +1,11 @@
 package typingsJapgolly.lodash.fpMod
 
-import typingsJapgolly.lodash.lodashMod.CurriedFunction2
-import typingsJapgolly.lodash.lodashMod.CurriedFunction3
-import typingsJapgolly.lodash.lodashMod.CurriedFunction4
-import typingsJapgolly.lodash.lodashMod.CurriedFunction5
-import typingsJapgolly.lodash.lodashMod.LoDashImplicitWrapper
-import typingsJapgolly.lodash.lodashMod.__
+import typingsJapgolly.lodash.mod.CurriedFunction2
+import typingsJapgolly.lodash.mod.CurriedFunction3
+import typingsJapgolly.lodash.mod.CurriedFunction4
+import typingsJapgolly.lodash.mod.CurriedFunction5
+import typingsJapgolly.lodash.mod.LoDashImplicitWrapper
+import typingsJapgolly.lodash.mod.__
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

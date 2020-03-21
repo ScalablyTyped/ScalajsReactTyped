@@ -19,12 +19,14 @@ import japgolly.scalajs.react.ReactWheelEventFrom
 import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
 import org.scalablytyped.runtime.StringDictionary
 import org.scalajs.dom.raw.HTMLDivElement
-import typingsJapgolly.antd.libColMod.default
-import typingsJapgolly.antd.libGridColMod.ColProps
-import typingsJapgolly.antd.libGridColMod.ColSize
-import typingsJapgolly.antd.libGridColMod.ColSpanType
-import typingsJapgolly.react.Anon_Html
-import typingsJapgolly.react.reactMod.CSSProperties
+import typingsJapgolly.antd.colMod.default
+import typingsJapgolly.antd.gridColMod.ColProps
+import typingsJapgolly.antd.gridColMod.ColSize
+import typingsJapgolly.antd.gridColMod.ColSpanType
+import typingsJapgolly.antd.gridColMod.FlexType
+import typingsJapgolly.react.AnonHtml
+import typingsJapgolly.react.mod.Booleanish
+import typingsJapgolly.react.mod.CSSProperties
 import typingsJapgolly.react.reactStrings.`additions text`
 import typingsJapgolly.react.reactStrings.`inline`
 import typingsJapgolly.react.reactStrings.additions
@@ -42,6 +44,7 @@ import typingsJapgolly.react.reactStrings.execute
 import typingsJapgolly.react.reactStrings.grammar
 import typingsJapgolly.react.reactStrings.grid
 import typingsJapgolly.react.reactStrings.horizontal
+import typingsJapgolly.react.reactStrings.inherit
 import typingsJapgolly.react.reactStrings.link
 import typingsJapgolly.react.reactStrings.list
 import typingsJapgolly.react.reactStrings.listbox
@@ -130,14 +133,15 @@ object Col {
     autoSave: String = null,
     className: String = null,
     color: String = null,
-    contentEditable: js.UndefOr[Boolean] = js.undefined,
+    contentEditable: Booleanish | inherit = null,
     contextMenu: String = null,
-    dangerouslySetInnerHTML: Anon_Html = null,
+    dangerouslySetInnerHTML: AnonHtml = null,
     datatype: String = null,
     defaultChecked: js.UndefOr[Boolean] = js.undefined,
     defaultValue: String | Double | js.Array[String] = null,
     dir: String = null,
     draggable: js.UndefOr[Boolean] = js.undefined,
+    flex: FlexType = null,
     hidden: js.UndefOr[Boolean] = js.undefined,
     id: String = null,
     inlist: js.Any = null,
@@ -260,7 +264,7 @@ object Col {
     xs: ColSpanType | ColSize = null,
     xxl: ColSpanType | ColSize = null,
     key: js.UndefOr[Key] = js.undefined,
-    overrides: StringDictionary[js.Any] = null
+    _overrides: StringDictionary[js.Any] = null
   )(
     children: ChildArg*
   ): UnmountedWithRoot[ColProps, default, Unit, ColProps] = {
@@ -321,7 +325,7 @@ object Col {
     if (autoSave != null) __obj.updateDynamic("autoSave")(autoSave.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (!js.isUndefined(contentEditable)) __obj.updateDynamic("contentEditable")(contentEditable.asInstanceOf[js.Any])
+    if (contentEditable != null) __obj.updateDynamic("contentEditable")(contentEditable.asInstanceOf[js.Any])
     if (contextMenu != null) __obj.updateDynamic("contextMenu")(contextMenu.asInstanceOf[js.Any])
     if (dangerouslySetInnerHTML != null) __obj.updateDynamic("dangerouslySetInnerHTML")(dangerouslySetInnerHTML.asInstanceOf[js.Any])
     if (datatype != null) __obj.updateDynamic("datatype")(datatype.asInstanceOf[js.Any])
@@ -329,6 +333,7 @@ object Col {
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
     if (dir != null) __obj.updateDynamic("dir")(dir.asInstanceOf[js.Any])
     if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable.asInstanceOf[js.Any])
+    if (flex != null) __obj.updateDynamic("flex")(flex.asInstanceOf[js.Any])
     if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (inlist != null) __obj.updateDynamic("inlist")(inlist.asInstanceOf[js.Any])
@@ -451,13 +456,13 @@ object Col {
     if (xs != null) __obj.updateDynamic("xs")(xs.asInstanceOf[js.Any])
     if (xxl != null) __obj.updateDynamic("xxl")(xxl.asInstanceOf[js.Any])
     key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (overrides != null) js.Dynamic.global.Object.assign(__obj, overrides)
+    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
   
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antd.libGridColMod.ColProps, 
+  typingsJapgolly.antd.gridColMod.ColProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antd.libColMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.antd.libGridColMod.ColProps])(children: _*)
+  typingsJapgolly.antd.colMod.default](this.componentImport)
+    f(__obj.asInstanceOf[typingsJapgolly.antd.gridColMod.ColProps])(children: _*)
   }
   @JSImport("antd/lib/col", JSImport.Default)
   @js.native

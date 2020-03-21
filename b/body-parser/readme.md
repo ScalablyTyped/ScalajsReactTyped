@@ -1,7 +1,7 @@
 
 # Scala.js typings for body-parser
 
-Typings are for version 1.17
+Typings are for version 1.19
 
 ## Library description:
 Node.js body parsing middleware
@@ -10,10 +10,10 @@ Node.js body parsing middleware
 | ------------------ | :-------------: |
 | Full name          | body-parser |
 | Keywords           | - |
-| # releases         | 6 |
-| # dependents       | 10668 |
-| # downloads        | 334630752 |
-| # stars            | 613 |
+| # releases         | 3 |
+| # dependents       | 12169 |
+| # downloads        | 489076420 |
+| # stars            | 616 |
 
 ## Links
 - [Homepage](https://github.com/expressjs/body-parser#readme)

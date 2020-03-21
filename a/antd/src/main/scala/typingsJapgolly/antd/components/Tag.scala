@@ -19,10 +19,11 @@ import japgolly.scalajs.react.ReactWheelEventFrom
 import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
 import org.scalablytyped.runtime.StringDictionary
 import org.scalajs.dom.raw.HTMLSpanElement
-import typingsJapgolly.antd.libTagMod.TagProps
-import typingsJapgolly.antd.libTagMod.default
-import typingsJapgolly.react.Anon_Html
-import typingsJapgolly.react.reactMod.CSSProperties
+import typingsJapgolly.antd.tagMod.TagProps
+import typingsJapgolly.antd.tagMod.default
+import typingsJapgolly.react.AnonHtml
+import typingsJapgolly.react.mod.Booleanish
+import typingsJapgolly.react.mod.CSSProperties
 import typingsJapgolly.react.reactStrings.`additions text`
 import typingsJapgolly.react.reactStrings.`inline`
 import typingsJapgolly.react.reactStrings.additions
@@ -40,6 +41,7 @@ import typingsJapgolly.react.reactStrings.execute
 import typingsJapgolly.react.reactStrings.grammar
 import typingsJapgolly.react.reactStrings.grid
 import typingsJapgolly.react.reactStrings.horizontal
+import typingsJapgolly.react.reactStrings.inherit
 import typingsJapgolly.react.reactStrings.link
 import typingsJapgolly.react.reactStrings.list
 import typingsJapgolly.react.reactStrings.listbox
@@ -75,7 +77,6 @@ object Tag {
   def apply(
     about: String = null,
     accessKey: String = null,
-    afterClose: js.Function = null,
     `aria-activedescendant`: String = null,
     `aria-atomic`: js.UndefOr[Boolean] = js.undefined,
     `aria-autocomplete`: none | `inline` | list | both = null,
@@ -130,9 +131,9 @@ object Tag {
     className: String = null,
     closable: js.UndefOr[Boolean] = js.undefined,
     color: String = null,
-    contentEditable: js.UndefOr[Boolean] = js.undefined,
+    contentEditable: Booleanish | inherit = null,
     contextMenu: String = null,
-    dangerouslySetInnerHTML: Anon_Html = null,
+    dangerouslySetInnerHTML: AnonHtml = null,
     datatype: String = null,
     defaultChecked: js.UndefOr[Boolean] = js.undefined,
     defaultValue: String | Double | js.Array[String] = null,
@@ -251,7 +252,7 @@ object Tag {
     visible: js.UndefOr[Boolean] = js.undefined,
     vocab: String = null,
     key: js.UndefOr[Key] = js.undefined,
-    overrides: StringDictionary[js.Any] = null
+    _overrides: StringDictionary[js.Any] = null
   )(
     children: ChildArg*
   ): UnmountedWithRoot[TagProps, default, Unit, TagProps] = {
@@ -259,7 +260,6 @@ object Tag {
   
       if (about != null) __obj.updateDynamic("about")(about.asInstanceOf[js.Any])
     if (accessKey != null) __obj.updateDynamic("accessKey")(accessKey.asInstanceOf[js.Any])
-    if (afterClose != null) __obj.updateDynamic("afterClose")(afterClose.asInstanceOf[js.Any])
     if (`aria-activedescendant` != null) __obj.updateDynamic("aria-activedescendant")(`aria-activedescendant`.asInstanceOf[js.Any])
     if (!js.isUndefined(`aria-atomic`)) __obj.updateDynamic("aria-atomic")(`aria-atomic`.asInstanceOf[js.Any])
     if (`aria-autocomplete` != null) __obj.updateDynamic("aria-autocomplete")(`aria-autocomplete`.asInstanceOf[js.Any])
@@ -314,7 +314,7 @@ object Tag {
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (!js.isUndefined(closable)) __obj.updateDynamic("closable")(closable.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (!js.isUndefined(contentEditable)) __obj.updateDynamic("contentEditable")(contentEditable.asInstanceOf[js.Any])
+    if (contentEditable != null) __obj.updateDynamic("contentEditable")(contentEditable.asInstanceOf[js.Any])
     if (contextMenu != null) __obj.updateDynamic("contextMenu")(contextMenu.asInstanceOf[js.Any])
     if (dangerouslySetInnerHTML != null) __obj.updateDynamic("dangerouslySetInnerHTML")(dangerouslySetInnerHTML.asInstanceOf[js.Any])
     if (datatype != null) __obj.updateDynamic("datatype")(datatype.asInstanceOf[js.Any])
@@ -435,13 +435,13 @@ object Tag {
     if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     if (vocab != null) __obj.updateDynamic("vocab")(vocab.asInstanceOf[js.Any])
     key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (overrides != null) js.Dynamic.global.Object.assign(__obj, overrides)
+    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
   
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antd.libTagMod.TagProps, 
+  typingsJapgolly.antd.tagMod.TagProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antd.libTagMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.antd.libTagMod.TagProps])(children: _*)
+  typingsJapgolly.antd.tagMod.default](this.componentImport)
+    f(__obj.asInstanceOf[typingsJapgolly.antd.tagMod.TagProps])(children: _*)
   }
   @JSImport("antd/lib/tag", JSImport.Default)
   @js.native

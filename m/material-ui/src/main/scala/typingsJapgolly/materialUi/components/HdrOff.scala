@@ -1,0 +1,14 @@
+package typingsJapgolly.materialUi.components
+
+import typingsJapgolly.materialUi.hdrOffMod.default
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+object HdrOff extends SharedApply_SvgIconProps_1100155871[default] {
+  @JSImport("material-ui/svg-icons/image/hdr-off", JSImport.Default)
+  @js.native
+  override object componentImport extends js.Object
+  
+}
+

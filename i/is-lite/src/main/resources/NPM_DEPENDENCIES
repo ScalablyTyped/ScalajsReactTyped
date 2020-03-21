@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "is-lite" : "0.6.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "is-lite" : "0.6.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

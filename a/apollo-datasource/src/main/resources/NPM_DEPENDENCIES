@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "apollo-datasource" : "0.7.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "apollo-datasource" : "0.7.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

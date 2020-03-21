@@ -4,36 +4,36 @@ import japgolly.scalajs.react.CtorType.ChildArg
 import japgolly.scalajs.react.Key
 import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
 import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.expoDashLinearDashGradient.buildLinearGradientMod.Props
+import typingsJapgolly.expoLinearGradient.linearGradientMod.Point
+import typingsJapgolly.expoLinearGradient.linearGradientMod.Props
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* This component has complicated props, you'll have to assemble `props` yourself using js.Dynamic.literal(...) or similar. */
 object LinearGradient {
   def apply(
-    props: Props with js.Object,
+    colors: js.Array[String],
+    end: Point = null,
+    locations: js.Array[Double] = null,
+    start: Point = null,
     key: js.UndefOr[Key] = js.undefined,
-    overrides: StringDictionary[js.Any] = null
+    _overrides: StringDictionary[js.Any] = null
   )(
     children: ChildArg*
-  ): UnmountedWithRoot[
-    Props with js.Object, 
-    typingsJapgolly.expo.buildGlobalsDotWebMod.LinearGradient, 
-    Unit, 
-    Props with js.Object
-  ] = {
-    val __obj = js.Dynamic.literal()
+  ): UnmountedWithRoot[Props, typingsJapgolly.expo.globalsWebMod.LinearGradient, Unit, Props] = {
+    val __obj = js.Dynamic.literal(colors = colors.asInstanceOf[js.Any])
   
-      js.Dynamic.global.Object.assign(__obj, props)
+      if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
+    if (locations != null) __obj.updateDynamic("locations")(locations.asInstanceOf[js.Any])
+    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
     key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (overrides != null) js.Dynamic.global.Object.assign(__obj, overrides)
+    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
   
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.expoDashLinearDashGradient.buildLinearGradientMod.Props with js.Object, 
+  typingsJapgolly.expoLinearGradient.linearGradientMod.Props, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.expo.buildGlobalsDotWebMod.LinearGradient](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.expoDashLinearDashGradient.buildLinearGradientMod.Props with js.Object])(children: _*)
+  typingsJapgolly.expo.globalsWebMod.LinearGradient](this.componentImport)
+    f(__obj.asInstanceOf[typingsJapgolly.expoLinearGradient.linearGradientMod.Props])(children: _*)
   }
   @JSImport("expo/build/globals.web", "LinearGradient")
   @js.native

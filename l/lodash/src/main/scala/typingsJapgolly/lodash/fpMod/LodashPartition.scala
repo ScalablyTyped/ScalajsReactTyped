@@ -1,9 +1,9 @@
 package typingsJapgolly.lodash.fpMod
 
-import typingsJapgolly.lodash.lodashMod.List
-import typingsJapgolly.lodash.lodashMod.ValueIteratee
-import typingsJapgolly.lodash.lodashMod.ValueIteratorTypeGuard
-import typingsJapgolly.lodash.lodashMod.__
+import typingsJapgolly.lodash.mod.List
+import typingsJapgolly.lodash.mod.ValueIteratee
+import typingsJapgolly.lodash.mod.ValueIteratorTypeGuard
+import typingsJapgolly.lodash.mod.__
 import typingsJapgolly.std.Exclude
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -29,7 +29,7 @@ trait LodashPartition extends js.Object {
   def apply[T /* <: js.Object */](callback: __): LodashPartition3x2[T] = js.native
   def apply[T /* <: js.Object */](callback: __, collection: T): LodashPartition3x2[T] = js.native
   def apply[T](callback: __, collection: List[T]): LodashPartition1x2[T] = js.native
-  def apply[T, U /* <: T */](callback: ValueIteratorTypeGuard[T, U]): LodashPartition1x1[T, U] = js.native
+  def apply[T, U /* <: T */](callback: ValueIteratorTypeGuard[T, U]): js.Tuple2[js.Array[U], js.Array[Exclude[T, U]]] = js.native
   def apply[T, U /* <: T */](callback: ValueIteratorTypeGuard[T, U], collection: List[T]): js.Tuple2[js.Array[U], js.Array[Exclude[T, U]]] = js.native
 }
 

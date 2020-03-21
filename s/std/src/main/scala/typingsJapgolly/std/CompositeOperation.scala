@@ -5,9 +5,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
-  - typings.std.stdStrings.replace
-  - typings.std.stdStrings.add
-  - typings.std.stdStrings.accumulate
+  - typingsJapgolly.std.stdStrings.accumulate
+  - typingsJapgolly.std.stdStrings.add
+  - typingsJapgolly.std.stdStrings.replace
 */
 trait CompositeOperation extends js.Object
 

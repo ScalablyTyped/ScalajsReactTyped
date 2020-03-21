@@ -5,10 +5,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
-  - typings.std.stdStrings.offer
-  - typings.std.stdStrings.pranswer
-  - typings.std.stdStrings.answer
-  - typings.std.stdStrings.rollback
+  - typingsJapgolly.std.stdStrings.answer
+  - typingsJapgolly.std.stdStrings.offer
+  - typingsJapgolly.std.stdStrings.pranswer
+  - typingsJapgolly.std.stdStrings.rollback
 */
 trait RTCSdpType extends js.Object
 

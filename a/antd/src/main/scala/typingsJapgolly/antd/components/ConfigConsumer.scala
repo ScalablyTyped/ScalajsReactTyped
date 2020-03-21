@@ -1,39 +1,45 @@
 package typingsJapgolly.antd.components
 
+import japgolly.scalajs.react.CallbackTo
 import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
+import japgolly.scalajs.react.component.Js.MountedWithRawType
+import japgolly.scalajs.react.component.Js.RawMounted
+import japgolly.scalajs.react.component.Js.UnmountedSimple
+import japgolly.scalajs.react.raw.React.Node
 import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.antd.libConfigDashProviderContextMod.ConfigConsumerProps
-import typingsJapgolly.atAntDashDesignCreateDashReactDashContext.atAntDashDesignCreateDashReactDashContextMod.ConsumerProps
-import typingsJapgolly.atAntDashDesignCreateDashReactDashContext.atAntDashDesignCreateDashReactDashContextMod.RenderFn
+import typingsJapgolly.antd.contextMod.ConfigConsumerProps
+import typingsJapgolly.react.mod.ConsumerProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 object ConfigConsumer {
   def apply(
-    observedBits: Int | Double = null,
+    unstable_observedBits: Int | Double = null,
     key: js.UndefOr[Key] = js.undefined,
-    overrides: StringDictionary[js.Any] = null
+    _overrides: StringDictionary[js.Any] = null
   )(
-    children: RenderFn[ConfigConsumerProps] | js.Array[RenderFn[ConfigConsumerProps]]
-  ): UnmountedWithRoot[
+    children: ConfigConsumerProps => CallbackTo[Node]
+  ): UnmountedSimple[
     ConsumerProps[ConfigConsumerProps], 
-    typingsJapgolly.antd.libConfigDashProviderMod.ConfigConsumer, 
-    Unit, 
-    ConsumerProps[ConfigConsumerProps]
+    MountedWithRawType[
+      ConsumerProps[ConfigConsumerProps], 
+      js.Object, 
+      RawMounted[ConsumerProps[ConfigConsumerProps], js.Object]
+    ]
   ] = {
-    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal()
   
-      if (observedBits != null) __obj.updateDynamic("observedBits")(observedBits.asInstanceOf[js.Any])
+      __obj.updateDynamic("children")(js.Any.fromFunction1((t0: typingsJapgolly.antd.contextMod.ConfigConsumerProps) => children(t0).runNow()))
+    if (unstable_observedBits != null) __obj.updateDynamic("unstable_observedBits")(unstable_observedBits.asInstanceOf[js.Any])
     key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (overrides != null) js.Dynamic.global.Object.assign(__obj, overrides)
+    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
   
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.atAntDashDesignCreateDashReactDashContext.atAntDashDesignCreateDashReactDashContextMod.ConsumerProps[typingsJapgolly.antd.libConfigDashProviderContextMod.ConfigConsumerProps], 
+    val f = japgolly.scalajs.react.JsComponent[
+  typingsJapgolly.react.mod.ConsumerProps[typingsJapgolly.antd.contextMod.ConfigConsumerProps], 
   japgolly.scalajs.react.Children.None, 
-  typingsJapgolly.antd.libConfigDashProviderMod.ConfigConsumer](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.atAntDashDesignCreateDashReactDashContext.atAntDashDesignCreateDashReactDashContextMod.ConsumerProps[typingsJapgolly.antd.libConfigDashProviderContextMod.ConfigConsumerProps]])
+  js.Object](this.componentImport)
+    f(__obj.asInstanceOf[typingsJapgolly.react.mod.ConsumerProps[typingsJapgolly.antd.contextMod.ConfigConsumerProps]])
   }
   @JSImport("antd/lib/config-provider", "ConfigConsumer")
   @js.native

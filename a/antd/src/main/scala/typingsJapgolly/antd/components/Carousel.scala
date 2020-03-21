@@ -6,16 +6,16 @@ import japgolly.scalajs.react.CtorType.ChildArg
 import japgolly.scalajs.react.Key
 import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
 import japgolly.scalajs.react.raw.React.Node
+import japgolly.scalajs.react.vdom.VdomElement
 import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.antd.libCarouselMod.CarouselEffect
-import typingsJapgolly.antd.libCarouselMod.CarouselProps
-import typingsJapgolly.antd.libCarouselMod.DotPosition
-import typingsJapgolly.antd.libCarouselMod.default
-import typingsJapgolly.react.reactMod.CSSProperties
-import typingsJapgolly.react.reactMod._Global_.JSX.Element
-import typingsJapgolly.reactDashSlick.reactDashSlickMod.LazyLoadTypes
-import typingsJapgolly.reactDashSlick.reactDashSlickMod.ResponsiveObject
-import typingsJapgolly.reactDashSlick.reactDashSlickMod.SwipeDirection
+import typingsJapgolly.antDesignReactSlick.mod.LazyLoadTypes
+import typingsJapgolly.antDesignReactSlick.mod.ResponsiveObject
+import typingsJapgolly.antDesignReactSlick.mod.SwipeDirection
+import typingsJapgolly.antd.carouselMod.CarouselEffect
+import typingsJapgolly.antd.carouselMod.CarouselProps
+import typingsJapgolly.antd.carouselMod.DotPosition
+import typingsJapgolly.antd.carouselMod.default
+import typingsJapgolly.react.mod.CSSProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,9 +25,9 @@ object Carousel {
     accessibility: js.UndefOr[Boolean] = js.undefined,
     adaptiveHeight: js.UndefOr[Boolean] = js.undefined,
     afterChange: /* currentSlide */ Double => Callback = null,
-    appendDots: /* dots */ Node => CallbackTo[Element] = null,
+    appendDots: /* dots */ Node => CallbackTo[japgolly.scalajs.react.raw.React.Element] = null,
     arrows: js.UndefOr[Boolean] = js.undefined,
-    asNavFor: typingsJapgolly.reactDashSlick.reactDashSlickMod.Slider = null,
+    asNavFor: typingsJapgolly.antDesignReactSlick.mod.Slider = null,
     autoplay: js.UndefOr[Boolean] = js.undefined,
     autoplaySpeed: Int | Double = null,
     beforeChange: (/* currentSlide */ Double, /* nextSlide */ Double) => Callback = null,
@@ -35,7 +35,7 @@ object Carousel {
     centerPadding: String = null,
     className: String = null,
     cssEase: String = null,
-    customPaging: /* index */ Double => CallbackTo[Element] = null,
+    customPaging: /* index */ Double => CallbackTo[japgolly.scalajs.react.raw.React.Element] = null,
     dotPosition: DotPosition = null,
     dots: js.UndefOr[Boolean] = js.undefined,
     dotsClass: String = null,
@@ -48,7 +48,7 @@ object Carousel {
     infinite: js.UndefOr[Boolean] = js.undefined,
     initialSlide: Int | Double = null,
     lazyLoad: LazyLoadTypes = null,
-    nextArrow: Element = null,
+    nextArrow: VdomElement = null,
     onEdge: /* swipeDirection */ SwipeDirection => Callback = null,
     onInit: js.UndefOr[Callback] = js.undefined,
     onLazyLoad: /* slidesToLoad */ js.Array[Double] => Callback = null,
@@ -58,7 +58,7 @@ object Carousel {
     pauseOnFocus: js.UndefOr[Boolean] = js.undefined,
     pauseOnHover: js.UndefOr[Boolean] = js.undefined,
     prefixCls: String = null,
-    prevArrow: Element = null,
+    prevArrow: VdomElement = null,
     responsive: js.Array[ResponsiveObject] = null,
     rows: Int | Double = null,
     rtl: js.UndefOr[Boolean] = js.undefined,
@@ -81,7 +81,7 @@ object Carousel {
     verticalSwiping: js.UndefOr[Boolean] = js.undefined,
     waitForAnimate: js.UndefOr[Boolean] = js.undefined,
     key: js.UndefOr[Key] = js.undefined,
-    overrides: StringDictionary[js.Any] = null
+    _overrides: StringDictionary[js.Any] = null
   )(
     children: ChildArg*
   ): UnmountedWithRoot[CarouselProps, default, Unit, CarouselProps] = {
@@ -113,17 +113,17 @@ object Carousel {
     if (!js.isUndefined(infinite)) __obj.updateDynamic("infinite")(infinite.asInstanceOf[js.Any])
     if (initialSlide != null) __obj.updateDynamic("initialSlide")(initialSlide.asInstanceOf[js.Any])
     if (lazyLoad != null) __obj.updateDynamic("lazyLoad")(lazyLoad.asInstanceOf[js.Any])
-    if (nextArrow != null) __obj.updateDynamic("nextArrow")(nextArrow.asInstanceOf[js.Any])
-    if (onEdge != null) __obj.updateDynamic("onEdge")(js.Any.fromFunction1((t0: /* swipeDirection */ typingsJapgolly.reactDashSlick.reactDashSlickMod.SwipeDirection) => onEdge(t0).runNow()))
+    if (nextArrow != null) __obj.updateDynamic("nextArrow")(nextArrow.rawElement.asInstanceOf[js.Any])
+    if (onEdge != null) __obj.updateDynamic("onEdge")(js.Any.fromFunction1((t0: /* swipeDirection */ typingsJapgolly.antDesignReactSlick.mod.SwipeDirection) => onEdge(t0).runNow()))
     onInit.foreach(p => __obj.updateDynamic("onInit")(p.toJsFn))
     if (onLazyLoad != null) __obj.updateDynamic("onLazyLoad")(js.Any.fromFunction1((t0: /* slidesToLoad */ js.Array[scala.Double]) => onLazyLoad(t0).runNow()))
     onReInit.foreach(p => __obj.updateDynamic("onReInit")(p.toJsFn))
-    if (onSwipe != null) __obj.updateDynamic("onSwipe")(js.Any.fromFunction1((t0: /* swipeDirection */ typingsJapgolly.reactDashSlick.reactDashSlickMod.SwipeDirection) => onSwipe(t0).runNow()))
+    if (onSwipe != null) __obj.updateDynamic("onSwipe")(js.Any.fromFunction1((t0: /* swipeDirection */ typingsJapgolly.antDesignReactSlick.mod.SwipeDirection) => onSwipe(t0).runNow()))
     if (!js.isUndefined(pauseOnDotsHover)) __obj.updateDynamic("pauseOnDotsHover")(pauseOnDotsHover.asInstanceOf[js.Any])
     if (!js.isUndefined(pauseOnFocus)) __obj.updateDynamic("pauseOnFocus")(pauseOnFocus.asInstanceOf[js.Any])
     if (!js.isUndefined(pauseOnHover)) __obj.updateDynamic("pauseOnHover")(pauseOnHover.asInstanceOf[js.Any])
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
-    if (prevArrow != null) __obj.updateDynamic("prevArrow")(prevArrow.asInstanceOf[js.Any])
+    if (prevArrow != null) __obj.updateDynamic("prevArrow")(prevArrow.rawElement.asInstanceOf[js.Any])
     if (responsive != null) __obj.updateDynamic("responsive")(responsive.asInstanceOf[js.Any])
     if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
     if (!js.isUndefined(rtl)) __obj.updateDynamic("rtl")(rtl.asInstanceOf[js.Any])
@@ -135,7 +135,7 @@ object Carousel {
     if (speed != null) __obj.updateDynamic("speed")(speed.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (!js.isUndefined(swipe)) __obj.updateDynamic("swipe")(swipe.asInstanceOf[js.Any])
-    if (swipeEvent != null) __obj.updateDynamic("swipeEvent")(js.Any.fromFunction1((t0: /* swipeDirection */ typingsJapgolly.reactDashSlick.reactDashSlickMod.SwipeDirection) => swipeEvent(t0).runNow()))
+    if (swipeEvent != null) __obj.updateDynamic("swipeEvent")(js.Any.fromFunction1((t0: /* swipeDirection */ typingsJapgolly.antDesignReactSlick.mod.SwipeDirection) => swipeEvent(t0).runNow()))
     if (!js.isUndefined(swipeToSlide)) __obj.updateDynamic("swipeToSlide")(swipeToSlide.asInstanceOf[js.Any])
     if (!js.isUndefined(touchMove)) __obj.updateDynamic("touchMove")(touchMove.asInstanceOf[js.Any])
     if (touchThreshold != null) __obj.updateDynamic("touchThreshold")(touchThreshold.asInstanceOf[js.Any])
@@ -146,13 +146,13 @@ object Carousel {
     if (!js.isUndefined(verticalSwiping)) __obj.updateDynamic("verticalSwiping")(verticalSwiping.asInstanceOf[js.Any])
     if (!js.isUndefined(waitForAnimate)) __obj.updateDynamic("waitForAnimate")(waitForAnimate.asInstanceOf[js.Any])
     key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (overrides != null) js.Dynamic.global.Object.assign(__obj, overrides)
+    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
   
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antd.libCarouselMod.CarouselProps, 
+  typingsJapgolly.antd.carouselMod.CarouselProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antd.libCarouselMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.antd.libCarouselMod.CarouselProps])(children: _*)
+  typingsJapgolly.antd.carouselMod.default](this.componentImport)
+    f(__obj.asInstanceOf[typingsJapgolly.antd.carouselMod.CarouselProps])(children: _*)
   }
   @JSImport("antd/lib/carousel", JSImport.Default)
   @js.native

@@ -1,47 +1,60 @@
 package typingsJapgolly.antd.components
 
+import japgolly.scalajs.react.Callback
 import japgolly.scalajs.react.CallbackTo
 import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
+import japgolly.scalajs.react.component.Js.MountedWithRawType
+import japgolly.scalajs.react.component.Js.RawMounted
+import japgolly.scalajs.react.component.Js.UnmountedSimple
 import org.scalablytyped.runtime.StringDictionary
 import org.scalajs.dom.raw.HTMLElement
-import typingsJapgolly.antd.libTableFilterDropdownMod.default
-import typingsJapgolly.antd.libTableInterfaceMod.ColumnProps
-import typingsJapgolly.antd.libTableInterfaceMod.FilterMenuProps
-import typingsJapgolly.antd.libTableInterfaceMod.TableLocale
-import typingsJapgolly.react.reactMod.Key
+import typingsJapgolly.antd.filterDropdownMod.FilterDropdownProps
+import typingsJapgolly.antd.tableInterfaceMod.ColumnType
+import typingsJapgolly.antd.tableInterfaceMod.Key
+import typingsJapgolly.antd.tableInterfaceMod.TableLocale
+import typingsJapgolly.antd.useFilterMod.FilterState
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 object FilterDropdown {
-  def apply[T](
-    column: ColumnProps[T],
+  def apply[RecordType](
+    column: ColumnType[RecordType],
+    columnKey: Key,
     dropdownPrefixCls: String,
+    filterMultiple: Boolean,
     locale: TableLocale,
     prefixCls: String,
-    selectedKeys: js.Array[String],
-    confirmFilter: (ColumnProps[T], js.Array[Key]) => CallbackTo[js.Any],
-    getPopupContainer: /* triggerNode */ js.UndefOr[HTMLElement] => CallbackTo[HTMLElement] = null,
+    triggerFilter: FilterState[RecordType] => Callback,
+    filterState: FilterState[RecordType] = null,
+    getPopupContainer: /* triggerNode */ HTMLElement => CallbackTo[HTMLElement] = null,
     key: js.UndefOr[japgolly.scalajs.react.Key] = js.undefined,
-    overrides: StringDictionary[js.Any] = null
+    _overrides: StringDictionary[js.Any] = null
   )(
     children: ChildArg*
-  ): UnmountedWithRoot[FilterMenuProps[T], default[T], Unit, FilterMenuProps[T]] = {
-    val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], dropdownPrefixCls = dropdownPrefixCls.asInstanceOf[js.Any], locale = locale.asInstanceOf[js.Any], prefixCls = prefixCls.asInstanceOf[js.Any], selectedKeys = selectedKeys.asInstanceOf[js.Any])
+  ): UnmountedSimple[
+    FilterDropdownProps[RecordType], 
+    MountedWithRawType[
+      FilterDropdownProps[RecordType], 
+      js.Object, 
+      RawMounted[FilterDropdownProps[RecordType], js.Object]
+    ]
+  ] = {
+    val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], columnKey = columnKey.asInstanceOf[js.Any], dropdownPrefixCls = dropdownPrefixCls.asInstanceOf[js.Any], filterMultiple = filterMultiple.asInstanceOf[js.Any], locale = locale.asInstanceOf[js.Any], prefixCls = prefixCls.asInstanceOf[js.Any])
   
-      __obj.updateDynamic("confirmFilter")(js.Any.fromFunction2((t0: typingsJapgolly.antd.libTableInterfaceMod.ColumnProps[T], t1: js.Array[typingsJapgolly.react.reactMod.Key]) => confirmFilter(t0, t1).runNow()))
-    if (getPopupContainer != null) __obj.updateDynamic("getPopupContainer")(js.Any.fromFunction1((t0: /* triggerNode */ js.UndefOr[org.scalajs.dom.raw.HTMLElement]) => getPopupContainer(t0).runNow()))
+      __obj.updateDynamic("triggerFilter")(js.Any.fromFunction1((t0: typingsJapgolly.antd.useFilterMod.FilterState[RecordType]) => triggerFilter(t0).runNow()))
+    if (filterState != null) __obj.updateDynamic("filterState")(filterState.asInstanceOf[js.Any])
+    if (getPopupContainer != null) __obj.updateDynamic("getPopupContainer")(js.Any.fromFunction1((t0: /* triggerNode */ org.scalajs.dom.raw.HTMLElement) => getPopupContainer(t0).runNow()))
     key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (overrides != null) js.Dynamic.global.Object.assign(__obj, overrides)
+    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
   
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antd.libTableInterfaceMod.FilterMenuProps[T], 
+    val f = japgolly.scalajs.react.JsComponent[
+  typingsJapgolly.antd.filterDropdownMod.FilterDropdownProps[RecordType], 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antd.libTableFilterDropdownMod.default[T]](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.antd.libTableInterfaceMod.FilterMenuProps[T]])(children: _*)
+  js.Object](this.componentImport)
+    f(__obj.asInstanceOf[typingsJapgolly.antd.filterDropdownMod.FilterDropdownProps[RecordType]])(children: _*)
   }
-  @JSImport("antd/lib/table/filterDropdown", JSImport.Default)
+  @JSImport("antd/lib/table/hooks/useFilter/FilterDropdown", JSImport.Default)
   @js.native
   object componentImport extends js.Object
   

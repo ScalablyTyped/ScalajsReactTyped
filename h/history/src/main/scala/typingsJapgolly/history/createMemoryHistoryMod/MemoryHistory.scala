@@ -1,7 +1,7 @@
 package typingsJapgolly.history.createMemoryHistoryMod
 
-import typingsJapgolly.history.historyMod.History
-import typingsJapgolly.history.historyMod.Location
+import typingsJapgolly.history.mod.History
+import typingsJapgolly.history.mod.Location
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

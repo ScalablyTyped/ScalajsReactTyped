@@ -7,8 +7,8 @@ import japgolly.scalajs.react.component.Js.RawMounted
 import japgolly.scalajs.react.component.Js.UnmountedSimple
 import japgolly.scalajs.react.vdom.VdomNode
 import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.antd.libEmptyMod.EmptyProps
-import typingsJapgolly.react.reactMod.CSSProperties
+import typingsJapgolly.antd.emptyMod.EmptyProps
+import typingsJapgolly.react.mod.CSSProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,7 +22,7 @@ object Empty {
     prefixCls: String = null,
     style: CSSProperties = null,
     key: js.UndefOr[Key] = js.undefined,
-    overrides: StringDictionary[js.Any] = null
+    _overrides: StringDictionary[js.Any] = null
   )(
     children: ChildArg*
   ): UnmountedSimple[
@@ -38,13 +38,13 @@ object Empty {
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (overrides != null) js.Dynamic.global.Object.assign(__obj, overrides)
+    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
   
     val f = japgolly.scalajs.react.JsComponent[
-  typingsJapgolly.antd.libEmptyMod.EmptyProps, 
+  typingsJapgolly.antd.emptyMod.EmptyProps, 
   japgolly.scalajs.react.Children.Varargs, 
   js.Object](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.antd.libEmptyMod.EmptyProps])(children: _*)
+    f(__obj.asInstanceOf[typingsJapgolly.antd.emptyMod.EmptyProps])(children: _*)
   }
   @JSImport("antd/lib/empty", JSImport.Default)
   @js.native

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "globby" : "10.0.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "globby" : "10.0.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

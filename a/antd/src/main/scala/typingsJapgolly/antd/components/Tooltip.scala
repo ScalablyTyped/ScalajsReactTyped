@@ -8,24 +8,21 @@ import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
 import japgolly.scalajs.react.raw.React.Node
 import org.scalablytyped.runtime.StringDictionary
 import org.scalajs.dom.raw.HTMLElement
-import typingsJapgolly.antd.libTooltipMod.RenderFunction
-import typingsJapgolly.antd.libTooltipMod.TooltipAlignConfig
-import typingsJapgolly.antd.libTooltipMod.TooltipPlacement
-import typingsJapgolly.antd.libTooltipMod.TooltipProps
-import typingsJapgolly.antd.libTooltipMod.TooltipTrigger
-import typingsJapgolly.antd.libTooltipMod.default
-import typingsJapgolly.antd.libTooltipPlacementsMod.AdjustOverflow
-import typingsJapgolly.react.reactMod.CSSProperties
+import typingsJapgolly.antd.placementsMod.AdjustOverflow
+import typingsJapgolly.antd.tooltipMod.RenderFunction
+import typingsJapgolly.antd.tooltipMod.TooltipPlacement
+import typingsJapgolly.antd.tooltipMod.default
+import typingsJapgolly.react.mod.CSSProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 object Tooltip {
   def TooltipPropsWithTitle(
-    align: TooltipAlignConfig = null,
+    align: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AlignType */ js.Any = null,
     arrowPointAtCenter: js.UndefOr[Boolean] = js.undefined,
     autoAdjustOverflow: Boolean | AdjustOverflow = null,
-    builtinPlacements: js.Object = null,
+    builtinPlacements: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BuildInPlacements */ js.Any = null,
     className: String = null,
     defaultVisible: js.UndefOr[Boolean] = js.undefined,
     destroyTooltipOnHide: js.UndefOr[Boolean] = js.undefined,
@@ -43,13 +40,18 @@ object Tooltip {
     style: CSSProperties = null,
     title: Node | RenderFunction = null,
     transitionName: String = null,
-    trigger: TooltipTrigger = null,
+    trigger: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ActionType */ js.Any = null,
     visible: js.UndefOr[Boolean] = js.undefined,
     key: js.UndefOr[Key] = js.undefined,
-    overrides: StringDictionary[js.Any] = null
+    _overrides: StringDictionary[js.Any] = null
   )(
     children: ChildArg*
-  ): UnmountedWithRoot[TooltipProps, default, Unit, TooltipProps] = {
+  ): UnmountedWithRoot[
+    typingsJapgolly.antd.tooltipMod.TooltipPropsWithTitle, 
+    default, 
+    Unit, 
+    typingsJapgolly.antd.tooltipMod.TooltipPropsWithTitle
+  ] = {
     val __obj = js.Dynamic.literal()
   
       if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
@@ -76,19 +78,19 @@ object Tooltip {
     if (trigger != null) __obj.updateDynamic("trigger")(trigger.asInstanceOf[js.Any])
     if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (overrides != null) js.Dynamic.global.Object.assign(__obj, overrides)
+    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
   
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antd.libTooltipMod.TooltipProps, 
+  typingsJapgolly.antd.tooltipMod.TooltipPropsWithTitle, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antd.libTooltipMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.antd.libTooltipMod.TooltipProps])(children: _*)
+  typingsJapgolly.antd.tooltipMod.default](this.componentImport)
+    f(__obj.asInstanceOf[typingsJapgolly.antd.tooltipMod.TooltipPropsWithTitle])(children: _*)
   }
   def TooltipPropsWithOverlay(
-    align: TooltipAlignConfig = null,
+    align: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AlignType */ js.Any = null,
     arrowPointAtCenter: js.UndefOr[Boolean] = js.undefined,
     autoAdjustOverflow: Boolean | AdjustOverflow = null,
-    builtinPlacements: js.Object = null,
+    builtinPlacements: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BuildInPlacements */ js.Any = null,
     className: String = null,
     defaultVisible: js.UndefOr[Boolean] = js.undefined,
     destroyTooltipOnHide: js.UndefOr[Boolean] = js.undefined,
@@ -106,13 +108,18 @@ object Tooltip {
     style: CSSProperties = null,
     title: Node | RenderFunction = null,
     transitionName: String = null,
-    trigger: TooltipTrigger = null,
+    trigger: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ActionType */ js.Any = null,
     visible: js.UndefOr[Boolean] = js.undefined,
     key: js.UndefOr[Key] = js.undefined,
-    overrides: StringDictionary[js.Any] = null
+    _overrides: StringDictionary[js.Any] = null
   )(
     children: ChildArg*
-  ): UnmountedWithRoot[TooltipProps, default, Unit, TooltipProps] = {
+  ): UnmountedWithRoot[
+    typingsJapgolly.antd.tooltipMod.TooltipPropsWithOverlay, 
+    default, 
+    Unit, 
+    typingsJapgolly.antd.tooltipMod.TooltipPropsWithOverlay
+  ] = {
     val __obj = js.Dynamic.literal()
   
       if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
@@ -139,13 +146,13 @@ object Tooltip {
     if (trigger != null) __obj.updateDynamic("trigger")(trigger.asInstanceOf[js.Any])
     if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (overrides != null) js.Dynamic.global.Object.assign(__obj, overrides)
+    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
   
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antd.libTooltipMod.TooltipProps, 
+  typingsJapgolly.antd.tooltipMod.TooltipPropsWithOverlay, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antd.libTooltipMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.antd.libTooltipMod.TooltipProps])(children: _*)
+  typingsJapgolly.antd.tooltipMod.default](this.componentImport)
+    f(__obj.asInstanceOf[typingsJapgolly.antd.tooltipMod.TooltipPropsWithOverlay])(children: _*)
   }
   @JSImport("antd/lib/tooltip", JSImport.Default)
   @js.native

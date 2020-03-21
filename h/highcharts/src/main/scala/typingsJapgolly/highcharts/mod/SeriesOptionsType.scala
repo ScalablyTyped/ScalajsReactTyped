@@ -1,0 +1,106 @@
+package typingsJapgolly.highcharts.mod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/* Rewritten from type alias, can be one of: 
+  - typingsJapgolly.highcharts.mod.SeriesAbandsOptions
+  - typingsJapgolly.highcharts.mod.SeriesAdOptions
+  - typingsJapgolly.highcharts.mod.SeriesAoOptions
+  - typingsJapgolly.highcharts.mod.SeriesApoOptions
+  - typingsJapgolly.highcharts.mod.SeriesAreaOptions
+  - typingsJapgolly.highcharts.mod.SeriesArearangeOptions
+  - typingsJapgolly.highcharts.mod.SeriesAreasplineOptions
+  - typingsJapgolly.highcharts.mod.SeriesAreasplinerangeOptions
+  - typingsJapgolly.highcharts.mod.SeriesAroonOptions
+  - typingsJapgolly.highcharts.mod.SeriesAroonoscillatorOptions
+  - typingsJapgolly.highcharts.mod.SeriesAtrOptions
+  - typingsJapgolly.highcharts.mod.SeriesBarOptions
+  - typingsJapgolly.highcharts.mod.SeriesBbOptions
+  - typingsJapgolly.highcharts.mod.SeriesBellcurveOptions
+  - typingsJapgolly.highcharts.mod.SeriesBoxplotOptions
+  - typingsJapgolly.highcharts.mod.SeriesBubbleOptions
+  - typingsJapgolly.highcharts.mod.SeriesBulletOptions
+  - typingsJapgolly.highcharts.mod.SeriesCandlestickOptions
+  - typingsJapgolly.highcharts.mod.SeriesCciOptions
+  - typingsJapgolly.highcharts.mod.SeriesChaikinOptions
+  - typingsJapgolly.highcharts.mod.SeriesCmfOptions
+  - typingsJapgolly.highcharts.mod.SeriesColumnOptions
+  - typingsJapgolly.highcharts.mod.SeriesColumnpyramidOptions
+  - typingsJapgolly.highcharts.mod.SeriesColumnrangeOptions
+  - typingsJapgolly.highcharts.mod.SeriesCylinderOptions
+  - typingsJapgolly.highcharts.mod.SeriesDemaOptions
+  - typingsJapgolly.highcharts.mod.SeriesDependencywheelOptions
+  - typingsJapgolly.highcharts.mod.SeriesDpoOptions
+  - typingsJapgolly.highcharts.mod.SeriesEmaOptions
+  - typingsJapgolly.highcharts.mod.SeriesErrorbarOptions
+  - typingsJapgolly.highcharts.mod.SeriesFlagsOptions
+  - typingsJapgolly.highcharts.mod.SeriesFunnel3dOptions
+  - typingsJapgolly.highcharts.mod.SeriesFunnelOptions
+  - typingsJapgolly.highcharts.mod.SeriesGanttOptions
+  - typingsJapgolly.highcharts.mod.SeriesGaugeOptions
+  - typingsJapgolly.highcharts.mod.SeriesHeatmapOptions
+  - typingsJapgolly.highcharts.mod.SeriesHistogramOptions
+  - typingsJapgolly.highcharts.mod.SeriesIkhOptions
+  - typingsJapgolly.highcharts.mod.SeriesItemOptions
+  - typingsJapgolly.highcharts.mod.SeriesKeltnerchannelsOptions
+  - typingsJapgolly.highcharts.mod.SeriesLinearregressionangleOptions
+  - typingsJapgolly.highcharts.mod.SeriesLinearregressioninterceptOptions
+  - typingsJapgolly.highcharts.mod.SeriesLinearregressionOptions
+  - typingsJapgolly.highcharts.mod.SeriesLinearregressionslopeOptions
+  - typingsJapgolly.highcharts.mod.SeriesLineOptions
+  - typingsJapgolly.highcharts.mod.SeriesMacdOptions
+  - typingsJapgolly.highcharts.mod.SeriesMapbubbleOptions
+  - typingsJapgolly.highcharts.mod.SeriesMaplineOptions
+  - typingsJapgolly.highcharts.mod.SeriesMapOptions
+  - typingsJapgolly.highcharts.mod.SeriesMappointOptions
+  - typingsJapgolly.highcharts.mod.SeriesMfiOptions
+  - typingsJapgolly.highcharts.mod.SeriesMomentumOptions
+  - typingsJapgolly.highcharts.mod.SeriesNatrOptions
+  - typingsJapgolly.highcharts.mod.SeriesNetworkgraphOptions
+  - typingsJapgolly.highcharts.mod.SeriesOhlcOptions
+  - typingsJapgolly.highcharts.mod.SeriesOrganizationOptions
+  - typingsJapgolly.highcharts.mod.SeriesPackedbubbleOptions
+  - typingsJapgolly.highcharts.mod.SeriesParetoOptions
+  - typingsJapgolly.highcharts.mod.SeriesPcOptions
+  - typingsJapgolly.highcharts.mod.SeriesPieOptions
+  - typingsJapgolly.highcharts.mod.SeriesPivotpointsOptions
+  - typingsJapgolly.highcharts.mod.SeriesPolygonOptions
+  - typingsJapgolly.highcharts.mod.SeriesPpoOptions
+  - typingsJapgolly.highcharts.mod.SeriesPriceenvelopesOptions
+  - typingsJapgolly.highcharts.mod.SeriesPsarOptions
+  - typingsJapgolly.highcharts.mod.SeriesPyramid3dOptions
+  - typingsJapgolly.highcharts.mod.SeriesPyramidOptions
+  - typingsJapgolly.highcharts.mod.SeriesRocOptions
+  - typingsJapgolly.highcharts.mod.SeriesRsiOptions
+  - typingsJapgolly.highcharts.mod.SeriesSankeyOptions
+  - typingsJapgolly.highcharts.mod.SeriesScatter3dOptions
+  - typingsJapgolly.highcharts.mod.SeriesScatterOptions
+  - typingsJapgolly.highcharts.mod.SeriesSmaOptions
+  - typingsJapgolly.highcharts.mod.SeriesSolidgaugeOptions
+  - typingsJapgolly.highcharts.mod.SeriesSplineOptions
+  - typingsJapgolly.highcharts.mod.SeriesStochasticOptions
+  - typingsJapgolly.highcharts.mod.SeriesStreamgraphOptions
+  - typingsJapgolly.highcharts.mod.SeriesSunburstOptions
+  - typingsJapgolly.highcharts.mod.SeriesSupertrendOptions
+  - typingsJapgolly.highcharts.mod.SeriesTemaOptions
+  - typingsJapgolly.highcharts.mod.SeriesTilemapOptions
+  - typingsJapgolly.highcharts.mod.SeriesTimelineOptions
+  - typingsJapgolly.highcharts.mod.SeriesTrendlineOptions
+  - typingsJapgolly.highcharts.mod.SeriesTrixOptions
+  - typingsJapgolly.highcharts.mod.SeriesVariablepieOptions
+  - typingsJapgolly.highcharts.mod.SeriesVariwideOptions
+  - typingsJapgolly.highcharts.mod.SeriesVbpOptions
+  - typingsJapgolly.highcharts.mod.SeriesVectorOptions
+  - typingsJapgolly.highcharts.mod.SeriesVennOptions
+  - typingsJapgolly.highcharts.mod.SeriesVwapOptions
+  - typingsJapgolly.highcharts.mod.SeriesWaterfallOptions
+  - typingsJapgolly.highcharts.mod.SeriesWilliamsrOptions
+  - typingsJapgolly.highcharts.mod.SeriesWmaOptions
+  - typingsJapgolly.highcharts.mod.SeriesWordcloudOptions
+  - typingsJapgolly.highcharts.mod.SeriesXrangeOptions
+  - typingsJapgolly.highcharts.mod.SeriesZigzagOptions
+*/
+trait SeriesOptionsType extends js.Object
+

@@ -1,9 +1,9 @@
 package typingsJapgolly.lodash.fpMod
 
-import typingsJapgolly.lodash.lodashMod.List
-import typingsJapgolly.lodash.lodashMod.ValueIterateeCustom
-import typingsJapgolly.lodash.lodashMod.ValueIteratorTypeGuard
-import typingsJapgolly.lodash.lodashMod.__
+import typingsJapgolly.lodash.mod.List
+import typingsJapgolly.lodash.mod.ValueIterateeCustom
+import typingsJapgolly.lodash.mod.ValueIteratorTypeGuard
+import typingsJapgolly.lodash.mod.__
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,15 +12,7 @@ import scala.scalajs.js.annotation._
 trait LodashFindFrom extends js.Object {
   def apply(predicate: __, fromIndex: Double): LodashFindFrom1x2 = js.native
   def apply[T](predicate: ValueIterateeCustom[T, Boolean]): LodashFindFrom2x1[T] = js.native
-  def apply[T /* <: js.Object */](
-    predicate: ValueIterateeCustom[
-      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any, 
-      Boolean
-    ],
-    fromIndex: Double
-  ): js.UndefOr[
-    /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
-  ] = js.native
+  def apply[T](predicate: ValueIterateeCustom[T, Boolean], fromIndex: Double): js.UndefOr[T] = js.native
   def apply[T /* <: js.Object */](
     predicate: ValueIterateeCustom[
       /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any, 
@@ -53,14 +45,13 @@ trait LodashFindFrom extends js.Object {
   def apply[T](predicate: __, fromIndex: __): LodashFindFrom1x4[T] = js.native
   def apply[T /* <: js.Object */](predicate: __, fromIndex: __, collection: T): LodashFindFrom3x4[T] = js.native
   def apply[T](predicate: __, fromIndex: __, collection: List[T]): LodashFindFrom1x4[T] = js.native
-  def apply[T, S /* <: T */](predicate: ValueIteratorTypeGuard[T, S]): LodashFindFrom1x1[T, S] = js.native
   def apply[T /* <: js.Object */, S /* <: /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any */](
     predicate: ValueIteratorTypeGuard[
       /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any, 
       S
-    ],
-    fromIndex: Double
-  ): LodashFindFrom3x3[T, S] = js.native
+    ]
+  ): LodashFindFrom3x1[T, S] = js.native
+  def apply[T, S /* <: T */](predicate: ValueIteratorTypeGuard[T, S], fromIndex: Double): LodashFindFrom1x3[T, S] = js.native
   def apply[T /* <: js.Object */, S /* <: /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any */](
     predicate: ValueIteratorTypeGuard[
       /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any, 
@@ -70,13 +61,7 @@ trait LodashFindFrom extends js.Object {
     collection: T
   ): js.UndefOr[S] = js.native
   def apply[T, S /* <: T */](predicate: ValueIteratorTypeGuard[T, S], fromIndex: Double, collection: List[T]): js.UndefOr[S] = js.native
-  def apply[T /* <: js.Object */, S /* <: /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any */](
-    predicate: ValueIteratorTypeGuard[
-      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any, 
-      S
-    ],
-    fromIndex: __
-  ): LodashFindFrom3x5[S] = js.native
+  def apply[T, S /* <: T */](predicate: ValueIteratorTypeGuard[T, S], fromIndex: __): LodashFindFrom1x5[S] = js.native
   def apply[T /* <: js.Object */, S /* <: /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any */](
     predicate: ValueIteratorTypeGuard[
       /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any, 

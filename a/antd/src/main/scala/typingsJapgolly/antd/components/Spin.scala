@@ -5,10 +5,10 @@ import japgolly.scalajs.react.Key
 import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
 import japgolly.scalajs.react.vdom.VdomElement
 import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.antd.libSpinMod.SpinProps
-import typingsJapgolly.antd.libSpinMod.SpinSize
-import typingsJapgolly.antd.libSpinMod.default
-import typingsJapgolly.react.reactMod.CSSProperties
+import typingsJapgolly.antd.spinMod.SpinProps
+import typingsJapgolly.antd.spinMod.SpinSize
+import typingsJapgolly.antd.spinMod.default
+import typingsJapgolly.react.mod.CSSProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,7 +25,7 @@ object Spin {
     tip: String = null,
     wrapperClassName: String = null,
     key: js.UndefOr[Key] = js.undefined,
-    overrides: StringDictionary[js.Any] = null
+    _overrides: StringDictionary[js.Any] = null
   )(
     children: ChildArg*
   ): UnmountedWithRoot[SpinProps, default, Unit, SpinProps] = {
@@ -41,13 +41,13 @@ object Spin {
     if (tip != null) __obj.updateDynamic("tip")(tip.asInstanceOf[js.Any])
     if (wrapperClassName != null) __obj.updateDynamic("wrapperClassName")(wrapperClassName.asInstanceOf[js.Any])
     key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (overrides != null) js.Dynamic.global.Object.assign(__obj, overrides)
+    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
   
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antd.libSpinMod.SpinProps, 
+  typingsJapgolly.antd.spinMod.SpinProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antd.libSpinMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.antd.libSpinMod.SpinProps])(children: _*)
+  typingsJapgolly.antd.spinMod.default](this.componentImport)
+    f(__obj.asInstanceOf[typingsJapgolly.antd.spinMod.SpinProps])(children: _*)
   }
   @JSImport("antd/lib/spin", JSImport.Default)
   @js.native

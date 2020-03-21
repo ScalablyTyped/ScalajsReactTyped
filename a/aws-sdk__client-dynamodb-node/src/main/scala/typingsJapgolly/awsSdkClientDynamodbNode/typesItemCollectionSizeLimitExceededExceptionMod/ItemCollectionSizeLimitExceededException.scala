@@ -1,0 +1,22 @@
+package typingsJapgolly.awsSdkClientDynamodbNode.typesItemCollectionSizeLimitExceededExceptionMod
+
+import typingsJapgolly.awsSdkClientDynamodbNode.batchWriteItemExceptionsUnionMod.BatchWriteItemExceptionsUnion
+import typingsJapgolly.awsSdkClientDynamodbNode.deleteItemExceptionsUnionMod.DeleteItemExceptionsUnion
+import typingsJapgolly.awsSdkClientDynamodbNode.putItemExceptionsUnionMod.PutItemExceptionsUnion
+import typingsJapgolly.awsSdkClientDynamodbNode.updateItemExceptionsUnionMod.UpdateItemExceptionsUnion
+import typingsJapgolly.awsSdkTypes.exceptionMod.ServiceException
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@js.native
+trait ItemCollectionSizeLimitExceededException
+  extends ServiceException[ItemCollectionSizeLimitExceededExceptionDetails]
+     with BatchWriteItemExceptionsUnion
+     with DeleteItemExceptionsUnion
+     with PutItemExceptionsUnion
+     with UpdateItemExceptionsUnion {
+  @JSName("name")
+  var name_ItemCollectionSizeLimitExceededException: typingsJapgolly.awsSdkClientDynamodbNode.awsSdkClientDynamodbNodeStrings.ItemCollectionSizeLimitExceededException = js.native
+}
+

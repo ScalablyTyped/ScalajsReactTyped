@@ -6,9 +6,9 @@ import japgolly.scalajs.react.component.Js.MountedWithRawType
 import japgolly.scalajs.react.component.Js.RawMounted
 import japgolly.scalajs.react.component.Js.UnmountedSimple
 import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.antd.libStatisticNumberMod.NumberProps
-import typingsJapgolly.antd.libStatisticUtilsMod.Formatter
-import typingsJapgolly.antd.libStatisticUtilsMod.valueType
+import typingsJapgolly.antd.numberMod.NumberProps
+import typingsJapgolly.antd.statisticUtilsMod.Formatter
+import typingsJapgolly.antd.statisticUtilsMod.valueType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,7 +22,7 @@ object Number {
     precision: Int | Double = null,
     prefixCls: String = null,
     key: js.UndefOr[Key] = js.undefined,
-    overrides: StringDictionary[js.Any] = null
+    _overrides: StringDictionary[js.Any] = null
   )(
     children: ChildArg*
   ): UnmountedSimple[
@@ -37,13 +37,13 @@ object Number {
     if (precision != null) __obj.updateDynamic("precision")(precision.asInstanceOf[js.Any])
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
     key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (overrides != null) js.Dynamic.global.Object.assign(__obj, overrides)
+    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
   
     val f = japgolly.scalajs.react.JsComponent[
-  typingsJapgolly.antd.libStatisticNumberMod.NumberProps, 
+  typingsJapgolly.antd.numberMod.NumberProps, 
   japgolly.scalajs.react.Children.Varargs, 
   js.Object](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.antd.libStatisticNumberMod.NumberProps])(children: _*)
+    f(__obj.asInstanceOf[typingsJapgolly.antd.numberMod.NumberProps])(children: _*)
   }
   @JSImport("antd/lib/statistic/Number", JSImport.Default)
   @js.native

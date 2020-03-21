@@ -1,0 +1,36 @@
+package typingsJapgolly.csstype.mod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/* Rewritten from type alias, can be one of: 
+  - typingsJapgolly.csstype.csstypeStrings.jis04
+  - typingsJapgolly.csstype.csstypeStrings.jis78
+  - typingsJapgolly.csstype.csstypeStrings.jis83
+  - typingsJapgolly.csstype.csstypeStrings.jis90
+  - typingsJapgolly.csstype.csstypeStrings.simplified
+  - typingsJapgolly.csstype.csstypeStrings.traditional
+*/
+trait EastAsianVariantValues
+  extends _FontFaceFontVariantProperty
+     with _FontVariantEastAsianProperty
+     with _FontVariantProperty
+
+object EastAsianVariantValues {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def jis04: typingsJapgolly.csstype.csstypeStrings.jis04 = this.cast("jis04")
+  @scala.inline
+  def jis78: typingsJapgolly.csstype.csstypeStrings.jis78 = this.cast("jis78")
+  @scala.inline
+  def jis83: typingsJapgolly.csstype.csstypeStrings.jis83 = this.cast("jis83")
+  @scala.inline
+  def jis90: typingsJapgolly.csstype.csstypeStrings.jis90 = this.cast("jis90")
+  @scala.inline
+  def simplified: typingsJapgolly.csstype.csstypeStrings.simplified = this.cast("simplified")
+  @scala.inline
+  def traditional: typingsJapgolly.csstype.csstypeStrings.traditional = this.cast("traditional")
+}
+

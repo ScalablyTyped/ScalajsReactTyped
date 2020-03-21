@@ -2,7 +2,7 @@ package typingsJapgolly.node.http2Mod
 
 import typingsJapgolly.node.netMod.Socket
 import typingsJapgolly.node.tlsMod.TLSSocket
-import typingsJapgolly.node.urlMod.URL
+import typingsJapgolly.node.urlMod.URL_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,37 +10,37 @@ import scala.scalajs.js.annotation._
 @JSImport("http2", "connect")
 @js.native
 object connect extends js.Object {
-  def apply(authority: java.lang.String): ClientHttp2Session = js.native
+  def apply(authority: String): ClientHttp2Session = js.native
   def apply(
-    authority: java.lang.String,
+    authority: String,
     listener: js.Function2[/* session */ ClientHttp2Session, /* socket */ Socket | TLSSocket, Unit]
   ): ClientHttp2Session = js.native
-  def apply(authority: java.lang.String, options: ClientSessionOptions): ClientHttp2Session = js.native
+  def apply(authority: String, options: ClientSessionOptions): ClientHttp2Session = js.native
   def apply(
-    authority: java.lang.String,
+    authority: String,
     options: ClientSessionOptions,
     listener: js.Function2[/* session */ ClientHttp2Session, /* socket */ Socket | TLSSocket, Unit]
   ): ClientHttp2Session = js.native
-  def apply(authority: java.lang.String, options: SecureClientSessionOptions): ClientHttp2Session = js.native
+  def apply(authority: String, options: SecureClientSessionOptions): ClientHttp2Session = js.native
   def apply(
-    authority: java.lang.String,
+    authority: String,
     options: SecureClientSessionOptions,
     listener: js.Function2[/* session */ ClientHttp2Session, /* socket */ Socket | TLSSocket, Unit]
   ): ClientHttp2Session = js.native
-  def apply(authority: URL): ClientHttp2Session = js.native
+  def apply(authority: URL_): ClientHttp2Session = js.native
   def apply(
-    authority: URL,
+    authority: URL_,
     listener: js.Function2[/* session */ ClientHttp2Session, /* socket */ Socket | TLSSocket, Unit]
   ): ClientHttp2Session = js.native
-  def apply(authority: URL, options: ClientSessionOptions): ClientHttp2Session = js.native
+  def apply(authority: URL_, options: ClientSessionOptions): ClientHttp2Session = js.native
   def apply(
-    authority: URL,
+    authority: URL_,
     options: ClientSessionOptions,
     listener: js.Function2[/* session */ ClientHttp2Session, /* socket */ Socket | TLSSocket, Unit]
   ): ClientHttp2Session = js.native
-  def apply(authority: URL, options: SecureClientSessionOptions): ClientHttp2Session = js.native
+  def apply(authority: URL_, options: SecureClientSessionOptions): ClientHttp2Session = js.native
   def apply(
-    authority: URL,
+    authority: URL_,
     options: SecureClientSessionOptions,
     listener: js.Function2[/* session */ ClientHttp2Session, /* socket */ Socket | TLSSocket, Unit]
   ): ClientHttp2Session = js.native

@@ -1,0 +1,34 @@
+package typingsJapgolly.materializeCss.mod
+
+import org.scalajs.dom.raw.Element
+import typingsJapgolly.materializeCss.MElements
+import typingsJapgolly.materializeCss.PartialParallaxOptions
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("materialize-css", "Parallax")
+@js.native
+class Parallax ()
+  extends typingsJapgolly.materializeCss.M.Parallax
+
+/* static members */
+@JSImport("materialize-css", "Parallax")
+@js.native
+object Parallax extends js.Object {
+  /**
+    * Get Instance
+    */
+  def getInstance(elem: Element): typingsJapgolly.materializeCss.M.Parallax = js.native
+  /**
+    * Init Parallaxs
+    */
+  def init(els: MElements): js.Array[typingsJapgolly.materializeCss.M.Parallax] = js.native
+  def init(els: MElements, options: PartialParallaxOptions): js.Array[typingsJapgolly.materializeCss.M.Parallax] = js.native
+  /**
+    * Init Parallax
+    */
+  def init(els: typingsJapgolly.std.Element): typingsJapgolly.materializeCss.M.Parallax = js.native
+  def init(els: typingsJapgolly.std.Element, options: PartialParallaxOptions): typingsJapgolly.materializeCss.M.Parallax = js.native
+}
+

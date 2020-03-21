@@ -1,0 +1,36 @@
+package typingsJapgolly.awsSdkClientCodecommitNode
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("@aws-sdk/client-codecommit-node/types/TestRepositoryTriggersExceptionsUnion", JSImport.Namespace)
+@js.native
+object testRepositoryTriggersExceptionsUnionMod extends js.Object {
+  /* Rewritten from type alias, can be one of: 
+    - typingsJapgolly.awsSdkClientCodecommitNode.typesRepositoryDoesNotExistExceptionMod.RepositoryDoesNotExistException
+    - typingsJapgolly.awsSdkClientCodecommitNode.typesRepositoryNameRequiredExceptionMod.RepositoryNameRequiredException
+    - typingsJapgolly.awsSdkClientCodecommitNode.typesInvalidRepositoryNameExceptionMod.InvalidRepositoryNameException
+    - typingsJapgolly.awsSdkClientCodecommitNode.typesRepositoryTriggersListRequiredExceptionMod.RepositoryTriggersListRequiredException
+    - typingsJapgolly.awsSdkClientCodecommitNode.typesMaximumRepositoryTriggersExceededExceptionMod.MaximumRepositoryTriggersExceededException
+    - typingsJapgolly.awsSdkClientCodecommitNode.typesInvalidRepositoryTriggerNameExceptionMod.InvalidRepositoryTriggerNameException
+    - typingsJapgolly.awsSdkClientCodecommitNode.typesInvalidRepositoryTriggerDestinationArnExceptionMod.InvalidRepositoryTriggerDestinationArnException
+    - typingsJapgolly.awsSdkClientCodecommitNode.typesInvalidRepositoryTriggerRegionExceptionMod.InvalidRepositoryTriggerRegionException
+    - typingsJapgolly.awsSdkClientCodecommitNode.typesInvalidRepositoryTriggerCustomDataExceptionMod.InvalidRepositoryTriggerCustomDataException
+    - typingsJapgolly.awsSdkClientCodecommitNode.typesMaximumBranchesExceededExceptionMod.MaximumBranchesExceededException
+    - typingsJapgolly.awsSdkClientCodecommitNode.typesInvalidRepositoryTriggerBranchNameExceptionMod.InvalidRepositoryTriggerBranchNameException
+    - typingsJapgolly.awsSdkClientCodecommitNode.typesInvalidRepositoryTriggerEventsExceptionMod.InvalidRepositoryTriggerEventsException
+    - typingsJapgolly.awsSdkClientCodecommitNode.typesRepositoryTriggerNameRequiredExceptionMod.RepositoryTriggerNameRequiredException
+    - typingsJapgolly.awsSdkClientCodecommitNode.typesRepositoryTriggerDestinationArnRequiredExceptionMod.RepositoryTriggerDestinationArnRequiredException
+    - typingsJapgolly.awsSdkClientCodecommitNode.typesRepositoryTriggerBranchNameListRequiredExceptionMod.RepositoryTriggerBranchNameListRequiredException
+    - typingsJapgolly.awsSdkClientCodecommitNode.typesRepositoryTriggerEventsListRequiredExceptionMod.RepositoryTriggerEventsListRequiredException
+    - typingsJapgolly.awsSdkClientCodecommitNode.typesEncryptionIntegrityChecksFailedExceptionMod.EncryptionIntegrityChecksFailedException
+    - typingsJapgolly.awsSdkClientCodecommitNode.typesEncryptionKeyAccessDeniedExceptionMod.EncryptionKeyAccessDeniedException
+    - typingsJapgolly.awsSdkClientCodecommitNode.typesEncryptionKeyDisabledExceptionMod.EncryptionKeyDisabledException
+    - typingsJapgolly.awsSdkClientCodecommitNode.typesEncryptionKeyNotFoundExceptionMod.EncryptionKeyNotFoundException
+    - typingsJapgolly.awsSdkClientCodecommitNode.typesEncryptionKeyUnavailableExceptionMod.EncryptionKeyUnavailableException
+  */
+  trait TestRepositoryTriggersExceptionsUnion extends js.Object
+  
+}
+

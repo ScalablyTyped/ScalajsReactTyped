@@ -1,0 +1,170 @@
+package typingsJapgolly.angularCompiler.mod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("@angular/compiler", "R3Identifiers")
+@js.native
+class R3Identifiers ()
+  extends typingsJapgolly.angularCompiler.publicApiMod.R3Identifiers
+
+/* static members */
+@JSImport("@angular/compiler", "R3Identifiers")
+@js.native
+object R3Identifiers extends js.Object {
+  var BaseDef: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference = js.native
+  var ComponentDefWithMeta: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference = js.native
+  var DirectiveDefWithMeta: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference = js.native
+  var InheritDefinitionFeature: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference = js.native
+  var InjectorDef: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference = js.native
+  var NEW_METHOD: String = js.native
+  var NgModuleDefWithMeta: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference = js.native
+  var NgOnChangesFeature: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference = js.native
+  var PATCH_DEPS: String = js.native
+  var PipeDefWithMeta: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference = js.native
+  var ProvidersFeature: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference = js.native
+  var TRANSFORM_METHOD: String = js.native
+  var allocHostVars: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference = js.native
+  var attribute: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference = js.native
+  var attributeInterpolate1: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference = js.native
+  var attributeInterpolate2: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference = js.native
+  var attributeInterpolate3: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference = js.native
+  var attributeInterpolate4: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference = js.native
+  var attributeInterpolate5: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference = js.native
+  var attributeInterpolate6: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference = js.native
+  var attributeInterpolate7: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference = js.native
+  var attributeInterpolate8: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference = js.native
+  var attributeInterpolateV: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference = js.native
+  var classMap: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference = js.native
+  var classMapInterpolate1: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference = js.native
+  var classMapInterpolate2: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference = js.native
+  var classMapInterpolate3: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference = js.native
+  var classMapInterpolate4: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference = js.native
+  var classMapInterpolate5: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference = js.native
+  var classMapInterpolate6: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference = js.native
+  var classMapInterpolate7: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference = js.native
+  var classMapInterpolate8: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference = js.native
+  var classMapInterpolateV: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference = js.native
+  var classProp: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference = js.native
+  var componentHostSyntheticListener: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference = js.native
+  var containerCreate: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference = js.native
+  var contentQuery: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference = js.native
+  var defaultStyleSanitizer: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference = js.native
+  var defineBase: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference = js.native
+  var defineComponent: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference = js.native
+  var defineDirective: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference = js.native
+  var defineInjector: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference = js.native
+  var defineNgModule: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference = js.native
+  var definePipe: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference = js.native
+  var directiveInject: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference = js.native
+  var disableBindings: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference = js.native
+  var element: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference = js.native
+  var elementContainer: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference = js.native
+  var elementContainerEnd: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference = js.native
+  var elementContainerStart: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference = js.native
+  var elementEnd: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference = js.native
+  var elementHostAttrs: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference = js.native
+  var elementStart: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference = js.native
+  var enableBindings: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference = js.native
+  var getCurrentView: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference = js.native
+  var getFactoryOf: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference = js.native
+  var getInheritedFactory: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference = js.native
+  var hostProperty: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference = js.native
+  var i18n: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference = js.native
+  var i18nApply: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference = js.native
+  var i18nAttributes: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference = js.native
+  var i18nEnd: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference = js.native
+  var i18nExp: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference = js.native
+  var i18nLocalize: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference = js.native
+  var i18nPostprocess: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference = js.native
+  var i18nStart: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference = js.native
+  var inject: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference = js.native
+  var injectAttribute: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference = js.native
+  var injectPipeChangeDetectorRef: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference = js.native
+  var listener: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference = js.native
+  var load: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference = js.native
+  var loadContentQuery: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference = js.native
+  var loadViewQuery: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference = js.native
+  var namespaceHTML: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference = js.native
+  var namespaceMathML: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference = js.native
+  var namespaceSVG: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference = js.native
+  var nextContext: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference = js.native
+  var pipe: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference = js.native
+  var pipeBind1: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference = js.native
+  var pipeBind2: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference = js.native
+  var pipeBind3: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference = js.native
+  var pipeBind4: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference = js.native
+  var pipeBindV: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference = js.native
+  var projection: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference = js.native
+  var projectionDef: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference = js.native
+  var property: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference = js.native
+  var propertyInterpolate: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference = js.native
+  var propertyInterpolate1: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference = js.native
+  var propertyInterpolate2: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference = js.native
+  var propertyInterpolate3: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference = js.native
+  var propertyInterpolate4: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference = js.native
+  var propertyInterpolate5: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference = js.native
+  var propertyInterpolate6: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference = js.native
+  var propertyInterpolate7: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference = js.native
+  var propertyInterpolate8: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference = js.native
+  var propertyInterpolateV: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference = js.native
+  var pureFunction0: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference = js.native
+  var pureFunction1: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference = js.native
+  var pureFunction2: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference = js.native
+  var pureFunction3: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference = js.native
+  var pureFunction4: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference = js.native
+  var pureFunction5: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference = js.native
+  var pureFunction6: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference = js.native
+  var pureFunction7: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference = js.native
+  var pureFunction8: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference = js.native
+  var pureFunctionV: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference = js.native
+  var queryRefresh: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference = js.native
+  var reference: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference = js.native
+  var resolveBody: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference = js.native
+  var resolveDocument: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference = js.native
+  var resolveWindow: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference = js.native
+  var restoreView: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference = js.native
+  var sanitizeHtml: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference = js.native
+  var sanitizeResourceUrl: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference = js.native
+  var sanitizeScript: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference = js.native
+  var sanitizeStyle: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference = js.native
+  var sanitizeUrl: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference = js.native
+  var sanitizeUrlOrResourceUrl: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference = js.native
+  var select: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference = js.native
+  var setComponentScope: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference = js.native
+  var setNgModuleScope: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference = js.native
+  var staticContentQuery: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference = js.native
+  var staticViewQuery: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference = js.native
+  var styleMap: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference = js.native
+  var styleProp: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference = js.native
+  var stylePropInterpolate1: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference = js.native
+  var stylePropInterpolate2: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference = js.native
+  var stylePropInterpolate3: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference = js.native
+  var stylePropInterpolate4: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference = js.native
+  var stylePropInterpolate5: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference = js.native
+  var stylePropInterpolate6: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference = js.native
+  var stylePropInterpolate7: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference = js.native
+  var stylePropInterpolate8: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference = js.native
+  var stylePropInterpolateV: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference = js.native
+  var styleSanitizer: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference = js.native
+  var styling: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference = js.native
+  var stylingApply: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference = js.native
+  var templateCreate: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference = js.native
+  var templateRefExtractor: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference = js.native
+  var text: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference = js.native
+  var textBinding: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference = js.native
+  var textInterpolate: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference = js.native
+  var textInterpolate1: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference = js.native
+  var textInterpolate2: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference = js.native
+  var textInterpolate3: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference = js.native
+  var textInterpolate4: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference = js.native
+  var textInterpolate5: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference = js.native
+  var textInterpolate6: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference = js.native
+  var textInterpolate7: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference = js.native
+  var textInterpolate8: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference = js.native
+  var textInterpolateV: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference = js.native
+  var updateSyntheticHostBinding: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference = js.native
+  var viewQuery: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference = js.native
+}
+

@@ -1,19 +1,19 @@
 package typingsJapgolly.node.osMod
 
-import typingsJapgolly.node.Anon_Idle
+import typingsJapgolly.node.AnonIdle
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait CpuInfo extends js.Object {
-  var model: java.lang.String
+  var model: String
   var speed: Double
-  var times: Anon_Idle
+  var times: AnonIdle
 }
 
 object CpuInfo {
   @scala.inline
-  def apply(model: java.lang.String, speed: Double, times: Anon_Idle): CpuInfo = {
+  def apply(model: String, speed: Double, times: AnonIdle): CpuInfo = {
     val __obj = js.Dynamic.literal(model = model.asInstanceOf[js.Any], speed = speed.asInstanceOf[js.Any], times = times.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CpuInfo]

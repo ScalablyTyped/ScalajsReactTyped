@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 object once_disconnect extends js.Object {
   def apply(
     event: typingsJapgolly.node.nodeStrings.disconnect,
-    listener: js.Function1[/* worker */ Worker, Unit]
+    listener: js.Function1[/* worker */ Worker_, Unit]
   ): Cluster = js.native
 }
 

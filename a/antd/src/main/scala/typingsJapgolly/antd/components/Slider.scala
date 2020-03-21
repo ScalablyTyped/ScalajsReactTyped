@@ -8,12 +8,12 @@ import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
 import japgolly.scalajs.react.raw.React.Node
 import org.scalablytyped.runtime.StringDictionary
 import org.scalajs.dom.raw.HTMLElement
-import typingsJapgolly.antd.libSliderMod.SliderMarks
-import typingsJapgolly.antd.libSliderMod.SliderProps
-import typingsJapgolly.antd.libSliderMod.SliderValue
-import typingsJapgolly.antd.libSliderMod.default
-import typingsJapgolly.antd.libTooltipMod.TooltipPlacement
-import typingsJapgolly.react.reactMod.CSSProperties
+import typingsJapgolly.antd.sliderMod.SliderMarks
+import typingsJapgolly.antd.sliderMod.SliderProps
+import typingsJapgolly.antd.sliderMod.SliderValue
+import typingsJapgolly.antd.sliderMod.default
+import typingsJapgolly.antd.tooltipMod.TooltipPlacement
+import typingsJapgolly.react.mod.CSSProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -44,7 +44,7 @@ object Slider {
     value: SliderValue = null,
     vertical: js.UndefOr[Boolean] = js.undefined,
     key: js.UndefOr[Key] = js.undefined,
-    overrides: StringDictionary[js.Any] = null
+    _overrides: StringDictionary[js.Any] = null
   )(
     children: ChildArg*
   ): UnmountedWithRoot[SliderProps, default, Unit, SliderProps] = {
@@ -60,8 +60,8 @@ object Slider {
     if (marks != null) __obj.updateDynamic("marks")(marks.asInstanceOf[js.Any])
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
     if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
-    if (onAfterChange != null) __obj.updateDynamic("onAfterChange")(js.Any.fromFunction1((t0: /* value */ typingsJapgolly.antd.libSliderMod.SliderValue) => onAfterChange(t0).runNow()))
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1((t0: /* value */ typingsJapgolly.antd.libSliderMod.SliderValue) => onChange(t0).runNow()))
+    if (onAfterChange != null) __obj.updateDynamic("onAfterChange")(js.Any.fromFunction1((t0: /* value */ typingsJapgolly.antd.sliderMod.SliderValue) => onAfterChange(t0).runNow()))
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1((t0: /* value */ typingsJapgolly.antd.sliderMod.SliderValue) => onChange(t0).runNow()))
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
     if (!js.isUndefined(range)) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
     if (!js.isUndefined(reverse)) __obj.updateDynamic("reverse")(reverse.asInstanceOf[js.Any])
@@ -74,13 +74,13 @@ object Slider {
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     if (!js.isUndefined(vertical)) __obj.updateDynamic("vertical")(vertical.asInstanceOf[js.Any])
     key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (overrides != null) js.Dynamic.global.Object.assign(__obj, overrides)
+    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
   
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antd.libSliderMod.SliderProps, 
+  typingsJapgolly.antd.sliderMod.SliderProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antd.libSliderMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.antd.libSliderMod.SliderProps])(children: _*)
+  typingsJapgolly.antd.sliderMod.default](this.componentImport)
+    f(__obj.asInstanceOf[typingsJapgolly.antd.sliderMod.SliderProps])(children: _*)
   }
   @JSImport("antd/lib/slider", JSImport.Default)
   @js.native

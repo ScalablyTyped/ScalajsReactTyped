@@ -5,30 +5,30 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
-  - typings.std.stdStrings.Empty
-  - typings.std.stdStrings.audio
-  - typings.std.stdStrings.audioworklet
-  - typings.std.stdStrings.document
-  - typings.std.stdStrings.embed
-  - typings.std.stdStrings.font
-  - typings.std.stdStrings.image
-  - typings.std.stdStrings.manifest
-  - typings.std.stdStrings.`object`
-  - typings.std.stdStrings.paintworklet
-  - typings.std.stdStrings.report
-  - typings.std.stdStrings.script
-  - typings.std.stdStrings.sharedworker
-  - typings.std.stdStrings.style
-  - typings.std.stdStrings.track
-  - typings.std.stdStrings.video
-  - typings.std.stdStrings.worker
-  - typings.std.stdStrings.xslt
+  - typingsJapgolly.std.stdStrings._empty
+  - typingsJapgolly.std.stdStrings.audio
+  - typingsJapgolly.std.stdStrings.audioworklet
+  - typingsJapgolly.std.stdStrings.document
+  - typingsJapgolly.std.stdStrings.embed
+  - typingsJapgolly.std.stdStrings.font
+  - typingsJapgolly.std.stdStrings.image
+  - typingsJapgolly.std.stdStrings.manifest
+  - typingsJapgolly.std.stdStrings.`object`
+  - typingsJapgolly.std.stdStrings.paintworklet
+  - typingsJapgolly.std.stdStrings.report
+  - typingsJapgolly.std.stdStrings.script
+  - typingsJapgolly.std.stdStrings.sharedworker
+  - typingsJapgolly.std.stdStrings.style
+  - typingsJapgolly.std.stdStrings.track
+  - typingsJapgolly.std.stdStrings.video
+  - typingsJapgolly.std.stdStrings.worker
+  - typingsJapgolly.std.stdStrings.xslt
 */
 trait RequestDestination extends js.Object
 
 object RequestDestination {
   @scala.inline
-  def Empty: typingsJapgolly.std.stdStrings.Empty = this.cast("")
+  def _empty: typingsJapgolly.std.stdStrings._empty = this.cast("")
   @scala.inline
   def audio: typingsJapgolly.std.stdStrings.audio = this.cast("audio")
   @scala.inline

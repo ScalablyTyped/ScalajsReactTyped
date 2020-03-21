@@ -5,11 +5,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
-  - typings.std.stdStrings.start
-  - typings.std.stdStrings.end
-  - typings.std.stdStrings.left
-  - typings.std.stdStrings.right
-  - typings.std.stdStrings.center
+  - typingsJapgolly.std.stdStrings.center
+  - typingsJapgolly.std.stdStrings.end
+  - typingsJapgolly.std.stdStrings.left
+  - typingsJapgolly.std.stdStrings.right
+  - typingsJapgolly.std.stdStrings.start
 */
 trait CanvasTextAlign extends js.Object
 

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "xadesjs" : "2.0.16"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "xadesjs" : "2.0.16"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

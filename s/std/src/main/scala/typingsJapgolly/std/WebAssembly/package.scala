@@ -5,19 +5,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object WebAssembly {
-  import typingsJapgolly.std.Record
-  import typingsJapgolly.std.stdStrings.anyfunc
-
   /* Rewritten from type alias, can be one of: 
     - js.Function
-    - typings.std.WebAssembly.Global
-    - typings.std.WebAssembly.Memory
-    - typings.std.WebAssembly.Table
+    - typingsJapgolly.std.WebAssembly.Global
+    - typingsJapgolly.std.WebAssembly.Memory
+    - typingsJapgolly.std.WebAssembly.Table
   */
-  type ExportValue = _ExportValue | js.Function
-  type Exports = Record[java.lang.String, ExportValue]
-  type ImportValue = ExportValue | Double
-  type Imports = Record[java.lang.String, ModuleImports]
-  type ModuleImports = Record[java.lang.String, ImportValue]
-  type TableKind = anyfunc
+  type ExportValue = typingsJapgolly.std.WebAssembly._ExportValue | js.Function
+  type Exports = typingsJapgolly.std.Record[java.lang.String, typingsJapgolly.std.WebAssembly.ExportValue]
+  type ImportValue = typingsJapgolly.std.WebAssembly.ExportValue | scala.Double
+  type Imports = typingsJapgolly.std.Record[java.lang.String, typingsJapgolly.std.WebAssembly.ModuleImports]
+  type ModuleImports = typingsJapgolly.std.Record[java.lang.String, typingsJapgolly.std.WebAssembly.ImportValue]
+  type TableKind = typingsJapgolly.std.stdStrings.anyfunc
 }

@@ -5,10 +5,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
-  - typings.std.stdStrings.function
-  - typings.std.stdStrings.table
-  - typings.std.stdStrings.memory
-  - typings.std.stdStrings.global
+  - typingsJapgolly.std.stdStrings.function
+  - typingsJapgolly.std.stdStrings.global
+  - typingsJapgolly.std.stdStrings.memory
+  - typingsJapgolly.std.stdStrings.table
 */
 trait ImportExportKind extends js.Object
 

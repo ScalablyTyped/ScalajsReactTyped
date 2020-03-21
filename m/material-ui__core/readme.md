@@ -1,7 +1,7 @@
 
 # Scala.js typings for material-ui__core
 
-Typings are for version 3.9.3
+Typings are for version 3.9.4
 
 ## Library description:
 React components that implement Google's Material Design.
@@ -10,9 +10,9 @@ React components that implement Google's Material Design.
 | ------------------ | :-------------: |
 | Full name          | @material-ui/core |
 | Keywords           | react, react-component, material design, material-ui |
-| # releases         | 54 |
-| # dependents       | 893 |
-| # downloads        | 37382245 |
+| # releases         | 89 |
+| # dependents       | 1698 |
+| # downloads        | 35262836 |
 | # stars            | 0 |
 
 ## Links

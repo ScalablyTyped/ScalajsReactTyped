@@ -1,17 +1,17 @@
 package typingsJapgolly.lodash.fpMod
 
-import typingsJapgolly.lodash.lodashMod.Dictionary
-import typingsJapgolly.lodash.lodashMod.List
-import typingsJapgolly.lodash.lodashMod.PropertyName
-import typingsJapgolly.lodash.lodashMod.ValueIterateeCustom
-import typingsJapgolly.lodash.lodashMod.__
+import typingsJapgolly.lodash.mod.Dictionary
+import typingsJapgolly.lodash.mod.List
+import typingsJapgolly.lodash.mod.PropertyName
+import typingsJapgolly.lodash.mod.ValueIterateeCustom
+import typingsJapgolly.lodash.mod.__
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
 trait LodashKeyBy extends js.Object {
-  def apply[T](iteratee: ValueIterateeCustom[T, PropertyName]): Dictionary[T] = js.native
+  def apply[T](iteratee: ValueIterateeCustom[T, PropertyName]): LodashKeyBy1x1[T] = js.native
   def apply[T /* <: js.Object */](
     iteratee: ValueIterateeCustom[
       /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any, 

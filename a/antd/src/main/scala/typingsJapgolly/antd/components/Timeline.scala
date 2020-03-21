@@ -8,9 +8,9 @@ import org.scalablytyped.runtime.StringDictionary
 import typingsJapgolly.antd.antdStrings.alternate
 import typingsJapgolly.antd.antdStrings.left
 import typingsJapgolly.antd.antdStrings.right
-import typingsJapgolly.antd.libTimelineMod.default
-import typingsJapgolly.antd.libTimelineTimelineMod.TimelineProps
-import typingsJapgolly.react.reactMod.CSSProperties
+import typingsJapgolly.antd.timelineMod.default
+import typingsJapgolly.antd.timelineTimelineMod.TimelineProps
+import typingsJapgolly.react.mod.CSSProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,7 +25,7 @@ object Timeline {
     reverse: js.UndefOr[Boolean] = js.undefined,
     style: CSSProperties = null,
     key: js.UndefOr[Key] = js.undefined,
-    overrides: StringDictionary[js.Any] = null
+    _overrides: StringDictionary[js.Any] = null
   )(
     children: ChildArg*
   ): UnmountedWithRoot[TimelineProps, default, Unit, TimelineProps] = {
@@ -39,13 +39,13 @@ object Timeline {
     if (!js.isUndefined(reverse)) __obj.updateDynamic("reverse")(reverse.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (overrides != null) js.Dynamic.global.Object.assign(__obj, overrides)
+    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
   
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antd.libTimelineTimelineMod.TimelineProps, 
+  typingsJapgolly.antd.timelineTimelineMod.TimelineProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antd.libTimelineMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.antd.libTimelineTimelineMod.TimelineProps])(children: _*)
+  typingsJapgolly.antd.timelineMod.default](this.componentImport)
+    f(__obj.asInstanceOf[typingsJapgolly.antd.timelineTimelineMod.TimelineProps])(children: _*)
   }
   @JSImport("antd/lib/timeline", JSImport.Default)
   @js.native

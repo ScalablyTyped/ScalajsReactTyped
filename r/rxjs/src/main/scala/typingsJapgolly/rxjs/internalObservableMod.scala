@@ -1,13 +1,12 @@
 package typingsJapgolly.rxjs
 
-import typingsJapgolly.rxjs.internalObservableMod.Observable
-import typingsJapgolly.rxjs.internalOperatorMod.Operator
-import typingsJapgolly.rxjs.internalSubscriberMod.Subscriber
-import typingsJapgolly.rxjs.internalTypesMod.OperatorFunction
-import typingsJapgolly.rxjs.internalTypesMod.SchedulerLike
-import typingsJapgolly.rxjs.internalTypesMod.Subscribable
-import typingsJapgolly.rxjs.internalTypesMod.SubscribableOrPromise
-import typingsJapgolly.rxjs.internalTypesMod.TeardownLogic
+import typingsJapgolly.rxjs.operatorMod.Operator
+import typingsJapgolly.rxjs.subscriberMod.Subscriber
+import typingsJapgolly.rxjs.typesMod.OperatorFunction
+import typingsJapgolly.rxjs.typesMod.SchedulerLike
+import typingsJapgolly.rxjs.typesMod.Subscribable
+import typingsJapgolly.rxjs.typesMod.SubscribableOrPromise
+import typingsJapgolly.rxjs.typesMod.TeardownLogic
 import typingsJapgolly.std.PromiseConstructor
 import typingsJapgolly.std.PromiseConstructorLike
 import scala.scalajs.js
@@ -121,9 +120,9 @@ object internalObservableMod extends js.Object {
       op9: OperatorFunction[H, I],
       operations: (OperatorFunction[_, _])*
     ): Observable[js.Object] = js.native
-    def toPromise[T](`this`: Observable[T]): js.Promise[T] = js.native
-    def toPromise[T](`this`: Observable[T], PromiseCtor: PromiseConstructor): js.Promise[T] = js.native
-    def toPromise[T](`this`: Observable[T], PromiseCtor: PromiseConstructorLike): js.Promise[T] = js.native
+    def toPromise[T](): js.Promise[T] = js.native
+    def toPromise[T](PromiseCtor: PromiseConstructor): js.Promise[T] = js.native
+    def toPromise[T](PromiseCtor: PromiseConstructorLike): js.Promise[T] = js.native
   }
   
   /* static members */
@@ -145,7 +144,7 @@ object internalObservableMod extends js.Object {
       * @deprecated In favor of iif creation function: import { iif } from 'rxjs';
       */
     @JSName("if")
-    var if_Original: Fn_Condition = js.native
+    var if_Original: FnCall = js.native
     /**
       * @nocollapse
       * @deprecated In favor of throwError creation function: import { throwError } from 'rxjs';

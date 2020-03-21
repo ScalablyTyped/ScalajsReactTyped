@@ -5,9 +5,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object querystringMod {
-  import org.scalablytyped.runtime.StringDictionary
-  import typingsJapgolly.node.NodeJS.PoorMansUnknown
-
-  type ParsedUrlQuery = StringDictionary[java.lang.String | js.Array[java.lang.String]]
-  type ParsedUrlQueryInput = StringDictionary[PoorMansUnknown]
+  type ParsedUrlQuery = org.scalablytyped.runtime.StringDictionary[java.lang.String | js.Array[java.lang.String]]
+  type ParsedUrlQueryInput = org.scalablytyped.runtime.StringDictionary[
+    js.UndefOr[
+      java.lang.String | scala.Double | scala.Boolean | (js.Array[scala.Boolean | scala.Double | java.lang.String]) | scala.Null
+    ]
+  ]
 }

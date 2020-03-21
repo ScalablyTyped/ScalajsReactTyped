@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "wait-for-expect" : "3.0.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "wait-for-expect" : "3.0.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

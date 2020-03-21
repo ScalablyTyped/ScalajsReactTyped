@@ -1,16 +1,16 @@
 package typingsJapgolly.lodash.fpMod
 
-import typingsJapgolly.lodash.lodashMod.List
-import typingsJapgolly.lodash.lodashMod.Many
-import typingsJapgolly.lodash.lodashMod.ValueIteratee
-import typingsJapgolly.lodash.lodashMod.__
+import typingsJapgolly.lodash.mod.List
+import typingsJapgolly.lodash.mod.Many
+import typingsJapgolly.lodash.mod.ValueIteratee
+import typingsJapgolly.lodash.mod.__
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
 trait LodashSortBy extends js.Object {
-  def apply[T](iteratees: Many[ValueIteratee[T]]): js.Array[T] = js.native
+  def apply[T](iteratees: Many[ValueIteratee[T]]): LodashSortBy1x1[T] = js.native
   def apply[T /* <: js.Object */](
     iteratees: Many[
       ValueIteratee[

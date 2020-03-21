@@ -8,7 +8,7 @@ package object Runtime {
   /**
     * Id of an execution context.
     */
-  type ExecutionContextId = Double
+  type ExecutionContextId = scala.Double
   /**
     * Unique object identifier.
     */
@@ -20,7 +20,7 @@ package object Runtime {
   /**
     * Number of milliseconds since epoch.
     */
-  type Timestamp = Double
+  type Timestamp = scala.Double
   /**
     * Unique identifier of current debugger.
     * @experimental

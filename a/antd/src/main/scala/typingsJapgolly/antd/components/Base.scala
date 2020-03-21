@@ -6,12 +6,12 @@ import japgolly.scalajs.react.component.Js.MountedWithRawType
 import japgolly.scalajs.react.component.Js.RawMounted
 import japgolly.scalajs.react.component.Js.UnmountedSimple
 import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.antd.libTypographyBaseMod.BaseType
-import typingsJapgolly.antd.libTypographyBaseMod.CopyConfig
-import typingsJapgolly.antd.libTypographyBaseMod.EditConfig
-import typingsJapgolly.antd.libTypographyBaseMod.EllipsisConfig
-import typingsJapgolly.antd.libTypographyBaseMod.InternalBlockProps
-import typingsJapgolly.react.reactMod.CSSProperties
+import typingsJapgolly.antd.baseMod.BaseType
+import typingsJapgolly.antd.baseMod.CopyConfig
+import typingsJapgolly.antd.baseMod.EditConfig
+import typingsJapgolly.antd.baseMod.EllipsisConfig
+import typingsJapgolly.antd.baseMod.InternalBlockProps
+import typingsJapgolly.react.mod.CSSProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -32,10 +32,11 @@ object Base {
     prefixCls: String = null,
     strong: js.UndefOr[Boolean] = js.undefined,
     style: CSSProperties = null,
+    title: String = null,
     `type`: BaseType = null,
     underline: js.UndefOr[Boolean] = js.undefined,
     key: js.UndefOr[Key] = js.undefined,
-    overrides: StringDictionary[js.Any] = null
+    _overrides: StringDictionary[js.Any] = null
   )(
     children: ChildArg*
   ): UnmountedSimple[
@@ -57,16 +58,17 @@ object Base {
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
     if (!js.isUndefined(strong)) __obj.updateDynamic("strong")(strong.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (!js.isUndefined(underline)) __obj.updateDynamic("underline")(underline.asInstanceOf[js.Any])
     key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (overrides != null) js.Dynamic.global.Object.assign(__obj, overrides)
+    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
   
     val f = japgolly.scalajs.react.JsComponent[
-  typingsJapgolly.antd.libTypographyBaseMod.InternalBlockProps, 
+  typingsJapgolly.antd.baseMod.InternalBlockProps, 
   japgolly.scalajs.react.Children.Varargs, 
   js.Object](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.antd.libTypographyBaseMod.InternalBlockProps])(children: _*)
+    f(__obj.asInstanceOf[typingsJapgolly.antd.baseMod.InternalBlockProps])(children: _*)
   }
   @JSImport("antd/lib/typography/Base", JSImport.Default)
   @js.native

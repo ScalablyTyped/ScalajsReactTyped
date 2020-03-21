@@ -1,7 +1,6 @@
 package typingsJapgolly.antd.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
 import japgolly.scalajs.react.Key
 import japgolly.scalajs.react.ReactAnimationEventFrom
 import japgolly.scalajs.react.ReactClipboardEventFrom
@@ -17,60 +16,73 @@ import japgolly.scalajs.react.ReactTransitionEventFrom
 import japgolly.scalajs.react.ReactUIEventFrom
 import japgolly.scalajs.react.ReactWheelEventFrom
 import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
+import japgolly.scalajs.react.raw.React.ComponentClassP
+import japgolly.scalajs.react.raw.React.Node
+import japgolly.scalajs.react.raw.React.Ref
 import org.scalablytyped.runtime.StringDictionary
 import org.scalajs.dom.raw.HTMLFormElement
-import typingsJapgolly.antd.libFormFormItemMod.FormLabelAlign
-import typingsJapgolly.antd.libFormFormMod.FormLayout
-import typingsJapgolly.antd.libFormFormMod.FormProps
-import typingsJapgolly.antd.libFormFormMod.WrappedFormUtils
-import typingsJapgolly.antd.libFormMod.default
-import typingsJapgolly.antd.libGridColMod.ColProps
-import typingsJapgolly.react.Anon_Html
-import typingsJapgolly.react.reactMod.CSSProperties
-import typingsJapgolly.react.reactStrings.`additions text`
-import typingsJapgolly.react.reactStrings.`inline`
-import typingsJapgolly.react.reactStrings.additions
-import typingsJapgolly.react.reactStrings.all
-import typingsJapgolly.react.reactStrings.ascending
-import typingsJapgolly.react.reactStrings.assertive
-import typingsJapgolly.react.reactStrings.both
-import typingsJapgolly.react.reactStrings.copy
-import typingsJapgolly.react.reactStrings.date
-import typingsJapgolly.react.reactStrings.decimal
-import typingsJapgolly.react.reactStrings.descending
-import typingsJapgolly.react.reactStrings.dialog
-import typingsJapgolly.react.reactStrings.email
-import typingsJapgolly.react.reactStrings.execute
-import typingsJapgolly.react.reactStrings.grammar
-import typingsJapgolly.react.reactStrings.grid
-import typingsJapgolly.react.reactStrings.horizontal
-import typingsJapgolly.react.reactStrings.link
-import typingsJapgolly.react.reactStrings.list
-import typingsJapgolly.react.reactStrings.listbox
-import typingsJapgolly.react.reactStrings.location
-import typingsJapgolly.react.reactStrings.menu
-import typingsJapgolly.react.reactStrings.mixed
-import typingsJapgolly.react.reactStrings.move
-import typingsJapgolly.react.reactStrings.no
-import typingsJapgolly.react.reactStrings.none
-import typingsJapgolly.react.reactStrings.numeric
-import typingsJapgolly.react.reactStrings.off
-import typingsJapgolly.react.reactStrings.on
-import typingsJapgolly.react.reactStrings.other
-import typingsJapgolly.react.reactStrings.page
-import typingsJapgolly.react.reactStrings.polite
-import typingsJapgolly.react.reactStrings.popup
-import typingsJapgolly.react.reactStrings.removals
-import typingsJapgolly.react.reactStrings.search
-import typingsJapgolly.react.reactStrings.spelling
-import typingsJapgolly.react.reactStrings.step
-import typingsJapgolly.react.reactStrings.tel
-import typingsJapgolly.react.reactStrings.text
-import typingsJapgolly.react.reactStrings.time
-import typingsJapgolly.react.reactStrings.tree
-import typingsJapgolly.react.reactStrings.url
-import typingsJapgolly.react.reactStrings.vertical
-import typingsJapgolly.react.reactStrings.yes
+import typingsJapgolly.antd.antdBooleans.`false`
+import typingsJapgolly.antd.antdStrings.`additions text`
+import typingsJapgolly.antd.antdStrings.`inline`
+import typingsJapgolly.antd.antdStrings.additions
+import typingsJapgolly.antd.antdStrings.all
+import typingsJapgolly.antd.antdStrings.ascending
+import typingsJapgolly.antd.antdStrings.assertive
+import typingsJapgolly.antd.antdStrings.both
+import typingsJapgolly.antd.antdStrings.copy
+import typingsJapgolly.antd.antdStrings.date
+import typingsJapgolly.antd.antdStrings.decimal
+import typingsJapgolly.antd.antdStrings.descending
+import typingsJapgolly.antd.antdStrings.dialog
+import typingsJapgolly.antd.antdStrings.email
+import typingsJapgolly.antd.antdStrings.execute
+import typingsJapgolly.antd.antdStrings.grammar
+import typingsJapgolly.antd.antdStrings.grid
+import typingsJapgolly.antd.antdStrings.horizontal
+import typingsJapgolly.antd.antdStrings.inherit
+import typingsJapgolly.antd.antdStrings.link
+import typingsJapgolly.antd.antdStrings.list
+import typingsJapgolly.antd.antdStrings.listbox
+import typingsJapgolly.antd.antdStrings.location
+import typingsJapgolly.antd.antdStrings.menu
+import typingsJapgolly.antd.antdStrings.mixed
+import typingsJapgolly.antd.antdStrings.move
+import typingsJapgolly.antd.antdStrings.no
+import typingsJapgolly.antd.antdStrings.none
+import typingsJapgolly.antd.antdStrings.numeric
+import typingsJapgolly.antd.antdStrings.off
+import typingsJapgolly.antd.antdStrings.on
+import typingsJapgolly.antd.antdStrings.other
+import typingsJapgolly.antd.antdStrings.page
+import typingsJapgolly.antd.antdStrings.polite
+import typingsJapgolly.antd.antdStrings.popup
+import typingsJapgolly.antd.antdStrings.removals
+import typingsJapgolly.antd.antdStrings.search
+import typingsJapgolly.antd.antdStrings.spelling
+import typingsJapgolly.antd.antdStrings.step
+import typingsJapgolly.antd.antdStrings.tel
+import typingsJapgolly.antd.antdStrings.text
+import typingsJapgolly.antd.antdStrings.time
+import typingsJapgolly.antd.antdStrings.tree
+import typingsJapgolly.antd.antdStrings.url
+import typingsJapgolly.antd.antdStrings.vertical
+import typingsJapgolly.antd.antdStrings.yes
+import typingsJapgolly.antd.formFormMod.FormLayout
+import typingsJapgolly.antd.formFormMod.FormProps
+import typingsJapgolly.antd.formUtilMod.FormInstance
+import typingsJapgolly.antd.gridColMod.ColProps
+import typingsJapgolly.antd.interfaceMod.FormLabelAlign
+import typingsJapgolly.antd.sizeContextMod.SizeType
+import typingsJapgolly.rcFieldForm.formMod.RenderProps
+import typingsJapgolly.rcFieldForm.interfaceMod.FieldData
+import typingsJapgolly.rcFieldForm.interfaceMod.Store
+import typingsJapgolly.rcFieldForm.interfaceMod.ValidateErrorEntity
+import typingsJapgolly.rcFieldForm.interfaceMod.ValidateMessages
+import typingsJapgolly.react.AnonHtml
+import typingsJapgolly.react.mod.Booleanish
+import typingsJapgolly.react.mod.CSSProperties
+import typingsJapgolly.react.mod.FC
+import typingsJapgolly.react.mod.RefAttributes
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -136,19 +148,22 @@ object Form {
     className: String = null,
     colon: js.UndefOr[Boolean] = js.undefined,
     color: String = null,
-    contentEditable: js.UndefOr[Boolean] = js.undefined,
+    component: `false` | String | FC[_] | ComponentClassP[js.Object] = null,
+    contentEditable: Booleanish | inherit = null,
     contextMenu: String = null,
-    dangerouslySetInnerHTML: Anon_Html = null,
+    dangerouslySetInnerHTML: AnonHtml = null,
     datatype: String = null,
     defaultChecked: js.UndefOr[Boolean] = js.undefined,
     defaultValue: String | Double | js.Array[String] = null,
     dir: String = null,
     draggable: js.UndefOr[Boolean] = js.undefined,
     encType: String = null,
-    form: WrappedFormUtils[_] = null,
+    fields: js.Array[FieldData] = null,
+    form: FormInstance = null,
     hidden: js.UndefOr[Boolean] = js.undefined,
     hideRequiredMark: js.UndefOr[Boolean] = js.undefined,
     id: String = null,
+    initialValues: Store = null,
     inlist: js.Any = null,
     inputMode: none | text | tel | url | email | numeric | decimal | search = null,
     is: String = null,
@@ -195,6 +210,9 @@ object Form {
     onEncrypted: ReactEventFrom[HTMLFormElement] => Callback = null,
     onEnded: ReactEventFrom[HTMLFormElement] => Callback = null,
     onError: ReactEventFrom[HTMLFormElement] => Callback = null,
+    onFieldsChange: (/* changedFields */ js.Array[FieldData], /* allFields */ js.Array[FieldData]) => Callback = null,
+    onFinish: /* values */ Store => Callback = null,
+    onFinishFailed: /* errorInfo */ ValidateErrorEntity => Callback = null,
     onFocus: ReactFocusEventFrom[HTMLFormElement] => Callback = null,
     onInput: ReactEventFrom[HTMLFormElement] => Callback = null,
     onInvalid: ReactEventFrom[HTMLFormElement] => Callback = null,
@@ -232,7 +250,6 @@ object Form {
     onSeeking: ReactEventFrom[HTMLFormElement] => Callback = null,
     onSelect: ReactEventFrom[HTMLFormElement] => Callback = null,
     onStalled: ReactEventFrom[HTMLFormElement] => Callback = null,
-    onSubmit: ReactEventFrom[HTMLFormElement] => Callback = null,
     onSuspend: ReactEventFrom[HTMLFormElement] => Callback = null,
     onTimeUpdate: ReactEventFrom[HTMLFormElement] => Callback = null,
     onTouchCancel: ReactTouchEventFrom[HTMLFormElement] => Callback = null,
@@ -240,6 +257,7 @@ object Form {
     onTouchMove: ReactTouchEventFrom[HTMLFormElement] => Callback = null,
     onTouchStart: ReactTouchEventFrom[HTMLFormElement] => Callback = null,
     onTransitionEnd: ReactTransitionEventFrom[HTMLFormElement] => Callback = null,
+    onValuesChange: (/* changedValues */ Store, /* values */ Store) => Callback = null,
     onVolumeChange: ReactEventFrom[HTMLFormElement] => Callback = null,
     onWaiting: ReactEventFrom[HTMLFormElement] => Callback = null,
     onWheel: ReactWheelEventFrom[HTMLFormElement] => Callback = null,
@@ -251,7 +269,9 @@ object Form {
     resource: String = null,
     results: Int | Double = null,
     role: String = null,
+    scrollToFirstError: js.UndefOr[Boolean] = js.undefined,
     security: String = null,
+    size: SizeType = null,
     slot: String = null,
     spellCheck: js.UndefOr[Boolean] = js.undefined,
     style: CSSProperties = null,
@@ -263,16 +283,23 @@ object Form {
     translate: yes | no = null,
     typeof: String = null,
     unselectable: on | off = null,
+    validateMessages: ValidateMessages = null,
     vocab: String = null,
     wrapperCol: ColProps = null,
     key: js.UndefOr[Key] = js.undefined,
-    overrides: StringDictionary[js.Any] = null
+    _overrides: StringDictionary[js.Any] = null
   )(
-    children: ChildArg*
-  ): UnmountedWithRoot[FormProps, default, Unit, FormProps] = {
+    children: RenderProps | Node = null
+  ): UnmountedWithRoot[
+    FormProps with RefAttributes[FormInstance], 
+    Ref, 
+    Unit, 
+    FormProps with RefAttributes[FormInstance]
+  ] = {
     val __obj = js.Dynamic.literal()
   
-      if (about != null) __obj.updateDynamic("about")(about.asInstanceOf[js.Any])
+      if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (about != null) __obj.updateDynamic("about")(about.asInstanceOf[js.Any])
     if (acceptCharset != null) __obj.updateDynamic("acceptCharset")(acceptCharset.asInstanceOf[js.Any])
     if (accessKey != null) __obj.updateDynamic("accessKey")(accessKey.asInstanceOf[js.Any])
     if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
@@ -331,7 +358,8 @@ object Form {
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (!js.isUndefined(colon)) __obj.updateDynamic("colon")(colon.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (!js.isUndefined(contentEditable)) __obj.updateDynamic("contentEditable")(contentEditable.asInstanceOf[js.Any])
+    if (component != null) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
+    if (contentEditable != null) __obj.updateDynamic("contentEditable")(contentEditable.asInstanceOf[js.Any])
     if (contextMenu != null) __obj.updateDynamic("contextMenu")(contextMenu.asInstanceOf[js.Any])
     if (dangerouslySetInnerHTML != null) __obj.updateDynamic("dangerouslySetInnerHTML")(dangerouslySetInnerHTML.asInstanceOf[js.Any])
     if (datatype != null) __obj.updateDynamic("datatype")(datatype.asInstanceOf[js.Any])
@@ -340,10 +368,12 @@ object Form {
     if (dir != null) __obj.updateDynamic("dir")(dir.asInstanceOf[js.Any])
     if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable.asInstanceOf[js.Any])
     if (encType != null) __obj.updateDynamic("encType")(encType.asInstanceOf[js.Any])
+    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
     if (form != null) __obj.updateDynamic("form")(form.asInstanceOf[js.Any])
     if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.asInstanceOf[js.Any])
     if (!js.isUndefined(hideRequiredMark)) __obj.updateDynamic("hideRequiredMark")(hideRequiredMark.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (initialValues != null) __obj.updateDynamic("initialValues")(initialValues.asInstanceOf[js.Any])
     if (inlist != null) __obj.updateDynamic("inlist")(inlist.asInstanceOf[js.Any])
     if (inputMode != null) __obj.updateDynamic("inputMode")(inputMode.asInstanceOf[js.Any])
     if (is != null) __obj.updateDynamic("is")(is.asInstanceOf[js.Any])
@@ -390,6 +420,9 @@ object Form {
     if (onEncrypted != null) __obj.updateDynamic("onEncrypted")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[org.scalajs.dom.raw.HTMLFormElement]) => onEncrypted(t0).runNow()))
     if (onEnded != null) __obj.updateDynamic("onEnded")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[org.scalajs.dom.raw.HTMLFormElement]) => onEnded(t0).runNow()))
     if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[org.scalajs.dom.raw.HTMLFormElement]) => onError(t0).runNow()))
+    if (onFieldsChange != null) __obj.updateDynamic("onFieldsChange")(js.Any.fromFunction2((t0: /* changedFields */ js.Array[typingsJapgolly.rcFieldForm.interfaceMod.FieldData], t1: /* allFields */ js.Array[typingsJapgolly.rcFieldForm.interfaceMod.FieldData]) => onFieldsChange(t0, t1).runNow()))
+    if (onFinish != null) __obj.updateDynamic("onFinish")(js.Any.fromFunction1((t0: /* values */ typingsJapgolly.rcFieldForm.interfaceMod.Store) => onFinish(t0).runNow()))
+    if (onFinishFailed != null) __obj.updateDynamic("onFinishFailed")(js.Any.fromFunction1((t0: /* errorInfo */ typingsJapgolly.rcFieldForm.interfaceMod.ValidateErrorEntity) => onFinishFailed(t0).runNow()))
     if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactFocusEventFrom[org.scalajs.dom.raw.HTMLFormElement]) => onFocus(t0).runNow()))
     if (onInput != null) __obj.updateDynamic("onInput")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[org.scalajs.dom.raw.HTMLFormElement]) => onInput(t0).runNow()))
     if (onInvalid != null) __obj.updateDynamic("onInvalid")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[org.scalajs.dom.raw.HTMLFormElement]) => onInvalid(t0).runNow()))
@@ -427,7 +460,6 @@ object Form {
     if (onSeeking != null) __obj.updateDynamic("onSeeking")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[org.scalajs.dom.raw.HTMLFormElement]) => onSeeking(t0).runNow()))
     if (onSelect != null) __obj.updateDynamic("onSelect")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[org.scalajs.dom.raw.HTMLFormElement]) => onSelect(t0).runNow()))
     if (onStalled != null) __obj.updateDynamic("onStalled")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[org.scalajs.dom.raw.HTMLFormElement]) => onStalled(t0).runNow()))
-    if (onSubmit != null) __obj.updateDynamic("onSubmit")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[org.scalajs.dom.raw.HTMLFormElement]) => onSubmit(t0).runNow()))
     if (onSuspend != null) __obj.updateDynamic("onSuspend")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[org.scalajs.dom.raw.HTMLFormElement]) => onSuspend(t0).runNow()))
     if (onTimeUpdate != null) __obj.updateDynamic("onTimeUpdate")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[org.scalajs.dom.raw.HTMLFormElement]) => onTimeUpdate(t0).runNow()))
     if (onTouchCancel != null) __obj.updateDynamic("onTouchCancel")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactTouchEventFrom[org.scalajs.dom.raw.HTMLFormElement]) => onTouchCancel(t0).runNow()))
@@ -435,6 +467,7 @@ object Form {
     if (onTouchMove != null) __obj.updateDynamic("onTouchMove")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactTouchEventFrom[org.scalajs.dom.raw.HTMLFormElement]) => onTouchMove(t0).runNow()))
     if (onTouchStart != null) __obj.updateDynamic("onTouchStart")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactTouchEventFrom[org.scalajs.dom.raw.HTMLFormElement]) => onTouchStart(t0).runNow()))
     if (onTransitionEnd != null) __obj.updateDynamic("onTransitionEnd")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactTransitionEventFrom[org.scalajs.dom.raw.HTMLFormElement]) => onTransitionEnd(t0).runNow()))
+    if (onValuesChange != null) __obj.updateDynamic("onValuesChange")(js.Any.fromFunction2((t0: /* changedValues */ typingsJapgolly.rcFieldForm.interfaceMod.Store, t1: /* values */ typingsJapgolly.rcFieldForm.interfaceMod.Store) => onValuesChange(t0, t1).runNow()))
     if (onVolumeChange != null) __obj.updateDynamic("onVolumeChange")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[org.scalajs.dom.raw.HTMLFormElement]) => onVolumeChange(t0).runNow()))
     if (onWaiting != null) __obj.updateDynamic("onWaiting")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[org.scalajs.dom.raw.HTMLFormElement]) => onWaiting(t0).runNow()))
     if (onWheel != null) __obj.updateDynamic("onWheel")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactWheelEventFrom[org.scalajs.dom.raw.HTMLFormElement]) => onWheel(t0).runNow()))
@@ -446,7 +479,9 @@ object Form {
     if (resource != null) __obj.updateDynamic("resource")(resource.asInstanceOf[js.Any])
     if (results != null) __obj.updateDynamic("results")(results.asInstanceOf[js.Any])
     if (role != null) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrollToFirstError)) __obj.updateDynamic("scrollToFirstError")(scrollToFirstError.asInstanceOf[js.Any])
     if (security != null) __obj.updateDynamic("security")(security.asInstanceOf[js.Any])
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     if (slot != null) __obj.updateDynamic("slot")(slot.asInstanceOf[js.Any])
     if (!js.isUndefined(spellCheck)) __obj.updateDynamic("spellCheck")(spellCheck.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
@@ -458,16 +493,17 @@ object Form {
     if (translate != null) __obj.updateDynamic("translate")(translate.asInstanceOf[js.Any])
     if (typeof != null) __obj.updateDynamic("typeof")(typeof.asInstanceOf[js.Any])
     if (unselectable != null) __obj.updateDynamic("unselectable")(unselectable.asInstanceOf[js.Any])
+    if (validateMessages != null) __obj.updateDynamic("validateMessages")(validateMessages.asInstanceOf[js.Any])
     if (vocab != null) __obj.updateDynamic("vocab")(vocab.asInstanceOf[js.Any])
     if (wrapperCol != null) __obj.updateDynamic("wrapperCol")(wrapperCol.asInstanceOf[js.Any])
     key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (overrides != null) js.Dynamic.global.Object.assign(__obj, overrides)
+    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
   
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antd.libFormFormMod.FormProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antd.libFormMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.antd.libFormFormMod.FormProps])(children: _*)
+  typingsJapgolly.antd.formFormMod.FormProps with typingsJapgolly.react.mod.RefAttributes[typingsJapgolly.antd.formUtilMod.FormInstance], 
+  japgolly.scalajs.react.Children.None, 
+  japgolly.scalajs.react.raw.React.Ref](this.componentImport)
+    f(__obj.asInstanceOf[typingsJapgolly.antd.formFormMod.FormProps with typingsJapgolly.react.mod.RefAttributes[typingsJapgolly.antd.formUtilMod.FormInstance]])
   }
   @JSImport("antd/lib/form", JSImport.Default)
   @js.native

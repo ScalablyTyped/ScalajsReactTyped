@@ -20,7 +20,7 @@ trait TouchBarButtonConstructorOptions extends js.Object {
   /**
     * Button icon.
     */
-  var icon: js.UndefOr[NativeImage] = js.undefined
+  var icon: js.UndefOr[NativeImage_] = js.undefined
   /**
     * Can be left, right or overlay.
     */
@@ -36,7 +36,7 @@ object TouchBarButtonConstructorOptions {
   def apply(
     backgroundColor: String = null,
     click: js.UndefOr[Callback] = js.undefined,
-    icon: NativeImage = null,
+    icon: NativeImage_ = null,
     iconPosition: left | right | overlay = null,
     label: String = null
   ): TouchBarButtonConstructorOptions = {

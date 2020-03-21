@@ -11,8 +11,8 @@ import typingsJapgolly.antd.antdStrings.horizontal
 import typingsJapgolly.antd.antdStrings.left
 import typingsJapgolly.antd.antdStrings.right
 import typingsJapgolly.antd.antdStrings.vertical
-import typingsJapgolly.antd.libDividerMod.DividerProps
-import typingsJapgolly.react.reactMod.CSSProperties
+import typingsJapgolly.antd.dividerMod.DividerProps
+import typingsJapgolly.react.mod.CSSProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -26,7 +26,7 @@ object Divider {
     style: CSSProperties = null,
     `type`: horizontal | vertical = null,
     key: js.UndefOr[Key] = js.undefined,
-    overrides: StringDictionary[js.Any] = null
+    _overrides: StringDictionary[js.Any] = null
   )(
     children: ChildArg*
   ): UnmountedSimple[
@@ -42,13 +42,13 @@ object Divider {
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (overrides != null) js.Dynamic.global.Object.assign(__obj, overrides)
+    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
   
     val f = japgolly.scalajs.react.JsComponent[
-  typingsJapgolly.antd.libDividerMod.DividerProps, 
+  typingsJapgolly.antd.dividerMod.DividerProps, 
   japgolly.scalajs.react.Children.Varargs, 
   js.Object](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.antd.libDividerMod.DividerProps])(children: _*)
+    f(__obj.asInstanceOf[typingsJapgolly.antd.dividerMod.DividerProps])(children: _*)
   }
   @JSImport("antd/lib/divider", JSImport.Default)
   @js.native

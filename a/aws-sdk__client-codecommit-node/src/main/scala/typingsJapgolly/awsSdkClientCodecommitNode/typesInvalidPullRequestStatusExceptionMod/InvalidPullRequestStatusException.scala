@@ -1,0 +1,18 @@
+package typingsJapgolly.awsSdkClientCodecommitNode.typesInvalidPullRequestStatusExceptionMod
+
+import typingsJapgolly.awsSdkClientCodecommitNode.listPullRequestsExceptionsUnionMod.ListPullRequestsExceptionsUnion
+import typingsJapgolly.awsSdkClientCodecommitNode.updatePullRequestStatusExceptionsUnionMod.UpdatePullRequestStatusExceptionsUnion
+import typingsJapgolly.awsSdkTypes.exceptionMod.ServiceException
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@js.native
+trait InvalidPullRequestStatusException
+  extends ServiceException[InvalidPullRequestStatusExceptionDetails]
+     with ListPullRequestsExceptionsUnion
+     with UpdatePullRequestStatusExceptionsUnion {
+  @JSName("name")
+  var name_InvalidPullRequestStatusException: typingsJapgolly.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.InvalidPullRequestStatusException = js.native
+}
+

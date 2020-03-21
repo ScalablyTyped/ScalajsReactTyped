@@ -10,7 +10,7 @@ import typingsJapgolly.node.nodeStrings.response
 import typingsJapgolly.node.nodeStrings.socket
 import typingsJapgolly.node.nodeStrings.timeout
 import typingsJapgolly.node.nodeStrings.upgrade
-import typingsJapgolly.node.urlMod.URL
+import typingsJapgolly.node.urlMod.URL_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,15 +19,15 @@ import scala.scalajs.js.annotation._
 @JSImport("http", "ClientRequest")
 @js.native
 class ClientRequest protected () extends OutgoingMessage {
-  def this(url: java.lang.String) = this()
+  def this(url: String) = this()
   def this(url: ClientRequestArgs) = this()
-  def this(url: URL) = this()
-  def this(url: java.lang.String, cb: js.Function1[/* res */ IncomingMessage, Unit]) = this()
+  def this(url: URL_) = this()
+  def this(url: String, cb: js.Function1[/* res */ IncomingMessage, Unit]) = this()
   def this(url: ClientRequestArgs, cb: js.Function1[/* res */ IncomingMessage, Unit]) = this()
-  def this(url: URL, cb: js.Function1[/* res */ IncomingMessage, Unit]) = this()
+  def this(url: URL_, cb: js.Function1[/* res */ IncomingMessage, Unit]) = this()
   var aborted: Double = js.native
-  val path: java.lang.String = js.native
-  var socket: Socket = js.native
+  var method: String = js.native
+  var path: String = js.native
   def abort(): Unit = js.native
   @JSName("addListener")
   def addListener_abort(event: abort, listener: js.Function0[Unit]): this.type = js.native

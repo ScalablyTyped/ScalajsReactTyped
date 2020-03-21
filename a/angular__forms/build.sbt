@@ -1,23 +1,22 @@
-organization := "org.gulliblytyped.japgolly"
+organization := "org.scalablytyped.japgolly"
 name := "angular__forms"
-version := "8.2.14-9db827"
-scalaVersion := "2.12.10"
+version := "8.2.14-6c6b1b"
+scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.github.japgolly.scalajs-react" %%% "core" % "1.4.2",
+  "com.github.japgolly.scalajs-react" %%% "core" % "1.5.0",
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.gulliblytyped.japgolly" %%% "angular__compiler" % "8.2.14-5663cd",
-  "org.gulliblytyped.japgolly" %%% "angular__core" % "8.2.14-3fb66e",
-  "org.gulliblytyped.japgolly" %%% "inquirer" % "6.5-dt-20190731Z-eb2a45",
-  "org.gulliblytyped.japgolly" %%% "node" % "12.12-dt-20191126Z-fec8d2",
-  "org.gulliblytyped.japgolly" %%% "rxjs" % "6.5.3-1605a1",
-  "org.gulliblytyped.japgolly" %%% "rxjs-compat" % "6.5.3-d48513",
-  "org.gulliblytyped.japgolly" %%% "std" % "3.7-ed3398",
-  "org.gulliblytyped.japgolly" %%% "through" % "0.0-unknown-dt-20190322Z-aa144b",
-  "org.gulliblytyped.japgolly" %%% "typescript" % "3.7.2-5daf6b")
+  "org.scalablytyped.japgolly" %%% "angular__compiler" % "8.2.14-5163d7",
+  "org.scalablytyped.japgolly" %%% "angular__core" % "8.2.14-2e847b",
+  "org.scalablytyped.japgolly" %%% "inquirer" % "6.5-dt-20200226Z-29a9c4",
+  "org.scalablytyped.japgolly" %%% "node" % "13.7-dt-20200228Z-e4cd2e",
+  "org.scalablytyped.japgolly" %%% "rxjs" % "6.5.4-a27765",
+  "org.scalablytyped.japgolly" %%% "rxjs-compat" % "6.5.4-968493",
+  "org.scalablytyped.japgolly" %%% "std" % "3.8-8884a5",
+  "org.scalablytyped.japgolly" %%% "through" % "0.0-unknown-dt-20200225Z-90fce9",
+  "org.scalablytyped.japgolly" %%% "typescript" % "3.8.2-cfbb15")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
+scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
 bintrayRepository := "ScalajsReactTyped"
 resolvers += Resolver.bintrayRepo("oyvindberg", "ScalajsReactTyped")
-        

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "ss-utils" : "0.2.5"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "ss-utils" : "0.2.5"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

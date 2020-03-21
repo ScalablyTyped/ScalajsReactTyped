@@ -1,5 +1,6 @@
 package typingsJapgolly.googlemaps.google.maps.places
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,14 +32,28 @@ object PlacesServiceStatus extends js.Object {
   @js.native
   sealed trait ZERO_RESULTS extends PlacesServiceStatus
   
-  /* "INVALID_REQUEST" */ val INVALID_REQUEST: typingsJapgolly.googlemaps.google.maps.places.PlacesServiceStatus.INVALID_REQUEST with String = js.native
-  /* "NOT_FOUND" */ val NOT_FOUND: typingsJapgolly.googlemaps.google.maps.places.PlacesServiceStatus.NOT_FOUND with String = js.native
-  /* "OK" */ val OK: typingsJapgolly.googlemaps.google.maps.places.PlacesServiceStatus.OK with String = js.native
-  /* "OVER_QUERY_LIMIT" */ val OVER_QUERY_LIMIT: typingsJapgolly.googlemaps.google.maps.places.PlacesServiceStatus.OVER_QUERY_LIMIT with String = js.native
-  /* "REQUEST_DENIED" */ val REQUEST_DENIED: typingsJapgolly.googlemaps.google.maps.places.PlacesServiceStatus.REQUEST_DENIED with String = js.native
-  /* "UNKNOWN_ERROR" */ val UNKNOWN_ERROR: typingsJapgolly.googlemaps.google.maps.places.PlacesServiceStatus.UNKNOWN_ERROR with String = js.native
-  /* "ZERO_RESULTS" */ val ZERO_RESULTS: typingsJapgolly.googlemaps.google.maps.places.PlacesServiceStatus.ZERO_RESULTS with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[PlacesServiceStatus with String] = js.native
+  /* "INVALID_REQUEST" */ @js.native
+  object INVALID_REQUEST extends TopLevel[INVALID_REQUEST with String]
+  
+  /* "NOT_FOUND" */ @js.native
+  object NOT_FOUND extends TopLevel[NOT_FOUND with String]
+  
+  /* "OK" */ @js.native
+  object OK extends TopLevel[OK with String]
+  
+  /* "OVER_QUERY_LIMIT" */ @js.native
+  object OVER_QUERY_LIMIT extends TopLevel[OVER_QUERY_LIMIT with String]
+  
+  /* "REQUEST_DENIED" */ @js.native
+  object REQUEST_DENIED extends TopLevel[REQUEST_DENIED with String]
+  
+  /* "UNKNOWN_ERROR" */ @js.native
+  object UNKNOWN_ERROR extends TopLevel[UNKNOWN_ERROR with String]
+  
+  /* "ZERO_RESULTS" */ @js.native
+  object ZERO_RESULTS extends TopLevel[ZERO_RESULTS with String]
+  
 }
 

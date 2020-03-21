@@ -19,10 +19,11 @@ import japgolly.scalajs.react.ReactWheelEventFrom
 import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
 import org.scalablytyped.runtime.StringDictionary
 import org.scalajs.dom.raw.HTMLDivElement
-import typingsJapgolly.antd.libUnderscoreUtilTransButtonMod.TransButtonProps
-import typingsJapgolly.antd.libUnderscoreUtilTransButtonMod.default
-import typingsJapgolly.react.Anon_Html
-import typingsJapgolly.react.reactMod.CSSProperties
+import typingsJapgolly.antd.transButtonMod.TransButtonProps
+import typingsJapgolly.antd.transButtonMod.default
+import typingsJapgolly.react.AnonHtml
+import typingsJapgolly.react.mod.Booleanish
+import typingsJapgolly.react.mod.CSSProperties
 import typingsJapgolly.react.reactStrings.`additions text`
 import typingsJapgolly.react.reactStrings.`inline`
 import typingsJapgolly.react.reactStrings.additions
@@ -40,6 +41,7 @@ import typingsJapgolly.react.reactStrings.execute
 import typingsJapgolly.react.reactStrings.grammar
 import typingsJapgolly.react.reactStrings.grid
 import typingsJapgolly.react.reactStrings.horizontal
+import typingsJapgolly.react.reactStrings.inherit
 import typingsJapgolly.react.reactStrings.link
 import typingsJapgolly.react.reactStrings.list
 import typingsJapgolly.react.reactStrings.listbox
@@ -128,9 +130,9 @@ object TransButton {
     autoSave: String = null,
     className: String = null,
     color: String = null,
-    contentEditable: js.UndefOr[Boolean] = js.undefined,
+    contentEditable: Booleanish | inherit = null,
     contextMenu: String = null,
-    dangerouslySetInnerHTML: Anon_Html = null,
+    dangerouslySetInnerHTML: AnonHtml = null,
     datatype: String = null,
     defaultChecked: js.UndefOr[Boolean] = js.undefined,
     defaultValue: String | Double | js.Array[String] = null,
@@ -247,7 +249,7 @@ object TransButton {
     unselectable: on | off = null,
     vocab: String = null,
     key: js.UndefOr[Key] = js.undefined,
-    overrides: StringDictionary[js.Any] = null
+    _overrides: StringDictionary[js.Any] = null
   )(
     children: ChildArg*
   ): UnmountedWithRoot[TransButtonProps, default, Unit, TransButtonProps] = {
@@ -308,7 +310,7 @@ object TransButton {
     if (autoSave != null) __obj.updateDynamic("autoSave")(autoSave.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (!js.isUndefined(contentEditable)) __obj.updateDynamic("contentEditable")(contentEditable.asInstanceOf[js.Any])
+    if (contentEditable != null) __obj.updateDynamic("contentEditable")(contentEditable.asInstanceOf[js.Any])
     if (contextMenu != null) __obj.updateDynamic("contextMenu")(contextMenu.asInstanceOf[js.Any])
     if (dangerouslySetInnerHTML != null) __obj.updateDynamic("dangerouslySetInnerHTML")(dangerouslySetInnerHTML.asInstanceOf[js.Any])
     if (datatype != null) __obj.updateDynamic("datatype")(datatype.asInstanceOf[js.Any])
@@ -427,13 +429,13 @@ object TransButton {
     if (unselectable != null) __obj.updateDynamic("unselectable")(unselectable.asInstanceOf[js.Any])
     if (vocab != null) __obj.updateDynamic("vocab")(vocab.asInstanceOf[js.Any])
     key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (overrides != null) js.Dynamic.global.Object.assign(__obj, overrides)
+    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
   
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antd.libUnderscoreUtilTransButtonMod.TransButtonProps, 
+  typingsJapgolly.antd.transButtonMod.TransButtonProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antd.libUnderscoreUtilTransButtonMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.antd.libUnderscoreUtilTransButtonMod.TransButtonProps])(children: _*)
+  typingsJapgolly.antd.transButtonMod.default](this.componentImport)
+    f(__obj.asInstanceOf[typingsJapgolly.antd.transButtonMod.TransButtonProps])(children: _*)
   }
   @JSImport("antd/lib/_util/transButton", JSImport.Default)
   @js.native

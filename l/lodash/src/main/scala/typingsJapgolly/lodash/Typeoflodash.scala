@@ -1,6 +1,6 @@
 package typingsJapgolly.lodash
 
-import typingsJapgolly.lodash.lodashMod.LoDashImplicitWrapper
+import typingsJapgolly.lodash.mod.LoDashImplicitWrapper
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

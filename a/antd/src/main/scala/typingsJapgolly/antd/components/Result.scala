@@ -7,9 +7,9 @@ import japgolly.scalajs.react.component.Js.RawMounted
 import japgolly.scalajs.react.component.Js.UnmountedSimple
 import japgolly.scalajs.react.vdom.VdomNode
 import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.antd.libResultMod.ResultProps
-import typingsJapgolly.antd.libResultMod.ResultStatusType
-import typingsJapgolly.react.reactMod.CSSProperties
+import typingsJapgolly.antd.resultMod.ResultProps
+import typingsJapgolly.antd.resultMod.ResultStatusType
+import typingsJapgolly.react.mod.CSSProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,7 +25,7 @@ object Result {
     subTitle: VdomNode = null,
     title: VdomNode = null,
     key: js.UndefOr[Key] = js.undefined,
-    overrides: StringDictionary[js.Any] = null
+    _overrides: StringDictionary[js.Any] = null
   )(
     children: ChildArg*
   ): UnmountedSimple[
@@ -43,13 +43,13 @@ object Result {
     if (subTitle != null) __obj.updateDynamic("subTitle")(subTitle.rawNode.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.rawNode.asInstanceOf[js.Any])
     key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (overrides != null) js.Dynamic.global.Object.assign(__obj, overrides)
+    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
   
     val f = japgolly.scalajs.react.JsComponent[
-  typingsJapgolly.antd.libResultMod.ResultProps, 
+  typingsJapgolly.antd.resultMod.ResultProps, 
   japgolly.scalajs.react.Children.Varargs, 
   js.Object](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.antd.libResultMod.ResultProps])(children: _*)
+    f(__obj.asInstanceOf[typingsJapgolly.antd.resultMod.ResultProps])(children: _*)
   }
   @JSImport("antd/lib/result", JSImport.Default)
   @js.native

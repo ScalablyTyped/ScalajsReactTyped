@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
-  - typings.std.stdStrings.readonly_
-  - typings.std.stdStrings.readwrite
-  - typings.std.stdStrings.versionchange
+  - typingsJapgolly.std.stdStrings.readonly_
+  - typingsJapgolly.std.stdStrings.readwrite
+  - typingsJapgolly.std.stdStrings.versionchange
 */
 trait IDBTransactionMode extends js.Object
 

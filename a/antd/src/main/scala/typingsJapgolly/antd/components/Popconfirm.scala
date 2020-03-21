@@ -9,25 +9,23 @@ import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
 import japgolly.scalajs.react.vdom.VdomNode
 import org.scalablytyped.runtime.StringDictionary
 import org.scalajs.dom.raw.HTMLElement
-import typingsJapgolly.antd.libButtonButtonMod.ButtonType
-import typingsJapgolly.antd.libButtonButtonMod.NativeButtonProps
-import typingsJapgolly.antd.libPopconfirmMod.PopconfirmProps
-import typingsJapgolly.antd.libPopconfirmMod.default
-import typingsJapgolly.antd.libTooltipMod.TooltipAlignConfig
-import typingsJapgolly.antd.libTooltipMod.TooltipPlacement
-import typingsJapgolly.antd.libTooltipMod.TooltipTrigger
-import typingsJapgolly.antd.libTooltipPlacementsMod.AdjustOverflow
-import typingsJapgolly.react.reactMod.CSSProperties
+import typingsJapgolly.antd.buttonButtonMod.ButtonType
+import typingsJapgolly.antd.buttonButtonMod.NativeButtonProps
+import typingsJapgolly.antd.placementsMod.AdjustOverflow
+import typingsJapgolly.antd.popconfirmMod.PopconfirmProps
+import typingsJapgolly.antd.popconfirmMod.default
+import typingsJapgolly.antd.tooltipMod.TooltipPlacement
+import typingsJapgolly.react.mod.CSSProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 object Popconfirm {
   def apply(
-    align: TooltipAlignConfig = null,
+    align: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AlignType */ js.Any = null,
     arrowPointAtCenter: js.UndefOr[Boolean] = js.undefined,
     autoAdjustOverflow: Boolean | AdjustOverflow = null,
-    builtinPlacements: js.Object = null,
+    builtinPlacements: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BuildInPlacements */ js.Any = null,
     cancelButtonProps: NativeButtonProps = null,
     cancelText: VdomNode = null,
     className: String = null,
@@ -53,10 +51,10 @@ object Popconfirm {
     style: CSSProperties = null,
     title: VdomNode = null,
     transitionName: String = null,
-    trigger: TooltipTrigger = null,
+    trigger: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ActionType */ js.Any = null,
     visible: js.UndefOr[Boolean] = js.undefined,
     key: js.UndefOr[Key] = js.undefined,
-    overrides: StringDictionary[js.Any] = null
+    _overrides: StringDictionary[js.Any] = null
   )(
     children: ChildArg*
   ): UnmountedWithRoot[PopconfirmProps, default, Unit, PopconfirmProps] = {
@@ -94,13 +92,13 @@ object Popconfirm {
     if (trigger != null) __obj.updateDynamic("trigger")(trigger.asInstanceOf[js.Any])
     if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (overrides != null) js.Dynamic.global.Object.assign(__obj, overrides)
+    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
   
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antd.libPopconfirmMod.PopconfirmProps, 
+  typingsJapgolly.antd.popconfirmMod.PopconfirmProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antd.libPopconfirmMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.antd.libPopconfirmMod.PopconfirmProps])(children: _*)
+  typingsJapgolly.antd.popconfirmMod.default](this.componentImport)
+    f(__obj.asInstanceOf[typingsJapgolly.antd.popconfirmMod.PopconfirmProps])(children: _*)
   }
   @JSImport("antd/lib/popconfirm", JSImport.Default)
   @js.native

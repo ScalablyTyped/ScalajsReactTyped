@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "ractive" : "1.3.10"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "ractive" : "1.3.10"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -1,0 +1,46 @@
+package typingsJapgolly.awsSdkClientS3Node
+
+import typingsJapgolly.awsSdkClientS3Node.inputTypesUnionMod.InputTypesUnion
+import typingsJapgolly.awsSdkClientS3Node.outputTypesUnionMod.OutputTypesUnion
+import typingsJapgolly.awsSdkClientS3Node.s3ConfigurationMod.S3ResolvedConfiguration
+import typingsJapgolly.awsSdkClientS3Node.typesGetBucketReplicationInputMod.GetBucketReplicationInput
+import typingsJapgolly.awsSdkClientS3Node.typesGetBucketReplicationOutputMod.GetBucketReplicationOutput
+import typingsJapgolly.awsSdkMiddlewareStack.mod.MiddlewareStack
+import typingsJapgolly.awsSdkTypes.commandMod.Command
+import typingsJapgolly.awsSdkTypes.middlewareMod.Handler
+import typingsJapgolly.awsSdkTypes.protocolMod.OperationModel
+import typingsJapgolly.node.streamMod.Readable
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("@aws-sdk/client-s3-node/commands/GetBucketReplicationCommand", JSImport.Namespace)
+@js.native
+object getBucketReplicationCommandMod extends js.Object {
+  @js.native
+  class GetBucketReplicationCommand protected () extends Command[
+          InputTypesUnion, 
+          GetBucketReplicationInput, 
+          OutputTypesUnion, 
+          GetBucketReplicationOutput, 
+          S3ResolvedConfiguration, 
+          Readable
+        ] {
+    def this(input: GetBucketReplicationInput) = this()
+    /* CompleteClass */
+    override val input: GetBucketReplicationInput = js.native
+    val middlewareStack: MiddlewareStack[GetBucketReplicationInput, GetBucketReplicationOutput, Readable] = js.native
+    val model: OperationModel = js.native
+    def resolveMiddleware(
+      clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
+      configuration: S3ResolvedConfiguration
+    ): Handler[GetBucketReplicationInput, GetBucketReplicationOutput] = js.native
+    /* CompleteClass */
+    override def resolveMiddleware(
+      stack: typingsJapgolly.awsSdkTypes.middlewareMod.MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
+      configuration: S3ResolvedConfiguration
+    ): Handler[GetBucketReplicationInput, GetBucketReplicationOutput] = js.native
+  }
+  
+}
+

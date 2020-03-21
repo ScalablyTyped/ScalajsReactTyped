@@ -1,0 +1,62 @@
+package typingsJapgolly.awsSdkClientKmsNode.typesInvalidArnExceptionMod
+
+import typingsJapgolly.awsSdkClientKmsNode.cancelKeyDeletionExceptionsUnionMod.CancelKeyDeletionExceptionsUnion
+import typingsJapgolly.awsSdkClientKmsNode.createGrantExceptionsUnionMod.CreateGrantExceptionsUnion
+import typingsJapgolly.awsSdkClientKmsNode.createKeyExceptionsUnionMod.CreateKeyExceptionsUnion
+import typingsJapgolly.awsSdkClientKmsNode.deleteImportedKeyMaterialExceptionsUnionMod.DeleteImportedKeyMaterialExceptionsUnion
+import typingsJapgolly.awsSdkClientKmsNode.describeKeyExceptionsUnionMod.DescribeKeyExceptionsUnion
+import typingsJapgolly.awsSdkClientKmsNode.disableKeyExceptionsUnionMod.DisableKeyExceptionsUnion
+import typingsJapgolly.awsSdkClientKmsNode.disableKeyRotationExceptionsUnionMod.DisableKeyRotationExceptionsUnion
+import typingsJapgolly.awsSdkClientKmsNode.enableKeyExceptionsUnionMod.EnableKeyExceptionsUnion
+import typingsJapgolly.awsSdkClientKmsNode.enableKeyRotationExceptionsUnionMod.EnableKeyRotationExceptionsUnion
+import typingsJapgolly.awsSdkClientKmsNode.getKeyPolicyExceptionsUnionMod.GetKeyPolicyExceptionsUnion
+import typingsJapgolly.awsSdkClientKmsNode.getKeyRotationStatusExceptionsUnionMod.GetKeyRotationStatusExceptionsUnion
+import typingsJapgolly.awsSdkClientKmsNode.getParametersForImportExceptionsUnionMod.GetParametersForImportExceptionsUnion
+import typingsJapgolly.awsSdkClientKmsNode.importKeyMaterialExceptionsUnionMod.ImportKeyMaterialExceptionsUnion
+import typingsJapgolly.awsSdkClientKmsNode.listGrantsExceptionsUnionMod.ListGrantsExceptionsUnion
+import typingsJapgolly.awsSdkClientKmsNode.listKeyPoliciesExceptionsUnionMod.ListKeyPoliciesExceptionsUnion
+import typingsJapgolly.awsSdkClientKmsNode.listResourceTagsExceptionsUnionMod.ListResourceTagsExceptionsUnion
+import typingsJapgolly.awsSdkClientKmsNode.listRetirableGrantsExceptionsUnionMod.ListRetirableGrantsExceptionsUnion
+import typingsJapgolly.awsSdkClientKmsNode.putKeyPolicyExceptionsUnionMod.PutKeyPolicyExceptionsUnion
+import typingsJapgolly.awsSdkClientKmsNode.retireGrantExceptionsUnionMod.RetireGrantExceptionsUnion
+import typingsJapgolly.awsSdkClientKmsNode.revokeGrantExceptionsUnionMod.RevokeGrantExceptionsUnion
+import typingsJapgolly.awsSdkClientKmsNode.scheduleKeyDeletionExceptionsUnionMod.ScheduleKeyDeletionExceptionsUnion
+import typingsJapgolly.awsSdkClientKmsNode.tagResourceExceptionsUnionMod.TagResourceExceptionsUnion
+import typingsJapgolly.awsSdkClientKmsNode.untagResourceExceptionsUnionMod.UntagResourceExceptionsUnion
+import typingsJapgolly.awsSdkClientKmsNode.updateKeyDescriptionExceptionsUnionMod.UpdateKeyDescriptionExceptionsUnion
+import typingsJapgolly.awsSdkTypes.exceptionMod.ServiceException
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@js.native
+trait InvalidArnException
+  extends ServiceException[InvalidArnExceptionDetails]
+     with CancelKeyDeletionExceptionsUnion
+     with CreateGrantExceptionsUnion
+     with CreateKeyExceptionsUnion
+     with DeleteImportedKeyMaterialExceptionsUnion
+     with DescribeKeyExceptionsUnion
+     with DisableKeyExceptionsUnion
+     with DisableKeyRotationExceptionsUnion
+     with EnableKeyExceptionsUnion
+     with EnableKeyRotationExceptionsUnion
+     with GetKeyPolicyExceptionsUnion
+     with GetKeyRotationStatusExceptionsUnion
+     with GetParametersForImportExceptionsUnion
+     with ImportKeyMaterialExceptionsUnion
+     with ListGrantsExceptionsUnion
+     with ListKeyPoliciesExceptionsUnion
+     with ListResourceTagsExceptionsUnion
+     with ListRetirableGrantsExceptionsUnion
+     with PutKeyPolicyExceptionsUnion
+     with RetireGrantExceptionsUnion
+     with RevokeGrantExceptionsUnion
+     with ScheduleKeyDeletionExceptionsUnion
+     with TagResourceExceptionsUnion
+     with UntagResourceExceptionsUnion
+     with UpdateKeyDescriptionExceptionsUnion {
+  @JSName("name")
+  var name_InvalidArnException: typingsJapgolly.awsSdkClientKmsNode.awsSdkClientKmsNodeStrings.InvalidArnException = js.native
+}
+

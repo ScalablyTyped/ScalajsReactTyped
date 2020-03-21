@@ -1,8 +1,8 @@
 package typingsJapgolly.rxjs.ajaxMod
 
-import org.scalajs.dom.raw.Event
 import org.scalajs.dom.raw.XMLHttpRequest
-import typingsJapgolly.rxjs.internalObservableDomAjaxObservableMod.AjaxRequest
+import typingsJapgolly.rxjs.ajaxObservableMod.AjaxRequest
+import typingsJapgolly.std.Event_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @JSImport("rxjs/ajax", "AjaxResponse")
 @js.native
 class AjaxResponse protected ()
-  extends typingsJapgolly.rxjs.internalObservableDomAjaxObservableMod.AjaxResponse {
-  def this(originalEvent: Event, xhr: XMLHttpRequest, request: AjaxRequest) = this()
+  extends typingsJapgolly.rxjs.ajaxObservableMod.AjaxResponse {
+  def this(originalEvent: Event_, xhr: XMLHttpRequest, request: AjaxRequest) = this()
 }
 

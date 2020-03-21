@@ -5,18 +5,17 @@ import japgolly.scalajs.react.CallbackTo
 import japgolly.scalajs.react.CtorType.ChildArg
 import japgolly.scalajs.react.Key
 import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import japgolly.scalajs.react.raw.React.Element
 import japgolly.scalajs.react.raw.React.Node
 import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.antd.Anon_GoButton
+import typingsJapgolly.antd.AnonGoButton
 import typingsJapgolly.antd.antdStrings.`jump-next`
 import typingsJapgolly.antd.antdStrings.`jump-prev`
 import typingsJapgolly.antd.antdStrings.next
 import typingsJapgolly.antd.antdStrings.page
 import typingsJapgolly.antd.antdStrings.prev
-import typingsJapgolly.antd.libPaginationMod.default
-import typingsJapgolly.antd.libPaginationPaginationMod.PaginationProps
-import typingsJapgolly.react.reactMod.CSSProperties
+import typingsJapgolly.antd.paginationMod.default
+import typingsJapgolly.antd.paginationPaginationMod.PaginationProps
+import typingsJapgolly.react.mod.CSSProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -29,7 +28,7 @@ object Pagination {
     defaultPageSize: Int | Double = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
     hideOnSinglePage: js.UndefOr[Boolean] = js.undefined,
-    itemRender: (/* page */ Double, /* type */ page | prev | next | `jump-prev` | `jump-next`, /* originalElement */ Element) => CallbackTo[Node] = null,
+    itemRender: (/* page */ Double, /* type */ page | prev | next | `jump-prev` | `jump-next`, /* originalElement */ japgolly.scalajs.react.raw.React.Element) => CallbackTo[Node] = null,
     locale: js.Object = null,
     onChange: (/* page */ Double, /* pageSize */ js.UndefOr[Double]) => Callback = null,
     onShowSizeChange: (/* current */ Double, /* size */ Double) => Callback = null,
@@ -39,7 +38,7 @@ object Pagination {
     role: String = null,
     selectPrefixCls: String = null,
     showLessItems: js.UndefOr[Boolean] = js.undefined,
-    showQuickJumper: Boolean | Anon_GoButton = null,
+    showQuickJumper: Boolean | AnonGoButton = null,
     showSizeChanger: js.UndefOr[Boolean] = js.undefined,
     showTotal: (/* total */ Double, /* range */ js.Tuple2[Double, Double]) => CallbackTo[Node] = null,
     simple: js.UndefOr[Boolean] = js.undefined,
@@ -47,7 +46,7 @@ object Pagination {
     style: CSSProperties = null,
     total: Int | Double = null,
     key: js.UndefOr[Key] = js.undefined,
-    overrides: StringDictionary[js.Any] = null
+    _overrides: StringDictionary[js.Any] = null
   )(
     children: ChildArg*
   ): UnmountedWithRoot[PaginationProps, default, Unit, PaginationProps] = {
@@ -77,13 +76,13 @@ object Pagination {
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (total != null) __obj.updateDynamic("total")(total.asInstanceOf[js.Any])
     key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (overrides != null) js.Dynamic.global.Object.assign(__obj, overrides)
+    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
   
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antd.libPaginationPaginationMod.PaginationProps, 
+  typingsJapgolly.antd.paginationPaginationMod.PaginationProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antd.libPaginationMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.antd.libPaginationPaginationMod.PaginationProps])(children: _*)
+  typingsJapgolly.antd.paginationMod.default](this.componentImport)
+    f(__obj.asInstanceOf[typingsJapgolly.antd.paginationPaginationMod.PaginationProps])(children: _*)
   }
   @JSImport("antd/lib/pagination", JSImport.Default)
   @js.native

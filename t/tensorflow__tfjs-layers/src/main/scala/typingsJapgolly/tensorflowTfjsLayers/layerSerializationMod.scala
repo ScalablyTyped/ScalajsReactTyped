@@ -1,0 +1,25 @@
+package typingsJapgolly.tensorflowTfjsLayers
+
+import typingsJapgolly.tensorflowTfjsLayers.advancedActivationSerializationMod.AdvancedActivationLayerSerialization
+import typingsJapgolly.tensorflowTfjsLayers.convolutionalDepthwiseSerializationMod.ConvolutionalDepthwiseLayerSerialization
+import typingsJapgolly.tensorflowTfjsLayers.convolutionalSerializationMod.ConvolutionalLayerSerialization
+import typingsJapgolly.tensorflowTfjsLayers.coreSerializationMod.CoreLayerSerialization
+import typingsJapgolly.tensorflowTfjsLayers.embeddingsSerializationMod.EmbeddingLayerSerialization
+import typingsJapgolly.tensorflowTfjsLayers.inputConfigMod.InputLayerSerialization
+import typingsJapgolly.tensorflowTfjsLayers.mergeSerializationMod.MergeLayerSerialization
+import typingsJapgolly.tensorflowTfjsLayers.normalizationSerializationMod.NormalizationLayerSerialization
+import typingsJapgolly.tensorflowTfjsLayers.paddingSerializationMod.PaddingLayerSerialization
+import typingsJapgolly.tensorflowTfjsLayers.poolingSerializationMod.PoolingLayerSerialization
+import typingsJapgolly.tensorflowTfjsLayers.recurrentSerializationMod.RecurrentLayerSerialization
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("@tensorflow/tfjs-layers/dist/keras_format/layers/layer_serialization", JSImport.Namespace)
+@js.native
+object layerSerializationMod extends js.Object {
+  val layerClassNames: js.Array[LayerClassName] = js.native
+  type LayerClassName = /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-layers.@tensorflow/tfjs-layers/dist/keras_format/layers/layer_serialization.LayerSerialization['class_name'] */ js.Any
+  type LayerSerialization = AdvancedActivationLayerSerialization | ConvolutionalDepthwiseLayerSerialization | ConvolutionalLayerSerialization | CoreLayerSerialization | EmbeddingLayerSerialization | MergeLayerSerialization | NormalizationLayerSerialization | PaddingLayerSerialization | PoolingLayerSerialization | RecurrentLayerSerialization | InputLayerSerialization
+}
+

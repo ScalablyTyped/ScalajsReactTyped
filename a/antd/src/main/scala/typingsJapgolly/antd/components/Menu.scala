@@ -9,13 +9,13 @@ import japgolly.scalajs.react.vdom.VdomNode
 import org.scalablytyped.runtime.StringDictionary
 import org.scalajs.dom.raw.HTMLElement
 import org.scalajs.dom.raw.MouseEvent
-import typingsJapgolly.antd.libMenuMenuContextMod.MenuTheme
-import typingsJapgolly.antd.libMenuMod.ClickParam
-import typingsJapgolly.antd.libMenuMod.MenuMode
-import typingsJapgolly.antd.libMenuMod.MenuProps
-import typingsJapgolly.antd.libMenuMod.SelectParam
-import typingsJapgolly.antd.libMenuMod.default
-import typingsJapgolly.react.reactMod.CSSProperties
+import typingsJapgolly.antd.menuContextMod.MenuTheme
+import typingsJapgolly.antd.menuMod.ClickParam
+import typingsJapgolly.antd.menuMod.MenuMode
+import typingsJapgolly.antd.menuMod.MenuProps
+import typingsJapgolly.antd.menuMod.SelectParam
+import typingsJapgolly.antd.menuMod.default
+import typingsJapgolly.react.mod.CSSProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -51,7 +51,7 @@ object Menu {
     subMenuOpenDelay: Int | Double = null,
     theme: MenuTheme = null,
     key: js.UndefOr[Key] = js.undefined,
-    overrides: StringDictionary[js.Any] = null
+    _overrides: StringDictionary[js.Any] = null
   )(
     children: ChildArg*
   ): UnmountedWithRoot[MenuProps, default, Unit, MenuProps] = {
@@ -69,11 +69,11 @@ object Menu {
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     if (motion != null) __obj.updateDynamic("motion")(motion.asInstanceOf[js.Any])
     if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple.asInstanceOf[js.Any])
-    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1((t0: /* param */ typingsJapgolly.antd.libMenuMod.ClickParam) => onClick(t0).runNow()))
-    if (onDeselect != null) __obj.updateDynamic("onDeselect")(js.Any.fromFunction1((t0: /* param */ typingsJapgolly.antd.libMenuMod.SelectParam) => onDeselect(t0).runNow()))
+    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1((t0: /* param */ typingsJapgolly.antd.menuMod.ClickParam) => onClick(t0).runNow()))
+    if (onDeselect != null) __obj.updateDynamic("onDeselect")(js.Any.fromFunction1((t0: /* param */ typingsJapgolly.antd.menuMod.SelectParam) => onDeselect(t0).runNow()))
     if (onMouseEnter != null) __obj.updateDynamic("onMouseEnter")(js.Any.fromFunction1((t0: /* e */ org.scalajs.dom.raw.MouseEvent) => onMouseEnter(t0).runNow()))
     if (onOpenChange != null) __obj.updateDynamic("onOpenChange")(js.Any.fromFunction1((t0: /* openKeys */ js.Array[java.lang.String]) => onOpenChange(t0).runNow()))
-    if (onSelect != null) __obj.updateDynamic("onSelect")(js.Any.fromFunction1((t0: /* param */ typingsJapgolly.antd.libMenuMod.SelectParam) => onSelect(t0).runNow()))
+    if (onSelect != null) __obj.updateDynamic("onSelect")(js.Any.fromFunction1((t0: /* param */ typingsJapgolly.antd.menuMod.SelectParam) => onSelect(t0).runNow()))
     if (openAnimation != null) __obj.updateDynamic("openAnimation")(openAnimation.asInstanceOf[js.Any])
     if (openKeys != null) __obj.updateDynamic("openKeys")(openKeys.asInstanceOf[js.Any])
     if (openTransitionName != null) __obj.updateDynamic("openTransitionName")(openTransitionName.asInstanceOf[js.Any])
@@ -86,13 +86,13 @@ object Menu {
     if (subMenuOpenDelay != null) __obj.updateDynamic("subMenuOpenDelay")(subMenuOpenDelay.asInstanceOf[js.Any])
     if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (overrides != null) js.Dynamic.global.Object.assign(__obj, overrides)
+    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
   
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antd.libMenuMod.MenuProps, 
+  typingsJapgolly.antd.menuMod.MenuProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antd.libMenuMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.antd.libMenuMod.MenuProps])(children: _*)
+  typingsJapgolly.antd.menuMod.default](this.componentImport)
+    f(__obj.asInstanceOf[typingsJapgolly.antd.menuMod.MenuProps])(children: _*)
   }
   @JSImport("antd/lib/menu", JSImport.Default)
   @js.native

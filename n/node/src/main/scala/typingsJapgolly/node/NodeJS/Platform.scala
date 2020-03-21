@@ -5,16 +5,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
-  - typings.node.nodeStrings.aix
-  - typings.node.nodeStrings.android
-  - typings.node.nodeStrings.darwin
-  - typings.node.nodeStrings.freebsd
-  - typings.node.nodeStrings.linux
-  - typings.node.nodeStrings.openbsd
-  - typings.node.nodeStrings.sunos
-  - typings.node.nodeStrings.win32
-  - typings.node.nodeStrings.cygwin
-  - typings.node.nodeStrings.netbsd
+  - typingsJapgolly.node.nodeStrings.aix
+  - typingsJapgolly.node.nodeStrings.android
+  - typingsJapgolly.node.nodeStrings.darwin
+  - typingsJapgolly.node.nodeStrings.freebsd
+  - typingsJapgolly.node.nodeStrings.linux
+  - typingsJapgolly.node.nodeStrings.openbsd
+  - typingsJapgolly.node.nodeStrings.sunos
+  - typingsJapgolly.node.nodeStrings.win32
+  - typingsJapgolly.node.nodeStrings.cygwin
+  - typingsJapgolly.node.nodeStrings.netbsd
 */
 trait Platform extends js.Object
 

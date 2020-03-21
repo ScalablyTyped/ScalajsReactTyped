@@ -5,16 +5,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
-  - typings.googlemaps.googlemapsStrings.click
-  - typings.googlemaps.googlemapsStrings.dblclick
-  - typings.googlemaps.googlemapsStrings.drag
-  - typings.googlemaps.googlemapsStrings.dragend
-  - typings.googlemaps.googlemapsStrings.dragstart
-  - typings.googlemaps.googlemapsStrings.mousedown
-  - typings.googlemaps.googlemapsStrings.mouseout
-  - typings.googlemaps.googlemapsStrings.mouseover
-  - typings.googlemaps.googlemapsStrings.mouseup
-  - typings.googlemaps.googlemapsStrings.rightclick
+  - typingsJapgolly.googlemaps.googlemapsStrings.click
+  - typingsJapgolly.googlemaps.googlemapsStrings.dblclick
+  - typingsJapgolly.googlemaps.googlemapsStrings.drag
+  - typingsJapgolly.googlemaps.googlemapsStrings.dragend
+  - typingsJapgolly.googlemaps.googlemapsStrings.dragstart
+  - typingsJapgolly.googlemaps.googlemapsStrings.mousedown
+  - typingsJapgolly.googlemaps.googlemapsStrings.mouseout
+  - typingsJapgolly.googlemaps.googlemapsStrings.mouseover
+  - typingsJapgolly.googlemaps.googlemapsStrings.mouseup
+  - typingsJapgolly.googlemaps.googlemapsStrings.rightclick
 */
 trait MarkerMouseEventNames extends js.Object
 

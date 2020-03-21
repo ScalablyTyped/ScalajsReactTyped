@@ -1,7 +1,7 @@
 package typingsJapgolly.node.cryptoMod
 
-import typingsJapgolly.node.Anon_Format
-import typingsJapgolly.node.Anon_Pkcs8Sec1
+import typingsJapgolly.node.Anon1
+import typingsJapgolly.node.AnonFormat
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,17 +10,17 @@ trait ECKeyPairOptions[PubF /* <: KeyFormat */, PrivF /* <: KeyFormat */] extend
   /**
     * Name of the curve to use.
     */
-  var namedCurve: java.lang.String
-  var privateKeyEncoding: BasePrivateKeyEncodingOptions[PrivF] with Anon_Pkcs8Sec1
-  var publicKeyEncoding: Anon_Format[PubF]
+  var namedCurve: String
+  var privateKeyEncoding: BasePrivateKeyEncodingOptions[PrivF] with Anon1
+  var publicKeyEncoding: AnonFormat[PubF]
 }
 
 object ECKeyPairOptions {
   @scala.inline
   def apply[PubF /* <: KeyFormat */, PrivF /* <: KeyFormat */](
-    namedCurve: java.lang.String,
-    privateKeyEncoding: BasePrivateKeyEncodingOptions[PrivF] with Anon_Pkcs8Sec1,
-    publicKeyEncoding: Anon_Format[PubF]
+    namedCurve: String,
+    privateKeyEncoding: BasePrivateKeyEncodingOptions[PrivF] with Anon1,
+    publicKeyEncoding: AnonFormat[PubF]
   ): ECKeyPairOptions[PubF, PrivF] = {
     val __obj = js.Dynamic.literal(namedCurve = namedCurve.asInstanceOf[js.Any], privateKeyEncoding = privateKeyEncoding.asInstanceOf[js.Any], publicKeyEncoding = publicKeyEncoding.asInstanceOf[js.Any])
   

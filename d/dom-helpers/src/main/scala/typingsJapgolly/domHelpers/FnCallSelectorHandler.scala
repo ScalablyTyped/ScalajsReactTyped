@@ -1,0 +1,109 @@
+package typingsJapgolly.domHelpers
+
+import typingsJapgolly.domHelpers.addEventListenerMod.EventHandler
+import typingsJapgolly.domHelpers.domHelpersStrings.abort
+import typingsJapgolly.domHelpers.domHelpersStrings.animationcancel
+import typingsJapgolly.domHelpers.domHelpersStrings.animationend
+import typingsJapgolly.domHelpers.domHelpersStrings.animationiteration
+import typingsJapgolly.domHelpers.domHelpersStrings.animationstart
+import typingsJapgolly.domHelpers.domHelpersStrings.auxclick
+import typingsJapgolly.domHelpers.domHelpersStrings.blur
+import typingsJapgolly.domHelpers.domHelpersStrings.cancel
+import typingsJapgolly.domHelpers.domHelpersStrings.canplay
+import typingsJapgolly.domHelpers.domHelpersStrings.canplaythrough
+import typingsJapgolly.domHelpers.domHelpersStrings.change
+import typingsJapgolly.domHelpers.domHelpersStrings.click
+import typingsJapgolly.domHelpers.domHelpersStrings.close
+import typingsJapgolly.domHelpers.domHelpersStrings.contextmenu
+import typingsJapgolly.domHelpers.domHelpersStrings.copy
+import typingsJapgolly.domHelpers.domHelpersStrings.cuechange
+import typingsJapgolly.domHelpers.domHelpersStrings.cut
+import typingsJapgolly.domHelpers.domHelpersStrings.dblclick
+import typingsJapgolly.domHelpers.domHelpersStrings.drag
+import typingsJapgolly.domHelpers.domHelpersStrings.dragend
+import typingsJapgolly.domHelpers.domHelpersStrings.dragenter
+import typingsJapgolly.domHelpers.domHelpersStrings.dragexit
+import typingsJapgolly.domHelpers.domHelpersStrings.dragleave
+import typingsJapgolly.domHelpers.domHelpersStrings.dragover
+import typingsJapgolly.domHelpers.domHelpersStrings.dragstart
+import typingsJapgolly.domHelpers.domHelpersStrings.drop
+import typingsJapgolly.domHelpers.domHelpersStrings.durationchange
+import typingsJapgolly.domHelpers.domHelpersStrings.emptied
+import typingsJapgolly.domHelpers.domHelpersStrings.ended
+import typingsJapgolly.domHelpers.domHelpersStrings.error
+import typingsJapgolly.domHelpers.domHelpersStrings.focus
+import typingsJapgolly.domHelpers.domHelpersStrings.focusin
+import typingsJapgolly.domHelpers.domHelpersStrings.focusout
+import typingsJapgolly.domHelpers.domHelpersStrings.fullscreenchange
+import typingsJapgolly.domHelpers.domHelpersStrings.fullscreenerror
+import typingsJapgolly.domHelpers.domHelpersStrings.gotpointercapture
+import typingsJapgolly.domHelpers.domHelpersStrings.input
+import typingsJapgolly.domHelpers.domHelpersStrings.invalid
+import typingsJapgolly.domHelpers.domHelpersStrings.keydown
+import typingsJapgolly.domHelpers.domHelpersStrings.keypress
+import typingsJapgolly.domHelpers.domHelpersStrings.keyup
+import typingsJapgolly.domHelpers.domHelpersStrings.load
+import typingsJapgolly.domHelpers.domHelpersStrings.loadeddata
+import typingsJapgolly.domHelpers.domHelpersStrings.loadedmetadata
+import typingsJapgolly.domHelpers.domHelpersStrings.loadstart
+import typingsJapgolly.domHelpers.domHelpersStrings.lostpointercapture
+import typingsJapgolly.domHelpers.domHelpersStrings.mousedown
+import typingsJapgolly.domHelpers.domHelpersStrings.mouseenter
+import typingsJapgolly.domHelpers.domHelpersStrings.mouseleave
+import typingsJapgolly.domHelpers.domHelpersStrings.mousemove
+import typingsJapgolly.domHelpers.domHelpersStrings.mouseout
+import typingsJapgolly.domHelpers.domHelpersStrings.mouseover
+import typingsJapgolly.domHelpers.domHelpersStrings.mouseup
+import typingsJapgolly.domHelpers.domHelpersStrings.paste
+import typingsJapgolly.domHelpers.domHelpersStrings.pause
+import typingsJapgolly.domHelpers.domHelpersStrings.play
+import typingsJapgolly.domHelpers.domHelpersStrings.playing
+import typingsJapgolly.domHelpers.domHelpersStrings.pointercancel
+import typingsJapgolly.domHelpers.domHelpersStrings.pointerdown
+import typingsJapgolly.domHelpers.domHelpersStrings.pointerenter
+import typingsJapgolly.domHelpers.domHelpersStrings.pointerleave
+import typingsJapgolly.domHelpers.domHelpersStrings.pointermove
+import typingsJapgolly.domHelpers.domHelpersStrings.pointerout
+import typingsJapgolly.domHelpers.domHelpersStrings.pointerover
+import typingsJapgolly.domHelpers.domHelpersStrings.pointerup
+import typingsJapgolly.domHelpers.domHelpersStrings.progress
+import typingsJapgolly.domHelpers.domHelpersStrings.ratechange
+import typingsJapgolly.domHelpers.domHelpersStrings.reset
+import typingsJapgolly.domHelpers.domHelpersStrings.resize
+import typingsJapgolly.domHelpers.domHelpersStrings.scroll
+import typingsJapgolly.domHelpers.domHelpersStrings.securitypolicyviolation
+import typingsJapgolly.domHelpers.domHelpersStrings.seeked
+import typingsJapgolly.domHelpers.domHelpersStrings.seeking
+import typingsJapgolly.domHelpers.domHelpersStrings.select
+import typingsJapgolly.domHelpers.domHelpersStrings.selectionchange
+import typingsJapgolly.domHelpers.domHelpersStrings.selectstart
+import typingsJapgolly.domHelpers.domHelpersStrings.stalled
+import typingsJapgolly.domHelpers.domHelpersStrings.submit
+import typingsJapgolly.domHelpers.domHelpersStrings.suspend
+import typingsJapgolly.domHelpers.domHelpersStrings.timeupdate
+import typingsJapgolly.domHelpers.domHelpersStrings.toggle
+import typingsJapgolly.domHelpers.domHelpersStrings.touchcancel
+import typingsJapgolly.domHelpers.domHelpersStrings.touchend
+import typingsJapgolly.domHelpers.domHelpersStrings.touchmove
+import typingsJapgolly.domHelpers.domHelpersStrings.touchstart
+import typingsJapgolly.domHelpers.domHelpersStrings.transitioncancel
+import typingsJapgolly.domHelpers.domHelpersStrings.transitionend
+import typingsJapgolly.domHelpers.domHelpersStrings.transitionrun
+import typingsJapgolly.domHelpers.domHelpersStrings.transitionstart
+import typingsJapgolly.domHelpers.domHelpersStrings.volumechange
+import typingsJapgolly.domHelpers.domHelpersStrings.waiting
+import typingsJapgolly.domHelpers.domHelpersStrings.wheel
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@js.native
+trait FnCallSelectorHandler extends js.Object {
+  def apply(
+    selector: String,
+    handler: EventHandler[
+      abort | animationcancel | animationend | animationiteration | animationstart | auxclick | blur | cancel | canplay | canplaythrough | change | click | close | contextmenu | copy | cuechange | cut | dblclick | drag | dragend | dragenter | dragexit | dragleave | dragover | dragstart | drop | durationchange | emptied | ended | error | focus | focusin | focusout | fullscreenchange | fullscreenerror | gotpointercapture | input | invalid | keydown | keypress | keyup | load | loadeddata | loadedmetadata | loadstart | lostpointercapture | mousedown | mouseenter | mouseleave | mousemove | mouseout | mouseover | mouseup | paste | pause | play | playing | pointercancel | pointerdown | pointerenter | pointerleave | pointermove | pointerout | pointerover | pointerup | progress | ratechange | reset | resize | scroll | securitypolicyviolation | seeked | seeking | select | selectionchange | selectstart | stalled | submit | suspend | timeupdate | toggle | touchcancel | touchend | touchmove | touchstart | transitioncancel | transitionend | transitionrun | transitionstart | volumechange | waiting | wheel
+    ]
+  ): EventHandler[fullscreenchange] = js.native
+}
+

@@ -1,14 +1,14 @@
 package typingsJapgolly.std
 
-import typingsJapgolly.std.stdNumbers.`false`
-import typingsJapgolly.std.stdNumbers.`true`
+import typingsJapgolly.std.stdBooleans.`false`
+import typingsJapgolly.std.stdBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
-  - typings.std.IteratorYieldResult[T]
-  - typings.std.IteratorReturnResult[TReturn]
+  - typingsJapgolly.std.IteratorYieldResult[T]
+  - typingsJapgolly.std.IteratorReturnResult[TReturn]
 */
 trait IteratorResult[T, TReturn] extends js.Object
 

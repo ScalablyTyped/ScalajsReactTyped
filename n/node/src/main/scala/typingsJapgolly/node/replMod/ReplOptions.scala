@@ -48,10 +48,15 @@ trait ReplOptions extends js.Object {
     */
   var output: js.UndefOr[WritableStream] = js.undefined
   /**
+    * Defines if the repl prints output previews or not.
+    * @default `true` Always `false` in case `terminal` is falsy.
+    */
+  var preview: js.UndefOr[Boolean] = js.undefined
+  /**
     * The input prompt to display.
     * Default: `"> "`
     */
-  var prompt: js.UndefOr[java.lang.String] = js.undefined
+  var prompt: js.UndefOr[String] = js.undefined
   /**
     * A flag that specifies whether the default evaluator executes all JavaScript commands in
     * strict mode or default (sloppy) mode.
@@ -100,7 +105,8 @@ object ReplOptions {
     ignoreUndefined: js.UndefOr[Boolean] = js.undefined,
     input: ReadableStream = null,
     output: WritableStream = null,
-    prompt: java.lang.String = null,
+    preview: js.UndefOr[Boolean] = js.undefined,
+    prompt: String = null,
     replMode: js.Symbol = null,
     terminal: js.UndefOr[Boolean] = js.undefined,
     useColors: js.UndefOr[Boolean] = js.undefined,
@@ -114,6 +120,7 @@ object ReplOptions {
     if (!js.isUndefined(ignoreUndefined)) __obj.updateDynamic("ignoreUndefined")(ignoreUndefined.asInstanceOf[js.Any])
     if (input != null) __obj.updateDynamic("input")(input.asInstanceOf[js.Any])
     if (output != null) __obj.updateDynamic("output")(output.asInstanceOf[js.Any])
+    if (!js.isUndefined(preview)) __obj.updateDynamic("preview")(preview.asInstanceOf[js.Any])
     if (prompt != null) __obj.updateDynamic("prompt")(prompt.asInstanceOf[js.Any])
     if (replMode != null) __obj.updateDynamic("replMode")(replMode.asInstanceOf[js.Any])
     if (!js.isUndefined(terminal)) __obj.updateDynamic("terminal")(terminal.asInstanceOf[js.Any])

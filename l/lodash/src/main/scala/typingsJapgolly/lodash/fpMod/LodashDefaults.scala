@@ -1,6 +1,6 @@
 package typingsJapgolly.lodash.fpMod
 
-import typingsJapgolly.lodash.lodashMod.__
+import typingsJapgolly.lodash.mod.__
 import typingsJapgolly.std.NonNullable
 import scala.scalajs.js
 import scala.scalajs.js.`|`

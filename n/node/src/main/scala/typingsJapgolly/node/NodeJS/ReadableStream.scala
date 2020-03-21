@@ -1,6 +1,6 @@
 package typingsJapgolly.node.NodeJS
 
-import typingsJapgolly.node.Anon_End
+import typingsJapgolly.node.AnonEnd
 import typingsJapgolly.node.Buffer
 import typingsJapgolly.node.BufferEncoding
 import typingsJapgolly.std.Uint8Array
@@ -14,15 +14,15 @@ trait ReadableStream extends EventEmitter {
   def isPaused(): Boolean = js.native
   def pause(): this.type = js.native
   def pipe[T /* <: WritableStream */](destination: T): T = js.native
-  def pipe[T /* <: WritableStream */](destination: T, options: Anon_End): T = js.native
-  def read(): java.lang.String | Buffer = js.native
-  def read(size: Double): java.lang.String | Buffer = js.native
+  def pipe[T /* <: WritableStream */](destination: T, options: AnonEnd): T = js.native
+  def read(): String | Buffer = js.native
+  def read(size: Double): String | Buffer = js.native
   def resume(): this.type = js.native
-  def setEncoding(encoding: java.lang.String): this.type = js.native
+  def setEncoding(encoding: String): this.type = js.native
   def unpipe(): this.type = js.native
   def unpipe(destination: WritableStream): this.type = js.native
-  def unshift(chunk: java.lang.String): Unit = js.native
-  def unshift(chunk: java.lang.String, encoding: BufferEncoding): Unit = js.native
+  def unshift(chunk: String): Unit = js.native
+  def unshift(chunk: String, encoding: BufferEncoding): Unit = js.native
   def unshift(chunk: Uint8Array): Unit = js.native
   def unshift(chunk: Uint8Array, encoding: BufferEncoding): Unit = js.native
   def wrap(oldStream: ReadableStream): this.type = js.native

@@ -2,8 +2,8 @@ package typingsJapgolly.googlemaps.google.maps
 
 import japgolly.scalajs.react.Callback
 import japgolly.scalajs.react.CallbackTo
-import org.scalajs.dom.raw.Document
 import org.scalajs.dom.raw.Element
+import typingsJapgolly.std.Document_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,14 +17,14 @@ trait MapType extends js.Object {
   var projection: js.UndefOr[Projection] = js.undefined
   var radius: js.UndefOr[Double] = js.undefined
   var tileSize: js.UndefOr[Size] = js.undefined
-  def getTile(tileCoord: Point, zoom: Double, ownerDocument: Document): Element
+  def getTile(tileCoord: Point, zoom: Double, ownerDocument: Document_): Element
   def releaseTile(tile: Element): Unit
 }
 
 object MapType {
   @scala.inline
   def apply(
-    getTile: (Point, Double, Document) => CallbackTo[Element],
+    getTile: (Point, Double, Document_) => CallbackTo[Element],
     releaseTile: Element => Callback,
     alt: String = null,
     maxZoom: Int | Double = null,
@@ -35,7 +35,7 @@ object MapType {
     tileSize: Size = null
   ): MapType = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getTile")(js.Any.fromFunction3((t0: typingsJapgolly.googlemaps.google.maps.Point, t1: scala.Double, t2: org.scalajs.dom.raw.Document) => getTile(t0, t1, t2).runNow()))
+    __obj.updateDynamic("getTile")(js.Any.fromFunction3((t0: typingsJapgolly.googlemaps.google.maps.Point, t1: scala.Double, t2: typingsJapgolly.std.Document_) => getTile(t0, t1, t2).runNow()))
     __obj.updateDynamic("releaseTile")(js.Any.fromFunction1((t0: org.scalajs.dom.raw.Element) => releaseTile(t0).runNow()))
     if (alt != null) __obj.updateDynamic("alt")(alt.asInstanceOf[js.Any])
     if (maxZoom != null) __obj.updateDynamic("maxZoom")(maxZoom.asInstanceOf[js.Any])

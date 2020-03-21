@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@ionic/utils-terminal" : "1.1.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@ionic/utils-terminal" : "1.1.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

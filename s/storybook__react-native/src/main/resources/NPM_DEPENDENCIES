@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@storybook/react-native" : "5.3.13"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@storybook/react-native" : "5.3.13"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

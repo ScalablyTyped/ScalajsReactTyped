@@ -17,12 +17,12 @@ import typingsJapgolly.antd.antdStrings.round
 import typingsJapgolly.antd.antdStrings.square
 import typingsJapgolly.antd.antdStrings.success
 import typingsJapgolly.antd.antdStrings.top
-import typingsJapgolly.antd.libProgressMod.default
-import typingsJapgolly.antd.libProgressProgressMod.ProgressGradient
-import typingsJapgolly.antd.libProgressProgressMod.ProgressProps
-import typingsJapgolly.antd.libProgressProgressMod.ProgressSize
-import typingsJapgolly.antd.libProgressProgressMod.ProgressType
-import typingsJapgolly.react.reactMod.CSSProperties
+import typingsJapgolly.antd.progressMod.default
+import typingsJapgolly.antd.progressProgressMod.ProgressGradient
+import typingsJapgolly.antd.progressProgressMod.ProgressProps
+import typingsJapgolly.antd.progressProgressMod.ProgressSize
+import typingsJapgolly.antd.progressProgressMod.ProgressType
+import typingsJapgolly.react.mod.CSSProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -38,6 +38,7 @@ object Progress {
     showInfo: js.UndefOr[Boolean] = js.undefined,
     size: ProgressSize = null,
     status: normal | exception | active | success = null,
+    steps: Int | Double = null,
     strokeColor: String | ProgressGradient = null,
     strokeLinecap: butt | square | round = null,
     strokeWidth: Int | Double = null,
@@ -47,7 +48,7 @@ object Progress {
     `type`: ProgressType = null,
     width: Int | Double = null,
     key: js.UndefOr[Key] = js.undefined,
-    overrides: StringDictionary[js.Any] = null
+    _overrides: StringDictionary[js.Any] = null
   )(
     children: ChildArg*
   ): UnmountedWithRoot[ProgressProps, default, Unit, ProgressProps] = {
@@ -62,6 +63,7 @@ object Progress {
     if (!js.isUndefined(showInfo)) __obj.updateDynamic("showInfo")(showInfo.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (steps != null) __obj.updateDynamic("steps")(steps.asInstanceOf[js.Any])
     if (strokeColor != null) __obj.updateDynamic("strokeColor")(strokeColor.asInstanceOf[js.Any])
     if (strokeLinecap != null) __obj.updateDynamic("strokeLinecap")(strokeLinecap.asInstanceOf[js.Any])
     if (strokeWidth != null) __obj.updateDynamic("strokeWidth")(strokeWidth.asInstanceOf[js.Any])
@@ -71,13 +73,13 @@ object Progress {
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (overrides != null) js.Dynamic.global.Object.assign(__obj, overrides)
+    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
   
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antd.libProgressProgressMod.ProgressProps, 
+  typingsJapgolly.antd.progressProgressMod.ProgressProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antd.libProgressMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.antd.libProgressProgressMod.ProgressProps])(children: _*)
+  typingsJapgolly.antd.progressMod.default](this.componentImport)
+    f(__obj.asInstanceOf[typingsJapgolly.antd.progressProgressMod.ProgressProps])(children: _*)
   }
   @JSImport("antd/lib/progress", JSImport.Default)
   @js.native

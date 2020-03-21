@@ -31,7 +31,6 @@ import typingsJapgolly.antd.antdStrings.both
 import typingsJapgolly.antd.antdStrings.copy
 import typingsJapgolly.antd.antdStrings.date
 import typingsJapgolly.antd.antdStrings.decimal
-import typingsJapgolly.antd.antdStrings.default
 import typingsJapgolly.antd.antdStrings.descending
 import typingsJapgolly.antd.antdStrings.dialog
 import typingsJapgolly.antd.antdStrings.email
@@ -39,7 +38,7 @@ import typingsJapgolly.antd.antdStrings.execute
 import typingsJapgolly.antd.antdStrings.grammar
 import typingsJapgolly.antd.antdStrings.grid
 import typingsJapgolly.antd.antdStrings.horizontal
-import typingsJapgolly.antd.antdStrings.large
+import typingsJapgolly.antd.antdStrings.inherit
 import typingsJapgolly.antd.antdStrings.link
 import typingsJapgolly.antd.antdStrings.list
 import typingsJapgolly.antd.antdStrings.listbox
@@ -58,7 +57,6 @@ import typingsJapgolly.antd.antdStrings.polite
 import typingsJapgolly.antd.antdStrings.popup
 import typingsJapgolly.antd.antdStrings.removals
 import typingsJapgolly.antd.antdStrings.search
-import typingsJapgolly.antd.antdStrings.small
 import typingsJapgolly.antd.antdStrings.spelling
 import typingsJapgolly.antd.antdStrings.step
 import typingsJapgolly.antd.antdStrings.tel
@@ -68,9 +66,12 @@ import typingsJapgolly.antd.antdStrings.tree
 import typingsJapgolly.antd.antdStrings.url
 import typingsJapgolly.antd.antdStrings.vertical
 import typingsJapgolly.antd.antdStrings.yes
-import typingsJapgolly.antd.libInputSearchMod.SearchProps
-import typingsJapgolly.react.Anon_Html
-import typingsJapgolly.react.reactMod.CSSProperties
+import typingsJapgolly.antd.searchMod.SearchProps
+import typingsJapgolly.antd.searchMod.default
+import typingsJapgolly.antd.sizeContextMod.SizeType
+import typingsJapgolly.react.AnonHtml
+import typingsJapgolly.react.mod.Booleanish
+import typingsJapgolly.react.mod.CSSProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -141,10 +142,10 @@ object Search {
     checked: js.UndefOr[Boolean] = js.undefined,
     className: String = null,
     color: String = null,
-    contentEditable: js.UndefOr[Boolean] = js.undefined,
+    contentEditable: Booleanish | inherit = null,
     contextMenu: String = null,
     crossOrigin: String = null,
-    dangerouslySetInnerHTML: Anon_Html = null,
+    dangerouslySetInnerHTML: AnonHtml = null,
     datatype: String = null,
     defaultChecked: js.UndefOr[Boolean] = js.undefined,
     defaultValue: String | Double | js.Array[String] = null,
@@ -274,7 +275,7 @@ object Search {
     results: Int | Double = null,
     role: String = null,
     security: String = null,
-    size: small | default | large = null,
+    size: SizeType = null,
     slot: String = null,
     spellCheck: js.UndefOr[Boolean] = js.undefined,
     src: String = null,
@@ -293,10 +294,10 @@ object Search {
     vocab: String = null,
     width: Double | String = null,
     key: js.UndefOr[Key] = js.undefined,
-    overrides: StringDictionary[js.Any] = null
+    _overrides: StringDictionary[js.Any] = null
   )(
     children: ChildArg*
-  ): UnmountedWithRoot[SearchProps, typingsJapgolly.antd.libInputSearchMod.default, Unit, SearchProps] = {
+  ): UnmountedWithRoot[SearchProps, default, Unit, SearchProps] = {
     val __obj = js.Dynamic.literal()
   
       if (about != null) __obj.updateDynamic("about")(about.asInstanceOf[js.Any])
@@ -363,7 +364,7 @@ object Search {
     if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (!js.isUndefined(contentEditable)) __obj.updateDynamic("contentEditable")(contentEditable.asInstanceOf[js.Any])
+    if (contentEditable != null) __obj.updateDynamic("contentEditable")(contentEditable.asInstanceOf[js.Any])
     if (contextMenu != null) __obj.updateDynamic("contextMenu")(contextMenu.asInstanceOf[js.Any])
     if (crossOrigin != null) __obj.updateDynamic("crossOrigin")(crossOrigin.asInstanceOf[js.Any])
     if (dangerouslySetInnerHTML != null) __obj.updateDynamic("dangerouslySetInnerHTML")(dangerouslySetInnerHTML.asInstanceOf[js.Any])
@@ -514,13 +515,13 @@ object Search {
     if (vocab != null) __obj.updateDynamic("vocab")(vocab.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (overrides != null) js.Dynamic.global.Object.assign(__obj, overrides)
+    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
   
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antd.libInputSearchMod.SearchProps, 
+  typingsJapgolly.antd.searchMod.SearchProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antd.libInputSearchMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.antd.libInputSearchMod.SearchProps])(children: _*)
+  typingsJapgolly.antd.searchMod.default](this.componentImport)
+    f(__obj.asInstanceOf[typingsJapgolly.antd.searchMod.SearchProps])(children: _*)
   }
   @JSImport("antd/lib/input/Search", JSImport.Default)
   @js.native

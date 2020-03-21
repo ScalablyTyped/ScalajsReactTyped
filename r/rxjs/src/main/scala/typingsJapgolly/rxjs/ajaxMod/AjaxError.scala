@@ -1,7 +1,7 @@
 package typingsJapgolly.rxjs.ajaxMod
 
 import org.scalablytyped.runtime.TopLevel
-import typingsJapgolly.rxjs.internalObservableDomAjaxObservableMod.AjaxErrorCtor
+import typingsJapgolly.rxjs.ajaxObservableMod.AjaxErrorCtor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

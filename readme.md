@@ -3,7 +3,7 @@
 # ScalablyTyped - The Javascript ecosystem for Scala.js!
 
 [![Join the chat at https://gitter.im/ScalablyTyped/community](https://badges.gitter.im/ScalablyTyped/community.svg)](https://gitter.im/ScalablyTyped/community)
-[![Checkout the demos at https://github.com/oyvindberg/ScalablyTypedDemos/](https://img.shields.io/badge/Checkout-Demo-success.svg)](https://github.com/oyvindberg/ScalablyTypedDemos/)
+[![Checkout the demos at https://github.com/ScalablyTyped/ScalablyTypedDemos/](https://img.shields.io/badge/Checkout-Demo-success.svg)](https://github.com/oyvindberg/ScalablyTypedDemos/)
 [![All libraries by name](https://img.shields.io/badge/List%20of%20libraries-by%20name-green.svg)](./libraries_by_name.md)
 [![All libraries by dependents](https://img.shields.io/badge/List%20of%20libraries-by%20dependents-green.svg)](./libraries_by_dependents.md)
 [![All libraries by score](https://img.shields.io/badge/List%20of%20libraries-by%20score-green.svg)](./libraries_by_score.md)
@@ -16,7 +16,7 @@ Expect the first stable release soon.
 
 ## About
 
-This is the home of Scala.js typings for **122** Javascript libraries,
+This is the home of Scala.js typings for **8484** Javascript libraries,
  which should span more or less the entire set of modern and popular libraries.
 
 This should make it one of the biggest Scala repos on the planet:
@@ -25,11 +25,12 @@ This should make it one of the biggest Scala repos on the planet:
 --------------------------------------------------------------------------------
  Language             Files        Lines        Blank      Comment         Code
 --------------------------------------------------------------------------------
- Scala                50517      1696839       200615       178570      1317654
- Markdown               160         6503         2054            0         4449
+ Scala               383186     17000421      1602141      3758425     11639855
+ Markdown              8533       280009       101087            0       178922
+ Makefile                 5           69           16            0           53
  JSON                     1            1            0            0            1
 --------------------------------------------------------------------------------
- Total                50678      1703343       202669       178570      1322104
+ Total               391725     17280500      1703244      3758425     11818831
 --------------------------------------------------------------------------------
 
 ```
@@ -86,7 +87,7 @@ We recommend using sbt with [scalajs-bundler](https://scalacenter.github.io/scal
 and the ScalablyTyped plugin to easily keep versions in sync (more on versions below).
 
 To see full examples head over and check out the
-[demos](https://github.com/oyvindberg/ScalablyTypedDemos)!
+[demos](https://github.com/ScalablyTyped/ScalablyTypedDemos)!
 
 There are demos both for frontend and backend javascript libraries,
  so feel free to check it out to see how it all fits together!
@@ -98,7 +99,9 @@ These should be the main steps you would have to follow:
 ScalablyTyped is hosted at bintray, so make sure to include the resolver
 ```scala
   resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")
-  addSbtPlugin("org.scalablytyped" % "sbt-scalablytyped" % "201912040838")
+  addSbtPlugin("org.scalablytyped" % "sbt-scalablytyped" % "202003210709")
+  If you're still on 2.12, this is the last distribution release.
+  addSbtPlugin("org.scalablytyped" % "sbt-scalablytyped" % "202001240947")
 ```
 
 ### `build.sbt`
@@ -162,7 +165,7 @@ You'll see there are two projects which target Scala.
 `DefinitelyScala` is an awesome project, but it's not finished.
 This project tries to pick up where it left off and finish the task.
 
-The converter, `tso`, powers `ScalablyTyped` with a huge set of features not frequently found elsewhere:
+ScalablyTypedConverter powers `ScalablyTyped` with a huge set of features not frequently found elsewhere:
 - Parser for ~all of Typescript
 - Keeps ~all comments
 - Full handling of dependencies between libraries, including those outside of `DefinitelyTyped`
@@ -259,7 +262,7 @@ libraryDependencies ++= Seq(
 A `ScalablyTyped` package is generated based on two or three axis:
 - a library at a given version
 - if the typings are declared outside the library, the version of the typings
-- the version of the `tso` converter
+- the version of ScalablyTypedConverter
 
 A good versioning scheme has the following properties
 - sortable/monotonously increasing
@@ -771,6 +774,6 @@ The converter has some internal support for detecting this,
 but we haven't experimented with outputting anything yet.
 That means that you have to detect this yourself and cast.
 Have a look at the `jquery`/`jquery-ui`
-[demo](https://github.com/oyvindberg/ScalablyTypedDemos/blob/master/jquery/src/main/scala/demo/JQueryDemo.scala)
+[demo](https://github.com/ScalablyTyped/ScalablyTypedDemos/blob/master/jquery/src/main/scala/demo/JQueryDemo.scala)
 to see how it's done.
 

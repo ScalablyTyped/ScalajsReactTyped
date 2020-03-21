@@ -6,9 +6,9 @@ import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
 import japgolly.scalajs.react.raw.React.Node
 import japgolly.scalajs.react.vdom.VdomNode
 import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.antd.libCommentMod.CommentProps
-import typingsJapgolly.antd.libCommentMod.default
-import typingsJapgolly.react.reactMod.CSSProperties
+import typingsJapgolly.antd.commentMod.CommentProps
+import typingsJapgolly.antd.commentMod.default
+import typingsJapgolly.react.mod.CSSProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -24,7 +24,7 @@ object Comment {
     prefixCls: String = null,
     style: CSSProperties = null,
     key: js.UndefOr[Key] = js.undefined,
-    overrides: StringDictionary[js.Any] = null
+    _overrides: StringDictionary[js.Any] = null
   )(
     children: ChildArg*
   ): UnmountedWithRoot[CommentProps, default, Unit, CommentProps] = {
@@ -39,13 +39,13 @@ object Comment {
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (overrides != null) js.Dynamic.global.Object.assign(__obj, overrides)
+    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
   
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antd.libCommentMod.CommentProps, 
+  typingsJapgolly.antd.commentMod.CommentProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antd.libCommentMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.antd.libCommentMod.CommentProps])(children: _*)
+  typingsJapgolly.antd.commentMod.default](this.componentImport)
+    f(__obj.asInstanceOf[typingsJapgolly.antd.commentMod.CommentProps])(children: _*)
   }
   @JSImport("antd/lib/comment", JSImport.Default)
   @js.native

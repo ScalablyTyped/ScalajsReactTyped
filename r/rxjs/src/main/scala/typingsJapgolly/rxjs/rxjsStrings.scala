@@ -1,6 +1,6 @@
 package typingsJapgolly.rxjs
 
-import typingsJapgolly.rxjs.internalObservableDomAjaxObservableMod.AjaxErrorNames
+import typingsJapgolly.rxjs.ajaxObservableMod.AjaxErrorNames
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

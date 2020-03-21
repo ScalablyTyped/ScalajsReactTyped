@@ -1,0 +1,22 @@
+package typingsJapgolly.awsSdkClientCodecommitNode.typesCommentIdRequiredExceptionMod
+
+import typingsJapgolly.awsSdkClientCodecommitNode.deleteCommentContentExceptionsUnionMod.DeleteCommentContentExceptionsUnion
+import typingsJapgolly.awsSdkClientCodecommitNode.getCommentExceptionsUnionMod.GetCommentExceptionsUnion
+import typingsJapgolly.awsSdkClientCodecommitNode.postCommentReplyExceptionsUnionMod.PostCommentReplyExceptionsUnion
+import typingsJapgolly.awsSdkClientCodecommitNode.updateCommentExceptionsUnionMod.UpdateCommentExceptionsUnion
+import typingsJapgolly.awsSdkTypes.exceptionMod.ServiceException
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@js.native
+trait CommentIdRequiredException
+  extends ServiceException[CommentIdRequiredExceptionDetails]
+     with DeleteCommentContentExceptionsUnion
+     with GetCommentExceptionsUnion
+     with PostCommentReplyExceptionsUnion
+     with UpdateCommentExceptionsUnion {
+  @JSName("name")
+  var name_CommentIdRequiredException: typingsJapgolly.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.CommentIdRequiredException = js.native
+}
+

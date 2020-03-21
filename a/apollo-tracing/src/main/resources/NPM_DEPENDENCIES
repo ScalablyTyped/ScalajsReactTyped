@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "apollo-tracing" : "0.8.11"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "apollo-tracing" : "0.8.11"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -1,19 +1,26 @@
 package typingsJapgolly.node.NodeJS
 
+import japgolly.scalajs.react.CallbackTo
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("NodeJS.Timeout")
-@js.native
-class Timeout () extends Timer {
-  /* CompleteClass */
-  override def hasRef(): Boolean = js.native
-  /* CompleteClass */
-  override def ref(): this.type = js.native
-  /* CompleteClass */
-  override def refresh(): this.type = js.native
-  /* CompleteClass */
-  override def unref(): this.type = js.native
+trait Timeout extends Timer
+
+object Timeout {
+  @scala.inline
+  def apply(
+    hasRef: CallbackTo[Boolean],
+    ref: CallbackTo[Timeout],
+    refresh: CallbackTo[Timeout],
+    unref: CallbackTo[Timeout]
+  ): Timeout = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("hasRef")(hasRef.toJsFn)
+    __obj.updateDynamic("ref")(ref.toJsFn)
+    __obj.updateDynamic("refresh")(refresh.toJsFn)
+    __obj.updateDynamic("unref")(unref.toJsFn)
+    __obj.asInstanceOf[Timeout]
+  }
 }
 

@@ -5,11 +5,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
-  - typings.std.stdStrings.sine
-  - typings.std.stdStrings.square
-  - typings.std.stdStrings.sawtooth
-  - typings.std.stdStrings.triangle
-  - typings.std.stdStrings.custom
+  - typingsJapgolly.std.stdStrings.custom
+  - typingsJapgolly.std.stdStrings.sawtooth
+  - typingsJapgolly.std.stdStrings.sine
+  - typingsJapgolly.std.stdStrings.square
+  - typingsJapgolly.std.stdStrings.triangle
 */
 trait OscillatorType extends js.Object
 

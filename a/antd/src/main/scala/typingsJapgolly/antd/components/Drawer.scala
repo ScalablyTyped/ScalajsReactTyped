@@ -9,12 +9,12 @@ import japgolly.scalajs.react.component.Js.UnmountedSimple
 import japgolly.scalajs.react.vdom.VdomNode
 import org.scalablytyped.runtime.StringDictionary
 import org.scalajs.dom.raw.HTMLElement
-import typingsJapgolly.antd.antdNumbers.`false`
-import typingsJapgolly.antd.libDrawerMod.DrawerProps
-import typingsJapgolly.antd.libDrawerMod.EventType
-import typingsJapgolly.antd.libDrawerMod.getContainerFunc
-import typingsJapgolly.antd.libDrawerMod.placementType
-import typingsJapgolly.react.reactMod.CSSProperties
+import typingsJapgolly.antd.antdBooleans.`false`
+import typingsJapgolly.antd.drawerMod.DrawerProps
+import typingsJapgolly.antd.drawerMod.EventType
+import typingsJapgolly.antd.drawerMod.getContainerFunc
+import typingsJapgolly.antd.drawerMod.placementType
+import typingsJapgolly.react.mod.CSSProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -27,6 +27,8 @@ object Drawer {
     closable: js.UndefOr[Boolean] = js.undefined,
     destroyOnClose: js.UndefOr[Boolean] = js.undefined,
     drawerStyle: CSSProperties = null,
+    footer: VdomNode = null,
+    footerStyle: CSSProperties = null,
     getContainer: String | HTMLElement | getContainerFunc | `false` = null,
     handler: VdomNode = null,
     headerStyle: CSSProperties = null,
@@ -43,10 +45,9 @@ object Drawer {
     title: VdomNode = null,
     visible: js.UndefOr[Boolean] = js.undefined,
     width: Double | String = null,
-    wrapClassName: String = null,
     zIndex: Int | Double = null,
     key: js.UndefOr[Key] = js.undefined,
-    overrides: StringDictionary[js.Any] = null
+    _overrides: StringDictionary[js.Any] = null
   )(
     children: ChildArg*
   ): UnmountedSimple[
@@ -61,6 +62,8 @@ object Drawer {
     if (!js.isUndefined(closable)) __obj.updateDynamic("closable")(closable.asInstanceOf[js.Any])
     if (!js.isUndefined(destroyOnClose)) __obj.updateDynamic("destroyOnClose")(destroyOnClose.asInstanceOf[js.Any])
     if (drawerStyle != null) __obj.updateDynamic("drawerStyle")(drawerStyle.asInstanceOf[js.Any])
+    if (footer != null) __obj.updateDynamic("footer")(footer.rawNode.asInstanceOf[js.Any])
+    if (footerStyle != null) __obj.updateDynamic("footerStyle")(footerStyle.asInstanceOf[js.Any])
     if (getContainer != null) __obj.updateDynamic("getContainer")(getContainer.asInstanceOf[js.Any])
     if (handler != null) __obj.updateDynamic("handler")(handler.rawNode.asInstanceOf[js.Any])
     if (headerStyle != null) __obj.updateDynamic("headerStyle")(headerStyle.asInstanceOf[js.Any])
@@ -69,7 +72,7 @@ object Drawer {
     if (!js.isUndefined(mask)) __obj.updateDynamic("mask")(mask.asInstanceOf[js.Any])
     if (!js.isUndefined(maskClosable)) __obj.updateDynamic("maskClosable")(maskClosable.asInstanceOf[js.Any])
     if (maskStyle != null) __obj.updateDynamic("maskStyle")(maskStyle.asInstanceOf[js.Any])
-    if (onClose != null) __obj.updateDynamic("onClose")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.antd.libDrawerMod.EventType) => onClose(t0).runNow()))
+    if (onClose != null) __obj.updateDynamic("onClose")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.antd.drawerMod.EventType) => onClose(t0).runNow()))
     if (placement != null) __obj.updateDynamic("placement")(placement.asInstanceOf[js.Any])
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
     if (!js.isUndefined(push)) __obj.updateDynamic("push")(push.asInstanceOf[js.Any])
@@ -77,16 +80,15 @@ object Drawer {
     if (title != null) __obj.updateDynamic("title")(title.rawNode.asInstanceOf[js.Any])
     if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
-    if (wrapClassName != null) __obj.updateDynamic("wrapClassName")(wrapClassName.asInstanceOf[js.Any])
     if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
     key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (overrides != null) js.Dynamic.global.Object.assign(__obj, overrides)
+    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
   
     val f = japgolly.scalajs.react.JsComponent[
-  typingsJapgolly.antd.libDrawerMod.DrawerProps, 
+  typingsJapgolly.antd.drawerMod.DrawerProps, 
   japgolly.scalajs.react.Children.Varargs, 
   js.Object](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.antd.libDrawerMod.DrawerProps])(children: _*)
+    f(__obj.asInstanceOf[typingsJapgolly.antd.drawerMod.DrawerProps])(children: _*)
   }
   @JSImport("antd/lib/drawer", JSImport.Default)
   @js.native

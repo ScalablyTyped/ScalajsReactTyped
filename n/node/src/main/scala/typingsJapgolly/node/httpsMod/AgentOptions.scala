@@ -3,12 +3,14 @@ package typingsJapgolly.node.httpsMod
 import japgolly.scalajs.react.Callback
 import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.node.Buffer
-import typingsJapgolly.node.Error
 import typingsJapgolly.node.NodeJS.ErrnoException
 import typingsJapgolly.node.dnsMod.LookupOneOptions
 import typingsJapgolly.node.netMod.Socket
 import typingsJapgolly.node.tlsMod.ConnectionOptions
+import typingsJapgolly.node.tlsMod.KeyObject
+import typingsJapgolly.node.tlsMod.PSKCallbackNegotation
 import typingsJapgolly.node.tlsMod.PeerCertificate
+import typingsJapgolly.node.tlsMod.PxfObject
 import typingsJapgolly.node.tlsMod.SecureContext
 import typingsJapgolly.node.tlsMod.SecureVersion
 import scala.scalajs.js
@@ -16,7 +18,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typings.node.httpMod.AgentOptions because var conflicts: timeout. Inlined keepAlive, keepAliveMsecs, maxSockets, maxFreeSockets */ trait AgentOptions extends ConnectionOptions {
+- typingsJapgolly.node.httpMod.AgentOptions because var conflicts: timeout. Inlined keepAlive, keepAliveMsecs, maxSockets, maxFreeSockets */ trait AgentOptions extends ConnectionOptions {
   /**
     * Keep sockets around in a pool to be used by other requests in the future. Default = false
     */
@@ -40,53 +42,52 @@ import scala.scalajs.js.annotation._
 object AgentOptions {
   @scala.inline
   def apply(
-    ALPNProtocols: (js.Array[java.lang.String | scala.scalajs.js.typedarray.Uint8Array]) | scala.scalajs.js.typedarray.Uint8Array = null,
-    SNICallback: (/* servername */ java.lang.String, /* cb */ js.Function2[/* err */ Error | Null, /* ctx */ SecureContext, Unit]) => Callback = null,
-    ca: java.lang.String | Buffer | (js.Array[java.lang.String | Buffer]) = null,
-    cert: java.lang.String | Buffer | (js.Array[java.lang.String | Buffer]) = null,
-    checkServerIdentity: (/* host */ java.lang.String, /* cert */ PeerCertificate) => CallbackTo[js.UndefOr[Error]] = null,
-    ciphers: java.lang.String = null,
-    clientCertEngine: java.lang.String = null,
-    crl: java.lang.String | Buffer | (js.Array[java.lang.String | Buffer]) = null,
-    dhparam: java.lang.String | Buffer = null,
-    ecdhCurve: java.lang.String = null,
+    ALPNProtocols: (js.Array[String | scala.scalajs.js.typedarray.Uint8Array]) | scala.scalajs.js.typedarray.Uint8Array = null,
+    SNICallback: (/* servername */ String, /* cb */ js.Function2[/* err */ js.Error | Null, /* ctx */ SecureContext, Unit]) => Callback = null,
+    ca: String | Buffer | (js.Array[String | Buffer]) = null,
+    cert: String | Buffer | (js.Array[String | Buffer]) = null,
+    checkServerIdentity: (/* host */ String, /* cert */ PeerCertificate) => CallbackTo[js.UndefOr[js.Error]] = null,
+    ciphers: String = null,
+    clientCertEngine: String = null,
+    crl: String | Buffer | (js.Array[String | Buffer]) = null,
+    dhparam: String | Buffer = null,
+    ecdhCurve: String = null,
     enableTrace: js.UndefOr[Boolean] = js.undefined,
     honorCipherOrder: js.UndefOr[Boolean] = js.undefined,
-    host: java.lang.String = null,
+    host: String = null,
     keepAlive: js.UndefOr[Boolean] = js.undefined,
     keepAliveMsecs: Int | Double = null,
-    key: java.lang.String | Buffer | (js.Array[Buffer | js.Object]) = null,
-    lookup: (/* hostname */ java.lang.String, /* options */ LookupOneOptions, /* callback */ js.Function3[
-      /* err */ ErrnoException | Null, 
-      /* address */ java.lang.String, 
-      /* family */ Double, 
-      Unit
-    ]) => Callback = null,
+    key: String | Buffer | (js.Array[Buffer | KeyObject]) = null,
+    lookup: (/* hostname */ String, /* options */ LookupOneOptions, /* callback */ js.Function3[/* err */ ErrnoException | Null, /* address */ String, /* family */ Double, Unit]) => Callback = null,
     maxCachedSessions: Int | Double = null,
     maxFreeSockets: Int | Double = null,
     maxSockets: Int | Double = null,
     maxVersion: SecureVersion = null,
     minDHSize: Int | Double = null,
     minVersion: SecureVersion = null,
-    passphrase: java.lang.String = null,
-    path: java.lang.String = null,
-    pfx: java.lang.String | Buffer | (js.Array[java.lang.String | Buffer | js.Object]) = null,
+    passphrase: String = null,
+    path: String = null,
+    pfx: String | Buffer | (js.Array[String | Buffer | PxfObject]) = null,
     port: Int | Double = null,
+    privateKeyEngine: String = null,
+    privateKeyIdentifier: String = null,
+    pskCallback: /* hint */ String | Null => CallbackTo[PSKCallbackNegotation | Null] = null,
     rejectUnauthorized: js.UndefOr[Boolean] = js.undefined,
     requestCert: js.UndefOr[Boolean] = js.undefined,
     secureContext: SecureContext = null,
     secureOptions: Int | Double = null,
-    secureProtocol: java.lang.String = null,
-    servername: java.lang.String = null,
+    secureProtocol: String = null,
+    servername: String = null,
     session: Buffer = null,
-    sessionIdContext: java.lang.String = null,
+    sessionIdContext: String = null,
+    sigalgs: String = null,
     socket: Socket = null,
     timeout: Int | Double = null
   ): AgentOptions = {
     val __obj = js.Dynamic.literal()
     if (ALPNProtocols != null) __obj.updateDynamic("ALPNProtocols")(ALPNProtocols.asInstanceOf[js.Any])
     if (SNICallback != null) __obj.updateDynamic("SNICallback")(js.Any.fromFunction2((t0: /* servername */ java.lang.String, t1: /* cb */ js.Function2[
-  /* err */ typingsJapgolly.node.Error | scala.Null, 
+  /* err */ js.Error | scala.Null, 
   /* ctx */ typingsJapgolly.node.tlsMod.SecureContext, 
   scala.Unit]) => SNICallback(t0, t1).runNow()))
     if (ca != null) __obj.updateDynamic("ca")(ca.asInstanceOf[js.Any])
@@ -118,6 +119,9 @@ object AgentOptions {
     if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     if (pfx != null) __obj.updateDynamic("pfx")(pfx.asInstanceOf[js.Any])
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    if (privateKeyEngine != null) __obj.updateDynamic("privateKeyEngine")(privateKeyEngine.asInstanceOf[js.Any])
+    if (privateKeyIdentifier != null) __obj.updateDynamic("privateKeyIdentifier")(privateKeyIdentifier.asInstanceOf[js.Any])
+    if (pskCallback != null) __obj.updateDynamic("pskCallback")(js.Any.fromFunction1((t0: /* hint */ java.lang.String | scala.Null) => pskCallback(t0).runNow()))
     if (!js.isUndefined(rejectUnauthorized)) __obj.updateDynamic("rejectUnauthorized")(rejectUnauthorized.asInstanceOf[js.Any])
     if (!js.isUndefined(requestCert)) __obj.updateDynamic("requestCert")(requestCert.asInstanceOf[js.Any])
     if (secureContext != null) __obj.updateDynamic("secureContext")(secureContext.asInstanceOf[js.Any])
@@ -126,6 +130,7 @@ object AgentOptions {
     if (servername != null) __obj.updateDynamic("servername")(servername.asInstanceOf[js.Any])
     if (session != null) __obj.updateDynamic("session")(session.asInstanceOf[js.Any])
     if (sessionIdContext != null) __obj.updateDynamic("sessionIdContext")(sessionIdContext.asInstanceOf[js.Any])
+    if (sigalgs != null) __obj.updateDynamic("sigalgs")(sigalgs.asInstanceOf[js.Any])
     if (socket != null) __obj.updateDynamic("socket")(socket.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[AgentOptions]

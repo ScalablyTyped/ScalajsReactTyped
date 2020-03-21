@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-native
 
-Typings are for version 0.60
+Typings are for version 0.61
 
 ## Library description:
 A framework for building native apps using React
@@ -10,10 +10,10 @@ A framework for building native apps using React
 | ------------------ | :-------------: |
 | Full name          | react-native |
 | Keywords           | - |
-| # releases         | 125 |
-| # dependents       | 1160 |
-| # downloads        | 11088948 |
-| # stars            | 92 |
+| # releases         | 95 |
+| # dependents       | 1500 |
+| # downloads        | 14726681 |
+| # stars            | 93 |
 
 ## Links
 - [Homepage](https://github.com/facebook/react-native#readme)

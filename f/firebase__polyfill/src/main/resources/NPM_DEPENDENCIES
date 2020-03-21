@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@firebase/polyfill" : "0.3.31"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@firebase/polyfill" : "0.3.31"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -9,8 +9,8 @@ import typingsJapgolly.antd.antdStrings.error
 import typingsJapgolly.antd.antdStrings.finish
 import typingsJapgolly.antd.antdStrings.process
 import typingsJapgolly.antd.antdStrings.wait
-import typingsJapgolly.react.reactMod.CSSProperties
-import typingsJapgolly.react.reactMod.MouseEventHandler
+import typingsJapgolly.react.mod.CSSProperties
+import typingsJapgolly.react.mod.MouseEventHandler
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -1,7 +1,6 @@
 package typingsJapgolly.node
 
 import typingsJapgolly.node.NodeJS.Timer
-import typingsJapgolly.node.domainMod.Domain
 import typingsJapgolly.node.eventsMod.EventEmitter
 import scala.scalajs.js
 import scala.scalajs.js.`|`

@@ -1,16 +1,15 @@
-organization := "org.gulliblytyped.japgolly"
+organization := "org.scalablytyped.japgolly"
 name := "d3-geo"
-version := "1.11-dt-20190212Z-e3d75c"
-scalaVersion := "2.12.10"
+version := "1.11-dt-20200225Z-3368da"
+scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.github.japgolly.scalajs-react" %%% "core" % "1.4.2",
+  "com.github.japgolly.scalajs-react" %%% "core" % "1.5.0",
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.gulliblytyped.japgolly" %%% "geojson" % "7946.0-dt-20190925Z-87e0cf",
-  "org.gulliblytyped.japgolly" %%% "std" % "3.7-ed3398")
+  "org.scalablytyped.japgolly" %%% "geojson" % "7946.0-dt-20190925Z-98b022",
+  "org.scalablytyped.japgolly" %%% "std" % "3.8-8884a5")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
+scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
 bintrayRepository := "ScalajsReactTyped"
 resolvers += Resolver.bintrayRepo("oyvindberg", "ScalajsReactTyped")
-        

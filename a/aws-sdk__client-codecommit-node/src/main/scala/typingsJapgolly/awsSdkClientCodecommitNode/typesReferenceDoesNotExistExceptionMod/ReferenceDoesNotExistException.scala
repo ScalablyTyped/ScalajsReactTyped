@@ -1,0 +1,18 @@
+package typingsJapgolly.awsSdkClientCodecommitNode.typesReferenceDoesNotExistExceptionMod
+
+import typingsJapgolly.awsSdkClientCodecommitNode.createPullRequestExceptionsUnionMod.CreatePullRequestExceptionsUnion
+import typingsJapgolly.awsSdkClientCodecommitNode.mergePullRequestByFastForwardExceptionsUnionMod.MergePullRequestByFastForwardExceptionsUnion
+import typingsJapgolly.awsSdkTypes.exceptionMod.ServiceException
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@js.native
+trait ReferenceDoesNotExistException
+  extends ServiceException[ReferenceDoesNotExistExceptionDetails]
+     with CreatePullRequestExceptionsUnion
+     with MergePullRequestByFastForwardExceptionsUnion {
+  @JSName("name")
+  var name_ReferenceDoesNotExistException: typingsJapgolly.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.ReferenceDoesNotExistException = js.native
+}
+

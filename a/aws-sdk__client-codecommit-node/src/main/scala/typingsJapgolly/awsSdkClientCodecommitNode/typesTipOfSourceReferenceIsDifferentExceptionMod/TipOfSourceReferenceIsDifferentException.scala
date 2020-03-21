@@ -1,0 +1,16 @@
+package typingsJapgolly.awsSdkClientCodecommitNode.typesTipOfSourceReferenceIsDifferentExceptionMod
+
+import typingsJapgolly.awsSdkClientCodecommitNode.mergePullRequestByFastForwardExceptionsUnionMod.MergePullRequestByFastForwardExceptionsUnion
+import typingsJapgolly.awsSdkTypes.exceptionMod.ServiceException
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@js.native
+trait TipOfSourceReferenceIsDifferentException
+  extends ServiceException[TipOfSourceReferenceIsDifferentExceptionDetails]
+     with MergePullRequestByFastForwardExceptionsUnion {
+  @JSName("name")
+  var name_TipOfSourceReferenceIsDifferentException: typingsJapgolly.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.TipOfSourceReferenceIsDifferentException = js.native
+}
+

@@ -13,12 +13,12 @@ object ElementClass {
   def apply(
     props: js.Any with js.Object,
     key: js.UndefOr[Key] = js.undefined,
-    overrides: StringDictionary[js.Any] = null
+    _overrides: StringDictionary[js.Any] = null
   )(
     children: ChildArg*
   ): UnmountedWithRoot[
     js.Any with js.Object, 
-    typingsJapgolly.enzyme.enzymeMod.ElementClass, 
+    typingsJapgolly.enzyme.mod.ElementClass, 
     Unit, 
     js.Any with js.Object
   ] = {
@@ -26,12 +26,12 @@ object ElementClass {
   
       js.Dynamic.global.Object.assign(__obj, props)
     key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (overrides != null) js.Dynamic.global.Object.assign(__obj, overrides)
+    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
   
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
   js.Any with js.Object, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.enzyme.enzymeMod.ElementClass](this.componentImport)
+  typingsJapgolly.enzyme.mod.ElementClass](this.componentImport)
     f(__obj.asInstanceOf[js.Any with js.Object])(children: _*)
   }
   @JSImport("enzyme", "ElementClass")

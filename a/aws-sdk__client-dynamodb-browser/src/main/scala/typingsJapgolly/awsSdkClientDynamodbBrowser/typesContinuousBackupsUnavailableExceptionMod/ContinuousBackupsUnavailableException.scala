@@ -1,0 +1,18 @@
+package typingsJapgolly.awsSdkClientDynamodbBrowser.typesContinuousBackupsUnavailableExceptionMod
+
+import typingsJapgolly.awsSdkClientDynamodbBrowser.createBackupExceptionsUnionMod.CreateBackupExceptionsUnion
+import typingsJapgolly.awsSdkClientDynamodbBrowser.updateContinuousBackupsExceptionsUnionMod.UpdateContinuousBackupsExceptionsUnion
+import typingsJapgolly.awsSdkTypes.exceptionMod.ServiceException
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@js.native
+trait ContinuousBackupsUnavailableException
+  extends ServiceException[ContinuousBackupsUnavailableExceptionDetails]
+     with CreateBackupExceptionsUnion
+     with UpdateContinuousBackupsExceptionsUnion {
+  @JSName("name")
+  var name_ContinuousBackupsUnavailableException: typingsJapgolly.awsSdkClientDynamodbBrowser.awsSdkClientDynamodbBrowserStrings.ContinuousBackupsUnavailableException = js.native
+}
+

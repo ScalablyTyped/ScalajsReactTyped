@@ -1,7 +1,6 @@
 package typingsJapgolly.node.tlsMod
 
 import japgolly.scalajs.react.Callback
-import typingsJapgolly.node.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,7 +11,7 @@ trait CommonConnectionOptions extends js.Object {
     * (Protocols should be ordered by their priority.)
     */
   var ALPNProtocols: js.UndefOr[
-    (js.Array[java.lang.String | scala.scalajs.js.typedarray.Uint8Array]) | scala.scalajs.js.typedarray.Uint8Array
+    (js.Array[String | scala.scalajs.js.typedarray.Uint8Array]) | scala.scalajs.js.typedarray.Uint8Array
   ] = js.undefined
   /**
     * SNICallback(servername, cb) <Function> A function that will be
@@ -25,8 +24,8 @@ trait CommonConnectionOptions extends js.Object {
     */
   var SNICallback: js.UndefOr[
     js.Function2[
-      /* servername */ java.lang.String, 
-      /* cb */ js.Function2[/* err */ Error | Null, /* ctx */ SecureContext, Unit], 
+      /* servername */ String, 
+      /* cb */ js.Function2[/* err */ js.Error | Null, /* ctx */ SecureContext, Unit], 
       Unit
     ]
   ] = js.undefined
@@ -58,8 +57,8 @@ trait CommonConnectionOptions extends js.Object {
 object CommonConnectionOptions {
   @scala.inline
   def apply(
-    ALPNProtocols: (js.Array[java.lang.String | scala.scalajs.js.typedarray.Uint8Array]) | scala.scalajs.js.typedarray.Uint8Array = null,
-    SNICallback: (/* servername */ java.lang.String, /* cb */ js.Function2[/* err */ Error | Null, /* ctx */ SecureContext, Unit]) => Callback = null,
+    ALPNProtocols: (js.Array[String | scala.scalajs.js.typedarray.Uint8Array]) | scala.scalajs.js.typedarray.Uint8Array = null,
+    SNICallback: (/* servername */ String, /* cb */ js.Function2[/* err */ js.Error | Null, /* ctx */ SecureContext, Unit]) => Callback = null,
     enableTrace: js.UndefOr[Boolean] = js.undefined,
     rejectUnauthorized: js.UndefOr[Boolean] = js.undefined,
     requestCert: js.UndefOr[Boolean] = js.undefined,
@@ -68,7 +67,7 @@ object CommonConnectionOptions {
     val __obj = js.Dynamic.literal()
     if (ALPNProtocols != null) __obj.updateDynamic("ALPNProtocols")(ALPNProtocols.asInstanceOf[js.Any])
     if (SNICallback != null) __obj.updateDynamic("SNICallback")(js.Any.fromFunction2((t0: /* servername */ java.lang.String, t1: /* cb */ js.Function2[
-  /* err */ typingsJapgolly.node.Error | scala.Null, 
+  /* err */ js.Error | scala.Null, 
   /* ctx */ typingsJapgolly.node.tlsMod.SecureContext, 
   scala.Unit]) => SNICallback(t0, t1).runNow()))
     if (!js.isUndefined(enableTrace)) __obj.updateDynamic("enableTrace")(enableTrace.asInstanceOf[js.Any])

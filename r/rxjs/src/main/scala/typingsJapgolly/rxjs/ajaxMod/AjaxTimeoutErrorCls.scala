@@ -1,7 +1,7 @@
 package typingsJapgolly.rxjs.ajaxMod
 
 import org.scalajs.dom.raw.XMLHttpRequest
-import typingsJapgolly.rxjs.internalObservableDomAjaxObservableMod.AjaxRequest
+import typingsJapgolly.rxjs.ajaxObservableMod.AjaxRequest
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @JSImport("rxjs/ajax", "AjaxTimeoutError")
 @js.native
 class AjaxTimeoutErrorCls protected ()
-  extends typingsJapgolly.rxjs.internalObservableDomAjaxObservableMod.AjaxError {
+  extends typingsJapgolly.rxjs.ajaxObservableMod.AjaxError {
   def this(xhr: XMLHttpRequest, request: AjaxRequest) = this()
   /* CompleteClass */
   override var message: String = js.native

@@ -34,6 +34,7 @@ import typingsJapgolly.antd.antdStrings.execute
 import typingsJapgolly.antd.antdStrings.grammar
 import typingsJapgolly.antd.antdStrings.grid
 import typingsJapgolly.antd.antdStrings.horizontal
+import typingsJapgolly.antd.antdStrings.inherit
 import typingsJapgolly.antd.antdStrings.link
 import typingsJapgolly.antd.antdStrings.list
 import typingsJapgolly.antd.antdStrings.listbox
@@ -61,22 +62,23 @@ import typingsJapgolly.antd.antdStrings.tree
 import typingsJapgolly.antd.antdStrings.url
 import typingsJapgolly.antd.antdStrings.vertical
 import typingsJapgolly.antd.antdStrings.yes
-import typingsJapgolly.react.Anon_Html
-import typingsJapgolly.react.reactMod.AnimationEventHandler
-import typingsJapgolly.react.reactMod.CSSProperties
-import typingsJapgolly.react.reactMod.ClipboardEventHandler
-import typingsJapgolly.react.reactMod.CompositionEventHandler
-import typingsJapgolly.react.reactMod.DragEventHandler
-import typingsJapgolly.react.reactMod.FocusEventHandler
-import typingsJapgolly.react.reactMod.FormEventHandler
-import typingsJapgolly.react.reactMod.KeyboardEventHandler
-import typingsJapgolly.react.reactMod.MouseEventHandler
-import typingsJapgolly.react.reactMod.PointerEventHandler
-import typingsJapgolly.react.reactMod.ReactEventHandler
-import typingsJapgolly.react.reactMod.TouchEventHandler
-import typingsJapgolly.react.reactMod.TransitionEventHandler
-import typingsJapgolly.react.reactMod.UIEventHandler
-import typingsJapgolly.react.reactMod.WheelEventHandler
+import typingsJapgolly.react.AnonHtml
+import typingsJapgolly.react.mod.AnimationEventHandler
+import typingsJapgolly.react.mod.Booleanish
+import typingsJapgolly.react.mod.CSSProperties
+import typingsJapgolly.react.mod.ClipboardEventHandler
+import typingsJapgolly.react.mod.CompositionEventHandler
+import typingsJapgolly.react.mod.DragEventHandler
+import typingsJapgolly.react.mod.FocusEventHandler
+import typingsJapgolly.react.mod.FormEventHandler
+import typingsJapgolly.react.mod.KeyboardEventHandler
+import typingsJapgolly.react.mod.MouseEventHandler
+import typingsJapgolly.react.mod.PointerEventHandler
+import typingsJapgolly.react.mod.ReactEventHandler
+import typingsJapgolly.react.mod.TouchEventHandler
+import typingsJapgolly.react.mod.TransitionEventHandler
+import typingsJapgolly.react.mod.UIEventHandler
+import typingsJapgolly.react.mod.WheelEventHandler
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -139,14 +141,14 @@ trait PartialBasicProps extends js.Object {
   var children: js.UndefOr[Node] = js.undefined
   var className: js.UndefOr[String] = js.undefined
   var color: js.UndefOr[String] = js.undefined
-  var contentEditable: js.UndefOr[Boolean] = js.undefined
+  var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
   var contextMenu: js.UndefOr[String] = js.undefined
-  var dangerouslySetInnerHTML: js.UndefOr[Anon_Html] = js.undefined
+  var dangerouslySetInnerHTML: js.UndefOr[AnonHtml] = js.undefined
   var datatype: js.UndefOr[String] = js.undefined
   var defaultChecked: js.UndefOr[Boolean] = js.undefined
   var defaultValue: js.UndefOr[String | Double | js.Array[String]] = js.undefined
   var dir: js.UndefOr[String] = js.undefined
-  var draggable: js.UndefOr[Boolean] = js.undefined
+  var draggable: js.UndefOr[Booleanish] = js.undefined
   var hasSider: js.UndefOr[Boolean] = js.undefined
   var hidden: js.UndefOr[Boolean] = js.undefined
   var id: js.UndefOr[String] = js.undefined
@@ -248,7 +250,7 @@ trait PartialBasicProps extends js.Object {
   var role: js.UndefOr[String] = js.undefined
   var security: js.UndefOr[String] = js.undefined
   var slot: js.UndefOr[String] = js.undefined
-  var spellCheck: js.UndefOr[Boolean] = js.undefined
+  var spellCheck: js.UndefOr[Booleanish] = js.undefined
   var style: js.UndefOr[CSSProperties] = js.undefined
   var suppressContentEditableWarning: js.UndefOr[Boolean] = js.undefined
   var suppressHydrationWarning: js.UndefOr[Boolean] = js.undefined
@@ -319,9 +321,9 @@ object PartialBasicProps {
     children: VdomNode = null,
     className: String = null,
     color: String = null,
-    contentEditable: js.UndefOr[Boolean] = js.undefined,
+    contentEditable: Booleanish | inherit = null,
     contextMenu: String = null,
-    dangerouslySetInnerHTML: Anon_Html = null,
+    dangerouslySetInnerHTML: AnonHtml = null,
     datatype: String = null,
     defaultChecked: js.UndefOr[Boolean] = js.undefined,
     defaultValue: String | Double | js.Array[String] = null,
@@ -496,7 +498,7 @@ object PartialBasicProps {
     if (children != null) __obj.updateDynamic("children")(children.rawNode.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (!js.isUndefined(contentEditable)) __obj.updateDynamic("contentEditable")(contentEditable.asInstanceOf[js.Any])
+    if (contentEditable != null) __obj.updateDynamic("contentEditable")(contentEditable.asInstanceOf[js.Any])
     if (contextMenu != null) __obj.updateDynamic("contextMenu")(contextMenu.asInstanceOf[js.Any])
     if (dangerouslySetInnerHTML != null) __obj.updateDynamic("dangerouslySetInnerHTML")(dangerouslySetInnerHTML.asInstanceOf[js.Any])
     if (datatype != null) __obj.updateDynamic("datatype")(datatype.asInstanceOf[js.Any])

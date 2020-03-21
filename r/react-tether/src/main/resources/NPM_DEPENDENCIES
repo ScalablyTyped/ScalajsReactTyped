@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "react-tether" : "2.0.7"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "react-tether" : "2.0.7"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

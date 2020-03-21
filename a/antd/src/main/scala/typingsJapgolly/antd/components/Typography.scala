@@ -6,8 +6,8 @@ import japgolly.scalajs.react.component.Js.MountedWithRawType
 import japgolly.scalajs.react.component.Js.RawMounted
 import japgolly.scalajs.react.component.Js.UnmountedSimple
 import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.antd.libTypographyTypographyMod.TypographyProps
-import typingsJapgolly.react.reactMod.CSSProperties
+import typingsJapgolly.antd.typographyTypographyMod.TypographyProps
+import typingsJapgolly.react.mod.CSSProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,7 +20,7 @@ object Typography {
     prefixCls: String = null,
     style: CSSProperties = null,
     key: js.UndefOr[Key] = js.undefined,
-    overrides: StringDictionary[js.Any] = null
+    _overrides: StringDictionary[js.Any] = null
   )(
     children: ChildArg*
   ): UnmountedSimple[
@@ -35,13 +35,13 @@ object Typography {
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (overrides != null) js.Dynamic.global.Object.assign(__obj, overrides)
+    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
   
     val f = japgolly.scalajs.react.JsComponent[
-  typingsJapgolly.antd.libTypographyTypographyMod.TypographyProps, 
+  typingsJapgolly.antd.typographyTypographyMod.TypographyProps, 
   japgolly.scalajs.react.Children.Varargs, 
   js.Object](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.antd.libTypographyTypographyMod.TypographyProps])(children: _*)
+    f(__obj.asInstanceOf[typingsJapgolly.antd.typographyTypographyMod.TypographyProps])(children: _*)
   }
   @JSImport("antd/lib/typography/Typography", JSImport.Default)
   @js.native

@@ -4,9 +4,9 @@ import japgolly.scalajs.react.Callback
 import japgolly.scalajs.react.CallbackTo
 import japgolly.scalajs.react.raw.React.Node
 import japgolly.scalajs.react.vdom.VdomNode
-import typingsJapgolly.antd.libStatisticUtilsMod.Formatter
-import typingsJapgolly.antd.libStatisticUtilsMod.countdownValueType
-import typingsJapgolly.react.reactMod.CSSProperties
+import typingsJapgolly.antd.statisticUtilsMod.Formatter
+import typingsJapgolly.antd.statisticUtilsMod.countdownValueType
+import typingsJapgolly.react.mod.CSSProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

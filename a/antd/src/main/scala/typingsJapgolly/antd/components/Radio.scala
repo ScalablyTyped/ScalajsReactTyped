@@ -8,10 +8,10 @@ import japgolly.scalajs.react.ReactMouseEventFrom
 import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
 import org.scalablytyped.runtime.StringDictionary
 import org.scalajs.dom.raw.HTMLElement
-import typingsJapgolly.antd.libRadioInterfaceMod.RadioChangeEvent
-import typingsJapgolly.antd.libRadioInterfaceMod.RadioProps
-import typingsJapgolly.antd.libRadioMod.default
-import typingsJapgolly.react.reactMod.CSSProperties
+import typingsJapgolly.antd.checkboxCheckboxMod.AbstractCheckboxProps
+import typingsJapgolly.antd.radioInterfaceMod.RadioChangeEvent
+import typingsJapgolly.antd.radioMod.default
+import typingsJapgolly.react.mod.CSSProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -36,10 +36,15 @@ object Radio {
     tabIndex: Int | Double = null,
     value: js.Any = null,
     key: js.UndefOr[Key] = js.undefined,
-    overrides: StringDictionary[js.Any] = null
+    _overrides: StringDictionary[js.Any] = null
   )(
     children: ChildArg*
-  ): UnmountedWithRoot[RadioProps, default, Unit, RadioProps] = {
+  ): UnmountedWithRoot[
+    AbstractCheckboxProps[RadioChangeEvent], 
+    default, 
+    Unit, 
+    AbstractCheckboxProps[RadioChangeEvent]
+  ] = {
     val __obj = js.Dynamic.literal()
   
       if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus.asInstanceOf[js.Any])
@@ -49,7 +54,7 @@ object Radio {
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1((t0: typingsJapgolly.antd.libRadioInterfaceMod.RadioChangeEvent) => onChange(t0).runNow()))
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1((t0: typingsJapgolly.antd.radioInterfaceMod.RadioChangeEvent) => onChange(t0).runNow()))
     if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactMouseEventFrom[org.scalajs.dom.raw.HTMLElement]) => onClick(t0).runNow()))
     if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactKeyboardEventFrom[org.scalajs.dom.raw.HTMLElement]) => onKeyDown(t0).runNow()))
     if (onKeyPress != null) __obj.updateDynamic("onKeyPress")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactKeyboardEventFrom[org.scalajs.dom.raw.HTMLElement]) => onKeyPress(t0).runNow()))
@@ -60,13 +65,13 @@ object Radio {
     if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (overrides != null) js.Dynamic.global.Object.assign(__obj, overrides)
+    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
   
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antd.libRadioInterfaceMod.RadioProps, 
+  typingsJapgolly.antd.checkboxCheckboxMod.AbstractCheckboxProps[typingsJapgolly.antd.radioInterfaceMod.RadioChangeEvent], 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antd.libRadioMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.antd.libRadioInterfaceMod.RadioProps])(children: _*)
+  typingsJapgolly.antd.radioMod.default](this.componentImport)
+    f(__obj.asInstanceOf[typingsJapgolly.antd.checkboxCheckboxMod.AbstractCheckboxProps[typingsJapgolly.antd.radioInterfaceMod.RadioChangeEvent]])(children: _*)
   }
   @JSImport("antd/lib/radio", JSImport.Default)
   @js.native

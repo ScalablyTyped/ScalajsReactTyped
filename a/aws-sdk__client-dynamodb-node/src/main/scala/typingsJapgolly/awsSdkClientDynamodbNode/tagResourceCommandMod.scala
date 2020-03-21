@@ -1,0 +1,44 @@
+package typingsJapgolly.awsSdkClientDynamodbNode
+
+import typingsJapgolly.awsSdkClientDynamodbNode.dynamoDBConfigurationMod.DynamoDBResolvedConfiguration
+import typingsJapgolly.awsSdkClientDynamodbNode.inputTypesUnionMod.InputTypesUnion
+import typingsJapgolly.awsSdkClientDynamodbNode.outputTypesUnionMod.OutputTypesUnion
+import typingsJapgolly.awsSdkClientDynamodbNode.typesTagResourceInputMod.TagResourceInput
+import typingsJapgolly.awsSdkClientDynamodbNode.typesTagResourceOutputMod.TagResourceOutput
+import typingsJapgolly.awsSdkMiddlewareStack.mod.MiddlewareStack
+import typingsJapgolly.awsSdkTypes.commandMod.Command
+import typingsJapgolly.awsSdkTypes.middlewareMod.Handler
+import typingsJapgolly.node.streamMod.Readable
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("@aws-sdk/client-dynamodb-node/commands/TagResourceCommand", JSImport.Namespace)
+@js.native
+object tagResourceCommandMod extends js.Object {
+  @js.native
+  class TagResourceCommand protected () extends Command[
+          InputTypesUnion, 
+          TagResourceInput, 
+          OutputTypesUnion, 
+          TagResourceOutput, 
+          DynamoDBResolvedConfiguration, 
+          Readable
+        ] {
+    def this(input: TagResourceInput) = this()
+    /* CompleteClass */
+    override val input: TagResourceInput = js.native
+    val middlewareStack: MiddlewareStack[TagResourceInput, TagResourceOutput, Readable] = js.native
+    def resolveMiddleware(
+      clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
+      configuration: DynamoDBResolvedConfiguration
+    ): Handler[TagResourceInput, TagResourceOutput] = js.native
+    /* CompleteClass */
+    override def resolveMiddleware(
+      stack: typingsJapgolly.awsSdkTypes.middlewareMod.MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
+      configuration: DynamoDBResolvedConfiguration
+    ): Handler[TagResourceInput, TagResourceOutput] = js.native
+  }
+  
+}
+

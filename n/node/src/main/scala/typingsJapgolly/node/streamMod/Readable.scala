@@ -1,8 +1,7 @@
 package typingsJapgolly.node.streamMod
 
-import typingsJapgolly.node.Anon_End
+import typingsJapgolly.node.AnonEnd
 import typingsJapgolly.node.BufferEncoding
-import typingsJapgolly.node.Error
 import typingsJapgolly.node.NodeJS.ReadableStream
 import typingsJapgolly.node.NodeJS.WritableStream
 import typingsJapgolly.node.nodeStrings.close
@@ -11,6 +10,7 @@ import typingsJapgolly.node.nodeStrings.end
 import typingsJapgolly.node.nodeStrings.error
 import typingsJapgolly.node.nodeStrings.readable
 import typingsJapgolly.std.AsyncIterable
+import typingsJapgolly.std.Error
 import typingsJapgolly.std.Iterable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -19,15 +19,15 @@ import scala.scalajs.js.annotation._
 @JSImport("stream", "Readable")
 @js.native
 class Readable ()
-  extends internal
+  extends Stream
      with ReadableStream {
   def this(opts: ReadableOptions) = this()
   var destroyed: Boolean = js.native
   val readableHighWaterMark: Double = js.native
   val readableLength: Double = js.native
   val readableObjectMode: Boolean = js.native
-  def _destroy(error: Null, callback: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]): Unit = js.native
-  def _destroy(error: Error, callback: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]): Unit = js.native
+  def _destroy(error: Null, callback: js.Function1[/* error */ js.UndefOr[js.Error | Null], Unit]): Unit = js.native
+  def _destroy(error: Error, callback: js.Function1[/* error */ js.UndefOr[js.Error | Null], Unit]): Unit = js.native
   def _read(size: Double): Unit = js.native
   /**
     * Event emitter
@@ -45,11 +45,11 @@ class Readable ()
   @JSName("addListener")
   def addListener_end(event: end, listener: js.Function0[Unit]): this.type = js.native
   @JSName("addListener")
-  def addListener_error(event: error, listener: js.Function1[/* err */ Error, Unit]): this.type = js.native
+  def addListener_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
   @JSName("addListener")
   def addListener_readable(event: readable, listener: js.Function0[Unit]): this.type = js.native
   def destroy(): Unit = js.native
-  def destroy(error: Error): Unit = js.native
+  def destroy(error: js.Error): Unit = js.native
   @JSName("emit")
   def emit_close(event: close): Boolean = js.native
   @JSName("emit")
@@ -57,7 +57,7 @@ class Readable ()
   @JSName("emit")
   def emit_end(event: end): Boolean = js.native
   @JSName("emit")
-  def emit_error(event: error, err: Error): Boolean = js.native
+  def emit_error(event: error, err: js.Error): Boolean = js.native
   @JSName("emit")
   def emit_readable(event: readable): Boolean = js.native
   @JSName("on")
@@ -67,7 +67,7 @@ class Readable ()
   @JSName("on")
   def on_end(event: end, listener: js.Function0[Unit]): this.type = js.native
   @JSName("on")
-  def on_error(event: error, listener: js.Function1[/* err */ Error, Unit]): this.type = js.native
+  def on_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
   @JSName("on")
   def on_readable(event: readable, listener: js.Function0[Unit]): this.type = js.native
   @JSName("once")
@@ -77,13 +77,13 @@ class Readable ()
   @JSName("once")
   def once_end(event: end, listener: js.Function0[Unit]): this.type = js.native
   @JSName("once")
-  def once_error(event: error, listener: js.Function1[/* err */ Error, Unit]): this.type = js.native
+  def once_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
   @JSName("once")
   def once_readable(event: readable, listener: js.Function0[Unit]): this.type = js.native
   /* InferMemberOverrides */
   override def pipe[T /* <: WritableStream */](destination: T): T = js.native
   /* InferMemberOverrides */
-  override def pipe[T /* <: WritableStream */](destination: T, options: Anon_End): T = js.native
+  override def pipe[T /* <: WritableStream */](destination: T, options: AnonEnd): T = js.native
   @JSName("prependListener")
   def prependListener_close(event: close, listener: js.Function0[Unit]): this.type = js.native
   @JSName("prependListener")
@@ -91,7 +91,7 @@ class Readable ()
   @JSName("prependListener")
   def prependListener_end(event: end, listener: js.Function0[Unit]): this.type = js.native
   @JSName("prependListener")
-  def prependListener_error(event: error, listener: js.Function1[/* err */ Error, Unit]): this.type = js.native
+  def prependListener_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
   @JSName("prependListener")
   def prependListener_readable(event: readable, listener: js.Function0[Unit]): this.type = js.native
   @JSName("prependOnceListener")
@@ -101,11 +101,11 @@ class Readable ()
   @JSName("prependOnceListener")
   def prependOnceListener_end(event: end, listener: js.Function0[Unit]): this.type = js.native
   @JSName("prependOnceListener")
-  def prependOnceListener_error(event: error, listener: js.Function1[/* err */ Error, Unit]): this.type = js.native
+  def prependOnceListener_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
   @JSName("prependOnceListener")
   def prependOnceListener_readable(event: readable, listener: js.Function0[Unit]): this.type = js.native
   def push(chunk: js.Any): Boolean = js.native
-  def push(chunk: js.Any, encoding: java.lang.String): Boolean = js.native
+  def push(chunk: js.Any, encoding: String): Boolean = js.native
   @JSName("removeListener")
   def removeListener_close(event: close, listener: js.Function0[Unit]): this.type = js.native
   @JSName("removeListener")
@@ -113,7 +113,7 @@ class Readable ()
   @JSName("removeListener")
   def removeListener_end(event: end, listener: js.Function0[Unit]): this.type = js.native
   @JSName("removeListener")
-  def removeListener_error(event: error, listener: js.Function1[/* err */ Error, Unit]): this.type = js.native
+  def removeListener_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
   @JSName("removeListener")
   def removeListener_readable(event: readable, listener: js.Function0[Unit]): this.type = js.native
   def unshift(chunk: js.Any): Unit = js.native

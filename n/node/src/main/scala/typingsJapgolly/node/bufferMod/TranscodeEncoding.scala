@@ -5,12 +5,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
-  - typings.node.nodeStrings.ascii
-  - typings.node.nodeStrings.utf8
-  - typings.node.nodeStrings.utf16le
-  - typings.node.nodeStrings.ucs2
-  - typings.node.nodeStrings.latin1
-  - typings.node.nodeStrings.binary
+  - typingsJapgolly.node.nodeStrings.ascii
+  - typingsJapgolly.node.nodeStrings.utf8
+  - typingsJapgolly.node.nodeStrings.utf16le
+  - typingsJapgolly.node.nodeStrings.ucs2
+  - typingsJapgolly.node.nodeStrings.latin1
+  - typingsJapgolly.node.nodeStrings.binary
 */
 trait TranscodeEncoding extends js.Object
 

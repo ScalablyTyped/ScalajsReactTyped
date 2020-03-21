@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "systeminformation" : "4.21.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "systeminformation" : "4.21.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

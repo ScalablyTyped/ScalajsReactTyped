@@ -1,5 +1,6 @@
 package typingsJapgolly.googlemaps.google.maps.drawing
 
+import org.scalajs.dom.raw.Element
 import typingsJapgolly.googlemaps.google.maps.CircleOptions
 import typingsJapgolly.googlemaps.google.maps.Map
 import typingsJapgolly.googlemaps.google.maps.MarkerOptions
@@ -36,7 +37,7 @@ trait DrawingManagerOptions extends js.Object {
     * The Map to which the DrawingManager is attached, which is the Map on
     * which the overlays created will be placed.
     */
-  var map: js.UndefOr[Map] = js.undefined
+  var map: js.UndefOr[Map[Element]] = js.undefined
   /**
     * Options to apply to any new markers created with this DrawingManager.
     * The position property is ignored, and the map property of a new marker
@@ -70,7 +71,7 @@ object DrawingManagerOptions {
     drawingControl: js.UndefOr[Boolean] = js.undefined,
     drawingControlOptions: DrawingControlOptions = null,
     drawingMode: OverlayType = null,
-    map: Map = null,
+    map: Map[Element] = null,
     markerOptions: MarkerOptions = null,
     polygonOptions: PolygonOptions = null,
     polylineOptions: PolylineOptions = null,

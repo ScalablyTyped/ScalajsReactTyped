@@ -1,0 +1,34 @@
+
+# Scala.js typings for postcss-nested
+
+Typings are for version 4.1
+
+## Library description:
+PostCSS plugin to unwrap nested rules like how Sass does it
+
+|                    |                 |
+| ------------------ | :-------------: |
+| Full name          | postcss-nested |
+| Keywords           | postcss, css, postcss-plugin, sass, nested |
+| # releases         | 7 |
+| # dependents       | 419 |
+| # downloads        | 16810047 |
+| # stars            | 7 |
+
+## Links
+- [Homepage](https://github.com/postcss/postcss-nested#readme)
+- [Bugs](https://github.com/postcss/postcss-nested/issues)
+- [Repository](https://github.com/postcss/postcss-nested)
+- [Npm](https://www.npmjs.com/package/postcss-nested)
+    
+
+
+## Note
+This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+
+Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
+
+## Usage
+See [the main readme](../../readme.md) for instructions.
+
+

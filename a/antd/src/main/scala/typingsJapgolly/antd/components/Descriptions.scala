@@ -2,17 +2,19 @@ package typingsJapgolly.antd.components
 
 import japgolly.scalajs.react.CtorType.ChildArg
 import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
+import japgolly.scalajs.react.component.Js.MountedWithRawType
+import japgolly.scalajs.react.component.Js.RawMounted
+import japgolly.scalajs.react.component.Js.UnmountedSimple
 import japgolly.scalajs.react.vdom.VdomNode
 import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.antd.PartialRecordBreakpointnumber
+import typingsJapgolly.antd.PartialRecordBreakpointnu
 import typingsJapgolly.antd.antdStrings.default
 import typingsJapgolly.antd.antdStrings.horizontal
 import typingsJapgolly.antd.antdStrings.middle
 import typingsJapgolly.antd.antdStrings.small
 import typingsJapgolly.antd.antdStrings.vertical
-import typingsJapgolly.antd.libDescriptionsMod.DescriptionsProps
-import typingsJapgolly.react.reactMod.CSSProperties
+import typingsJapgolly.antd.descriptionsMod.DescriptionsProps
+import typingsJapgolly.react.mod.CSSProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,21 +24,19 @@ object Descriptions {
     bordered: js.UndefOr[Boolean] = js.undefined,
     className: String = null,
     colon: js.UndefOr[Boolean] = js.undefined,
-    column: Double | PartialRecordBreakpointnumber = null,
+    column: Double | PartialRecordBreakpointnu = null,
     layout: horizontal | vertical = null,
     prefixCls: String = null,
     size: middle | small | default = null,
     style: CSSProperties = null,
     title: VdomNode = null,
     key: js.UndefOr[Key] = js.undefined,
-    overrides: StringDictionary[js.Any] = null
+    _overrides: StringDictionary[js.Any] = null
   )(
     children: ChildArg*
-  ): UnmountedWithRoot[
+  ): UnmountedSimple[
     DescriptionsProps, 
-    typingsJapgolly.antd.libDescriptionsMod.default, 
-    Unit, 
-    DescriptionsProps
+    MountedWithRawType[DescriptionsProps, js.Object, RawMounted[DescriptionsProps, js.Object]]
   ] = {
     val __obj = js.Dynamic.literal()
   
@@ -50,13 +50,13 @@ object Descriptions {
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.rawNode.asInstanceOf[js.Any])
     key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (overrides != null) js.Dynamic.global.Object.assign(__obj, overrides)
+    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
   
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antd.libDescriptionsMod.DescriptionsProps, 
+    val f = japgolly.scalajs.react.JsComponent[
+  typingsJapgolly.antd.descriptionsMod.DescriptionsProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antd.libDescriptionsMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.antd.libDescriptionsMod.DescriptionsProps])(children: _*)
+  js.Object](this.componentImport)
+    f(__obj.asInstanceOf[typingsJapgolly.antd.descriptionsMod.DescriptionsProps])(children: _*)
   }
   @JSImport("antd/lib/descriptions", JSImport.Default)
   @js.native

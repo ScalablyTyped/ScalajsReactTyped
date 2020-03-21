@@ -6,16 +6,16 @@ import scala.scalajs.js.annotation._
 
 // Buffer class
 /* Rewritten from type alias, can be one of: 
-  - typings.node.nodeStrings.ascii
-  - typings.node.nodeStrings.utf8
-  - typings.node.nodeStrings.`utf-8`
-  - typings.node.nodeStrings.utf16le
-  - typings.node.nodeStrings.ucs2
-  - typings.node.nodeStrings.`ucs-2`
-  - typings.node.nodeStrings.base64
-  - typings.node.nodeStrings.latin1
-  - typings.node.nodeStrings.binary
-  - typings.node.nodeStrings.hex
+  - typingsJapgolly.node.nodeStrings.ascii
+  - typingsJapgolly.node.nodeStrings.utf8
+  - typingsJapgolly.node.nodeStrings.`utf-8`
+  - typingsJapgolly.node.nodeStrings.utf16le
+  - typingsJapgolly.node.nodeStrings.ucs2
+  - typingsJapgolly.node.nodeStrings.`ucs-2`
+  - typingsJapgolly.node.nodeStrings.base64
+  - typingsJapgolly.node.nodeStrings.latin1
+  - typingsJapgolly.node.nodeStrings.binary
+  - typingsJapgolly.node.nodeStrings.hex
 */
 trait BufferEncoding extends js.Object
 

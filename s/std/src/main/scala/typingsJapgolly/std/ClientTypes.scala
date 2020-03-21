@@ -5,10 +5,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
-  - typings.std.stdStrings.window
-  - typings.std.stdStrings.worker
-  - typings.std.stdStrings.sharedworker
-  - typings.std.stdStrings.all
+  - typingsJapgolly.std.stdStrings.all
+  - typingsJapgolly.std.stdStrings.sharedworker
+  - typingsJapgolly.std.stdStrings.window
+  - typingsJapgolly.std.stdStrings.worker
 */
 trait ClientTypes extends js.Object
 

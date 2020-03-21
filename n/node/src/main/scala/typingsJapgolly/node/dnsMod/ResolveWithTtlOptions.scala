@@ -1,6 +1,6 @@
 package typingsJapgolly.node.dnsMod
 
-import typingsJapgolly.node.nodeNumbers.`true`
+import typingsJapgolly.node.nodeBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

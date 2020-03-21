@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-navigation-drawer
 
-Typings are for version 2.3.3
+Typings are for version 2.3.4
 
 ## Library description:
 Drawer navigator component for React Navigation
@@ -11,8 +11,8 @@ Drawer navigator component for React Navigation
 | Full name          | react-navigation-drawer |
 | Keywords           | react-native-component, react-component, react-native, ios, android, drawer, material |
 | # releases         | 48 |
-| # dependents       | 8 |
-| # downloads        | 7046593 |
+| # dependents       | 10 |
+| # downloads        | 7272860 |
 | # stars            | 0 |
 
 ## Links

@@ -8,11 +8,11 @@ import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
 import japgolly.scalajs.react.raw.React.Node
 import japgolly.scalajs.react.vdom.VdomNode
 import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.antd.libStatisticCountdownMod.CountdownProps
-import typingsJapgolly.antd.libStatisticCountdownMod.default
-import typingsJapgolly.antd.libStatisticUtilsMod.Formatter
-import typingsJapgolly.antd.libStatisticUtilsMod.countdownValueType
-import typingsJapgolly.react.reactMod.CSSProperties
+import typingsJapgolly.antd.countdownMod.CountdownProps
+import typingsJapgolly.antd.countdownMod.default
+import typingsJapgolly.antd.statisticUtilsMod.Formatter
+import typingsJapgolly.antd.statisticUtilsMod.countdownValueType
+import typingsJapgolly.react.mod.CSSProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -35,7 +35,7 @@ object Countdown {
     valueRender: /* node */ Node => CallbackTo[Node] = null,
     valueStyle: CSSProperties = null,
     key: js.UndefOr[Key] = js.undefined,
-    overrides: StringDictionary[js.Any] = null
+    _overrides: StringDictionary[js.Any] = null
   )(
     children: ChildArg*
   ): UnmountedWithRoot[CountdownProps, default, Unit, CountdownProps] = {
@@ -57,13 +57,13 @@ object Countdown {
     if (valueRender != null) __obj.updateDynamic("valueRender")(js.Any.fromFunction1((t0: /* node */ japgolly.scalajs.react.raw.React.Node) => valueRender(t0).runNow()))
     if (valueStyle != null) __obj.updateDynamic("valueStyle")(valueStyle.asInstanceOf[js.Any])
     key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (overrides != null) js.Dynamic.global.Object.assign(__obj, overrides)
+    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
   
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antd.libStatisticCountdownMod.CountdownProps, 
+  typingsJapgolly.antd.countdownMod.CountdownProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antd.libStatisticCountdownMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.antd.libStatisticCountdownMod.CountdownProps])(children: _*)
+  typingsJapgolly.antd.countdownMod.default](this.componentImport)
+    f(__obj.asInstanceOf[typingsJapgolly.antd.countdownMod.CountdownProps])(children: _*)
   }
   @JSImport("antd/lib/statistic/Countdown", JSImport.Default)
   @js.native

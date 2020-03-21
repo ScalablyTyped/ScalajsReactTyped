@@ -6,9 +6,9 @@ import japgolly.scalajs.react.Key
 import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
 import japgolly.scalajs.react.vdom.VdomNode
 import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.antd.libRateMod.RateProps
-import typingsJapgolly.antd.libRateMod.default
-import typingsJapgolly.react.reactMod.CSSProperties
+import typingsJapgolly.antd.rateMod.RateProps
+import typingsJapgolly.antd.rateMod.default
+import typingsJapgolly.react.mod.CSSProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -29,7 +29,7 @@ object Rate {
     tooltips: js.Array[String] = null,
     value: Int | Double = null,
     key: js.UndefOr[Key] = js.undefined,
-    overrides: StringDictionary[js.Any] = null
+    _overrides: StringDictionary[js.Any] = null
   )(
     children: ChildArg*
   ): UnmountedWithRoot[RateProps, default, Unit, RateProps] = {
@@ -49,13 +49,13 @@ object Rate {
     if (tooltips != null) __obj.updateDynamic("tooltips")(tooltips.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (overrides != null) js.Dynamic.global.Object.assign(__obj, overrides)
+    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
   
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antd.libRateMod.RateProps, 
+  typingsJapgolly.antd.rateMod.RateProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antd.libRateMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.antd.libRateMod.RateProps])(children: _*)
+  typingsJapgolly.antd.rateMod.default](this.componentImport)
+    f(__obj.asInstanceOf[typingsJapgolly.antd.rateMod.RateProps])(children: _*)
   }
   @JSImport("antd/lib/rate", JSImport.Default)
   @js.native

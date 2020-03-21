@@ -1,0 +1,18 @@
+package typingsJapgolly.awsSdkClientDynamodbBrowser.typesTableAlreadyExistsExceptionMod
+
+import typingsJapgolly.awsSdkClientDynamodbBrowser.restoreTableFromBackupExceptionsUnionMod.RestoreTableFromBackupExceptionsUnion
+import typingsJapgolly.awsSdkClientDynamodbBrowser.restoreTableToPointInTimeExceptionsUnionMod.RestoreTableToPointInTimeExceptionsUnion
+import typingsJapgolly.awsSdkTypes.exceptionMod.ServiceException
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@js.native
+trait TableAlreadyExistsException
+  extends ServiceException[TableAlreadyExistsExceptionDetails]
+     with RestoreTableFromBackupExceptionsUnion
+     with RestoreTableToPointInTimeExceptionsUnion {
+  @JSName("name")
+  var name_TableAlreadyExistsException: typingsJapgolly.awsSdkClientDynamodbBrowser.awsSdkClientDynamodbBrowserStrings.TableAlreadyExistsException = js.native
+}
+

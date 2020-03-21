@@ -22,15 +22,10 @@ object TcpNetConnectOpts {
     family: Int | Double = null,
     fd: Int | Double = null,
     hints: Int | Double = null,
-    host: java.lang.String = null,
-    localAddress: java.lang.String = null,
+    host: String = null,
+    localAddress: String = null,
     localPort: Int | Double = null,
-    lookup: (/* hostname */ java.lang.String, /* options */ LookupOneOptions, /* callback */ js.Function3[
-      /* err */ ErrnoException | Null, 
-      /* address */ java.lang.String, 
-      /* family */ Double, 
-      Unit
-    ]) => Callback = null,
+    lookup: (/* hostname */ String, /* options */ LookupOneOptions, /* callback */ js.Function3[/* err */ ErrnoException | Null, /* address */ String, /* family */ Double, Unit]) => Callback = null,
     onread: OnReadOpts = null,
     readable: js.UndefOr[Boolean] = js.undefined,
     timeout: Int | Double = null,

@@ -1,9 +1,9 @@
 package typingsJapgolly.history
 
-import typingsJapgolly.history.historyMod.Location
-import typingsJapgolly.history.historyMod.LocationDescriptorObject
-import typingsJapgolly.history.historyMod.LocationState
-import typingsJapgolly.history.historyMod.Path
+import typingsJapgolly.history.mod.Location
+import typingsJapgolly.history.mod.LocationDescriptorObject
+import typingsJapgolly.history.mod.LocationState
+import typingsJapgolly.history.mod.Path
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object pathUtilsMod extends js.Object {
   def addLeadingSlash(path: Path): Path = js.native
-  def createPath(location: LocationDescriptorObject[LocationState]): Path = js.native
+  def createPath[S](location: LocationDescriptorObject[S]): Path = js.native
   def hasBasename(path: Path): Boolean = js.native
   def parsePath(path: Path): Location[LocationState] = js.native
   def stripBasename(path: Path, prefix: String): Path = js.native

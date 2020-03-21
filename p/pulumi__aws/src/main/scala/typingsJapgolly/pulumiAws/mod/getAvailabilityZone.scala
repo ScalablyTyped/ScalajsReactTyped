@@ -1,0 +1,17 @@
+package typingsJapgolly.pulumiAws.mod
+
+import typingsJapgolly.pulumiAws.getAvailabilityZoneMod.GetAvailabilityZoneArgs
+import typingsJapgolly.pulumiAws.getAvailabilityZoneMod.GetAvailabilityZoneResult
+import typingsJapgolly.pulumiPulumi.invokeMod.InvokeOptions
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("@pulumi/aws", "getAvailabilityZone")
+@js.native
+object getAvailabilityZone extends js.Object {
+  def apply(): js.Promise[GetAvailabilityZoneResult] with GetAvailabilityZoneResult = js.native
+  def apply(args: GetAvailabilityZoneArgs): js.Promise[GetAvailabilityZoneResult] with GetAvailabilityZoneResult = js.native
+  def apply(args: GetAvailabilityZoneArgs, opts: InvokeOptions): js.Promise[GetAvailabilityZoneResult] with GetAvailabilityZoneResult = js.native
+}
+

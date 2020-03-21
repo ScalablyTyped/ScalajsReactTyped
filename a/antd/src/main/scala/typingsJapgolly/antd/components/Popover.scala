@@ -8,23 +8,21 @@ import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
 import japgolly.scalajs.react.vdom.VdomNode
 import org.scalablytyped.runtime.StringDictionary
 import org.scalajs.dom.raw.HTMLElement
-import typingsJapgolly.antd.libPopoverMod.PopoverProps
-import typingsJapgolly.antd.libPopoverMod.default
-import typingsJapgolly.antd.libTooltipMod.TooltipAlignConfig
-import typingsJapgolly.antd.libTooltipMod.TooltipPlacement
-import typingsJapgolly.antd.libTooltipMod.TooltipTrigger
-import typingsJapgolly.antd.libTooltipPlacementsMod.AdjustOverflow
-import typingsJapgolly.react.reactMod.CSSProperties
+import typingsJapgolly.antd.placementsMod.AdjustOverflow
+import typingsJapgolly.antd.popoverMod.PopoverProps
+import typingsJapgolly.antd.popoverMod.default
+import typingsJapgolly.antd.tooltipMod.TooltipPlacement
+import typingsJapgolly.react.mod.CSSProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 object Popover {
   def apply(
-    align: TooltipAlignConfig = null,
+    align: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AlignType */ js.Any = null,
     arrowPointAtCenter: js.UndefOr[Boolean] = js.undefined,
     autoAdjustOverflow: Boolean | AdjustOverflow = null,
-    builtinPlacements: js.Object = null,
+    builtinPlacements: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BuildInPlacements */ js.Any = null,
     className: String = null,
     content: VdomNode = null,
     defaultVisible: js.UndefOr[Boolean] = js.undefined,
@@ -42,10 +40,10 @@ object Popover {
     style: CSSProperties = null,
     title: VdomNode = null,
     transitionName: String = null,
-    trigger: TooltipTrigger = null,
+    trigger: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ActionType */ js.Any = null,
     visible: js.UndefOr[Boolean] = js.undefined,
     key: js.UndefOr[Key] = js.undefined,
-    overrides: StringDictionary[js.Any] = null
+    _overrides: StringDictionary[js.Any] = null
   )(
     children: ChildArg*
   ): UnmountedWithRoot[PopoverProps, default, Unit, PopoverProps] = {
@@ -75,13 +73,13 @@ object Popover {
     if (trigger != null) __obj.updateDynamic("trigger")(trigger.asInstanceOf[js.Any])
     if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (overrides != null) js.Dynamic.global.Object.assign(__obj, overrides)
+    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
   
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antd.libPopoverMod.PopoverProps, 
+  typingsJapgolly.antd.popoverMod.PopoverProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antd.libPopoverMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.antd.libPopoverMod.PopoverProps])(children: _*)
+  typingsJapgolly.antd.popoverMod.default](this.componentImport)
+    f(__obj.asInstanceOf[typingsJapgolly.antd.popoverMod.PopoverProps])(children: _*)
   }
   @JSImport("antd/lib/popover", JSImport.Default)
   @js.native

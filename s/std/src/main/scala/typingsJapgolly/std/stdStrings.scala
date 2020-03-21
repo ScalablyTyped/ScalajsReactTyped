@@ -91,17 +91,6 @@ object stdStrings {
   sealed trait Embedded extends MSTransportType
   
   @js.native
-  sealed trait Empty
-    extends CanPlayTypeResult
-       with DirectionSetting
-       with GamepadHand
-       with GamepadMappingType
-       with ReferrerPolicy
-       with RequestDestination
-       with ScrollSetting
-       with XMLHttpRequestResponseType
-  
-  @js.native
   sealed trait ErrorEvent extends js.Object
   
   @js.native
@@ -330,6 +319,9 @@ object stdStrings {
   sealed trait ProgressEvent extends js.Object
   
   @js.native
+  sealed trait PromiseConstructor extends js.Object
+  
+  @js.native
   sealed trait PromiseRejectionEvent extends js.Object
   
   @js.native
@@ -397,9 +389,6 @@ object stdStrings {
   
   @js.native
   sealed trait SharedArrayBuffer extends js.Object
-  
-  @js.native
-  sealed trait SpeechRecognitionError extends js.Object
   
   @js.native
   sealed trait SpeechRecognitionEvent extends js.Object
@@ -486,6 +475,17 @@ object stdStrings {
   sealed trait WheelEvent extends js.Object
   
   @js.native
+  sealed trait _empty
+    extends CanPlayTypeResult
+       with DirectionSetting
+       with GamepadHand
+       with GamepadMappingType
+       with ReferrerPolicy
+       with RequestDestination
+       with ScrollSetting
+       with XMLHttpRequestResponseType
+  
+  @js.native
   sealed trait a extends js.Object
   
   @js.native
@@ -496,9 +496,6 @@ object stdStrings {
   
   @js.native
   sealed trait abort extends js.Object
-  
-  @js.native
-  sealed trait aborted extends SpeechRecognitionErrorCode
   
   @js.native
   sealed trait accelerometer extends PermissionName
@@ -596,10 +593,10 @@ object stdStrings {
   sealed trait application extends DisplayCaptureSurfaceType
   
   @js.native
-  sealed trait `application/xhtml+xml` extends SupportedType
+  sealed trait applicationSlashxhtmlPlussignxml extends SupportedType
   
   @js.native
-  sealed trait `application/xml` extends SupportedType
+  sealed trait applicationSlashxml extends SupportedType
   
   @js.native
   sealed trait area extends js.Object
@@ -626,9 +623,6 @@ object stdStrings {
   
   @js.native
   sealed trait `audio-busy` extends SpeechSynthesisErrorCode
-  
-  @js.native
-  sealed trait `audio-capture` extends SpeechRecognitionErrorCode
   
   @js.native
   sealed trait `audio-hardware` extends SpeechSynthesisErrorCode
@@ -682,9 +676,6 @@ object stdStrings {
   
   @js.native
   sealed trait backwards extends FillMode
-  
-  @js.native
-  sealed trait `bad-grammar` extends SpeechRecognitionErrorCode
   
   @js.native
   sealed trait balanced
@@ -1375,6 +1366,9 @@ object stdStrings {
   sealed trait frozen extends RTCStatsIceCandidatePairState
   
   @js.native
+  sealed trait fulfilled extends js.Object
+  
+  @js.native
   sealed trait fullscreenchange extends js.Object
   
   @js.native
@@ -1505,10 +1499,10 @@ object stdStrings {
   sealed trait html extends js.Object
   
   @js.native
-  sealed trait `http://wwwDOTw3DOTorg/1999/xhtml` extends js.Object
+  sealed trait httpColonSlashSlashwwwDotw3DotorgSlash1999Slashxhtml extends js.Object
   
   @js.native
-  sealed trait `http://wwwDOTw3DOTorg/2000/svg` extends js.Object
+  sealed trait httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg extends js.Object
   
   @js.native
   sealed trait i extends js.Object
@@ -1568,7 +1562,7 @@ object stdStrings {
   sealed trait image extends RequestDestination
   
   @js.native
-  sealed trait `image/svg+xml` extends SupportedType
+  sealed trait imageSlashsvgPlussignxml extends SupportedType
   
   @js.native
   sealed trait img extends js.Object
@@ -1682,9 +1676,6 @@ object stdStrings {
   sealed trait `landscape-secondary`
     extends OrientationLockType
        with OrientationType
-  
-  @js.native
-  sealed trait `language-not-supported` extends SpeechRecognitionErrorCode
   
   @js.native
   sealed trait `language-unavailable` extends SpeechSynthesisErrorCode
@@ -1961,7 +1952,6 @@ object stdStrings {
   @js.native
   sealed trait network
     extends EndOfStreamError
-       with SpeechRecognitionErrorCode
        with SpeechSynthesisErrorCode
   
   @js.native
@@ -1997,9 +1987,6 @@ object stdStrings {
   sealed trait `no-referrer-when-downgrade` extends ReferrerPolicy
   
   @js.native
-  sealed trait `no-speech` extends SpeechRecognitionErrorCode
-  
-  @js.native
   sealed trait `no-store` extends RequestCache
   
   @js.native
@@ -2027,7 +2014,7 @@ object stdStrings {
   @js.native
   sealed trait `not-allowed`
     extends MediaKeysRequirement
-       with SpeechRecognitionErrorCode
+       with SpeechSynthesisErrorCode
   
   @js.native
   sealed trait `not-equal` extends js.Object
@@ -2138,6 +2125,9 @@ object stdStrings {
   
   @js.native
   sealed trait param extends js.Object
+  
+  @js.native
+  sealed trait parsed extends ServiceWorkerState
   
   @js.native
   sealed trait passive extends RTCIceTcpCandidateType
@@ -2344,6 +2334,9 @@ object stdStrings {
   sealed trait redundant extends ServiceWorkerState
   
   @js.native
+  sealed trait rejected extends js.Object
+  
+  @js.native
   sealed trait rejectionhandled extends js.Object
   
   @js.native
@@ -2531,9 +2524,6 @@ object stdStrings {
   sealed trait serverreflexive extends RTCStatsIceCandidateType
   
   @js.native
-  sealed trait `service-not-allowed` extends SpeechRecognitionErrorCode
-  
-  @js.native
   sealed trait session extends RTCStatsType
   
   @js.native
@@ -2654,6 +2644,9 @@ object stdStrings {
   sealed trait stop extends js.Object
   
   @js.native
+  sealed trait stopped extends RTCRtpTransceiverDirection
+  
+  @js.native
   sealed trait storage extends js.Object
   
   @js.native
@@ -2744,13 +2737,13 @@ object stdStrings {
   sealed trait `text-too-long` extends SpeechSynthesisErrorCode
   
   @js.native
-  sealed trait `text/html` extends SupportedType
-  
-  @js.native
-  sealed trait `text/xml` extends SupportedType
-  
-  @js.native
   sealed trait textPath extends js.Object
+  
+  @js.native
+  sealed trait textSlashhtml extends SupportedType
+  
+  @js.native
+  sealed trait textSlashxml extends SupportedType
   
   @js.native
   sealed trait textarea extends js.Object
@@ -2851,6 +2844,7 @@ object stdStrings {
   sealed trait unknown
     extends MSWebViewPermissionState
        with PaymentComplete
+       with RTCIceRole
   
   @js.native
   sealed trait unlimitedIndexedDBQuota extends MSWebViewPermissionType
@@ -3074,8 +3068,6 @@ object stdStrings {
   @scala.inline
   def Embedded: Embedded = "Embedded".asInstanceOf[Embedded]
   @scala.inline
-  def Empty: Empty = "".asInstanceOf[Empty]
-  @scala.inline
   def ErrorEvent: ErrorEvent = "ErrorEvent".asInstanceOf[ErrorEvent]
   @scala.inline
   def Event: Event = "Event".asInstanceOf[Event]
@@ -3228,6 +3220,8 @@ object stdStrings {
   @scala.inline
   def ProgressEvent: ProgressEvent = "ProgressEvent".asInstanceOf[ProgressEvent]
   @scala.inline
+  def PromiseConstructor: PromiseConstructor = "PromiseConstructor".asInstanceOf[PromiseConstructor]
+  @scala.inline
   def PromiseRejectionEvent: PromiseRejectionEvent = "PromiseRejectionEvent".asInstanceOf[PromiseRejectionEvent]
   @scala.inline
   def RTCDTMFToneChangeEvent: RTCDTMFToneChangeEvent = "RTCDTMFToneChangeEvent".asInstanceOf[RTCDTMFToneChangeEvent]
@@ -3273,8 +3267,6 @@ object stdStrings {
   def ServiceWorkerMessageEvent: ServiceWorkerMessageEvent = "ServiceWorkerMessageEvent".asInstanceOf[ServiceWorkerMessageEvent]
   @scala.inline
   def SharedArrayBuffer: SharedArrayBuffer = "SharedArrayBuffer".asInstanceOf[SharedArrayBuffer]
-  @scala.inline
-  def SpeechRecognitionError: SpeechRecognitionError = "SpeechRecognitionError".asInstanceOf[SpeechRecognitionError]
   @scala.inline
   def SpeechRecognitionEvent: SpeechRecognitionEvent = "SpeechRecognitionEvent".asInstanceOf[SpeechRecognitionEvent]
   @scala.inline
@@ -3332,6 +3324,8 @@ object stdStrings {
   @scala.inline
   def WheelEvent: WheelEvent = "WheelEvent".asInstanceOf[WheelEvent]
   @scala.inline
+  def _empty: _empty = "".asInstanceOf[_empty]
+  @scala.inline
   def a: a = "a".asInstanceOf[a]
   @scala.inline
   def `a-rate`: `a-rate` = "a-rate".asInstanceOf[`a-rate`]
@@ -3339,8 +3333,6 @@ object stdStrings {
   def abbr: abbr = "abbr".asInstanceOf[abbr]
   @scala.inline
   def abort: abort = "abort".asInstanceOf[abort]
-  @scala.inline
-  def aborted: aborted = "aborted".asInstanceOf[aborted]
   @scala.inline
   def accelerometer: accelerometer = "accelerometer".asInstanceOf[accelerometer]
   @scala.inline
@@ -3398,9 +3390,9 @@ object stdStrings {
   @scala.inline
   def application: application = "application".asInstanceOf[application]
   @scala.inline
-  def `application/xhtml+xml`: `application/xhtml+xml` = "application/xhtml+xml".asInstanceOf[`application/xhtml+xml`]
+  def applicationSlashxhtmlPlussignxml: applicationSlashxhtmlPlussignxml = "application/xhtml+xml".asInstanceOf[applicationSlashxhtmlPlussignxml]
   @scala.inline
-  def `application/xml`: `application/xml` = "application/xml".asInstanceOf[`application/xml`]
+  def applicationSlashxml: applicationSlashxml = "application/xml".asInstanceOf[applicationSlashxml]
   @scala.inline
   def area: area = "area".asInstanceOf[area]
   @scala.inline
@@ -3417,8 +3409,6 @@ object stdStrings {
   def audio: audio = "audio".asInstanceOf[audio]
   @scala.inline
   def `audio-busy`: `audio-busy` = "audio-busy".asInstanceOf[`audio-busy`]
-  @scala.inline
-  def `audio-capture`: `audio-capture` = "audio-capture".asInstanceOf[`audio-capture`]
   @scala.inline
   def `audio-hardware`: `audio-hardware` = "audio-hardware".asInstanceOf[`audio-hardware`]
   @scala.inline
@@ -3449,8 +3439,6 @@ object stdStrings {
   def backward: backward = "backward".asInstanceOf[backward]
   @scala.inline
   def backwards: backwards = "backwards".asInstanceOf[backwards]
-  @scala.inline
-  def `bad-grammar`: `bad-grammar` = "bad-grammar".asInstanceOf[`bad-grammar`]
   @scala.inline
   def balanced: balanced = "balanced".asInstanceOf[balanced]
   @scala.inline
@@ -3864,6 +3852,8 @@ object stdStrings {
   @scala.inline
   def frozen: frozen = "frozen".asInstanceOf[frozen]
   @scala.inline
+  def fulfilled: fulfilled = "fulfilled".asInstanceOf[fulfilled]
+  @scala.inline
   def fullscreenchange: fullscreenchange = "fullscreenchange".asInstanceOf[fullscreenchange]
   @scala.inline
   def fullscreenerror: fullscreenerror = "fullscreenerror".asInstanceOf[fullscreenerror]
@@ -3942,9 +3932,9 @@ object stdStrings {
   @scala.inline
   def html: html = "html".asInstanceOf[html]
   @scala.inline
-  def `http://wwwDOTw3DOTorg/1999/xhtml`: `http://wwwDOTw3DOTorg/1999/xhtml` = "http://www.w3.org/1999/xhtml".asInstanceOf[`http://wwwDOTw3DOTorg/1999/xhtml`]
+  def httpColonSlashSlashwwwDotw3DotorgSlash1999Slashxhtml: httpColonSlashSlashwwwDotw3DotorgSlash1999Slashxhtml = "http://www.w3.org/1999/xhtml".asInstanceOf[httpColonSlashSlashwwwDotw3DotorgSlash1999Slashxhtml]
   @scala.inline
-  def `http://wwwDOTw3DOTorg/2000/svg`: `http://wwwDOTw3DOTorg/2000/svg` = "http://www.w3.org/2000/svg".asInstanceOf[`http://wwwDOTw3DOTorg/2000/svg`]
+  def httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg: httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg = "http://www.w3.org/2000/svg".asInstanceOf[httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg]
   @scala.inline
   def i: i = "i".asInstanceOf[i]
   @scala.inline
@@ -3984,7 +3974,7 @@ object stdStrings {
   @scala.inline
   def image: image = "image".asInstanceOf[image]
   @scala.inline
-  def `image/svg+xml`: `image/svg+xml` = "image/svg+xml".asInstanceOf[`image/svg+xml`]
+  def imageSlashsvgPlussignxml: imageSlashsvgPlussignxml = "image/svg+xml".asInstanceOf[imageSlashsvgPlussignxml]
   @scala.inline
   def img: img = "img".asInstanceOf[img]
   @scala.inline
@@ -4055,8 +4045,6 @@ object stdStrings {
   def `landscape-primary`: `landscape-primary` = "landscape-primary".asInstanceOf[`landscape-primary`]
   @scala.inline
   def `landscape-secondary`: `landscape-secondary` = "landscape-secondary".asInstanceOf[`landscape-secondary`]
-  @scala.inline
-  def `language-not-supported`: `language-not-supported` = "language-not-supported".asInstanceOf[`language-not-supported`]
   @scala.inline
   def `language-unavailable`: `language-unavailable` = "language-unavailable".asInstanceOf[`language-unavailable`]
   @scala.inline
@@ -4246,8 +4234,6 @@ object stdStrings {
   @scala.inline
   def `no-referrer-when-downgrade`: `no-referrer-when-downgrade` = "no-referrer-when-downgrade".asInstanceOf[`no-referrer-when-downgrade`]
   @scala.inline
-  def `no-speech`: `no-speech` = "no-speech".asInstanceOf[`no-speech`]
-  @scala.inline
   def `no-store`: `no-store` = "no-store".asInstanceOf[`no-store`]
   @scala.inline
   def nohost: nohost = "nohost".asInstanceOf[nohost]
@@ -4333,6 +4319,8 @@ object stdStrings {
   def paintworklet: paintworklet = "paintworklet".asInstanceOf[paintworklet]
   @scala.inline
   def param: param = "param".asInstanceOf[param]
+  @scala.inline
+  def parsed: parsed = "parsed".asInstanceOf[parsed]
   @scala.inline
   def passive: passive = "passive".asInstanceOf[passive]
   @scala.inline
@@ -4466,6 +4454,8 @@ object stdStrings {
   @scala.inline
   def redundant: redundant = "redundant".asInstanceOf[redundant]
   @scala.inline
+  def rejected: rejected = "rejected".asInstanceOf[rejected]
+  @scala.inline
   def rejectionhandled: rejectionhandled = "rejectionhandled".asInstanceOf[rejectionhandled]
   @scala.inline
   def relay: relay = "relay".asInstanceOf[relay]
@@ -4574,8 +4564,6 @@ object stdStrings {
   @scala.inline
   def serverreflexive: serverreflexive = "serverreflexive".asInstanceOf[serverreflexive]
   @scala.inline
-  def `service-not-allowed`: `service-not-allowed` = "service-not-allowed".asInstanceOf[`service-not-allowed`]
-  @scala.inline
   def session: session = "session".asInstanceOf[session]
   @scala.inline
   def sharedworker: sharedworker = "sharedworker".asInstanceOf[sharedworker]
@@ -4650,6 +4638,8 @@ object stdStrings {
   @scala.inline
   def stop: stop = "stop".asInstanceOf[stop]
   @scala.inline
+  def stopped: stopped = "stopped".asInstanceOf[stopped]
+  @scala.inline
   def storage: storage = "storage".asInstanceOf[storage]
   @scala.inline
   def `strict-origin`: `strict-origin` = "strict-origin".asInstanceOf[`strict-origin`]
@@ -4710,11 +4700,11 @@ object stdStrings {
   @scala.inline
   def `text-too-long`: `text-too-long` = "text-too-long".asInstanceOf[`text-too-long`]
   @scala.inline
-  def `text/html`: `text/html` = "text/html".asInstanceOf[`text/html`]
-  @scala.inline
-  def `text/xml`: `text/xml` = "text/xml".asInstanceOf[`text/xml`]
-  @scala.inline
   def textPath: textPath = "textPath".asInstanceOf[textPath]
+  @scala.inline
+  def textSlashhtml: textSlashhtml = "text/html".asInstanceOf[textSlashhtml]
+  @scala.inline
+  def textSlashxml: textSlashxml = "text/xml".asInstanceOf[textSlashxml]
   @scala.inline
   def textarea: textarea = "textarea".asInstanceOf[textarea]
   @scala.inline

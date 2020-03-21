@@ -20,7 +20,7 @@ import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
 import japgolly.scalajs.react.vdom.VdomNode
 import org.scalablytyped.runtime.StringDictionary
 import org.scalajs.dom.raw.HTMLLIElement
-import typingsJapgolly.antd.Anon_DomEvent
+import typingsJapgolly.antd.AnonDomEvent
 import typingsJapgolly.antd.antdStrings.`additions text`
 import typingsJapgolly.antd.antdStrings.`inline`
 import typingsJapgolly.antd.antdStrings.additions
@@ -38,6 +38,7 @@ import typingsJapgolly.antd.antdStrings.execute
 import typingsJapgolly.antd.antdStrings.grammar
 import typingsJapgolly.antd.antdStrings.grid
 import typingsJapgolly.antd.antdStrings.horizontal
+import typingsJapgolly.antd.antdStrings.inherit
 import typingsJapgolly.antd.antdStrings.link
 import typingsJapgolly.antd.antdStrings.list
 import typingsJapgolly.antd.antdStrings.listbox
@@ -65,11 +66,12 @@ import typingsJapgolly.antd.antdStrings.tree
 import typingsJapgolly.antd.antdStrings.url
 import typingsJapgolly.antd.antdStrings.vertical
 import typingsJapgolly.antd.antdStrings.yes
-import typingsJapgolly.antd.libMenuMenuItemMod.MenuItemProps
-import typingsJapgolly.antd.libMenuMenuItemMod.default
-import typingsJapgolly.antd.libMenuMod.ClickParam
-import typingsJapgolly.react.Anon_Html
-import typingsJapgolly.react.reactMod.CSSProperties
+import typingsJapgolly.antd.menuItemMod.MenuItemProps
+import typingsJapgolly.antd.menuItemMod.default
+import typingsJapgolly.antd.menuMod.ClickParam
+import typingsJapgolly.react.AnonHtml
+import typingsJapgolly.react.mod.Booleanish
+import typingsJapgolly.react.mod.CSSProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -131,9 +133,9 @@ object MenuItem {
     autoSave: String = null,
     className: String = null,
     color: String = null,
-    contentEditable: js.UndefOr[Boolean] = js.undefined,
+    contentEditable: Booleanish | inherit = null,
     contextMenu: String = null,
-    dangerouslySetInnerHTML: Anon_Html = null,
+    dangerouslySetInnerHTML: AnonHtml = null,
     datatype: String = null,
     defaultChecked: js.UndefOr[Boolean] = js.undefined,
     defaultValue: String | Double | js.Array[String] = null,
@@ -194,8 +196,8 @@ object MenuItem {
     onLoadedData: ReactEventFrom[HTMLLIElement] => Callback = null,
     onLoadedMetadata: ReactEventFrom[HTMLLIElement] => Callback = null,
     onMouseDown: ReactMouseEventFrom[HTMLLIElement] => Callback = null,
-    onMouseEnter: /* e */ Anon_DomEvent => Callback = null,
-    onMouseLeave: /* e */ Anon_DomEvent => Callback = null,
+    onMouseEnter: /* e */ AnonDomEvent => Callback = null,
+    onMouseLeave: /* e */ AnonDomEvent => Callback = null,
     onMouseMove: ReactMouseEventFrom[HTMLLIElement] => Callback = null,
     onMouseOut: ReactMouseEventFrom[HTMLLIElement] => Callback = null,
     onMouseOver: ReactMouseEventFrom[HTMLLIElement] => Callback = null,
@@ -252,7 +254,7 @@ object MenuItem {
     unselectable: on | off = null,
     vocab: String = null,
     key: js.UndefOr[Key] = js.undefined,
-    overrides: StringDictionary[js.Any] = null
+    _overrides: StringDictionary[js.Any] = null
   )(
     children: ChildArg*
   ): UnmountedWithRoot[MenuItemProps, default, Unit, MenuItemProps] = {
@@ -313,7 +315,7 @@ object MenuItem {
     if (autoSave != null) __obj.updateDynamic("autoSave")(autoSave.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (!js.isUndefined(contentEditable)) __obj.updateDynamic("contentEditable")(contentEditable.asInstanceOf[js.Any])
+    if (contentEditable != null) __obj.updateDynamic("contentEditable")(contentEditable.asInstanceOf[js.Any])
     if (contextMenu != null) __obj.updateDynamic("contextMenu")(contextMenu.asInstanceOf[js.Any])
     if (dangerouslySetInnerHTML != null) __obj.updateDynamic("dangerouslySetInnerHTML")(dangerouslySetInnerHTML.asInstanceOf[js.Any])
     if (datatype != null) __obj.updateDynamic("datatype")(datatype.asInstanceOf[js.Any])
@@ -344,7 +346,7 @@ object MenuItem {
     if (onCanPlay != null) __obj.updateDynamic("onCanPlay")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[org.scalajs.dom.raw.HTMLLIElement]) => onCanPlay(t0).runNow()))
     if (onCanPlayThrough != null) __obj.updateDynamic("onCanPlayThrough")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[org.scalajs.dom.raw.HTMLLIElement]) => onCanPlayThrough(t0).runNow()))
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[org.scalajs.dom.raw.HTMLLIElement]) => onChange(t0).runNow()))
-    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1((t0: /* param */ typingsJapgolly.antd.libMenuMod.ClickParam) => onClick(t0).runNow()))
+    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1((t0: /* param */ typingsJapgolly.antd.menuMod.ClickParam) => onClick(t0).runNow()))
     if (onCompositionEnd != null) __obj.updateDynamic("onCompositionEnd")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactCompositionEventFrom[org.scalajs.dom.raw.HTMLLIElement]) => onCompositionEnd(t0).runNow()))
     if (onCompositionStart != null) __obj.updateDynamic("onCompositionStart")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactCompositionEventFrom[org.scalajs.dom.raw.HTMLLIElement]) => onCompositionStart(t0).runNow()))
     if (onCompositionUpdate != null) __obj.updateDynamic("onCompositionUpdate")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactCompositionEventFrom[org.scalajs.dom.raw.HTMLLIElement]) => onCompositionUpdate(t0).runNow()))
@@ -376,8 +378,8 @@ object MenuItem {
     if (onLoadedData != null) __obj.updateDynamic("onLoadedData")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[org.scalajs.dom.raw.HTMLLIElement]) => onLoadedData(t0).runNow()))
     if (onLoadedMetadata != null) __obj.updateDynamic("onLoadedMetadata")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[org.scalajs.dom.raw.HTMLLIElement]) => onLoadedMetadata(t0).runNow()))
     if (onMouseDown != null) __obj.updateDynamic("onMouseDown")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactMouseEventFrom[org.scalajs.dom.raw.HTMLLIElement]) => onMouseDown(t0).runNow()))
-    if (onMouseEnter != null) __obj.updateDynamic("onMouseEnter")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.antd.Anon_DomEvent) => onMouseEnter(t0).runNow()))
-    if (onMouseLeave != null) __obj.updateDynamic("onMouseLeave")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.antd.Anon_DomEvent) => onMouseLeave(t0).runNow()))
+    if (onMouseEnter != null) __obj.updateDynamic("onMouseEnter")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.antd.AnonDomEvent) => onMouseEnter(t0).runNow()))
+    if (onMouseLeave != null) __obj.updateDynamic("onMouseLeave")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.antd.AnonDomEvent) => onMouseLeave(t0).runNow()))
     if (onMouseMove != null) __obj.updateDynamic("onMouseMove")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactMouseEventFrom[org.scalajs.dom.raw.HTMLLIElement]) => onMouseMove(t0).runNow()))
     if (onMouseOut != null) __obj.updateDynamic("onMouseOut")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactMouseEventFrom[org.scalajs.dom.raw.HTMLLIElement]) => onMouseOut(t0).runNow()))
     if (onMouseOver != null) __obj.updateDynamic("onMouseOver")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactMouseEventFrom[org.scalajs.dom.raw.HTMLLIElement]) => onMouseOver(t0).runNow()))
@@ -434,13 +436,13 @@ object MenuItem {
     if (unselectable != null) __obj.updateDynamic("unselectable")(unselectable.asInstanceOf[js.Any])
     if (vocab != null) __obj.updateDynamic("vocab")(vocab.asInstanceOf[js.Any])
     key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (overrides != null) js.Dynamic.global.Object.assign(__obj, overrides)
+    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
   
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antd.libMenuMenuItemMod.MenuItemProps, 
+  typingsJapgolly.antd.menuItemMod.MenuItemProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antd.libMenuMenuItemMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.antd.libMenuMenuItemMod.MenuItemProps])(children: _*)
+  typingsJapgolly.antd.menuItemMod.default](this.componentImport)
+    f(__obj.asInstanceOf[typingsJapgolly.antd.menuItemMod.MenuItemProps])(children: _*)
   }
   @JSImport("antd/lib/menu/MenuItem", JSImport.Default)
   @js.native

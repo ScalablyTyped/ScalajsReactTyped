@@ -1,0 +1,45 @@
+package typingsJapgolly.stormReactDiagrams.components
+
+import japgolly.scalajs.react.Key
+import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
+import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.stormReactDiagrams.diagramEngineMod.DiagramEngine
+import typingsJapgolly.stormReactDiagrams.nodeModelMod.NodeModel
+import typingsJapgolly.stormReactDiagrams.nodeWidgetMod.NodeProps
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+object NodeWidget {
+  def apply(
+    diagramEngine: DiagramEngine,
+    node: NodeModel,
+    baseClass: String = null,
+    className: String = null,
+    extraProps: js.Any = null,
+    key: js.UndefOr[Key] = js.undefined,
+    _overrides: StringDictionary[js.Any] = null
+  )(
+    children: js.Any = null
+  ): UnmountedWithRoot[NodeProps, typingsJapgolly.stormReactDiagrams.mod.NodeWidget, Unit, NodeProps] = {
+    val __obj = js.Dynamic.literal(diagramEngine = diagramEngine.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any])
+  
+      if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (baseClass != null) __obj.updateDynamic("baseClass")(baseClass.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (extraProps != null) __obj.updateDynamic("extraProps")(extraProps.asInstanceOf[js.Any])
+    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
+    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
+  
+    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
+  typingsJapgolly.stormReactDiagrams.nodeWidgetMod.NodeProps, 
+  japgolly.scalajs.react.Children.None, 
+  typingsJapgolly.stormReactDiagrams.mod.NodeWidget](this.componentImport)
+    f(__obj.asInstanceOf[typingsJapgolly.stormReactDiagrams.nodeWidgetMod.NodeProps])
+  }
+  @JSImport("storm-react-diagrams", "NodeWidget")
+  @js.native
+  object componentImport extends js.Object
+  
+}
+

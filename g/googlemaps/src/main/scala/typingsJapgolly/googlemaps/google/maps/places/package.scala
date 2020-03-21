@@ -6,13 +6,13 @@ import scala.scalajs.js.annotation._
 
 package object places {
   /* Rewritten from type alias, can be one of: 
-    - typings.googlemaps.google.maps.LatLng
-    - typings.googlemaps.google.maps.LatLngLiteral
-    - typings.googlemaps.google.maps.LatLngBounds
-    - typings.googlemaps.google.maps.LatLngBoundsLiteral
-    - typings.googlemaps.google.maps.Circle
-    - typings.googlemaps.google.maps.CircleLiteral
+    - typingsJapgolly.googlemaps.google.maps.LatLng
+    - typingsJapgolly.googlemaps.google.maps.LatLngLiteral
+    - typingsJapgolly.googlemaps.google.maps.LatLngBounds
+    - typingsJapgolly.googlemaps.google.maps.LatLngBoundsLiteral
+    - typingsJapgolly.googlemaps.google.maps.Circle
+    - typingsJapgolly.googlemaps.google.maps.CircleLiteral
     - java.lang.String
   */
-  type LocationBias = _LocationBias | String
+  type LocationBias = typingsJapgolly.googlemaps.google.maps.places._LocationBias | java.lang.String
 }

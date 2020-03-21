@@ -1,30 +1,30 @@
-organization := "org.gulliblytyped.japgolly"
+organization := "org.scalablytyped.japgolly"
 name := "storybook__addons"
-version := "5.2.6-304d8e"
-scalaVersion := "2.12.10"
+version := "5.3.13-70e3a8"
+scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.github.japgolly.scalajs-react" %%% "core" % "1.4.2",
+  "com.github.japgolly.scalajs-react" %%% "core" % "1.5.0",
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.gulliblytyped.japgolly" %%% "csstype" % "2.6.6-42c42f",
-  "org.gulliblytyped.japgolly" %%% "emotion-theming" % "10.0.19-b58dea",
-  "org.gulliblytyped.japgolly" %%% "emotion__core" % "10.0.20-da01bb",
-  "org.gulliblytyped.japgolly" %%% "emotion__serialize" % "0.11.11-75c143",
-  "org.gulliblytyped.japgolly" %%% "emotion__styled" % "10.0.23-0af10b",
-  "org.gulliblytyped.japgolly" %%% "emotion__styled-base" % "10.0.24-3193c7",
-  "org.gulliblytyped.japgolly" %%% "emotion__utils" % "0.11.2-63ed4b",
-  "org.gulliblytyped.japgolly" %%% "history" % "4.7.2-dt-20191126Z-a1dd63",
-  "org.gulliblytyped.japgolly" %%% "node" % "12.12-dt-20191126Z-fec8d2",
-  "org.gulliblytyped.japgolly" %%% "prop-types" % "15.7-dt-20190924Z-56dadc",
-  "org.gulliblytyped.japgolly" %%% "reach__router" % "1.2-dt-20191009Z-bb20a0",
-  "org.gulliblytyped.japgolly" %%% "react" % "16.9-dt-20191126Z-082653",
-  "org.gulliblytyped.japgolly" %%% "std" % "3.7-ed3398",
-  "org.gulliblytyped.japgolly" %%% "storybook__api" % "5.2.6-70fda6",
-  "org.gulliblytyped.japgolly" %%% "storybook__channels" % "5.2.6-7e08ca",
-  "org.gulliblytyped.japgolly" %%% "storybook__theming" % "5.2.6-14a02b")
+  "org.scalablytyped.japgolly" %%% "csstype" % "2.6.6-ec7cc3",
+  "org.scalablytyped.japgolly" %%% "emotion-theming" % "10.0.27-781279",
+  "org.scalablytyped.japgolly" %%% "emotion__core" % "10.0.20-0e81d9",
+  "org.scalablytyped.japgolly" %%% "emotion__serialize" % "0.11.11-978262",
+  "org.scalablytyped.japgolly" %%% "emotion__styled" % "10.0.23-12e386",
+  "org.scalablytyped.japgolly" %%% "emotion__styled-base" % "10.0.24-f71674",
+  "org.scalablytyped.japgolly" %%% "emotion__utils" % "0.11.2-faa2eb",
+  "org.scalablytyped.japgolly" %%% "history" % "4.7.2-dt-20200226Z-0e787a",
+  "org.scalablytyped.japgolly" %%% "node" % "13.7-dt-20200228Z-e4cd2e",
+  "org.scalablytyped.japgolly" %%% "prop-types" % "15.7-dt-20190924Z-d18e40",
+  "org.scalablytyped.japgolly" %%% "reach__router" % "1.3-dt-20200212Z-936174",
+  "org.scalablytyped.japgolly" %%% "react" % "16.9-dt-20200227Z-a90427",
+  "org.scalablytyped.japgolly" %%% "std" % "3.8-8884a5",
+  "org.scalablytyped.japgolly" %%% "storybook__api" % "5.3.13-9de0c2",
+  "org.scalablytyped.japgolly" %%% "storybook__channels" % "5.3.13-402241",
+  "org.scalablytyped.japgolly" %%% "storybook__router" % "5.3.13-2aa60c",
+  "org.scalablytyped.japgolly" %%% "storybook__theming" % "5.3.13-e2d395")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
+scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
 bintrayRepository := "ScalajsReactTyped"
 resolvers += Resolver.bintrayRepo("oyvindberg", "ScalajsReactTyped")
-        

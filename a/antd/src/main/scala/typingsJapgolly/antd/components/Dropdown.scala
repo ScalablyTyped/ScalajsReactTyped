@@ -5,24 +5,24 @@ import japgolly.scalajs.react.CallbackTo
 import japgolly.scalajs.react.CtorType.ChildArg
 import japgolly.scalajs.react.Key
 import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import japgolly.scalajs.react.raw.React.Node
 import org.scalablytyped.runtime.StringDictionary
 import org.scalajs.dom.raw.HTMLElement
 import typingsJapgolly.antd.antdStrings.click
 import typingsJapgolly.antd.antdStrings.contextMenu
 import typingsJapgolly.antd.antdStrings.hover
-import typingsJapgolly.antd.libDropdownDropdownMod.Align
-import typingsJapgolly.antd.libDropdownDropdownMod.DropDownProps
-import typingsJapgolly.antd.libDropdownDropdownMod.OverlayFunc
-import typingsJapgolly.antd.libDropdownDropdownMod.Placement
-import typingsJapgolly.antd.libDropdownMod.default
-import typingsJapgolly.react.reactMod.CSSProperties
+import typingsJapgolly.antd.dropdownDropdownMod.Align
+import typingsJapgolly.antd.dropdownDropdownMod.DropDownProps
+import typingsJapgolly.antd.dropdownDropdownMod.OverlayFunc
+import typingsJapgolly.antd.dropdownDropdownMod.Placement
+import typingsJapgolly.antd.dropdownMod.default
+import typingsJapgolly.react.mod.CSSProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 object Dropdown {
   def apply(
+    overlay: japgolly.scalajs.react.raw.React.Element | OverlayFunc,
     align: Align = null,
     className: String = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
@@ -32,7 +32,6 @@ object Dropdown {
     mouseLeaveDelay: Int | Double = null,
     onVisibleChange: /* visible */ Boolean => Callback = null,
     openClassName: String = null,
-    overlay: Node | OverlayFunc = null,
     overlayClassName: String = null,
     overlayStyle: CSSProperties = null,
     placement: Placement = null,
@@ -41,11 +40,11 @@ object Dropdown {
     trigger: js.Array[click | hover | contextMenu] = null,
     visible: js.UndefOr[Boolean] = js.undefined,
     key: js.UndefOr[Key] = js.undefined,
-    overrides: StringDictionary[js.Any] = null
+    _overrides: StringDictionary[js.Any] = null
   )(
     children: ChildArg*
   ): UnmountedWithRoot[DropDownProps, default, Unit, DropDownProps] = {
-    val __obj = js.Dynamic.literal()
+    val __obj = js.Dynamic.literal(overlay = overlay.asInstanceOf[js.Any])
   
       if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
@@ -56,7 +55,6 @@ object Dropdown {
     if (mouseLeaveDelay != null) __obj.updateDynamic("mouseLeaveDelay")(mouseLeaveDelay.asInstanceOf[js.Any])
     if (onVisibleChange != null) __obj.updateDynamic("onVisibleChange")(js.Any.fromFunction1((t0: /* visible */ scala.Boolean) => onVisibleChange(t0).runNow()))
     if (openClassName != null) __obj.updateDynamic("openClassName")(openClassName.asInstanceOf[js.Any])
-    if (overlay != null) __obj.updateDynamic("overlay")(overlay.asInstanceOf[js.Any])
     if (overlayClassName != null) __obj.updateDynamic("overlayClassName")(overlayClassName.asInstanceOf[js.Any])
     if (overlayStyle != null) __obj.updateDynamic("overlayStyle")(overlayStyle.asInstanceOf[js.Any])
     if (placement != null) __obj.updateDynamic("placement")(placement.asInstanceOf[js.Any])
@@ -65,13 +63,13 @@ object Dropdown {
     if (trigger != null) __obj.updateDynamic("trigger")(trigger.asInstanceOf[js.Any])
     if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (overrides != null) js.Dynamic.global.Object.assign(__obj, overrides)
+    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
   
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antd.libDropdownDropdownMod.DropDownProps, 
+  typingsJapgolly.antd.dropdownDropdownMod.DropDownProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antd.libDropdownMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.antd.libDropdownDropdownMod.DropDownProps])(children: _*)
+  typingsJapgolly.antd.dropdownMod.default](this.componentImport)
+    f(__obj.asInstanceOf[typingsJapgolly.antd.dropdownDropdownMod.DropDownProps])(children: _*)
   }
   @JSImport("antd/lib/dropdown", JSImport.Default)
   @js.native

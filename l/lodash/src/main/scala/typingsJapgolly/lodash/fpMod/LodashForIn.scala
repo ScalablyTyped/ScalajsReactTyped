@@ -1,6 +1,6 @@
 package typingsJapgolly.lodash.fpMod
 
-import typingsJapgolly.lodash.lodashMod.__
+import typingsJapgolly.lodash.mod.__
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,6 +16,6 @@ trait LodashForIn extends js.Object {
     `object`: T
   ): js.UndefOr[T | Null] = js.native
   def apply[T](iteratee: __): LodashForIn2x2[T] = js.native
-  def apply[T](iteratee: __, `object`: T): LodashForIn1x2[T] = js.native
+  def apply[T](iteratee: __, `object`: T): LodashForIn2x2[T] = js.native
 }
 

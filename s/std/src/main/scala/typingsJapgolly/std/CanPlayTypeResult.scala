@@ -5,15 +5,15 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
-  - typings.std.stdStrings.Empty
-  - typings.std.stdStrings.maybe
-  - typings.std.stdStrings.probably
+  - typingsJapgolly.std.stdStrings._empty
+  - typingsJapgolly.std.stdStrings.maybe
+  - typingsJapgolly.std.stdStrings.probably
 */
 trait CanPlayTypeResult extends js.Object
 
 object CanPlayTypeResult {
   @scala.inline
-  def Empty: typingsJapgolly.std.stdStrings.Empty = this.cast("")
+  def _empty: typingsJapgolly.std.stdStrings._empty = this.cast("")
   @scala.inline
   /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
   @scala.inline

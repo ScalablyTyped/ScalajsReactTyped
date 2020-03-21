@@ -1,0 +1,21 @@
+package typingsJapgolly.devexpressAspnetcoreBootstrap.DevExpress
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+package object AspNetCore {
+  type BootstrapCheckBoxListEventMap = typingsJapgolly.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore.BootstrapListBoxEventMap
+  type BootstrapFormLayoutEventMap = typingsJapgolly.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore.ControlEventMap
+  type BootstrapPageControlEventMap = typingsJapgolly.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore.BootstrapTabControlEventMap
+  type BootstrapPopupMenuEventMap = typingsJapgolly.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore.BootstrapMenuEventMap
+  type BootstrapProgressBarEventMap = typingsJapgolly.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore.ControlEventMap
+  type BootstrapRadioButtonListEventMap = typingsJapgolly.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore.BootstrapListBoxEventMap
+  type BootstrapToolbarEventMap = typingsJapgolly.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore.BootstrapMenuEventMap
+  type BootstrapTreeViewNodeEventMap = typingsJapgolly.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore.ControlEventMap
+  type BootstrapUploadControlFileEventMap = typingsJapgolly.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore.ControlEventMap
+  type BootstrapUploadControlInvalidFileInfoEventMap = typingsJapgolly.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore.ControlEventMap
+  type BootstrapUploadControlValidationSettingsEventMap = typingsJapgolly.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore.ControlEventMap
+  type EndCallbackEventArgs = typingsJapgolly.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore.EventArgs
+  type MenuItemMouseEventArgs = typingsJapgolly.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore.MenuItemEventArgs
+}

@@ -1,7 +1,7 @@
 package typingsJapgolly.lodash.fpMod
 
-import typingsJapgolly.lodash.lodashMod.List
-import typingsJapgolly.lodash.lodashMod.__
+import typingsJapgolly.lodash.mod.List
+import typingsJapgolly.lodash.mod.__
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,7 +18,7 @@ trait LodashFill1x4[T] extends js.Object {
   def apply[U](start: Double, end: __, array: List[U]): LodashFill2x13[T, U] = js.native
   def apply[U](start: __, end: Double, array: js.Array[U]): LodashFill1x14[T, U] = js.native
   def apply[U](start: __, end: Double, array: List[U]): LodashFill2x14[T, U] = js.native
-  def apply[U](start: __, end: __): LodashFill2x12[T, U] = js.native
+  def apply[U](start: __, end: __): LodashFill1x12[T, U] = js.native
   def apply[U](start: __, end: __, array: js.Array[U]): LodashFill1x12[T, U] = js.native
   def apply[U](start: __, end: __, array: List[U]): LodashFill2x12[T, U] = js.native
 }

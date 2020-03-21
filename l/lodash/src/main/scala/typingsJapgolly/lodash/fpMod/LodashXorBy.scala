@@ -1,18 +1,18 @@
 package typingsJapgolly.lodash.fpMod
 
-import typingsJapgolly.lodash.lodashMod.List
-import typingsJapgolly.lodash.lodashMod.ValueIteratee
-import typingsJapgolly.lodash.lodashMod.__
+import typingsJapgolly.lodash.mod.List
+import typingsJapgolly.lodash.mod.ValueIteratee
+import typingsJapgolly.lodash.mod.__
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
 trait LodashXorBy extends js.Object {
-  def apply[T](iteratee: ValueIteratee[T]): LodashXorBy1x1[T] = js.native
+  def apply[T](iteratee: ValueIteratee[T]): LodashXorBy1x3[T] = js.native
   def apply[T](iteratee: ValueIteratee[T], arrays: js.UndefOr[scala.Nothing], arrays2: List[T]): js.Array[T] = js.native
   def apply[T](iteratee: ValueIteratee[T], arrays: Null, arrays2: List[T]): js.Array[T] = js.native
-  def apply[T](iteratee: ValueIteratee[T], arrays: List[T]): js.Array[T] = js.native
+  def apply[T](iteratee: ValueIteratee[T], arrays: List[T]): LodashXorBy1x3[T] = js.native
   def apply[T](iteratee: ValueIteratee[T], arrays: List[T], arrays2: List[T]): js.Array[T] = js.native
   def apply[T](iteratee: ValueIteratee[T], arrays: __): LodashXorBy1x5[T] = js.native
   def apply[T](iteratee: ValueIteratee[T], arrays: __, arrays2: List[T]): LodashXorBy1x5[T] = js.native

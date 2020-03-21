@@ -3,37 +3,37 @@ package typingsJapgolly.electron
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
 import typingsJapgolly.electron.Electron.Accelerator
-import typingsJapgolly.electron.Electron.App
-import typingsJapgolly.electron.Electron.AutoUpdater
+import typingsJapgolly.electron.Electron.App_
+import typingsJapgolly.electron.Electron.AutoUpdater_
 import typingsJapgolly.electron.Electron.BrowserWindowProxy
 import typingsJapgolly.electron.Electron.ClientRequest
-import typingsJapgolly.electron.Electron.Clipboard
-import typingsJapgolly.electron.Electron.ContentTracing
-import typingsJapgolly.electron.Electron.ContextBridge
+import typingsJapgolly.electron.Electron.Clipboard_
+import typingsJapgolly.electron.Electron.ContentTracing_
+import typingsJapgolly.electron.Electron.ContextBridge_
 import typingsJapgolly.electron.Electron.Cookies
-import typingsJapgolly.electron.Electron.CrashReporter
+import typingsJapgolly.electron.Electron.CrashReporter_
 import typingsJapgolly.electron.Electron.Debugger
-import typingsJapgolly.electron.Electron.DesktopCapturer
-import typingsJapgolly.electron.Electron.Dialog
+import typingsJapgolly.electron.Electron.DesktopCapturer_
+import typingsJapgolly.electron.Electron.Dialog_
 import typingsJapgolly.electron.Electron.DownloadItem
 import typingsJapgolly.electron.Electron.EventEmitter
-import typingsJapgolly.electron.Electron.GlobalShortcut
-import typingsJapgolly.electron.Electron.InAppPurchase
+import typingsJapgolly.electron.Electron.GlobalShortcut_
+import typingsJapgolly.electron.Electron.InAppPurchase_
 import typingsJapgolly.electron.Electron.IncomingMessage
-import typingsJapgolly.electron.Electron.IpcMain
-import typingsJapgolly.electron.Electron.IpcRenderer
+import typingsJapgolly.electron.Electron.IpcMain_
+import typingsJapgolly.electron.Electron.IpcRenderer_
 import typingsJapgolly.electron.Electron.MenuItem
 import typingsJapgolly.electron.Electron.MenuItemConstructorOptions
-import typingsJapgolly.electron.Electron.NativeImage
-import typingsJapgolly.electron.Electron.Net
-import typingsJapgolly.electron.Electron.NetLog
-import typingsJapgolly.electron.Electron.PowerMonitor
-import typingsJapgolly.electron.Electron.PowerSaveBlocker
-import typingsJapgolly.electron.Electron.Protocol
-import typingsJapgolly.electron.Electron.Remote
-import typingsJapgolly.electron.Electron.Screen
-import typingsJapgolly.electron.Electron.Shell
-import typingsJapgolly.electron.Electron.SystemPreferences
+import typingsJapgolly.electron.Electron.NativeImage_
+import typingsJapgolly.electron.Electron.NetLog_
+import typingsJapgolly.electron.Electron.Net_
+import typingsJapgolly.electron.Electron.PowerMonitor_
+import typingsJapgolly.electron.Electron.PowerSaveBlocker_
+import typingsJapgolly.electron.Electron.Protocol_
+import typingsJapgolly.electron.Electron.Remote_
+import typingsJapgolly.electron.Electron.Screen_
+import typingsJapgolly.electron.Electron.Shell_
+import typingsJapgolly.electron.Electron.SystemPreferences_
 import typingsJapgolly.electron.Electron.TouchBarButton
 import typingsJapgolly.electron.Electron.TouchBarButtonConstructorOptions
 import typingsJapgolly.electron.Electron.TouchBarColorPicker
@@ -53,9 +53,9 @@ import typingsJapgolly.electron.Electron.TouchBarSliderConstructorOptions
 import typingsJapgolly.electron.Electron.TouchBarSpacer
 import typingsJapgolly.electron.Electron.TouchBarSpacerConstructorOptions
 import typingsJapgolly.electron.Electron.Tray
-import typingsJapgolly.electron.Electron.WebFrame
+import typingsJapgolly.electron.Electron.WebFrame_
 import typingsJapgolly.electron.Electron.WebRequest
-import typingsJapgolly.electron.Electron.WebviewTag
+import typingsJapgolly.electron.Electron.WebviewTag_
 import typingsJapgolly.electron.electronStrings.host
 import typingsJapgolly.electron.electronStrings.hostname
 import typingsJapgolly.electron.electronStrings.method
@@ -72,8 +72,8 @@ import scala.scalajs.js.annotation._
 
 trait TypeofElectron extends js.Object {
   var Accelerator: Instantiable0[typingsJapgolly.electron.Electron.Accelerator]
-  var BrowserView: TypeofClassBrowserView
-  var BrowserWindow: TypeofClassBrowserWindow
+  var BrowserView: TypeofBrowserView
+  var BrowserWindow: TypeofBrowserWindow
   var BrowserWindowProxy: Instantiable0[typingsJapgolly.electron.Electron.BrowserWindowProxy]
   var ClientRequest: Instantiable1[
     /* options */ method | url | session | partition | typingsJapgolly.electron.electronStrings.protocol | host | hostname | port | path | redirect, 
@@ -85,15 +85,15 @@ trait TypeofElectron extends js.Object {
   // TODO: Replace this declaration with NodeJS.EventEmitter
   var EventEmitter: Instantiable0[typingsJapgolly.electron.Electron.EventEmitter]
   var IncomingMessage: Instantiable0[typingsJapgolly.electron.Electron.IncomingMessage]
-  var Menu: TypeofClassMenu
+  var Menu: TypeofMenu
   var MenuItem: Instantiable1[
     /* options */ MenuItemConstructorOptions, 
     typingsJapgolly.electron.Electron.MenuItem
   ]
-  var NativeImage: TypeofClassNativeImage
-  var Notification: TypeofClassNotification
-  var Session: TypeofClassSession
-  var TouchBar: TypeofClassTouchBar
+  var NativeImage: TypeofNativeImage
+  var Notification: TypeofNotification
+  var Session: TypeofSession
+  var TouchBar: TypeofTouchBar
   var TouchBarButton: Instantiable1[
     /* options */ TouchBarButtonConstructorOptions, 
     typingsJapgolly.electron.Electron.TouchBarButton
@@ -130,40 +130,40 @@ trait TypeofElectron extends js.Object {
     /* options */ TouchBarSpacerConstructorOptions, 
     typingsJapgolly.electron.Electron.TouchBarSpacer
   ]
-  var Tray: Instantiable1[/* image */ NativeImage | String, typingsJapgolly.electron.Electron.Tray]
-  var WebContents: TypeofClassWebContents
+  var Tray: Instantiable1[/* image */ NativeImage_ | String, typingsJapgolly.electron.Electron.Tray]
+  var WebContents: TypeofWebContents
   var WebRequest: Instantiable0[typingsJapgolly.electron.Electron.WebRequest]
-  val app: App
-  val autoUpdater: AutoUpdater
-  val clipboard: Clipboard
-  val contentTracing: ContentTracing
-  val contextBridge: ContextBridge
-  val crashReporter: CrashReporter
-  val desktopCapturer: DesktopCapturer
-  val dialog: Dialog
-  val globalShortcut: GlobalShortcut
-  val inAppPurchase: InAppPurchase
-  val ipcMain: IpcMain
-  val ipcRenderer: IpcRenderer
-  val net: Net
-  val netLog: NetLog
-  val powerMonitor: PowerMonitor
-  val powerSaveBlocker: PowerSaveBlocker
-  val protocol: Protocol
-  val remote: Remote
-  val screen: Screen
-  val shell: Shell
-  val systemPreferences: SystemPreferences
-  val webFrame: WebFrame
-  val webviewTag: WebviewTag
+  val app: App_
+  val autoUpdater: AutoUpdater_
+  val clipboard: Clipboard_
+  val contentTracing: ContentTracing_
+  val contextBridge: ContextBridge_
+  val crashReporter: CrashReporter_
+  val desktopCapturer: DesktopCapturer_
+  val dialog: Dialog_
+  val globalShortcut: GlobalShortcut_
+  val inAppPurchase: InAppPurchase_
+  val ipcMain: IpcMain_
+  val ipcRenderer: IpcRenderer_
+  val net: Net_
+  val netLog: NetLog_
+  val powerMonitor: PowerMonitor_
+  val powerSaveBlocker: PowerSaveBlocker_
+  val protocol: Protocol_
+  val remote: Remote_
+  val screen: Screen_
+  val shell: Shell_
+  val systemPreferences: SystemPreferences_
+  val webFrame: WebFrame_
+  val webviewTag: WebviewTag_
 }
 
 object TypeofElectron {
   @scala.inline
   def apply(
     Accelerator: Instantiable0[Accelerator],
-    BrowserView: TypeofClassBrowserView,
-    BrowserWindow: TypeofClassBrowserWindow,
+    BrowserView: TypeofBrowserView,
+    BrowserWindow: TypeofBrowserWindow,
     BrowserWindowProxy: Instantiable0[BrowserWindowProxy],
     ClientRequest: Instantiable1[
       /* options */ method | url | session | partition | protocol | host | hostname | port | path | redirect, 
@@ -174,12 +174,12 @@ object TypeofElectron {
     DownloadItem: Instantiable0[DownloadItem],
     EventEmitter: Instantiable0[EventEmitter],
     IncomingMessage: Instantiable0[IncomingMessage],
-    Menu: TypeofClassMenu,
+    Menu: TypeofMenu,
     MenuItem: Instantiable1[/* options */ MenuItemConstructorOptions, MenuItem],
-    NativeImage: TypeofClassNativeImage,
-    Notification: TypeofClassNotification,
-    Session: TypeofClassSession,
-    TouchBar: TypeofClassTouchBar,
+    NativeImage: TypeofNativeImage,
+    Notification: TypeofNotification,
+    Session: TypeofSession,
+    TouchBar: TypeofTouchBar,
     TouchBarButton: Instantiable1[/* options */ TouchBarButtonConstructorOptions, TouchBarButton],
     TouchBarColorPicker: Instantiable1[/* options */ TouchBarColorPickerConstructorOptions, TouchBarColorPicker],
     TouchBarGroup: Instantiable1[/* options */ TouchBarGroupConstructorOptions, TouchBarGroup],
@@ -189,32 +189,32 @@ object TypeofElectron {
     TouchBarSegmentedControl: Instantiable1[/* options */ TouchBarSegmentedControlConstructorOptions, TouchBarSegmentedControl],
     TouchBarSlider: Instantiable1[/* options */ TouchBarSliderConstructorOptions, TouchBarSlider],
     TouchBarSpacer: Instantiable1[/* options */ TouchBarSpacerConstructorOptions, TouchBarSpacer],
-    Tray: Instantiable1[/* image */ NativeImage | String, Tray],
-    WebContents: TypeofClassWebContents,
+    Tray: Instantiable1[/* image */ NativeImage_ | String, Tray],
+    WebContents: TypeofWebContents,
     WebRequest: Instantiable0[WebRequest],
-    app: App,
-    autoUpdater: AutoUpdater,
-    clipboard: Clipboard,
-    contentTracing: ContentTracing,
-    contextBridge: ContextBridge,
-    crashReporter: CrashReporter,
-    desktopCapturer: DesktopCapturer,
-    dialog: Dialog,
-    globalShortcut: GlobalShortcut,
-    inAppPurchase: InAppPurchase,
-    ipcMain: IpcMain,
-    ipcRenderer: IpcRenderer,
-    net: Net,
-    netLog: NetLog,
-    powerMonitor: PowerMonitor,
-    powerSaveBlocker: PowerSaveBlocker,
-    protocol: Protocol,
-    remote: Remote,
-    screen: Screen,
-    shell: Shell,
-    systemPreferences: SystemPreferences,
-    webFrame: WebFrame,
-    webviewTag: WebviewTag
+    app: App_,
+    autoUpdater: AutoUpdater_,
+    clipboard: Clipboard_,
+    contentTracing: ContentTracing_,
+    contextBridge: ContextBridge_,
+    crashReporter: CrashReporter_,
+    desktopCapturer: DesktopCapturer_,
+    dialog: Dialog_,
+    globalShortcut: GlobalShortcut_,
+    inAppPurchase: InAppPurchase_,
+    ipcMain: IpcMain_,
+    ipcRenderer: IpcRenderer_,
+    net: Net_,
+    netLog: NetLog_,
+    powerMonitor: PowerMonitor_,
+    powerSaveBlocker: PowerSaveBlocker_,
+    protocol: Protocol_,
+    remote: Remote_,
+    screen: Screen_,
+    shell: Shell_,
+    systemPreferences: SystemPreferences_,
+    webFrame: WebFrame_,
+    webviewTag: WebviewTag_
   ): TypeofElectron = {
     val __obj = js.Dynamic.literal(Accelerator = Accelerator.asInstanceOf[js.Any], BrowserView = BrowserView.asInstanceOf[js.Any], BrowserWindow = BrowserWindow.asInstanceOf[js.Any], BrowserWindowProxy = BrowserWindowProxy.asInstanceOf[js.Any], ClientRequest = ClientRequest.asInstanceOf[js.Any], Cookies = Cookies.asInstanceOf[js.Any], Debugger = Debugger.asInstanceOf[js.Any], DownloadItem = DownloadItem.asInstanceOf[js.Any], EventEmitter = EventEmitter.asInstanceOf[js.Any], IncomingMessage = IncomingMessage.asInstanceOf[js.Any], Menu = Menu.asInstanceOf[js.Any], MenuItem = MenuItem.asInstanceOf[js.Any], NativeImage = NativeImage.asInstanceOf[js.Any], Notification = Notification.asInstanceOf[js.Any], Session = Session.asInstanceOf[js.Any], TouchBar = TouchBar.asInstanceOf[js.Any], TouchBarButton = TouchBarButton.asInstanceOf[js.Any], TouchBarColorPicker = TouchBarColorPicker.asInstanceOf[js.Any], TouchBarGroup = TouchBarGroup.asInstanceOf[js.Any], TouchBarLabel = TouchBarLabel.asInstanceOf[js.Any], TouchBarPopover = TouchBarPopover.asInstanceOf[js.Any], TouchBarScrubber = TouchBarScrubber.asInstanceOf[js.Any], TouchBarSegmentedControl = TouchBarSegmentedControl.asInstanceOf[js.Any], TouchBarSlider = TouchBarSlider.asInstanceOf[js.Any], TouchBarSpacer = TouchBarSpacer.asInstanceOf[js.Any], Tray = Tray.asInstanceOf[js.Any], WebContents = WebContents.asInstanceOf[js.Any], WebRequest = WebRequest.asInstanceOf[js.Any], app = app.asInstanceOf[js.Any], autoUpdater = autoUpdater.asInstanceOf[js.Any], clipboard = clipboard.asInstanceOf[js.Any], contentTracing = contentTracing.asInstanceOf[js.Any], contextBridge = contextBridge.asInstanceOf[js.Any], crashReporter = crashReporter.asInstanceOf[js.Any], desktopCapturer = desktopCapturer.asInstanceOf[js.Any], dialog = dialog.asInstanceOf[js.Any], globalShortcut = globalShortcut.asInstanceOf[js.Any], inAppPurchase = inAppPurchase.asInstanceOf[js.Any], ipcMain = ipcMain.asInstanceOf[js.Any], ipcRenderer = ipcRenderer.asInstanceOf[js.Any], net = net.asInstanceOf[js.Any], netLog = netLog.asInstanceOf[js.Any], powerMonitor = powerMonitor.asInstanceOf[js.Any], powerSaveBlocker = powerSaveBlocker.asInstanceOf[js.Any], protocol = protocol.asInstanceOf[js.Any], remote = remote.asInstanceOf[js.Any], screen = screen.asInstanceOf[js.Any], shell = shell.asInstanceOf[js.Any], systemPreferences = systemPreferences.asInstanceOf[js.Any], webFrame = webFrame.asInstanceOf[js.Any], webviewTag = webviewTag.asInstanceOf[js.Any])
   

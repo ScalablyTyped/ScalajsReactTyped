@@ -1,6 +1,6 @@
 package typingsJapgolly.jqueryui.JQueryUI
 
-import typingsJapgolly.jqueryui.Anon_Left
+import typingsJapgolly.jqueryui.AnonLeft
 import typingsJapgolly.jqueryui.JQuery
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -10,13 +10,13 @@ import scala.scalajs.js.annotation._
 trait DroppableEventUIParam extends js.Object {
   var draggable: JQuery
   var helper: JQuery
-  var offset: Anon_Left
-  var position: Anon_Left
+  var offset: AnonLeft
+  var position: AnonLeft
 }
 
 object DroppableEventUIParam {
   @scala.inline
-  def apply(draggable: JQuery, helper: JQuery, offset: Anon_Left, position: Anon_Left): DroppableEventUIParam = {
+  def apply(draggable: JQuery, helper: JQuery, offset: AnonLeft, position: AnonLeft): DroppableEventUIParam = {
     val __obj = js.Dynamic.literal(draggable = draggable.asInstanceOf[js.Any], helper = helper.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DroppableEventUIParam]

@@ -5,10 +5,10 @@ import japgolly.scalajs.react.CtorType.ChildArg
 import japgolly.scalajs.react.Key
 import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
 import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.antd.libButtonButtonMod.ButtonType
-import typingsJapgolly.antd.libButtonButtonMod.NativeButtonProps
-import typingsJapgolly.antd.libModalActionButtonMod.ActionButtonProps
-import typingsJapgolly.antd.libModalActionButtonMod.default
+import typingsJapgolly.antd.actionButtonMod.ActionButtonProps
+import typingsJapgolly.antd.actionButtonMod.default
+import typingsJapgolly.antd.buttonButtonMod.ButtonType
+import typingsJapgolly.antd.buttonButtonMod.NativeButtonProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,7 +21,7 @@ object ActionButton {
     buttonProps: NativeButtonProps = null,
     `type`: ButtonType = null,
     key: js.UndefOr[Key] = js.undefined,
-    overrides: StringDictionary[js.Any] = null
+    _overrides: StringDictionary[js.Any] = null
   )(
     children: ChildArg*
   ): UnmountedWithRoot[ActionButtonProps, default, Unit, ActionButtonProps] = {
@@ -32,13 +32,13 @@ object ActionButton {
     if (buttonProps != null) __obj.updateDynamic("buttonProps")(buttonProps.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (overrides != null) js.Dynamic.global.Object.assign(__obj, overrides)
+    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
   
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antd.libModalActionButtonMod.ActionButtonProps, 
+  typingsJapgolly.antd.actionButtonMod.ActionButtonProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antd.libModalActionButtonMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.antd.libModalActionButtonMod.ActionButtonProps])(children: _*)
+  typingsJapgolly.antd.actionButtonMod.default](this.componentImport)
+    f(__obj.asInstanceOf[typingsJapgolly.antd.actionButtonMod.ActionButtonProps])(children: _*)
   }
   @JSImport("antd/lib/modal/ActionButton", JSImport.Default)
   @js.native

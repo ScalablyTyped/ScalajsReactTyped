@@ -1,9 +1,9 @@
 package typingsJapgolly.lodash.fpMod
 
-import typingsJapgolly.lodash.lodashMod.RightCurriedFunction2
-import typingsJapgolly.lodash.lodashMod.RightCurriedFunction3
-import typingsJapgolly.lodash.lodashMod.RightCurriedFunction4
-import typingsJapgolly.lodash.lodashMod.RightCurriedFunction5
+import typingsJapgolly.lodash.mod.RightCurriedFunction2
+import typingsJapgolly.lodash.mod.RightCurriedFunction3
+import typingsJapgolly.lodash.mod.RightCurriedFunction4
+import typingsJapgolly.lodash.mod.RightCurriedFunction5
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

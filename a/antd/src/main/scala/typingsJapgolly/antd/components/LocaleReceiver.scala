@@ -5,8 +5,8 @@ import japgolly.scalajs.react.Key
 import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
 import japgolly.scalajs.react.raw.React.Node
 import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.antd.libLocaleDashProviderLocaleReceiverMod.LocaleReceiverProps
-import typingsJapgolly.antd.libLocaleDashProviderLocaleReceiverMod.default
+import typingsJapgolly.antd.localeReceiverMod.LocaleReceiverProps
+import typingsJapgolly.antd.localeReceiverMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,7 +16,7 @@ object LocaleReceiver {
     componentName: String = null,
     defaultLocale: js.Object | js.Function = null,
     key: js.UndefOr[Key] = js.undefined,
-    overrides: StringDictionary[js.Any] = null
+    _overrides: StringDictionary[js.Any] = null
   )(
     children: (js.Object, js.UndefOr[String], js.UndefOr[js.Object]) => CallbackTo[Node]
   ): UnmountedWithRoot[LocaleReceiverProps, default, Unit, LocaleReceiverProps] = {
@@ -26,13 +26,13 @@ object LocaleReceiver {
     if (componentName != null) __obj.updateDynamic("componentName")(componentName.asInstanceOf[js.Any])
     if (defaultLocale != null) __obj.updateDynamic("defaultLocale")(defaultLocale.asInstanceOf[js.Any])
     key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (overrides != null) js.Dynamic.global.Object.assign(__obj, overrides)
+    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
   
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antd.libLocaleDashProviderLocaleReceiverMod.LocaleReceiverProps, 
+  typingsJapgolly.antd.localeReceiverMod.LocaleReceiverProps, 
   japgolly.scalajs.react.Children.None, 
-  typingsJapgolly.antd.libLocaleDashProviderLocaleReceiverMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.antd.libLocaleDashProviderLocaleReceiverMod.LocaleReceiverProps])
+  typingsJapgolly.antd.localeReceiverMod.default](this.componentImport)
+    f(__obj.asInstanceOf[typingsJapgolly.antd.localeReceiverMod.LocaleReceiverProps])
   }
   @JSImport("antd/lib/locale-provider/LocaleReceiver", JSImport.Default)
   @js.native

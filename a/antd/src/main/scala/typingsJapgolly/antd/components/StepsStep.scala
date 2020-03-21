@@ -15,7 +15,7 @@ import typingsJapgolly.antd.antdStrings.finish
 import typingsJapgolly.antd.antdStrings.process
 import typingsJapgolly.antd.antdStrings.wait
 import typingsJapgolly.antd.libStepsMod.StepProps
-import typingsJapgolly.react.reactMod.CSSProperties
+import typingsJapgolly.react.mod.CSSProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -32,7 +32,7 @@ object StepsStep {
     subTitle: VdomNode = null,
     title: VdomNode = null,
     key: js.UndefOr[Key] = js.undefined,
-    overrides: StringDictionary[js.Any] = null
+    _overrides: StringDictionary[js.Any] = null
   )(
     children: ChildArg*
   ): UnmountedSimple[
@@ -51,7 +51,7 @@ object StepsStep {
     if (subTitle != null) __obj.updateDynamic("subTitle")(subTitle.rawNode.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title.rawNode.asInstanceOf[js.Any])
     key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (overrides != null) js.Dynamic.global.Object.assign(__obj, overrides)
+    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
   
     val f = japgolly.scalajs.react.JsComponent[
   typingsJapgolly.antd.libStepsMod.StepProps, 

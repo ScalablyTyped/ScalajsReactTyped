@@ -1,8 +1,6 @@
 package typingsJapgolly.antd
 
-import typingsJapgolly.antd.libListMod.ColumnCount
-import typingsJapgolly.antd.libStatisticUtilsMod._Formatter
-import typingsJapgolly.antd.libTreeDirectoryTreeMod.ExpandAction
+import typingsJapgolly.antd.listMod.ColumnCount
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,6 +11,9 @@ object antdNumbers {
   
   @js.native
   sealed trait `1` extends ColumnCount
+  
+  @js.native
+  sealed trait `10` extends js.Object
   
   @js.native
   sealed trait `12` extends ColumnCount
@@ -35,18 +36,12 @@ object antdNumbers {
   @js.native
   sealed trait `8` extends ColumnCount
   
-  @js.native
-  sealed trait `false`
-    extends ExpandAction
-       with _Formatter
-  
-  @js.native
-  sealed trait `true` extends js.Object
-  
   @scala.inline
   def `0`: `0` = 0.asInstanceOf[`0`]
   @scala.inline
   def `1`: `1` = 1.asInstanceOf[`1`]
+  @scala.inline
+  def `10`: `10` = 10.asInstanceOf[`10`]
   @scala.inline
   def `12`: `12` = 12.asInstanceOf[`12`]
   @scala.inline
@@ -61,9 +56,5 @@ object antdNumbers {
   def `6`: `6` = 6.asInstanceOf[`6`]
   @scala.inline
   def `8`: `8` = 8.asInstanceOf[`8`]
-  @scala.inline
-  def `false`: `false` = false.asInstanceOf[`false`]
-  @scala.inline
-  def `true`: `true` = true.asInstanceOf[`true`]
 }
 

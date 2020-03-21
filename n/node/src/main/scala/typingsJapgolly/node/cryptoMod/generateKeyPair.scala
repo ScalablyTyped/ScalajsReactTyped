@@ -1,13 +1,13 @@
 package typingsJapgolly.node.cryptoMod
 
-import typingsJapgolly.node.Anon_PrivateKey
+import typingsJapgolly.node.AnonPrivateKey
 import typingsJapgolly.node.Buffer
-import typingsJapgolly.node.Error
 import typingsJapgolly.node.nodeStrings.der
 import typingsJapgolly.node.nodeStrings.dsa
 import typingsJapgolly.node.nodeStrings.ec
 import typingsJapgolly.node.nodeStrings.pem
 import typingsJapgolly.node.nodeStrings.rsa
+import typingsJapgolly.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,8 +25,8 @@ object generateKeyPair extends js.Object {
     options: DSAKeyPairOptions[der | pem, der | pem],
     callback: js.Function3[
       Error | Null, 
-      (/* publicKey */ Buffer) | (/* publicKey */ java.lang.String), 
-      (/* privateKey */ Buffer) | (/* privateKey */ java.lang.String), 
+      (/* publicKey */ Buffer) | (/* publicKey */ String), 
+      (/* privateKey */ Buffer) | (/* privateKey */ String), 
       Unit
     ]
   ): Unit = js.native
@@ -40,8 +40,8 @@ object generateKeyPair extends js.Object {
     options: ECKeyPairOptions[der | pem, der | pem],
     callback: js.Function3[
       Error | Null, 
-      (/* publicKey */ Buffer) | (/* publicKey */ java.lang.String), 
-      (/* privateKey */ Buffer) | (/* privateKey */ java.lang.String), 
+      (/* publicKey */ Buffer) | (/* publicKey */ String), 
+      (/* privateKey */ Buffer) | (/* privateKey */ String), 
       Unit
     ]
   ): Unit = js.native
@@ -55,19 +55,22 @@ object generateKeyPair extends js.Object {
     options: RSAKeyPairOptions[der | pem, der | pem],
     callback: js.Function3[
       Error | Null, 
-      (/* publicKey */ Buffer) | (/* publicKey */ java.lang.String), 
-      (/* privateKey */ Buffer) | (/* privateKey */ java.lang.String), 
+      (/* publicKey */ Buffer) | (/* publicKey */ String), 
+      (/* privateKey */ Buffer) | (/* privateKey */ String), 
       Unit
     ]
   ): Unit = js.native
-  def __promisify__(`type`: dsa, options: DSAKeyPairOptions[der | pem, der | pem]): js.Promise[Anon_PrivateKey] = js.native
-  def __promisify__(`type`: ec, options: ECKeyPairOptions[der | pem, der | pem]): js.Promise[Anon_PrivateKey] = js.native
-  def __promisify__(`type`: rsa, options: RSAKeyPairOptions[der | pem, der | pem]): js.Promise[Anon_PrivateKey] = js.native
   @JSName("__promisify__")
-  def __promisify___dsa(`type`: dsa, options: DSAKeyPairKeyObjectOptions): js.Promise[KeyPairKeyObjectResult] = js.native
+  def promisify(`type`: dsa, options: DSAKeyPairOptions[der | pem, der | pem]): js.Promise[AnonPrivateKey] = js.native
   @JSName("__promisify__")
-  def __promisify___ec(`type`: ec, options: ECKeyPairKeyObjectOptions): js.Promise[KeyPairKeyObjectResult] = js.native
+  def promisify(`type`: ec, options: ECKeyPairOptions[der | pem, der | pem]): js.Promise[AnonPrivateKey] = js.native
   @JSName("__promisify__")
-  def __promisify___rsa(`type`: rsa, options: RSAKeyPairKeyObjectOptions): js.Promise[KeyPairKeyObjectResult] = js.native
+  def promisify(`type`: rsa, options: RSAKeyPairOptions[der | pem, der | pem]): js.Promise[AnonPrivateKey] = js.native
+  @JSName("__promisify__")
+  def promisify_dsa(`type`: dsa, options: DSAKeyPairKeyObjectOptions): js.Promise[KeyPairKeyObjectResult] = js.native
+  @JSName("__promisify__")
+  def promisify_ec(`type`: ec, options: ECKeyPairKeyObjectOptions): js.Promise[KeyPairKeyObjectResult] = js.native
+  @JSName("__promisify__")
+  def promisify_rsa(`type`: rsa, options: RSAKeyPairKeyObjectOptions): js.Promise[KeyPairKeyObjectResult] = js.native
 }
 

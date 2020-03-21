@@ -1,18 +1,17 @@
-organization := "org.gulliblytyped.japgolly"
+organization := "org.scalablytyped.japgolly"
 name := "d3-zoom"
-version := "1.7-dt-20190212Z-ef01d1"
-scalaVersion := "2.12.10"
+version := "1.7-dt-20200225Z-c0eb9a"
+scalaVersion := "2.13.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.github.japgolly.scalajs-react" %%% "core" % "1.4.2",
+  "com.github.japgolly.scalajs-react" %%% "core" % "1.5.0",
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.gulliblytyped.japgolly" %%% "d3-color" % "1.2-dt-20190212Z-4a1688",
-  "org.gulliblytyped.japgolly" %%% "d3-interpolate" % "1.3-dt-20190212Z-696d62",
-  "org.gulliblytyped.japgolly" %%% "d3-selection" % "1.4-dt-20190710Z-274fb1",
-  "org.gulliblytyped.japgolly" %%% "std" % "3.7-ed3398")
+  "org.scalablytyped.japgolly" %%% "d3-color" % "1.2-dt-20200225Z-b691c4",
+  "org.scalablytyped.japgolly" %%% "d3-interpolate" % "1.3-dt-20200225Z-791b48",
+  "org.scalablytyped.japgolly" %%% "d3-selection" % "1.4-dt-20200225Z-910fbf",
+  "org.scalablytyped.japgolly" %%% "std" % "3.8-8884a5")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
+scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
 bintrayRepository := "ScalajsReactTyped"
 resolvers += Resolver.bintrayRepo("oyvindberg", "ScalajsReactTyped")
-        

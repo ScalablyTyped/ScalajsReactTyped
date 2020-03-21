@@ -1,8 +1,7 @@
 package typingsJapgolly.antd.libStepsMod
 
-import typingsJapgolly.antd.Anon_Current
-import typingsJapgolly.antd.Anon_CurrentIconPrefix
-import typingsJapgolly.react.reactMod.ClassicComponentClass
+import typingsJapgolly.antd.AnonCurrent
+import typingsJapgolly.react.mod.ClassicComponentClass
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,7 +15,6 @@ class default () extends Steps
 @js.native
 object default extends js.Object {
   var Step: ClassicComponentClass[StepProps] = js.native
-  var defaultProps: Anon_Current = js.native
-  var propTypes: Anon_CurrentIconPrefix = js.native
+  var defaultProps: AnonCurrent = js.native
 }
 

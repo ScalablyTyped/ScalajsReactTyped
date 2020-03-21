@@ -1,0 +1,18 @@
+package typingsJapgolly.awsSdkClientCognitoIdentityBrowser.typesConcurrentModificationExceptionMod
+
+import typingsJapgolly.awsSdkClientCognitoIdentityBrowser.setIdentityPoolRolesExceptionsUnionMod.SetIdentityPoolRolesExceptionsUnion
+import typingsJapgolly.awsSdkClientCognitoIdentityBrowser.updateIdentityPoolExceptionsUnionMod.UpdateIdentityPoolExceptionsUnion
+import typingsJapgolly.awsSdkTypes.exceptionMod.ServiceException
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@js.native
+trait ConcurrentModificationException
+  extends ServiceException[ConcurrentModificationExceptionDetails]
+     with SetIdentityPoolRolesExceptionsUnion
+     with UpdateIdentityPoolExceptionsUnion {
+  @JSName("name")
+  var name_ConcurrentModificationException: typingsJapgolly.awsSdkClientCognitoIdentityBrowser.awsSdkClientCognitoIdentityBrowserStrings.ConcurrentModificationException = js.native
+}
+

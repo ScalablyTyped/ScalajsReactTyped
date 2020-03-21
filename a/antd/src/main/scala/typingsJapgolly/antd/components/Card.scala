@@ -38,6 +38,7 @@ import typingsJapgolly.antd.antdStrings.execute
 import typingsJapgolly.antd.antdStrings.grammar
 import typingsJapgolly.antd.antdStrings.grid
 import typingsJapgolly.antd.antdStrings.horizontal
+import typingsJapgolly.antd.antdStrings.inherit
 import typingsJapgolly.antd.antdStrings.link
 import typingsJapgolly.antd.antdStrings.list
 import typingsJapgolly.antd.antdStrings.listbox
@@ -65,13 +66,14 @@ import typingsJapgolly.antd.antdStrings.tree
 import typingsJapgolly.antd.antdStrings.url
 import typingsJapgolly.antd.antdStrings.vertical
 import typingsJapgolly.antd.antdStrings.yes
-import typingsJapgolly.antd.libCardMod.CardProps
-import typingsJapgolly.antd.libCardMod.CardSize
-import typingsJapgolly.antd.libCardMod.CardTabListType
-import typingsJapgolly.antd.libCardMod.CardType
-import typingsJapgolly.antd.libCardMod.default
-import typingsJapgolly.react.Anon_Html
-import typingsJapgolly.react.reactMod.CSSProperties
+import typingsJapgolly.antd.cardMod.CardProps
+import typingsJapgolly.antd.cardMod.CardSize
+import typingsJapgolly.antd.cardMod.CardTabListType
+import typingsJapgolly.antd.cardMod.CardType
+import typingsJapgolly.antd.cardMod.default
+import typingsJapgolly.react.AnonHtml
+import typingsJapgolly.react.mod.Booleanish
+import typingsJapgolly.react.mod.CSSProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -137,10 +139,10 @@ object Card {
     bordered: js.UndefOr[Boolean] = js.undefined,
     className: String = null,
     color: String = null,
-    contentEditable: js.UndefOr[Boolean] = js.undefined,
+    contentEditable: Booleanish | inherit = null,
     contextMenu: String = null,
     cover: VdomNode = null,
-    dangerouslySetInnerHTML: Anon_Html = null,
+    dangerouslySetInnerHTML: AnonHtml = null,
     datatype: String = null,
     defaultActiveTabKey: String = null,
     defaultChecked: js.UndefOr[Boolean] = js.undefined,
@@ -162,7 +164,6 @@ object Card {
     itemType: String = null,
     lang: String = null,
     loading: js.UndefOr[Boolean] = js.undefined,
-    noHovering: js.UndefOr[Boolean] = js.undefined,
     onAbort: ReactEventFrom[HTMLDivElement] => Callback = null,
     onAnimationEnd: ReactAnimationEventFrom[HTMLDivElement] => Callback = null,
     onAnimationIteration: ReactAnimationEventFrom[HTMLDivElement] => Callback = null,
@@ -268,7 +269,7 @@ object Card {
     unselectable: on | off = null,
     vocab: String = null,
     key: js.UndefOr[Key] = js.undefined,
-    overrides: StringDictionary[js.Any] = null
+    _overrides: StringDictionary[js.Any] = null
   )(
     children: ChildArg*
   ): UnmountedWithRoot[CardProps, default, Unit, CardProps] = {
@@ -333,7 +334,7 @@ object Card {
     if (!js.isUndefined(bordered)) __obj.updateDynamic("bordered")(bordered.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (!js.isUndefined(contentEditable)) __obj.updateDynamic("contentEditable")(contentEditable.asInstanceOf[js.Any])
+    if (contentEditable != null) __obj.updateDynamic("contentEditable")(contentEditable.asInstanceOf[js.Any])
     if (contextMenu != null) __obj.updateDynamic("contextMenu")(contextMenu.asInstanceOf[js.Any])
     if (cover != null) __obj.updateDynamic("cover")(cover.rawNode.asInstanceOf[js.Any])
     if (dangerouslySetInnerHTML != null) __obj.updateDynamic("dangerouslySetInnerHTML")(dangerouslySetInnerHTML.asInstanceOf[js.Any])
@@ -358,7 +359,6 @@ object Card {
     if (itemType != null) __obj.updateDynamic("itemType")(itemType.asInstanceOf[js.Any])
     if (lang != null) __obj.updateDynamic("lang")(lang.asInstanceOf[js.Any])
     if (!js.isUndefined(loading)) __obj.updateDynamic("loading")(loading.asInstanceOf[js.Any])
-    if (!js.isUndefined(noHovering)) __obj.updateDynamic("noHovering")(noHovering.asInstanceOf[js.Any])
     if (onAbort != null) __obj.updateDynamic("onAbort")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[org.scalajs.dom.raw.HTMLDivElement]) => onAbort(t0).runNow()))
     if (onAnimationEnd != null) __obj.updateDynamic("onAnimationEnd")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactAnimationEventFrom[org.scalajs.dom.raw.HTMLDivElement]) => onAnimationEnd(t0).runNow()))
     if (onAnimationIteration != null) __obj.updateDynamic("onAnimationIteration")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactAnimationEventFrom[org.scalajs.dom.raw.HTMLDivElement]) => onAnimationIteration(t0).runNow()))
@@ -464,13 +464,13 @@ object Card {
     if (unselectable != null) __obj.updateDynamic("unselectable")(unselectable.asInstanceOf[js.Any])
     if (vocab != null) __obj.updateDynamic("vocab")(vocab.asInstanceOf[js.Any])
     key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (overrides != null) js.Dynamic.global.Object.assign(__obj, overrides)
+    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
   
     val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antd.libCardMod.CardProps, 
+  typingsJapgolly.antd.cardMod.CardProps, 
   japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antd.libCardMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.antd.libCardMod.CardProps])(children: _*)
+  typingsJapgolly.antd.cardMod.default](this.componentImport)
+    f(__obj.asInstanceOf[typingsJapgolly.antd.cardMod.CardProps])(children: _*)
   }
   @JSImport("antd/lib/card", JSImport.Default)
   @js.native

@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-big-calendar
 
-Typings are for version 0.22
+Typings are for version 0.24
 
 ## Library description:
 Calendar! with events
@@ -10,9 +10,9 @@ Calendar! with events
 | ------------------ | :-------------: |
 | Full name          | react-big-calendar |
 | Keywords           | scheduler, react-component, react, calendar, events, full calendar |
-| # releases         | 18 |
-| # dependents       | 26 |
-| # downloads        | 1553901 |
+| # releases         | 14 |
+| # dependents       | 44 |
+| # downloads        | 2763232 |
 | # stars            | 13 |
 
 ## Links

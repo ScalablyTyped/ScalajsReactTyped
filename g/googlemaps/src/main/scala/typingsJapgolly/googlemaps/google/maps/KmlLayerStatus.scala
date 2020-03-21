@@ -1,5 +1,6 @@
 package typingsJapgolly.googlemaps.google.maps
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -37,16 +38,34 @@ object KmlLayerStatus extends js.Object {
   @js.native
   sealed trait UNKNOWN extends KmlLayerStatus
   
-  /* "DOCUMENT_NOT_FOUND" */ val DOCUMENT_NOT_FOUND: typingsJapgolly.googlemaps.google.maps.KmlLayerStatus.DOCUMENT_NOT_FOUND with String = js.native
-  /* "DOCUMENT_TOO_LARGE" */ val DOCUMENT_TOO_LARGE: typingsJapgolly.googlemaps.google.maps.KmlLayerStatus.DOCUMENT_TOO_LARGE with String = js.native
-  /* "FETCH_ERROR" */ val FETCH_ERROR: typingsJapgolly.googlemaps.google.maps.KmlLayerStatus.FETCH_ERROR with String = js.native
-  /* "INVALID_DOCUMENT" */ val INVALID_DOCUMENT: typingsJapgolly.googlemaps.google.maps.KmlLayerStatus.INVALID_DOCUMENT with String = js.native
-  /* "INVALID_REQUEST" */ val INVALID_REQUEST: typingsJapgolly.googlemaps.google.maps.KmlLayerStatus.INVALID_REQUEST with String = js.native
-  /* "LIMITS_EXCEEDED" */ val LIMITS_EXCEEDED: typingsJapgolly.googlemaps.google.maps.KmlLayerStatus.LIMITS_EXCEEDED with String = js.native
-  /* "OK" */ val OK: typingsJapgolly.googlemaps.google.maps.KmlLayerStatus.OK with String = js.native
-  /* "TIMED_OUT" */ val TIMED_OUT: typingsJapgolly.googlemaps.google.maps.KmlLayerStatus.TIMED_OUT with String = js.native
-  /* "UNKNOWN" */ val UNKNOWN: typingsJapgolly.googlemaps.google.maps.KmlLayerStatus.UNKNOWN with String = js.native
   @JSBracketAccess
   def apply(value: String): js.UndefOr[KmlLayerStatus with String] = js.native
+  /* "DOCUMENT_NOT_FOUND" */ @js.native
+  object DOCUMENT_NOT_FOUND extends TopLevel[DOCUMENT_NOT_FOUND with String]
+  
+  /* "DOCUMENT_TOO_LARGE" */ @js.native
+  object DOCUMENT_TOO_LARGE extends TopLevel[DOCUMENT_TOO_LARGE with String]
+  
+  /* "FETCH_ERROR" */ @js.native
+  object FETCH_ERROR extends TopLevel[FETCH_ERROR with String]
+  
+  /* "INVALID_DOCUMENT" */ @js.native
+  object INVALID_DOCUMENT extends TopLevel[INVALID_DOCUMENT with String]
+  
+  /* "INVALID_REQUEST" */ @js.native
+  object INVALID_REQUEST extends TopLevel[INVALID_REQUEST with String]
+  
+  /* "LIMITS_EXCEEDED" */ @js.native
+  object LIMITS_EXCEEDED extends TopLevel[LIMITS_EXCEEDED with String]
+  
+  /* "OK" */ @js.native
+  object OK extends TopLevel[OK with String]
+  
+  /* "TIMED_OUT" */ @js.native
+  object TIMED_OUT extends TopLevel[TIMED_OUT with String]
+  
+  /* "UNKNOWN" */ @js.native
+  object UNKNOWN extends TopLevel[UNKNOWN with String]
+  
 }
 

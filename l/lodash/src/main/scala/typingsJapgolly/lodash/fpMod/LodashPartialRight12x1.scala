@@ -1,9 +1,9 @@
 package typingsJapgolly.lodash.fpMod
 
-import typingsJapgolly.lodash.lodashMod.Function1
-import typingsJapgolly.lodash.lodashMod.Function2
-import typingsJapgolly.lodash.lodashMod.Function3
-import typingsJapgolly.lodash.lodashMod.__
+import typingsJapgolly.lodash.mod.Function1
+import typingsJapgolly.lodash.mod.Function2
+import typingsJapgolly.lodash.mod.Function3
+import typingsJapgolly.lodash.mod.__
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
